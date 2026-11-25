@@ -643,6 +643,40 @@ def _render_how_it_works(lines: list[str]) -> None:
     lines.append("")
 
 
+def _render_picks_overview(
+    lines: list[str],
+    summary: dict[str, Any],
+    global_summary: dict[str, Any] | None,
+) -> None:
+    lines.extend(["## This month's picks", ""])
+    lines.append(f"**Latest window:** {summary['latest_window']}.")
+    if updated_on := summary.get("picks_updated_on"):
+        lines.append(f"**Last updated:** {updated_on} (UTC).")
+    lines.extend(["", "| Universe | Window | Top 3 |", "| :--- | :--- | :--- |"])
+
+    markets = global_summary or {}
+    rows = [
+        ("All World — UK-accessible", markets.get("acwi_uk_accessible"), "top3"),
+        ("US S&P 500", summary, "top3_picks"),
+        ("UK FTSE 100", markets.get("ftse100"), "top5"),
+        ("All World — Full ACWI", markets.get("acwi_all"), "top3"),
+    ]
+    for label, market, picks_key in rows:
+        if market is None:
+            continue
+        tickers = ", ".join(f"**{pick['ticker']}**" for pick in market[picks_key][:3])
+        lines.append(f"| {label} | {market['latest_window']} | {tickers or '—'} |")
+
+    lines.extend(
+        [
+            "",
+            "[See the rankings and returns](#latest-pick-details).",
+            "For monthly alerts, choose **Watch → Custom → Releases** on GitHub.",
+            "",
+        ]
+    )
+
+
 def _render_latest_picks_section(
     lines: list[str],
     *,
@@ -653,7 +687,7 @@ def _render_latest_picks_section(
     latest_window = summary["latest_window"]
     signal_month = summary["latest_signal_month"]
 
-    lines.append(f"## Latest Mechanistic Picks — {latest_window} Window")
+    lines.append("## Latest pick details")
     lines.append("")
     lines.append(
         f"Computed deterministically from completed data through **{signal_month}**. "
@@ -1355,6 +1389,7 @@ def _render_readme_block(
     hero_stats: dict[str, Any] | None = None,
 ) -> str:
     lines: list[str] = []
+    _render_picks_overview(lines, summary, global_summary)
     _render_hero_and_takeaways(
         lines,
         summary=summary,
@@ -1420,6 +1455,8 @@ def rebuild_public_reports(
     root_dir: Path = Path("."),
     contribution: float = 500.0,
     fee_pct: float = 0.15,
+    *,
+    picks_updated_on: date | None = None,
 ) -> PublicReportSummary:
     """Deterministically build rankings, model holdings, charts, and README offline."""
     data_dir = root_dir / "data"
@@ -1429,6 +1466,7 @@ def rebuild_public_reports(
     prices_path = data_dir / "monthly_prices.csv"
     snapshots_path = data_dir / "constituent_snapshots.csv"
     events_path = data_dir / "events.csv"
+    summary_json_path = data_dir / "summary.json"
 
     if not constituents_path.exists() or not prices_path.exists():
         raise FileNotFoundError(
@@ -1603,8 +1641,20 @@ def rebuild_public_reports(
         "rule6_signals": [r for r in rule6_recs if r["action"] != Rule6ActionType.HOLD.value],
     }
 
-    summary_json_path = data_dir / "summary.json"
-    summary_json_path.write_text(json.dumps(summary_payload, indent=2) + "\n", encoding="utf-8")
+    if picks_updated_on is not None:
+        summary_payload["picks_updated_on"] = picks_updated_on.isoformat()
+    elif summary_json_path.exists():
+        # An offline rebuild keeps the recorded date for the same picks window.
+        try:
+            previous = json.loads(summary_json_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            previous = None
+        if (
+            isinstance(previous, dict)
+            and previous.get("latest_window") == latest_pt.window_month
+            and previous.get("picks_updated_on")
+        ):
+            summary_payload["picks_updated_on"] = previous["picks_updated_on"]
 
     chart_path = root_dir / "assets" / "performance.png"
     generate_performance_chart(perf_rows, summary_payload, chart_path)
@@ -1867,6 +1917,7 @@ def rebuild_public_reports(
         hero_stats=hero_stats_payload,
     )
     _update_readme_file(readme_path, readme_block)
+    summary_json_path.write_text(json.dumps(summary_payload, indent=2) + "\n", encoding="utf-8")
 
     return PublicReportSummary(
         latest_window=latest_pt.window_month,

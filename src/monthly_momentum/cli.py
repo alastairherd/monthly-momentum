@@ -199,7 +199,9 @@ def acwi_refresh(
         f"{res.price_rows_count} ACWI price rows, {res.fx_rows_count} FX rows."
     )
     if (root / "data" / "monthly_prices.csv").exists():
-        summary = rebuild_public_reports(root_dir=root, contribution=contribution)
+        summary = rebuild_public_reports(
+            root_dir=root, contribution=contribution, picks_updated_on=datetime.now(UTC).date()
+        )
         console.print(f"Updated {summary.readme_path}, charts, and data/global/summary.json.")
 
 
@@ -228,7 +230,9 @@ def global_refresh(
         f"{res.price_rows_count} price rows, {res.fx_rows_count} FX rows."
     )
     if (root / "data" / "monthly_prices.csv").exists():
-        summary = rebuild_public_reports(root_dir=root, contribution=contribution)
+        summary = rebuild_public_reports(
+            root_dir=root, contribution=contribution, picks_updated_on=datetime.now(UTC).date()
+        )
         console.print(f"Updated {summary.readme_path}, charts, and data/global/summary.json.")
 
 

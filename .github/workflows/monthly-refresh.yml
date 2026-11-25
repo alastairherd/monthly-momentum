@@ -10,6 +10,10 @@ on:
         description: "Years of incremental monthly price history to fetch"
         required: false
         default: "4"
+      publish_release:
+        description: "Publish this month's picks as a GitHub release"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -24,6 +28,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
 
       - name: Set up uv and Python
         uses: astral-sh/setup-uv@v5
@@ -34,20 +40,55 @@ jobs:
         run: uv sync --frozen
 
       - name: Refresh public S&P 500 + international datasets, chart, and README
-        run: uv run monthly-momentum refresh --years "${{ github.event.inputs.years || '4' }}" --with-global
+        env:
+          REFRESH_YEARS: ${{ inputs.years || '4' }}
+        run: uv run monthly-momentum refresh --years "$REFRESH_YEARS" --with-global
 
       - name: Verify deterministic offline report regeneration
         run: uv run monthly-momentum report
 
-      - name: Commit and push updated dataset & README
+      - name: Verify current picks across all published markets
+        id: picks
         run: |
-          if [ -z "$(git status --porcelain)" ]; then
+          window="$(date -u +%Y-%m)"
+          jq -e --arg window "$window" '
+            .latest_window == $window and (.top3_picks | length) == 3
+          ' data/summary.json >/dev/null
+          jq -e --arg window "$window" '
+            [.acwi_uk_accessible, .acwi_all, .ftse100] |
+            all(.latest_window == $window and ((.top3 // .top5) | length) >= 3)
+          ' data/global/summary.json >/dev/null
+          echo "window=$window" >> "$GITHUB_OUTPUT"
+
+      - name: Commit and push updated dataset & README
+        env:
+          WINDOW: ${{ steps.picks.outputs.window }}
+        run: |
+          git add data/ assets/ README.md
+          if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0
           fi
-          WINDOW=$(python3 -c 'import json; print(json.load(open("data/summary.json"))["latest_window"])')
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ assets/ README.md
           git commit -m "chore(data): monthly momentum refresh (${WINDOW})"
           git push
+
+      - name: Publish monthly picks release
+        if: >-
+          github.ref_name == github.event.repository.default_branch &&
+          (github.event_name == 'schedule' || inputs.publish_release)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          WINDOW: ${{ steps.picks.outputs.window }}
+        run: |
+          tag="picks-$WINDOW"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            echo "Release $tag already exists."
+            exit 0
+          fi
+          commit="$(git rev-parse HEAD)"
+          picks_url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/blob/$commit/README.md#this-months-picks"
+          gh release create "$tag" --target "$commit" \
+            --title "Monthly Momentum picks for $WINDOW" \
+            --notes "See the [top three picks by market]($picks_url)."

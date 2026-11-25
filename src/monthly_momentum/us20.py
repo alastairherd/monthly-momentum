@@ -447,6 +447,7 @@ def build_us20_dataset(
         root_dir=root_dir,
         contribution=contribution,
         fee_pct=fee_pct,
+        picks_updated_on=datetime.now(UTC).date(),
     )
 
     return US20BuildResult(

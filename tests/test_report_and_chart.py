@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import csv
 import json
+from datetime import date
 from pathlib import Path
 
 from monthly_momentum.live import ConstituentRecord
@@ -77,6 +78,8 @@ def _seed_public_repo(root: Path) -> None:
 def test_rebuild_public_reports_and_idempotency(tmp_path: Path) -> None:
     _seed_public_repo(tmp_path)
     summary = rebuild_public_reports(root_dir=tmp_path)
+    assert "Last updated" not in summary.readme_path.read_text(encoding="utf-8")
+    summary = rebuild_public_reports(root_dir=tmp_path, picks_updated_on=date(2026, 1, 2))
 
     assert summary.latest_signal_month == "2025-12"
     assert summary.latest_window == "2026-01"
@@ -98,11 +101,15 @@ def test_rebuild_public_reports_and_idempotency(tmp_path: Path) -> None:
 
     summary_data = json.loads(summary.summary_json_path.read_text(encoding="utf-8"))
     assert summary_data["latest_window"] == "2026-01"
+    assert summary_data["picks_updated_on"] == "2026-01-02"
     assert [p["ticker"] for p in summary_data["top3_picks"]] == ["AAA", "BBB", "CCC"]
     assert "Balanced (Top 5)" in summary_data["variants"]
 
     readme_text = (tmp_path / "README.md").read_text(encoding="utf-8")
-    assert "Latest Mechanistic Picks — 2026-01 Window" in readme_text
+    assert readme_text.index("## This month's picks") < readme_text.index("## At a Glance")
+    assert "**Last updated:** 2026-01-02 (UTC)." in readme_text
+    assert "| US S&P 500 | 2026-01 | **AAA**, **BBB**, **CCC** |" in readme_text
+    assert "## Latest pick details" in readme_text
     assert "Balanced (Top 5)" in readme_text
     assert "assets/hero_vs_sp500.png" in readme_text
     assert "assets/performance.png" in readme_text

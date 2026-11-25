@@ -8,6 +8,21 @@ This repository automatically refreshes market data every month via GitHub Actio
 
 <!-- AUTO-GENERATED:START -->
 
+## This month's picks
+
+**Latest window:** 2026-11.
+**Last updated:** 2026-11-25 (UTC).
+
+| Universe | Window | Top 3 |
+| :--- | :--- | :--- |
+| All World — UK-accessible | 2026-11 | **LITE**, **MU**, **CVNA** |
+| US S&P 500 | 2026-11 | **LITE**, **MU**, **CVNA** |
+| UK FTSE 100 | 2026-11 | **BGEO.L**, **PCT.L**, **SMT.L** |
+| All World — Full ACWI | 2026-11 | **LITE**, **2059.TW**, **MU** |
+
+[See the rankings and returns](#latest-pick-details).
+For monthly alerts, choose **Watch → Custom → Releases** on GitHub.
+
 ## At a Glance: Why This Works (and the Catch)
 
 ![Monthly Momentum $100/month vs S&P 500 Tracker](assets/hero_vs_sp500.png)
@@ -38,7 +53,7 @@ This repository automatically refreshes market data every month via GitHub Actio
 3. **Buy equally on the 1st trading day:** Split that month's contribution into three equal fractional buys (even if you already own those stocks).
 4. **Hold without stop-losses:** Every stop-loss rule tested destroyed returns by shaking out future multi-baggers (`NVDA` fell −85% after 2008). Only trim via **Rule 6** after 6–8 years outside the Top 10.
 
-## Latest Mechanistic Picks — 2026-11 Window
+## Latest pick details
 
 Computed deterministically from completed data through **2026-10**. Split this month's deposit equally across your chosen universe's **Top 3**.
 
@@ -907,11 +922,9 @@ uv run monthly-momentum backtest --variant standard --signal-mode next_month --e
 
 ## Automated Monthly GitHub Action
 
-[`.github/workflows/monthly-refresh.yml`](.github/workflows/monthly-refresh.yml) runs automatically on the **1st of every month at 08:00 UTC** (and on manual `workflow_dispatch`):
+[Monthly Momentum Refresh](https://github.com/alastairherd/monthly-momentum/actions/workflows/monthly-refresh.yml) is scheduled for **08:00 UTC on the first of each month**. It fetches completed month-end data and regenerates the rankings, charts, and README.
 
-1. Runs `uv run monthly-momentum refresh --years 4 --with-global` to fetch the latest S&P 500, FTSE 100, TSX 60, EURO STOXX 50, and ACWI prices plus FX rates.
-2. Appends the new month's point-in-time constituent roster snapshots and ratio-splices completed monthly bars onto `data/monthly_prices.csv`.
-3. Rebuilds all offline CSVs, JSON summaries, PNG charts, and this `README.md` via `uv run monthly-momentum report`.
+Once all four published rankings have three picks for the current window, the workflow pushes the updated report and publishes one [GitHub release](https://github.com/alastairherd/monthly-momentum/releases) for that month. For a manual run, select **Publish this month's picks as a GitHub release** to also publish the release.
 
 ## Repository Layout
 
