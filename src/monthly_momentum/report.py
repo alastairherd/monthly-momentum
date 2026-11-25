@@ -38,6 +38,7 @@ from monthly_momentum.holdings import (
 from monthly_momentum.models import (
     ACTIVE_STATUSES,
     Holding,
+    HoldingStatus,
     RankedSecurity,
     Rule6ActionType,
 )
@@ -88,6 +89,10 @@ def _format_plain_pct(val: float | None) -> str:
     if val is None:
         return "—"
     return f"{val:.2f}%"
+
+
+def _display_variant_label(label: str) -> str:
+    return label.replace(" + Rule 6", " + staged exits")
 
 
 def build_model_holdings(
@@ -341,7 +346,8 @@ def _render_json_variant_table(
         wn = v.get("rolling_5y_windows_count")
         win_str = f"{wr:.1f}% ({wc}/{wn})" if wr is not None and wc is not None else "—"
         lines.append(
-            f"| {label} | {currency_sym}{end_val:,.0f} | {_format_plain_pct(v.get('xirr_pct'))} | "
+            f"| {_display_variant_label(label)} | {currency_sym}{end_val:,.0f} | "
+            f"{_format_plain_pct(v.get('xirr_pct'))} | "
             f"{_format_plain_pct(v.get('twr_cagr_pct'))} | {v.get('max_drawdown_pct', 0.0):.1f}% | "
             f"{top_h} | {win_str} |"
         )
@@ -366,8 +372,7 @@ def _render_window_history_tables(
     lines.append(f"### {heading}")
     lines.append("")
     lines.append(
-        "| Window | Signal Data | Top 3 (Standard Equal Split) | "
-        "Top 1 (Aggressive) | Ranks 4–10 (Rule 6 Watchlist) |"
+        "| Window | Signal Data | Top 3 (Standard Equal Split) | Top 1 (Aggressive) | Ranks 4–10 |"
     )
     lines.append("| :--- | :--- | :--- | :--- | :--- |")
     for win_m, sig_m, ranks in rev[:12]:
@@ -500,7 +505,7 @@ def _render_hero_and_takeaways(
         "- **Monthly DCA vs. Lump Sum:** `$100/mo` and `£500/mo` produce identical `%` portfolio "
         "weights and annualized returns (only totals scale). Dropping a `$10,000` lump sum on "
         "Day 1 locks `100x` a monthly buy into Month 1's Top 3 — shrinking Effective N to "
-        "`1.1–2.8` unless phased in or rotated by **Rule 6**."
+        "`1.1–2.8` unless phased in or rotated through staged exits."
     )
     lines.append("")
 
@@ -602,46 +607,94 @@ def _render_option_guide(
             m = variants[lbl].metrics
             verdict = "Recommended core rule" if lbl == "Standard (Top 3)" else "Optional variant"
             lines.append(
-                f"| **{lbl}** | ${m.ending_value * scale:,.0f} | {_format_plain_pct(m.xirr_pct)} "
-                f"| {m.max_drawdown_pct:.1f}% | {verdict} |"
+                f"| **{_display_variant_label(lbl)}** | ${m.ending_value * scale:,.0f} | "
+                f"{_format_plain_pct(m.xirr_pct)} | {m.max_drawdown_pct:.1f}% | {verdict} |"
             )
         lines.append("")
 
-    lines.append(
-        "- **How many stocks per month (`Top 3` vs `Top 5` vs `Top 10`)?** **Top 3** captures "
-        "most of `Top 1`'s upside without single-stock lottery risk. **Top 5 (`Balanced`)** or "
-        "**Top 10 (`Cautious`)** spreads buys wider at lower return. See `Balanced (Top 5)` and "
-        "all variants in Deep Dive 1."
-    )
-    lines.append(
-        "- **Should you use Rule 6 (6/7/8-year faded-winner trim)?** Optional for pure monthly "
-        "DCA, **essential if starting with a large Day-1 lump sum**: once a stock stays outside "
-        "the Top 10 for 6/7/8 years, Rule 6 trims 1/3 -> 1/2 -> all and recycles proceeds into "
-        "fresh leaders (pausing immediately if it re-enters the Top 10)."
-    )
-    lines.append("")
-
 
 def _render_how_it_works(lines: list[str]) -> None:
-    lines.append("## How It Works (5 Minutes a Month)")
+    lines.append("## How the strategy works")
     lines.append("")
     lines.append(
-        "1. **Pick one universe:** Either **All World (UK ISA)** *(best all-rounder)* or "
-        "**US S&P 500** *(20y survivorship-aware baseline)*."
+        "The strategy ranks one universe of shares each month. The most thoroughly tested "
+        "universe is the US S&P 500, where a month's list contains the companies that were "
+        "index members at that time, including those later removed or delisted. The FTSE 100 "
+        "and All World runs apply the same steps to their own pools. Recent listings enter "
+        "the ranking once they have enough price history to measure the three-year return."
+    )
+    lines.append("")
+    lines.append(
+        "Rankings use data through the end of the previous completed month. Shares are "
+        "sorted by 3-year total return with dividends included, and any share trading below "
+        "its price of three months ago drops out. On the first trading day of the new month, "
+        "that month's deposit is split into three equal fractional buys across the top-ranked "
+        "names, and names already held are simply bought again."
+    )
+    lines.append("")
+    lines.append(
+        "Winners are held through their declines, and a falling price alone never triggers a "
+        "sale. When a holding is bought out in a takeover, the cash is recycled into the next "
+        "month's buys."
+    )
+    lines.append("")
+    lines.append(
+        "An optional staged exit exists for faded winners. Once a holding has spent six "
+        "years outside the top ten, one third of the position is sold. At seven years "
+        "outside, half of what remains goes, and at eight years the rest follows. A return "
+        "to the top ten stops the exit and resets the clock, and every sale from it is "
+        "recycled into that month's buys."
+    )
+    lines.append("")
+    lines.append("See the [full rules and setup notes](docs/rules.md).")
+    lines.append("")
+    lines.append("## Why the other approaches fell short")
+    lines.append("")
+    lines.append(
+        "The comparisons below draw on the historical backtests. The US, UK, and "
+        "international results are collected in [docs/research.md](docs/research.md)."
+    )
+    lines.append("")
+    lines.append(
+        "- **A single winner.** The purest form of the idea bought only the top-ranked share "
+        "each month. It delivered the highest annualized return among the buy-and-hold "
+        "variants in the 20-year US study while at times placing more than half the portfolio "
+        "in one share. Its worst fall reached −76%. The three-way split kept most of that upside "
+        "with much less riding on one company."
     )
     lines.append(
-        "2. **Read this month's Top 3:** Ranked automatically after month-end by "
-        "**3-year total return (incl. dividends)**, discarding any stock down over the last "
-        "3 months."
+        "- **Wider splits across five or ten names.** These were tested to spread each "
+        "month's money more thinly. They reduced single-share concentration and gave up "
+        "return along the way. The ten-name version trailed the index tracker in three of "
+        "the eleven rolling ten-year US windows, and the three-name version trailed in "
+        "none."
     )
     lines.append(
-        "3. **Buy equally on the 1st trading day:** Split that month's contribution into three "
-        "equal fractional buys (even if you already own those stocks)."
+        "- **Tight and deep stops.** Stop-losses triggered by 8% and 10% falls, tested even "
+        "with a five-day pause before acting, and exits that sold half or all of a holding "
+        "after a 50% fall were both rejected. The eventual multi-baggers that drive "
+        "long-run results sit through brutal interim falls (`NVDA` fell −85% after its 2008 "
+        "purchase, `AMD` −96%, and `NFLX` −82%). The stop-losses sold future winners "
+        "during those declines and reduced returns."
     )
     lines.append(
-        "4. **Hold without stop-losses:** Every stop-loss rule tested destroyed returns by shaking "
-        "out future multi-baggers (`NVDA` fell −85% after 2008). Only trim via **Rule 6** after "
-        "6–8 years outside the Top 10."
+        "- **Early and scheduled laggard exits.** Hard exits after four years or less, and "
+        "staged versions starting at four years, were tested as ways to free cash from "
+        "faded names. Most individual sales did move cash into stronger replacements, yet "
+        "a meaningful minority sold sleeping giants mid-plateau. Apple, Amazon, Alphabet, "
+        "and Broadcom each went on to multiply six-fold or more after such a sale, and "
+        "once Nvidia was excluded both four-year exit approaches trailed simple holding "
+        "in the three-stock portfolio."
+    )
+    lines.append(
+        "- **The later staged exit.** Delaying the trims to six, seven, and eight years "
+        "outside the top ten produced the one exit that sometimes helped. The longer wait "
+        "spared names like Amazon and Broadcom while still freeing cash from genuinely "
+        "faded names, and it slightly lifted the three-stock portfolio even with Nvidia "
+        "excluded. Results stayed mixed across the wider variants and other markets, so it "
+        "remains optional. A day-one lump sum concentrates heavily into the first month's "
+        "three names. Staged exits can gradually reduce exposure to those first picks "
+        "when they fall out of the rankings."
     )
     lines.append("")
 
@@ -788,7 +841,7 @@ def _render_latest_picks_section(
     lines.append("<details>")
     lines.append(
         f"<summary>Full US S&amp;P 500 Top 10 for {latest_window} "
-        "(Cautious Variant &amp; Rule 6 Watchlist)</summary>"
+        "(Top 10 Variant and Staged Exit Watchlist)</summary>"
     )
     lines.append("")
     lines.append(
@@ -864,7 +917,7 @@ def _render_deep_dive_sections(
         )
     lines.append(
         "| [`assets/performance*.png`](assets/performance.png) | "
-        "**Variant comparison:** Top 1 / Top 3 / Rule 6 / Top 5 / Top 10 TWR curves + drawdowns |"
+        "Returns and drawdowns for Top 1, Top 3, Top 5, Top 10, and the staged exit variant |"
     )
     if us_alloc_std is not None:
         lines.append(
@@ -978,7 +1031,8 @@ def _render_deep_dive_sections(
             else "—"
         )
         lines.append(
-            f"| {name} | £{m.ending_value:,.0f} | {_format_plain_pct(m.xirr_pct)} | "
+            f"| {_display_variant_label(name)} | £{m.ending_value:,.0f} | "
+            f"{_format_plain_pct(m.xirr_pct)} | "
             f"{_format_plain_pct(m.twr_cagr_pct)} | {m.max_drawdown_pct:.1f}% | "
             f"{top_h} | {win_str} |"
         )
@@ -1057,29 +1111,34 @@ def _render_deep_dive_sections(
             Rule6ActionType.RESET_TOP10.value,
         }
     ]
-    lines.append("### US Model Portfolio & Rule 6 Faded-Winner Status")
+    lines.append("### US Model Portfolio and Staged Exits")
     lines.append("")
     lines.append(
-        f"- **Active model positions (Standard Top 3 + Rule 6):** `{len(active_holdings)}` "
+        f"- **Active model positions (Top 3 with staged exits)** · `{len(active_holdings)}` "
         "([`data/model_holdings.csv`](data/model_holdings.csv))."
     )
     if actionable_r6:
         for rec in actionable_r6:
-            lines.append(
-                f"- **Rule 6 Signal ({rec['ticker']}):** `{rec['action']}` — {rec['message']}"
-            )
+            message = rec["message"].replace("stop Rule 6 selling", "pause staged exits")
+            lines.append(f"- **{rec['ticker']}** · {message}")
     else:
-        lines.append("- **Rule 6 Exit Signals this month:** None triggered.")
+        lines.append("- No staged exit signals this month.")
 
     sorted_out = sorted(rule6_recs, key=lambda r: int(r["months_out_of_top10"]), reverse=True)[:5]
     if sorted_out:
         lines.append("")
-        lines.append("| Ticker | Company | Months Out of Top 10 | Status | Next Rule 6 Check |")
+        status_labels = {
+            HoldingStatus.HOLDING.value: "Holding",
+            HoldingStatus.RULE6_STAGE1_SOLD.value: "First trim completed",
+            HoldingStatus.RULE6_STAGE2_SOLD.value: "Second trim completed",
+        }
+        lines.append("| Ticker | Company | Months Out of Top 10 | Status | Next Exit Check |")
         lines.append("| :--- | :--- | :---: | :--- | :---: |")
         for rec in sorted_out:
             lines.append(
                 f"| {rec['ticker']} | {rec['name']} | {rec['months_out_of_top10']}m | "
-                f"`{rec['status']}` | {rec['next_milestone_month'] or '—'} |"
+                f"{status_labels.get(rec['status'], rec['status'])} | "
+                f"{rec['next_milestone_month'] or '—'} |"
             )
     lines.append("")
 
@@ -1336,7 +1395,7 @@ def _render_deep_dive_sections(
         lines.append(
             "- **Day-1 lump sums reshape portfolio concentration:** Starting with `$10,000` "
             "(or `£10,000`) invests `100x` a monthly tranche into Month 1's Top 3 and holds "
-            "those early winners unless Rule 6 trims stagnant names."
+            "those early winners unless staged exits trim them."
         )
         lines.append(
             "- **Rebased TWR Index vs. Lump Sum:** Variant charts plot the **rebased TWR index** "
@@ -1356,9 +1415,9 @@ def _render_deep_dive_sections(
         schedule_rows: tuple[tuple[str, str], ...] = (
             ("dca_100", "Pure DCA (100/mo)"),
             ("lump_10k_dca_100", "Lump 10k + 100/mo"),
-            ("lump_10k_dca_100_r6", "Lump 10k + 100/mo + Rule 6"),
+            ("lump_10k_dca_100_r6", "Lump 10k + 100/mo + staged exits"),
             ("lump_10k_only", "Pure Lump 10k (0/mo)"),
-            ("lump_10k_only_r6", "Pure Lump 10k + Rule 6"),
+            ("lump_10k_only_r6", "Pure Lump 10k + staged exits"),
         )
         market_specs: tuple[tuple[str, str, str], ...] = (
             ("sp500", "US S&P 500", "$"),

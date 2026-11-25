@@ -434,5 +434,7 @@ def test_end_to_end_acwi_uk_flagging_and_all_market_charts(tmp_path: Path) -> No
     assert "assets/performance_acwi_uk_accessible.png" in readme_text
     assert "assets/performance_acwi.png" in readme_text
     assert "assets/performance_ftse100.png" in readme_text
+    assert "Standard (Top 3 + staged exits)" in readme_text
+    assert "Rule 6" not in readme_text
     assert "Flagged Global Winners Outside UK Retail ISAs" in readme_text
     assert "2330.TW" in readme_text

@@ -1,6 +1,6 @@
 # Monthly Momentum
 
-A simple, rule-based investing system: on the 1st of each month, buy equal amounts of the **top 3 performing shares over the past 3 years** (skipping any that fell over the last 3 months) from a major index or UK-ISA-accessible global universe, then hold without stop-losses.
+On the first trading day of each month, buy equal amounts of the **top 3 performing shares over the past 3 years** (skipping any that fell over the last 3 months) from a major index or UK-ISA-accessible global universe, then hold without stop-losses.
 
 This repository automatically refreshes market data every month via GitHub Actions, publishes this month's stock picks below, and runs a 20-year survivorship-aware US backtest plus All-World (iShares MSCI ACWI) and UK FTSE 100 tracking offline in [`uv`](https://docs.astral.sh/uv/) Python.
 
@@ -30,7 +30,7 @@ For monthly alerts, choose **Watch → Custom → Releases** on GitHub.
 - **The edge (`$100/month`):** Over the shared 9-year global window, `$100/mo` grew to **$44,025** (29.8%/yr) in **All World (UK ISA)** vs **$22,416** (15.6%/yr) in an S&P 500 tracker (**2.0x**) and **$19,959** (13.2%/yr) in an MSCI ACWI ETF. Over the full survivorship-aware **20-year US stress test** ($25,000 put in), Top 3 reached **$373,874** (21.9%/yr) vs **$121,970** (13.4%/yr) in the S&P 500 (**3.1x**).
 - **Why it works:** Buying current winners and holding without stop-losses lets rare multi-baggers (`AAPL`, `NVDA`, `AMD`, `ARGX.BR`, `GAW.L`) compound uncapped, while small equal monthly buys keep individual losers immaterial.
 - **The catch:** Expect stomach-churning drops (**-47%** to **-66%** peak-to-trough), heavy top-5 concentration (**71%–77%** of portfolio value), and multi-year lagging spells (e.g. 2022–2023 drawdowns, or 2009–2018 outside the US). Best run as a **minority satellite slice (e.g., 10–25%)** inside a tax-free Stocks & Shares ISA alongside a core tracker.
-- **Monthly DCA vs. Lump Sum:** `$100/mo` and `£500/mo` produce identical `%` portfolio weights and annualized returns (only totals scale). Dropping a `$10,000` lump sum on Day 1 locks `100x` a monthly buy into Month 1's Top 3 — shrinking Effective N to `1.1–2.8` unless phased in or rotated by **Rule 6**.
+- **Monthly DCA vs. Lump Sum:** `$100/mo` and `£500/mo` produce identical `%` portfolio weights and annualized returns (only totals scale). Dropping a `$10,000` lump sum on Day 1 locks `100x` a monthly buy into Month 1's Top 3 — shrinking Effective N to `1.1–2.8` unless phased in or rotated through staged exits.
 
 ## Which Option Is Best?
 
@@ -43,15 +43,27 @@ For monthly alerts, choose **Watch → Custom → Releases** on GitHub.
 
 > **Why did `All World (UK ISA)` look so much higher than `US S&P 500` in raw headline tables?** Different start years. Over the exact same 9-year window (`2017-11–2026-11`), All World UK ISA (`$44,025`) and US S&P 500 (`$45,536`) delivered nearly identical returns — while the 20-year US figure (`21.9%`) includes the 2008 financial crash and 2010s grind. All World (UK ISA) edges ahead practically by spreading across Europe & Canada with shallower drawdowns.
 
-- **How many stocks per month (`Top 3` vs `Top 5` vs `Top 10`)?** **Top 3** captures most of `Top 1`'s upside without single-stock lottery risk. **Top 5 (`Balanced`)** or **Top 10 (`Cautious`)** spreads buys wider at lower return. See `Balanced (Top 5)` and all variants in Deep Dive 1.
-- **Should you use Rule 6 (6/7/8-year faded-winner trim)?** Optional for pure monthly DCA, **essential if starting with a large Day-1 lump sum**: once a stock stays outside the Top 10 for 6/7/8 years, Rule 6 trims 1/3 -> 1/2 -> all and recycles proceeds into fresh leaders (pausing immediately if it re-enters the Top 10).
+## How the strategy works
 
-## How It Works (5 Minutes a Month)
+The strategy ranks one universe of shares each month. The most thoroughly tested universe is the US S&P 500, where a month's list contains the companies that were index members at that time, including those later removed or delisted. The FTSE 100 and All World runs apply the same steps to their own pools. Recent listings enter the ranking once they have enough price history to measure the three-year return.
 
-1. **Pick one universe:** Either **All World (UK ISA)** *(best all-rounder)* or **US S&P 500** *(20y survivorship-aware baseline)*.
-2. **Read this month's Top 3:** Ranked automatically after month-end by **3-year total return (incl. dividends)**, discarding any stock down over the last 3 months.
-3. **Buy equally on the 1st trading day:** Split that month's contribution into three equal fractional buys (even if you already own those stocks).
-4. **Hold without stop-losses:** Every stop-loss rule tested destroyed returns by shaking out future multi-baggers (`NVDA` fell −85% after 2008). Only trim via **Rule 6** after 6–8 years outside the Top 10.
+Rankings use data through the end of the previous completed month. Shares are sorted by 3-year total return with dividends included, and any share trading below its price of three months ago drops out. On the first trading day of the new month, that month's deposit is split into three equal fractional buys across the top-ranked names, and names already held are simply bought again.
+
+Winners are held through their declines, and a falling price alone never triggers a sale. When a holding is bought out in a takeover, the cash is recycled into the next month's buys.
+
+An optional staged exit exists for faded winners. Once a holding has spent six years outside the top ten, one third of the position is sold. At seven years outside, half of what remains goes, and at eight years the rest follows. A return to the top ten stops the exit and resets the clock, and every sale from it is recycled into that month's buys.
+
+See the [full rules and setup notes](docs/rules.md).
+
+## Why the other approaches fell short
+
+The comparisons below draw on the historical backtests. The US, UK, and international results are collected in [docs/research.md](docs/research.md).
+
+- **A single winner.** The purest form of the idea bought only the top-ranked share each month. It delivered the highest annualized return among the buy-and-hold variants in the 20-year US study while at times placing more than half the portfolio in one share. Its worst fall reached −76%. The three-way split kept most of that upside with much less riding on one company.
+- **Wider splits across five or ten names.** These were tested to spread each month's money more thinly. They reduced single-share concentration and gave up return along the way. The ten-name version trailed the index tracker in three of the eleven rolling ten-year US windows, and the three-name version trailed in none.
+- **Tight and deep stops.** Stop-losses triggered by 8% and 10% falls, tested even with a five-day pause before acting, and exits that sold half or all of a holding after a 50% fall were both rejected. The eventual multi-baggers that drive long-run results sit through brutal interim falls (`NVDA` fell −85% after its 2008 purchase, `AMD` −96%, and `NFLX` −82%). The stop-losses sold future winners during those declines and reduced returns.
+- **Early and scheduled laggard exits.** Hard exits after four years or less, and staged versions starting at four years, were tested as ways to free cash from faded names. Most individual sales did move cash into stronger replacements, yet a meaningful minority sold sleeping giants mid-plateau. Apple, Amazon, Alphabet, and Broadcom each went on to multiply six-fold or more after such a sale, and once Nvidia was excluded both four-year exit approaches trailed simple holding in the three-stock portfolio.
+- **The later staged exit.** Delaying the trims to six, seven, and eight years outside the top ten produced the one exit that sometimes helped. The longer wait spared names like Amazon and Broadcom while still freeing cash from genuinely faded names, and it slightly lifted the three-stock portfolio even with Nvidia excluded. Results stayed mixed across the wider variants and other markets, so it remains optional. A day-one lump sum concentrates heavily into the first month's three names. Staged exits can gradually reduce exposure to those first picks when they fall out of the rankings.
 
 ## Latest pick details
 
@@ -98,7 +110,7 @@ Computed deterministically from completed data through **2026-10**. Split this m
 - **Aggressive (Top 1):** **LITE** · **Balanced (Top 5):** **LITE**, **MU**, **CVNA**, **PLTR**, **ECHO** *(Top 1 historically saw drawdowns up to −76%)*.
 
 <details>
-<summary>Full US S&amp;P 500 Top 10 for 2026-11 (Cautious Variant &amp; Rule 6 Watchlist)</summary>
+<summary>Full US S&amp;P 500 Top 10 for 2026-11 (Top 10 Variant and Staged Exit Watchlist)</summary>
 
 | Rank | Ticker | Company | Sector | 3Y Total Return | 3M Price Return | Top 3 Buy |
 | :---: | :--- | :--- | :--- | :---: | :---: | :---: |
@@ -124,7 +136,7 @@ Computed deterministically from completed data through **2026-10**. Split this m
 | [`assets/hero_vs_sp500.png`](assets/hero_vs_sp500.png) | **The big picture:** how much `$100/mo` grows to vs. S&P 500 & ACWI trackers |
 | [`assets/performance_vs_benchmark.png`](assets/performance_vs_benchmark.png) | How far each Top 3 strategy finished ahead of or behind its own benchmark |
 | [`assets/performance_markets_comparison.png`](assets/performance_markets_comparison.png) | **Head-to-head markets:** US, All World UK ISA, Full ACWI & UK FTSE 100 since 2017 |
-| [`assets/performance*.png`](assets/performance.png) | **Variant comparison:** Top 1 / Top 3 / Rule 6 / Top 5 / Top 10 TWR curves + drawdowns |
+| [`assets/performance*.png`](assets/performance.png) | Returns and drawdowns for Top 1, Top 3, Top 5, Top 10, and the staged exit variant |
 | [`assets/allocation_*.png`](assets/allocation_sp500.png) | **What you end up owning:** how portfolio `%` weights concentrate over time |
 | [`assets/funding_comparison_sp500.png`](assets/funding_comparison_sp500.png) | **DCA vs. Lump Sum:** why dropping `$10k` on Day 1 concentrates holdings far more |
 
@@ -152,11 +164,11 @@ Monthly £500 DCA simulation across **251** windows (**2006-01** to **2026-11**,
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Aggressive (Top 1) | £2,230,104 | 23.27% | 20.47% | -66.9% | NVDA (40.1%) | 99.0% (189/191) |
 | Standard (Top 3) | £1,869,372 | 21.94% | 19.77% | -66.0% | NVDA (33.7%) | 100.0% (191/191) |
-| Standard (Top 3 + Rule 6) | £2,036,495 | 22.58% | 20.22% | -66.0% | NVDA (42.2%) | 100.0% (191/191) |
+| Standard (Top 3 + staged exits) | £2,036,495 | 22.58% | 20.22% | -66.0% | NVDA (42.2%) | 100.0% (191/191) |
 | Balanced (Top 5) | £1,553,120 | 20.54% | 17.13% | -64.8% | NVDA (34.4%) | 94.2% (180/191) |
-| Balanced (Top 5 + Rule 6) | £1,498,362 | 20.27% | 16.87% | -64.8% | NVDA (37.9%) | 94.2% (180/191) |
+| Balanced (Top 5 + staged exits) | £1,498,362 | 20.27% | 16.87% | -64.8% | NVDA (37.9%) | 94.2% (180/191) |
 | Cautious (Top 10) | £1,236,131 | 18.81% | 15.76% | -63.9% | NVDA (36.3%) | 86.4% (165/191) |
-| Cautious (Top 10 + Rule 6) | £1,194,711 | 18.55% | 15.53% | -63.9% | NVDA (35.0%) | 84.3% (161/191) |
+| Cautious (Top 10 + staged exits) | £1,194,711 | 18.55% | 15.53% | -63.9% | NVDA (35.0%) | 84.3% (161/191) |
 | *Standard (Top 3) — excl. NVDA* | £1,263,288 | 18.97% | 17.51% | -65.3% | AAPL (39.9%) | 97.9% (187/191) |
 | *Cautious (Top 10) — excl. NVDA* | £806,439 | 15.55% | 13.31% | -62.6% | AAPL (24.1%) | 79.1% (151/191) |
 | *Standard (Top 3) — excl. NVDA/AMD/AVGO* | £1,083,922 | 17.81% | 16.63% | -65.3% | AAPL (46.6%) | 94.2% (180/191) |
@@ -172,18 +184,18 @@ Monthly £500 DCA simulation across **251** windows (**2006-01** to **2026-11**,
 | Financial Crisis Era (2007–2012) (2007-01..2012-12) | 19.41% | 16.33% | 12.85% | 9.02% | 7.71% |
 | Recent Decade (2016–Latest) (2016-01..2026-11) | 44.82% | 37.76% | 33.33% | 28.24% | 15.37% |
 
-### US Model Portfolio & Rule 6 Faded-Winner Status
+### US Model Portfolio and Staged Exits
 
-- **Active model positions (Standard Top 3 + Rule 6):** `71` ([`data/model_holdings.csv`](data/model_holdings.csv)).
-- **Rule 6 Exit Signals this month:** None triggered.
+- **Active model positions (Top 3 with staged exits)** · `71` ([`data/model_holdings.csv`](data/model_holdings.csv)).
+- No staged exit signals this month.
 
-| Ticker | Company | Months Out of Top 10 | Status | Next Rule 6 Check |
+| Ticker | Company | Months Out of Top 10 | Status | Next Exit Check |
 | :--- | :--- | :---: | :--- | :---: |
-| CME | CME Group | 94m | `rule6_stage2_sold` | 2027-01 |
-| NKTR | NKTR | 92m | `rule6_stage2_sold` | 2027-03 |
-| CSX | CSX Corporation | 88m | `rule6_stage2_sold` | 2027-07 |
-| TTWO | Take-Two Interactive | 85m | `rule6_stage2_sold` | 2027-10 |
-| BA | Boeing | 85m | `rule6_stage2_sold` | 2027-10 |
+| CME | CME Group | 94m | Second trim completed | 2027-01 |
+| NKTR | NKTR | 92m | Second trim completed | 2027-03 |
+| CSX | CSX Corporation | 88m | Second trim completed | 2027-07 |
+| TTWO | Take-Two Interactive | 85m | Second trim completed | 2027-10 |
+| BA | Boeing | 85m | Second trim completed | 2027-10 |
 
 ### US S&P 500 — Latest 12 Monthly Windows
 
@@ -474,16 +486,16 @@ Built from **iShares MSCI ACWI ETF** holdings (`2140` global equities converted 
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Aggressive (Top 1) | $302,596 | 36.56% | 32.13% | -50.9% | NVDA (55.0%) | 100.0% (49/49) |
 | Standard (Top 3) | $220,124 | 29.82% | 29.45% | -47.4% | NVDA (30.7%) | 100.0% (49/49) |
-| Standard (Top 3 + Rule 6) | $220,028 | 29.81% | 29.44% | -47.4% | NVDA (30.8%) | 100.0% (49/49) |
+| Standard (Top 3 + staged exits) | $220,028 | 29.81% | 29.44% | -47.4% | NVDA (30.8%) | 100.0% (49/49) |
 | Balanced (Top 5) | $200,382 | 27.84% | 26.73% | -47.9% | NVDA (26.3%) | 100.0% (49/49) |
-| Balanced (Top 5 + Rule 6) | $199,359 | 27.73% | 26.66% | -47.9% | NVDA (26.6%) | 100.0% (49/49) |
+| Balanced (Top 5 + staged exits) | $199,359 | 27.73% | 26.66% | -47.9% | NVDA (26.6%) | 100.0% (49/49) |
 | Cautious (Top 10) | $165,213 | 23.79% | 23.05% | -45.8% | NVDA (16.2%) | 100.0% (49/49) |
-| Cautious (Top 10 + Rule 6) | $165,805 | 23.86% | 23.11% | -45.8% | NVDA (16.4%) | 100.0% (49/49) |
+| Cautious (Top 10 + staged exits) | $165,805 | 23.86% | 23.11% | -45.8% | NVDA (16.4%) | 100.0% (49/49) |
 | iShares MSCI ACWI ETF (`ACWI`) | $99,797 | 13.19% | 11.29% | -25.7% | Cap-weighted | Baseline |
 
 ### All World (UK-Accessible) — Latest 12 Monthly Windows
 
-| Window | Signal Data | Top 3 (Standard Equal Split) | Top 1 (Aggressive) | Ranks 4–10 (Rule 6 Watchlist) |
+| Window | Signal Data | Top 3 (Standard Equal Split) | Top 1 (Aggressive) | Ranks 4–10 |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-11 | 2026-10 | **LITE** (+2044%), **MU** (+1236%), **CVNA** (+1165%) | LITE | PLTR, NTRA, RVMD, ECHO, DELL, LUG.TO, CRWD |
 | 2026-10 | 2026-09 | **LITE** (+2050%), **PLTR** (+1069%), **HOOD** (+1047%) | LITE | NTRA, DELL, CDE, RVMD, RR.L, BMPS.MI, LUG.TO |
@@ -623,11 +635,11 @@ Built from **iShares MSCI ACWI ETF** holdings (`2140` global equities converted 
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Aggressive (Top 1) | $187,428 | 26.43% | 21.23% | -42.6% | NVDA (28.6%) | 100.0% (49/49) |
 | Standard (Top 3) | $194,707 | 27.23% | 23.73% | -40.7% | NVDA (33.2%) | 100.0% (49/49) |
-| Standard (Top 3 + Rule 6) | $194,518 | 27.21% | 23.72% | -40.7% | NVDA (33.3%) | 100.0% (49/49) |
+| Standard (Top 3 + staged exits) | $194,518 | 27.21% | 23.72% | -40.7% | NVDA (33.3%) | 100.0% (49/49) |
 | Balanced (Top 5) | $187,395 | 26.43% | 23.12% | -34.4% | NVDA (20.7%) | 100.0% (49/49) |
-| Balanced (Top 5 + Rule 6) | $186,879 | 26.37% | 23.09% | -34.4% | NVDA (20.8%) | 100.0% (49/49) |
+| Balanced (Top 5 + staged exits) | $186,879 | 26.37% | 23.09% | -34.4% | NVDA (20.8%) | 100.0% (49/49) |
 | Cautious (Top 10) | $167,863 | 24.12% | 21.88% | -32.7% | NVDA (11.7%) | 100.0% (49/49) |
-| Cautious (Top 10 + Rule 6) | $165,187 | 23.78% | 21.67% | -32.7% | NVDA (11.9%) | 100.0% (49/49) |
+| Cautious (Top 10 + staged exits) | $165,187 | 23.78% | 21.67% | -32.7% | NVDA (11.9%) | 100.0% (49/49) |
 | iShares MSCI ACWI ETF (`ACWI`) | $99,797 | 13.19% | 11.29% | -25.7% | Cap-weighted | Baseline |
 
 | Rank | Ticker | Company | Location | Exchange | 3Y Return (USD) | 3M Return (USD) | UK ISA Accessible |
@@ -661,11 +673,11 @@ Evaluated across `100` FTSE 100 constituents (`56` eligible in 2026-11, `0.50%` 
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Aggressive (Top 1) | £102,801 | 14.16% | 15.47% | -48.8% | GAW.L (49.8%) | 79.2% (38/48) |
 | Standard (Top 3) | £91,694 | 11.71% | 11.41% | -38.4% | GAW.L (21.6%) | 75.0% (36/48) |
-| Standard (Top 3 + Rule 6) | £91,650 | 11.70% | 11.41% | -38.4% | GAW.L (21.6%) | 75.0% (36/48) |
+| Standard (Top 3 + staged exits) | £91,650 | 11.70% | 11.41% | -38.4% | GAW.L (21.6%) | 75.0% (36/48) |
 | Balanced (Top 5) | £88,487 | 10.95% | 9.91% | -33.5% | GAW.L (13.6%) | 68.8% (33/48) |
-| Balanced (Top 5 + Rule 6) | £88,595 | 10.98% | 9.93% | -33.5% | BGEO.L (13.8%) | 68.8% (33/48) |
+| Balanced (Top 5 + staged exits) | £88,595 | 10.98% | 9.93% | -33.5% | BGEO.L (13.8%) | 68.8% (33/48) |
 | Cautious (Top 10) | £87,536 | 10.72% | 9.61% | -31.0% | PCT.L (7.7%) | 66.7% (32/48) |
-| Cautious (Top 10 + Rule 6) | £87,547 | 10.72% | 9.62% | -31.0% | PCT.L (7.7%) | 68.8% (33/48) |
+| Cautious (Top 10 + staged exits) | £87,547 | 10.72% | 9.62% | -31.0% | PCT.L (7.7%) | 68.8% (33/48) |
 | FTSE 100 TR ETF (`ISF.L`) | £74,967 | 7.39% | 4.17% | -28.3% | Cap-weighted | Baseline |
 
 ### FTSE 100 Top 10 (2026-11)
@@ -685,7 +697,7 @@ Evaluated across `100` FTSE 100 constituents (`56` eligible in 2026-11, `0.50%` 
 
 ### UK FTSE 100 — Latest 12 Monthly Windows
 
-| Window | Signal Data | Top 3 (Standard Equal Split) | Top 1 (Aggressive) | Ranks 4–10 (Rule 6 Watchlist) |
+| Window | Signal Data | Top 3 (Standard Equal Split) | Top 1 (Aggressive) | Ranks 4–10 |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-11 | 2026-10 | **BGEO.L** (+262%), **PCT.L** (+203%), **SMT.L** (+148%) | BGEO.L | NXT.L, IHG.L, EDV.L, SDLF.L, BT-A.L, HSX.L, TSCO.L |
 | 2026-10 | 2026-09 | **RR.L** (+562%), **BGEO.L** (+290%), **STAN.L** (+204%) | RR.L | NWG.L, BBY.L, EDV.L, DPLM.L, BAB.L, HSBA.L, CCC.L |
@@ -844,7 +856,7 @@ Because each month buys the current Top 3 and holds previous winners, early comp
 <summary>Deep Dive 5 — Funding Schedule Impact: Monthly DCA ($100/mo) vs. Day-1 Lump Sum ($10,000)</summary>
 
 - **Monthly DCA is scale-invariant in percentage terms:** Investing `$100/mo` vs `£500/mo` produces the exact same monthly `%` portfolio weights, XIRR, and TWR CAGR (totals scale `5x`).
-- **Day-1 lump sums reshape portfolio concentration:** Starting with `$10,000` (or `£10,000`) invests `100x` a monthly tranche into Month 1's Top 3 and holds those early winners unless Rule 6 trims stagnant names.
+- **Day-1 lump sums reshape portfolio concentration:** Starting with `$10,000` (or `£10,000`) invests `100x` a monthly tranche into Month 1's Top 3 and holds those early winners unless staged exits trim them.
 - **Rebased TWR Index vs. Lump Sum:** Variant charts plot the **rebased TWR index** (`start = 10,000`) of the monthly DCA portfolio rather than a Day-1 lump-sum account.
 
 ![Funding Schedule Portfolio Comparison](assets/funding_comparison_sp500.png)
@@ -853,24 +865,24 @@ Because each month buys the current Top 3 and holds previous winners, early comp
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
 | US S&P 500 | Pure DCA (100/mo) | $25,000 | $373,874 | 21.94% | -66.0% | 111 | 5.1 | **NVDA** (33.7%) |
 | US S&P 500 | Lump 10k + 100/mo | $35,000 | $947,677 | 21.61% | -65.3% | 111 | 2.1 | **AAPL** (66.9%) |
-| US S&P 500 | Lump 10k + 100/mo + Rule 6 | $35,000 | $1,109,634 | 22.62% | -65.3% | 65 | 4.1 | **NVDA** (40.3%) |
+| US S&P 500 | Lump 10k + 100/mo + staged exits | $35,000 | $1,109,634 | 22.62% | -65.3% | 65 | 4.1 | **NVDA** (40.3%) |
 | US S&P 500 | Pure Lump 10k (0/mo) | $10,000 | $573,803 | 21.46% | -65.1% | 7 | 1.1 | **AAPL** (93.0%) |
-| US S&P 500 | Pure Lump 10k + Rule 6 | $10,000 | $702,335 | 22.64% | -65.1% | 40 | 3.8 | **NVDA** (39.2%) |
+| US S&P 500 | Pure Lump 10k + staged exits | $10,000 | $702,335 | 22.64% | -65.1% | 40 | 3.8 | **NVDA** (39.2%) |
 | All World (UK ISA) | Pure DCA (100/mo) | $10,800 | $44,025 | 29.82% | -47.4% | 73 | 6.8 | **NVDA** (30.7%) |
 | All World (UK ISA) | Lump 10k + 100/mo | $20,800 | $202,636 | 34.80% | -54.1% | 73 | 1.9 | **NVDA** (72.6%) |
-| All World (UK ISA) | Lump 10k + 100/mo + Rule 6 | $20,800 | $210,134 | 35.39% | -54.1% | 71 | 1.9 | **NVDA** (72.0%) |
+| All World (UK ISA) | Lump 10k + 100/mo + staged exits | $20,800 | $210,134 | 35.39% | -54.1% | 71 | 1.9 | **NVDA** (72.0%) |
 | All World (UK ISA) | Pure Lump 10k (0/mo) | $10,000 | $158,611 | 35.95% | -56.2% | 3 | 1.4 | **NVDA** (84.2%) |
-| All World (UK ISA) | Pure Lump 10k + Rule 6 | $10,000 | $166,129 | 36.65% | -56.2% | 10 | 1.4 | **NVDA** (82.9%) |
+| All World (UK ISA) | Pure Lump 10k + staged exits | $10,000 | $166,129 | 36.65% | -56.2% | 10 | 1.4 | **NVDA** (82.9%) |
 | All World (Full ACWI) | Pure DCA (100/mo) | $10,800 | $38,941 | 27.23% | -40.7% | 77 | 7.0 | **NVDA** (33.2%) |
 | All World (Full ACWI) | Lump 10k + 100/mo | $20,800 | $197,552 | 34.38% | -51.7% | 77 | 1.8 | **NVDA** (74.2%) |
-| All World (Full ACWI) | Lump 10k + 100/mo + Rule 6 | $20,800 | $210,603 | 35.43% | -51.7% | 71 | 2.0 | **NVDA** (69.6%) |
+| All World (Full ACWI) | Lump 10k + 100/mo + staged exits | $20,800 | $210,603 | 35.43% | -51.7% | 71 | 2.0 | **NVDA** (69.6%) |
 | All World (Full ACWI) | Pure Lump 10k (0/mo) | $10,000 | $158,611 | 35.95% | -56.2% | 3 | 1.4 | **NVDA** (84.2%) |
-| All World (Full ACWI) | Pure Lump 10k + Rule 6 | $10,000 | $171,700 | 37.15% | -56.2% | 9 | 1.6 | **NVDA** (77.8%) |
+| All World (Full ACWI) | Pure Lump 10k + staged exits | $10,000 | $171,700 | 37.15% | -56.2% | 9 | 1.6 | **NVDA** (77.8%) |
 | UK FTSE 100 | Pure DCA (100/mo) | £10,700 | £18,339 | 11.71% | -38.4% | 43 | 9.5 | **GAW.L** (21.6%) |
 | UK FTSE 100 | Lump 10k + 100/mo | £20,700 | £53,420 | 14.24% | -43.2% | 43 | 2.8 | **GAW.L** (57.6%) |
-| UK FTSE 100 | Lump 10k + 100/mo + Rule 6 | £20,700 | £53,411 | 14.24% | -43.2% | 42 | 2.8 | **GAW.L** (57.6%) |
+| UK FTSE 100 | Lump 10k + 100/mo + staged exits | £20,700 | £53,411 | 14.24% | -43.2% | 42 | 2.8 | **GAW.L** (57.6%) |
 | UK FTSE 100 | Pure Lump 10k (0/mo) | £10,000 | £35,081 | 15.12% | -44.6% | 3 | 1.6 | **GAW.L** (76.4%) |
-| UK FTSE 100 | Pure Lump 10k + Rule 6 | £10,000 | £35,081 | 15.12% | -44.6% | 3 | 1.6 | **GAW.L** (76.4%) |
+| UK FTSE 100 | Pure Lump 10k + staged exits | £10,000 | £35,081 | 15.12% | -44.6% | 3 | 1.6 | **GAW.L** (76.4%) |
 
 </details>
 
@@ -899,7 +911,7 @@ uv run monthly-momentum rank path/to/screener.csv --month 2026-11 --output data/
 # Apply buys & top-10 tracking to your personal holdings sheet
 uv run monthly-momentum run --use-public --contribution 500 --apply
 
-# Check Rule 6 status across personal holdings
+# Check staged exits across personal holdings
 uv run monthly-momentum holdings check --ranking data/rankings/latest.csv
 ```
 
@@ -915,10 +927,10 @@ uv run monthly-momentum refresh --with-global
 # Rebuild all rankings, model holdings, charts, and README offline from data/:
 uv run monthly-momentum report
 
-# Compare Top 1, Top 3, Top 5, Top 10 (+/- Rule 6) on committed 20-year public data:
+# Compare Top 1, Top 3, Top 5, and Top 10, with and without staged exits
 uv run monthly-momentum compare --signal-mode next_month
 
-# Simulate $100/mo DCA vs Day-1 $10,000 lump sum + $100/mo (+ Rule 6):
+# Simulate a $10,000 lump sum plus $100/month with staged exits
 uv run monthly-momentum backtest --variant standard --signal-mode next_month --contribution 100 --lump-sum 10000 --rule6
 
 # Test sensitivity without Nvidia (or any comma-separated tickers):

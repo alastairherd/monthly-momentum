@@ -417,7 +417,7 @@ def generate_performance_chart(
     if top5_growth:
         _plot_curve(top5_growth, SERIES_COLORS["top5"], "Top 5", lw=1.9, ls="-", zorder=4)
     _plot_curve(
-        top3_r6_growth, SERIES_COLORS["top3_r6"], "Top 3 + Rule 6", lw=1.6, ls="-.", zorder=5
+        top3_r6_growth, SERIES_COLORS["top3_r6"], "Top 3 + staged exits", lw=1.6, ls="-.", zorder=5
     )
     _plot_curve(
         top3_growth, SERIES_COLORS["top3"], "Top 3 (Standard)", lw=2.5, ls="-", zorder=6, bold=1
@@ -491,11 +491,11 @@ def generate_performance_chart(
 
     if y_bot_min <= -62.0:
         ax_bot.axhline(-60.0, color="#9F3A26", linewidth=0.85, linestyle="--", alpha=0.55, zorder=1)
-        x_rule8 = float(dates_num[min(len(dates_num) - 1, max(0, len(dates_num) // 3))])
+        x_threshold = float(dates_num[min(len(dates_num) - 1, max(0, len(dates_num) // 3))])
         ax_bot.text(
-            x_rule8,
+            x_threshold,
             -62.5,
-            "Rule 8 pain threshold (-60% to -75%)",
+            "Drawdown tolerance (-60% to -75%)",
             fontsize=7.8,
             color="#9F3A26",
             va="top",

@@ -45,8 +45,8 @@ Each month you need:
 - **The current index list**, plus each member's **3-year and 3-month returns**. Free screeners provide this:
   - **Finviz:** Has an index filter for membership in a major stock exchange index (such as Dow Jones Industrial or S&P 500) and provides *Performance: 3-Year, 5-Year, and 10-Year*. That is price-only, which is close enough for ranking.
   - **Market Chameleon:** Screener includes dividends, offering a **3 Month Total Return** (including dividends paid) and a **3-Year Total Return**.
-- **Monthly ranking process:** Sort by 3-year return, drop anything with a negative 3-month return, and take the **top 3**. Also note the **top 10** for Rule 6. See [../templates/monthly-ranking.example.csv](../templates/monthly-ranking.example.csv).
-- **Your own records:** A simple sheet listing each holding, when you first bought it, and the last month it appeared in the top 10. Only Rule 6 needs the last column. See [../templates/holdings.example.csv](../templates/holdings.example.csv).
+- **Monthly ranking process:** Sort by 3-year return, drop anything with a negative 3-month return, and take the **top 3**. Track the **top 10** if using staged exits. See [../templates/monthly-ranking.example.csv](../templates/monthly-ranking.example.csv).
+- **Your own records:** A simple sheet listing each holding and when you first bought it. For staged exits, also record the last month each holding appeared in the top 10. See [../templates/holdings.example.csv](../templates/holdings.example.csv).
 
 ## Simplifications vs. the Backtest
 

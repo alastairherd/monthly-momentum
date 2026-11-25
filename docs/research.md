@@ -54,7 +54,7 @@ Top 3–5 delivers most of the concentration upside with materially less single-
 | Hold forever (with / without NVDA) | 23.4 / 19.5 | 21.6 / 18.0 | 19.5 / 16.9 | 17.7 / 15.0 |
 | Sell all at 4 yrs out of Top 10 | 31.8 / 14.8 | 26.8 / 13.9 | 23.1 / 13.1 | 19.2 / 12.7 |
 | Staged 4 / 5 / 6 yrs | 28.0 / 20.0 | 24.7 / 17.0 | 21.3 / 15.1 | 18.4 / 13.7 |
-| **Staged 6 / 7 / 8 yrs (Rule 6)** | **26.4 / 22.0** | **22.6 / 18.4** | **19.9 / 16.6** | **17.9 / 14.9** |
+| **Staged exits at 6 / 7 / 8 years** | **26.4 / 22.0** | **22.6 / 18.4** | **19.9 / 16.6** | **17.9 / 14.9** |
 
 - **Why 4-year exits fail without Nvidia:** Although ~70% of individual 4-year sales moved cash into higher-returning replacements, the remaining ~30% sold "sleeping giants" during multi-year plateaus (**Apple** Oct 2016 went on to `10.8×`, **Amazon** Nov 2015 `7.5×`, **Alphabet** Jan 2012 `19×`, **Broadcom** Jan 2022 `6.5×`). Without Nvidia (`77` replacement buys), the 4-year rule trailed plain holding (`$173k` vs `$198k` in Top 10).
 - **Why 6 / 7 / 8-year staging works:** Giants like Apple stayed outside the Top 10 for six years (`2012–2018`) before compounding `5.7×`. Delaying trims to years **6** (`1/3`), **7** (`1/2` remaining), and **8** (remainder) spared Amazon and Broadcom, improving returns slightly for Top 1–3 even without Nvidia (`18.4%` vs `18.0%` in Top 3), while stopping sales if the holding returns to the Top 10.
@@ -63,7 +63,7 @@ Top 3–5 delivers most of the concentration upside with materially less single-
 
 Testing `£100`/month across international equity sets (including `0.5%` UK stamp duty on FTSE purchases; note non-US datasets lack delisted failures, so equal-split within the same dataset serves as the survivorship-matched baseline):
 
-- **UK FTSE 100:** Winners beat the equal-split baseline in all three tested windows (`2010–2018`: Top 3 `23.1%` vs `11.5%`; `2015–Mar 2020`: Top 3 `1.7%` vs `0.7%`; `2022–2026`: Top 3 `26.6%` vs `15.7%` FTSE tracker). Rule 6 / 4-year exits barely triggered in the UK due to a smaller index.
+- **UK FTSE 100:** Winners beat the equal-split baseline in all three tested windows (`2010–2018`: Top 3 `23.1%` vs `11.5%`; `2015–Mar 2020`: Top 3 `1.7%` vs `0.7%`; `2022–2026`: Top 3 `26.6%` vs `15.7%` FTSE tracker). Staged exits and four-year exits rarely triggered in the smaller UK index.
 - **2022–2026 Europe (with dividends):** Top 10 beat the equal-split baseline in all `6` tested markets (Germany, Italy, Spain, France, Sweden, Switzerland). Dividends added `~4%`/yr to the baseline and `~5%`/yr to winners (energy, banks, utilities).
 - **2009–2018 Global Bear-Rebound Decade:** Top 10 won in Canada and Norway, roughly matched in China, and **lost** in Japan, South Korea (`8.2%` vs `12.2%`), Australia, Turkey, Vietnam, and both US NYSE/Nasdaq samples (`9.8%` vs `15.0%`). Momentum systematically struggled after the 2009 crash and in Japan/Korea.
 - **Payoff Asymmetry Across 16 Markets:** Buying and holding builds 100–200 positions so losses are bounded (`−9%` average money shortfall when trailing), while big winning runs add `+16%` average surplus (overall median `+1%`, mean `+2%` across all 16 markets when including 2009–2018).

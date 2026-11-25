@@ -134,6 +134,10 @@ def test_rebuild_public_reports_and_idempotency(tmp_path: Path) -> None:
     assert "**Last updated:** 2026-01-02 (UTC)." in readme_text
     assert "| US S&P 500 | 2026-01 | **AAA**, **BBB**, **CCC** |" in readme_text
     assert "## Latest pick details" in readme_text
+    assert "## How the strategy works" in readme_text
+    assert "## Why the other approaches fell short" in readme_text
+    assert "Standard (Top 3 + staged exits)" in readme_text
+    assert "Rule 6" not in readme_text
     assert "Balanced (Top 5)" in readme_text
     assert "assets/hero_vs_sp500.png" in readme_text
     assert "assets/performance.png" in readme_text
