@@ -5,6 +5,7 @@ from __future__ import annotations
 from collections.abc import Mapping, Sequence
 from dataclasses import dataclass, field
 from datetime import date
+from typing import Any
 
 from monthly_momentum.backtest.data import BacktestDataset, CorporateEvent, PricePoint
 from monthly_momentum.backtest.metrics import BacktestMetrics, compute_backtest_metrics
@@ -63,6 +64,7 @@ class MonthlyBacktestPoint:
     rule6_sells: list[str]
     takeovers: list[str]
     fees_paid_month: float
+    holdings_weights: dict[str, float] = field(default_factory=dict)
 
 
 @dataclass(slots=True)
@@ -225,6 +227,30 @@ def _process_corporate_events(
         count += 1
 
     return takeover_now, takeover_next, notes, count
+
+
+def _compute_portfolio_weights(
+    dataset: BacktestDataset,
+    positions: Mapping[str, _Position],
+    total_value: float,
+    signal_month: str,
+) -> dict[str, float]:
+    if total_value <= 0.0:
+        return {}
+    raw_vals: dict[str, float] = {}
+    eq_total = 0.0
+    for pos in positions.values():
+        val = pos.units * _mark_price(dataset, pos, signal_month)
+        if val > 0.0:
+            raw_vals[pos.ticker] = val
+            eq_total += val
+    weights: dict[str, float] = {
+        t: round((v / total_value) * 100.0, 4) for t, v in raw_vals.items()
+    }
+    rem_cash = total_value - eq_total
+    if rem_cash > 0.0 and (rem_cash / total_value) >= 0.0005:
+        weights["CASH"] = round((rem_cash / total_value) * 100.0, 4)
+    return weights
 
 
 def _mark_price(dataset: BacktestDataset, pos: _Position, month: str) -> float:
@@ -471,6 +497,9 @@ def run_backtest(
             bench_val = benchmark_units * bench_pt.adj_close + benchmark_cash
 
         if is_final_signal_only:
+            weights_final = _compute_portfolio_weights(
+                dataset, positions, pre_deposit_value, signal_month
+            )
             if pre_deposit_value > 0.0 and positions:
                 top_pos_w = max(
                     (pos.units * _mark_price(dataset, pos, signal_month) / pre_deposit_value)
@@ -495,6 +524,7 @@ def run_backtest(
                     rule6_sells=rule6_sells,
                     takeovers=tk_notes,
                     fees_paid_month=round(fees_this_month, 2),
+                    holdings_weights=weights_final,
                 )
             )
             nav_dates.append(signal_dt)
@@ -581,6 +611,7 @@ def run_backtest(
         if bench_nav_val is not None:
             bench_nav_values.append(bench_nav_val)
 
+        weights_month = _compute_portfolio_weights(dataset, positions, post_buy_value, signal_month)
         points.append(
             MonthlyBacktestPoint(
                 signal_month=signal_month,
@@ -598,6 +629,7 @@ def run_backtest(
                 rule6_sells=rule6_sells,
                 takeovers=tk_notes,
                 fees_paid_month=round(fees_this_month, 2),
+                holdings_weights=weights_month,
             )
         )
 
@@ -761,3 +793,134 @@ def run_subperiod_summary(
             )
         )
     return rows
+
+
+def summarize_portfolio_allocations(result: BacktestResult, top_k: int = 8) -> dict[str, Any]:
+    """Summarize monthly stock weight composition and concentration stats for a backtest run."""
+    if not result.points:
+        raise ValueError("Cannot summarize allocations for an empty backtest result.")
+
+    names: dict[str, str] = {}
+    first_bought: dict[str, str] = {}
+    for rec in result.final_holdings:
+        tk = rec.get("ticker", "")
+        if tk:
+            if rec.get("name"):
+                names[tk] = rec["name"]
+            if rec.get("first_bought_date"):
+                first_bought[tk] = rec["first_bought_date"]
+    for r_res in result.rankings_by_window:
+        for item in r_res.ranked:
+            if item.ticker not in names and item.name:
+                names[item.ticker] = item.name
+
+    cumulative_w: dict[str, float] = {}
+    for pt in result.points:
+        for tk, w in pt.holdings_weights.items():
+            if tk != "CASH" and w > 0.0:
+                cumulative_w[tk] = cumulative_w.get(tk, 0.0) + w
+
+    final_raw = {
+        tk: w for tk, w in result.points[-1].holdings_weights.items() if tk != "CASH" and w > 0.0
+    }
+    by_final = sorted(
+        final_raw,
+        key=lambda t: (final_raw[t], cumulative_w.get(t, 0.0)),
+        reverse=True,
+    )
+    selected: list[str] = list(by_final[: min(5, top_k)])
+    if len(selected) < top_k:
+        by_cum = sorted(
+            [t for t in cumulative_w if t not in selected],
+            key=lambda t: cumulative_w[t],
+            reverse=True,
+        )
+        selected.extend(by_cum[: top_k - len(selected)])
+
+    selected.sort(
+        key=lambda t: (final_raw.get(t, 0.0), cumulative_w.get(t, 0.0), t),
+        reverse=True,
+    )
+
+    series_points: list[dict[str, Any]] = []
+    peak_top1 = 0.0
+    for pt in result.points:
+        active_vals = sorted(
+            [w for tk, w in pt.holdings_weights.items() if tk != "CASH" and w > 0.0],
+            reverse=True,
+        )
+        top1_pct = active_vals[0] if active_vals else 0.0
+        top5_pct = sum(active_vals[:5])
+        top10_pct = sum(active_vals[:10])
+        peak_top1 = max(peak_top1, top1_pct)
+        hhi = sum((w / 100.0) ** 2 for w in active_vals)
+        effective_n = (1.0 / hhi) if hhi > 0.0 else 0.0
+
+        sel_weights: dict[str, float] = {}
+        sel_sum = 0.0
+        for tk in selected:
+            val = round(pt.holdings_weights.get(tk, 0.0), 2)
+            sel_weights[tk] = val
+            sel_sum += val
+        sel_weights["OTHER"] = round(max(0.0, 100.0 - sel_sum), 2)
+
+        series_points.append(
+            {
+                "w": pt.window_month,
+                "d": pt.dt.isoformat(),
+                "n_holdings": len(active_vals),
+                "top1_pct": round(top1_pct, 2),
+                "top5_pct": round(top5_pct, 2),
+                "top10_pct": round(top10_pct, 2),
+                "effective_n": round(effective_n, 2),
+                "weights": sel_weights,
+            }
+        )
+
+    final_top10 = [
+        {
+            "ticker": tk,
+            "name": names.get(tk, tk),
+            "weight_pct": round(final_raw[tk], 2),
+            "first_bought_date": first_bought.get(tk, ""),
+        }
+        for tk in by_final[:10]
+    ]
+    last_sp = series_points[-1]
+    return {
+        "variant_label": result.label,
+        "start_window": result.points[0].window_month,
+        "latest_window": result.points[-1].window_month,
+        "selected_tickers": selected,
+        "names": {tk: names.get(tk, tk) for tk in selected},
+        "final_holdings_count": last_sp["n_holdings"],
+        "final_top1_ticker": final_top10[0]["ticker"] if final_top10 else "",
+        "final_top1_pct": last_sp["top1_pct"],
+        "final_top5_pct": last_sp["top5_pct"],
+        "final_top10_pct": last_sp["top10_pct"],
+        "peak_top1_pct": round(peak_top1, 2),
+        "final_effective_n": last_sp["effective_n"],
+        "final_top10": final_top10,
+        "points": series_points,
+    }
+
+
+ALLOCATION_VARIANT_LABELS: tuple[str, ...] = (
+    "Aggressive (Top 1)",
+    "Standard (Top 3)",
+    "Standard (Top 3 + Rule 6)",
+    "Balanced (Top 5)",
+    "Cautious (Top 10)",
+)
+
+
+def build_variants_allocation_payload(
+    variants: Mapping[str, BacktestResult],
+    top_k: int = 8,
+) -> dict[str, Any]:
+    """Build compact JSON-serializable allocation histories across key strategy variants."""
+    return {
+        label: summarize_portfolio_allocations(variants[label], top_k=top_k)
+        for label in ALLOCATION_VARIANT_LABELS
+        if label in variants
+    }

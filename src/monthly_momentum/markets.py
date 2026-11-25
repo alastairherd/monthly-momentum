@@ -23,8 +23,13 @@ from monthly_momentum.backtest.data import (
     PricePoint,
     load_backtest_dataset,
 )
-from monthly_momentum.backtest.engine import BacktestConfig, BacktestResult, compare_variants
-from monthly_momentum.chart import generate_performance_chart
+from monthly_momentum.backtest.engine import (
+    BacktestConfig,
+    BacktestResult,
+    build_variants_allocation_payload,
+    compare_variants,
+)
+from monthly_momentum.chart import generate_allocation_chart, generate_performance_chart
 from monthly_momentum.holdings import write_holdings_csv
 from monthly_momentum.live import (
     DEFAULT_USER_AGENT,
@@ -796,6 +801,36 @@ def _build_acwi_subsection(
     uk_top10 = _serialize_ranking_rows(uk_latest_r, acwi_by_ticker, limit=10)
     flagged_in_top15 = [row for row in all_top15 if not row["uk_accessible"]]
 
+    acwi_all_alloc = build_variants_allocation_payload(all_variants)
+    acwi_uk_alloc = build_variants_allocation_payload(uk_variants)
+
+    generate_allocation_chart(
+        acwi_all_alloc["Standard (Top 3)"],
+        root_dir / "assets" / "allocation_acwi.png",
+        title="Full iShares MSCI ACWI portfolio composition over time",
+        subtitle=(
+            f"Monthly % weights across held equities (Top 3 Standard · "
+            f"{all_std.points[0].window_month} to {all_std.points[-1].window_month}, USD)"
+        ),
+        footer_note=(
+            "Source: iShares MSCI ACWI holdings & Yahoo Finance (USD-converted). "
+            "Weights marked after each month's equal-split buys. Not financial advice."
+        ),
+    )
+    generate_allocation_chart(
+        acwi_uk_alloc["Standard (Top 3)"],
+        root_dir / "assets" / "allocation_acwi_uk_accessible.png",
+        title="All World (UK ISA) portfolio composition over time",
+        subtitle=(
+            f"Monthly % weights across UK-ISA-accessible ACWI equities (Top 3 Standard · "
+            f"{uk_std.points[0].window_month} to {uk_std.points[-1].window_month}, USD)"
+        ),
+        footer_note=(
+            "Source: iShares ACWI filtered to UK ISA exchanges & Yahoo Finance. "
+            "Weights marked after each month's equal-split buys. Not financial advice."
+        ),
+    )
+
     return {
         "acwi_all": {
             "latest_window": all_std.points[-1].window_month,
@@ -869,6 +904,8 @@ def _build_acwi_subsection(
         },
         "_variants_uk": uk_variants,
         "_top10_uk": uk_top10,
+        "_alloc_all": acwi_all_alloc,
+        "_alloc_uk": acwi_uk_alloc,
     }
 
 
@@ -1146,6 +1183,27 @@ def build_global_reports(
     summary_path = global_dir / "summary.json"
     summary_path.parent.mkdir(parents=True, exist_ok=True)
     summary_path.write_text(json.dumps(summary_payload, indent=2) + "\n", encoding="utf-8")
+
+    ftse_alloc = build_variants_allocation_payload(ftse_variants)
+    generate_allocation_chart(
+        ftse_alloc["Standard (Top 3)"],
+        root_dir / "assets" / "allocation_ftse100.png",
+        title="UK FTSE 100 portfolio composition over time",
+        subtitle=(
+            f"Monthly % weights across held FTSE 100 equities (Top 3 Standard · "
+            f"{ftse_std.points[0].window_month} to {ftse_std.points[-1].window_month}, GBP)"
+        ),
+        footer_note=(
+            "Source: Wikipedia FTSE 100 & Yahoo Finance (reinvested dividends, "
+            "0.50% UK stamp duty). Not financial advice."
+        ),
+    )
+    alloc_payload: dict[str, Any] = {"ftse100": ftse_alloc}
+    if acwi_bundle is not None:
+        alloc_payload["acwi_uk_accessible"] = acwi_bundle["_alloc_uk"]
+        alloc_payload["acwi_all"] = acwi_bundle["_alloc_all"]
+    alloc_path = global_dir / "allocation_summary.json"
+    alloc_path.write_text(json.dumps(alloc_payload, separators=(",", ":")) + "\n", encoding="utf-8")
 
     return GlobalReportSummary(
         ftse_latest_window=ftse_std.points[-1].window_month,

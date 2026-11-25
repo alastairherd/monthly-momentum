@@ -52,6 +52,18 @@ BENCH_COMP_STYLES: list[tuple[str, str, float]] = [
     ("#8D939E", "--", 1.3),
 ]
 
+ALLOCATION_PALETTE: tuple[str, ...] = (
+    "#0F5C6E",  # Deep petrol teal
+    "#2B4590",  # Editorial cobalt
+    "#C45D18",  # Burnt amber
+    "#2E6F40",  # Forest sage
+    "#7A3E65",  # Muted plum
+    "#C28B22",  # Ochre gold
+    "#3C8C9E",  # Slate cyan
+    "#8F3A32",  # Terracotta rust
+)
+OTHER_BAND_COLOR = "#D6D3C9"
+
 MACRO_EVENTS: tuple[tuple[date, str], ...] = (
     (date(2008, 9, 1), "2008\nGFC"),
     (date(2020, 3, 1), "Covid\n2020"),
@@ -749,6 +761,160 @@ def generate_markets_comparison_chart(
     )
     _draw_top_rule_and_headers(fig, title, subtitle, footer_note, left=0.07)
     fig.subplots_adjust(left=0.07, right=0.78, top=0.825, bottom=0.08)
+    fig.savefig(output_path, dpi=180, facecolor=PAPER_BG)
+    plt.close(fig)
+    return output_path
+
+
+def generate_allocation_chart(
+    allocation_summary: dict[str, Any],
+    output_path: Path,
+    *,
+    title: str,
+    subtitle: str,
+    footer_note: str,
+) -> Path:
+    """Render a broadsheet 100% stacked-area portfolio composition + concentration PNG."""
+    series_pts = allocation_summary.get("points") or []
+    if not series_pts:
+        raise ValueError("Cannot render allocation chart from empty points.")
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    selected: list[str] = list(allocation_summary.get("selected_tickers") or [])
+    stack_keys = [*selected, "OTHER"]
+
+    dates = [date.fromisoformat(str(pt["d"])) for pt in series_pts]
+    dates_num: Any = mdates.date2num(dates)
+    stacks: list[list[float]] = [
+        [float(pt["weights"].get(k, 0.0)) for pt in series_pts] for k in stack_keys
+    ]
+    colors: list[str] = [
+        ALLOCATION_PALETTE[idx % len(ALLOCATION_PALETTE)] for idx in range(len(selected))
+    ] + [OTHER_BAND_COLOR]
+
+    fig = plt.figure(figsize=(11.8, 7.5), dpi=180, facecolor=PAPER_BG)
+    gs = fig.add_gridspec(2, 1, height_ratios=[2.1, 1.0], hspace=0.28)
+    ax_top = fig.add_subplot(gs[0])
+    ax_bot = fig.add_subplot(gs[1], sharex=ax_top)
+
+    _style_editorial_axis(ax_top, show_bottom=False)
+    _style_editorial_axis(ax_bot, show_bottom=True)
+
+    ax_top.stackplot(
+        dates_num,
+        *stacks,
+        colors=colors,
+        alpha=0.90,
+        edgecolor=PAPER_BG,
+        linewidth=0.6,
+        zorder=2,
+    )
+    ax_top.set_ylim(0.0, 100.0)
+    ax_top.yaxis.set_major_locator(mticker.MultipleLocator(25))
+    ax_top.yaxis.set_major_formatter(mticker.FormatStrFormatter("%.0f%%"))
+    ax_top.set_xlim(float(dates_num[0]), float(dates_num[-1]))
+
+    ax_top.text(
+        0.0,
+        1.03,
+        "Portfolio weight by holding (% of market value, sums to 100%)",
+        transform=ax_top.transAxes,
+        ha="left",
+        va="bottom",
+        fontsize=9.3,
+        fontweight="bold",
+        color=INK_SUB,
+    )
+    _draw_event_markers(ax_top, dates, label_y_frac=0.96)
+
+    # Direct labels anchored at each band's final vertical midpoint
+    last_w = series_pts[-1]["weights"]
+    end_holdings = int(allocation_summary.get("final_holdings_count", series_pts[-1]["n_holdings"]))
+    cum = 0.0
+    area_labels: list[tuple[float, str, str, int]] = []
+    labeled_nonzero = 0
+    for idx, key in enumerate(stack_keys):
+        val = float(last_w.get(key, 0.0))
+        mid = cum + val / 2.0
+        cum += val
+        if key == "OTHER":
+            other_cnt = max(0, end_holdings - labeled_nonzero)
+            lbl_txt = (
+                f"Other ({other_cnt} stocks)  {val:.1f}%" if other_cnt > 0 else f"Other  {val:.1f}%"
+            )
+            if val >= 0.3:
+                area_labels.append((mid, lbl_txt, INK_SUB, 0))
+        else:
+            if val > 0.0:
+                labeled_nonzero += 1
+            peak_val = max(stacks[idx])
+            if val >= 1.2 or peak_val >= 8.0:
+                val_txt = f"{val:.1f}%" if val >= 1.0 else "<1%"
+                area_labels.append(
+                    (
+                        mid,
+                        f"{key}  {val_txt}",
+                        ALLOCATION_PALETTE[idx % len(ALLOCATION_PALETTE)],
+                        1 if val >= 5.0 else 0,
+                    )
+                )
+
+    _place_direct_labels(ax_top, area_labels, min_gap=0.095, x_text_axes=1.018, font_size=8.4)
+
+    # Bottom panel: Top 1, Top 5, Top 10 concentration lines over time
+    top1_s = [float(pt["top1_pct"]) for pt in series_pts]
+    top5_s = [float(pt["top5_pct"]) for pt in series_pts]
+    top10_s = [float(pt["top10_pct"]) for pt in series_pts]
+
+    last_x = float(dates_num[-1])
+    ax_bot.axhline(0.0, color=INK_DARK, linewidth=1.1, zorder=2)
+    ax_bot.fill_between(dates_num, top1_s, 0.0, color=SERIES_COLORS["top3"], alpha=0.11, zorder=1)
+    ax_bot.plot(dates_num, top10_s, color=SERIES_COLORS["bench"], linewidth=1.4, ls="--", zorder=2)
+    ax_bot.plot(dates_num, top5_s, color=SERIES_COLORS["top5"], linewidth=1.9, zorder=3)
+    ax_bot.plot(dates_num, top1_s, color=SERIES_COLORS["top3"], linewidth=2.2, zorder=4)
+
+    for vals, col, ms in (
+        (top10_s, SERIES_COLORS["bench"], 3.2),
+        (top5_s, SERIES_COLORS["top5"], 3.6),
+        (top1_s, SERIES_COLORS["top3"], 4.0),
+    ):
+        ax_bot.plot([last_x], [vals[-1]], marker="o", markersize=ms, color=col, zorder=5)
+
+    ax_bot.set_ylim(0.0, 105.0)
+    ax_bot.yaxis.set_major_locator(mticker.MultipleLocator(25))
+    ax_bot.yaxis.set_major_formatter(mticker.FormatStrFormatter("%.0f%%"))
+
+    start_n = int(series_pts[0]["n_holdings"])
+    eff_n = float(allocation_summary.get("final_effective_n", series_pts[-1]["effective_n"]))
+    top1_tk = str(allocation_summary.get("final_top1_ticker") or "")
+    top1_lbl = f"Top 1 ({top1_tk})  {top1_s[-1]:.1f}%" if top1_tk else f"Top 1  {top1_s[-1]:.1f}%"
+
+    ax_bot.text(
+        0.0,
+        1.04,
+        f"Concentration over time (%) · Holdings grew {start_n} → {end_holdings} "
+        f"(Effective N = {eff_n:.1f})",
+        transform=ax_bot.transAxes,
+        ha="left",
+        va="bottom",
+        fontsize=9.3,
+        fontweight="bold",
+        color=INK_SUB,
+    )
+
+    conc_labels: list[tuple[float, str, str, int]] = [
+        (top10_s[-1], f"Top 10 combined  {top10_s[-1]:.1f}%", SERIES_COLORS["bench"], 0),
+        (top5_s[-1], f"Top 5 combined  {top5_s[-1]:.1f}%", SERIES_COLORS["top5"], 1),
+        (top1_s[-1], top1_lbl, SERIES_COLORS["top3"], 1),
+    ]
+    _place_direct_labels(ax_bot, conc_labels, min_gap=0.18, x_text_axes=1.018, font_size=8.3)
+
+    ax_bot.xaxis_date()
+    ax_bot.xaxis.set_major_locator(mdates.AutoDateLocator(minticks=6, maxticks=11))
+    ax_bot.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m"))
+
+    _draw_top_rule_and_headers(fig, title, subtitle, footer_note, left=0.075)
+    fig.subplots_adjust(left=0.075, right=0.77, top=0.825, bottom=0.085)
     fig.savefig(output_path, dpi=180, facecolor=PAPER_BG)
     plt.close(fig)
     return output_path

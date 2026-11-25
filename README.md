@@ -477,6 +477,25 @@ Evaluated across `100` FTSE 100 constituents (`56` eligible in 2026-11, GBP with
 
 </details>
 
+## Portfolio Composition & Concentration Over Time (Standard Top 3)
+
+Because each month buys the current Top 3 and holds previous winners, early compounding leaders naturally swell into concentrated weights before later winners join the portfolio.
+
+| Universe | Active Stocks | Largest Holding | Top 5 Combined | Top 10 Combined | Effective N | Top 3 Portfolio Weights Today |
+| :--- | :---: | :---: | :---: | :---: | :---: | :--- |
+| US S&P 500 (20y) | 111 | **NVDA** (33.7%) | 76.7% | 86.2% | 5.1 | **NVDA** (33.7%), **AAPL** (27.0%), **AMD** (5.7%) |
+| All World — UK-Accessible ACWI | 73 | **NVDA** (30.7%) | 71.4% | 78.9% | 6.8 | **NVDA** (30.7%), **ARGX.BR** (15.4%), **AMD** (14.7%) |
+| All World — Full ACWI | 77 | **NVDA** (33.2%) | 64.5% | 75.9% | 7.0 | **NVDA** (33.2%), **PRIO3.SA** (12.3%), **ARGX.BR** (8.1%) |
+| UK FTSE 100 | 43 | **GAW.L** (21.6%) | 62.2% | 75.7% | 9.5 | **GAW.L** (21.6%), **BGEO.L** (17.3%), **RR.L** (12.6%) |
+
+![US S&P 500 Portfolio Allocation Over Time](assets/allocation_sp500.png)
+
+![All World UK-Accessible Portfolio Allocation](assets/allocation_acwi_uk_accessible.png)
+
+![Full ACWI Portfolio Allocation](assets/allocation_acwi.png)
+
+![UK FTSE 100 Portfolio Allocation](assets/allocation_ftse100.png)
+
 ## US Model Portfolio & Rule 6 Faded-Winner Status
 
 - **Active model positions (Standard Top 3 + Rule 6):** `71` (tracked in [`data/model_holdings.csv`](data/model_holdings.csv)).

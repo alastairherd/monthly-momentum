@@ -9,7 +9,12 @@ from pathlib import Path
 import pytest
 
 from monthly_momentum.backtest.data import load_backtest_dataset
-from monthly_momentum.backtest.engine import BacktestConfig, compare_variants, run_backtest
+from monthly_momentum.backtest.engine import (
+    BacktestConfig,
+    compare_variants,
+    run_backtest,
+    summarize_portfolio_allocations,
+)
 from monthly_momentum.backtest.metrics import compute_max_drawdown, compute_xirr
 from monthly_momentum.normalize import add_months
 
@@ -272,3 +277,13 @@ def test_backtest_triggers_rule6_exits_when_universe_exceeds_10(tmp_path: Path) 
         h for h in res.final_holdings if h["ticker"] == "LAGGARD" and h["status"] == "sold"
     ]
     assert len(sold_rows) == 1
+
+    # Portfolio weights sum to ~100% each month and allocation summary computes concentration stats.
+    assert res.points
+    for pt in res.points:
+        assert sum(pt.holdings_weights.values()) == pytest.approx(100.0, abs=0.2)
+    alloc = summarize_portfolio_allocations(res, top_k=5)
+    assert alloc["final_holdings_count"] >= 1
+    assert alloc["final_effective_n"] >= 1.0
+    assert alloc["final_top10"]
+    assert sum(alloc["points"][-1]["weights"].values()) == pytest.approx(100.0, abs=0.2)

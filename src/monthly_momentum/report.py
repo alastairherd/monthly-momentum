@@ -15,11 +15,13 @@ from monthly_momentum.backtest.engine import (
     BacktestConfig,
     BacktestResult,
     SubperiodRow,
+    build_variants_allocation_payload,
     compare_variants,
     run_backtest,
     run_subperiod_summary,
 )
 from monthly_momentum.chart import (
+    generate_allocation_chart,
     generate_markets_comparison_chart,
     generate_performance_chart,
 )
@@ -401,6 +403,8 @@ def _render_readme_block(
     has_comparison_chart: bool = False,
     ftse_history: list[tuple[str, str, list[RankedSecurity]]] | None = None,
     acwi_uk_history: list[tuple[str, str, list[RankedSecurity]]] | None = None,
+    us_alloc_std: dict[str, Any] | None = None,
+    global_alloc: dict[str, Any] | None = None,
 ) -> str:
     latest_window = summary["latest_window"]
     signal_month = summary["latest_signal_month"]
@@ -866,6 +870,59 @@ def _render_readme_block(
                 full_label="Full FTSE 100 Monthly Pick History",
             )
 
+    if us_alloc_std is not None:
+        lines.append("## Portfolio Composition & Concentration Over Time (Standard Top 3)")
+        lines.append("")
+        lines.append(
+            "Because each month buys the current Top 3 and holds previous winners, early "
+            "compounding leaders naturally swell into concentrated weights before later "
+            "winners join the portfolio."
+        )
+        lines.append("")
+        lines.append(
+            "| Universe | Active Stocks | Largest Holding | Top 5 Combined | "
+            "Top 10 Combined | Effective N | Top 3 Portfolio Weights Today |"
+        )
+        lines.append("| :--- | :---: | :---: | :---: | :---: | :---: | :--- |")
+
+        alloc_rows: list[tuple[str, dict[str, Any]]] = [("US S&P 500 (20y)", us_alloc_std)]
+        if global_alloc:
+            for key, lbl in (
+                ("acwi_uk_accessible", "All World — UK-Accessible ACWI"),
+                ("acwi_all", "All World — Full ACWI"),
+                ("ftse100", "UK FTSE 100"),
+            ):
+                blk = global_alloc.get(key, {}).get("Standard (Top 3)")
+                if blk:
+                    alloc_rows.append((lbl, blk))
+
+        for lbl, alloc in alloc_rows:
+            top3_w = ", ".join(
+                f"**{item['ticker']}** ({item['weight_pct']:.1f}%)"
+                for item in alloc.get("final_top10", [])[:3]
+            )
+            lines.append(
+                f"| {lbl} | {alloc['final_holdings_count']} | "
+                f"**{alloc['final_top1_ticker']}** ({alloc['final_top1_pct']:.1f}%) | "
+                f"{alloc['final_top5_pct']:.1f}% | {alloc['final_top10_pct']:.1f}% | "
+                f"{alloc['final_effective_n']:.1f} | {top3_w} |"
+            )
+        lines.append("")
+        lines.append("![US S&P 500 Portfolio Allocation Over Time](assets/allocation_sp500.png)")
+        lines.append("")
+        if global_alloc and global_alloc.get("acwi_uk_accessible"):
+            lines.append(
+                "![All World UK-Accessible Portfolio Allocation]"
+                "(assets/allocation_acwi_uk_accessible.png)"
+            )
+            lines.append("")
+        if global_alloc and global_alloc.get("acwi_all"):
+            lines.append("![Full ACWI Portfolio Allocation](assets/allocation_acwi.png)")
+            lines.append("")
+        if global_alloc and global_alloc.get("ftse100"):
+            lines.append("![UK FTSE 100 Portfolio Allocation](assets/allocation_ftse100.png)")
+            lines.append("")
+
     # Model Portfolio & Rule 6 Status
     active_holdings = [h for h in holdings if h.status in ACTIVE_STATUSES]
     actionable_r6 = [
@@ -1162,7 +1219,28 @@ def rebuild_public_reports(
     chart_path = root_dir / "assets" / "performance.png"
     generate_performance_chart(perf_rows, summary_payload, chart_path)
 
+    us_alloc_payload = build_variants_allocation_payload(variants)
+    (data_dir / "allocation_summary.json").write_text(
+        json.dumps(us_alloc_payload, separators=(",", ":")) + "\n",
+        encoding="utf-8",
+    )
+    us_alloc_std = us_alloc_payload["Standard (Top 3)"]
+    generate_allocation_chart(
+        us_alloc_std,
+        root_dir / "assets" / "allocation_sp500.png",
+        title="How a 20-year US momentum portfolio concentrates into mega-winners",
+        subtitle=(
+            f"Monthly % weights across held S&P 500 equities (Top 3 Standard · "
+            f"{std_res.points[0].window_month} to {latest_pt.window_month}, GBP)"
+        ),
+        footer_note=(
+            "Source: fja05680 S&P 500 membership, weib08 & Yahoo Finance (reinvested dividends). "
+            "Weights marked after each month's buys."
+        ),
+    )
+
     global_summary_dict: dict[str, Any] | None = None
+    global_alloc_dict: dict[str, Any] | None = None
     global_const = data_dir / "global" / "constituents.csv"
     global_prices = data_dir / "global" / "monthly_prices.csv"
     has_comparison_chart = False
@@ -1219,6 +1297,9 @@ def rebuild_public_reports(
         acwi_uk_history = _group_history_by_window(
             global_dir / "rankings" / "history_acwi_uk_accessible.csv"
         )
+        global_alloc_path = global_dir / "allocation_summary.json"
+        if global_alloc_path.exists():
+            global_alloc_dict = json.loads(global_alloc_path.read_text(encoding="utf-8"))
 
     readme_path = root_dir / "README.md"
     readme_block = _render_readme_block(
@@ -1234,6 +1315,8 @@ def rebuild_public_reports(
         has_comparison_chart=has_comparison_chart,
         ftse_history=ftse_history,
         acwi_uk_history=acwi_uk_history,
+        us_alloc_std=us_alloc_std,
+        global_alloc=global_alloc_dict,
     )
     _update_readme_file(readme_path, readme_block)
 
