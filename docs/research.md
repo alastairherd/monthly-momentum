@@ -1,5 +1,3 @@
-"""Empirical research findings, cross-market tests, and practical verdict."""
-
 # Monthly Index Momentum Research Notes
 
 Evidence summary supporting [rules.md](rules.md), compiled across 20-year survivorship-aware US testing, UK FTSE 100 analysis, 16 international equity markets, global currency-converted pools, and professional fund comparisons.

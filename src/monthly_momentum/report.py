@@ -400,10 +400,11 @@ def _render_readme_block(
         lines.append(
             "> **Historical Dataset Coverage:** Built from point-in-time S&P 500 membership "
             "(`fja05680/sp500` back to 1996 + live Wikipedia updates) and US stock price "
-            "histories (`weib08/Stocks-Daily-Price` spliced onto Yahoo Finance, covering ~740 "
-            "active and acquired/delisted S&P 500 tickers; note that OTC bankruptcy tickers such "
-            "as `LEHMQ`, `BSC`, `SIVB`, and `FRC` are absent from the free Hugging Face dataset). "
-            "See [docs/research.md](docs/research.md) for the full survivorship-free study."
+            "histories (`weib08/Stocks-Daily-Price` spliced onto Yahoo Finance, covering "
+            f"`{summary['priced_tickers_count']}` active and acquired/delisted S&P 500 tickers; "
+            "note that OTC bankruptcy tickers such as `LEHMQ`, `BSC`, `SIVB`, and `FRC` are "
+            "absent from the free Hugging Face dataset). See [docs/research.md](docs/research.md) "
+            "for the full survivorship-free study."
         )
     lines.append("")
 
@@ -730,6 +731,7 @@ def rebuild_public_reports(
         "fee_pct": fee_pct,
         "constituents_count": active_constituents_count,
         "historical_constituent_intervals": len(dataset.constituents),
+        "priced_tickers_count": len(dataset.prices),
         "latest_eligible_count": latest_pt.eligible_count,
         "top3_picks": [
             {

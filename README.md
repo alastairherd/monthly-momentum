@@ -59,7 +59,7 @@ Monthly £500 DCA simulation across **251** windows (**2006-01** to **2026-11**,
 | *Standard (Top 3) — excl. NVDA/AMD/AVGO* | £1,083,922 | 17.81% | 16.63% | -65.3% | AAPL (46.6%) | 94.2% (180/191) |
 | S&P 500 Total Return (`^SP500TR`) | £609,852 | 13.39% | 11.13% | -50.9% | Cap-weighted | Baseline |
 
-> **Historical Dataset Coverage:** Built from point-in-time S&P 500 membership (`fja05680/sp500` back to 1996 + live Wikipedia updates) and US stock price histories (`weib08/Stocks-Daily-Price` spliced onto Yahoo Finance, covering ~740 active and acquired/delisted S&P 500 tickers; note that OTC bankruptcy tickers such as `LEHMQ`, `BSC`, `SIVB`, and `FRC` are absent from the free Hugging Face dataset). See [docs/research.md](docs/research.md) for the full survivorship-free study.
+> **Historical Dataset Coverage:** Built from point-in-time S&P 500 membership (`fja05680/sp500` back to 1996 + live Wikipedia updates) and US stock price histories (`weib08/Stocks-Daily-Price` spliced onto Yahoo Finance, covering `663` active and acquired/delisted S&P 500 tickers; note that OTC bankruptcy tickers such as `LEHMQ`, `BSC`, `SIVB`, and `FRC` are absent from the free Hugging Face dataset). See [docs/research.md](docs/research.md) for the full survivorship-free study.
 
 ### Historical Sub-Period Breakdown (XIRR % / Year)
 

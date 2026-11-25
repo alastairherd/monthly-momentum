@@ -9,6 +9,7 @@
   "fee_pct": 0.15,
   "constituents_count": 503,
   "historical_constituent_intervals": 1269,
+  "priced_tickers_count": 663,
   "latest_eligible_count": 261,
   "top3_picks": [
     {
