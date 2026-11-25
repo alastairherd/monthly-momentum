@@ -710,18 +710,18 @@ def _build_acwi_subsection(
         perf_all_rows,
         all_chart_meta,
         root_dir / "assets" / "performance_acwi.png",
-        title="All World Momentum (Full iShares MSCI ACWI) vs ACWI ETF",
+        title="Full iShares MSCI ACWI momentum vs MSCI ACWI ETF",
         subtitle=(
             f"All World Full ACWI ({len(all_intervals)} priced equities, USD) · "
-            f"Windows {all_std.points[0].window_month} to {all_std.points[-1].window_month} "
-            f"(signal: {all_std.points[-1].signal_month}) · 3Y TR ranked, 3M >= 0%"
+            f"{all_std.points[0].window_month} to {all_std.points[-1].window_month} "
+            f"(signal {all_std.points[-1].signal_month}) · 3Y TR ranked, 3M >= 0%"
         ),
         benchmark_label="iShares MSCI ACWI ETF (ACWI)",
         benchmark_short_label="ACWI ETF",
         currency_symbol="$",
         footer_note=(
-            "Mechanistic simulation on iShares MSCI ACWI equities (Yahoo Finance USD-converted); "
-            "current-roster survivorship bias applies. Not financial advice."
+            "Source: iShares MSCI ACWI holdings & Yahoo Finance (USD-converted). "
+            "Current-roster survivorship bias applies. Not financial advice."
         ),
     )
 
@@ -777,19 +777,18 @@ def _build_acwi_subsection(
         perf_uk_rows,
         uk_chart_meta,
         root_dir / "assets" / "performance_acwi_uk_accessible.png",
-        title="All World Momentum (UK-ISA Accessible ACWI) vs ACWI ETF",
+        title="All World (UK-ISA accessible) momentum outpaces MSCI ACWI",
         subtitle=(
             f"UK-Accessible ACWI ({len(uk_acc_intervals)} US/UK/CA/EU equities, USD) · "
-            f"Windows {uk_std.points[0].window_month} to {uk_std.points[-1].window_month} "
-            f"(signal: {uk_std.points[-1].signal_month}) · 0.50% UK / 0.15% FX fee"
+            f"{uk_std.points[0].window_month} to {uk_std.points[-1].window_month} "
+            f"(signal {uk_std.points[-1].signal_month}) · 0.50% UK / 0.15% FX fee"
         ),
         benchmark_label="iShares MSCI ACWI ETF (ACWI)",
         benchmark_short_label="ACWI ETF",
         currency_symbol="$",
         footer_note=(
-            "Filtered to UK retail Stocks & Shares ISA exchanges "
-            "(US/UK/CA/Western Europe/Nordics). Current-roster survivorship bias applies. "
-            "Not financial advice."
+            "Source: iShares ACWI filtered to UK ISA exchanges (US/UK/CA/Western Europe/Nordics) "
+            "& Yahoo Finance. Current-roster survivorship bias applies."
         ),
     )
 
@@ -950,19 +949,18 @@ def build_global_reports(
         perf_ftse_rows,
         ftse_chart_meta,
         root_dir / "assets" / "performance_ftse100.png",
-        title="UK Monthly Momentum (FTSE 100) vs FTSE 100 Total Return",
+        title="UK FTSE 100 momentum beats the index after stamp duty",
         subtitle=(
             f"FTSE 100 ({len(ftse_prices)} priced equities, GBP) · "
-            f"Windows {ftse_std.points[0].window_month} to {ftse_std.points[-1].window_month} "
-            f"(signal: {ftse_std.points[-1].signal_month}) · 0.50% UK stamp duty on buys"
+            f"{ftse_std.points[0].window_month} to {ftse_std.points[-1].window_month} "
+            f"(signal {ftse_std.points[-1].signal_month}) · 0.50% UK stamp duty on buys"
         ),
         benchmark_label="FTSE 100 TR ETF (ISF.L)",
         benchmark_short_label="FTSE 100 TR",
         currency_symbol="£",
         footer_note=(
-            "Mechanistic simulation on current FTSE 100 constituents "
-            "(Wikipedia + Yahoo Finance). Pre-snapshot periods carry survivorship bias. "
-            "Not financial advice."
+            "Source: Wikipedia FTSE 100 & Yahoo Finance (reinvested dividends, GBP). "
+            "Current-roster survivorship bias applies. Not financial advice."
         ),
     )
 
