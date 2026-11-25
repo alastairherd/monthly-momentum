@@ -1,0 +1,34 @@
+# Personal financial data, portfolio logs, and local snapshots (never push to GitHub)
+data/private/
+data/raw/
+records/
+portfolio/
+*.local.*
+*.private.*
+*.sqlite3
+*.db
+
+# Secrets and environment config
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Node / frontend builds
+node_modules/
+dist/
+build/
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
