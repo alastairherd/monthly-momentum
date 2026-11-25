@@ -6,6 +6,7 @@ import csv
 import json
 import re
 from dataclasses import dataclass
+from datetime import date
 from pathlib import Path
 from typing import Any
 
@@ -18,7 +19,10 @@ from monthly_momentum.backtest.engine import (
     run_backtest,
     run_subperiod_summary,
 )
-from monthly_momentum.chart import generate_performance_chart
+from monthly_momentum.chart import (
+    generate_markets_comparison_chart,
+    generate_performance_chart,
+)
 from monthly_momentum.holdings import (
     apply_monthly_run_to_holdings,
     evaluate_rule6,
@@ -31,10 +35,20 @@ from monthly_momentum.models import (
     Rule6ActionType,
 )
 from monthly_momentum.normalize import months_between, ticker_match_key
-from monthly_momentum.ranking import write_ranking_csv, write_ranking_history_csv
+from monthly_momentum.ranking import read_ranking_csv, write_ranking_csv, write_ranking_history_csv
 
 README_START_MARKER = "<!-- AUTO-GENERATED:START -->"
 README_END_MARKER = "<!-- AUTO-GENERATED:END -->"
+
+_ORDERED_VARIANT_LABELS: tuple[str, ...] = (
+    "Aggressive (Top 1)",
+    "Standard (Top 3)",
+    "Standard (Top 3 + Rule 6)",
+    "Balanced (Top 5)",
+    "Balanced (Top 5 + Rule 6)",
+    "Cautious (Top 10)",
+    "Cautious (Top 10 + Rule 6)",
+)
 
 
 @dataclass(slots=True)
@@ -68,7 +82,7 @@ def _format_plain_pct(val: float | None) -> str:
     return f"{val:.2f}%"
 
 
-def _build_model_holdings(
+def build_model_holdings(
     standard_result: BacktestResult,
     rule6_result: BacktestResult,
 ) -> tuple[list[Holding], list[dict[str, Any]]]:
@@ -114,10 +128,14 @@ def _build_model_holdings(
     return holdings, rec_dicts
 
 
-def _write_performance_csv(
+_build_model_holdings = build_model_holdings
+
+
+def write_variants_performance_csv(
     variants: dict[str, BacktestResult],
     path: Path,
 ) -> list[dict[str, Any]]:
+    """Serialize all 7 strategy variant monthly equity/NAV trajectories + benchmark."""
     path.parent.mkdir(parents=True, exist_ok=True)
     top1_pts = variants["Aggressive (Top 1)"].points
     top3_pts = variants["Standard (Top 3)"].points
@@ -197,6 +215,48 @@ def _write_performance_csv(
     return rows
 
 
+_write_performance_csv = write_variants_performance_csv
+
+
+def _load_nav_series_from_perf_csv(
+    path: Path,
+    col: str = "top3_nav",
+) -> list[tuple[date, float]]:
+    if not path.exists():
+        return []
+    out: list[tuple[date, float]] = []
+    with path.open("r", encoding="utf-8-sig", newline="") as fh:
+        for row in csv.DictReader(fh):
+            dt_s = (row.get("date") or "").strip()
+            val_s = (row.get(col) or "").strip()
+            if not dt_s or not val_s:
+                continue
+            try:
+                out.append((date.fromisoformat(dt_s), float(val_s)))
+            except ValueError:
+                continue
+    return out
+
+
+def _group_history_by_window(
+    history_path: Path,
+) -> list[tuple[str, str, list[RankedSecurity]]]:
+    """Read a history CSV and group Top 10 ranked items chronologically by window month."""
+    if not history_path.exists():
+        return []
+    rows = read_ranking_csv(history_path)
+    grouped: dict[str, list[RankedSecurity]] = {}
+    for item in rows:
+        grouped.setdefault(item.month, []).append(item)
+    out: list[tuple[str, str, list[RankedSecurity]]] = []
+    from monthly_momentum.normalize import add_months
+
+    for win_m in sorted(grouped):
+        ranks = sorted(grouped[win_m], key=lambda r: r.rank)
+        out.append((win_m, add_months(win_m, -1), ranks))
+    return out
+
+
 def _compute_sensitivity_and_subperiods(
     dataset: BacktestDataset,
     base_cfg: BacktestConfig,
@@ -243,6 +303,91 @@ def _compute_sensitivity_and_subperiods(
     return sensitivity, subperiods
 
 
+def _render_json_variant_table(
+    lines: list[str],
+    variants_dict: dict[str, Any],
+    currency_sym: str,
+    ending_key: str,
+    bench_name: str,
+    bench_ending: float | None,
+    bench_xirr: float | None,
+    bench_twr: float | None,
+    bench_dd: float | None,
+    win_col_label: str,
+) -> None:
+    lines.append(
+        f"| Variant | Ending Value | XIRR | TWR CAGR | Max Drawdown | "
+        f"Top Holding (%) | {win_col_label} |"
+    )
+    lines.append("| :--- | :---: | :---: | :---: | :---: | :---: | :---: |")
+    for label in _ORDERED_VARIANT_LABELS:
+        v = variants_dict.get(label)
+        if not v:
+            continue
+        end_val = v.get(ending_key, v.get("ending_value", 0.0))
+        top_t = v.get("top_holding_ticker")
+        top_w = v.get("top_holding_weight_pct")
+        top_h = f"{top_t} ({top_w:.1f}%)" if top_t else "—"
+        wr = v.get("rolling_5y_win_rate_pct")
+        wc = v.get("rolling_5y_win_count")
+        wn = v.get("rolling_5y_windows_count")
+        win_str = f"{wr:.1f}% ({wc}/{wn})" if wr is not None and wc is not None else "—"
+        lines.append(
+            f"| {label} | {currency_sym}{end_val:,.0f} | {_format_plain_pct(v.get('xirr_pct'))} | "
+            f"{_format_plain_pct(v.get('twr_cagr_pct'))} | {v.get('max_drawdown_pct', 0.0):.1f}% | "
+            f"{top_h} | {win_str} |"
+        )
+    if bench_ending is not None or bench_xirr is not None:
+        b_end_s = f"{currency_sym}{bench_ending:,.0f}" if bench_ending is not None else "—"
+        b_dd_s = f"{bench_dd:.1f}%" if bench_dd is not None else "—"
+        lines.append(
+            f"| {bench_name} | {b_end_s} | {_format_plain_pct(bench_xirr)} | "
+            f"{_format_plain_pct(bench_twr)} | {b_dd_s} | Cap-weighted | Baseline |"
+        )
+
+
+def _render_window_history_tables(
+    lines: list[str],
+    history: list[tuple[str, str, list[RankedSecurity]]],
+    heading: str,
+    full_label: str,
+) -> None:
+    if not history:
+        return
+    rev = list(reversed(history))
+    lines.append(f"### {heading}")
+    lines.append("")
+    lines.append(
+        "| Window | Signal Data | Top 3 (Standard Equal Split) | "
+        "Top 1 (Aggressive) | Ranks 4–10 (Rule 6 Watchlist) |"
+    )
+    lines.append("| :--- | :--- | :--- | :--- | :--- |")
+    for win_m, sig_m, ranks in rev[:12]:
+        top3_str = ", ".join(f"**{r.ticker}** ({r.return_3y_pct:+.0f}%)" for r in ranks[:3])
+        top1_str = ranks[0].ticker if ranks else "—"
+        rest_str = ", ".join(r.ticker for r in ranks[3:10]) if len(ranks) > 3 else "—"
+        lines.append(f"| {win_m} | {sig_m} | {top3_str} | {top1_str} | {rest_str} |")
+    lines.append("")
+
+    if len(rev) > 12:
+        lines.append("<details>")
+        lines.append(
+            f"<summary>{full_label} ({len(rev)} windows: "
+            f"{history[0][0]} to {history[-1][0]})</summary>"
+        )
+        lines.append("")
+        lines.append("| Window | Signal Data | Top 3 (Standard) | Top 1 | Ranks 4–10 |")
+        lines.append("| :--- | :--- | :--- | :--- | :--- |")
+        for win_m, sig_m, ranks in rev:
+            top3_str = ", ".join(r.ticker for r in ranks[:3])
+            top1_str = ranks[0].ticker if ranks else "—"
+            rest_str = ", ".join(r.ticker for r in ranks[3:10]) if len(ranks) > 3 else "—"
+            lines.append(f"| {win_m} | {sig_m} | {top3_str} | {top1_str} | {rest_str} |")
+        lines.append("")
+        lines.append("</details>")
+        lines.append("")
+
+
 def _render_readme_block(
     summary: dict[str, Any],
     variants: dict[str, BacktestResult],
@@ -253,6 +398,9 @@ def _render_readme_block(
     holdings: list[Holding],
     rule6_recs: list[dict[str, Any]],
     global_summary: dict[str, Any] | None = None,
+    has_comparison_chart: bool = False,
+    ftse_history: list[tuple[str, str, list[RankedSecurity]]] | None = None,
+    acwi_uk_history: list[tuple[str, str, list[RankedSecurity]]] | None = None,
 ) -> str:
     latest_window = summary["latest_window"]
     signal_month = summary["latest_signal_month"]
@@ -264,13 +412,13 @@ def _render_readme_block(
     lines.append("")
     lines.append(
         f"Generated deterministically from completed monthly data through **{signal_month}** "
-        f"(`{summary['constituents_count']}` active constituents · "
+        f"(`{summary['constituents_count']}` active US constituents · "
         f"`{summary['latest_eligible_count']}` eligible after the 3-year history & non-negative "
         "3-month return filter). Next trading day action: split this month's contribution "
         "equally across **Top 3** (or **Top 5** for Balanced)."
     )
     lines.append("")
-    lines.append("### Standard Strategy Picks (Top 3 — Equal 1/3 Split)")
+    lines.append("### US S&P 500 — Standard Strategy Picks (Top 3 — Equal 1/3 Split)")
     lines.append("")
     lines.append("| Rank | Ticker | Company | Sector | 3Y Total Return | 3M Price Return |")
     lines.append("| :---: | :--- | :--- | :--- | :---: | :---: |")
@@ -295,7 +443,8 @@ def _render_readme_block(
 
     lines.append("<details>")
     lines.append(
-        f"<summary>Full Top 10 for {latest_window} (Cautious Variant & Rule 6 Watchlist)</summary>"
+        f"<summary>Full US S&P 500 Top 10 for {latest_window} "
+        "(Cautious Variant & Rule 6 Watchlist)</summary>"
     )
     lines.append("")
     lines.append(
@@ -312,7 +461,65 @@ def _render_readme_block(
     lines.append("</details>")
     lines.append("")
 
-    lines.append("## Performance Chart (Mechanistic Simulation)")
+    # Cross-market summary & comparison chart when international datasets exist
+    if has_comparison_chart and global_summary:
+        acwi_uk = global_summary.get("acwi_uk_accessible", {})
+        acwi_all = global_summary.get("acwi_all", {})
+        ftse = global_summary.get("ftse100", {})
+        us_std = variants["Standard (Top 3)"].metrics
+
+        lines.append("## Cross-Market Performance Comparison")
+        lines.append("")
+        lines.append(
+            "![Cross-Market Performance Comparison](assets/performance_markets_comparison.png)"
+        )
+        lines.append("")
+        lines.append(
+            "| Universe | Top 3 Picks (`" + latest_window + "`) | Window | "
+            "Top 3 XIRR | Top 3 TWR CAGR | Max Drawdown |"
+        )
+        lines.append("| :--- | :--- | :---: | :---: | :---: | :---: |")
+        us_p = ", ".join(f"**{r.ticker}**" for r in latest_ranking[:3])
+        lines.append(
+            f"| US S&P 500 (`{summary['priced_tickers_count']}` stocks) | {us_p} | "
+            f"{summary['backtest_start_window']}..{latest_window} | "
+            f"{_format_plain_pct(us_std.xirr_pct)} | "
+            f"{_format_plain_pct(us_std.twr_cagr_pct)} | {us_std.max_drawdown_pct:.1f}% |"
+        )
+        if acwi_uk:
+            au_p = ", ".join(f"**{r['ticker']}**" for r in acwi_uk.get("top3", []))
+            au_s = acwi_uk.get("variants", {}).get("Standard (Top 3)", {})
+            u_sz = acwi_uk.get("universe_size", 0)
+            lines.append(
+                f"| All World — UK-Accessible ACWI (`{u_sz}`) | {au_p} | "
+                f"{acwi_uk.get('start_window')}..{acwi_uk.get('latest_window')} | "
+                f"{_format_plain_pct(au_s.get('xirr_pct'))} | "
+                f"{_format_plain_pct(au_s.get('twr_cagr_pct'))} | "
+                f"{au_s.get('max_drawdown_pct', 0.0):.1f}% |"
+            )
+        if acwi_all:
+            aa_p = ", ".join(f"**{r['ticker']}**" for r in acwi_all.get("top3", []))
+            aa_s = acwi_all.get("variants", {}).get("Standard (Top 3)", {})
+            lines.append(
+                f"| All World — Full ACWI (`{acwi_all.get('universe_size', 0)}`) | {aa_p} | "
+                f"{acwi_all.get('start_window')}..{acwi_all.get('latest_window')} | "
+                f"{_format_plain_pct(aa_s.get('xirr_pct'))} | "
+                f"{_format_plain_pct(aa_s.get('twr_cagr_pct'))} | "
+                f"{aa_s.get('max_drawdown_pct', 0.0):.1f}% |"
+            )
+        if ftse:
+            f_p = ", ".join(f"**{r['ticker']}**" for r in ftse.get("top5", [])[:3])
+            f_s = ftse.get("variants", {}).get("Standard (Top 3)", {})
+            lines.append(
+                f"| UK FTSE 100 (`{ftse.get('universe_size', 0)}`) | {f_p} | "
+                f"{ftse.get('start_window')}..{ftse.get('latest_window')} | "
+                f"{_format_plain_pct(f_s.get('xirr_pct'))} | "
+                f"{_format_plain_pct(f_s.get('twr_cagr_pct'))} | "
+                f"{f_s.get('max_drawdown_pct', 0.0):.1f}% |"
+            )
+        lines.append("")
+
+    lines.append("## US S&P 500 — Performance Chart (Mechanistic Simulation)")
     lines.append("")
     lines.append("![Monthly Momentum Performance](assets/performance.png)")
     lines.append("")
@@ -329,16 +536,7 @@ def _render_readme_block(
     )
     lines.append("| :--- | :---: | :---: | :---: | :---: | :---: | :---: |")
 
-    ordered_names = [
-        "Aggressive (Top 1)",
-        "Standard (Top 3)",
-        "Standard (Top 3 + Rule 6)",
-        "Balanced (Top 5)",
-        "Balanced (Top 5 + Rule 6)",
-        "Cautious (Top 10)",
-        "Cautious (Top 10 + Rule 6)",
-    ]
-    for name in ordered_names:
+    for name in _ORDERED_VARIANT_LABELS:
         m = variants[name].metrics
         win_str = (
             f"{m.rolling_5y.win_rate_pct:.1f}% "
@@ -424,64 +622,249 @@ def _render_readme_block(
             )
         lines.append("")
 
-    if global_summary:
-        ftse = global_summary.get("ftse100", {})
-        gpool = global_summary.get("global_pool", {})
+    # All World (iShares MSCI ACWI) sections
+    if global_summary and global_summary.get("acwi_uk_accessible"):
+        acwi_uk = global_summary["acwi_uk_accessible"]
+        acwi_all = global_summary.get("acwi_all", {})
+        au_win = acwi_uk["latest_window"]
+        all_sz = acwi_all.get("universe_size", 0)
+        uk_sz = acwi_uk.get("universe_size", 0)
+        elig_uk = acwi_uk.get("latest_eligible_count", 0)
+        lines.append(f"## All World Momentum (iShares MSCI ACWI — {au_win})")
+        lines.append("")
+        lines.append(
+            f"Built from official **iShares MSCI ACWI ETF** holdings (`{all_sz}` "
+            "global equities priced across 54 exchanges & 36 currencies converted to USD). "
+            f"`{uk_sz}` stocks trade on UK retail Stocks & Shares ISA "
+            "exchanges (US, UK, Canada, Western Europe/Nordics); stocks on restricted "
+            "or local EM/APAC exchanges are flagged and skipped in the **UK-Accessible** picks."
+        )
+        lines.append("")
+        lines.append(f"### All World — UK-Accessible Picks ({au_win} · `{elig_uk}` eligible)")
+        lines.append("")
+        lines.append(
+            "| Rank | Ticker | Company | Exchange | Currency | "
+            "3Y Return (USD) | 3M Return (USD) | UK Access |"
+        )
+        lines.append("| :---: | :--- | :--- | :--- | :---: | :---: | :---: | :--- |")
+        for item in acwi_uk.get("top3", []):
+            lines.append(
+                f"| #{item['rank']} | **{item['ticker']}** | {item['name']} | "
+                f"{item['exchange']} | {item['currency']} | "
+                f"{_format_pct(item['return_3y_usd_pct'])} | "
+                f"{_format_pct(item['return_3m_usd_pct'])} | {item['uk_access_note']} |"
+            )
+        lines.append("")
+        top10_uk = acwi_uk.get("top10", [])
+        if top10_uk:
+            t1 = top10_uk[0]
+            t1_3y = _format_pct(t1["return_3y_usd_pct"])
+            t1_3m = _format_pct(t1["return_3m_usd_pct"])
+            lines.append(
+                f"- **Aggressive (Top 1):** **{t1['ticker']}** ({t1['name']}) — "
+                f"`{t1_3y}` 3Y USD, `{t1_3m}` 3M"
+            )
+        if len(top10_uk) >= 5:
+            t5_s = ", ".join(f"**{r['ticker']}**" for r in top10_uk[:5])
+            lines.append(f"- **Balanced (Top 5):** {t5_s}")
+        lines.append("")
+
+        flagged = acwi_uk.get("flagged_skipped", [])
+        if flagged:
+            lines.append(
+                "> **Flagged Global Winners Outside UK Retail ISAs (Skipped Here):** "
+                + ", ".join(
+                    f"#{f['rank']} `{f['ticker']}` ({f['name']}, {f['location']} — "
+                    f"{f['exchange']}, `{f['return_3y_usd_pct']:+.1f}%`)"
+                    for f in flagged[:5]
+                )
+            )
+        else:
+            lines.append(
+                "> **UK Accessibility Check:** Every stock in the Full ACWI Top 15 "
+                "this month already trades on a UK-ISA-accessible exchange."
+            )
+        lines.append("")
+
+        lines.append("<details>")
+        lines.append(f"<summary>UK-Accessible All World Top 10 for {au_win}</summary>")
+        lines.append("")
+        lines.append(
+            "| Rank | Ticker | Company | Sector | Exchange | "
+            "3Y Return (USD) | 3M Return (USD) | Top 3 |"
+        )
+        lines.append("| :---: | :--- | :--- | :--- | :--- | :---: | :---: | :---: |")
+        for item in top10_uk:
+            sec = item["sector"] or "—"
+            r3y = _format_pct(item["return_3y_usd_pct"])
+            r3m = _format_pct(item["return_3m_usd_pct"])
+            t3_flag = "Yes" if item["rank"] <= 3 else "No"
+            lines.append(
+                f"| #{item['rank']} | {item['ticker']} | {item['name']} | {sec} | "
+                f"{item['exchange']} | {r3y} | {r3m} | {t3_flag} |"
+            )
+        lines.append("")
+        lines.append("</details>")
+        lines.append("")
+
+        lines.append(
+            "![All World UK-Accessible Performance](assets/performance_acwi_uk_accessible.png)"
+        )
+        lines.append("")
+        _render_json_variant_table(
+            lines,
+            acwi_uk.get("variants", {}),
+            currency_sym="$",
+            ending_key="ending_value",
+            bench_name="iShares MSCI ACWI ETF (`ACWI`)",
+            bench_ending=acwi_uk.get("benchmark_acwi_ending_value"),
+            bench_xirr=acwi_uk.get("benchmark_acwi_xirr_pct"),
+            bench_twr=acwi_uk.get("benchmark_acwi_twr_cagr_pct"),
+            bench_dd=acwi_uk.get("benchmark_acwi_max_drawdown_pct"),
+            win_col_label="5Y Rolling Win vs ACWI ETF",
+        )
+        lines.append("")
+
+        if acwi_uk_history:
+            _render_window_history_tables(
+                lines,
+                acwi_uk_history,
+                heading="All World (UK-Accessible) — Latest 12 Monthly Windows",
+                full_label="Full UK-Accessible ACWI Monthly Pick History",
+            )
+
+        if acwi_all:
+            lines.append(
+                f"### All World — Full Unfiltered ACWI ({acwi_all['latest_window']} · "
+                f"`{acwi_all.get('universe_size', 0)}` equities)"
+            )
+            lines.append("")
+            lines.append("![All World Full ACWI Performance](assets/performance_acwi.png)")
+            lines.append("")
+            _render_json_variant_table(
+                lines,
+                acwi_all.get("variants", {}),
+                currency_sym="$",
+                ending_key="ending_value",
+                bench_name="iShares MSCI ACWI ETF (`ACWI`)",
+                bench_ending=acwi_all.get("benchmark_acwi_ending_value"),
+                bench_xirr=acwi_all.get("benchmark_acwi_xirr_pct"),
+                bench_twr=acwi_all.get("benchmark_acwi_twr_cagr_pct"),
+                bench_dd=acwi_all.get("benchmark_acwi_max_drawdown_pct"),
+                win_col_label="5Y Rolling Win vs ACWI ETF",
+            )
+            lines.append("")
+            lines.append("<details>")
+            lines.append(
+                "<summary>Full ACWI Top 15 with UK ISA Accessibility Flags "
+                f"({acwi_all['latest_window']})</summary>"
+            )
+            lines.append("")
+            lines.append(
+                "| Rank | Ticker | Company | Location | Exchange | "
+                "3Y Return (USD) | 3M Return (USD) | UK ISA Accessible |"
+            )
+            lines.append("| :---: | :--- | :--- | :--- | :--- | :---: | :---: | :--- |")
+            for item in acwi_all.get("top15", []):
+                acc_badge = "Yes" if item["uk_accessible"] else f"**No** — {item['uk_access_note']}"
+                lines.append(
+                    f"| #{item['rank']} | {item['ticker']} | {item['name']} | "
+                    f"{item['location']} | {item['exchange']} | "
+                    f"{_format_pct(item['return_3y_usd_pct'])} | "
+                    f"{_format_pct(item['return_3m_usd_pct'])} | {acc_badge} |"
+                )
+            lines.append("")
+            lines.append("</details>")
+            lines.append("")
+    elif global_summary and global_summary.get("global_pool", {}).get("top3"):
+        gpool = global_summary["global_pool"]
         g_win = gpool.get("latest_window", latest_window)
         lines.append(f"## Multi-Market & Global Developed Pool ({g_win})")
         lines.append("")
         lines.append(
-            "Mechanistic international rankings refreshed alongside S&P 500 from Wikipedia + "
-            "Yahoo Finance (note: non-US pools use current index constituents and therefore carry "
-            "survivorship bias; see [docs/research.md](docs/research.md))."
+            "| Rank | Ticker | Company | Index | Currency | 3Y Return (USD) | 3M Return (USD) |"
+        )
+        lines.append("| :---: | :--- | :--- | :--- | :---: | :---: | :---: |")
+        for item in gpool["top3"]:
+            lines.append(
+                f"| #{item['rank']} | **{item['ticker']}** | {item['name']} | "
+                f"{item['index']} | {item['currency']} | "
+                f"{_format_pct(item['return_3y_usd_pct'])} | "
+                f"{_format_pct(item['return_3m_usd_pct'])} |"
+            )
+        lines.append("")
+
+    # UK FTSE 100 section
+    if global_summary and global_summary.get("ftse100", {}).get("top5"):
+        ftse = global_summary["ftse100"]
+        f_win = ftse.get("latest_window", latest_window)
+        lines.append(f"## UK Market — FTSE 100 ({f_win} · GBP, 0.50% Stamp Duty)")
+        lines.append("")
+        lines.append(
+            f"Evaluated across `{ftse.get('universe_size', 0)}` FTSE 100 constituents "
+            f"(`{ftse.get('latest_eligible_count', 0)}` eligible in {f_win}, GBP with `0.50%` UK "
+            "stamp duty on buys / `0%` on sells)."
         )
         lines.append("")
-        if gpool.get("top3"):
+        lines.append("| Rank | Ticker | Company | Sector | 3Y Total Return | 3M Price Return |")
+        lines.append("| :---: | :--- | :--- | :--- | :---: | :---: |")
+        for item in ftse["top5"][:3]:
             lines.append(
-                "### Global Developed Pool Top 3 "
-                "(US + UK + Canada + Eurozone, USD FX-converted · "
-                f"`{gpool.get('universe_size', 0)}` tickers)"
+                f"| #{item['rank']} | **{item['ticker']}** | {item['name']} | "
+                f"{item.get('sector') or '—'} | {_format_pct(item['return_3y_pct'])} | "
+                f"{_format_pct(item['return_3m_pct'])} |"
             )
-            lines.append("")
+        lines.append("")
+        ftse_top10 = ftse.get("top10", ftse["top5"])
+        if ftse_top10:
             lines.append(
-                "| Rank | Ticker | Company | Index | Currency | 3Y Return (USD) | 3M Return (USD) |"
+                f"- **Aggressive (Top 1):** **{ftse_top10[0]['ticker']}** ({ftse_top10[0]['name']})"
             )
-            lines.append("| :---: | :--- | :--- | :--- | :---: | :---: | :---: |")
-            for item in gpool["top3"]:
-                lines.append(
-                    f"| #{item['rank']} | **{item['ticker']}** | {item['name']} | "
-                    f"{item['index']} | {item['currency']} | "
-                    f"{_format_pct(item['return_3y_usd_pct'])} | "
-                    f"{_format_pct(item['return_3m_usd_pct'])} |"
-                )
-            lines.append("")
+        if len(ftse_top10) >= 5:
+            lines.append(
+                "- **Balanced (Top 5):** " + ", ".join(f"**{r['ticker']}**" for r in ftse_top10[:5])
+            )
+        lines.append("")
+        lines.append("<details>")
+        lines.append(f"<summary>Full FTSE 100 Top 10 for {f_win}</summary>")
+        lines.append("")
+        lines.append(
+            "| Rank | Ticker | Company | Sector | 3Y Total Return | 3M Price Return | Top 3 Buy |"
+        )
+        lines.append("| :---: | :--- | :--- | :--- | :---: | :---: | :---: |")
+        for item in ftse_top10[:10]:
+            lines.append(
+                f"| #{item['rank']} | {item['ticker']} | {item['name']} | "
+                f"{item.get('sector') or '—'} | {_format_pct(item['return_3y_pct'])} | "
+                f"{_format_pct(item['return_3m_pct'])} | {'Yes' if item['rank'] <= 3 else 'No'} |"
+            )
+        lines.append("")
+        lines.append("</details>")
+        lines.append("")
 
-        if ftse.get("top5"):
-            f_win = ftse.get("latest_window", latest_window)
-            lines.append(f"### FTSE 100 Picks ({f_win} · GBP, 0.50% UK Stamp Duty)")
-            lines.append("")
-            lines.append("| Rank | Ticker | Company | Sector | 3Y Total Return | 3M Price Return |")
-            lines.append("| :---: | :--- | :--- | :--- | :---: | :---: |")
-            for item in ftse["top5"][:3]:
-                lines.append(
-                    f"| #{item['rank']} | **{item['ticker']}** | {item['name']} | "
-                    f"{item.get('sector') or '—'} | {_format_pct(item['return_3y_pct'])} | "
-                    f"{_format_pct(item['return_3m_pct'])} |"
-                )
-            ftse_std = ftse.get("variants", {}).get("Standard (Top 3)", {})
-            if ftse_std:
-                f_start = ftse.get("start_window")
-                f_end = ftse.get("latest_window")
-                f_bench = ftse.get("benchmark_ftse_tr_etf_xirr_pct")
-                bench_txt = f" vs `ISF.L` TR ETF `{f_bench}%`" if f_bench is not None else ""
-                lines.append("")
-                lines.append(
-                    f"- FTSE 100 Top 3 DCA ({f_start}..{f_end}): "
-                    f"XIRR `{ftse_std.get('xirr_pct')}%`{bench_txt}, "
-                    f"TWR CAGR `{ftse_std.get('twr_cagr_pct')}%`, "
-                    f"Max Drawdown `{ftse_std.get('max_drawdown_pct')}%`."
-                )
-            lines.append("")
+        lines.append("![UK FTSE 100 Performance](assets/performance_ftse100.png)")
+        lines.append("")
+        _render_json_variant_table(
+            lines,
+            ftse.get("variants", {}),
+            currency_sym="£",
+            ending_key="ending_value_gbp",
+            bench_name="FTSE 100 TR ETF (`ISF.L`)",
+            bench_ending=ftse.get("benchmark_ftse_tr_etf_ending_value"),
+            bench_xirr=ftse.get("benchmark_ftse_tr_etf_xirr_pct"),
+            bench_twr=ftse.get("benchmark_ftse_tr_etf_twr_cagr_pct"),
+            bench_dd=ftse.get("benchmark_ftse_tr_etf_max_drawdown_pct"),
+            win_col_label="5Y Rolling Win vs ISF.L",
+        )
+        lines.append("")
+
+        if ftse_history:
+            _render_window_history_tables(
+                lines,
+                ftse_history,
+                heading="UK FTSE 100 — Latest 12 Monthly Windows",
+                full_label="Full FTSE 100 Monthly Pick History",
+            )
 
     # Model Portfolio & Rule 6 Status
     active_holdings = [h for h in holdings if h.status in ACTIVE_STATUSES]
@@ -496,7 +879,7 @@ def _render_readme_block(
             Rule6ActionType.RESET_TOP10.value,
         }
     ]
-    lines.append("## Model Portfolio & Rule 6 Faded-Winner Status")
+    lines.append("## US Model Portfolio & Rule 6 Faded-Winner Status")
     lines.append("")
     lines.append(
         f"- **Active model positions (Standard Top 3 + Rule 6):** `{len(active_holdings)}` "
@@ -522,8 +905,8 @@ def _render_readme_block(
             )
     lines.append("")
 
-    # Mechanistic Picks by Month/Window
-    lines.append("## Mechanistic Stock Picks by Month / Window")
+    # US S&P 500 Mechanistic Picks by Month/Window
+    lines.append("## US S&P 500 — Mechanistic Stock Picks by Month / Window")
     lines.append("")
     lines.append(
         "Every monthly window below is computed mechanistically from `data/monthly_prices.csv` "
@@ -549,7 +932,7 @@ def _render_readme_block(
     if len(rev_windows) > 12:
         lines.append("<details>")
         lines.append(
-            f"<summary>Full Monthly Pick History ({len(rev_windows)} windows: "
+            f"<summary>Full US S&P 500 Monthly Pick History ({len(rev_windows)} windows: "
             f"{history_by_window[0][0]} to {history_by_window[-1][0]})</summary>"
         )
         lines.append("")
@@ -591,7 +974,7 @@ def rebuild_public_reports(
     contribution: float = 500.0,
     fee_pct: float = 0.15,
 ) -> PublicReportSummary:
-    """Deterministically build rankings, model holdings, performance, chart, and README."""
+    """Deterministically build rankings, model holdings, charts, and README offline."""
     data_dir = root_dir / "data"
     history_const_path = data_dir / "constituents_history.csv"
     active_const_path = data_dir / "constituents.csv"
@@ -618,7 +1001,6 @@ def rebuild_public_reports(
     first_equity_months = [min(tmap.keys()) for tmap in dataset.prices.values() if tmap]
     auto_start_month: str | None = None
     if first_equity_months:
-        # Ensure at least 36 months of stock lookback exist before the first active window.
         earliest_stock_month = min(first_equity_months)
         auto_start_month = _add_months(earliest_stock_month, 37)
 
@@ -647,15 +1029,6 @@ def rebuild_public_reports(
         end_window=latest_pt.window_month,
     )
 
-    global_summary_dict: dict[str, Any] | None = None
-    global_const = data_dir / "global" / "constituents.csv"
-    global_prices = data_dir / "global" / "monthly_prices.csv"
-    if global_const.exists() and global_prices.exists():
-        from monthly_momentum.markets import build_global_reports
-
-        g_res = build_global_reports(root_dir=root_dir, contribution=contribution)
-        global_summary_dict = json.loads(g_res.summary_json_path.read_text(encoding="utf-8"))
-
     latest_ranking_result = std_res.rankings_by_window[-1]
     latest_ranking_path = data_dir / "rankings" / "latest.csv"
     write_ranking_csv(latest_ranking_result, latest_ranking_path, limit=10)
@@ -670,12 +1043,12 @@ def rebuild_public_reports(
     history_ranking_path = data_dir / "rankings" / "history.csv"
     write_ranking_history_csv(history_rows, history_ranking_path)
 
-    model_holdings, rule6_recs = _build_model_holdings(std_res, std_r6_res)
+    model_holdings, rule6_recs = build_model_holdings(std_res, std_r6_res)
     model_holdings_path = data_dir / "model_holdings.csv"
     write_holdings_csv(model_holdings, model_holdings_path)
 
     performance_csv_path = data_dir / "performance.csv"
-    perf_rows = _write_performance_csv(variants, performance_csv_path)
+    perf_rows = write_variants_performance_csv(variants, performance_csv_path)
 
     variant_summary_json: dict[str, Any] = {}
     for name, res in list(variants.items()) + list(sensitivity.items()):
@@ -789,6 +1162,64 @@ def rebuild_public_reports(
     chart_path = root_dir / "assets" / "performance.png"
     generate_performance_chart(perf_rows, summary_payload, chart_path)
 
+    global_summary_dict: dict[str, Any] | None = None
+    global_const = data_dir / "global" / "constituents.csv"
+    global_prices = data_dir / "global" / "monthly_prices.csv"
+    has_comparison_chart = False
+    ftse_history: list[tuple[str, str, list[RankedSecurity]]] | None = None
+    acwi_uk_history: list[tuple[str, str, list[RankedSecurity]]] | None = None
+
+    if global_const.exists() and global_prices.exists():
+        from monthly_momentum.markets import build_global_reports
+
+        g_res = build_global_reports(root_dir=root_dir, contribution=contribution)
+        global_summary_dict = json.loads(g_res.summary_json_path.read_text(encoding="utf-8"))
+
+        global_dir = data_dir / "global"
+        strategy_series: dict[str, list[tuple[date, float]]] = {}
+        us_series = _load_nav_series_from_perf_csv(performance_csv_path, "top3_nav")
+        if us_series:
+            strategy_series["US S&P 500 (Top 3)"] = us_series
+
+        acwi_uk_perf = global_dir / "performance_acwi_uk_accessible.csv"
+        acwi_uk_series = _load_nav_series_from_perf_csv(acwi_uk_perf, "top3_nav")
+        if acwi_uk_series:
+            strategy_series["All World — UK-Accessible ACWI (Top 3)"] = acwi_uk_series
+
+        acwi_all_perf = global_dir / "performance_acwi.csv"
+        acwi_all_series = _load_nav_series_from_perf_csv(acwi_all_perf, "top3_nav")
+        if acwi_all_series:
+            strategy_series["All World — Full ACWI (Top 3)"] = acwi_all_series
+
+        ftse_perf = global_dir / "performance_ftse100.csv"
+        ftse_series = _load_nav_series_from_perf_csv(ftse_perf, "top3_nav")
+        if ftse_series:
+            strategy_series["UK FTSE 100 (Top 3)"] = ftse_series
+
+        bench_series: dict[str, list[tuple[date, float]]] = {}
+        us_b = _load_nav_series_from_perf_csv(performance_csv_path, "benchmark_nav")
+        if us_b:
+            bench_series["S&P 500 TR (^SP500TR)"] = us_b
+        acwi_b = _load_nav_series_from_perf_csv(acwi_all_perf, "benchmark_nav")
+        if acwi_b:
+            bench_series["MSCI ACWI ETF (ACWI)"] = acwi_b
+        ftse_b = _load_nav_series_from_perf_csv(ftse_perf, "benchmark_nav")
+        if ftse_b:
+            bench_series["FTSE 100 TR (ISF.L)"] = ftse_b
+
+        if len(strategy_series) >= 2:
+            generate_markets_comparison_chart(
+                strategy_series,
+                bench_series,
+                root_dir / "assets" / "performance_markets_comparison.png",
+            )
+            has_comparison_chart = True
+
+        ftse_history = _group_history_by_window(global_dir / "rankings" / "history_ftse100.csv")
+        acwi_uk_history = _group_history_by_window(
+            global_dir / "rankings" / "history_acwi_uk_accessible.csv"
+        )
+
     readme_path = root_dir / "README.md"
     readme_block = _render_readme_block(
         summary=summary_payload,
@@ -800,6 +1231,9 @@ def rebuild_public_reports(
         holdings=model_holdings,
         rule6_recs=rule6_recs,
         global_summary=global_summary_dict,
+        has_comparison_chart=has_comparison_chart,
+        ftse_history=ftse_history,
+        acwi_uk_history=acwi_uk_history,
     )
     _update_readme_file(readme_path, readme_block)
 

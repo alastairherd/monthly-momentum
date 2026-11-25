@@ -8,9 +8,9 @@ Mechanistic monthly index-constituent momentum strategy, public S&P 500 ranking 
 
 ## Latest Mechanistic Picks — 2026-11 Window
 
-Generated deterministically from completed monthly data through **2026-10** (`503` active constituents · `261` eligible after the 3-year history & non-negative 3-month return filter). Next trading day action: split this month's contribution equally across **Top 3** (or **Top 5** for Balanced).
+Generated deterministically from completed monthly data through **2026-10** (`503` active US constituents · `261` eligible after the 3-year history & non-negative 3-month return filter). Next trading day action: split this month's contribution equally across **Top 3** (or **Top 5** for Balanced).
 
-### Standard Strategy Picks (Top 3 — Equal 1/3 Split)
+### US S&P 500 — Standard Strategy Picks (Top 3 — Equal 1/3 Split)
 
 | Rank | Ticker | Company | Sector | 3Y Total Return | 3M Price Return |
 | :---: | :--- | :--- | :--- | :---: | :---: |
@@ -22,7 +22,7 @@ Generated deterministically from completed monthly data through **2026-10** (`50
 - **Balanced (Top 5):** **LITE**, **MU**, **CVNA**, **PLTR**, **ECHO** (equal 1/5 split).
 
 <details>
-<summary>Full Top 10 for 2026-11 (Cautious Variant & Rule 6 Watchlist)</summary>
+<summary>Full US S&P 500 Top 10 for 2026-11 (Cautious Variant & Rule 6 Watchlist)</summary>
 
 | Rank | Ticker | Company | Sector | 3Y Total Return | 3M Price Return | Top 3 Buy |
 | :---: | :--- | :--- | :--- | :---: | :---: | :---: |
@@ -39,7 +39,18 @@ Generated deterministically from completed monthly data through **2026-10** (`50
 
 </details>
 
-## Performance Chart (Mechanistic Simulation)
+## Cross-Market Performance Comparison
+
+![Cross-Market Performance Comparison](assets/performance_markets_comparison.png)
+
+| Universe | Top 3 Picks (`2026-11`) | Window | Top 3 XIRR | Top 3 TWR CAGR | Max Drawdown |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| US S&P 500 (`663` stocks) | **LITE**, **MU**, **CVNA** | 2006-01..2026-11 | 21.94% | 19.77% | -66.0% |
+| All World — UK-Accessible ACWI (`997`) | **LITE**, **MU**, **CVNA** | 2017-11..2026-11 | 29.82% | 29.45% | -47.4% |
+| All World — Full ACWI (`2140`) | **LITE**, **2059.TW**, **MU** | 2017-11..2026-11 | 27.23% | 23.73% | -40.7% |
+| UK FTSE 100 (`100`) | **BGEO.L**, **PCT.L**, **SMT.L** | 2017-12..2026-11 | 11.71% | 11.41% | -38.4% |
+
+## US S&P 500 — Performance Chart (Mechanistic Simulation)
 
 ![Monthly Momentum Performance](assets/performance.png)
 
@@ -69,19 +80,229 @@ Monthly £500 DCA simulation across **251** windows (**2006-01** to **2026-11**,
 | Financial Crisis Era (2007–2012) (2007-01..2012-12) | 19.41% | 16.33% | 12.85% | 9.02% | 7.71% |
 | Recent Decade (2016–Latest) (2016-01..2026-11) | 44.82% | 37.76% | 33.33% | 28.24% | 15.37% |
 
-## Multi-Market & Global Developed Pool (2026-11)
+## All World Momentum (iShares MSCI ACWI — 2026-11)
 
-Mechanistic international rankings refreshed alongside S&P 500 from Wikipedia + Yahoo Finance (note: non-US pools use current index constituents and therefore carry survivorship bias; see [docs/research.md](docs/research.md)).
+Built from official **iShares MSCI ACWI ETF** holdings (`2140` global equities priced across 54 exchanges & 36 currencies converted to USD). `997` stocks trade on UK retail Stocks & Shares ISA exchanges (US, UK, Canada, Western Europe/Nordics); stocks on restricted or local EM/APAC exchanges are flagged and skipped in the **UK-Accessible** picks.
 
-### Global Developed Pool Top 3 (US + UK + Canada + Eurozone, USD FX-converted · `841` tickers)
+### All World — UK-Accessible Picks (2026-11 · `463` eligible)
 
-| Rank | Ticker | Company | Index | Currency | 3Y Return (USD) | 3M Return (USD) |
-| :---: | :--- | :--- | :--- | :---: | :---: | :---: |
-| #1 | **LITE** | Lumentum | S&P 500 | USD | +2044.10% | +17.75% |
-| #2 | **MU** | Micron Technology | S&P 500 | USD | +1235.84% | +7.50% |
-| #3 | **CVNA** | Carvana | S&P 500 | USD | +1164.63% | +9.51% |
+| Rank | Ticker | Company | Exchange | Currency | 3Y Return (USD) | 3M Return (USD) | UK Access |
+| :---: | :--- | :--- | :--- | :---: | :---: | :---: | :--- |
+| #1 | **LITE** | LUMENTUM HOLDINGS | NASDAQ | USD | +2044.10% | +17.75% | UK ISA (US) |
+| #2 | **MU** | MICRON TECHNOLOGY | NASDAQ | USD | +1235.84% | +7.50% | UK ISA (US) |
+| #3 | **CVNA** | CARVANA CLASS A | NYSE | USD | +1164.63% | +9.51% | UK ISA (US) |
 
-### FTSE 100 Picks (2026-11 · GBP, 0.50% UK Stamp Duty)
+- **Aggressive (Top 1):** **LITE** (LUMENTUM HOLDINGS) — `+2044.10%` 3Y USD, `+17.75%` 3M
+- **Balanced (Top 5):** **LITE**, **MU**, **CVNA**, **PLTR**, **NTRA**
+
+> **Flagged Global Winners Outside UK Retail ISAs (Skipped Here):** #2 `2059.TW` (KING SLIDE WORKS, Taiwan — Taiwan Stock Exchange, `+1295.1%`), #6 `3653.TW` (JENTECH PRECISION INDUSTRIAL LTD, Taiwan — Taiwan Stock Exchange, `+1012.3%`), #7 `3017.TW` (ASIA VITAL COMPONENTS, Taiwan — Taiwan Stock Exchange, `+1008.5%`), #9 `009150.KS` (SAMSUNG ELECTRO MECHANICS, Korea (South) — Korea Exchange (Stock Market), `+910.3%`), #10 `603268.SS` (GUANGDONG SONGFA CERAMICS A, China — Shanghai Stock Exchange, `+882.9%`)
+
+<details>
+<summary>UK-Accessible All World Top 10 for 2026-11</summary>
+
+| Rank | Ticker | Company | Sector | Exchange | 3Y Return (USD) | 3M Return (USD) | Top 3 |
+| :---: | :--- | :--- | :--- | :--- | :---: | :---: | :---: |
+| #1 | LITE | LUMENTUM HOLDINGS | Information Technology | NASDAQ | +2044.10% | +17.75% | Yes |
+| #2 | MU | MICRON TECHNOLOGY | Information Technology | NASDAQ | +1235.84% | +7.50% | Yes |
+| #3 | CVNA | CARVANA CLASS A | Consumer Discretionary | NYSE | +1164.63% | +9.51% | Yes |
+| #4 | PLTR | PALANTIR TECHNOLOGIES CLASS A | Information Technology | NASDAQ | +1143.99% | +49.61% | No |
+| #5 | NTRA | NATERA | Health Care | NASDAQ | +949.66% | +54.73% | No |
+| #6 | RVMD | REVOLUTION MEDICINES | Health Care | NASDAQ | +866.21% | +2.02% | No |
+| #7 | ECHO | ECHOSTAR CLASS A | Communication | NASDAQ | +599.42% | +15.28% | No |
+| #8 | DELL | DELL TECHNOLOGIES INC CLASS C | Information Technology | NYSE | +562.57% | +4.67% | No |
+| #9 | LUG.TO | LUNDIN GOLD | Materials | Toronto Stock Exchange | +492.39% | +5.01% | No |
+| #10 | CRWD | CROWDSTRIKE HOLDINGS CLASS A | Information Technology | NASDAQ | +466.68% | +31.21% | No |
+
+</details>
+
+![All World UK-Accessible Performance](assets/performance_acwi_uk_accessible.png)
+
+| Variant | Ending Value | XIRR | TWR CAGR | Max Drawdown | Top Holding (%) | 5Y Rolling Win vs ACWI ETF |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Aggressive (Top 1) | $302,596 | 36.56% | 32.13% | -50.9% | NVDA (55.0%) | 100.0% (49/49) |
+| Standard (Top 3) | $220,124 | 29.82% | 29.45% | -47.4% | NVDA (30.7%) | 100.0% (49/49) |
+| Standard (Top 3 + Rule 6) | $220,028 | 29.81% | 29.44% | -47.4% | NVDA (30.8%) | 100.0% (49/49) |
+| Balanced (Top 5) | $200,382 | 27.84% | 26.73% | -47.9% | NVDA (26.3%) | 100.0% (49/49) |
+| Balanced (Top 5 + Rule 6) | $199,359 | 27.73% | 26.66% | -47.9% | NVDA (26.6%) | 100.0% (49/49) |
+| Cautious (Top 10) | $165,213 | 23.79% | 23.05% | -45.8% | NVDA (16.2%) | 100.0% (49/49) |
+| Cautious (Top 10 + Rule 6) | $165,805 | 23.86% | 23.11% | -45.8% | NVDA (16.4%) | 100.0% (49/49) |
+| iShares MSCI ACWI ETF (`ACWI`) | $99,797 | 13.19% | 11.29% | -25.7% | Cap-weighted | Baseline |
+
+### All World (UK-Accessible) — Latest 12 Monthly Windows
+
+| Window | Signal Data | Top 3 (Standard Equal Split) | Top 1 (Aggressive) | Ranks 4–10 (Rule 6 Watchlist) |
+| :--- | :--- | :--- | :--- | :--- |
+| 2026-11 | 2026-10 | **LITE** (+2044%), **MU** (+1236%), **CVNA** (+1165%) | LITE | PLTR, NTRA, RVMD, ECHO, DELL, LUG.TO, CRWD |
+| 2026-10 | 2026-09 | **LITE** (+2050%), **PLTR** (+1069%), **HOOD** (+1047%) | LITE | NTRA, DELL, CDE, RVMD, RR.L, BMPS.MI, LUG.TO |
+| 2026-09 | 2026-08 | **LITE** (+1590%), **PLTR** (+1144%), **HOOD** (+862%) | LITE | CDE, DELL, CRS, RR.L, CVNA, LUG.TO, TIGO |
+| 2026-08 | 2026-07 | **WDC** (+1601%), **STX** (+1345%), **CRDO** (+1120%) | WDC | MU, CRS, RR.L, DELL, TIGO, RVMD, HOOD |
+| 2026-07 | 2026-06 | **CLS.TO** (+2408%), **WDC** (+2138%), **APP** (+1902%) | CLS.TO | ASTS, MU, BE, RKLB, STX, CRDO, LITE |
+| 2026-06 | 2026-05 | **RKLB** (+3033%), **CLS.TO** (+2935%), **CVNA** (+2725%) | RKLB | APP, ASTS, BE, WDC, IREN, CRDO, VRT |
+| 2026-05 | 2026-04 | **CLS.TO** (+3688%), **VRT** (+2109%), **CRDO** (+2046%) | CLS.TO | RKLB, LITE, BE, WDC, FIX, STX, CIEN |
+| 2026-04 | 2026-03 | **VRT** (+1657%), **ASTS** (+1531%), **LITE** (+1201%) | VRT | FIX, WDC, FTAI, CRS, ENR.DE, CIEN, BE |
+| 2026-03 | 2026-02 | **VRT** (+1474%), **RKLB** (+1436%), **LITE** (+1203%) | VRT | FTAI, ASTS, K.TO, RR.L, LUG.TO, FIX, ENR.DE |
+| 2026-02 | 2026-01 | **CVNA** (+3844%), **ASTS** (+1965%), **RKLB** (+1511%) | CVNA | ABVX.PA, FTAI, RR.L, FIX, RHM.DE, ENR.DE, SAAB-B.ST |
+| 2026-01 | 2025-12 | **CVNA** (+8803%), **CLS.TO** (+2536%), **ABVX.PA** (+2033%) | CVNA | RKLB, ASTS, FTAI, VRT, LUG.TO, CRS, INSM |
+| 2025-12 | 2025-11 | **CVNA** (+4757%), **APP** (+4060%), **IREN** (+3109%) | CVNA | CLS.TO, PLTR, ABVX.PA, HOOD, VRT, CRDO, INSM |
+
+<details>
+<summary>Full UK-Accessible ACWI Monthly Pick History (109 windows: 2017-11 to 2026-11)</summary>
+
+| Window | Signal Data | Top 3 (Standard) | Top 1 | Ranks 4–10 |
+| :--- | :--- | :--- | :--- | :--- |
+| 2026-11 | 2026-10 | LITE, MU, CVNA | LITE | PLTR, NTRA, RVMD, ECHO, DELL, LUG.TO, CRWD |
+| 2026-10 | 2026-09 | LITE, PLTR, HOOD | LITE | NTRA, DELL, CDE, RVMD, RR.L, BMPS.MI, LUG.TO |
+| 2026-09 | 2026-08 | LITE, PLTR, HOOD | LITE | CDE, DELL, CRS, RR.L, CVNA, LUG.TO, TIGO |
+| 2026-08 | 2026-07 | WDC, STX, CRDO | WDC | MU, CRS, RR.L, DELL, TIGO, RVMD, HOOD |
+| 2026-07 | 2026-06 | CLS.TO, WDC, APP | CLS.TO | ASTS, MU, BE, RKLB, STX, CRDO, LITE |
+| 2026-06 | 2026-05 | RKLB, CLS.TO, CVNA | RKLB | APP, ASTS, BE, WDC, IREN, CRDO, VRT |
+| 2026-05 | 2026-04 | CLS.TO, VRT, CRDO | CLS.TO | RKLB, LITE, BE, WDC, FIX, STX, CIEN |
+| 2026-04 | 2026-03 | VRT, ASTS, LITE | VRT | FIX, WDC, FTAI, CRS, ENR.DE, CIEN, BE |
+| 2026-03 | 2026-02 | VRT, RKLB, LITE | VRT | FTAI, ASTS, K.TO, RR.L, LUG.TO, FIX, ENR.DE |
+| 2026-02 | 2026-01 | CVNA, ASTS, RKLB | CVNA | ABVX.PA, FTAI, RR.L, FIX, RHM.DE, ENR.DE, SAAB-B.ST |
+| 2026-01 | 2025-12 | CVNA, CLS.TO, ABVX.PA | CVNA | RKLB, ASTS, FTAI, VRT, LUG.TO, CRS, INSM |
+| 2025-12 | 2025-11 | CVNA, APP, IREN | CVNA | CLS.TO, PLTR, ABVX.PA, HOOD, VRT, CRDO, INSM |
+| 2025-11 | 2025-10 | APP, CLS.TO, PLTR | APP | IREN, RR.L, NVDA, ABVX.PA, CRDO, VRT, HOOD |
+| 2025-10 | 2025-09 | APP, CLS.TO, PLTR | APP | RR.L, CVNA, VRT, RHM.DE, NVDA, HOOD, CRDO |
+| 2025-09 | 2025-08 | PLTR, APP, CLS.TO | PLTR | RR.L, NVDA, CVNA, VRT, HOOD, LUG.TO, ABVX.PA |
+| 2025-08 | 2025-07 | CLS.TO, PLTR, MSTR | CLS.TO | CVNA, RR.L, VRT, HOOD, RHM.DE, APP, SMCI |
+| 2025-07 | 2025-06 | MSTR, CLS.TO, VRT | MSTR | PLTR, CVNA, RR.L, SMCI, HOOD, NVDA, CRS |
+| 2025-06 | 2025-05 | PLTR, MSTR, CVNA | PLTR | RHM.DE, RR.L, CLS.TO, APP, VRT, AXON, NVDA |
+| 2025-05 | 2025-04 | PLTR, MSTR, RR.L | PLTR | RHM.DE, SMCI, UCG.MI, FTAI, SPOT, NFLX, LUG.TO |
+| 2025-04 | 2025-03 | SMCI, RR.L, RHM.DE | SMCI | PLTR, UCG.MI, BPE.MI, LDO.MI, CRS, BAMI.MI, TAL |
+| 2025-03 | 2025-02 | SMCI, CLS.TO, RHM.DE | SMCI | PLTR, RR.L, CRS, UCG.MI, LDO.MI, TAL, BPE.MI |
+| 2025-02 | 2025-01 | CLS.TO, MSTR, VST | CLS.TO | RHM.DE, CRS, CEG, PLTR, CRDO, APP, VRT |
+| 2025-01 | 2024-12 | CLS.TO, RHM.DE, FTAI | CLS.TO | VST, CRS, MSTR, FTI, FICO, NVDA, VRT |
+| 2024-12 | 2024-11 | FTAI, VST, CLS.TO | FTAI | RHM.DE, CRS, FICO, FTI, MSTR, FIX, VRT |
+| 2024-11 | 2024-10 | CLS.TO, FTAI, VST | CLS.TO | NVDA, CRS, FICO, FIX, VRT, UCG.MI, RR.L |
+| 2024-10 | 2024-09 | VST, FTAI, RHM.DE | VST | FIX, CRS, FICO, ANET, VRT, ATI, UCG.MI |
+| 2024-09 | 2024-08 | RHM.DE, FTAI, NVDA | RHM.DE | FIX, CRS, KOG.OL, RR.L, FTI, UCG.MI, LLY |
+| 2024-08 | 2024-07 | NVDA, CLS.TO, FTAI | NVDA | FIX, VST, RR.L, FTI, CRS, UCG.MI, KOG.OL |
+| 2024-07 | 2024-06 | CLS.TO, NVDA, VST | CLS.TO | RR.L, FTAI, LLY, ANET, SAAB-B.ST, AVGO, KOG.OL |
+| 2024-06 | 2024-05 | NVDA, VST, CLS.TO | NVDA | RHM.DE, LLY, FIX, VRT, FTAI, RR.L, UCG.MI |
+| 2024-05 | 2024-04 | SMCI, NVDA, RHM.DE | SMCI | CLS.TO, VST, LLY, UCG.MI, VRT, FIX, NOVO-B.CO |
+| 2024-04 | 2024-03 | SMCI, NVDA, RHM.DE | SMCI | CLS.TO, LLY, FIX, VST, VRT, MPC, UCG.MI |
+| 2024-03 | 2024-02 | SMCI, NVDA, CLS.TO | SMCI | FIX, RHM.DE, ANET, LLY, UCG.MI, NOVO-B.CO, KOG.OL |
+| 2024-02 | 2024-01 | SMCI, NVDA, CLS.TO | SMCI | MPC, NUE, FIX, CCO.TO, STLD, UCG.MI, RHM.DE |
+| 2024-01 | 2023-12 | SMCI, BBD-B.TO, FIX | SMCI | NVDA, FANG, CLS.TO, LLY, TRGP, NUE, STLD |
+| 2023-12 | 2023-11 | CCO.TO, FANG, LLY | CCO.TO | MPC, SAB.MC, TRGP, FIX, RHM.DE, CLS.TO, CNQ.TO |
+| 2023-11 | 2023-10 | FANG, CVE.TO, MPC | FANG | TRGP, TOU.TO, FTI, CNQ.TO, IMO.TO, COP, LLY |
+| 2023-10 | 2023-09 | SMCI, OXY, TRGP | SMCI | FANG, MPC, IMO.TO, CVE.TO, BIRG.IR, WCP.TO, TOU.TO |
+| 2023-09 | 2023-08 | SMCI, DVN, ATI | SMCI | TRGP, BBD-B.TO, TOU.TO, OXY, WCP.TO, BIRG.IR, ON |
+| 2023-08 | 2023-07 | SMCI, TOU.TO, DVN | SMCI | BBD-B.TO, WCP.TO, ATI, BIRG.IR, ON, PWR, TRGP |
+| 2023-07 | 2023-06 | SMCI, TOU.TO, PWR | SMCI | ON, NVDA, ATI, TECK-B.TO, NUE, FIX, TRGP |
+| 2023-06 | 2023-05 | SMCI, ON, PWR | SMCI | FSLR, NVDA, FIX, ASM.AS, AAF.L, FTAI, HWM |
+| 2023-05 | 2023-04 | TRGP, TECK-B.TO, DKS | TRGP | ATI, RHM.DE, PWR, SMCI, FIX, KOG.OL, FSLR |
+| 2023-04 | 2023-03 | DKS, BBD-B.TO, ON | DKS | MPC, FCX, FSLR, TSLA, TFII.TO, FUTU, IVN.TO |
+| 2023-03 | 2023-02 | STLD, TSLA, NUE | STLD | PWR, FCX, ON, TFII.TO, TECK-B.TO, DKS, SMCI |
+| 2023-02 | 2023-01 | FUTU, STLD, FCX | FUTU | PWR, NUE, EVO.ST, TFII.TO, IVN.TO, FSLR, CCO.TO |
+| 2023-01 | 2022-12 | FUTU, PWR, SMCI | FUTU | KOG.OL, EVO.ST, TPL, UTHR, TFII.TO, STLD, FCX |
+| 2022-12 | 2022-11 | TOU.TO, FUTU, SMCI | TOU.TO | TPL, EVO.ST, PWR, FCX, ON, TFII.TO, IVN.TO |
+| 2022-11 | 2022-10 | DVN, TPL, PWR | DVN | SMCI, LLY, NET, STLD, FCX, WCP.TO, DKS |
+| 2022-10 | 2022-09 | TSLA, TOU.TO, BE | TSLA | EQT, ZS, PWR, ON, TFII.TO, DVN, NET |
+| 2022-09 | 2022-08 | TSLA, BE, EQT | TSLA | FUTU, PWR, ON, TFII.TO, DKS, SMCI, CCO.TO |
+| 2022-08 | 2022-07 | TSLA, TOU.TO, PWR | TSLA | FTNT, FUTU, TFII.TO, MPWR, LLY, AAPL, ON |
+| 2022-07 | 2022-06 | FUTU, TOU.TO, LLY | FUTU | UTHR, PDD, ARGX.BR, MCK, LPLA, CVE.TO, UNH |
+| 2022-06 | 2022-05 | TOU.TO, KLAC, STLD | TOU.TO | PWR, DVN, WCP.TO, KOG.OL, NUE, CVE.TO, CNQ.TO |
+| 2022-05 | 2022-04 | TOU.TO, KOG.OL, FCX | TOU.TO | TGT, ADDT-B.ST, NIBE-B.ST, NUE, STLD, PWR, FM.TO |
+| 2022-04 | 2022-03 | TSLA, FCX, IVN.TO | TSLA | BESI.AS, PWR, TOU.TO, KOG.OL, URI, FM.TO, WCP.TO |
+| 2022-03 | 2022-02 | EVO.ST, FTNT, IVN.TO | EVO.ST | FCX, TFII.TO, TOU.TO, ON, MAERSK-A.CO, MAERSK-B.CO, KOG.OL |
+| 2022-02 | 2022-01 | AAPL, IVN.TO, MRVL | AAPL | KLAC, QCOM, AMAT, LRCX, MAERSK-A.CO, MAERSK-B.CO, ON |
+| 2022-01 | 2021-12 | TSLA, ASM.AS, SHOP.TO | TSLA | NVDA, ZS, AMD, MDB, VACN.SW, NIBE-B.ST, ADDT-B.ST |
+| 2021-12 | 2021-11 | TSLA, ASM.AS, ZS | TSLA | NVDA, AMD, MDB, NIBE-B.ST, MSTR, SRT3.DE, ENTG |
+| 2021-11 | 2021-10 | SE, TSLA, ASM.AS | SE | ZS, AMD, MDB, TEAM, NIBE-B.ST, MSTR, ENTG |
+| 2021-10 | 2021-09 | SE, TSLA, ASM.AS | SE | ZS, MDB, MELI, ENTG, NIBE-B.ST, ASML.AS, DIM.PA |
+| 2021-09 | 2021-08 | SE, TSLA, SHOP.TO | SE | ASM.AS, ZS, MELI, MDB, CVNA, NIBE-B.ST, DIM.PA |
+| 2021-08 | 2021-07 | SE, SHOP.TO, CVNA | SE | ASM.AS, ZS, MDB, TWLO, AMD, DXCM, NTRA |
+| 2021-07 | 2021-06 | SE, EVO.ST, SHOP.TO | SE | TSLA, MDB, CVNA, TWLO, ASM.AS, AMD, ZS |
+| 2021-06 | 2021-05 | SE, EVO.ST, ASM.AS | SE | NIBE-B.ST, WST, VEEV, FTNT, TER, ASML.AS, LRCX |
+| 2021-05 | 2021-04 | SE, EVO.ST, CVNA | SE | NTRA, SHOP.TO, TWLO, OKTA, ASM.AS, DXCM, XYZ |
+| 2021-04 | 2021-03 | SE, EVO.ST, CVNA | SE | NTRA, TWLO, MSTR, ASM.AS, XYZ, DIM.PA, CMG |
+| 2021-03 | 2021-02 | SE, CVNA, NTRA | SE | MDB, TWLO, TSLA, EVO.ST, SHOP.TO, DXCM, OKTA |
+| 2021-02 | 2021-01 | SE, TWLO, CVNA | SE | MDB, TSLA, NTRA, OKTA, SHOP.TO, DXCM, EVO.ST |
+| 2021-01 | 2020-12 | SE, TWLO, CVNA | SE | MDB, TSLA, SHOP.TO, NTRA, OKTA, AMD, EVO.ST |
+| 2020-12 | 2020-11 | SE, CVNA, TWLO | SE | SHOP.TO, MDB, ARGX.BR, TSLA, NTRA, AMD, OKTA |
+| 2020-11 | 2020-10 | CVNA, ARGX.BR, SE | CVNA | TWLO, NTRA, TSLA, DIM.PA, EVO.ST, MELI, SRT3.DE |
+| 2020-10 | 2020-09 | CVNA, ARGX.BR, SHOP.TO | CVNA | DXCM, TWLO, OKTA, AMD, TSLA, XYZ, NTRA |
+| 2020-09 | 2020-08 | CVNA, ARGX.BR, SHOP.TO | CVNA | TWLO, OKTA, TSLA, AMD, EVO.ST, XYZ, DXCM |
+| 2020-08 | 2020-07 | ARGX.BR, SHOP.TO, OKTA | ARGX.BR | TWLO, CVNA, DXCM, NTRA, AMD, EVO.ST, TEAM |
+| 2020-07 | 2020-06 | SHOP.TO, ARGX.BR, OKTA | SHOP.TO | TWLO, CVNA, EVO.ST, DXCM, TEAM, NTRA, XYZ |
+| 2020-06 | 2020-05 | ARGX.BR, CVNA, SHOP.TO | ARGX.BR | TWLO, OKTA, EVO.ST, DXCM, TEAM, AMD, NTRA |
+| 2020-05 | 2020-04 | SHOP.TO, ARGX.BR, CVNA | SHOP.TO | OKTA, EVO.ST, TEAM, DXCM, NTRA, AMD, NOW |
+| 2020-04 | 2020-03 | SHOP.TO, EVO.ST, TEAM | SHOP.TO | NOW, DXCM, CLNX.MC, MSCI, VEEV, DIM.PA, TAL |
+| 2020-03 | 2020-02 | SHOP.TO, TEAM, EVO.ST | SHOP.TO | XYZ, NTRA, TAL, NOW, NESTE.HE, CLNX.MC, TWLO |
+| 2020-02 | 2020-01 | SHOP.TO, ARGX.BR, TEAM | SHOP.TO | XYZ, EVO.ST, AMD, TWLO, NEM.DE, CLNX.MC, BEIJ-B.ST |
+| 2020-01 | 2019-12 | ARGX.BR, SHOP.TO, EVO.ST | ARGX.BR | XYZ, TAL, AMD, BEIJ-B.ST, ABVX.PA, NOW, MELI |
+| 2019-12 | 2019-11 | ARGX.BR, XYZ, EVO.ST | ARGX.BR | AMD, NRG, CLNX.MC, FTNT, TAL, DXCM, BEIJ-B.ST |
+| 2019-11 | 2019-10 | AMD, NTRA, EVO.ST | AMD | NRG, BEIJ-B.ST, HTHT, TAL, CPRT, KEYS, ENTG |
+| 2019-10 | 2019-09 | SHOP.TO, EQX.TO, NRG | SHOP.TO | VER.VI, BA, KEYS, CPRT, TDY, NTRA, LPLA |
+| 2019-09 | 2019-08 | SHOP.TO, ARGX.BR, EQX.TO | SHOP.TO | TEAM, AMD, HEI, VER.VI, VEEV, HEI.A, TAL |
+| 2019-08 | 2019-07 | ARGX.BR, SHOP.TO, XYZ | ARGX.BR | TEAM, AMD, VEEV, EQX.TO, MELI, EVO.ST, HEI |
+| 2019-07 | 2019-06 | ARGX.BR, SHOP.TO, AMD | ARGX.BR | TEAM, TPL, VEEV, MELI, KER.PA, NOW, RACE.MI |
+| 2019-06 | 2019-05 | SHOP.TO, AMD, TEAM | SHOP.TO | VEEV, MELI, VER.VI, NOW, HEI, HEI.A, RACE.MI |
+| 2019-05 | 2019-04 | ARGX.BR, AMD, SHOP.TO | ARGX.BR | TPL, NVDA, VEEV, XYZ, HTHT, TEAM, ANET |
+| 2019-04 | 2019-03 | ARGX.BR, AMD, SHOP.TO | ARGX.BR | TPL, NVDA, AKRBP.OL, VEEV, ANET, XYZ, HTHT |
+| 2019-03 | 2019-02 | ARGX.BR, AMD, SHOP.TO | ARGX.BR | EQX.TO, XYZ, TPL, IVN.TO, AKRBP.OL, HTHT, VEEV |
+| 2019-02 | 2019-01 | AMD, ARGX.BR, EQX.TO | AMD | SHOP.TO, TECK-B.TO, AAL.L, AKRBP.OL, FM.TO, TEAM, HTHT |
+| 2019-01 | 2018-12 | ARGX.BR, EQX.TO, BVN | ARGX.BR | NRG, TAL, DECK, BESI.AS, CME, FN, WDAY |
+| 2018-12 | 2018-11 | ARGX.BR, SHOP.TO, IVN.TO | ARGX.BR | SALM.OL, NRG, VER.VI, BVN, MELI, DECK, UNH |
+| 2018-11 | 2018-10 | TPL, EQX.TO, TTWO | TPL | LITE, SALM.OL, VEEV, BURL, HEI, ISRG, VER.VI |
+| 2018-10 | 2018-09 | AMD, NVDA, AKRBP.OL | AMD | TPL, TTWO, XPO, SHOP.TO, VEEV, IVN.TO, ANET |
+| 2018-09 | 2018-08 | AMD, NVDA, TPL | AMD | NEM.DE, TTWO, EQX.TO, VEEV, LOGN.SW, ANET, AMZN |
+| 2018-08 | 2018-07 | NVDA, AMD, ARGX.BR | NVDA | HTHT, AKRBP.OL, TPL, EVO.ST, NEM.DE, SALM.OL, SHOP.TO |
+| 2018-07 | 2018-06 | NVDA, ARGX.BR, HTHT | NVDA | AMD, AKRBP.OL, TPL, EVO.ST, TTWO, SHOP.TO, NFLX |
+| 2018-06 | 2018-05 | NVDA, ARGX.BR, HTHT | NVDA | TAL, AMD, AKRBP.OL, SHOP.TO, TPL, TTWO, NFLX |
+| 2018-05 | 2018-04 | ARGX.BR, TAL, AKRBP.OL | ARGX.BR | NFLX, NEM.DE, SRT3.DE, AMZN, TPL, SALM.OL, NESTE.HE |
+| 2018-04 | 2018-03 | NVDA, ARGX.BR, TAL | NVDA | NFLX, AKRBP.OL, SRT3.DE, MRO.L, AMZN, BESI.AS, ANET |
+| 2018-03 | 2018-02 | NVDA, ARGX.BR, TAL | NVDA | HTHT, AKRBP.OL, BESI.AS, NFLX, TTWO, AMZN, SRT3.DE |
+| 2018-02 | 2018-01 | NVDA, ARGX.BR, HTHT | NVDA | AKRBP.OL, TAL, BESI.AS, AMD, TPL, ANET, NFLX |
+| 2018-01 | 2017-12 | NVDA, ARGX.BR, HTHT | NVDA | AKRBP.OL, BESI.AS, NFLX, TTWO, ANET, IVN.TO, TPL |
+| 2017-12 | 2017-11 | NVDA, AKRBP.OL, BESI.AS | NVDA | TTWO, NEM.DE, NFLX, NBIX, COHR, AMZN, STMPA.PA |
+| 2017-11 | 2017-10 | NVDA, AMZN, NFLX | NVDA | AVGO, LRCX, AMAT, MTD, GPN, ADBE, STZ |
+
+</details>
+
+### All World — Full Unfiltered ACWI (2026-11 · `2140` equities)
+
+![All World Full ACWI Performance](assets/performance_acwi.png)
+
+| Variant | Ending Value | XIRR | TWR CAGR | Max Drawdown | Top Holding (%) | 5Y Rolling Win vs ACWI ETF |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Aggressive (Top 1) | $187,428 | 26.43% | 21.23% | -42.6% | NVDA (28.6%) | 100.0% (49/49) |
+| Standard (Top 3) | $194,707 | 27.23% | 23.73% | -40.7% | NVDA (33.2%) | 100.0% (49/49) |
+| Standard (Top 3 + Rule 6) | $194,518 | 27.21% | 23.72% | -40.7% | NVDA (33.3%) | 100.0% (49/49) |
+| Balanced (Top 5) | $187,395 | 26.43% | 23.12% | -34.4% | NVDA (20.7%) | 100.0% (49/49) |
+| Balanced (Top 5 + Rule 6) | $186,879 | 26.37% | 23.09% | -34.4% | NVDA (20.8%) | 100.0% (49/49) |
+| Cautious (Top 10) | $167,863 | 24.12% | 21.88% | -32.7% | NVDA (11.7%) | 100.0% (49/49) |
+| Cautious (Top 10 + Rule 6) | $165,187 | 23.78% | 21.67% | -32.7% | NVDA (11.9%) | 100.0% (49/49) |
+| iShares MSCI ACWI ETF (`ACWI`) | $99,797 | 13.19% | 11.29% | -25.7% | Cap-weighted | Baseline |
+
+<details>
+<summary>Full ACWI Top 15 with UK ISA Accessibility Flags (2026-11)</summary>
+
+| Rank | Ticker | Company | Location | Exchange | 3Y Return (USD) | 3M Return (USD) | UK ISA Accessible |
+| :---: | :--- | :--- | :--- | :--- | :---: | :---: | :--- |
+| #1 | LITE | LUMENTUM HOLDINGS | United States | NASDAQ | +2044.10% | +17.75% | Yes |
+| #2 | 2059.TW | KING SLIDE WORKS | Taiwan | Taiwan Stock Exchange | +1295.13% | +22.13% | **No** — Non-UK ISA exchange (Taiwan Stock Exchange) |
+| #3 | MU | MICRON TECHNOLOGY | United States | NASDAQ | +1235.84% | +7.50% | Yes |
+| #4 | CVNA | CARVANA CLASS A | United States | NYSE | +1164.63% | +9.51% | Yes |
+| #5 | PLTR | PALANTIR TECHNOLOGIES CLASS A | United States | NASDAQ | +1143.99% | +49.61% | Yes |
+| #6 | 3653.TW | JENTECH PRECISION INDUSTRIAL LTD | Taiwan | Taiwan Stock Exchange | +1012.29% | +82.12% | **No** — Non-UK ISA exchange (Taiwan Stock Exchange) |
+| #7 | 3017.TW | ASIA VITAL COMPONENTS | Taiwan | Taiwan Stock Exchange | +1008.52% | +32.54% | **No** — Non-UK ISA exchange (Taiwan Stock Exchange) |
+| #8 | NTRA | NATERA | United States | NASDAQ | +949.66% | +54.73% | Yes |
+| #9 | 009150.KS | SAMSUNG ELECTRO MECHANICS | Korea (South) | Korea Exchange (Stock Market) | +910.30% | +12.33% | **No** — Non-UK ISA exchange (Korea Exchange (Stock Market)) |
+| #10 | 603268.SS | GUANGDONG SONGFA CERAMICS A | China | Shanghai Stock Exchange | +882.85% | +2.04% | **No** — Non-UK ISA exchange (Shanghai Stock Exchange) |
+| #11 | RVMD | REVOLUTION MEDICINES | United States | NASDAQ | +866.21% | +2.02% | Yes |
+| #12 | HARL.TA | HAREL INSURANCE INVESTMENTS & FINA | Israel | Tel Aviv Stock Exchange | +785.21% | +1.33% | **No** — Non-UK ISA exchange (Tel Aviv Stock Exchange) |
+| #13 | 6857.T | ADVANTEST | Japan | Tokyo Stock Exchange | +776.00% | +9.04% | **No** — Non-UK ISA exchange (Tokyo Stock Exchange) |
+| #14 | 3037.TW | UNIMICRON TECHNOLOGY | Taiwan | Taiwan Stock Exchange | +605.80% | +24.85% | **No** — Non-UK ISA exchange (Taiwan Stock Exchange) |
+| #15 | ECHO | ECHOSTAR CLASS A | United States | NASDAQ | +599.42% | +15.28% | Yes |
+
+</details>
+
+## UK Market — FTSE 100 (2026-11 · GBP, 0.50% Stamp Duty)
+
+Evaluated across `100` FTSE 100 constituents (`56` eligible in 2026-11, GBP with `0.50%` UK stamp duty on buys / `0%` on sells).
 
 | Rank | Ticker | Company | Sector | 3Y Total Return | 3M Price Return |
 | :---: | :--- | :--- | :--- | :---: | :---: |
@@ -89,9 +310,174 @@ Mechanistic international rankings refreshed alongside S&P 500 from Wikipedia + 
 | #2 | **PCT.L** | Polar Capital Technology Trust | Closed End Investments | +202.85% | +3.69% |
 | #3 | **SMT.L** | Scottish Mortgage Investment Trust | Closed End Investments | +147.85% | +19.62% |
 
-- FTSE 100 Top 3 DCA (2017-12..2026-11): XIRR `11.71%` vs `ISF.L` TR ETF `7.39%`, TWR CAGR `11.41%`, Max Drawdown `-38.4%`.
+- **Aggressive (Top 1):** **BGEO.L** (Lion Finance Group)
+- **Balanced (Top 5):** **BGEO.L**, **PCT.L**, **SMT.L**, **NXT.L**, **IHG.L**
 
-## Model Portfolio & Rule 6 Faded-Winner Status
+<details>
+<summary>Full FTSE 100 Top 10 for 2026-11</summary>
+
+| Rank | Ticker | Company | Sector | 3Y Total Return | 3M Price Return | Top 3 Buy |
+| :---: | :--- | :--- | :--- | :---: | :---: | :---: |
+| #1 | BGEO.L | Lion Finance Group | Banks | +261.72% | +3.62% | Yes |
+| #2 | PCT.L | Polar Capital Technology Trust | Closed End Investments | +202.85% | +3.69% | Yes |
+| #3 | SMT.L | Scottish Mortgage Investment Trust | Closed End Investments | +147.85% | +19.62% | Yes |
+| #4 | NXT.L | Next plc | Retailers | +123.25% | +3.44% | No |
+| #5 | IHG.L | IHG Hotels & Resorts | Travel and Leisure | +120.96% | +4.08% | No |
+| #6 | EDV.L | Endeavour Mining | Precious Metals and Mining | +120.10% | +6.08% | No |
+| #7 | SDLF.L | Standard Life | Life Insurance | +104.47% | +0.27% | No |
+| #8 | BT-A.L | BT Group | Telecommunications Service Providers | +101.89% | +12.92% | No |
+| #9 | HSX.L | Hiscox | Non-life Insurance | +100.47% | +3.87% | No |
+| #10 | TSCO.L | Tesco | Personal Care, Drug and Grocery Stores | +100.43% | +10.32% | No |
+
+</details>
+
+![UK FTSE 100 Performance](assets/performance_ftse100.png)
+
+| Variant | Ending Value | XIRR | TWR CAGR | Max Drawdown | Top Holding (%) | 5Y Rolling Win vs ISF.L |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Aggressive (Top 1) | £102,801 | 14.16% | 15.47% | -48.8% | GAW.L (49.8%) | 79.2% (38/48) |
+| Standard (Top 3) | £91,694 | 11.71% | 11.41% | -38.4% | GAW.L (21.6%) | 75.0% (36/48) |
+| Standard (Top 3 + Rule 6) | £91,650 | 11.70% | 11.41% | -38.4% | GAW.L (21.6%) | 75.0% (36/48) |
+| Balanced (Top 5) | £88,487 | 10.95% | 9.91% | -33.5% | GAW.L (13.6%) | 68.8% (33/48) |
+| Balanced (Top 5 + Rule 6) | £88,595 | 10.98% | 9.93% | -33.5% | BGEO.L (13.8%) | 68.8% (33/48) |
+| Cautious (Top 10) | £87,536 | 10.72% | 9.61% | -31.0% | PCT.L (7.7%) | 66.7% (32/48) |
+| Cautious (Top 10 + Rule 6) | £87,547 | 10.72% | 9.62% | -31.0% | PCT.L (7.7%) | 68.8% (33/48) |
+| FTSE 100 TR ETF (`ISF.L`) | £74,967 | 7.39% | 4.17% | -28.3% | Cap-weighted | Baseline |
+
+### UK FTSE 100 — Latest 12 Monthly Windows
+
+| Window | Signal Data | Top 3 (Standard Equal Split) | Top 1 (Aggressive) | Ranks 4–10 (Rule 6 Watchlist) |
+| :--- | :--- | :--- | :--- | :--- |
+| 2026-11 | 2026-10 | **BGEO.L** (+262%), **PCT.L** (+203%), **SMT.L** (+148%) | BGEO.L | NXT.L, IHG.L, EDV.L, SDLF.L, BT-A.L, HSX.L, TSCO.L |
+| 2026-10 | 2026-09 | **RR.L** (+562%), **BGEO.L** (+290%), **STAN.L** (+204%) | RR.L | NWG.L, BBY.L, EDV.L, DPLM.L, BAB.L, HSBA.L, CCC.L |
+| 2026-09 | 2026-08 | **RR.L** (+588%), **BGEO.L** (+286%), **BARC.L** (+237%) | RR.L | STAN.L, NWG.L, EDV.L, IAG.L, BBY.L, HSBA.L, CCC.L |
+| 2026-08 | 2026-07 | **RR.L** (+694%), **BGEO.L** (+257%), **BARC.L** (+229%) | RR.L | BAB.L, STAN.L, NWG.L, PCT.L, LLOY.L, IAG.L, BBY.L |
+| 2026-07 | 2026-06 | **RR.L** (+857%), **BGEO.L** (+288%), **BARC.L** (+231%) | RR.L | PCT.L, STAN.L, IAG.L, NWG.L, IGG.L, ANTO.L, LLOY.L |
+| 2026-06 | 2026-05 | **RR.L** (+833%), **PCT.L** (+249%), **STAN.L** (+215%) | RR.L | BARC.L, AAF.L, IAG.L, IGG.L, HSBA.L, DPLM.L, IHG.L |
+| 2026-05 | 2026-04 | **BGEO.L** (+274%), **PCT.L** (+211%), **STAN.L** (+197%) | BGEO.L | AAF.L, DPLM.L, HSBA.L, EDV.L, BBY.L, IGG.L, BA.L |
+| 2026-04 | 2026-03 | **PCT.L** (+140%), **BA.L** (+124%), **EDV.L** (+124%) | PCT.L | HSBA.L, DPLM.L, ANTO.L, IGG.L, BBY.L, MKS.L, CNA.L |
+| 2026-03 | 2026-02 | **RR.L** (+820%), **FCIT.L** (+476%), **FRES.L** (+456%) | RR.L | BGEO.L, BAB.L, EDV.L, AAF.L, PCT.L, ANTO.L, IAG.L |
+| 2026-02 | 2026-01 | **RR.L** (+1045%), **FCIT.L** (+448%), **BAB.L** (+370%) | RR.L | FRES.L, BGEO.L, PCT.L, STAN.L, AAF.L, BARC.L, IAG.L |
+| 2026-01 | 2025-12 | **FRES.L** (+270%), **BGEO.L** (+258%), **IAG.L** (+235%) | FRES.L | AAF.L, BARC.L, STAN.L, PCT.L, NWG.L, NXT.L, IHG.L |
+| 2025-12 | 2025-11 | **FCIT.L** (+459%), **BAB.L** (+299%), **BGEO.L** (+255%) | FCIT.L | IAG.L, FRES.L, MKS.L, PCT.L, STAN.L, BARC.L, GAW.L |
+
+<details>
+<summary>Full FTSE 100 Monthly Pick History (108 windows: 2017-12 to 2026-11)</summary>
+
+| Window | Signal Data | Top 3 (Standard) | Top 1 | Ranks 4–10 |
+| :--- | :--- | :--- | :--- | :--- |
+| 2026-11 | 2026-10 | BGEO.L, PCT.L, SMT.L | BGEO.L | NXT.L, IHG.L, EDV.L, SDLF.L, BT-A.L, HSX.L, TSCO.L |
+| 2026-10 | 2026-09 | RR.L, BGEO.L, STAN.L | RR.L | NWG.L, BBY.L, EDV.L, DPLM.L, BAB.L, HSBA.L, CCC.L |
+| 2026-09 | 2026-08 | RR.L, BGEO.L, BARC.L | RR.L | STAN.L, NWG.L, EDV.L, IAG.L, BBY.L, HSBA.L, CCC.L |
+| 2026-08 | 2026-07 | RR.L, BGEO.L, BARC.L | RR.L | BAB.L, STAN.L, NWG.L, PCT.L, LLOY.L, IAG.L, BBY.L |
+| 2026-07 | 2026-06 | RR.L, BGEO.L, BARC.L | RR.L | PCT.L, STAN.L, IAG.L, NWG.L, IGG.L, ANTO.L, LLOY.L |
+| 2026-06 | 2026-05 | RR.L, PCT.L, STAN.L | RR.L | BARC.L, AAF.L, IAG.L, IGG.L, HSBA.L, DPLM.L, IHG.L |
+| 2026-05 | 2026-04 | BGEO.L, PCT.L, STAN.L | BGEO.L | AAF.L, DPLM.L, HSBA.L, EDV.L, BBY.L, IGG.L, BA.L |
+| 2026-04 | 2026-03 | PCT.L, BA.L, EDV.L | PCT.L | HSBA.L, DPLM.L, ANTO.L, IGG.L, BBY.L, MKS.L, CNA.L |
+| 2026-03 | 2026-02 | RR.L, FCIT.L, FRES.L | RR.L | BGEO.L, BAB.L, EDV.L, AAF.L, PCT.L, ANTO.L, IAG.L |
+| 2026-02 | 2026-01 | RR.L, FCIT.L, BAB.L | RR.L | FRES.L, BGEO.L, PCT.L, STAN.L, AAF.L, BARC.L, IAG.L |
+| 2026-01 | 2025-12 | FRES.L, BGEO.L, IAG.L | FRES.L | AAF.L, BARC.L, STAN.L, PCT.L, NWG.L, NXT.L, IHG.L |
+| 2025-12 | 2025-11 | FCIT.L, BAB.L, BGEO.L | FCIT.L | IAG.L, FRES.L, MKS.L, PCT.L, STAN.L, BARC.L, GAW.L |
+| 2025-11 | 2025-10 | RR.L, BAB.L, III.L | RR.L | BGEO.L, MKS.L, IAG.L, FRES.L, STAN.L, NXT.L, BARC.L |
+| 2025-10 | 2025-09 | RR.L, BAB.L, IAG.L | RR.L | BGEO.L, MKS.L, FRES.L, MRO.L, BARC.L, BA.L, STAN.L |
+| 2025-09 | 2025-08 | RR.L, FCIT.L, BGEO.L | RR.L | IAG.L, BAB.L, FRES.L, STAN.L, PSH.L, BARC.L, GAW.L |
+| 2025-08 | 2025-07 | RR.L, BGEO.L, IAG.L | RR.L | BAB.L, STAN.L, BARC.L, BA.L, GAW.L, NWG.L, CCH.L |
+| 2025-07 | 2025-06 | RR.L, BGEO.L, III.L | RR.L | BAB.L, IAG.L, GAW.L, BA.L, BARC.L, DPLM.L, NWG.L |
+| 2025-06 | 2025-05 | RR.L, FCIT.L, BGEO.L | RR.L | III.L, BAB.L, BA.L, MKS.L, CCH.L, NWG.L, GAW.L |
+| 2025-05 | 2025-04 | RR.L, BGEO.L, III.L | RR.L | MKS.L, BAB.L, CCH.L, BA.L, GAW.L, NXT.L, NWG.L |
+| 2025-04 | 2025-03 | RR.L, BGEO.L, III.L | RR.L | STAN.L, BAB.L, CCH.L, BA.L, NWG.L, BARC.L, GAW.L |
+| 2025-03 | 2025-02 | RR.L, BGEO.L, III.L | RR.L | STAN.L, IAG.L, PSON.L, MRO.L, BAB.L, IHG.L, BA.L |
+| 2025-02 | 2025-01 | RR.L, BGEO.L, III.L | RR.L | IHG.L, PSON.L, IAG.L, STAN.L, CNA.L, MRO.L, SGE.L |
+| 2025-01 | 2024-12 | RR.L, BGEO.L, III.L | RR.L | STAN.L, IHG.L, IAG.L, PSON.L, CNA.L, HSBA.L, BBY.L |
+| 2024-12 | 2024-11 | FCIT.L, RR.L, BGEO.L | FCIT.L | III.L, STAN.L, IHG.L, PSON.L, IAG.L, BBY.L, MRO.L |
+| 2024-11 | 2024-10 | RR.L, III.L, MKS.L | RR.L | PSON.L, STAN.L, BBY.L, IHG.L, HSBA.L, CPG.L, IMB.L |
+| 2024-10 | 2024-09 | RR.L, III.L, MKS.L | RR.L | STAN.L, CPG.L, BBY.L, DPLM.L, CCEP.L, AUTO.L, BNZL.L |
+| 2024-09 | 2024-08 | FCIT.L, RR.L, BGEO.L | FCIT.L | III.L, INVP.L, MKS.L, STAN.L, REL.L, CPG.L, AZN.L |
+| 2024-08 | 2024-07 | RR.L, CNA.L, III.L | RR.L | MKS.L, INVP.L, BAB.L, STAN.L, HSBA.L, INF.L, REL.L |
+| 2024-07 | 2024-06 | FCIT.L, RR.L, CNA.L | FCIT.L | INVP.L, SHEL.L, MKS.L, REL.L, IHG.L, BAB.L, INF.L |
+| 2024-06 | 2024-05 | RR.L, BA.L, CNA.L | RR.L | III.L, SHEL.L, BAB.L, MKS.L, INVP.L, BP.L, INF.L |
+| 2024-05 | 2024-04 | BGEO.L, RR.L, BA.L | BGEO.L | III.L, SHEL.L, BAB.L, REL.L, BP.L, MRO.L, MKS.L |
+| 2024-04 | 2024-03 | FCIT.L, BGEO.L, RR.L | FCIT.L | BA.L, BAB.L, SGE.L, REL.L, SHEL.L, MRO.L, IHG.L |
+| 2024-03 | 2024-02 | BGEO.L, RR.L, BA.L | BGEO.L | III.L, SGE.L, REL.L, BAB.L, IHG.L, MRO.L, PSH.L |
+| 2024-02 | 2024-01 | BGEO.L, RR.L, INVP.L | BGEO.L | BA.L, III.L, SGE.L, BAB.L, REL.L, MKS.L, IHG.L |
+| 2024-01 | 2023-12 | FCIT.L, BGEO.L, INVP.L | FCIT.L | RR.L, BA.L, GLEN.L, SGE.L, MKS.L, REL.L, AAF.L |
+| 2023-12 | 2023-11 | INVP.L, RR.L, GLEN.L | INVP.L | III.L, BA.L, SHEL.L, MKS.L, SGE.L, REL.L, DPLM.L |
+| 2023-11 | 2023-10 | CNA.L, BGEO.L, RR.L | CNA.L | BA.L, SHEL.L, BP.L, MKS.L, REL.L, PSON.L, BAB.L |
+| 2023-10 | 2023-09 | FCIT.L, RR.L, BGEO.L | FCIT.L | CNA.L, INVP.L, GLEN.L, SHEL.L, MKS.L, BP.L, AAF.L |
+| 2023-09 | 2023-08 | BGEO.L, INVP.L, CNA.L | BGEO.L | RR.L, GLEN.L, SHEL.L, MRO.L, III.L, MKS.L, BA.L |
+| 2023-08 | 2023-07 | BGEO.L, INVP.L, CNA.L | BGEO.L | GLEN.L, MRO.L, RR.L, III.L, MKS.L, INF.L, STAN.L |
+| 2023-07 | 2023-06 | CNA.L, BGEO.L, III.L | CNA.L | CPG.L, MKS.L, MRO.L, SHEL.L, IMI.L, CCEP.L, AAF.L |
+| 2023-06 | 2023-05 | BGEO.L, CNA.L, III.L | BGEO.L | CPG.L, BA.L, MKS.L, IMI.L, MRO.L, CCEP.L, BNZL.L |
+| 2023-05 | 2023-04 | FCIT.L, AAF.L, BGEO.L | FCIT.L | CNA.L, III.L, BA.L, IMI.L, WEIR.L, BRBY.L, SHEL.L |
+| 2023-04 | 2023-03 | BGEO.L, CNA.L, WEIR.L | BGEO.L | GAW.L, III.L, IMI.L, ANTO.L, BRBY.L, JD.L, BA.L |
+| 2023-03 | 2023-02 | ANTO.L, INVP.L, BGEO.L | ANTO.L | III.L, RIO.L, IMI.L, SHEL.L, NWG.L, KGF.L, BRBY.L |
+| 2023-02 | 2023-01 | GLEN.L, ANTO.L, PSH.L | GLEN.L | BGEO.L, AAL.L, INVP.L, AAF.L, RIO.L, BNZL.L, AZN.L |
+| 2023-01 | 2022-12 | FCIT.L, GLEN.L, PSH.L | FCIT.L | ANTO.L, BGEO.L, INVP.L, BA.L, AAL.L, AZN.L, PSON.L |
+| 2022-12 | 2022-11 | GLEN.L, PSH.L, BGEO.L | GLEN.L | AAL.L, ANTO.L, INVP.L, FRES.L, PSON.L, DPLM.L, AZN.L |
+| 2022-11 | 2022-10 | GLEN.L, PSH.L, BGEO.L | GLEN.L | BA.L, PSON.L, ANTO.L, BBY.L, BATS.L, IMB.L, RTO.L |
+| 2022-10 | 2022-09 | GLEN.L, PSH.L, SMT.L | GLEN.L | BGEO.L, DPLM.L, BBY.L, PCT.L, SPX.L, BNZL.L, FCIT.L |
+| 2022-09 | 2022-08 | PSH.L, IGG.L, BGEO.L | PSH.L | BBY.L, AZN.L, PCT.L, BA.L, BNZL.L, CTEC.L, NWG.L |
+| 2022-08 | 2022-07 | FCIT.L, AAF.L, GAW.L | FCIT.L | AZN.L, CTEC.L, PCT.L, BA.L, BBY.L, INVP.L, REL.L |
+| 2022-07 | 2022-06 | AZN.L, BA.L, CTEC.L | AZN.L | BATS.L, GSK.L, BARC.L, CCEP.L, IMB.L, NWG.L, RKT.L |
+| 2022-06 | 2022-05 | AAL.L, GLEN.L, AZN.L | AAL.L | BA.L, SSE.L, CTEC.L, NG.L, SVT.L, INVP.L, LSEG.L |
+| 2022-05 | 2022-04 | FCIT.L, CCC.L, SGRO.L | FCIT.L | AZN.L, AAL.L, DPLM.L, ANTO.L, BBOX.L, GLEN.L, SSE.L |
+| 2022-04 | 2022-03 | CCC.L, AAL.L, ANTO.L | CCC.L | LSEG.L, AZN.L, IGG.L, GLEN.L, SVT.L, CTEC.L, BA.L |
+| 2022-03 | 2022-02 | AAL.L, ANTO.L, BA.L | AAL.L | AZN.L, LSEG.L, GLEN.L, SSE.L, IGG.L, ADM.L, RIO.L |
+| 2022-02 | 2022-01 | SGRO.L, IMI.L, BBOX.L | SGRO.L | AAL.L, III.L, LSEG.L, ADM.L, AUTO.L, SVT.L, LMP.L |
+| 2022-01 | 2021-12 | JD.L, PSH.L, CCC.L | JD.L | DPLM.L, SPX.L, PCT.L, SGRO.L, ICG.L, HLMA.L, CRDA.L |
+| 2021-12 | 2021-11 | SMT.L, JD.L, PSH.L | SMT.L | DPLM.L, SGRO.L, PCT.L, CRDA.L, RTO.L, EXPN.L, BBOX.L |
+| 2021-11 | 2021-10 | FCIT.L, SMT.L, JD.L | FCIT.L | PSH.L, SPX.L, ICG.L, DPLM.L, HLMA.L, PCT.L, SGRO.L |
+| 2021-10 | 2021-09 | SMT.L, PSH.L, JD.L | SMT.L | CCC.L, SPX.L, HLMA.L, HWDN.L, SGRO.L, RTO.L, PCT.L |
+| 2021-09 | 2021-08 | SMT.L, SPX.L, CCC.L | SMT.L | DPLM.L, HLMA.L, ICG.L, JD.L, SGRO.L, HWDN.L, PCT.L |
+| 2021-08 | 2021-07 | FCIT.L, GAW.L, SMT.L | FCIT.L | DPLM.L, SPX.L, HLMA.L, PCT.L, HWDN.L, AAL.L, SGRO.L |
+| 2021-07 | 2021-06 | GAW.L, SMT.L, PSH.L | GAW.L | DPLM.L, SPX.L, JD.L, HLMA.L, ICG.L, PCT.L, LSEG.L |
+| 2021-06 | 2021-05 | GAW.L, PSH.L, JD.L | GAW.L | DPLM.L, SPX.L, CCC.L, HLMA.L, ICG.L, PCT.L, AAL.L |
+| 2021-05 | 2021-04 | GAW.L, PSH.L, DPLM.L | GAW.L | JD.L, HLMA.L, CCC.L, PCT.L, SPX.L, ICG.L, ANTO.L |
+| 2021-04 | 2021-03 | PSH.L, DPLM.L, SPX.L | PSH.L | ICG.L, ANTO.L, AAL.L, ADM.L, NXT.L, HWDN.L, RIO.L |
+| 2021-03 | 2021-02 | FCIT.L, SMT.L, PSH.L | FCIT.L | LSEG.L, JD.L, DPLM.L, ANTO.L, HLMA.L, PCT.L, ADM.L |
+| 2021-02 | 2021-01 | FCIT.L, SMT.L, PSH.L | FCIT.L | LSEG.L, CCC.L, JD.L, DPLM.L, PCT.L, HLMA.L, SGRO.L |
+| 2021-01 | 2020-12 | GAW.L, SMT.L, JD.L | GAW.L | PSH.L, LSEG.L, CCC.L, PCT.L, SPX.L, HLMA.L, AUTO.L |
+| 2020-12 | 2020-11 | GAW.L, SMT.L, PSH.L | GAW.L | JD.L, CCC.L, SPX.L, DPLM.L, AAL.L, ICG.L, ADM.L |
+| 2020-11 | 2020-10 | FCIT.L, GAW.L, CCC.L | FCIT.L | SMT.L, JD.L, DPLM.L, PSH.L, HLMA.L, SPX.L, PCT.L |
+| 2020-10 | 2020-09 | GAW.L, CCC.L, SMT.L | GAW.L | LSEG.L, PSH.L, JD.L, HLMA.L, DPLM.L, SPX.L, PCT.L |
+| 2020-09 | 2020-08 | GAW.L, JD.L, LSEG.L | GAW.L | SMT.L, PCT.L, CCC.L, PSH.L, SPX.L, DPLM.L, SGRO.L |
+| 2020-08 | 2020-07 | GAW.L, LSEG.L, CCC.L | GAW.L | SMT.L, HLMA.L, PCT.L, AZN.L, SPX.L, SGRO.L, RTO.L |
+| 2020-07 | 2020-06 | GAW.L, LSEG.L, PCT.L | GAW.L | HLMA.L, SMT.L, CCC.L, SPX.L, RTO.L, SGRO.L, AAL.L |
+| 2020-06 | 2020-05 | GAW.L, FCIT.L, LSEG.L | GAW.L | HLMA.L, PCT.L, RTO.L, SMT.L, SPX.L, EXPN.L, SGRO.L |
+| 2020-05 | 2020-04 | RTO.L, SMT.L, AZN.L | RTO.L | PSH.L, IGG.L, ADM.L, RKT.L, CTEC.L, FRES.L, PCT.L |
+| 2020-04 | 2020-03 | PSH.L, NG.L, RKT.L | PSH.L | FRES.L |
+| 2020-03 | 2020-02 | GAW.L, LSEG.L, ICG.L | GAW.L | CCC.L, RTO.L, DPLM.L, SMT.L, EXPN.L, HWDN.L, BTRW.L |
+| 2020-02 | 2020-01 | GAW.L, ICG.L, LSEG.L | GAW.L | JD.L, HLMA.L, CCC.L, SPX.L, SGRO.L, RTO.L, DPLM.L |
+| 2020-01 | 2019-12 | GAW.L, LSEG.L, JD.L | GAW.L | HLMA.L, ICG.L, CCC.L, SPX.L, SGRO.L, DPLM.L, AAL.L |
+| 2019-12 | 2019-11 | GAW.L, FCIT.L, JD.L | GAW.L | ICG.L, SGRO.L, HLMA.L, SPX.L, CCC.L, DPLM.L, PCT.L |
+| 2019-11 | 2019-10 | JD.L, LSEG.L, ICG.L | JD.L | SGRO.L, RTO.L, DPLM.L, III.L, AZN.L, LMP.L, HWDN.L |
+| 2019-10 | 2019-09 | LSEG.L, JD.L, ICG.L | LSEG.L | RTO.L, DPLM.L, SGRO.L, III.L, PCT.L, EXPN.L, BRBY.L |
+| 2019-09 | 2019-08 | FCIT.L, LSEG.L, JD.L | FCIT.L | ICG.L, RTO.L, DPLM.L, PCT.L, HLMA.L, CCC.L, SGRO.L |
+| 2019-08 | 2019-07 | GAW.L, JD.L, AAL.L | GAW.L | LSEG.L, SPX.L, ICG.L, RTO.L, RIO.L, IHG.L, HLMA.L |
+| 2019-07 | 2019-06 | GAW.L, FCIT.L, AAL.L | GAW.L | JD.L, ICG.L, SPX.L, LSEG.L, PCT.L, RIO.L, RTO.L |
+| 2019-06 | 2019-05 | GAW.L, SPX.L, JD.L | GAW.L | RIO.L, PCT.L, CCH.L, RTO.L, DPLM.L, IHG.L, LSEG.L |
+| 2019-05 | 2019-04 | GAW.L, MRO.L, AAL.L | GAW.L | JD.L, SPX.L, III.L, RTO.L, DPLM.L, SMT.L, HLMA.L |
+| 2019-04 | 2019-03 | GAW.L, FCIT.L, AAL.L | GAW.L | MRO.L, RIO.L, JD.L, PCT.L, ANTO.L, GLEN.L, RTO.L |
+| 2019-03 | 2019-02 | GAW.L, AAL.L, GLEN.L | GAW.L | RIO.L, PCT.L, III.L, SPX.L, RTO.L, JD.L, ANTO.L |
+| 2019-02 | 2019-01 | AAL.L, MRO.L, RIO.L | AAL.L | ANTO.L, RTO.L, JD.L, SMT.L, LSEG.L, IHG.L, CCH.L |
+| 2019-01 | 2018-12 | AAL.L, RTO.L, III.L | AAL.L | DGE.L, REL.L, PSON.L, FRES.L, SN.L, AUTO.L, SGE.L |
+| 2018-12 | 2018-11 | AAL.L, RTO.L, HSX.L | AAL.L | DGE.L, AZN.L, ADM.L, SN.L, BNZL.L, GSK.L, PSON.L |
+| 2018-11 | 2018-10 | GAW.L, HSX.L, AZN.L | GAW.L | ADM.L, BNZL.L, WTB.L, NG.L, UU.L, BT-A.L |
+| 2018-10 | 2018-09 | GAW.L, FCIT.L, AAL.L | GAW.L | SPX.L, PCT.L, JD.L, SMT.L, DPLM.L, IHG.L, HLMA.L |
+| 2018-09 | 2018-08 | GAW.L, JD.L, PCT.L | GAW.L | SPX.L, SMT.L, DPLM.L, CCH.L, HLMA.L, HSX.L, LSEG.L |
+| 2018-08 | 2018-07 | GAW.L, JD.L, ITRK.L | GAW.L | RTO.L, AAL.L, PCT.L, SPX.L, CCC.L, CCH.L, SMT.L |
+| 2018-07 | 2018-06 | FCIT.L, GAW.L, JD.L | FCIT.L | RTO.L, ITRK.L, PCT.L, SMT.L, SPX.L, LSEG.L, CCC.L |
+| 2018-06 | 2018-05 | GAW.L, MRO.L, RTO.L | GAW.L | ITRK.L, SMT.L, LSEG.L, CCC.L, CCH.L, HLMA.L, HSX.L |
+| 2018-05 | 2018-04 | GAW.L, MRO.L, JD.L | GAW.L | RTO.L, III.L, CCC.L, HSX.L, SMT.L, CCH.L, LSEG.L |
+| 2018-04 | 2018-03 | MRO.L, CCH.L, LSEG.L | MRO.L | SMT.L, AAL.L, SPX.L, CRDA.L, SGRO.L, III.L, SMIN.L |
+| 2018-03 | 2018-02 | GAW.L, MRO.L, JD.L | GAW.L | CCH.L, BGEO.L, III.L, SMT.L, IHG.L, LSEG.L, CRDA.L |
+| 2018-02 | 2018-01 | GAW.L, MRO.L, JD.L | GAW.L | DCC.L, HLMA.L, SMT.L, BGEO.L, ICG.L, SPX.L, IHG.L |
+| 2018-01 | 2017-12 | FCIT.L, GAW.L, RTO.L | FCIT.L | ITRK.L, DCC.L, PCT.L, ICG.L, SPX.L, FRES.L, HLMA.L |
+| 2017-12 | 2017-11 | GAW.L, JD.L, RTO.L | GAW.L | ITRK.L, DCC.L, SPX.L, HLMA.L, SGE.L, ICG.L, SMT.L |
+
+</details>
+
+## US Model Portfolio & Rule 6 Faded-Winner Status
 
 - **Active model positions (Standard Top 3 + Rule 6):** `71` (tracked in [`data/model_holdings.csv`](data/model_holdings.csv)).
 - **Rule 6 Exit Signals this month:** None triggered.
@@ -104,7 +490,7 @@ Mechanistic international rankings refreshed alongside S&P 500 from Wikipedia + 
 | TTWO | Take-Two Interactive | 85m | `rule6_stage2_sold` | 2027-10 |
 | BA | Boeing | 85m | `rule6_stage2_sold` | 2027-10 |
 
-## Mechanistic Stock Picks by Month / Window
+## US S&P 500 — Mechanistic Stock Picks by Month / Window
 
 Every monthly window below is computed mechanistically from `data/monthly_prices.csv` using the completed prior month's data (`data/rankings/history.csv`).
 
@@ -126,7 +512,7 @@ Every monthly window below is computed mechanistically from `data/monthly_prices
 | 2025-12 | 2025-11 | **APP** (+4060%), **PLTR** (+2146%), **HOOD** (+1240%) | APP | NVDA, AVGO, WDC, STX, GE, HWM, CRWD | 247 |
 
 <details>
-<summary>Full Monthly Pick History (251 windows: 2006-01 to 2026-11)</summary>
+<summary>Full US S&P 500 Monthly Pick History (251 windows: 2006-01 to 2026-11)</summary>
 
 | Window | Signal Data | Top 3 (Standard) | Top 1 | Ranks 4–10 | Eligible |
 | :--- | :--- | :--- | :--- | :--- | :---: |

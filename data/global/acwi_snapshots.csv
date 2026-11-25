@@ -1,0 +1,2184 @@
+snapshot_month,ticker,name,sector,location,exchange,market_currency,uk_accessible
+2026-11,000001.SZ,PING AN BANK LTD A,Financials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,0001.HK,CK HUTCHISON HOLDINGS,Industrials,Hong Kong,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,000100.KS,YUHAN,Health Care,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,000150.KS,DOOSAN CORP,Industrials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,000157.SZ,ZOOMLION HEAVY INDUSTRY SCIENCE AN,Industrials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,000166.SZ,SHENWAN HONGYUAN GROUP LTD A,Financials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,0002.HK,CLP HOLDINGS,Utilities,Hong Kong,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,000270.KS,KIA CORPORATION,Consumer Discretionary,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,0003.HK,HONG KONG AND CHINA GAS LTD,Utilities,Hong Kong,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,000333.SZ,MIDEA GROUP A,Consumer Discretionary,China,Shenzhen Stock Exchange,CNY,false
+2026-11,000338.SZ,WEICHAI POWER LTD A,Industrials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,000408.SZ,ZANGGE MINING LTD A,Materials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,000425.SZ,XCMG CONSTRUCTION MACHINERY A,Industrials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,000426.SZ,INNER MONGOLIA XINGYE SILVER&TIN M,Materials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,000538.SZ,YUNNAN BAIYAO GROUP LTD A,Health Care,China,Shenzhen Stock Exchange,CNY,false
+2026-11,000568.SZ,LUZHOU LAO JIAO LTD A,Consumer Staples,China,Shenzhen Stock Exchange,CNY,false
+2026-11,000596.SZ,ANHUI GUJING DISTILLERY LTD A,Consumer Staples,China,Shenzhen Stock Exchange,CNY,false
+2026-11,0006.HK,POWER ASSETS HOLDINGS,Utilities,Hong Kong,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,000625.SZ,CHONGQING CHANGAN AUTOMOBILE LTD A,Consumer Discretionary,China,Shenzhen Stock Exchange,CNY,false
+2026-11,000651.SZ,GREE ELECTRIC APPLIANCES INC OF ZH,Consumer Discretionary,China,Shenzhen Stock Exchange,CNY,false
+2026-11,000657.SZ,CHINA TUNGSTEN AND HIGHTECH MATERI,Materials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,000660.KS,SK HYNIX,Information Technology,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,000720.KS,HYUNDAI ENGINEERING & CONSTRUCTION,Industrials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,000725.SZ,BOE TECHNOLOGY GROUP LTD A,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,000776.SZ,GF SECURITIES A,Financials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,000792.SZ,QINGHAI SALT LAKE INDUSTRY LTD A,Materials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,000810.KS,SAMSUNG FIRE & MARINE INSURANCE LT,Financials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,000858.SZ,WULIANGYE YIBIN LTD A,Consumer Staples,China,Shenzhen Stock Exchange,CNY,false
+2026-11,000876.SZ,NEW HOPE LIUHE LTD A,Consumer Staples,China,Shenzhen Stock Exchange,CNY,false
+2026-11,000895.SZ,HENAN SHUANGHUI INVESTMENT & DEVEL,Consumer Staples,China,Shenzhen Stock Exchange,CNY,false
+2026-11,000938.SZ,UNISPLENDOUR CORP LTD A,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,000977.SZ,INSPUR ELECTRONIC INFORMATION INDU,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,000988.SZ,HUAGONG TECH A,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,0012.HK,HENDERSON LAND DEVELOPMENT LTD,Real Estate,Hong Kong,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,001309.SZ,SHENZHEN TECHWINSEMI TECHNOLOGY LT,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,0016.HK,SUN HUNG KAI PROPERTIES LTD,Real Estate,Hong Kong,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0019.HK,SWIRE PACIFIC LTD A,Industrials,Hong Kong,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,001979.SZ,CHINA MERCHANTS SHEKOU INDUSTRIAL,Real Estate,China,Shenzhen Stock Exchange,CNY,false
+2026-11,0020.HK,SENSETIME GROUP CLASS B INC,Information Technology,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,002001.SZ,ZHEJIANG NHU A,Materials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,002050.SZ,ZHEJIANG SANHUA INTELLIGENT CONTRO,Industrials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,002080.SZ,SINOMA SCIENCE & TECHNOLOGY A,Materials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,002142.SZ,BANK OF NINGBO A,Financials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,002156.SZ,TONGFU MICROELECTRONICS LTD A,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,002230.SZ,IFLYTEK LTD A,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,002241.SZ,GOERTEK A,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,002281.SZ,ACCELINK TECHNOLOGIES LTD A,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,002304.SZ,JIANGSU YANGHE BREWERY JOINT-STOCK,Consumer Staples,China,Shenzhen Stock Exchange,CNY,false
+2026-11,002311.SZ,GUANGDONG HAID GROUP LTD A,Consumer Staples,China,Shenzhen Stock Exchange,CNY,false
+2026-11,002352.SZ,S.F. HOLDING LTD A,Industrials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,002353.SZ,YANTAI JEREH OILFIELD SERVICES GRO,Energy,China,Shenzhen Stock Exchange,CNY,false
+2026-11,002371.SZ,NAURA TECHNOLOGY GROUP LTD A,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,002384.SZ,SUZHOU DONGSHAN PRECISION MANUFACT,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,002422.SZ,SICHUAN KELUN PHARMACEUTICAL LTD A,Health Care,China,Shenzhen Stock Exchange,CNY,false
+2026-11,002460.SZ,GANFENG LITHIUM GROUP LTD A,Materials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,002463.SZ,WUS PRINTED CIRCUIT (KUNSHAN) A,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,002475.SZ,LUXSHARE PRECISION INDUSTRY LTD A,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,002493.SZ,RONGSHENG PETRO CHEMICAL LTD A,Materials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,002594.SZ,BYD A,Consumer Discretionary,China,Shenzhen Stock Exchange,CNY,false
+2026-11,002600.SZ,LINGYI ITECH (GUANGDONG) A,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,002602.SZ,ZHEJIANG CENTURY HUATONG GROUP LTD,Communication,China,Shenzhen Stock Exchange,CNY,false
+2026-11,0027.HK,GALAXY ENTERTAINMENT GROUP,Consumer Discretionary,Hong Kong,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,002709.SZ,GUANGZHOU TINCI MATERIALS TECHNOLO,Materials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,002714.SZ,MUYUAN FOODS GROUP LTD A,Consumer Staples,China,Shenzhen Stock Exchange,CNY,false
+2026-11,002837.SZ,SHENZHEN ENVICOOL TECHNOLOGY LTD A,Industrials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,002916.SZ,SHENNAN CIRCUITS LTD A,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,002938.SZ,AVARY HOLDING (SHENZHEN) LTD A,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,003230.KS,SAM YANG FOODS INC,Consumer Staples,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,003490.KS,KOREAN AIR LINES,Industrials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,003550.KS,LG,Industrials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,003670.KS,POSCO FUTURE M LTD,Industrials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,005380.KS,HYUNDAI MOTOR,Consumer Discretionary,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,005385.KS,HYUNDAI MOTOR S1 PREF,Consumer Discretionary,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,005387.KS,HYUNDAI MOTOR S2 PREF,Consumer Discretionary,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,005490.KS,POSCO,Materials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,005830.KS,DB INSURANCE LTD,Financials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,005930.KS,SAMSUNG ELECTRONICS LTD,Information Technology,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,005935.KS,SAMSUNG ELECTRONICS NON VOTING PRE,Information Technology,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,005940.KS,NH INVESTMENT & SECURITIES,Financials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,006400.KS,SAMSUNG SDI LTD,Information Technology,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,0066.HK,MTR CORPORATION,Industrials,Hong Kong,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,006800.KS,MIRAE ASSET SECURITIES CO LTD,Financials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,0083.HK,SINO LAND LTD,Real Estate,Hong Kong,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,009150.KS,SAMSUNG ELECTRO MECHANICS,Information Technology,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,009540.KS,HD KOREA SHIPBUILDING & OFFSHORE E,Industrials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,010120.KS,LS ELECTRIC LTD,Industrials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,010140.KS,SAMSUNG HEAVY INDUSTRIES LTD,Industrials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,010950.KS,S-OIL,Energy,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,011070.KS,LG INNOTEK LTD,Information Technology,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,011200.KS,HMM LTD,Industrials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,012330.KS,HYUNDAI MOBIS LTD,Consumer Discretionary,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,012450.KS,HANWHA AEROSPACE LTD,Industrials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,0135.HK,KUNLUN ENERGY LTD,Utilities,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0144.HK,CHINA MERCHANTS PORT HOLDINGS LTD,Industrials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0148.HK,KINGBOARD HOLDINGS,Information Technology,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0151.HK,WANT WANT CHINA HOLDINGS,Consumer Staples,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,015760.KS,KOREA ELECTRIC POWER,Utilities,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,0168.HK,TSINGTAO BREWERY COMPANY LTD H,Consumer Staples,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0175.HK,GEELY AUTOMOBILE HOLDINGS LTD,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,017670.KS,SK TELECOM,Communication,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,018260.KS,SAMSUNG SDS,Information Technology,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,0241.HK,ALIBABA HEALTH INFORMATION TECH,Consumer Staples,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,024110.KS,INDUSTRIAL BANK OF KOREA,Financials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,0267.HK,CITIC LTD,Industrials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0270.HK,GUANGDONG INVESTMENT LTD,Utilities,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,028260.KS,SAMSUNG C&T CORP,Industrials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,0285.HK,BYD ELECTRONIC (INTERNATIONAL) LTD,Information Technology,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0288.HK,WH GROUP,Consumer Staples,Hong Kong,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0291.HK,CHINA RESOURCES BEER HOLDINGS LTD,Consumer Staples,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0300.HK,MIDEA GROUP CLASS H,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0316.HK,ORIENT OVERSEAS (INTERNATIONAL) LT,Industrials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0322.HK,TINGYI (CAYMAN ISLANDS) HOLDINGS,Consumer Staples,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,032640.KS,LG UPLUS,Communication,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,032830.KS,SAMSUNG LIFE LTD,Financials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,033780.KS,KT&G CORP,Consumer Staples,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,034020.KS,DOOSAN ENERBILITY LTD,Industrials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,034730.KS,SK INC,Industrials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,035420.KS,NAVER,Communication,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,035720.KS,KAKAO,Communication,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,0358.HK,JIANGXI COPPER LTD H,Materials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0384.HK,CHINA GAS HOLDINGS LTD,Utilities,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0386.HK,CHINA PETROLEUM AND CHEMICAL H,Energy,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0388.HK,HONG KONG EXCHANGES AND CLEARING,Financials,Hong Kong,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0390.HK,CHINA RAILWAY GROUP LTD H,Industrials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0392.HK,BEIJING ENTERPRISES HOLDINGS LTD,Utilities,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,042660.KS,HANWHA OCEAN LTD,Industrials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,042700.KS,HANMI SEMICONDUCTOR,Information Technology,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,047810.KS,KOREA AEROSPACE INDUSTRIES,Industrials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,051910.KS,LG CHEM LTD,Materials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,055550.KS,SHINHAN FINANCIAL GROUP,Financials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,064350.KS,HYUNDAI-ROTEM,Industrials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,066570.KS,LG ELECTRONICS INC,Consumer Discretionary,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,0669.HK,TECHTRONIC INDUSTRIES,Industrials,Hong Kong,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,068270.KS,CELLTRION,Health Care,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,0688.HK,CHINA OVERSEAS LAND INVESTMENT,Real Estate,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0700.HK,TENCENT HOLDINGS,Communication,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,071050.KS,KOREA INVESTMENT HOLDINGS LTD,Financials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,0763.HK,ZTE CORP H,Information Technology,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0780.HK,TONGCHENG TRAVEL HOLDINGS,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0788.HK,CHINA TOWER CORP LTD H,Communication,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,079550.KS,LIG DEFENSE&AEROSPACE LTD,Industrials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,0823.HK,LINK REAL ESTATE INVESTMENT TRUST,Real Estate,Hong Kong,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0836.HK,CHINA RESOURCES POWER LTD,Utilities,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0857.HK,PETROCHINA H,Energy,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,086280.KS,HYUNDAI GLOVIS LTD,Industrials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,086520.KQ,ECOPRO LTD,Industrials,Korea (South),Korea Exchange (Kosdaq),KRW,false
+2026-11,086790.KS,HANA FINANCIAL GROUP,Financials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,0902.HK,HUANENG POWER INTERNATIONAL INC H,Utilities,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,090430.KS,AMOREPACIFIC,Consumer Staples,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,0914.HK,ANHUI CONCH CEMENT H,Materials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0916.HK,CHINA LONGYUAN POWER GROUP H,Utilities,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0939.HK,CHINA CONSTRUCTION BANK CORP H,Financials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0960.HK,LONGFOR GROUP HOLDINGS,Real Estate,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0966.HK,CHINA TAIPING INSURANCE HLDGS LTD,Financials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,096770.KS,SK INNOVATION LTD,Energy,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,0992.HK,LENOVO GROUP,Information Technology,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,0998.HK,CHINA CITIC BANK CORP LTD H,Financials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1010.SR,RIYAD BANK,Financials,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,1024.HK,KUAISHOU TECHNOLOGY,Communication,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1030.SR,SAUDI INVESTMENT BANK,Financials,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,1038.HK,CHEUNG KONG INFRASTRUCTURE HOLDING,Utilities,Hong Kong,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1044.HK,HENGAN INTERNATIONAL GROUP,Consumer Staples,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1050.SR,BANQUE SAUDI FRANSI,Financials,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,105560.KS,KB FINANCIAL GROUP,Financials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,1060.SR,SAUDI AWWAL BANK,Financials,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,1080.SR,ARAB NATIONAL BANK,Financials,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,1088.HK,CHINA SHENHUA ENERGY LTD H,Energy,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1093.HK,CSPC PHARMACEUTICAL GROUP,Health Care,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1099.HK,SINOPHARM GROUP LTD H,Health Care,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1109.HK,CHINA RESOURCES LAND,Real Estate,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1113.HK,CK ASSET HOLDINGS LTD,Real Estate,Hong Kong,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1120.SR,AL RAJHI BANK,Financials,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,1138.HK,COSCO SHIPPING ENERGY TRANSPORTATI,Energy,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1140.SR,BANK ALBILAD,Financials,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,1150.SR,ALINMA BANK,Financials,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,1155.KL,MALAYAN BANKING,Financials,Malaysia,Bursa Malaysia,MYR,false
+2026-11,1171.HK,YANKUANG ENERGY GROUP COMPANY H,Energy,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1177.HK,SINO BIOPHARMACEUTICAL,Health Care,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1180.SR,THE SAUDI NATIONAL BANK,Financials,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,1193.HK,CHINA RESOURCES GAS GROUP LTD,Utilities,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1208.HK,MMG LTD,Materials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1209.HK,CHINA RESOURCES MIXC LIFESTYLE SER,Real Estate,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1211.HK,BYD H,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1211.SR,SAUDI ARABIAN MINING,Materials,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,1216.TW,UNI-PRESIDENT ENTERPRISES,Consumer Staples,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,1258.HK,CHINA NONFERROUS MINING CORPORATIO,Materials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1288.HK,AGRICULTURAL BANK OF CHINA H,Financials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1295.KL,PUBLIC BANK,Financials,Malaysia,Bursa Malaysia,MYR,false
+2026-11,1299.HK,AIA GROUP,Financials,Hong Kong,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1301.TW,FORMOSA PLASTICS CORP,Materials,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,1303.TW,NAN YA PLASTICS CORP,Materials,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,1308.HK,SITC INTERNATIONAL HOLDINGS LTD,Industrials,Hong Kong,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1326.TW,FORMOSA CHEMICALS & FIBRE CORP,Materials,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,1336.HK,NEW CHINA LIFE INSURANCE COMPANY L,Financials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1339.HK,THE PEOPLES INSURANCE CO (GROUP),Financials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1347.HK,HUA HONG GRACE SEMICONDUCTOR LTD,Information Technology,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1378.HK,CHINA HONGQIAO GROUP LTD,Materials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,138040.KS,MERITZ FINANCIAL GROUP INC,Financials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,1398.HK,INDUSTRIAL AND COMMERCIAL BANK OF,Financials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1519.HK,J&T GLOBAL EXPRESS,Industrials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1519.TW,FORTUNE ELECTRIC,Industrials,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,1530.HK,3SBIO INC,Health Care,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1548.HK,GENSCRIPT BIOTECH CORP,Health Care,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1585.HK,YADEA GROUP HOLDINGS,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1590.TW,AIRTAC INTERNATIONAL GROUP,Industrials,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,1605.T,INPEX,Energy,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,161390.KS,HANKOOK TIRE & TECHNOLOGY LTD,Consumer Discretionary,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,1658.HK,POSTAL SAVINGS BANK OF CHINA LTD H,Financials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1766.HK,CRRC H,Industrials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1772.HK,GANFENG LITHIUM LTD H,Materials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1776.HK,GF SECURITIES H,Financials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1787.HK,SHANDONG GOLD MINING LTD H,Materials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1801.HK,INNOVENT BIOLOGICS,Health Care,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1801.T,TAISEI,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,1802.T,OBAYASHI,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,1803.T,SHIMIZU,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,1810.HK,XIAOMI,Information Technology,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1812.T,KAJIMA,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,1816.HK,CGN POWER LTD H,Utilities,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1818.HK,ZHAOJIN MINING INDUSTRY LTD H,Materials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1878.T,DAITO TRUST CONSTRUCTION LTD,Real Estate,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,1882.HK,HAITIAN INTERNATIONAL LTD,Industrials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1888.HK,KINGBOARD LAMINATES HOLDINGS LTD,Information Technology,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1898.HK,CHINA COAL ENERGY LTD H,Energy,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1908.HK,C D INTERNATIONAL INVESTMENT GROUP,Real Estate,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1919.HK,COSCO SHIPPING HOLDINGS LTD H,Industrials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1925.T,DAIWA HOUSE INDUSTRY,Real Estate,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,1928.HK,SANDS CHINA LTD,Consumer Discretionary,Hong Kong,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1928.T,SEKISUI HOUSE,Consumer Discretionary,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,1929.HK,CHOW TAI FOOK JEWELLERY GROUP LTD,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,196170.KQ,ALTEOGEN INC,Health Care,Korea (South),Korea Exchange (Kosdaq),KRW,false
+2026-11,1988.HK,CHINA MINSHENG BANKING H,Financials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,1997.HK,WHARF REAL ESTATE INVESTMENT COMPA,Real Estate,Hong Kong,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2002.TW,CHINA STEEL CORP,Materials,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2010.SR,SAUDI BASIC INDUSTRIES,Materials,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,2015.HK,LI AUTO CLASS A,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2018.HK,AAC TECHNOLOGIES HOLDINGS,Information Technology,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2020.HK,ANTA SPORTS PRODUCTS,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2020.SR,SABIC AGRI-NUTRIENTS,Materials,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,2057.HK,ZTO EXPRESS (CAYMAN) INC,Industrials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2059.TW,KING SLIDE WORKS,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,207940.KS,SAMSUNG BIOLOGICS,Health Care,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,2082.SR,ACWA POWER CO,Utilities,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,2099.HK,CHINA GOLD INTERNATIONAL RESOURCES,Materials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2207.TW,HOTAI MOTOR LTD,Consumer Discretionary,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2222.SR,SAUDI ARABIAN OIL,Energy,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,2228.HK,XTALPI HOLDINGS LTD,Health Care,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2259.HK,ZIJIN GOLD INTERNATIONAL LTD,Materials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2268.HK,WUXI XDC CAYMAN INC,Health Care,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2269.HK,WUXI BIOLOGICS CAYMAN,Health Care,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2280.SR,ALMARAI,Consumer Staples,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,2290.SR,YANBU NATIONAL PETROCHEMICALS,Materials,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,2299955D.TO,CONSTELLATION SOFTWARE INC,Information Technology,Canada,Toronto Stock Exchange,CAD,true
+2026-11,2301.TW,LITE ON TECHNOLOGY,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2303.TW,UNITED MICRO ELECTRONICS CORP,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2308.TW,DELTA ELECTRONICS,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2313.HK,SHENZHOU INTERNATIONAL GROUP,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2317.TW,HON HAI PRECISION INDUSTRY LTD,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2318.HK,PING AN INSURANCE (GROUP) CO OF CH,Financials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2319.HK,CHINA MENGNIU DAIRY LTD,Consumer Staples,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2327.TW,YAGEO,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2328.HK,PICC PROPERTY AND CASUALTY LTD H,Financials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2330.TW,TAIWAN SEMICONDUCTOR MANUFACTURING,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2331.HK,LI NING LTD,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2333.HK,GREAT WALL MOTOR COMPANY LTD H,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2338.HK,WEICHAI POWER LTD H,Industrials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2344.TW,WINBOND ELECTRONICS,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2345.TW,ACCTON TECHNOLOGY,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2356.TW,INVENTEC,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2357.TW,ASUSTEK COMPUTER INC,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2359.HK,WUXI APPTEC H,Health Care,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2360.TW,CHROMA ATE,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2367.HK,GIANT BIOGENE HOLDING LTD,Consumer Staples,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2368.TW,GOLD CIRCUIT ELECTRONICS,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2376.TW,GIGABYTE TECHNOLOGY LTD,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2379.TW,REALTEK SEMICONDUCTOR,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2382.HK,SUNNY OPTICAL TECHNOLOGY LTD,Information Technology,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2382.SR,ADES HOLDING CO,Energy,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,2382.TW,QUANTA COMPUTER,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2383.TW,ELITE MATERIAL,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2388.HK,BOC HONG KONG HOLDINGS LTD,Financials,Hong Kong,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2395.TW,ADVANTECH,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2408.TW,NANYA TECHNOLOGY CORP,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2412.TW,CHUNGHWA TELECOM LTD,Communication,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2423.HK,KE HOLDINGS,Real Estate,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2449.TW,KING YUAN ELECTRONICS,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2454.TW,MEDIATEK,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,247540.KQ,ECOPRO BM LTD,Industrials,Korea (South),Korea Exchange (Kosdaq),KRW,false
+2026-11,2502.T,ASAHI GROUP HOLDINGS,Consumer Staples,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,2503.T,KIRIN HOLDINGS,Consumer Staples,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,2513.HK,Z AI CO H,Information Technology,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2587.T,SUNTORY BEVERAGE & FOOD LTD,Consumer Staples,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,2588.HK,BOC AVIATION LTD,Industrials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,259960.KS,KRAFTON,Communication,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,2600.HK,ALUMINUM CORPORATION OF CHINA LTD,Materials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2601.HK,CHINA PACIFIC INSURANCE (GROUP) H,Financials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2603.TW,EVERGREEN MARINE CORP (TAIWAN) LTD,Industrials,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2611.HK,GUOTAI HAITONG SECURITIES CO LTD H,Financials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2615.TW,WAN HAI LINES,Industrials,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2618.HK,JD LOGISTICS INC,Industrials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2618.TW,EVA AIRWAYS,Industrials,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2628.HK,CHINA LIFE INSURANCE LTD H,Financials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,267250.KS,HD HYUNDAI LTD,Energy,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,267260.KS,HD HYUNDAI ELECTRIC,Industrials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,2688.HK,ENN ENERGY HOLDINGS LTD,Utilities,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,272210.KS,HANWHA SYSTEMS LTD,Industrials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,278470.KS,APR LTD,Consumer Staples,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,2801.T,KIKKOMAN CORP,Consumer Staples,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,2801.TW,CHANG HWA COMMERCIAL BANK LTD,Financials,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2802.T,AJINOMOTO,Consumer Staples,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,285A.T,KIOXIA HOLDINGS,Information Technology,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,2880.TW,HUA NAN FINANCIAL HOLDINGS,Financials,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2881.TW,FUBON FINANCIAL HOLDING,Financials,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2882.TW,CATHAY FINANCIAL HOLDING,Financials,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2883.HK,CHINA OILFIELD SERVICES LTD H,Energy,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2883.TW,KGI FINANCIAL HOLDING,Financials,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2884.TW,E.SUN FINANCIAL HOLDING,Financials,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2885.TW,YUANTA FINANCIAL HOLDING,Financials,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2886.TW,MEGA FINANCIAL HOLDING LTD,Financials,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2887.TW,TS FINANCIAL HOLDING,Financials,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2890.TW,SINOPAC FINANCIAL HOLDINGS,Financials,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2891.TW,CTBC FINANCIAL HOLDING,Financials,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2892.TW,FIRST FINANCIAL HOLDING LTD,Financials,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2899.HK,ZIJIN MINING GROUP -500 LTD H,Materials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,2912.TW,PRESIDENT CHAIN STORE CORP,Consumer Staples,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,2914.T,JAPAN TOBACCO,Consumer Staples,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,298040.KS,HYOSUNG HEAVY INDUSTRIES CORP,Industrials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,300014.SZ,EVE ENERGY A,Industrials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,300015.SZ,AIER EYE HOSPITAL GROUP LTD A,Health Care,China,Shenzhen Stock Exchange,CNY,false
+2026-11,300033.SZ,HITHINK ROYALFLUSH INFORMATION NET,Financials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,300059.SZ,EAST MONEY INFORMATION LTD A,Financials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,300124.SZ,SHENZHEN INOVANCE TECHNOLOGY A,Industrials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,300136.SZ,SHENZHEN SUNWAY COMMUNICATION LTD,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,300274.SZ,SUNGROW POWER SUPPLY LTD A,Industrials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,3003.T,HULIC,Real Estate,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,300308.SZ,ZHONGJI INNOLIGHT A,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,300394.SZ,SUZHOU TFC OPTICAL COMMUNICATIONIN,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,300408.SZ,CHAOZHOU THREE-CIRCLE (GROUP) LTD,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,300433.SZ,LENS TECHNOLOGY A,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,300442.SZ,RANGE INTELLIGENT COMPUTING TECHNO,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,300475.SZ,SHANNON SEMICONDUCTOR TECHNOLOGY L,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,300476.SZ,VICTORY GIANT TECHNOLOGY HUIZHOU L,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,300498.SZ,WENS FOODSTUFF GROUP,Consumer Staples,China,Shenzhen Stock Exchange,CNY,false
+2026-11,300502.SZ,EOPTOLINK TECHNOLOGY INC A,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,300604.SZ,HANGZHOU CHANG CHUAN TECHNOLOGY LT,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,300750.SZ,CONTEMPORARY AMPEREX TECHNOLOGY A,Industrials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,300757.SZ,ROBOTECHNIK INTELLIGENT TECHNOLOGY,Industrials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,300760.SZ,SHENZHEN MINDRAY BIO-MEDICAL ELECT,Health Care,China,Shenzhen Stock Exchange,CNY,false
+2026-11,3008.TW,LARGAN PRECISION LTD,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,300857.SZ,SHARETRONIC DATA TECHNOLOGY LTD A,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,301308.SZ,SHENZHEN LONGSYS ELECTRONICS A,Information Technology,China,Shenzhen Stock Exchange,CNY,false
+2026-11,301377.SZ,GUANGDONG DTECH TECHNOLOGY LTD A,Industrials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,301526.SZ,CHONGQING POLYCOMP INTERNATIONAL C,Materials,China,Shenzhen Stock Exchange,CNY,false
+2026-11,3017.TW,ASIA VITAL COMPONENTS,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,3034.TW,NOVATEK MICROELECTRONICS,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,3037.TW,UNIMICRON TECHNOLOGY,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,3045.TW,TAIWAN MOBILE,Communication,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,316140.KS,WOORI FINANCIAL GROUP INC,Financials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,3231.TW,WISTRON,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,323410.KS,KAKAOBANK,Financials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,329180.KS,HD HYUNDAI HEAVY INDUSTRIES LTD,Industrials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,3323.HK,CHINA NATIONAL BUILDING MATERIAL L,Materials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,3328.HK,BANK OF COMMUNICATIONS LTD H,Financials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,3360.HK,FAR EAST HORIZON,Financials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,3382.T,SEVEN & I HOLDINGS,Consumer Staples,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,3402.T,TORAY INDUSTRIES,Materials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,3407.T,ASAHI KASEI,Materials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,3443.TW,GLOBAL UNICHIP,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,3481.TW,INNOLUX CORP,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,352820.KS,HYBE,Communication,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,3533.TW,LOTES,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,3606.HK,FUYAO GLASS INDUSTRY GROUP LTD H,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,3618.HK,CHONGQING RURAL COMMERCIAL BANK LT,Financials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,3653.TW,JENTECH PRECISION INDUSTRIAL LTD,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,3659.T,NEXON,Communication,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,3661.TW,ALCHIP TECHNOLOGIES,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,3665.TW,BIZLINK HOLDING INC,Industrials,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,3690.HK,MEITUAN,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,3692.HK,HANSOH PHARMACEUTICAL GROUP,Health Care,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,3711.TW,ASE TECHNOLOGY HOLDING,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,373220.KS,LG ENERGY SOLUTION LTD,Industrials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,3750.HK,CONTEMPORARY AMPEREX TECHNOLOGY CL,Industrials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,3808.HK,SINOTRUK (HONG KONG) LTD,Industrials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,3888.HK,KINGSOFT,Communication,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,3898.HK,ZHUZHOU CRRC TIMES ELECTRIC LTD H,Industrials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,3908.HK,CHINA INTERNATIONAL CAPITAL H,Financials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,3968.HK,CHINA MERCHANTS BANK H,Financials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,3988.HK,BANK OF CHINA LTD H,Financials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,3993.HK,CMOC GROUP -500 H,Materials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,3998.HK,BOSIDENG INTERNATIONAL,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,4004.T,RESONAC HOLDINGS,Materials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,4013.SR,DR SULAIMAN AL HABIB MEDICAL GRP,Health Care,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,402340.KS,SK SQUARE,Industrials,Korea (South),Korea Exchange (Stock Market),KRW,false
+2026-11,4062.T,IBIDEN LTD,Information Technology,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,4063.T,SHIN ETSU CHEMICAL,Materials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,4091.T,NIPPON SANSO HOLDINGS,Materials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,4100.SR,MAKKAH CONSTRUCTION AND DEVELOPMEN,Real Estate,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,4151.T,KYOWA KIRIN LTD,Health Care,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,4188.T,MITSUBISHI CHEMICAL GROUP,Materials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,4250.SR,JABAL OMAR DEVELOPMENT,Consumer Discretionary,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,4300.SR,DAR AL ARKAN REAL ESTATE DEVELOPME,Real Estate,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,4307.T,NOMURA RESEARCH INSTITUTE,Information Technology,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,4452.T,KAO,Consumer Staples,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,4502.T,TAKEDA PHARMACEUTICAL,Health Care,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,4503.T,ASTELLAS PHARMA,Health Care,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,4507.T,SHIONOGI,Health Care,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,4519.T,CHUGAI PHARMACEUTICAL LTD,Health Care,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,4523.T,EISAI,Health Care,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,4543.T,TERUMO,Health Care,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,4568.T,DAIICHI SANKYO LTD,Health Care,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,4578.T,OTSUKA HOLDINGS,Health Care,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,4612.T,NIPPON PAINT HOLDINGS,Materials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,4661.T,ORIENTAL LAND,Consumer Discretionary,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,4684.T,OBIC LTD,Information Technology,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,4689.T,LY CORP,Communication,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,4755.T,RAKUTEN GROUP,Consumer Discretionary,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,4768.T,OTSUKA CORP,Information Technology,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,4901.T,FUJIFILM HOLDINGS,Information Technology,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,4904.TW,FAR EASTONE TELECOMMUNICATIONS LTD,Communication,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,4911.T,SHISEIDO,Consumer Staples,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,4938.TW,PEGATRON,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,4958.TW,ZHEN DING TECHNOLOGY HOLDING LTD,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,5016.T,JX ADVANCED METALS CORP,Materials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,5019.T,IDEMITSU KOSAN LTD,Energy,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,5020.T,ENEOS HOLDINGS,Energy,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,5108.T,BRIDGESTONE,Consumer Discretionary,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,5110.SR,SAUDI ENERGY,Utilities,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,5201.T,AGC,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,5274.TWO,ASPEED TECHNOLOGY,Information Technology,Taiwan,Gretai Securities Market,TWD,false
+2026-11,5347.TWO,VANGUARD INTERNATIONAL SEMICONDUCT,Information Technology,Taiwan,Gretai Securities Market,TWD,false
+2026-11,5401.T,NIPPON STEEL,Materials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,5706.T,MITSUI KINZOKU LIMITED LTD,Materials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,5713.T,SUMITOMO METAL MINING,Materials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,5801.T,FURUKAWA ELECTRIC LTD,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,5802.T,SUMITOMO ELECTRIC INDUSTRIES,Consumer Discretionary,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,5803.T,FUJIKURA,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,5871.TW,CHAILEASE HOLDING LTD,Financials,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,5876.TW,SHANGHAI COMMERCIAL,Financials,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,5880.TW,TAIWAN COOPERATIVE FINANCIAL HOLDI,Financials,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,600000.SS,SHANGHAI PUDONG DEVELOPMENT BANK A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600015.SS,HUA XIA BANK LTD A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600016.SS,CHINA MINSHENG BANKING A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600019.SS,BAOSHAN IRON & STEEL LTD A,Materials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600028.SS,CHINA PETROLEUM & CHEMICAL A,Energy,China,Shanghai Stock Exchange,CNY,false
+2026-11,600030.SS,CITIC SECURITIES A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600031.SS,SANY HEAVY INDUSTRY LTD A,Industrials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600036.SS,CHINA MERCHANTS BANK A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600050.SS,CHINA UNITED NETWORK COMMUNICATION,Communication,China,Shanghai Stock Exchange,CNY,false
+2026-11,600085.SS,BEIJING TONGRENTANG LTD A,Health Care,China,Shanghai Stock Exchange,CNY,false
+2026-11,600089.SS,TBEA LTD A,Industrials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600104.SS,SAIC MOTOR CORP LTD A,Consumer Discretionary,China,Shanghai Stock Exchange,CNY,false
+2026-11,600111.SS,CHINA NORTHERN RARE EARTH (GROUP),Materials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600115.SS,CHINA EASTERN AIRLINES CORP LTD A,Industrials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600150.SS,CHINA CSSC HOLDINGS LTD A,Industrials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600160.SS,ZHEJIANG JU HUA LTD A,Materials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600176.SS,CHINA JUSHI LTD A,Materials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600183.SS,SHENGYI TECHNOLOGY LTD A,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,600188.SS,YANKUANG ENERGY GROUP A,Energy,China,Shanghai Stock Exchange,CNY,false
+2026-11,600196.SS,SHANGHAI FOSUN PHARMACEUTICAL (GRO,Health Care,China,Shanghai Stock Exchange,CNY,false
+2026-11,600276.SS,JIANGSU HENGRUI MEDICINE LTD A,Health Care,China,Shanghai Stock Exchange,CNY,false
+2026-11,600309.SS,WANHUA CHEMICAL GROUP LTD A,Materials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600346.SS,HENGLI PETROCHEMICAL LTD A,Materials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600406.SS,NARI TECHNOLOGY A,Industrials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600418.SS,ANHUI JIANGHUAI AUTOMOBILE CORP LT,Consumer Discretionary,China,Shanghai Stock Exchange,CNY,false
+2026-11,600436.SS,ZHANGZHOU PIENTZEHUANG PHARMACEUTI,Health Care,China,Shanghai Stock Exchange,CNY,false
+2026-11,600438.SS,TONGWEI LTD A,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,600487.SS,HENGTONG OPTIC ELECTRIC LTD A,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,600489.SS,ZHONGJIN GOLD CORP LTD A,Materials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600519.SS,KWEICHOW MOUTAI A,Consumer Staples,China,Shanghai Stock Exchange,CNY,false
+2026-11,600522.SS,JIANGSU ZHONGTIAN TECHNOLOGY LTD A,Industrials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600547.SS,SHANDONG GOLD-MINING LTD A,Materials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600584.SS,JCET GROUP LTD A,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,600585.SS,ANHUI CONCH CEMENT A,Materials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600673.SS,GUANGDONG HEC TECHNOLOGY HOLDING L,Materials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600674.SS,SICHUAN CHUANTOU ENERGY LTD A,Utilities,China,Shanghai Stock Exchange,CNY,false
+2026-11,600690.SS,HAIER SMART HOME LTD A,Consumer Discretionary,China,Shanghai Stock Exchange,CNY,false
+2026-11,600703.SS,SANAN OPTOELECTRONICS LTD A,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,600795.SS,GD POWER DEVELOPMENT LTD A,Utilities,China,Shanghai Stock Exchange,CNY,false
+2026-11,600809.SS,SHANXI XINGHUACUN FEN WINE FACTORY,Consumer Staples,China,Shanghai Stock Exchange,CNY,false
+2026-11,600875.SS,DONGFANG ELECTRIC CORP LTD A,Industrials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600886.SS,SDIC POWER HOLDINGS LTD A,Utilities,China,Shanghai Stock Exchange,CNY,false
+2026-11,600887.SS,INNER MONGOLIA YILI INDUSTRIAL GRO,Consumer Staples,China,Shanghai Stock Exchange,CNY,false
+2026-11,600893.SS,AECC AVIATION POWER LTD A,Industrials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600900.SS,CHINA YANGTZE POWER LTD A,Utilities,China,Shanghai Stock Exchange,CNY,false
+2026-11,600905.SS,CHINA THREE GORGES RENEWABLES(GROU,Utilities,China,Shanghai Stock Exchange,CNY,false
+2026-11,600919.SS,BANK OF JIANGSU CORPORATION A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600926.SS,BANK OF HANGZHOU A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600958.SS,ORIENT SECURITIES A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600989.SS,NINGXIA BAOFENG ENERGY GROUP LTD A,Materials,China,Shanghai Stock Exchange,CNY,false
+2026-11,600999.SS,CHINA MERCHANTS SECURITIES LTD A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601006.SS,DAQIN RAILWAY LTD A,Industrials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601009.SS,BANK OF NANJING LTD A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601012.SS,LONGI GREEN ENERGY TECHNOLOGY A,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,601066.SS,CHINA SECURITIES LTD A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601088.SS,CHINA SHENHUA ENERGY LTD A,Energy,China,Shanghai Stock Exchange,CNY,false
+2026-11,601100.SS,JIANGSU HENGLI HYDRAULIC A,Industrials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601127.SS,SERES GROUP A,Consumer Discretionary,China,Shanghai Stock Exchange,CNY,false
+2026-11,601138.SS,FOXCONN INDUSTRIAL INTERNET LTD A,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,601166.SS,INDUSTRIAL BANK A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601169.SS,BANK OF BEIJING LTD A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601211.SS,GUOTAI HAITONG SECURITIES LTD A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601225.SS,SHAANXI COAL INDUSTRY LTD A,Energy,China,Shanghai Stock Exchange,CNY,false
+2026-11,601229.SS,BANK OF SHANGHAI LTD A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601233.SS,TONGKUN GROUP A,Materials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601288.SS,AGRICULTURAL BANK OF CHINA A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601318.SS,PING AN INSURANCE (GROUP) OF CHINA,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601328.SS,BANK OF COMMUNICATIONS LTD A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601336.SS,NEW CHINA LIFE INSURANCE LTD A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601398.SS,INDUSTRIAL AND COMMERCIAL BANK OF,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601456.SS,GUOLIAN MINSHENG SECURITIES LTD A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601601.SS,CHINA PACIFIC INSURANCE (GROUP) A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601628.SS,CHINA LIFE INSURANCE LTD A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601658.SS,POSTAL SAVINGS BANK OF CHINA LTD A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601668.SS,CHINA STATE CONSTRUCTION ENGINEERI,Industrials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601689.SS,NINGBO TUOPU GROUP CLS LTD A,Consumer Discretionary,China,Shanghai Stock Exchange,CNY,false
+2026-11,601727.SS,SHANGHAI ELECTRIC GROUP LTD A,Industrials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601766.SS,CRRC CORP A,Industrials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601816.SS,BEIJING-SHANGHAI HIGH SPEED RAILWA,Industrials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601818.SS,CHINA EVERBRIGHT BANK LTD A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601825.SS,SHANGHAI RURAL COMMERCIAL BANK LTD,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601857.SS,PETROCHINA A,Energy,China,Shanghai Stock Exchange,CNY,false
+2026-11,601868.SS,CHINA ENERGY ENGINEERING CORP LTD,Industrials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601872.SS,CHINA MERCHANTS ENERGY SHIPPING LT,Energy,China,Shanghai Stock Exchange,CNY,false
+2026-11,601881.SS,CHINA GALAXY SECURITIES LTD A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601888.SS,CHINA TOURISM GROUP DUTY FREE CORP,Consumer Discretionary,China,Shanghai Stock Exchange,CNY,false
+2026-11,601899.SS,ZIJIN MINING GROUP LTD A,Materials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601901.SS,FOUNDER SECURITIES LTD A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601919.SS,COSCO SHIPPING HOLDINGS LTD A,Industrials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601939.SS,CHINA CONSTRUCTION BANK CORP A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,601985.SS,CHINA NATIONAL NUCLEAR POWER LTD A,Utilities,China,Shanghai Stock Exchange,CNY,false
+2026-11,601995.SS,CHINA INTERNATIONAL CAPITAL A,Financials,China,Shanghai Stock Exchange,CNY,false
+2026-11,6030.HK,CITIC SECURITIES COMPANY H,Financials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,603228.SS,SHENZHEN KINWONG ELECTRONIC A,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,603259.SS,WUXI APPTEC A,Health Care,China,Shanghai Stock Exchange,CNY,false
+2026-11,603268.SS,GUANGDONG SONGFA CERAMICS A,Industrials,China,Shanghai Stock Exchange,CNY,false
+2026-11,603288.SS,FOSHAN HAI TIAN FLAVOURING & FOOD,Consumer Staples,China,Shanghai Stock Exchange,CNY,false
+2026-11,603501.SS,OMNIVISION INTEGRATED CIRCUITS GRO,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,603799.SS,ZHEJIANG HUAYOU COBALT LTD A,Industrials,China,Shanghai Stock Exchange,CNY,false
+2026-11,603893.SS,ROCKCHIP ELECTRONICS LTD A,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,603986.SS,GIGADEVICE SEMICONDUCTOR INC A,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,603993.SS,CHINA MOLYBDENUM A,Materials,China,Shanghai Stock Exchange,CNY,false
+2026-11,605117.SS,NINGBO DEYE TECHNOLOGY CORP A,Industrials,China,Shanghai Stock Exchange,CNY,false
+2026-11,605499.SS,EASTROC BEVERAGE (GROUP) LTD A,Consumer Staples,China,Shanghai Stock Exchange,CNY,false
+2026-11,6098.T,RECRUIT HOLDINGS,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6146.T,DISCO CORP,Information Technology,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6160.HK,BEONE MEDICINES AG,Health Care,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,6178.T,JAPAN POST HOLDINGS LTD,Financials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6181.HK,LAOPU GOLD H,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,6186.HK,CHINA FEIHE LTD,Consumer Staples,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,6223.TWO,MPI CORP,Information Technology,Taiwan,Gretai Securities Market,TWD,false
+2026-11,6273.T,SMC (JAPAN) CORP,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6301.T,KOMATSU,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6326.T,KUBOTA,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6361.T,EBARA,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6367.T,DAIKIN INDUSTRIES LTD,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6383.T,DAIFUKU,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6446.TW,PHARMAESSENTIA,Health Care,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,6479.T,MINEBEA MITSUMI INC,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6488.TWO,GLOBALWAFERS LTD,Information Technology,Taiwan,Gretai Securities Market,TWD,false
+2026-11,6501.T,HITACHI,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6503.T,MITSUBISHI ELECTRIC,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6504.T,FUJI ELECTRIC,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6525.T,KOKUSAI ELECTRIC,Information Technology,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6586.T,MAKITA,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6594.T,NIDEC,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6618.HK,JD HEALTH INTERNATIONAL INC,Consumer Staples,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,6669.TW,WIWYNN CORPORATION,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,6690.HK,HAIER SMART HOME CLASS H LTD H,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,6701.T,NEC,Information Technology,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6702.T,FUJITSU,Information Technology,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6723.T,RENESAS ELECTRONICS CORP,Information Technology,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6752.T,PANASONIC HOLDINGS,Consumer Discretionary,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6758.T,SONY GROUP,Consumer Discretionary,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6762.T,TDK,Information Technology,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6823.HK,HKT TRUST AND HKT UNITS,Communication,Hong Kong,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,6841.T,YOKOGAWA ELECTRIC,Information Technology,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6857.T,ADVANTEST,Information Technology,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6861.T,KEYENCE,Information Technology,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6862.HK,HAIDILAO INTERNATIONAL HOLDING LTD,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,6869.HK,YANGTZE OPTICAL FIBRE AND CABLE JO,Information Technology,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,688008.SS,MONTAGE TECHNOLOGY A,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,688012.SS,ADVANCED MICRO-FABRICATION EQUIPME,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,688041.SS,HYGON INFORMATION TECHNOLOGY LTD A,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,688072.SS,PIOTECH INC A,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,688082.SS,ACM RESEARCH (SHANGHAI) INC A,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,6881.HK,CHINA GALAXY SECURITIES LTD H,Financials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,688111.SS,BEIJING KINGSOFT OFFICE SOFTWARE A,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,688120.SS,HWATSING TECHNOLOGY LTD A,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,688172.SS,BEIJING YANDONG MICRO ELECTRONIC L,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,688256.SS,CAMBRICON TECHNOLOGIES CORPORATION,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,688271.SS,SHANGHAI UNITED IMAGING HEALTHCARE,Health Care,China,Shanghai Stock Exchange,CNY,false
+2026-11,688347.SS,HUA HONG GRACE SEMICONDUCTOR LTD A,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,688361.SS,SKYVERSE TECHNOLOGY LTD A,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,688396.SS,CHINA RESOURCES MICROELECTRONICS L,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,688498.SS,YUANJIE SEMICONDUCTOR TECHNOLOGY L,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,688506.SS,SICHUAN BIOKIN PHARMACEUTICAL A,Health Care,China,Shanghai Stock Exchange,CNY,false
+2026-11,688521.SS,VERISILICON MICROELECTRONICS (SHAN,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,688525.SS,BIWIN STORAGE TECHNOLOGY LTD A,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,688578.SS,SHANGHAI ALLIST PHARMACEUTICALS LT,Health Care,China,Shanghai Stock Exchange,CNY,false
+2026-11,6886.HK,HUATAI SECURITIES H,Financials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,688617.SS,APT MEDICAL INC A,Health Care,China,Shanghai Stock Exchange,CNY,false
+2026-11,688702.SS,SUZHOU CENTEC COMMUNICATIONS LTD A,Information Technology,China,Shanghai Stock Exchange,CNY,false
+2026-11,6902.T,DENSO,Consumer Discretionary,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6920.T,LASERTEC,Information Technology,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6954.T,FANUC CORP,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6969.HK,SMOORE INTERNATIONAL HOLDINGS,Consumer Staples,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,6971.T,KYOCERA,Information Technology,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6981.T,MURATA MANUFACTURING,Information Technology,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6988.T,NITTO DENKO,Materials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,6990.HK,SICHUAN KELUN-BIOTECH BIOPHARM LTD,Health Care,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,7010.SR,SAUDI TELECOM,Communication,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,7011.T,MITSUBISHI HEAVY INDUSTRIES,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7012.T,KAWASAKI HEAVY INDUSTRIES,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7013.T,IHI,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7020.SR,ETIHAD ETISALAT,Communication,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,7181.T,JAPAN POST INSURANCE LTD,Financials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7182.T,JAPAN POST BANK LTD,Financials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7186.T,YOKOHAMA FINANCIAL GROUP,Financials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7201.T,NISSAN MOTOR,Consumer Discretionary,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7202.T,ISUZU MOTORS,Consumer Discretionary,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7203.SR,AL-ELM INFORMATION SECURITY COMPAN,Information Technology,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,7203.T,TOYOTA MOTOR,Consumer Discretionary,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7259.T,AISIN,Consumer Discretionary,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7267.T,HONDA MOTOR,Consumer Discretionary,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7269.T,SUZUKI MOTOR,Consumer Discretionary,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7270.T,SUBARU,Consumer Discretionary,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7272.T,YAMAHA MOTOR,Consumer Discretionary,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7309.T,SHIMANO INC,Consumer Discretionary,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7453.T,RYOHIN KEIKAKU,Consumer Discretionary,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7532.T,PAN PACIFIC INTERNATIONAL HOLDINGS,Consumer Discretionary,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7550.T,ZENSHO HOLDINGS,Consumer Discretionary,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7733.T,OLYMPUS,Health Care,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7735.T,SCREEN HOLDINGS LTD,Information Technology,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7741.T,HOYA,Health Care,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7751.T,CANON,Information Technology,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7769.TW,HONPRECISION INC,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,false
+2026-11,7832.T,BANDAI NAMCO HOLDINGS INC,Consumer Discretionary,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7911.T,TOPPAN HOLDINGS,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7912.T,DAI NIPPON PRINTING,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7936.T,ASICS,Consumer Discretionary,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,7974.T,NINTENDO,Communication,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8001.T,ITOCHU,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8002.T,MARUBENI,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8010.SR,THE COOPERATIVE INSURANCE,Financials,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,8015.T,TOYOTA TSUSHO,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8031.T,MITSUI,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8035.T,TOKYO ELECTRON,Information Technology,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8053.T,SUMITOMO,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8058.T,MITSUBISHI,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8069.TWO,E INK HOLDINGS,Information Technology,Taiwan,Gretai Securities Market,TWD,false
+2026-11,8113.T,UNICHARM,Consumer Staples,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8136.T,SANRIO,Consumer Discretionary,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8210.SR,BUPA ARABIA,Financials,Saudi Arabia,Saudi Stock Exchange,SAR,false
+2026-11,8267.T,AEON,Consumer Staples,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8299.TWO,PHISON ELECTRONICS CORP,Information Technology,Taiwan,Gretai Securities Market,TWD,false
+2026-11,8306.T,MITSUBISHI UFJ FINANCIAL GROUP,Financials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8308.T,RESONA HOLDINGS,Financials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8309.T,SUMITOMO MITSUI TRUST GROUP,Financials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8316.T,SUMITOMO MITSUI FINANCIAL GROUP,Financials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8331.T,CHIBA BANK,Financials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8411.T,MIZUHO FINANCIAL GROUP,Financials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8473.T,SBI HOLDINGS INC,Financials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8591.T,ORIX,Financials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8593.T,MITSUBISHI HC CAPITAL INC,Financials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8601.T,DAIWA SECURITIES GROUP,Financials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8604.T,NOMURA HOLDINGS,Financials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8630.T,SOMPO HOLDINGS,Financials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8697.T,JAPAN EXCHANGE GROUP,Financials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8725.T,MS&AD INSURANCE GROUP HOLDINGS,Financials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8750.T,DAIICHI LIFE GROUP,Financials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8766.T,TOKIO MARINE HOLDINGS,Financials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8795.T,T&D HOLDINGS,Financials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8801.T,MITSUI FUDOSAN,Real Estate,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8802.T,MITSUBISHI ESTATE CO LTD,Real Estate,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8830.T,SUMITOMO REALTY & DEVELOPMENT,Real Estate,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,8951.T,NIPPON BUILDING FUND REIT,Real Estate,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,900948.SS,INNER MONGOLIA YITAI COAL LTD B,Energy,China,Shanghai Stock Exchange,USD,false
+2026-11,9020.T,EAST JAPAN RAILWAY,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,9021.T,WEST JAPAN RAILWAY,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,9022.T,CENTRAL JAPAN RAILWAY,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,9042.T,HANKYU HANSHIN HOLDINGS,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,9101.T,NIPPON YUSEN,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,9104.T,MITSUI OSK LINES LTD,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,9107.T,KAWASAKI KISEN LTD,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,9202.T,ANA HOLDINGS,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,9432.T,NTT,Communication,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,9433.T,KDDI,Communication,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,9434.T,SOFTBANK,Communication,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,9435.T,HIKARI TSUSHIN INC,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,9502.T,CHUBU ELECTRIC POWER INC,Utilities,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,9503.T,KANSAI ELECTRIC POWER,Utilities,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,9531.T,TOKYO GAS LTD,Utilities,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,9532.T,OSAKA GAS,Utilities,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,9602.T,TOHO (TOKYO),Communication,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,9618.HK,JD.COM CLASS A,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,9626.HK,BILIBILI INC,Communication,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,9633.HK,NONGFU SPRING LTD H,Consumer Staples,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,9660.HK,HORIZON ROBOTICS,Information Technology,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,9697.T,CAPCOM LTD,Communication,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,9698.HK,GDS HOLDINGS CLASS A,Information Technology,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,9735.T,SECOM,Industrials,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,9766.T,KONAMI GROUP,Communication,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,9843.T,NITORI HOLDINGS,Consumer Discretionary,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,9863.HK,ZHEJIANG LEAPMOTOR TECHNOLOGY LTD,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,9866.HK,NIO CLASS A,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,9868.HK,XPENG CLASS A INC,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,9880.HK,UBTECH ROBOTICS CORP LTD H,Industrials,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,9888.HK,BAIDU,Communication,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,9896.HK,MINISO GROUP HOLDING LTD,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,9901.HK,NEW ORIENTAL EDUCATION & TECHNOLOG,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,9926.HK,AKESO INC,Health Care,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,9961.HK,TRIP.COM GROUP,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,9983.T,FAST RETAILING,Consumer Discretionary,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,9984.T,SOFTBANK GROUP CORP,Communication,Japan,Tokyo Stock Exchange,JPY,false
+2026-11,9987.HK,YUM CHINA HOLDINGS INC,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,9988.HK,ALIBABA GROUP HOLDING,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,9992.HK,POP MART INTERNATIONAL GROUP,Consumer Discretionary,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,9995.HK,REMEGEN H,Health Care,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,9999.HK,NETEASE,Communication,China,Hong Kong Exchanges And Clearing Ltd,HKD,false
+2026-11,9CI.SI,CAPITALAND INVESTMENT LTD,Real Estate,Singapore,Singapore Exchange,SGD,false
+2026-11,A,AGILENT TECHNOLOGIES INC,Health Care,United States,NYSE,USD,true
+2026-11,A5G.IR,AIB GROUP PLC,Financials,Ireland,Irish Stock Exchange - All Market,EUR,true
+2026-11,AAF.L,AIRTEL AFRICA PLC,Communication,United Kingdom,London Stock Exchange,GBP,true
+2026-11,AAL.L,ANGLO AMERICAN PLC,Materials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,AAPL,APPLE,Information Technology,United States,NASDAQ,USD,true
+2026-11,ABB.NS,ABB INDIA,Industrials,India,National Stock Exchange Of India,INR,false
+2026-11,ABBN.SW,ABB LTD,Industrials,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,ABBV,ABBVIE,Health Care,United States,NYSE,USD,true
+2026-11,ABCAPITAL.NS,ADITYA BIRLA CAPITAL,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,ABEV3.SA,AMBEV SA,Consumer Staples,Brazil,XBSP,BRL,false
+2026-11,ABF.L,ASSOCIATED BRITISH FOODS PLC,Consumer Staples,United Kingdom,London Stock Exchange,GBP,true
+2026-11,ABG.JO,ABSA GROUP,Financials,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,ABI.BR,ANHEUSER-BUSCH INBEV SA,Consumer Staples,Belgium,Nyse Euronext - Euronext Brussels,EUR,true
+2026-11,ABN.AS,ABN AMRO BANK NV,Financials,Netherlands,Euronext Amsterdam,EUR,true
+2026-11,ABNB,AIRBNB CLASS A,Consumer Discretionary,United States,NASDAQ,USD,true
+2026-11,ABT,ABBOTT LABORATORIES,Health Care,United States,NYSE,USD,true
+2026-11,ABVX.PA,ABIVAX SA,Health Care,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,ABX.TO,BARRICK MINING,Materials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,AC.MX,ARCA CONTINENTAL,Consumer Staples,Mexico,Bolsa Mexicana De Valores,MXN,false
+2026-11,AC.PA,ACCOR SA,Consumer Discretionary,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,AC.PS,AYALA CORP,Industrials,Philippines,Philippine Stock Exchange Inc.,PHP,false
+2026-11,ACA.PA,CREDIT AGRICOLE SA,Financials,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,ACGL,ARCH CAPITAL GROUP,Financials,United States,NASDAQ,USD,true
+2026-11,ACN,ACCENTURE PLC CLASS A,Information Technology,United States,NYSE,USD,true
+2026-11,ACP.WA,ASSECO POLAND SA,Information Technology,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,false
+2026-11,ACS.MC,ACS ACTIVIDADES DE CONSTRUCCION Y,Industrials,Spain,Bolsa De Madrid,EUR,true
+2026-11,AD.AS,KONINKLIJKE AHOLD DELHAIZE,Consumer Staples,Netherlands,Euronext Amsterdam,EUR,true
+2026-11,ADANIENSOL.NS,ADANI ENERGY SOLUTIONS LTD,Utilities,India,National Stock Exchange Of India,INR,false
+2026-11,ADANIENT.NS,ADANI ENTERPRISES,Industrials,India,National Stock Exchange Of India,INR,false
+2026-11,ADANIPORTS.NS,ADANI PORTS AND SPECIAL ECONOMIC Z,Industrials,India,National Stock Exchange Of India,INR,false
+2026-11,ADANIPOWER.NS,ADANI POWER LTD,Utilities,India,National Stock Exchange Of India,INR,false
+2026-11,ADBE,ADOBE INC,Information Technology,United States,NASDAQ,USD,true
+2026-11,ADCB.AE,ABU DHABI COMMERCIAL BANK,Financials,United Arab Emirates,Abu Dhabi Securities Exchange,AED,false
+2026-11,ADDT-B.ST,ADDTECH CLASS B,Industrials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,ADI,ANALOG DEVICES,Information Technology,United States,NASDAQ,USD,true
+2026-11,ADIB.AE,ABU DHABI ISLAMIC BANK,Financials,United Arab Emirates,Abu Dhabi Securities Exchange,AED,false
+2026-11,ADM,ARCHER DANIELS MIDLAND,Consumer Staples,United States,NYSE,USD,true
+2026-11,ADM.L,ADMIRAL GROUP PLC,Financials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,ADNOCDIST.AE,ABU DHABI NATIONAL OIL COMPANY FOR,Consumer Discretionary,United Arab Emirates,Abu Dhabi Securities Exchange,AED,false
+2026-11,ADNOCDRILL.AE,ADNOC DRILLING COMPANY,Energy,United Arab Emirates,Abu Dhabi Securities Exchange,AED,false
+2026-11,ADNOCGAS.AE,ADNOC GAS PLC,Energy,United Arab Emirates,Abu Dhabi Securities Exchange,AED,false
+2026-11,ADNOCLS.AE,ADNOC LOGISTICS & SERVICES PLC,Energy,United Arab Emirates,Abu Dhabi Securities Exchange,AED,false
+2026-11,ADP,AUTOMATIC DATA PROCESSING INC,Industrials,United States,NASDAQ,USD,true
+2026-11,ADP.PA,AEROPORTS DE PARIS SA,Industrials,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,ADS.DE,ADIDAS N AG,Consumer Discretionary,Germany,Xetra,EUR,true
+2026-11,ADSK,AUTODESK,Information Technology,United States,NASDAQ,USD,true
+2026-11,ADVANC.BK,ADVANCED INFO SERVICE NON-VOTING D,Communication,Thailand,Stock Exchange Of Thailand,THB,false
+2026-11,ADYEN.AS,ADYEN,Financials,Netherlands,Euronext Amsterdam,EUR,true
+2026-11,AEE,AMEREN,Utilities,United States,NYSE,USD,true
+2026-11,AEM.TO,AGNICO EAGLE MINES,Materials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,AENA.MC,AENA SME SA,Industrials,Spain,Bolsa De Madrid,EUR,true
+2026-11,AEP,AMERICAN ELECTRIC POWER INC,Utilities,United States,NASDAQ,USD,true
+2026-11,AER,AERCAP HOLDINGS,Industrials,Netherlands,NYSE,USD,true
+2026-11,AFL,AFLAC,Financials,United States,NYSE,USD,true
+2026-11,AFRM,AFFIRM HOLDINGS CLASS A,Financials,United States,NASDAQ,USD,true
+2026-11,AGI.TO,ALAMOS GOLD CLASS A,Materials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,AGN.AS,AEGON,Financials,Netherlands,Euronext Amsterdam,EUR,true
+2026-11,AGS.BR,AGEAS,Financials,Belgium,Nyse Euronext - Euronext Brussels,EUR,true
+2026-11,AI.PA,LAIR LIQUIDE SOCIETE ANONYME POUR,Materials,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,AIA.NZ,AUCKLAND INTERNATIONAL AIRPORT,Industrials,New Zealand,New Zealand Exchange Ltd,NZD,false
+2026-11,AIG,AMERICAN INTERNATIONAL GROUP,Financials,United States,NYSE,USD,true
+2026-11,AIR.PA,AIRBUS GROUP,Industrials,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,AIRARABIA.AE,AIR ARABIA,Industrials,United Arab Emirates,Dubai Financial Market,AED,false
+2026-11,AJG,ARTHUR J GALLAGHER,Financials,United States,NYSE,USD,true
+2026-11,AKBNK.IS,AKBANK A,Financials,Turkey,Istanbul Stock Exchange,TRY,false
+2026-11,AKRBP.OL,AKER BP,Energy,Norway,Oslo Bors Asa,NOK,true
+2026-11,AKZA.AS,AKZO NOBEL NV,Materials,Netherlands,Euronext Amsterdam,EUR,true
+2026-11,ALA.TO,ALTAGAS,Utilities,Canada,Toronto Stock Exchange,CAD,true
+2026-11,ALAB,ASTERA LABS,Information Technology,United States,NASDAQ,USD,true
+2026-11,ALC.SW,ALCON AG,Health Care,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,ALDAR.AE,ALDAR PROPERTIES,Real Estate,United Arab Emirates,Abu Dhabi Securities Exchange,AED,false
+2026-11,ALE.WA,ALLEGRO SA,Consumer Discretionary,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,false
+2026-11,ALFA.ST,ALFA LAVAL,Industrials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,ALKEM.NS,ALKEM LABORATORIES LTD,Health Care,India,National Stock Exchange Of India,INR,false
+2026-11,ALL,ALLSTATE CORP,Financials,United States,NYSE,USD,true
+2026-11,ALL.AX,ARISTOCRAT LEISURE,Consumer Discretionary,Australia,Asx - All Markets,AUD,false
+2026-11,ALNY,ALNYLAM PHARMACEUTICALS,Health Care,United States,NASDAQ,USD,true
+2026-11,ALO.PA,ALSTOM SA,Industrials,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,ALPHA.AT,ALPHA BANK SA,Financials,Greece,Athens Exchange S.A. Cash Market,EUR,false
+2026-11,ALV.DE,ALLIANZ,Financials,Germany,Xetra,EUR,true
+2026-11,ALWN.AT,ALLWYN AG,Consumer Discretionary,Greece,Athens Exchange S.A. Cash Market,EUR,false
+2026-11,AM.PA,DASSAULT AVIATION SA,Industrials,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,AMAT,APPLIED MATERIAL INC,Information Technology,United States,NASDAQ,USD,true
+2026-11,AMBANK.KL,AMMB HOLDINGS,Financials,Malaysia,Bursa Malaysia,MYR,false
+2026-11,AMBUJACEM.NS,AMBUJA CEMENTS LTD,Materials,India,National Stock Exchange Of India,INR,false
+2026-11,AMCR,AMCOR PLC,Materials,United States,NYSE,USD,true
+2026-11,AMD,ADVANCED MICRO DEVICES,Information Technology,United States,NASDAQ,USD,true
+2026-11,AME,AMETEK INC,Industrials,United States,NYSE,USD,true
+2026-11,AMGN,AMGEN INC,Health Care,United States,NASDAQ,USD,true
+2026-11,AMP,AMERIPRISE FINANCE INC,Financials,United States,NYSE,USD,true
+2026-11,AMRZ,AMRIZE AG,Materials,United States,NYSE,USD,true
+2026-11,AMS.MC,AMADEUS IT GROUP,Consumer Discretionary,Spain,Bolsa De Madrid,EUR,true
+2026-11,AMT,AMERICAN TOWER REIT,Real Estate,United States,NYSE,USD,true
+2026-11,AMUN.PA,AMUNDI SA,Financials,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,AMXB.MX,AMERICA MOVIL B,Communication,Mexico,Bolsa Mexicana De Valores,MXN,false
+2026-11,AMZN,AMAZON.COM INC,Consumer Discretionary,United States,NASDAQ,USD,true
+2026-11,ANA.MC,ACCIONA,Utilities,Spain,Bolsa De Madrid,EUR,true
+2026-11,ANET,ARISTA NETWORKS,Information Technology,United States,NYSE,USD,true
+2026-11,ANG.JO,ANGLOGOLD ASHANTI PLC,Materials,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,ANT,ANTHROPIC CLASS A,Information Technology,United States,NASDAQ,USD,true
+2026-11,ANTO.L,ANTOFAGASTA PLC,Materials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,ANZ.AX,ANZ GROUP HOLDINGS,Financials,Australia,Asx - All Markets,AUD,false
+2026-11,AON,AON PLC CLASS A,Financials,United States,NYSE,USD,true
+2026-11,AOT.BK,AIRPORTS OF THAILAND NON-VOTING DR,Industrials,Thailand,Stock Exchange Of Thailand,THB,false
+2026-11,APA.AX,APA GROUP UNITS,Utilities,Australia,Asx - All Markets,AUD,false
+2026-11,APD,AIR PRODUCTS AND CHEMICALS,Materials,United States,NYSE,USD,true
+2026-11,APH,AMPHENOL CORP CLASS A,Information Technology,United States,NYSE,USD,true
+2026-11,APLAPOLLO.NS,APL APOLLO TUBES LTD,Materials,India,National Stock Exchange Of India,INR,false
+2026-11,APO,APOLLO GLOBAL MANAGEMENT,Financials,United States,NYSE,USD,true
+2026-11,APOLLOHOSP.NS,APOLLO HOSPITALS ENTERPRISE,Health Care,India,National Stock Exchange Of India,INR,false
+2026-11,APP,APPLOVIN CLASS A,Communication,United States,NASDAQ,USD,true
+2026-11,ARES,ARES MANAGEMENT CLASS A,Financials,United States,NYSE,USD,true
+2026-11,ARGX.BR,ARGENX,Health Care,Belgium,Nyse Euronext - Euronext Brussels,EUR,true
+2026-11,ASELS.IS,ASELSAN ELEKTRONIK SANAYI VE TICAR,Industrials,Turkey,Istanbul Stock Exchange,TRY,false
+2026-11,ASHOKLEY.NS,ASHOK LEYLAND,Industrials,India,National Stock Exchange Of India,INR,false
+2026-11,ASIANPAINT.NS,ASIAN PAINTS,Materials,India,National Stock Exchange Of India,INR,false
+2026-11,ASII.JK,ASTRA INTERNATIONAL,Industrials,Indonesia,Indonesia Stock Exchange,IDR,false
+2026-11,ASM.AS,ASM INTERNATIONAL NV,Information Technology,Netherlands,Euronext Amsterdam,EUR,true
+2026-11,ASML.AS,ASML HOLDING,Information Technology,Netherlands,Euronext Amsterdam,EUR,true
+2026-11,ASRNL.AS,ASR NEDERLAND,Financials,Netherlands,Euronext Amsterdam,EUR,true
+2026-11,ASSA-B.ST,ASSA ABLOY B,Industrials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,ASTOR.IS,ASTOR ENERJI A.S.,Industrials,Turkey,Istanbul Stock Exchange,TRY,false
+2026-11,ASTS,AST SPACEMOBILE CLASS A,Communication,United States,NASDAQ,USD,true
+2026-11,ASURB.MX,GRUPO AEROPORTUARIO DEL SURESTE B,Industrials,Mexico,Bolsa Mexicana De Valores,MXN,false
+2026-11,ASX.AX,ASX LTD,Financials,Australia,Asx - All Markets,AUD,false
+2026-11,ATCO-A.ST,ATLAS COPCO CLASS A,Industrials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,ATCO-B.ST,ATLAS COPCO CLASS B,Industrials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,ATD.TO,ALIMENTATION COUCHE TARD INC,Consumer Staples,Canada,Toronto Stock Exchange,CAD,true
+2026-11,ATI,ATI,Industrials,United States,NYSE,USD,true
+2026-11,ATO,ATMOS ENERGY,Utilities,United States,NYSE,USD,true
+2026-11,ATRL.TO,ATKINSREALIS GROUP INC,Industrials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,AUBANK.NS,AU SMALL FINANCE BANK,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,AUGO,AURA MINERALS INC,Materials,Brazil,NASDAQ,USD,true
+2026-11,AUROPHARMA.NS,AUROBINDO PHARMA,Health Care,India,National Stock Exchange Of India,INR,false
+2026-11,AV.L,AVIVA PLC,Financials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,AVGO,BROADCOM INC,Information Technology,United States,NASDAQ,USD,true
+2026-11,AVOL.SW,AVOLTA AG,Consumer Discretionary,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,AWK,AMERICAN WATER WORKS,Utilities,United States,NYSE,USD,true
+2026-11,AXIA3.SA,AXIA ENERGIA SA,Utilities,Brazil,XBSP,BRL,false
+2026-11,AXIA7.SA,AXIA ENERGIA PRF SA,Utilities,Brazil,XBSP,BRL,false
+2026-11,AXISBANK.NS,AXIS BANK,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,AXON,AXON ENTERPRISE,Industrials,United States,NASDAQ,USD,true
+2026-11,AXP,AMERICAN EXPRESS,Financials,United States,NYSE,USD,true
+2026-11,AYV.PA,AYVENS SA,Industrials,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,AZN.L,ASTRAZENECA PLC,Health Care,United Kingdom,London Stock Exchange,GBP,true
+2026-11,AZO,AUTOZONE,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,AZRG.TA,AZRIELI GROUP LTD,Real Estate,Israel,Tel Aviv Stock Exchange,ILS,false
+2026-11,B3SA3.SA,B3 BRASIL BOLSA BALCAO SA,Financials,Brazil,XBSP,BRL,false
+2026-11,BA,BOEING,Industrials,United States,NYSE,USD,true
+2026-11,BA.L,BAE SYSTEMS PLC,Industrials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,BAC,BANK OF AMERICA,Financials,United States,NYSE,USD,true
+2026-11,BAER.SW,JULIUS BAER GRUPPE AG,Financials,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,BAJAJ-AUTO.NS,BAJAJ AUTO,Consumer Discretionary,India,National Stock Exchange Of India,INR,false
+2026-11,BAJAJFINSV.NS,BAJAJ FINSERV LTD,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,BAJAJHLDNG.NS,BAJAJ HOLDINGS AND INVESTMENT LTD,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,BAJFINANCE.NS,BAJAJ FINANCE,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,BALL,BALL CORP,Materials,United States,NYSE,USD,true
+2026-11,BAM.TO,BROOKFIELD ASSET MANAGEMENT VOTING,Financials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,BAMI.MI,BANCO BPM,Financials,Italy,Borsa Italiana,EUR,true
+2026-11,BANKBARODA.NS,BANK OF BARODA,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,BAP,CREDICORP LTD,Financials,Peru,NYSE,USD,true
+2026-11,BARC.L,BARCLAYS PLC,Financials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,BARN.SW,BARRY CALLEBAUT AG,Consumer Staples,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,BAS.DE,BASF N,Materials,Germany,Xetra,EUR,true
+2026-11,BATS.L,BRITISH AMERICAN TOBACCO,Consumer Staples,United Kingdom,London Stock Exchange,GBP,true
+2026-11,BAYN.DE,BAYER AG,Health Care,Germany,Xetra,EUR,true
+2026-11,BBAS3.SA,BANCO DO BRASIL SA,Financials,Brazil,XBSP,BRL,false
+2026-11,BBCA.JK,BANK CENTRAL ASIA,Financials,Indonesia,Indonesia Stock Exchange,IDR,false
+2026-11,BBD-B.TO,BOMBARDIER CLASS B,Industrials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,BBDC3.SA,BANCO BRADESCO,Financials,Brazil,XBSP,BRL,false
+2026-11,BBDC4.SA,BANCO BRADESCO PREF,Financials,Brazil,XBSP,BRL,false
+2026-11,BBNI.JK,BANK NEGARA INDONESIA,Financials,Indonesia,Indonesia Stock Exchange,IDR,false
+2026-11,BBRI.JK,BANK RAKYAT INDONESIA (PERSERO),Financials,Indonesia,Indonesia Stock Exchange,IDR,false
+2026-11,BBSE3.SA,BB SEGURIDADE SA,Financials,Brazil,XBSP,BRL,false
+2026-11,BBVA.MC,BANCO BILBAO VIZCAYA ARGENTARIA,Financials,Spain,Bolsa De Madrid,EUR,true
+2026-11,BBY,BEST BUY,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,BCE.TO,BCE INC,Communication,Canada,Toronto Stock Exchange,CAD,true
+2026-11,BCI.SN,BANCO DE CREDITO E INVERSION,Financials,Chile,Santiago Stock Exchange,CLP,false
+2026-11,BCP.LS,BANCO COMERCIAL PORTUGUES SA,Financials,Portugal,Nyse Euronext - Euronext Lisbon,EUR,true
+2026-11,BCVN.SW,BC VAUD N,Financials,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,BDMS.BK,BANGKOK DUSIT MEDICAL SERVICES NON,Health Care,Thailand,Stock Exchange Of Thailand,THB,false
+2026-11,BDO.PS,BDO UNIBANK,Financials,Philippines,Philippine Stock Exchange Inc.,PHP,false
+2026-11,BDX,BECTON DICKINSON,Health Care,United States,NYSE,USD,true
+2026-11,BDX.WA,BUDIMEX SA,Industrials,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,false
+2026-11,BE,BLOOM ENERGY CLASS A,Industrials,United States,NYSE,USD,true
+2026-11,BEAN.SW,BELIMO N AG,Industrials,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,BEI.DE,BEIERSDORF AG,Consumer Staples,Germany,Xetra,EUR,true
+2026-11,BEIJ-B.ST,BEIJER REF CLASS B,Industrials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,BEL.NS,BHARAT ELECTRONICS LTD,Industrials,India,National Stock Exchange Of India,INR,false
+2026-11,BELA.AT,JUMBO,Consumer Discretionary,Greece,Athens Exchange S.A. Cash Market,EUR,false
+2026-11,BEPC.TO,BROOKFIELD RENEWABLE SUBORDINATE V,Utilities,Canada,Toronto Stock Exchange,CAD,true
+2026-11,BES.LS,BANCO ESPIRITO SANTO CLASS N SA,Financials,Portugal,Nyse Euronext - Euronext Lisbon,EUR,true
+2026-11,BESI.AS,BE SEMICONDUCTOR INDUSTRIES NV,Information Technology,Netherlands,Euronext Amsterdam,EUR,true
+2026-11,BG,BUNGE GLOBAL SA,Consumer Staples,United States,NYSE,USD,true
+2026-11,BG.VI,BAWAG GROUP AG,Financials,Austria,Wiener Boerse Ag,EUR,true
+2026-11,BHARATFORG.NS,BHARAT FORGE,Consumer Discretionary,India,National Stock Exchange Of India,INR,false
+2026-11,BHARTIARTL.NS,BHARTI AIRTEL LTD,Communication,India,National Stock Exchange Of India,INR,false
+2026-11,BHEL.NS,BHARAT HEAVY ELECTRICALS LTD,Industrials,India,National Stock Exchange Of India,INR,false
+2026-11,BHP.AX,BHP GROUP LTD,Materials,Australia,Asx - All Markets,AUD,false
+2026-11,BID.JO,BID CORPORATION,Consumer Staples,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,BIIB,BIOGEN,Health Care,United States,NASDAQ,USD,true
+2026-11,BIM.PA,BIOMERIEUX SA,Health Care,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,BIMAS.IS,BIM BIRLESIK MAGAZALAR A,Consumer Staples,Turkey,Istanbul Stock Exchange,TRY,false
+2026-11,BIMBOA.MX,GRUPO BIMBO A,Consumer Staples,Mexico,Bolsa Mexicana De Valores,MXN,false
+2026-11,BIP.TO,BROOKFIELD INFRASTRUCTURE PARTNERS,Utilities,Canada,Toronto Stock Exchange,CAD,true
+2026-11,BIRG.IR,BANK OF IRELAND GROUP PLC,Financials,Ireland,Irish Stock Exchange - All Market,EUR,true
+2026-11,BKNG,BOOKING HOLDINGS,Consumer Discretionary,United States,NASDAQ,USD,true
+2026-11,BKR,BAKER HUGHES CLASS A,Energy,United States,NASDAQ,USD,true
+2026-11,BKT.MC,BANKINTER,Financials,Spain,Bolsa De Madrid,EUR,true
+2026-11,BKW.SW,BKW N AG,Utilities,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,BLK,BLACKROCK,Financials,United States,NYSE,USD,true
+2026-11,BMED.MI,BANCA MEDIOLANUM,Financials,Italy,Borsa Italiana,EUR,true
+2026-11,BMO.TO,BANK OF MONTREAL,Financials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,BMPS.MI,BANCA MONTE DEI PASCHI DI SIENA SP,Financials,Italy,Borsa Italiana,EUR,true
+2026-11,BMRI.JK,BANK MANDIRI (PERSERO),Financials,Indonesia,Indonesia Stock Exchange,IDR,false
+2026-11,BMW.DE,BMW,Consumer Discretionary,Germany,Xetra,EUR,true
+2026-11,BMY,BRISTOL MYERS SQUIBB,Health Care,United States,NYSE,USD,true
+2026-11,BN.PA,DANONE SA,Consumer Staples,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,BN.TO,BROOKFIELD CLASS A,Financials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,BN4.SI,KEPPEL,Industrials,Singapore,Singapore Exchange,SGD,false
+2026-11,BNP.PA,BNP PARIBAS SA,Financials,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,BNR.DE,BRENNTAG,Industrials,Germany,Xetra,EUR,true
+2026-11,BNS.TO,BANK OF NOVA SCOTIA,Financials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,BNY,BANK OF NEW YORK MELLON CORP,Financials,United States,NYSE,USD,true
+2026-11,BNZL.L,BUNZL,Industrials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,BOL.ST,BOLIDEN,Materials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,BOSCHLTD.NS,BOSCH LTD,Consumer Discretionary,India,National Stock Exchange Of India,INR,false
+2026-11,BOUBYAN.KW,BOUBYAN BANK,Financials,Kuwait,Kuwait Stock Exchange,KWD,false
+2026-11,BP.L,BP PLC,Energy,United Kingdom,London Stock Exchange,GBP,true
+2026-11,BPAC11.SA,BCO BTG PACTUAL UNT SA,Financials,Brazil,XBSP,BRL,false
+2026-11,BPCL.NS,BHARAT PETROLEUM,Energy,India,National Stock Exchange Of India,INR,false
+2026-11,BPE.MI,BPER BANCA,Financials,Italy,Borsa Italiana,EUR,true
+2026-11,BPI.PS,BANK OF THE PHILIPPINE ISLANDS,Financials,Philippines,Philippine Stock Exchange Inc.,PHP,false
+2026-11,BR,BROADRIDGE FINANCIAL SOLUTIONS INC,Industrials,United States,NYSE,USD,true
+2026-11,BRITANNIA.NS,BRITANNIA INDUSTRIES LTD,Consumer Staples,India,National Stock Exchange Of India,INR,false
+2026-11,BRK.B,BERKSHIRE HATHAWAY INC CLASS B,Financials,United States,NYSE,USD,true
+2026-11,BRMS.JK,BUMI RESOURCES MINERALS,Materials,Indonesia,Indonesia Stock Exchange,IDR,false
+2026-11,BRO,BROWN & BROWN INC,Financials,United States,NYSE,USD,true
+2026-11,BRPT.JK,BARITO PACIFIC,Materials,Indonesia,Indonesia Stock Exchange,IDR,false
+2026-11,BS6.SI,YANGZIJIANG SHIPBUILDING (HOLDINGS,Industrials,Singapore,Singapore Exchange,SGD,false
+2026-11,BSANTANDER.SN,BANCO SANTANDER CHILE,Financials,Chile,Santiago Stock Exchange,CLP,false
+2026-11,BSE.NS,BSE LTD,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,BSX,BOSTON SCIENTIFIC,Health Care,United States,NYSE,USD,true
+2026-11,BT-A.L,BT GROUP PLC,Communication,United Kingdom,London Stock Exchange,GBP,true
+2026-11,BURL,BURLINGTON STORES,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,BVI.PA,BUREAU VERITAS SA,Industrials,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,BVN,BUENAVENTURA ADR REPRESENTING,Materials,Peru,NYSE,USD,true
+2026-11,BVT.JO,BIDVEST GROUP,Industrials,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,BX,BLACKSTONE,Financials,United States,NYSE,USD,true
+2026-11,BXB.AX,BRAMBLES,Industrials,Australia,Asx - All Markets,AUD,false
+2026-11,BZ,KANZHUN AMERICAN DEPOSITORY SHARES,Industrials,China,NASDAQ,USD,true
+2026-11,BZU.MI,BUZZI,Materials,Italy,Borsa Italiana,EUR,true
+2026-11,C,CITIGROUP,Financials,United States,NYSE,USD,true
+2026-11,C6L.SI,SINGAPORE AIRLINES LTD,Industrials,Singapore,Singapore Exchange,SGD,false
+2026-11,CA.PA,CARREFOUR SA,Consumer Staples,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,CABK.MC,CAIXABANK SA,Financials,Spain,Bolsa De Madrid,EUR,true
+2026-11,CAE.TO,CAE,Industrials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,CAH,CARDINAL HEALTH,Health Care,United States,NYSE,USD,true
+2026-11,CANBK.NS,CANARA BANK LTD,Financials,India,Bse Ltd,INR,false
+2026-11,CAP.PA,CAPGEMINI,Information Technology,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,CARL-B.CO,CARLSBERG AS CL B,Consumer Staples,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,true
+2026-11,CARR,CARRIER GLOBAL,Industrials,United States,NYSE,USD,true
+2026-11,CASY,CASEYS GENERAL STORES INC,Consumer Staples,United States,NASDAQ,USD,true
+2026-11,CAT,CATERPILLAR INC,Industrials,United States,NYSE,USD,true
+2026-11,CB,CHUBB,Financials,United States,NYSE,USD,true
+2026-11,CBA.AX,COMMONWEALTH BANK OF AUSTRALIA,Financials,Australia,Asx - All Markets,AUD,false
+2026-11,CBK.DE,COMMERZBANK AG,Financials,Germany,Xetra,EUR,true
+2026-11,CBOE,CBOE GLOBAL MARKETS,Financials,United States,Cboe BZX,USD,true
+2026-11,CBQK.QA,COMMERCIAL BANK OF QATAR,Financials,Qatar,Qatar Exchange,QAR,false
+2026-11,CBRE,CBRE GROUP CLASS A,Real Estate,United States,NYSE,USD,true
+2026-11,CCEP,COCA COLA EUROPACIFIC PARTNERS PLC,Consumer Staples,Netherlands,NASDAQ,USD,true
+2026-11,CCH.L,COCA COLA HBC AG,Consumer Staples,United Kingdom,London Stock Exchange,GBP,true
+2026-11,CCI,CROWN CASTLE,Real Estate,United States,NYSE,USD,true
+2026-11,CCL,CARNIVAL CORP LTD,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,CCL-B.TO,CCL INDUSTRIES CLASS B,Materials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,CCO.TO,CAMECO,Energy,Canada,Toronto Stock Exchange,CAD,true
+2026-11,CDB.KL,CELCOMDIGI,Communication,Malaysia,Bursa Malaysia,MYR,false
+2026-11,CDE,COEUR MINING,Materials,United States,NYSE,USD,true
+2026-11,CDNS,CADENCE DESIGN SYSTEMS,Information Technology,United States,NASDAQ,USD,true
+2026-11,CDR.WA,CD PROJEKT RED,Communication,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,false
+2026-11,CDW,CDW,Information Technology,United States,NASDAQ,USD,true
+2026-11,CEG,CONSTELLATION ENERGY CORP,Utilities,United States,NASDAQ,USD,true
+2026-11,CEMEXCPO.MX,CEMEX CPO,Materials,Mexico,Bolsa Mexicana De Valores,MXN,false
+2026-11,CEN.NZ,CONTACT ENERGY LTD,Utilities,New Zealand,New Zealand Exchange Ltd,NZD,false
+2026-11,CENCOSUD.SN,CENCOSUD,Consumer Staples,Chile,Santiago Stock Exchange,CLP,false
+2026-11,CEZ.PR,CEZ,Utilities,Czech Republic,Prague Stock Exchange,CZK,false
+2026-11,CF,CF INDUSTRIES HOLDINGS INC,Materials,United States,NYSE,USD,true
+2026-11,CFG,CITIZENS FINANCIAL GROUP INC,Financials,United States,NYSE,USD,true
+2026-11,CFR.SW,COMPAGNIE FINANCIERE RICHEMONT SA,Consumer Discretionary,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,CG,CARLYLE GROUP INC,Financials,United States,NASDAQ,USD,true
+2026-11,CGPOWER.NS,CG POWER AND INDUSTRIAL SOLUTIONS,Industrials,India,National Stock Exchange Of India,INR,false
+2026-11,CHD,CHURCH AND DWIGHT INC,Consumer Staples,United States,NYSE,USD,true
+2026-11,CHILE.SN,BANCO DE CHILE,Financials,Chile,Santiago Stock Exchange,CLP,false
+2026-11,CHKP,CHECK POINT SOFTWARE TECHNOLOGIES,Information Technology,Israel,NASDAQ,USD,true
+2026-11,CHOLAFIN.NS,CHOLAMANDALAM INVESTMENT AND FINAN,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,CHRW,CH ROBINSON WORLDWIDE,Industrials,United States,NASDAQ,USD,true
+2026-11,CHTR,CHARTER COMMUNICATIONS CLASS A,Communication,United States,NASDAQ,USD,true
+2026-11,CI,CIGNA,Health Care,United States,NYSE,USD,true
+2026-11,CICT.SI,CAPITALAND INTEGRATED COMMERCIAL T,Real Estate,Singapore,Singapore Exchange,SGD,false
+2026-11,CIEN,CIENA,Information Technology,United States,NYSE,USD,true
+2026-11,CIMB.KL,CIMB GROUP HOLDINGS,Financials,Malaysia,Bursa Malaysia,MYR,false
+2026-11,CINF,CINCINNATI FINANCIAL,Financials,United States,NASDAQ,USD,true
+2026-11,CIPLA.NS,CIPLA LTD,Health Care,India,National Stock Exchange Of India,INR,false
+2026-11,CL,COLGATE-PALMOLIVE,Consumer Staples,United States,NYSE,USD,true
+2026-11,CLAR.SI,CAPITALAND ASCENDAS REIT,Real Estate,Singapore,Singapore Exchange,SGD,false
+2026-11,CLNX.MC,CELLNEX TELECOM,Communication,Spain,Bolsa De Madrid,EUR,true
+2026-11,CLS.JO,CLICKS GROUP,Consumer Staples,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,CLS.TO,CELESTICA,Information Technology,Canada,Toronto Stock Exchange,CAD,true
+2026-11,CM.TO,CANADIAN IMPERIAL BANK OF COMMERCE,Financials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,CMCSA,COMCAST CLASS A,Communication,United States,NASDAQ,USD,true
+2026-11,CME,CME GROUP CLASS A,Financials,United States,NASDAQ,USD,true
+2026-11,CMG,CHIPOTLE MEXICAN GRILL,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,CMI,CUMMINS INC,Industrials,United States,NYSE,USD,true
+2026-11,CMIG4.SA,CIA ENERGETICA DE MINAS GERAIS PRE,Utilities,Brazil,XBSP,BRL,false
+2026-11,CMS,CMS ENERGY,Utilities,United States,NYSE,USD,true
+2026-11,CNA.L,CENTRICA PLC,Utilities,United Kingdom,London Stock Exchange,GBP,true
+2026-11,CNC,CENTENE CORP,Health Care,United States,NYSE,USD,true
+2026-11,CNP,CENTERPOINT ENERGY,Utilities,United States,NYSE,USD,true
+2026-11,CNQ.TO,CANADIAN NATURAL RESOURCES LTD,Energy,Canada,Toronto Stock Exchange,CAD,true
+2026-11,CNR.TO,CANADIAN NATIONAL RAILWAY,Industrials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,COALINDIA.NS,COAL INDIA,Energy,India,National Stock Exchange Of India,INR,false
+2026-11,COF,CAPITAL ONE FINANCIAL CORP,Financials,United States,NYSE,USD,true
+2026-11,COHR,COHERENT,Information Technology,United States,NYSE,USD,true
+2026-11,COIN,COINBASE GLOBAL CLASS A,Financials,United States,NASDAQ,USD,true
+2026-11,COL.AX,COLES GROUP LTD,Consumer Staples,Australia,Asx - All Markets,AUD,false
+2026-11,COLO-B.CO,COLOPLAST B,Health Care,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,true
+2026-11,COLPAL.NS,COLGATE PALMOLIVE INDIA LTD,Consumer Staples,India,National Stock Exchange Of India,INR,false
+2026-11,COMI.CA,COMMERCIAL INTERNATIONAL BANK EGYP,Financials,Egypt,Egyptian Exchange,EGP,false
+2026-11,CON.DE,CONTINENTAL AG,Consumer Discretionary,Germany,Xetra,EUR,true
+2026-11,COO,COOPER,Health Care,United States,NASDAQ,USD,true
+2026-11,COP,CONOCOPHILLIPS,Energy,United States,NYSE,USD,true
+2026-11,COPEC.SN,EMPRESAS COPEC SA,Consumer Discretionary,Chile,Santiago Stock Exchange,CLP,false
+2026-11,COR,CENCORA,Health Care,United States,NYSE,USD,true
+2026-11,COROMANDEL.NS,COROMANDEL INTERNATIONAL LTD,Materials,India,National Stock Exchange Of India,INR,false
+2026-11,COST,COSTCO WHOLESALE CORP,Consumer Staples,United States,NASDAQ,USD,true
+2026-11,COV.PA,COVIVIO SA,Real Estate,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,CP.TO,CANADIAN PACIFIC KANSAS CITY,Industrials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,CPALL.BK,CP ALL NON-VOTING DR,Consumer Staples,Thailand,Stock Exchange Of Thailand,THB,false
+2026-11,CPAY,CORPAY,Financials,United States,NYSE,USD,true
+2026-11,CPF.BK,CHAROEN POKPHAND FOODS NON-VOTING,Consumer Staples,Thailand,Stock Exchange Of Thailand,THB,false
+2026-11,CPFE3.SA,CPFL ENERGIA,Utilities,Brazil,XBSP,BRL,false
+2026-11,CPG.L,COMPASS GROUP PLC,Consumer Discretionary,United Kingdom,London Stock Exchange,USD,true
+2026-11,CPI.JO,CAPITEC SHS,Financials,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,CPLE3.SA,CIA PARANAENSE DE ENERGIA COPEL,Utilities,Brazil,XBSP,BRL,false
+2026-11,CPN.BK,CENTRAL PATTANA NON-VOTING DR PCL,Real Estate,Thailand,Stock Exchange Of Thailand,THB,false
+2026-11,CPR.MI,DAVIDE CAMPARI MILANO NV,Consumer Staples,Italy,Borsa Italiana,EUR,true
+2026-11,CPRT,COPART INC,Industrials,United States,NASDAQ,USD,true
+2026-11,CPU.AX,COMPUTERSHARE LTD,Industrials,Australia,Asx - All Markets,AUD,false
+2026-11,CRBG,COREBRIDGE FINANCIAL INC,Financials,United States,NYSE,USD,true
+2026-11,CRCL,CIRCLE INTERNET GROUP INC CLASS A,Financials,United States,NYSE,USD,true
+2026-11,CRDO,CREDO TECHNOLOGY GROUP HOLDING LTD,Information Technology,United States,NASDAQ,USD,true
+2026-11,CRH,CRH PUBLIC LIMITED PLC,Materials,United States,NYSE,USD,true
+2026-11,CRM,SALESFORCE,Information Technology,United States,NYSE,USD,true
+2026-11,CRS,CARPENTER TECHNOLOGY,Industrials,United States,NYSE,USD,true
+2026-11,CRWD,CROWDSTRIKE HOLDINGS CLASS A,Information Technology,United States,NASDAQ,USD,true
+2026-11,CRWV,COREWEAVE CLASS A,Information Technology,United States,NASDAQ,USD,true
+2026-11,CS.PA,AXA SA,Financials,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,CSCO,CISCO SYSTEMS INC,Information Technology,United States,NASDAQ,USD,true
+2026-11,CSL.AX,CSL,Health Care,Australia,Asx - All Markets,AUD,false
+2026-11,CSU.TO,CONSTELLATION SOFTWARE,Information Technology,Canada,Toronto Stock Exchange,CAD,true
+2026-11,CSX,CSX,Industrials,United States,NASDAQ,USD,true
+2026-11,CTAS,CINTAS,Industrials,United States,NASDAQ,USD,true
+2026-11,CTC-A.TO,CANADIAN TIRE LTD CLASS A,Consumer Discretionary,Canada,Toronto Stock Exchange,CAD,true
+2026-11,CTSH,COGNIZANT TECHNOLOGY SOLUTIONS CLA,Information Technology,United States,NASDAQ,USD,true
+2026-11,CTVA,CORTEVA,Materials,United States,NYSE,USD,true
+2026-11,CU.TO,CANADIAN UTILITIES LTD CLASS A,Utilities,Canada,Toronto Stock Exchange,CAD,true
+2026-11,CUMMINSIND.NS,CUMMINS INDIA LTD,Industrials,India,National Stock Exchange Of India,INR,false
+2026-11,CVC.AS,CVC CAPITAL PARTNERS PLC,Financials,Netherlands,Euronext Amsterdam,EUR,true
+2026-11,CVE.TO,CENOVUS ENERGY,Energy,Canada,Toronto Stock Exchange,CAD,true
+2026-11,CVNA,CARVANA CLASS A,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,CVS,CVS HEALTH,Health Care,United States,NYSE,USD,true
+2026-11,CVX,CHEVRON,Energy,United States,NYSE,USD,true
+2026-11,CW,CURTISS WRIGHT,Industrials,United States,NYSE,USD,true
+2026-11,D,DOMINION ENERGY,Utilities,United States,NYSE,USD,true
+2026-11,D05.SI,DBS GROUP HOLDINGS LTD,Financials,Singapore,Singapore Exchange,SGD,false
+2026-11,DABUR.NS,DABUR INDIA,Consumer Staples,India,National Stock Exchange Of India,INR,false
+2026-11,DAL,DELTA AIR LINES,Industrials,United States,NYSE,USD,true
+2026-11,DANSKE.CO,DANSKE BANK,Financials,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,true
+2026-11,DASH,DOORDASH CLASS A,Consumer Discretionary,United States,NASDAQ,USD,true
+2026-11,DB1.DE,DEUTSCHE BOERSE AG,Financials,Germany,Xetra,EUR,true
+2026-11,DBK.DE,DEUTSCHE BANK AG,Financials,Germany,Xetra,EUR,true
+2026-11,DD,DUPONT DE NEMOURS,Industrials,United States,NYSE,USD,true
+2026-11,DDOG,DATADOG INC CLASS A,Information Technology,United States,NASDAQ,USD,true
+2026-11,DE,DEERE,Industrials,United States,NYSE,USD,true
+2026-11,DECK,DECKERS OUTDOOR,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,DELL,DELL TECHNOLOGIES INC CLASS C,Information Technology,United States,NYSE,USD,true
+2026-11,DELTA.BK,DELTA ELECTRONICS (THAILAND) NON-V,Information Technology,Thailand,Stock Exchange Of Thailand,THB,false
+2026-11,DEMANT.CO,DEMANT,Health Care,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,true
+2026-11,DEWA.AE,DUBAI ELECTRICITY AND WATER AUTHOR,Utilities,United Arab Emirates,Dubai Financial Market,AED,false
+2026-11,DG,DOLLAR GENERAL CORP,Consumer Staples,United States,NYSE,USD,true
+2026-11,DG.PA,VINCI SA,Industrials,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,DGE.L,DIAGEO PLC,Consumer Staples,United Kingdom,London Stock Exchange,GBP,true
+2026-11,DGX,QUEST DIAGNOSTICS INC,Health Care,United States,NYSE,USD,true
+2026-11,DHER.DE,DELIVERY HERO,Consumer Discretionary,Germany,Xetra,EUR,true
+2026-11,DHI,D R HORTON,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,DHL.DE,DHL AG,Industrials,Germany,Xetra,EUR,true
+2026-11,DHR,DANAHER,Health Care,United States,NYSE,USD,true
+2026-11,DIB.AE,DB ISLAMIC BANK,Financials,United Arab Emirates,Dubai Financial Market,AED,false
+2026-11,DIE.BR,DIETEREN (D) SA,Consumer Discretionary,Belgium,Nyse Euronext - Euronext Brussels,EUR,true
+2026-11,DIM.PA,SARTORIUS STEDIM BIOTECH SA,Health Care,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,DIS,WALT DISNEY,Communication,United States,NYSE,USD,true
+2026-11,DIVISLAB.NS,DIVIS LABORATORIES LTD,Health Care,India,National Stock Exchange Of India,INR,false
+2026-11,DIXON.NS,DIXON TECHNOLOGIES (INDIA) LTD,Consumer Discretionary,India,National Stock Exchange Of India,INR,false
+2026-11,DKS,DICKS SPORTING,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,DLF.NS,DLF LTD,Real Estate,India,National Stock Exchange Of India,INR,false
+2026-11,DLR,DIGITAL REALTY TRUST REIT,Real Estate,United States,NYSE,USD,true
+2026-11,DLTR,DOLLAR TREE INC,Consumer Staples,United States,NASDAQ,USD,true
+2026-11,DMART.NS,AVENUE SUPERMARTS LTD,Consumer Staples,India,National Stock Exchange Of India,INR,false
+2026-11,DNB.OL,DNB BANK,Financials,Norway,Oslo Bors Asa,NOK,true
+2026-11,DNP.WA,DINO POLSKA,Consumer Staples,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,false
+2026-11,DOL.TO,DOLLARAMA,Consumer Discretionary,Canada,Toronto Stock Exchange,CAD,true
+2026-11,DOV,DOVER,Industrials,United States,NYSE,USD,true
+2026-11,DOW,DOW,Materials,United States,NYSE,USD,true
+2026-11,DPLM.L,DIPLOMA PLC,Industrials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,DRI,DARDEN RESTAURANTS INC,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,DRREDDY.NS,DR REDDYS LABORATORIES,Health Care,India,National Stock Exchange Of India,INR,false
+2026-11,DSCT.TA,ISRAEL DISCOUNT BANK LTD,Financials,Israel,Tel Aviv Stock Exchange,ILS,false
+2026-11,DSFIR.AS,DSM FIRMENICH AG,Materials,Netherlands,Euronext Amsterdam,EUR,true
+2026-11,DSV.CO,DSV,Industrials,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,true
+2026-11,DSY.JO,DISCOVERY,Financials,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,DSY.PA,DASSAULT SYSTEMES,Information Technology,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,DTE,DTE ENERGY,Utilities,United States,NYSE,USD,true
+2026-11,DTE.DE,DEUTSCHE TELEKOM N AG,Communication,Germany,Xetra,EUR,true
+2026-11,DTG.DE,DAIMLER TRUCK HOLDING E AG,Industrials,Germany,Xetra,EUR,true
+2026-11,DU.AE,EMIRATES INTEGRATED TELECOMMUNICAT,Communication,United Arab Emirates,Dubai Financial Market,AED,false
+2026-11,DUBK.QA,DUKHAN BANK,Financials,Qatar,Qatar Exchange,QAR,false
+2026-11,DUK,DUKE ENERGY CORP,Utilities,United States,NYSE,USD,true
+2026-11,DVN,DEVON ENERGY,Energy,United States,NYSE,USD,true
+2026-11,DXCM,DEXCOM INC,Health Care,United States,NASDAQ,USD,true
+2026-11,EAND.AE,EMIRATES TELECOMMUNICATIONS GROUP,Communication,United Arab Emirates,Abu Dhabi Securities Exchange,AED,false
+2026-11,EBAY,EBAY,Consumer Discretionary,United States,NASDAQ,USD,true
+2026-11,EBP.WA,ERSTE BANK POLSKA SA,Financials,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,false
+2026-11,EBS.VI,ERSTE GROUP BANK AG,Financials,Austria,Wiener Boerse Ag,EUR,true
+2026-11,ECHO,ECHOSTAR CLASS A,Communication,United States,NASDAQ,USD,true
+2026-11,ECL,ECOLAB,Materials,United States,NYSE,USD,true
+2026-11,ED,CONSOLIDATED EDISON,Utilities,United States,NYSE,USD,true
+2026-11,EDP.LS,EDP ENERGIAS DE PORTUGAL,Utilities,Portugal,Nyse Euronext - Euronext Lisbon,EUR,true
+2026-11,EDPR.LS,EDP RENEWABLES SA,Utilities,Portugal,Nyse Euronext - Euronext Lisbon,EUR,true
+2026-11,EDV.L,ENDEAVOUR MINING,Materials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,EFN.TO,ELEMENT FLEET MANAGEMENT,Industrials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,EFX,EQUIFAX,Industrials,United States,NYSE,USD,true
+2026-11,EG,EVEREST GROUP,Financials,United States,NYSE,USD,true
+2026-11,EGIE3.SA,ENGIE BRASIL ENERGIA SA,Utilities,Brazil,XBSP,BRL,false
+2026-11,EICHERMOT.NS,EICHER MOTORS LTD,Consumer Discretionary,India,National Stock Exchange Of India,INR,false
+2026-11,EIX,EDISON INTERNATIONAL,Utilities,United States,NYSE,USD,true
+2026-11,EL,ESTEE LAUDER INC CLASS A,Consumer Staples,United States,NYSE,USD,true
+2026-11,EL.PA,ESSILORLUXOTTICA SA,Health Care,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,ELE.MC,ENDESA SA,Utilities,Spain,Bolsa De Madrid,EUR,true
+2026-11,ELI.BR,ELIA GROUP SA,Utilities,Belgium,Nyse Euronext - Euronext Brussels,EUR,true
+2026-11,ELISA.HE,ELISA,Communication,Finland,Nasdaq Omx Helsinki Ltd.,EUR,true
+2026-11,ELV,ELEVANCE HEALTH INC,Health Care,United States,NYSE,USD,true
+2026-11,EMA.TO,EMERA INC,Utilities,Canada,Toronto Stock Exchange,CAD,true
+2026-11,EMAAR.AE,EMAAR PROPERTIES,Real Estate,United Arab Emirates,Dubai Financial Market,AED,false
+2026-11,EMAARDEV.AE,EMAAR DEVELOPMENT,Real Estate,United Arab Emirates,Dubai Financial Market,AED,false
+2026-11,EMBJ3.SA,EMBRAER,Industrials,Brazil,XBSP,BRL,false
+2026-11,EME,EMCOR GROUP,Industrials,United States,NYSE,USD,true
+2026-11,EMIRATESNBD.AE,EMIRATES NBD,Financials,United Arab Emirates,Dubai Financial Market,AED,false
+2026-11,EMP-A.TO,EMPIRE CLASS A,Consumer Staples,Canada,Toronto Stock Exchange,CAD,true
+2026-11,EMR,EMERSON ELECTRIC,Industrials,United States,NYSE,USD,true
+2026-11,EMSN.SW,EMS-CHEMIE HOLDING AG,Materials,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,EN.PA,BOUYGUES SA,Industrials,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,ENB.TO,ENBRIDGE,Energy,Canada,Toronto Stock Exchange,CAD,true
+2026-11,ENEL.MI,ENEL,Utilities,Italy,Borsa Italiana,EUR,true
+2026-11,ENELCHILE.SN,ENEL CHILE SA,Utilities,Chile,Santiago Stock Exchange,CLP,false
+2026-11,ENEV3.SA,ENEVA,Utilities,Brazil,XBSP,BRL,false
+2026-11,ENGI.PA,ENGIE SA,Utilities,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,ENGI11.SA,ENERGISA UNITS,Utilities,Brazil,XBSP,BRL,false
+2026-11,ENI.MI,ENI,Energy,Italy,Borsa Italiana,EUR,true
+2026-11,ENLT.TA,ENLIGHT RENEWABLE ENERGY,Utilities,Israel,Tel Aviv Stock Exchange,ILS,false
+2026-11,ENR.DE,SIEMENS ENERGY N AG,Industrials,Germany,Xetra,EUR,true
+2026-11,ENRIN.NS,SIEMENS ENERGY INDIA LTD,Industrials,India,National Stock Exchange Of India,INR,false
+2026-11,ENTG,ENTEGRIS INC,Information Technology,United States,NASDAQ,USD,true
+2026-11,ENX.PA,EURONEXT NV,Financials,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,EOAN.DE,E.ON N,Utilities,Germany,Xetra,EUR,true
+2026-11,EOG,EOG RESOURCES,Energy,United States,NYSE,USD,true
+2026-11,EPI-A.ST,EPIROC CLASS A,Industrials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,EPI-B.ST,EPIROC CLASS B,Industrials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,EQIX,EQUINIX REIT,Real Estate,United States,NASDAQ,USD,true
+2026-11,EQNR.OL,EQUINOR,Energy,Norway,Oslo Bors Asa,NOK,true
+2026-11,EQT,EQT,Energy,United States,NYSE,USD,true
+2026-11,EQT.ST,EQT,Financials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,EQTL3.SA,EQUATORIAL SA,Utilities,Brazil,XBSP,BRL,false
+2026-11,EQX.TO,EQUINOX GOLD,Materials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,EREGL.IS,EREGLI DEMIR VE CELIK FABRIKALARI,Materials,Turkey,Istanbul Stock Exchange,TRY,false
+2026-11,ERF.PA,EUROFINS SCIENTIFIC,Health Care,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,ERIC-B.ST,ERICSSON B,Information Technology,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,ES,EVERSOURCE ENERGY,Utilities,United States,NYSE,USD,true
+2026-11,ESLT.TA,ELBIT SYSTEMS,Industrials,Israel,Tel Aviv Stock Exchange,ILS,false
+2026-11,ESS,ESSEX PROPERTY TRUST REIT,Real Estate,United States,NYSE,USD,true
+2026-11,ESSITY-B.ST,ESSITY CLASS B,Consumer Staples,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,ETE.AT,NATIONAL BANK OF GREECE,Financials,Greece,Athens Exchange S.A. Cash Market,EUR,false
+2026-11,ETERNAL.NS,ETERNAL,Consumer Discretionary,India,National Stock Exchange Of India,INR,false
+2026-11,ETN,EATON PLC,Industrials,United States,NYSE,USD,true
+2026-11,ETR,ENTERGY CORP,Utilities,United States,NYSE,USD,true
+2026-11,EUROB.AT,EUROBANK SA,Financials,Greece,Athens Exchange S.A. Cash Market,EUR,false
+2026-11,EVK.DE,EVONIK INDUSTRIES AG,Materials,Germany,Xetra,EUR,true
+2026-11,EVN.AX,EVOLUTION MINING,Materials,Australia,Asx - All Markets,AUD,false
+2026-11,EVO.ST,EVOLUTION,Consumer Discretionary,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,EVRG,EVERGY,Utilities,United States,NASDAQ,USD,true
+2026-11,EW,EDWARDS LIFESCIENCES,Health Care,United States,NYSE,USD,true
+2026-11,EXC,EXELON CORP,Utilities,United States,NASDAQ,USD,true
+2026-11,EXE,EXPAND ENERGY,Energy,United States,NASDAQ,USD,true
+2026-11,EXO.AS,EXOR NV,Financials,Netherlands,Euronext Amsterdam,EUR,true
+2026-11,EXPD,EXPEDITORS INTERNATIONAL OF WASHIN,Industrials,United States,NYSE,USD,true
+2026-11,EXPE,EXPEDIA GROUP,Consumer Discretionary,United States,NASDAQ,USD,true
+2026-11,EXPN.L,EXPERIAN PLC,Industrials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,EXR,EXTRA SPACE STORAGE REIT,Real Estate,United States,NYSE,USD,true
+2026-11,F,FORD MOTOR CO,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,F34.SI,WILMAR INTERNATIONAL,Consumer Staples,Singapore,Singapore Exchange,SGD,false
+2026-11,FAB.AE,FIRST ABU DHABI BANK,Financials,United Arab Emirates,Abu Dhabi Securities Exchange,AED,false
+2026-11,FALABELLA.SN,FALABELLA SACI,Consumer Discretionary,Chile,Santiago Stock Exchange,CLP,false
+2026-11,FANG,DIAMONDBACK ENERGY,Energy,United States,NASDAQ,USD,true
+2026-11,FAST,FASTENAL,Industrials,United States,NASDAQ,USD,true
+2026-11,FBK.MI,FINECOBANK BANCA FINECO,Financials,Italy,Borsa Italiana,EUR,true
+2026-11,FCNCA,FIRST CITIZENS BANCSHARES CLASS A,Financials,United States,NASDAQ,USD,true
+2026-11,FCX,FREEPORT MCMORAN INC,Materials,United States,NYSE,USD,true
+2026-11,FDX,FEDEX CORP,Industrials,United States,NYSE,USD,true
+2026-11,FDXF,FEDEX FREIGHT HOLDING COMPANY INC,Industrials,United States,NYSE,USD,true
+2026-11,FE,FIRSTENERGY CORP,Utilities,United States,NYSE,USD,true
+2026-11,FEDERALBNK.NS,FEDERAL BANK LTD,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,FEMSAUBD.MX,FOMENTO ECONOMICO MEXICANO,Consumer Staples,Mexico,Bolsa Mexicana De Valores,MXN,false
+2026-11,FER.MC,FERROVIAL NV,Industrials,Spain,Bolsa De Madrid,EUR,true
+2026-11,FERG,FERGUSON ENTERPRISES,Industrials,United States,NYSE,USD,true
+2026-11,FFH.TO,FAIRFAX FINANCIAL HOLDINGS SUB VOT,Financials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,FFIV,F5,Information Technology,United States,NASDAQ,USD,true
+2026-11,FGR.PA,EIFFAGE SA,Industrials,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,FIBRAPL14.MX,PROLOGIS PROPERTY MEXICO REIT,Real Estate,Mexico,Bolsa Mexicana De Valores,MXN,false
+2026-11,FICO,FAIR ISAAC,Information Technology,United States,NYSE,USD,true
+2026-11,FIS,FIDELITY NATIONAL INFORMATION SERV,Financials,United States,NYSE,USD,true
+2026-11,FISV,FISERV INC,Financials,United States,NASDAQ,USD,true
+2026-11,FITB,FIFTH THIRD BANCORP,Financials,United States,NYSE,USD,true
+2026-11,FIX,COMFORT SYSTEMS USA,Industrials,United States,NYSE,USD,true
+2026-11,FLEX,FLEX LTD,Information Technology,United States,NASDAQ,USD,true
+2026-11,FLUT,FLUTTER ENTERTAINMENT PLC,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,FM.TO,FIRST QUANTUM MINERALS,Materials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,FME.DE,FRESENIUS MEDICAL CARE AG,Health Care,Germany,Xetra,EUR,true
+2026-11,FMG.AX,FORTESCUE LTD,Materials,Australia,Asx - All Markets,AUD,false
+2026-11,FN,FABRINET,Information Technology,United States,NYSE,USD,true
+2026-11,FNF,FIDELITY NATIONAL FINANCIAL INC,Financials,United States,NYSE,USD,true
+2026-11,FNV.TO,FRANCO NEVADA,Materials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,FORTIS.NS,FORTIS HEALTHCARE LTD,Health Care,India,National Stock Exchange Of India,INR,false
+2026-11,FORTUM.HE,FORTUM,Utilities,Finland,Nasdaq Omx Helsinki Ltd.,EUR,true
+2026-11,FOX,FOX CLASS B,Communication,United States,NASDAQ,USD,true
+2026-11,FOXA,FOX CLASS A,Communication,United States,NASDAQ,USD,true
+2026-11,FPH.NZ,FISHER AND PAYKEL HEALTHCARE CORPO,Health Care,New Zealand,New Zealand Exchange Ltd,NZD,false
+2026-11,FRE.DE,FRESENIUS N,Health Care,Germany,Xetra,EUR,true
+2026-11,FRES.L,FRESNILLO PLC,Materials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,FSLR,FIRST SOLAR,Information Technology,United States,NASDAQ,USD,true
+2026-11,FSR.JO,FIRSTRAND LTD,Financials,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,FTAI,FTAI AVIATION,Industrials,United States,NASDAQ,USD,true
+2026-11,FTI,TECHNIPFMC PLC,Energy,United States,NYSE,USD,true
+2026-11,FTNT,FORTINET,Information Technology,United States,NASDAQ,USD,true
+2026-11,FTS.TO,FORTIS,Utilities,Canada,Toronto Stock Exchange,CAD,true
+2026-11,FTV,FORTIVE,Industrials,United States,NYSE,USD,true
+2026-11,FUNO11.MX,FIBRA UNO ADMINISTRACION REIT,Real Estate,Mexico,Bolsa Mexicana De Valores,MXN,false
+2026-11,FUTU,FUTU HOLDINGS ADR,Financials,Hong Kong,NASDAQ,USD,true
+2026-11,FWONK,LIBERTY MEDIA SERIES C,Communication,United States,NASDAQ,USD,true
+2026-11,G.MI,ASSICURAZIONI GENERALI,Financials,Italy,Borsa Italiana,EUR,true
+2026-11,G1A.DE,GEA GROUP AG,Industrials,Germany,Xetra,EUR,true
+2026-11,GAIL.NS,GAIL INDIA LTD,Utilities,India,National Stock Exchange Of India,INR,false
+2026-11,GALD.SW,GALDERMA GROUP N AG,Health Care,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,GALP.LS,GALP ENERGIA SGPS SA CLASS B,Energy,Portugal,Nyse Euronext - Euronext Lisbon,EUR,true
+2026-11,GAMUDA.KL,GAMUDA,Industrials,Malaysia,Bursa Malaysia,MYR,false
+2026-11,GAPB.MX,GRUPO AEROPORTUARIO DEL PACIFICO,Industrials,Mexico,Bolsa Mexicana De Valores,MXN,false
+2026-11,GBLB.BR,GROUPE BRUXELLES LAMBERT NV,Financials,Belgium,Nyse Euronext - Euronext Brussels,EUR,true
+2026-11,GCARSOA1.MX,GRUPO CARSO SERIES A1,Industrials,Mexico,Bolsa Mexicana De Valores,MXN,false
+2026-11,GD,GENERAL DYNAMICS CORP,Industrials,United States,NYSE,USD,true
+2026-11,GE,GE AEROSPACE,Industrials,United States,NYSE,USD,true
+2026-11,GEBN.SW,GEBERIT AG,Industrials,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,GEHC,GE HEALTHCARE TECHNOLOGIES,Health Care,United States,NASDAQ,USD,true
+2026-11,GEKTERNA.AT,GEK TERNA,Industrials,Greece,Athens Exchange S.A. Cash Market,EUR,false
+2026-11,GEN,GEN DIGITAL,Information Technology,United States,NASDAQ,USD,true
+2026-11,GET.PA,GETLINK,Industrials,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,GEV,GE VERNOVA,Industrials,United States,NYSE,USD,true
+2026-11,GFC.PA,GECINA SA,Real Estate,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,GFI.JO,GOLD FIELDS,Materials,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,GFINBURO.MX,GRUPO FINANCIERO INBURSA SRIES O,Financials,Mexico,Bolsa Mexicana De Valores,MXN,false
+2026-11,GFL.TO,GFL ENVIRONMENTAL SUBORDINATE VOTI,Industrials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,GFNORTEO.MX,GPO FINANCE BANORTE,Financials,Mexico,Bolsa Mexicana De Valores,MXN,false
+2026-11,GGBR4.SA,GERDAU PREF SA,Materials,Brazil,XBSP,BRL,false
+2026-11,GIB-A.TO,CGI INC CLASS A,Information Technology,Canada,Toronto Stock Exchange,CAD,true
+2026-11,GIL.TO,GILDAN ACTIVEWEAR,Consumer Discretionary,Canada,Toronto Stock Exchange,CAD,true
+2026-11,GILD,GILEAD SCIENCES,Health Care,United States,NASDAQ,USD,true
+2026-11,GIS,GENERAL MILLS INC,Consumer Staples,United States,NYSE,USD,true
+2026-11,GIVN.SW,GIVAUDAN SA,Materials,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,GJF.OL,GJENSIDIGE FORSIKRING,Financials,Norway,Oslo Bors Asa,NOK,true
+2026-11,GLE.PA,SOCIETE GENERALE SA,Financials,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,GLEN.L,GLENCORE PLC,Materials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,GLW,CORNING,Information Technology,United States,NYSE,USD,true
+2026-11,GM,GENERAL MOTORS,Consumer Discretionary,United States,NASDAQ,USD,true
+2026-11,GMAB.CO,GENMAB,Health Care,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,true
+2026-11,GMD.AX,GENESIS MINERALS,Materials,Australia,Asx - All Markets,AUD,false
+2026-11,GMEXICOB.MX,GRUPO MEXICO B,Materials,Mexico,Bolsa Mexicana De Valores,MXN,false
+2026-11,GMG.AX,GOODMAN GROUP UNITS,Real Estate,Australia,Asx - All Markets,AUD,false
+2026-11,GMRAIRPORT.NS,GMR AIRPORTS LTD,Industrials,India,National Stock Exchange Of India,INR,false
+2026-11,GODREJCP.NS,GODREJ CONSUMER PRODUCTS LTD,Consumer Staples,India,National Stock Exchange Of India,INR,false
+2026-11,GODREJPROP.NS,GODREJ PROPERTIES LTD,Real Estate,India,National Stock Exchange Of India,INR,false
+2026-11,GOOG,ALPHABET CLASS C,Communication,United States,NASDAQ,USD,true
+2026-11,GOOGL,ALPHABET CLASS A,Communication,United States,NASDAQ,USD,true
+2026-11,GPC,GENUINE PARTS,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,GPN,GLOBAL PAYMENTS INC,Financials,United States,NYSE,USD,true
+2026-11,GRAB,GRAB HOLDINGS CLASS A,Industrials,Singapore,NASDAQ,USD,true
+2026-11,GRASIM.NS,GRASIM INDUSTRIES,Materials,India,National Stock Exchange Of India,INR,false
+2026-11,GRMN,GARMIN,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,GROWW.NS,BILLIONBRAINS GARAGE VENTURES LTD,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,GRUMAB.MX,GRUMA,Consumer Staples,Mexico,Bolsa Mexicana De Valores,MXN,false
+2026-11,GS,GOLDMAN SACHS GROUP,Financials,United States,NYSE,USD,true
+2026-11,GSK.L,GLAXOSMITHKLINE,Health Care,United Kingdom,London Stock Exchange,GBP,true
+2026-11,GULF.BK,GULF DEVELOPMENT NON-VOTING DR PCL,Utilities,Thailand,Stock Exchange Of Thailand,THB,false
+2026-11,GVT&D.NS,GE VERNOVA T&D INDIA LTD,Industrials,India,National Stock Exchange Of India,INR,false
+2026-11,GWO.TO,GREAT WEST LIFECO INC,Financials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,GWW,WW GRAINGER INC,Industrials,United States,NYSE,USD,true
+2026-11,H,HYATT HOTELS CORP CLASS A,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,H.TO,HYDRO ONE,Utilities,Canada,Toronto Stock Exchange,CAD,true
+2026-11,H78.SI,HONGKONG LAND HOLDINGS LTD,Real Estate,Hong Kong,Singapore Exchange,USD,false
+2026-11,HAG.DE,HENSOLDT AG,Industrials,Germany,Xetra,EUR,true
+2026-11,HAL,HALLIBURTON,Energy,United States,NYSE,USD,true
+2026-11,HAL.NS,HINDUSTAN AERONAUTICS LTD,Industrials,India,National Stock Exchange Of India,INR,false
+2026-11,HAR.JO,HARMONY GOLD MINING COMPANY LIMITE,Materials,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,HARL.TA,HAREL INSURANCE INVESTMENTS & FINA,Financials,Israel,Tel Aviv Stock Exchange,ILS,false
+2026-11,HAVELLS.NS,HAVELLS INDIA LTD,Industrials,India,National Stock Exchange Of India,INR,false
+2026-11,HBAN,HUNTINGTON BANCSHARES INC,Financials,United States,NASDAQ,USD,true
+2026-11,HBAN.SW,HELVETIA BALOISE HOLDING N AG,Financials,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,HCA,HCA HEALTHCARE,Health Care,United States,NYSE,USD,true
+2026-11,HCLTECH.NS,HCL TECHNOLOGIES LTD,Information Technology,India,National Stock Exchange Of India,INR,false
+2026-11,HD,HOME DEPOT,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,HDFCAMC.NS,HDFC ASSET MANAGEMENT COMPANY LTD,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,HDFCBANK.NS,HDFC BANK,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,HDFCLIFE.NS,HDFC LIFE INSURANCE COMPANY LTD,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,HEI,HEICO,Industrials,United States,NYSE,USD,true
+2026-11,HEI.A,HEICO CLASS A,Industrials,United States,NYSE,USD,true
+2026-11,HEI.DE,HEIDELBERG MATERIALS AG,Materials,Germany,Xetra,EUR,true
+2026-11,HEIA.AS,HEINEKEN NV,Consumer Staples,Netherlands,Euronext Amsterdam,EUR,true
+2026-11,HEIO.AS,HEINEKEN HOLDING NV,Consumer Staples,Netherlands,Euronext Amsterdam,EUR,true
+2026-11,HEN.DE,HENKEL AG,Consumer Staples,Germany,Xetra,EUR,true
+2026-11,HEN3.DE,HENKEL & KGAA PREF AG,Consumer Staples,Germany,Xetra,EUR,true
+2026-11,HEROMOTOCO.NS,HERO MOTOCORP LTD,Consumer Discretionary,India,National Stock Exchange Of India,INR,false
+2026-11,HEXA-B.ST,HEXAGON CLASS B,Information Technology,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,HIG,HARTFORD INSURANCE GROUP,Financials,United States,NYSE,USD,true
+2026-11,HINDALCO.NS,HINDALCO INDUSTRIES LTD,Materials,India,National Stock Exchange Of India,INR,false
+2026-11,HINDPETRO.NS,HINDUSTAN PETROLEUM CORP LTD,Energy,India,National Stock Exchange Of India,INR,false
+2026-11,HINDUNILVR.NS,HINDUSTAN UNILEVER LTD,Consumer Staples,India,National Stock Exchange Of India,INR,false
+2026-11,HLBANK.KL,HONG LEONG BANK,Financials,Malaysia,Bursa Malaysia,MYR,false
+2026-11,HLMA.L,HALMA PLC,Information Technology,United Kingdom,London Stock Exchange,GBP,true
+2026-11,HLN.L,HALEON PLC,Health Care,United Kingdom,London Stock Exchange,GBP,true
+2026-11,HLT,HILTON WORLDWIDE HOLDINGS,Consumer Discretionary,United States,NASDAQ,USD,true
+2026-11,HM-B.ST,HENNES & MAURITZ,Consumer Discretionary,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,HNR1.DE,HANNOVER RUECK,Financials,Germany,Xetra,EUR,true
+2026-11,HO.PA,THALES SA,Industrials,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,HOLN.SW,HOLCIM LTD AG,Materials,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,HON,HONEYWELL INTERNATIONAL INC,Industrials,United States,NASDAQ,USD,true
+2026-11,HONA,HONEYWELL AEROSPACE INC,Industrials,United States,NASDAQ,USD,true
+2026-11,HOOD,ROBINHOOD MARKETS CLASS A,Financials,United States,NASDAQ,USD,true
+2026-11,HOT.DE,HOCHTIEF AG,Industrials,Germany,Xetra,EUR,true
+2026-11,HPE,HEWLETT PACKARD ENTERPRISE,Information Technology,United States,NYSE,USD,true
+2026-11,HPQ,HP INC,Information Technology,United States,NYSE,USD,true
+2026-11,HSBA.L,HSBC HOLDINGS PLC,Financials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,HSY,HERSHEY FOODS,Consumer Staples,United States,NYSE,USD,true
+2026-11,HTHT,H WORLD GROUP ADR,Consumer Discretionary,China,NASDAQ,USD,true
+2026-11,HTO.AT,HELLENIC TELECOMMUNICATIONS ORGANI,Communication,Greece,Athens Exchange S.A. Cash Market,EUR,false
+2026-11,HUBB,HUBBELL INC,Industrials,United States,NYSE,USD,true
+2026-11,HUM,HUMANA,Health Care,United States,NYSE,USD,true
+2026-11,HWM,HOWMET AEROSPACE,Industrials,United States,NYSE,USD,true
+2026-11,IAG.AX,INSURANCE AUSTRALIA GROUP,Financials,Australia,Asx - All Markets,AUD,false
+2026-11,IAG.MC,INTERNATIONAL AIRLINES GROUP,Industrials,Spain,Bolsa De Madrid,EUR,true
+2026-11,IAG.TO,IA FINANCIAL INC,Financials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,IBE.MC,IBERDROLA,Utilities,Spain,Bolsa De Madrid,EUR,true
+2026-11,IBKR,INTERACTIVE BROKERS GROUP INC CLAS,Financials,United States,NASDAQ,USD,true
+2026-11,IBM,INTERNATIONAL BUSINESS MACHINES CO,Information Technology,United States,NYSE,USD,true
+2026-11,ICE,INTERCONTINENTAL EXCHANGE INC,Financials,United States,NYSE,USD,true
+2026-11,ICICIBANK.NS,ICICI BANK,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,ICICIGI.NS,ICICI LOMBARD GENERAL INSURANCE CO,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,ICICILIFE.NS,ICICI LIFE INSURANCE LTD,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,ICL.TA,ICL GROUP,Materials,Israel,Tel Aviv Stock Exchange,ILS,false
+2026-11,ICT.PS,INTERNATIONAL CONTAINER TERMINAL S,Industrials,Philippines,Philippine Stock Exchange Inc.,PHP,false
+2026-11,IDEA.NS,VODAFONE IDEA LTD,Communication,India,National Stock Exchange Of India,INR,false
+2026-11,IDFCFIRSTB.NS,IDFC FIRST BANK LTD,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,IDR.MC,INDRA SISTEMAS SA,Information Technology,Spain,Bolsa De Madrid,EUR,true
+2026-11,IDXX,IDEXX LABORATORIES,Health Care,United States,NASDAQ,USD,true
+2026-11,IEX,IDEX,Industrials,United States,NYSE,USD,true
+2026-11,IFC.TO,INTACT FINANCIAL CORP,Financials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,IFF,INTERNATIONAL FLAVORS & FRAGRANCES,Materials,United States,NYSE,USD,true
+2026-11,IFT.NZ,INFRATIL LTD,Financials,New Zealand,New Zealand Exchange Ltd,NZD,false
+2026-11,IFX.DE,INFINEON TECHNOLOGIES AG,Information Technology,Germany,Xetra,EUR,true
+2026-11,IG.MI,ITALGAS,Utilities,Italy,Borsa Italiana,EUR,true
+2026-11,IGM.TO,IGM FINANCIAL INC,Financials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,IHG.L,INTERCONTINENTAL HOTELS GROUP PLC,Consumer Discretionary,United Kingdom,London Stock Exchange,USD,true
+2026-11,IHH.KL,IHH HEALTHCARE,Health Care,Malaysia,Bursa Malaysia,MYR,false
+2026-11,III.L,3I GROUP FUND PLC,Financials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,ILMN,ILLUMINA INC,Health Care,United States,NASDAQ,USD,true
+2026-11,IMB.L,IMPERIAL BRANDS PLC,Consumer Staples,United Kingdom,London Stock Exchange,GBP,true
+2026-11,IMO.TO,IMPERIAL OIL LTD,Energy,Canada,Toronto Stock Exchange,CAD,true
+2026-11,IMP.JO,IMPALA PLATINUM,Materials,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,INCY,INCYTE CORP,Health Care,United States,NASDAQ,USD,true
+2026-11,INDHOTEL.NS,INDIAN HOTELS,Consumer Discretionary,India,National Stock Exchange Of India,INR,false
+2026-11,INDIANB.NS,INDIAN BANK,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,INDIGO.NS,INTERGLOBE AVIATION LTD,Industrials,India,National Stock Exchange Of India,INR,false
+2026-11,INDT.ST,INDUTRADE,Industrials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,INDU-A.ST,INDUSTRIVARDEN A,Financials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,INDU-C.ST,INDUSTRIVARDEN SERIES,Financials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,INDUSINDBK.NS,INDUSIND BANK,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,INDUSTOWER.NS,INDUS TOWERS LTD,Communication,India,National Stock Exchange Of India,INR,false
+2026-11,INF.L,INFORMA PLC,Communication,United Kingdom,London Stock Exchange,GBP,true
+2026-11,INFY.NS,INFOSYS,Information Technology,India,National Stock Exchange Of India,INR,false
+2026-11,INGA.AS,ING GROEP,Financials,Netherlands,Euronext Amsterdam,EUR,true
+2026-11,INSM,INSMED,Health Care,United States,NASDAQ,USD,true
+2026-11,INTC,INTEL CORPORATION,Information Technology,United States,NASDAQ,USD,true
+2026-11,INTU,INTUIT,Information Technology,United States,NASDAQ,USD,true
+2026-11,INVE-B.ST,INVESTOR CLASS B,Financials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,INVH,INVITATION HOMES,Real Estate,United States,NYSE,USD,true
+2026-11,IOC.NS,INDIAN OIL CORP,Energy,India,National Stock Exchange Of India,INR,false
+2026-11,IOT,SAMSARA CLASS A,Information Technology,United States,NYSE,USD,true
+2026-11,IP,INTERNATIONAL PAPER,Materials,United States,NYSE,USD,true
+2026-11,IPN.PA,IPSEN SA,Health Care,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,IQCD.QA,INDUSTRIES QATAR,Industrials,Qatar,Qatar Exchange,QAR,false
+2026-11,IQV,IQVIA HOLDINGS INC,Health Care,United States,NYSE,USD,true
+2026-11,IR,INGERSOLL RAND,Industrials,United States,NYSE,USD,true
+2026-11,IREN,IREN,Information Technology,United States,NASDAQ,USD,true
+2026-11,IRM,IRON MOUNTAIN INC,Real Estate,United States,NYSE,USD,true
+2026-11,ISA.CL,INTERCONEXION ELECTRICA SA,Utilities,Colombia,Bolsa De Valores De Colombia,COP,false
+2026-11,ISCTR.IS,TURKIYE IS BANKASI C,Financials,Turkey,Istanbul Stock Exchange,TRY,false
+2026-11,ISP.MI,INTESA SANPAOLO,Financials,Italy,Borsa Italiana,EUR,true
+2026-11,ISRG,INTUITIVE SURGICAL,Health Care,United States,NASDAQ,USD,true
+2026-11,ITC.NS,ITC LTD,Consumer Staples,India,National Stock Exchange Of India,INR,false
+2026-11,ITRK.L,INTERTEK GROUP PLC,Industrials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,ITSA4.SA,ITAUSA INVESTIMENTOS ITAU PREF SA,Financials,Brazil,XBSP,BRL,false
+2026-11,ITUB4.SA,ITAU UNIBANCO HOLDING PREF SA,Financials,Brazil,XBSP,BRL,false
+2026-11,ITW,ILLINOIS TOOL INC,Industrials,United States,NYSE,USD,true
+2026-11,ITX.MC,INDUSTRIA DE DISENO TEXTIL SA,Consumer Discretionary,Spain,Bolsa De Madrid,EUR,true
+2026-11,IVN.TO,IVANHOE MINES CLASS A,Materials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,J,JACOBS SOLUTIONS INC,Industrials,United States,NYSE,USD,true
+2026-11,J36.SI,JARDINE MATHESON HOLDINGS,Industrials,Hong Kong,Singapore Exchange,USD,false
+2026-11,JBHT,JB HUNT TRANSPORT SERVICES,Industrials,United States,NASDAQ,USD,true
+2026-11,JBL,JABIL,Information Technology,United States,NYSE,USD,true
+2026-11,JBS,JBS N V NV CLASS A,Consumer Staples,Brazil,NYSE,USD,true
+2026-11,JCI,JOHNSON CONTROLS INTERNATIONAL PLC,Industrials,United States,NYSE,USD,true
+2026-11,JINDALSTEL.NS,JINDAL STEEL LTD,Materials,India,National Stock Exchange Of India,INR,false
+2026-11,JIOFIN.NS,JIO FINANCIAL SERVICES,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,JMT.LS,JERONIMO MARTINS SA,Consumer Staples,Portugal,Nyse Euronext - Euronext Lisbon,EUR,true
+2026-11,JNJ,JOHNSON & JOHNSON,Health Care,United States,NYSE,USD,true
+2026-11,JPM,JPMORGAN CHASE & CO,Financials,United States,NYSE,USD,true
+2026-11,JSL.NS,JINDAL STAINLESS LTD,Materials,India,National Stock Exchange Of India,INR,false
+2026-11,JSWENERGY.NS,JSW ENERGY LTD,Utilities,India,National Stock Exchange Of India,INR,false
+2026-11,JSWSTEEL.NS,JSW STEEL,Materials,India,National Stock Exchange Of India,INR,false
+2026-11,K.TO,KINROSS GOLD,Materials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,KBC.BR,KBC GROEP,Financials,Belgium,Nyse Euronext - Euronext Brussels,EUR,true
+2026-11,KBX.DE,KNORR BREMSE AG,Industrials,Germany,Xetra,EUR,true
+2026-11,KCHOL.IS,KOC HOLDING A,Industrials,Turkey,Istanbul Stock Exchange,TRY,false
+2026-11,KDP,KEURIG DR PEPPER INC,Consumer Staples,United States,NASDAQ,USD,true
+2026-11,KER.PA,KERING SA,Consumer Discretionary,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,KESKOB.HE,KESKO CORP CLASS B,Consumer Staples,Finland,Nasdaq Omx Helsinki Ltd.,EUR,true
+2026-11,KESKOBU0126.HE,KESKO SUBSCRIPTION RIGHTS CORP,Consumer Staples,Finland,Nasdaq Omx Helsinki Ltd.,EUR,true
+2026-11,KEY,KEYCORP,Financials,United States,NYSE,USD,true
+2026-11,KEY.TO,KEYERA,Energy,Canada,Toronto Stock Exchange,CAD,true
+2026-11,KEYS,KEYSIGHT TECHNOLOGIES,Information Technology,United States,NYSE,USD,true
+2026-11,KFH.KW,KUWAIT FINANCE HOUSE,Financials,Kuwait,Kuwait Stock Exchange,KWD,false
+2026-11,KGF.L,KINGFISHER PLC,Consumer Discretionary,United Kingdom,London Stock Exchange,GBP,true
+2026-11,KGH.WA,KGHM POLSKA MIEDZ SA,Materials,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,false
+2026-11,KHC,KRAFT HEINZ,Consumer Staples,United States,NYSE,USD,true
+2026-11,KIM,KIMCO REALTY REIT CORP,Real Estate,United States,NYSE,USD,true
+2026-11,KIMBERA.MX,KIMBERLY-CLARK DE MEXICO CLASS A,Consumer Staples,Mexico,Bolsa Mexicana De Valores,MXN,false
+2026-11,KKR,KKR AND CO INC,Financials,United States,NYSE,USD,true
+2026-11,KLAC,KLA,Information Technology,United States,NASDAQ,USD,true
+2026-11,KLBN11.SA,KLABIN UNITS SA,Materials,Brazil,XBSP,BRL,false
+2026-11,KLK.KL,KUALA LUMPUR KEPONG,Consumer Staples,Malaysia,Bursa Malaysia,MYR,false
+2026-11,KMB,KIMBERLY CLARK,Consumer Staples,United States,NASDAQ,USD,true
+2026-11,KMI,KINDER MORGAN,Energy,United States,NYSE,USD,true
+2026-11,KNEBV.HE,KONE,Industrials,Finland,Nasdaq Omx Helsinki Ltd.,EUR,true
+2026-11,KNIN.SW,KUEHNE UND NAGEL INTERNATIONAL AG,Industrials,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,KO,COCA-COLA,Consumer Staples,United States,NYSE,USD,true
+2026-11,KOFUBL.MX,COCA-COLA FEMSA CLASS UBL UNITS,Consumer Staples,Mexico,Bolsa Mexicana De Valores,MXN,false
+2026-11,KOG.OL,KONGSBERG GRUPPEN,Industrials,Norway,Oslo Bors Asa,NOK,true
+2026-11,KOMB.PR,KOMERCNI BANK,Financials,Czech Republic,Prague Stock Exchange,CZK,false
+2026-11,KOTAKBANK.NS,KOTAK MAHINDRA BANK LTD,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,KPN.AS,KONINKLIJKE KPN NV,Communication,Netherlands,Euronext Amsterdam,EUR,true
+2026-11,KR,KROGER,Consumer Staples,United States,NYSE,USD,true
+2026-11,KRX.IR,KINGSPAN GROUP PLC,Industrials,Ireland,Irish Stock Exchange - All Market,EUR,true
+2026-11,KRZ.IR,KERRY GROUP PLC,Consumer Staples,Ireland,Irish Stock Exchange - All Market,EUR,true
+2026-11,L,LOEWS,Financials,United States,NYSE,USD,true
+2026-11,L.TO,LOBLAW COMPANIES LTD,Consumer Staples,Canada,Toronto Stock Exchange,CAD,true
+2026-11,LAND.L,LAND SECURITIES GROUP REIT PLC,Real Estate,United Kingdom,London Stock Exchange,GBP,true
+2026-11,LAURUSLABS.NS,LAURUS LABS LTD,Health Care,India,National Stock Exchange Of India,INR,false
+2026-11,LDO.MI,LEONARDO FINMECCANICA SPA,Industrials,Italy,Borsa Italiana,EUR,true
+2026-11,LDOS,LEIDOS HOLDINGS,Industrials,United States,NYSE,USD,true
+2026-11,LEGN,LEGEND BIOTECH ADR REP,Health Care,China,NASDAQ,USD,true
+2026-11,LEN,LENNAR A CLASS A,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,LENSKART.NS,LENSKART SOLUTIONS LTD,Consumer Discretionary,India,National Stock Exchange Of India,INR,false
+2026-11,LGEN.L,LEGAL AND GENERAL GROUP PLC,Financials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,LH,LABCORP HOLDINGS,Health Care,United States,NYSE,USD,true
+2026-11,LHA.DE,DEUTSCHE LUFTHANSA AG,Industrials,Germany,Xetra,EUR,true
+2026-11,LHX,L3HARRIS TECHNOLOGIES,Industrials,United States,NYSE,USD,true
+2026-11,LI.PA,KLEPIERRE REIT SA,Real Estate,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,LIFCO-B.ST,LIFCO CLASS B,Industrials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,LII,LENNOX INTERNATIONAL,Industrials,United States,NYSE,USD,true
+2026-11,LIN,LINDE PLC,Materials,United States,NASDAQ,USD,true
+2026-11,LISN.SW,CHOCOLADEFABRIKEN LINDT & SPRUENGL,Consumer Staples,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,LISP.SW,CHOCOLADEFABRIKEN LINDT & SPRUENGL,Consumer Staples,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,LITE,LUMENTUM HOLDINGS,Information Technology,United States,NASDAQ,USD,true
+2026-11,LLOY.L,LLOYDS BANKING GROUP PLC,Financials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,LLY,ELI LILLY,Health Care,United States,NYSE,USD,true
+2026-11,LMT,LOCKHEED MARTIN,Industrials,United States,NYSE,USD,true
+2026-11,LNG,CHENIERE ENERGY,Energy,United States,NYSE,USD,true
+2026-11,LNT,ALLIANT ENERGY CORP,Utilities,United States,NASDAQ,USD,true
+2026-11,LODHA.NS,LODHA DEVELOPERS LTD,Real Estate,India,National Stock Exchange Of India,INR,false
+2026-11,LOGN.SW,LOGITECH INTERNATIONAL,Information Technology,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,LONN.SW,LONZA GROUP AG,Health Care,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,LOTB.BR,LOTUS BAKERIES NV,Consumer Staples,Belgium,Nyse Euronext - Euronext Brussels,EUR,true
+2026-11,LOW,LOWES COMPANIES INC,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,LPLA,LPL FINANCIAL HOLDINGS,Financials,United States,NASDAQ,USD,true
+2026-11,LPP.WA,LPP SA,Consumer Discretionary,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,false
+2026-11,LR.PA,LEGRAND SA,Industrials,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,LRCX,LAM RESEARCH,Information Technology,United States,NASDAQ,USD,true
+2026-11,LSEG.L,LONDON STOCK EXCHANGE GROUP PLC,Financials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,LT.NS,LARSEN AND TOUBRO LTD,Industrials,India,National Stock Exchange Of India,INR,false
+2026-11,LTF.NS,L&T FINANCE LTD,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,LTM.NS,LTM,Information Technology,India,National Stock Exchange Of India,INR,false
+2026-11,LTM.SN,LATAM AIRLINES GROUP,Industrials,Chile,Santiago Stock Exchange,CLP,false
+2026-11,LUG.TO,LUNDIN GOLD,Materials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,LUMI.TA,BANK LEUMI LE ISRAEL,Financials,Israel,Tel Aviv Stock Exchange,ILS,false
+2026-11,LUN.TO,LUNDIN MINING,Materials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,LUND-B.ST,LUNDBERGFORETAGEN CLASS B,Financials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,LUPIN.NS,LUPIN,Health Care,India,National Stock Exchange Of India,INR,false
+2026-11,LVS,LAS VEGAS SANDS,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,LYB,LYONDELLBASELL INDUSTRIES CLASS A,Materials,United States,NYSE,USD,true
+2026-11,LYC.AX,LYNAS RARE EARTHS,Materials,Australia,Asx - All Markets,AUD,false
+2026-11,LYV,LIVE NATION ENTERTAINMENT,Communication,United States,NYSE,USD,true
+2026-11,M&M.NS,MAHINDRA AND MAHINDRA LTD,Consumer Discretionary,India,National Stock Exchange Of India,INR,false
+2026-11,MA,MASTERCARD CLASS A,Financials,United States,NYSE,USD,true
+2026-11,MAA,MID AMERICA APARTMENT COMMUNITIES,Real Estate,United States,NYSE,USD,true
+2026-11,MABANEE.KW,MABANEE COMPANY,Real Estate,Kuwait,Kuwait Stock Exchange,KWD,false
+2026-11,MAERSK-A.CO,A P MOLLER MAERSK,Industrials,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,true
+2026-11,MAERSK-B.CO,A P MOLLER MAERSK B,Industrials,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,true
+2026-11,MANKIND.NS,MANKIND PHARMA LTD,Health Care,India,National Stock Exchange Of India,INR,false
+2026-11,MAP.MC,MAPFRE SA,Financials,Spain,Bolsa De Madrid,EUR,true
+2026-11,MAR,MARRIOTT INTERNATIONAL CLASS A,Consumer Discretionary,United States,NASDAQ,USD,true
+2026-11,MARICO.NS,MARICO,Consumer Staples,India,National Stock Exchange Of India,INR,false
+2026-11,MARK.QA,MASRAF AL RAYAN,Financials,Qatar,Qatar Exchange,QAR,false
+2026-11,MARUTI.NS,MARUTI SUZUKI INDIA LTD,Consumer Discretionary,India,National Stock Exchange Of India,INR,false
+2026-11,MAS,MASCO,Industrials,United States,NYSE,USD,true
+2026-11,MAXHEALTH.NS,MAX HEALTHCARE INSTITUTE,Health Care,India,National Stock Exchange Of India,INR,false
+2026-11,MAXIS.KL,MAXIS,Communication,Malaysia,Bursa Malaysia,MYR,false
+2026-11,MBG.DE,MERCEDES-BENZ GROUP N AG,Consumer Discretionary,Germany,Xetra,EUR,true
+2026-11,MBK.WA,MBANK SA,Financials,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,false
+2026-11,MBRF3.SA,MARFRIG GLOBAL FOODS SA,Consumer Staples,Brazil,XBSP,BRL,false
+2026-11,MBT.PS,METROPOLITAN BANK AND TRUST CO,Financials,Philippines,Philippine Stock Exchange Inc.,PHP,false
+2026-11,MC.PA,LVMH,Consumer Discretionary,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,MCD,MCDONALDS CORP,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,MCHP,MICROCHIP TECHNOLOGY INC,Information Technology,United States,NASDAQ,USD,true
+2026-11,MCK,MCKESSON CORP,Health Care,United States,NYSE,USD,true
+2026-11,MCO,MOODYS CORP,Financials,United States,NYSE,USD,true
+2026-11,MCX.NS,MULTI COMMODITY EXCHANGE OF INDIA,Financials,India,Bse Ltd,INR,false
+2026-11,MDB,MONGODB CLASS A,Information Technology,United States,NASDAQ,USD,true
+2026-11,MDLN,MEDLINE CLASS A,Health Care,United States,NASDAQ,USD,true
+2026-11,MDLZ,MONDELEZ INTERNATIONAL CLASS A,Consumer Staples,United States,NASDAQ,USD,true
+2026-11,MDT,MEDTRONIC PLC,Health Care,United States,NYSE,USD,true
+2026-11,MEL.NZ,MERIDIAN ENERGY LTD,Utilities,New Zealand,New Zealand Exchange Ltd,NZD,false
+2026-11,MELI,MERCADOLIBRE,Consumer Discretionary,United States,NASDAQ,USD,true
+2026-11,MET,METLIFE,Financials,United States,NYSE,USD,true
+2026-11,META,META PLATFORMS CLASS A,Communication,United States,NASDAQ,USD,true
+2026-11,METSO.HE,METSO CORPORATION,Industrials,Finland,Nasdaq Omx Helsinki Ltd.,EUR,true
+2026-11,MFC.TO,MANULIFE FINANCIAL,Financials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,MG.TO,MAGNA INTERNATIONAL,Consumer Discretionary,Canada,Toronto Stock Exchange,CAD,true
+2026-11,MICC.AS,MAGNUM ICE CREAM,Consumer Staples,Netherlands,Euronext Amsterdam,EUR,true
+2026-11,MIL.WA,BANK MILLENNIUM SA,Financials,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,false
+2026-11,MISC.KL,MISC,Energy,Malaysia,Bursa Malaysia,MYR,false
+2026-11,MKC,MCCORMICK & CO NON-VOTING,Consumer Staples,United States,NYSE,USD,true
+2026-11,MKL,MARKEL GROUP,Financials,United States,NYSE,USD,true
+2026-11,MKS.L,MARKS AND SPENCER GROUP PLC,Consumer Staples,United Kingdom,London Stock Exchange,GBP,true
+2026-11,ML.PA,MICHELIN,Consumer Discretionary,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,MLM,MARTIN MARIETTA MATERIALS,Materials,United States,NYSE,USD,true
+2026-11,MMM,3M,Industrials,United States,NYSE,USD,true
+2026-11,MNG.L,M&G PLC,Financials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,MNST,MONSTER BEVERAGE,Consumer Staples,United States,NASDAQ,USD,true
+2026-11,MO,ALTRIA GROUP INC,Consumer Staples,United States,NYSE,USD,true
+2026-11,MOH.AT,MOTOR OIL (HELLAS) CORINTH REFINER,Energy,Greece,Athens Exchange S.A. Cash Market,EUR,false
+2026-11,MOL.BD,MOL HUNGARIAN OIL AND GAS,Energy,Hungary,Budapest Stock Exchange,HUF,false
+2026-11,MONC.MI,MONCLER,Consumer Discretionary,Italy,Borsa Italiana,EUR,true
+2026-11,MOTHERSON.NS,SAMVARDHANA MOTHERSON INTERNATIONA,Consumer Discretionary,India,National Stock Exchange Of India,INR,false
+2026-11,MOTV3.SA,MOTIVA INFRAESTRUTURA DE MOBILIDAD,Industrials,Brazil,XBSP,BRL,false
+2026-11,MOWI.OL,MOWI,Consumer Staples,Norway,Oslo Bors Asa,NOK,true
+2026-11,MPC,MARATHON PETROLEUM,Energy,United States,NYSE,USD,true
+2026-11,MPHASIS.NS,MPHASIS LTD,Information Technology,India,National Stock Exchange Of India,INR,false
+2026-11,MPHC.QA,MESAIEED PETROCHEMICAL HOLDING,Materials,Qatar,Qatar Exchange,QAR,false
+2026-11,MPL.AX,MEDIBANK PRIVATE,Financials,Australia,Asx - All Markets,AUD,false
+2026-11,MPWR,MONOLITHIC POWER SYSTEMS INC,Information Technology,United States,NASDAQ,USD,true
+2026-11,MQG.AX,MACQUARIE GROUP LTD DEF,Financials,Australia,Asx - All Markets,AUD,false
+2026-11,MRF.NS,MRF LTD,Consumer Discretionary,India,National Stock Exchange Of India,INR,false
+2026-11,MRK,MERCK & CO INC,Health Care,United States,NYSE,USD,true
+2026-11,MRK.DE,MERCK,Health Care,Germany,Xetra,EUR,true
+2026-11,MRO.L,MELROSE INDUSTRIES PLC,Industrials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,MRSH,MARSH,Financials,United States,NYSE,USD,true
+2026-11,MRU.TO,METRO,Consumer Staples,Canada,Toronto Stock Exchange,CAD,true
+2026-11,MRVL,MARVELL TECHNOLOGY,Information Technology,United States,NASDAQ,USD,true
+2026-11,MS,MORGAN STANLEY,Financials,United States,NYSE,USD,true
+2026-11,MSCI,MSCI,Financials,United States,NYSE,USD,true
+2026-11,MSFT,MICROSOFT,Information Technology,United States,NASDAQ,USD,true
+2026-11,MSI,MOTOROLA SOLUTIONS INC,Information Technology,United States,NYSE,USD,true
+2026-11,MSTR,STRATEGY INC CLASS A,Information Technology,United States,NASDAQ,USD,true
+2026-11,MT.AS,ARCELORMITTAL SA,Materials,France,Euronext Amsterdam,EUR,true
+2026-11,MTB,M&T BANK,Financials,United States,NYSE,USD,true
+2026-11,MTD,METTLER TOLEDO,Health Care,United States,NYSE,USD,true
+2026-11,MTN.JO,MTN GROUP,Communication,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,MTX.DE,MTU AERO ENGINES HOLDING AG,Industrials,Germany,Xetra,EUR,true
+2026-11,MTZ,MASTEC,Industrials,United States,NYSE,USD,true
+2026-11,MU,MICRON TECHNOLOGY,Information Technology,United States,NASDAQ,USD,true
+2026-11,MUTHOOTFIN.NS,MUTHOOT FINANCE LTD,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,MUV2.DE,MUENCHENER RUECKVERSICHERUNGS-GESE,Financials,Germany,Xetra,EUR,true
+2026-11,MZTF.TA,MIZRAHI TEFAHOT BANK LTD,Financials,Israel,Tel Aviv Stock Exchange,ILS,false
+2026-11,NA.TO,NATIONAL BANK OF CANADA,Financials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,NAB.AX,NATIONAL AUSTRALIA BANK,Financials,Australia,Asx - All Markets,AUD,false
+2026-11,NATIONALUM.NS,NATIONAL ALUMINIUM CO LTD,Materials,India,National Stock Exchange Of India,INR,false
+2026-11,NAUKRI.NS,INFO EDGE INDIA LTD,Communication,India,National Stock Exchange Of India,INR,false
+2026-11,NBIS,NEBIUS NV CLASS A,Information Technology,Netherlands,NASDAQ,USD,true
+2026-11,NBIX,NEUROCRINE BIOSCIENCES,Health Care,United States,NASDAQ,USD,true
+2026-11,NBK.KW,NATIONAL BANK OF KUWAIT,Financials,Kuwait,Kuwait Stock Exchange,KWD,false
+2026-11,NDA-FI.HE,NORDEA BANK,Financials,Finland,Nasdaq Omx Helsinki Ltd.,EUR,true
+2026-11,NDAQ,NASDAQ INC,Financials,United States,NASDAQ,USD,true
+2026-11,NDSN,NORDSON,Industrials,United States,NASDAQ,USD,true
+2026-11,NED.JO,NEDBANK GROUP LTD,Financials,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,NEE,NEXTERA ENERGY,Utilities,United States,NYSE,USD,true
+2026-11,NEM,NEWMONT,Materials,United States,NYSE,USD,true
+2026-11,NEM.DE,NEMETSCHEK,Information Technology,Germany,Xetra,EUR,true
+2026-11,NESN.SW,NESTLE SA,Consumer Staples,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,NESTE.HE,NESTE,Energy,Finland,Nasdaq Omx Helsinki Ltd.,EUR,true
+2026-11,NESTLEIND.NS,NESTLE INDIA LTD,Consumer Staples,India,National Stock Exchange Of India,INR,false
+2026-11,NET,CLOUDFLARE CLASS A,Information Technology,United States,NYSE,USD,true
+2026-11,NFLX,NETFLIX,Communication,United States,NASDAQ,USD,true
+2026-11,NG.L,NATIONAL GRID PLC,Utilities,United Kingdom,London Stock Exchange,GBP,true
+2026-11,NHPC.NS,NHPC LTD,Utilities,India,National Stock Exchange Of India,INR,false
+2026-11,NHY.OL,NORSK HYDRO,Materials,Norway,Oslo Bors Asa,NOK,true
+2026-11,NI,NISOURCE,Utilities,United States,NYSE,USD,true
+2026-11,NIBE-B.ST,NIBE INDUSTRIER CLASS B,Industrials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,NKE,NIKE CLASS B,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,NLY,ANNALY CAPITAL MANAGEMENT REIT,Financials,United States,NYSE,USD,true
+2026-11,NMC.L,NMC HEALTH PLC,Health Care,United Kingdom,London Stock Exchange,GBP,true
+2026-11,NMDC.NS,NMDC LTD,Materials,India,National Stock Exchange Of India,INR,false
+2026-11,NN.AS,NN GROUP,Financials,Netherlands,Euronext Amsterdam,EUR,true
+2026-11,NOC,NORTHROP GRUMMAN CORP,Industrials,United States,NYSE,USD,true
+2026-11,NOKIA.HE,NOKIA,Information Technology,Finland,Nasdaq Omx Helsinki Ltd.,EUR,true
+2026-11,NOVN.SW,NOVARTIS AG,Health Care,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,NOVO-B.CO,NOVO NORDISK CLASS B,Health Care,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,true
+2026-11,NOW,SERVICENOW,Information Technology,United States,NYSE,USD,true
+2026-11,NPH.JO,NORTHAM PLATINUM HLDGS LTD,Materials,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,NPN.JO,NASPERS LIMITED CLASS N,Consumer Discretionary,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,NRG,NRG ENERGY INC,Utilities,United States,NYSE,USD,true
+2026-11,NRP.JO,NEPI ROCKCASTLE,Real Estate,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,NSC,NORFOLK SOUTHERN CORP,Industrials,United States,NYSE,USD,true
+2026-11,NSIS-B.CO,NOVOZYMES B,Materials,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,true
+2026-11,NST.AX,NORTHERN STAR RESOURCES LTD,Materials,Australia,Asx - All Markets,AUD,false
+2026-11,NTAP,NETAPP INC,Information Technology,United States,NASDAQ,USD,true
+2026-11,NTGY.MC,NATURGY ENERGY GROUP SA,Utilities,Spain,Bolsa De Madrid,EUR,true
+2026-11,NTPC.NS,NTPC LTD,Utilities,India,National Stock Exchange Of India,INR,false
+2026-11,NTR.TO,NUTRIEN LTD,Materials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,NTRA,NATERA,Health Care,United States,NASDAQ,USD,true
+2026-11,NTRS,NORTHERN TRUST,Financials,United States,NASDAQ,USD,true
+2026-11,NU,NU HOLDINGS CLASS A,Financials,Brazil,NYSE,USD,true
+2026-11,NUE,NUCOR,Materials,United States,NYSE,USD,true
+2026-11,NVDA,NVIDIA,Information Technology,United States,NASDAQ,USD,true
+2026-11,NVMI.TA,NOVA,Information Technology,Israel,Tel Aviv Stock Exchange,ILS,false
+2026-11,NVR,NVR,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,NVT,NVENT ELECTRIC PLC,Industrials,United States,NYSE,USD,true
+2026-11,NWG.L,NATWEST GROUP PLC,Financials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,NWSA,NEWS CLASS A,Communication,United States,NASDAQ,USD,true
+2026-11,NXPI,NXP SEMICONDUCTORS NV,Information Technology,United States,NASDAQ,USD,true
+2026-11,NXT.L,NEXT PLC,Consumer Discretionary,United Kingdom,London Stock Exchange,GBP,true
+2026-11,NYKAA.NS,FSN E-COMMERCE VENTURES,Consumer Discretionary,India,National Stock Exchange Of India,INR,false
+2026-11,O,REALTY INCOME REIT,Real Estate,United States,NYSE,USD,true
+2026-11,O39.SI,OVERSEA-CHINESE BANKING,Financials,Singapore,Singapore Exchange,SGD,false
+2026-11,OBEROIRLTY.NS,OBEROI REALTY,Real Estate,India,National Stock Exchange Of India,INR,false
+2026-11,ODFL,OLD DOMINION FREIGHT LINE,Industrials,United States,NASDAQ,USD,true
+2026-11,OFSS.NS,ORACLE FINANCIAL SERVICES SOFTWARE,Information Technology,India,National Stock Exchange Of India,INR,false
+2026-11,OIL.NS,OIL INDIA LTD,Energy,India,National Stock Exchange Of India,INR,false
+2026-11,OKE,ONEOK,Energy,United States,NYSE,USD,true
+2026-11,OKTA,OKTA CLASS A,Information Technology,United States,NASDAQ,USD,true
+2026-11,OMAB.MX,GRUPO AEROPORTUARIO DEL CENTRO NOR,Industrials,Mexico,Bolsa Mexicana De Valores,MXN,false
+2026-11,OMC,OMNICOM GROUP INC,Communication,United States,NYSE,USD,true
+2026-11,OMV.VI,OMV,Energy,Austria,Wiener Boerse Ag,EUR,true
+2026-11,ON,ON SEMICONDUCTOR CORP,Information Technology,United States,NASDAQ,USD,true
+2026-11,ONGC.NS,OIL AND NATURAL GAS LTD,Energy,India,National Stock Exchange Of India,INR,false
+2026-11,OPCE.TA,OPC ENERGY LTD,Utilities,Israel,Tel Aviv Stock Exchange,ILS,false
+2026-11,OR.PA,LOREAL SA,Consumer Staples,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,ORA.PA,ORANGE SA,Communication,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,ORCL,ORACLE,Information Technology,United States,NYSE,USD,true
+2026-11,ORDS.QA,OOREDOO,Communication,Qatar,Qatar Exchange,QAR,false
+2026-11,ORG.AX,ORIGIN ENERGY,Utilities,Australia,Asx - All Markets,AUD,false
+2026-11,ORK.OL,ORKLA,Consumer Staples,Norway,Oslo Bors Asa,NOK,true
+2026-11,ORLY,OREILLY AUTOMOTIVE INC,Consumer Discretionary,United States,NASDAQ,USD,true
+2026-11,ORNBV.HE,ORION CLASS B,Health Care,Finland,Nasdaq Omx Helsinki Ltd.,EUR,true
+2026-11,ORSTED.CO,ORSTED A/S,Utilities,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,true
+2026-11,OTIS,OTIS WORLDWIDE,Industrials,United States,NYSE,USD,true
+2026-11,OTP.BD,OTP BANK,Financials,Hungary,Budapest Stock Exchange,HUF,false
+2026-11,OUT.JO,OUTSURANCE GROUP,Financials,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,OXY,OCCIDENTAL PETROLEUM CORP,Energy,United States,NYSE,USD,true
+2026-11,P,EVERPURE INC CLASS A,Information Technology,United States,NYSE,USD,true
+2026-11,P911.DE,DR ING HC F PORSCHE PRF AG,Consumer Discretionary,Germany,Xetra,EUR,true
+2026-11,PAAS.TO,PAN AMERICAN SILVER,Materials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,PAGEIND.NS,PAGE INDUSTRIES,Consumer Discretionary,India,National Stock Exchange Of India,INR,false
+2026-11,PAH3.DE,PORSCHE AUTOMOBIL HOLDING PREF,Consumer Discretionary,Germany,Xetra,EUR,true
+2026-11,PANW,PALO ALTO NETWORKS,Information Technology,United States,NASDAQ,USD,true
+2026-11,PAYTM.NS,ONE COMMUNICATIONS LTD,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,PAYX,PAYCHEX,Industrials,United States,NASDAQ,USD,true
+2026-11,PCAR,PACCAR INC,Industrials,United States,NASDAQ,USD,true
+2026-11,PCG,PG&E CORP,Utilities,United States,NYSE,USD,true
+2026-11,PCHEM.KL,PETRONAS CHEMICALS GROUP,Materials,Malaysia,Bursa Malaysia,MYR,false
+2026-11,PDD,PDD HOLDINGS ADS,Consumer Discretionary,China,NASDAQ,USD,true
+2026-11,PE&OLES.MX,INDUST PENOLES,Materials,Mexico,Bolsa Mexicana De Valores,MXN,false
+2026-11,PEG,PUBLIC SERVICE ENTERPRISE GROUP,Utilities,United States,NYSE,USD,true
+2026-11,PEO.WA,BANK PEKAO SA,Financials,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,false
+2026-11,PEP,PEPSICO,Consumer Staples,United States,NASDAQ,USD,true
+2026-11,PERSISTENT.NS,PERSISTENT SYSTEMS LTD,Information Technology,India,National Stock Exchange Of India,INR,false
+2026-11,PETGAS.KL,PETRONAS GAS,Utilities,Malaysia,Bursa Malaysia,MYR,false
+2026-11,PETR3.SA,PETROLEO BRASILEIRO SA PETROBRAS,Energy,Brazil,XBSP,BRL,false
+2026-11,PETR4.SA,PETROLEO BRASILEIRO PREF SA,Energy,Brazil,XBSP,BRL,false
+2026-11,PETRONET.NS,PETRONET LNG,Energy,India,National Stock Exchange Of India,INR,false
+2026-11,PFC.NS,POWER FINANCE CORPORATION LTD,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,PFCIBEST.CL,GRUPO CIBEST PREF SA,Financials,Colombia,Bolsa De Valores De Colombia,COP,false
+2026-11,PFE,PFIZER,Health Care,United States,NYSE,USD,true
+2026-11,PFG,PRINCIPAL FINANCIAL GROUP INC,Financials,United States,NASDAQ,USD,true
+2026-11,PG,PROCTER & GAMBLE,Consumer Staples,United States,NYSE,USD,true
+2026-11,PGE.WA,PGE POLSKA GRUPA ENERGETYCZNA SA,Utilities,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,false
+2026-11,PGHN.SW,PARTNERS GROUP HOLDING AG,Financials,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,PGR,PROGRESSIVE,Financials,United States,NYSE,USD,true
+2026-11,PH,PARKER-HANNIFIN,Industrials,United States,NYSE,USD,true
+2026-11,PHIA.AS,KONINKLIJKE PHILIPS,Health Care,Netherlands,Euronext Amsterdam,EUR,true
+2026-11,PHM,PULTEGROUP,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,PHOE.TA,PHOENIX FINANCIAL LTD,Financials,Israel,Tel Aviv Stock Exchange,ILS,false
+2026-11,PHOENIXLTD.NS,PHOENIX MILLS,Real Estate,India,National Stock Exchange Of India,INR,false
+2026-11,PHOR.L,PJSC PHOSAGRO GDR,Materials,Russian Federation,London Stock Exchange,USD,false
+2026-11,PIDILITIND.NS,PIDILITE INDUSTRIES LTD,Materials,India,National Stock Exchange Of India,INR,false
+2026-11,PIIND.NS,P.I. INDUSTRIES,Materials,India,National Stock Exchange Of India,INR,false
+2026-11,PKG,PACKAGING CORP OF AMERICA,Materials,United States,NYSE,USD,true
+2026-11,PKN.WA,ORLEN,Energy,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,false
+2026-11,PKO.WA,POWSZECHNA KASA OSZCZEDNOSCI BANK,Financials,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,false
+2026-11,PLD,PROLOGIS REIT,Real Estate,United States,NYSE,USD,true
+2026-11,PLS.AX,PLS GROUP LTD,Materials,Australia,Asx - All Markets,AUD,false
+2026-11,PLTR,PALANTIR TECHNOLOGIES CLASS A,Information Technology,United States,NASDAQ,USD,true
+2026-11,PM,PHILIP MORRIS INTERNATIONAL,Consumer Staples,United States,NYSE,USD,true
+2026-11,PME.AX,PRO MEDICUS,Health Care,Australia,Asx - All Markets,AUD,false
+2026-11,PMETAL.KL,PRESS METAL ALUMINIUM HOLDINGS,Materials,Malaysia,Bursa Malaysia,MYR,false
+2026-11,PNB.NS,PUNJAB NATIONAL BANK,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,PNC,PNC FINANCIAL SERVICES GROUP,Financials,United States,NYSE,USD,true
+2026-11,PNDORA.CO,PANDORA,Consumer Discretionary,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,true
+2026-11,PNFP,PINNACLE FINANCIAL PARTNERS,Financials,United States,NYSE,USD,true
+2026-11,POLI.TA,BANK HAPOALIM BM,Financials,Israel,Tel Aviv Stock Exchange,ILS,false
+2026-11,POLICYBZR.NS,PB FINTECH,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,POLYCAB.NS,POLYCAB INDIA,Industrials,India,National Stock Exchange Of India,INR,false
+2026-11,POW.TO,POWER CORPORATION OF CANADA,Financials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,POWERGRID.NS,POWER GRID CORPORATION OF INDIA,Utilities,India,National Stock Exchange Of India,INR,false
+2026-11,POWERINDIA.NS,HITACHI ENERGY INDIA LTD,Industrials,India,National Stock Exchange Of India,INR,false
+2026-11,PPC.AT,PUBLIC POWER CORPORATION SA,Utilities,Greece,Athens Exchange S.A. Cash Market,EUR,false
+2026-11,PPG,PPG INDUSTRIES,Materials,United States,NYSE,USD,true
+2026-11,PPH.JO,PEPKOR HOLDINGS SHS LTD,Consumer Discretionary,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,PPL,PPL CORP,Utilities,United States,NYSE,USD,true
+2026-11,PPL.TO,PEMBINA PIPELINE,Energy,Canada,Toronto Stock Exchange,CAD,true
+2026-11,PRESTIGE.NS,PRESTIGE ESTATES PROJECTS,Real Estate,India,National Stock Exchange Of India,INR,false
+2026-11,PRIO3.SA,PETRO RIO,Energy,Brazil,XBSP,BRL,false
+2026-11,PRU,PRUDENTIAL FINANCIAL INC,Financials,United States,NYSE,USD,true
+2026-11,PRU.L,PRUDENTIAL PLC,Financials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,PRX.AS,PROSUS NV CLASS N,Consumer Discretionary,Netherlands,Euronext Amsterdam,EUR,true
+2026-11,PRY.MI,PRYSMIAN,Industrials,Italy,Borsa Italiana,EUR,true
+2026-11,PSA,PUBLIC STORAGE REIT,Real Estate,United States,NYSE,USD,true
+2026-11,PSON.L,PEARSON PLC,Consumer Discretionary,United Kingdom,London Stock Exchange,GBP,true
+2026-11,PST.MI,POSTE ITALIANE,Financials,Italy,Borsa Italiana,EUR,true
+2026-11,PSX,PHILLIPS 66,Energy,United States,NYSE,USD,true
+2026-11,PTC,PTC,Information Technology,United States,NASDAQ,USD,true
+2026-11,PTT.BK,PTT NON-VOTING DR,Energy,Thailand,Stock Exchange Of Thailand,THB,false
+2026-11,PTTEP.BK,PTT EXPLORATION AND PRODUCTION NON,Energy,Thailand,Stock Exchange Of Thailand,THB,false
+2026-11,PUB.PA,PUBLICIS GROUPE,Communication,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,PWR,QUANTA SERVICES INC,Industrials,United States,NYSE,USD,true
+2026-11,PYPL,PAYPAL HOLDINGS,Financials,United States,NASDAQ,USD,true
+2026-11,PZU.WA,PZU SA,Financials,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,false
+2026-11,Q,QNITY ELECTRONICS,Information Technology,United States,NYSE,USD,true
+2026-11,QAN.AX,QANTAS AIRWAYS,Industrials,Australia,Asx - All Markets,AUD,false
+2026-11,QBE.AX,QBE INSURANCE GROUP,Financials,Australia,Asx - All Markets,AUD,false
+2026-11,QCOM,QUALCOMM,Information Technology,United States,NASDAQ,USD,true
+2026-11,QGTS.QA,QATAR GAS TRANSPORT COMPANY LTD,Energy,Qatar,Qatar Exchange,QAR,false
+2026-11,QIA.DE,QIAGEN,Health Care,Germany,Deutsche Boerse Xetra,EUR,true
+2026-11,QIBK.QA,QATAR ISLAMIC BANK,Financials,Qatar,Qatar Exchange,QAR,false
+2026-11,QNBK.QA,QATAR NATIONAL BANK,Financials,Qatar,Qatar Exchange,QAR,false
+2026-11,QSR.TO,RESTAURANTS BRANDS INTERNATIONAL,Consumer Discretionary,Canada,Toronto Stock Exchange,CAD,true
+2026-11,RAA.DE,RATIONAL AG,Industrials,Germany,Xetra,EUR,true
+2026-11,RACE.MI,FERRARI,Consumer Discretionary,Italy,Borsa Italiana,EUR,true
+2026-11,RADL3.SA,RAIA DROGASIL,Consumer Staples,Brazil,XBSP,BRL,false
+2026-11,RAIL3.SA,RUMO SA,Industrials,Brazil,XBSP,BRL,false
+2026-11,RBA.TO,RB GLOBAL,Industrials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,RBI.VI,RAIFFEISEN BANK INTERNATIONAL AG,Financials,Austria,Wiener Boerse Ag,EUR,true
+2026-11,RBLX,ROBLOX CLASS A,Communication,United States,NYSE,USD,true
+2026-11,RCI-B.TO,ROGERS COMMUNICATIONS NON-VOTING I,Communication,Canada,Toronto Stock Exchange,CAD,true
+2026-11,RCL,ROYAL CARIBBEAN GROUP,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,RDDT,REDDIT CLASS A,Communication,United States,NYSE,USD,true
+2026-11,RDOR3.SA,REDE DOR SAO LUIZ SA,Health Care,Brazil,XBSP,BRL,false
+2026-11,REA.AX,REA GROUP LTD,Communication,Australia,Asx - All Markets,AUD,false
+2026-11,RECLTD.NS,REC,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,RED.MC,REDEIA CORPORACION SA,Utilities,Spain,Bolsa De Madrid,EUR,true
+2026-11,REG,REGENCY CENTERS REIT CORP,Real Estate,United States,NASDAQ,USD,true
+2026-11,REGN,REGENERON PHARMACEUTICALS,Health Care,United States,NASDAQ,USD,true
+2026-11,REL.L,RELX PLC,Industrials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,RELIANCE.NS,RELIANCE INDUSTRIES LTD,Energy,India,National Stock Exchange Of India,INR,false
+2026-11,REM.JO,REMGRO,Financials,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,RENT3.SA,LOCALIZA RENT A CAR,Industrials,Brazil,XBSP,BRL,false
+2026-11,REP.MC,REPSOL,Energy,Spain,Bolsa De Madrid,EUR,true
+2026-11,RF,REGIONS FINANCIAL,Financials,United States,NYSE,USD,true
+2026-11,RHBBANK.KL,RHB BANK,Financials,Malaysia,Bursa Malaysia,MYR,false
+2026-11,RHM.DE,RHEINMETALL AG,Industrials,Germany,Xetra,EUR,true
+2026-11,RI.PA,PERNOD RICARD SA,Consumer Staples,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,RICHTER.BD,GEDEON RICHTER,Health Care,Hungary,Budapest Stock Exchange,HUF,false
+2026-11,RIO.AX,RIO TINTO,Materials,Australia,Asx - All Markets,AUD,false
+2026-11,RIO.L,RIO TINTO,Materials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,RIVN,RIVIAN AUTOMOTIVE CLASS A,Consumer Discretionary,United States,NASDAQ,USD,true
+2026-11,RJF,RAYMOND JAMES,Financials,United States,NYSE,USD,true
+2026-11,RKLB,ROCKET LAB CORP,Industrials,United States,NASDAQ,USD,true
+2026-11,RKT,ROCKET COMPANIES INC CLASS A,Financials,United States,NYSE,USD,true
+2026-11,RKT.L,RECKITT BENCKISER GROUP PLC,Consumer Staples,United Kingdom,London Stock Exchange,GBP,true
+2026-11,RMD,RESMED,Health Care,United States,NYSE,USD,true
+2026-11,RMS.PA,HERMES INTERNATIONAL,Consumer Discretionary,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,RNI.JO,REINET INVESTMENTS S.C.A.,Financials,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,RNO.PA,RENAULT SA,Consumer Discretionary,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,RO.SW,ROCHE HOLDING AG,Health Care,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,ROIV,ROIVANT SCIENCES LTD,Health Care,United States,NASDAQ,USD,true
+2026-11,ROK,ROCKWELL AUTOMATION INC,Industrials,United States,NYSE,USD,true
+2026-11,ROL,ROLLINS INC,Industrials,United States,NYSE,USD,true
+2026-11,ROP,ROPER TECHNOLOGIES,Information Technology,United States,NASDAQ,USD,true
+2026-11,ROP.SW,ROCHE PS PAR AG,Health Care,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,ROST,ROSS STORES INC,Consumer Discretionary,United States,NASDAQ,USD,true
+2026-11,RPRX,ROYALTY PHARMA PLC CLASS A,Health Care,United States,NASDAQ,USD,true
+2026-11,RR.L,ROLLS-ROYCE HOLDINGS PLC,Industrials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,RS,RELIANCE STEEL & ALUMINUM,Materials,United States,NYSE,USD,true
+2026-11,RSG,REPUBLIC SERVICES INC,Industrials,United States,NYSE,USD,true
+2026-11,RTO.L,RENTOKIL INITIAL PLC,Industrials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,RTX,RTX,Industrials,United States,NYSE,USD,true
+2026-11,RVMD,REVOLUTION MEDICINES,Health Care,United States,NASDAQ,USD,true
+2026-11,RWE.DE,RWE AG,Utilities,Germany,Xetra,EUR,true
+2026-11,RXL.PA,REXEL SA,Industrials,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,RY.TO,ROYAL BANK OF CANADA,Financials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,RYA.IR,RYANAIR HOLDINGS PLC,Industrials,Ireland,Irish Stock Exchange - All Market,EUR,true
+2026-11,S32.AX,SOUTH32,Materials,Australia,Asx - All Markets,AUD,false
+2026-11,S63.SI,SINGAPORE TECHNOLOGIES ENGINEERING,Industrials,Singapore,Singapore Exchange,SGD,false
+2026-11,S68.SI,SINGAPORE EXCHANGE,Financials,Singapore,Singapore Exchange,SGD,false
+2026-11,SAAB-B.ST,SAAB CLASS B,Industrials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,SAB.MC,BANCO DE SABADELL,Financials,Spain,Bolsa De Madrid,EUR,true
+2026-11,SAF.PA,SAFRAN SA,Industrials,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,SAHOL.IS,HACI OMER SABANCI HOLDING A,Financials,Turkey,Istanbul Stock Exchange,TRY,false
+2026-11,SALIK.AE,SALIK COMPANY P.J.S.C,Industrials,United Arab Emirates,Dubai Financial Market,AED,false
+2026-11,SALM.OL,SALMAR,Consumer Staples,Norway,Oslo Bors Asa,NOK,true
+2026-11,SAMPO.HE,SAMPO CLASS A,Financials,Finland,Nasdaq Omx Helsinki Ltd.,EUR,true
+2026-11,SAN.MC,BANCO SANTANDER,Financials,Spain,Bolsa De Madrid,EUR,true
+2026-11,SAN.PA,SANOFI SA,Health Care,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,SAND.ST,SANDVIK,Industrials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,SAP.DE,SAP,Information Technology,Germany,Xetra,EUR,true
+2026-11,SAP.TO,SAPUTO,Consumer Staples,Canada,Toronto Stock Exchange,CAD,true
+2026-11,SBAC,SBA COMMUNICATIONS REIT CORP CLASS,Real Estate,United States,NASDAQ,USD,true
+2026-11,SBILIFE.NS,SBI LIFE INSURANCE COMPANY LTD,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,SBIN.NS,STATE BANK OF INDIA,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,SBK.JO,STANDARD BANK GROUP,Financials,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,SBRY.L,SAINSBURY(J) PLC,Consumer Staples,United Kingdom,London Stock Exchange,GBP,true
+2026-11,SBSP3.SA,COMPANHIA DE SANEAMENTO BASICO DE,Utilities,Brazil,XBSP,BRL,false
+2026-11,SBUX,STARBUCKS CORP,Consumer Discretionary,United States,NASDAQ,USD,true
+2026-11,SCA-B.ST,SVENSKA CELLULOSA B,Materials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,SCC.BK,SIAM CEMENT NON-VOTING DR PCL,Materials,Thailand,Stock Exchange Of Thailand,THB,false
+2026-11,SCCO,SOUTHERN COPPER CORP,Materials,Peru,NYSE,USD,true
+2026-11,SCG.AX,SCENTRE GROUP,Real Estate,Australia,Asx - All Markets,AUD,false
+2026-11,SCHN.SW,SCHINDLER HOLDING AG,Industrials,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,SCHP.SW,SCHINDLER HOLDING PAR AG,Industrials,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,SCHW,CHARLES SCHWAB,Financials,United States,NYSE,USD,true
+2026-11,SCMN.SW,SWISSCOM AG,Communication,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,SDG.KL,SD GUTHRIE,Consumer Staples,Malaysia,Bursa Malaysia,MYR,false
+2026-11,SDLF.L,STANDARD LIFE PLC,Financials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,SDZ.SW,SANDOZ GROUP AG,Health Care,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,SE,SEA ADS REPRESENTING LTD CLASS A,Consumer Discretionary,Singapore,NYSE,USD,true
+2026-11,SEB-A.ST,SKANDINAVISKA ENSKILDA BANKEN,Financials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,SECU-B.ST,SECURITAS B,Industrials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,SGE.L,THE SAGE GROUP,Information Technology,United Kingdom,London Stock Exchange,GBP,true
+2026-11,SGH.AX,SGH,Industrials,Australia,Asx - All Markets,AUD,false
+2026-11,SGO.PA,COMPAGNIE DE SAINT GOBAIN SA,Industrials,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,SGRO.L,SEGRO REIT PLC,Real Estate,United Kingdom,London Stock Exchange,GBP,true
+2026-11,SGSN.SW,SGS SA,Industrials,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,SHB-A.ST,SVENSKA HANDELSBANKEN-A SHS,Financials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,SHEL.L,SHELL,Energy,United Kingdom,London Stock Exchange,GBP,true
+2026-11,SHL.DE,SIEMENS HEALTHINEERS AG,Health Care,Germany,Xetra,EUR,true
+2026-11,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Information Technology,Canada,Toronto Stock Exchange,CAD,true
+2026-11,SHP.JO,SHOPRITE HOLDINGS LTD,Consumer Staples,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,SHREECEM.NS,SHREE CEMENT LTD,Materials,India,National Stock Exchange Of India,INR,false
+2026-11,SHRIRAMFIN.NS,SHRIRAM FINANCE LTD,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,SHW,SHERWIN WILLIAMS,Materials,United States,NYSE,USD,true
+2026-11,SIE.DE,SIEMENS N AG,Industrials,Germany,Xetra,EUR,true
+2026-11,SIEMENS.NS,SIEMENS LTD,Industrials,India,National Stock Exchange Of India,INR,false
+2026-11,SIG.AX,SIGMA HEALTHCARE,Health Care,Australia,Asx - All Markets,AUD,false
+2026-11,SIGMAFA.MX,ALFA A,Consumer Staples,Mexico,Bolsa Mexicana De Valores,MXN,false
+2026-11,SIKA.SW,SIKA AG,Materials,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,SKA-B.ST,SKANSKA B,Industrials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,SKF-B.ST,SKF B,Industrials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,SLB,SLB,Energy,United States,NYSE,USD,true
+2026-11,SLF.TO,SUN LIFE FINANCIAL INC,Financials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,SLHN.SW,SWISS LIFE HOLDING AG,Financials,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,SLM.JO,SANLAM LIMITED LTD,Financials,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,SM.PS,SM INVESTMENTS,Industrials,Philippines,Philippine Stock Exchange Inc.,PHP,false
+2026-11,SMCI,SUPER MICRO COMPUTER INC,Information Technology,United States,NASDAQ,USD,true
+2026-11,SMIN.L,SMITHS GROUP PLC,Industrials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,SMPH.PS,SM PRIME HOLDINGS,Real Estate,Philippines,Philippine Stock Exchange Inc.,PHP,false
+2026-11,SN,SHARKNINJA,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,SN.L,SMITH AND NEPHEW PLC,Health Care,United Kingdom,London Stock Exchange,GBP,true
+2026-11,SNA,SNAP ON INC,Industrials,United States,NYSE,USD,true
+2026-11,SNDK,SANDISK,Information Technology,United States,NASDAQ,USD,true
+2026-11,SNOW,SNOWFLAKE,Information Technology,United States,NYSE,USD,true
+2026-11,SNPS,SYNOPSYS,Information Technology,United States,NASDAQ,USD,true
+2026-11,SO,SOUTHERN,Utilities,United States,NYSE,USD,true
+2026-11,SOBI.ST,SWEDISH ORPHAN BIOVITRUM,Health Care,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,SOF.BR,SOFINA SA,Financials,Belgium,Nyse Euronext - Euronext Brussels,EUR,true
+2026-11,SOFI,SOFI TECHNOLOGIES,Financials,United States,NASDAQ,USD,true
+2026-11,SOL.AX,WASHINGTON H SOUL PATTINSON & COMP,Financials,Australia,Asx - All Markets,AUD,false
+2026-11,SOL.JO,SASOL,Materials,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,SOLARINDS.NS,SOLAR INDUSTRIES INDIA,Materials,India,National Stock Exchange Of India,INR,false
+2026-11,SOON.SW,SONOVA HOLDING AG,Health Care,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,SPCX,SPACE EXPLORATION TECHNOLOGIES COR,Communication,United States,NASDAQ,USD,true
+2026-11,SPG,SIMON PROPERTY GROUP REIT INC,Real Estate,United States,NYSE,USD,true
+2026-11,SPGI,S&P GLOBAL,Financials,United States,NYSE,USD,true
+2026-11,SPOT,SPOTIFY TECHNOLOGY,Communication,Sweden,NYSE,USD,true
+2026-11,SPSN.SW,SWISS PRIME SITE AG,Real Estate,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,SPX.L,SPIRAX GROUP PLC,Industrials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,SQM-B.SN,SOCIEDAD QUIMICA Y MINERA DE CHILE,Materials,Chile,Santiago Stock Exchange,CLP,false
+2026-11,SRE,SEMPRA,Utilities,United States,NYSE,USD,true
+2026-11,SREN.SW,SWISS RE AG,Financials,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,SRF.NS,SRF LTD,Materials,India,National Stock Exchange Of India,INR,false
+2026-11,SRG.MI,SNAM,Utilities,Italy,Borsa Italiana,EUR,true
+2026-11,SRT3.DE,SARTORIUS PREF AG,Health Care,Germany,Xetra,EUR,true
+2026-11,SSE.L,SSE PLC,Utilities,United Kingdom,London Stock Exchange,GBP,true
+2026-11,SSNC,SS AND C TECHNOLOGIES HOLDINGS,Industrials,United States,NASDAQ,USD,true
+2026-11,SSW.JO,SIBANYE STILLWATER,Materials,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,STAN.L,STANDARD CHARTERED PLC,Financials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,STE,STERIS,Health Care,United States,NYSE,USD,true
+2026-11,STERV.HE,STORA ENSO CLASS R,Materials,Finland,Nasdaq Omx Helsinki Ltd.,EUR,true
+2026-11,STLAM.MI,STELLANTIS,Consumer Discretionary,Italy,Borsa Italiana,EUR,true
+2026-11,STLD,STEEL DYNAMICS INC,Materials,United States,NASDAQ,USD,true
+2026-11,STMN.SW,STRAUMANN HOLDING AG,Health Care,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,STMPA.PA,STMICROELECTRONICS,Information Technology,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,STN.TO,STANTEC,Industrials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,STO.AX,SANTOS,Energy,Australia,Asx - All Markets,AUD,false
+2026-11,STT,STATE STREET,Financials,United States,NYSE,USD,true
+2026-11,STX,SEAGATE TECHNOLOGY HOLDINGS PLC,Information Technology,United States,NASDAQ,USD,true
+2026-11,STZ,CONSTELLATION BRANDS CLASS A,Consumer Staples,United States,NYSE,USD,true
+2026-11,SU.PA,SCHNEIDER ELECTRIC,Industrials,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,SU.TO,SUNCOR ENERGY INC,Energy,Canada,Toronto Stock Exchange,CAD,true
+2026-11,SUI,SUN COMMUNITIES REIT INC,Real Estate,United States,NYSE,USD,true
+2026-11,SUN.AX,SUNCORP GROUP,Financials,Australia,Asx - All Markets,AUD,false
+2026-11,SUNB,SUNBELT RENTALS HOLDINGS INC,Industrials,United States,NYSE,USD,true
+2026-11,SUNDARMFIN.NS,SUNDARAM FINANCE LTD,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,SUNPHARMA.NS,SUN PHARMACEUTICAL INDUSTRIES,Health Care,India,National Stock Exchange Of India,INR,false
+2026-11,SUPREMEIND.NS,SUPREME INDUSTRIES LTD,Industrials,India,National Stock Exchange Of India,INR,false
+2026-11,SUZB3.SA,SUZANO SA,Materials,Brazil,XBSP,BRL,false
+2026-11,SUZLON.NS,SUZLON ENERGY,Industrials,India,National Stock Exchange Of India,INR,false
+2026-11,SVT.L,SEVERN TRENT PLC,Utilities,United Kingdom,London Stock Exchange,GBP,true
+2026-11,SW,SMURFIT WESTROCK PLC,Materials,United States,NYSE,USD,true
+2026-11,SW.PA,SODEXO SA,Consumer Discretionary,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,SWB.KL,SUNWAY BHD,Industrials,Malaysia,Bursa Malaysia,MYR,false
+2026-11,SWED-A.ST,SWEDBANK,Financials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,SWKS,SKYWORKS SOLUTIONS,Information Technology,United States,NASDAQ,USD,true
+2026-11,SY1.DE,SYMRISE AG,Materials,Germany,Xetra,EUR,true
+2026-11,SYENS.BR,SYENSQO NV,Materials,Belgium,Nyse Euronext - Euronext Brussels,EUR,true
+2026-11,SYF,SYNCHRONY FINANCIAL,Financials,United States,NYSE,USD,true
+2026-11,SYK,STRYKER,Health Care,United States,NYSE,USD,true
+2026-11,SYY,SYSCO,Consumer Staples,United States,NYSE,USD,true
+2026-11,T,AT&T,Communication,United States,NYSE,USD,true
+2026-11,T.TO,TELUS,Communication,Canada,Toronto Stock Exchange,CAD,true
+2026-11,TAL,TAL EDUCATION GROUP ADR REPTG,Consumer Discretionary,China,NYSE,USD,true
+2026-11,TATACOMM.NS,TATA COMMUNICATIONS LTD,Communication,India,National Stock Exchange Of India,INR,false
+2026-11,TATACONSUM.NS,TATA CONSUMER PRODUCTS LTD,Consumer Staples,India,National Stock Exchange Of India,INR,false
+2026-11,TATAPOWER.NS,TATA POWER LTD,Utilities,India,National Stock Exchange Of India,INR,false
+2026-11,TATASTEEL.NS,TATA STEEL LTD,Materials,India,National Stock Exchange Of India,INR,false
+2026-11,TCELL.IS,TURKCELL ILETISIM HIZMETLERI A,Communication,Turkey,Istanbul Stock Exchange,TRY,false
+2026-11,TCL.AX,TRANSURBAN GROUP STAPLED UNITS,Industrials,Australia,Asx - All Markets,AUD,false
+2026-11,TCS.NS,TATA CONSULTANCY SERVICES LTD,Information Technology,India,National Stock Exchange Of India,INR,false
+2026-11,TD.TO,TORONTO DOMINION,Financials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,TDG,TRANSDIGM GROUP,Industrials,United States,NYSE,USD,true
+2026-11,TDY,TELEDYNE TECHNOLOGIES,Information Technology,United States,NYSE,USD,true
+2026-11,TEAM,ATLASSIAN CORP CLASS A,Information Technology,United States,NASDAQ,USD,true
+2026-11,TECHM.NS,TECH MAHINDRA,Information Technology,India,National Stock Exchange Of India,INR,false
+2026-11,TECK-B.TO,TECK RESOURCES SUBORDINATE VOTING,Materials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,TEF.MC,TELEFONICA SA,Communication,Spain,Bolsa De Madrid,EUR,true
+2026-11,TEL,TE CONNECTIVITY PLC,Information Technology,United States,NYSE,USD,true
+2026-11,TEL.OL,TELENOR,Communication,Norway,Oslo Bors Asa,NOK,true
+2026-11,TEL.PS,PLDT INC,Communication,Philippines,Philippine Stock Exchange Inc.,PHP,false
+2026-11,TEL2-B.ST,TELE2 B,Communication,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,TELIA.ST,TELIA COMPANY,Communication,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,TEN.MI,TENARIS SA,Energy,Italy,Borsa Italiana,EUR,true
+2026-11,TENAGA.KL,TENAGA NASIONAL,Utilities,Malaysia,Bursa Malaysia,MYR,false
+2026-11,TER,TERADYNE,Information Technology,United States,NASDAQ,USD,true
+2026-11,TEVA,TEVA PHARMACEUTICAL INDUSTRIES,Health Care,Israel,NYSE,USD,true
+2026-11,TFC,TRUIST FINANCIAL,Financials,United States,NYSE,USD,true
+2026-11,TFII.TO,TFI INTERNATIONAL,Industrials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,TGT,TARGET CORP,Consumer Staples,United States,NYSE,USD,true
+2026-11,THYAO.IS,TURK HAVA YOLLARI AO A,Industrials,Turkey,Istanbul Stock Exchange,TRY,false
+2026-11,TIGO,MILLICOM INTERNATIONAL CELLULAR,Communication,Sweden,NASDAQ,USD,true
+2026-11,TIH.TO,TOROMONT INDUSTRIES LTD,Industrials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,TIINDIA.NS,TUBE INVESTMENTS OF INDIA LTD,Consumer Discretionary,India,National Stock Exchange Of India,INR,false
+2026-11,TIMS3.SA,TIM,Communication,Brazil,XBSP,BRL,false
+2026-11,TITAN.NS,TITAN COMPANY LTD,Consumer Discretionary,India,National Stock Exchange Of India,INR,false
+2026-11,TJX,TJX,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,TLC.AX,THE LOTTERY CORPORATION LTD,Consumer Discretionary,Australia,Asx - All Markets,AUD,false
+2026-11,TLKM.JK,TELEKOMUNIKASI INDONESIA,Communication,Indonesia,Indonesia Stock Exchange,IDR,false
+2026-11,TLS.AX,TELSTRA GROUP,Communication,Australia,Asx - All Markets,AUD,false
+2026-11,TLX.DE,TALANX AG,Financials,Germany,Xetra,EUR,true
+2026-11,TM.KL,TELEKOM MALAYSIA,Communication,Malaysia,Bursa Malaysia,MYR,false
+2026-11,TMCV.NS,TATA MOTORS LTD,Industrials,India,National Stock Exchange Of India,INR,false
+2026-11,TME,TENCENT MUSIC ENTERTAINMENT GROUP,Communication,China,NYSE,USD,true
+2026-11,TMGH.CA,TALAAT MOUSTAFA GROUP,Real Estate,Egypt,Egyptian Exchange,EGP,false
+2026-11,TMO,THERMO FISHER SCIENTIFIC,Health Care,United States,NYSE,USD,true
+2026-11,TMPV.NS,TATA MOTORS PASSENGER VEHICLES LTD,Consumer Discretionary,India,National Stock Exchange Of India,INR,false
+2026-11,TMUS,T MOBILE US INC,Communication,United States,NASDAQ,USD,true
+2026-11,TORNTPHARM.NS,TORRENT PHARMACEUTICALS LTD,Health Care,India,National Stock Exchange Of India,INR,false
+2026-11,TORNTPOWER.NS,TORRENT POWER LTD,Utilities,India,National Stock Exchange Of India,INR,false
+2026-11,TOST,TOAST CLASS A,Financials,United States,NYSE,USD,true
+2026-11,TOU.TO,TOURMALINE OIL CORP,Energy,Canada,Toronto Stock Exchange,CAD,true
+2026-11,TPEIR.AT,PIRAEUS BANK,Financials,Greece,Athens Exchange S.A. Cash Market,EUR,false
+2026-11,TPL,TEXAS PACIFIC LAND,Energy,United States,NYSE,USD,true
+2026-11,TPR,TAPESTRY,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,TREL-B.ST,TRELLEBORG B,Industrials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,TRENT.NS,TRENT LTD,Consumer Discretionary,India,National Stock Exchange Of India,INR,false
+2026-11,TRGP,TARGA RESOURCES,Energy,United States,NYSE,USD,true
+2026-11,TRI.TO,THOMSON REUTERS CORP,Industrials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,TRN.MI,TERNA RETE ELETTRICA NAZIONALE,Utilities,Italy,Borsa Italiana,EUR,true
+2026-11,TROW,T ROWE PRICE GROUP,Financials,United States,NASDAQ,USD,true
+2026-11,TRP.TO,TC ENERGY,Energy,Canada,Toronto Stock Exchange,CAD,true
+2026-11,TRU,TRANSUNION,Industrials,United States,NYSE,USD,true
+2026-11,TRUE.BK,TRUE CORPORATION NON-VOTING DR,Communication,Thailand,Stock Exchange Of Thailand,THB,false
+2026-11,TRV,TRAVELERS COMPANIES,Financials,United States,NYSE,USD,true
+2026-11,TRYG.CO,TRYG,Financials,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,true
+2026-11,TSCO,TRACTOR SUPPLY,Consumer Discretionary,United States,NASDAQ,USD,true
+2026-11,TSCO.L,TESCO PLC,Consumer Staples,United Kingdom,London Stock Exchange,GBP,true
+2026-11,TSEM.TA,TOWER SEMICONDUCTOR,Information Technology,Israel,Tel Aviv Stock Exchange,ILS,false
+2026-11,TSLA,TESLA INC,Consumer Discretionary,United States,NASDAQ,USD,true
+2026-11,TSN,TYSON FOODS INC CLASS A,Consumer Staples,United States,NYSE,USD,true
+2026-11,TT,TRANE TECHNOLOGIES PLC,Industrials,United States,NYSE,USD,true
+2026-11,TTE.PA,TOTALENERGIES,Energy,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,TTWO,TAKE TWO INTERACTIVE SOFTWARE,Communication,United States,NASDAQ,USD,true
+2026-11,TUB.BR,FINANCIERE DE TUBIZE SA,Health Care,Belgium,Nyse Euronext - Euronext Brussels,EUR,true
+2026-11,TUPRS.IS,TURKIYE PETROL RAFINERILERI A,Energy,Turkey,Istanbul Stock Exchange,TRY,false
+2026-11,TVSMOTOR.NS,TVS MOTOR COMPANY,Consumer Discretionary,India,National Stock Exchange Of India,INR,false
+2026-11,TW,TRADEWEB MARKETS INC CLASS A,Financials,United States,NASDAQ,USD,true
+2026-11,TWLO,TWILIO CLASS A,Information Technology,United States,NYSE,USD,true
+2026-11,TXN,TEXAS INSTRUMENT,Information Technology,United States,NASDAQ,USD,true
+2026-11,TXT,TEXTRON INC,Industrials,United States,NYSE,USD,true
+2026-11,U11.SI,UNITED OVERSEAS BANK,Financials,Singapore,Singapore Exchange,SGD,false
+2026-11,UAL,UNITED AIRLINES HOLDINGS,Industrials,United States,NASDAQ,USD,true
+2026-11,UBER,UBER TECHNOLOGIES,Industrials,United States,NYSE,USD,true
+2026-11,UBSG.SW,UBS GROUP AG,Financials,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,UCB.BR,UCB SA,Health Care,Belgium,Nyse Euronext - Euronext Brussels,EUR,true
+2026-11,UCG.MI,UNICREDIT,Financials,Italy,Borsa Italiana,EUR,true
+2026-11,UGPA3.SA,ULTRAPAR PARTICIPOES SA,Consumer Discretionary,Brazil,XBSP,BRL,false
+2026-11,UHR.SW,THE SWATCH GROUP AG,Consumer Discretionary,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,ULTA,ULTA BEAUTY INC,Consumer Discretionary,United States,NASDAQ,USD,true
+2026-11,ULTRACEMCO.NS,ULTRATECH CEMENT LTD,Materials,India,National Stock Exchange Of India,INR,false
+2026-11,ULVR.L,UNILEVER PLC,Consumer Staples,United Kingdom,London Stock Exchange,GBP,true
+2026-11,UMG.AS,UNIVERSAL MUSIC GROUP,Communication,Netherlands,Euronext Amsterdam,EUR,true
+2026-11,UNH,UNITEDHEALTH GROUP,Health Care,United States,NYSE,USD,true
+2026-11,UNI.MI,UNIPOL ASSICURAZIONI SPA,Financials,Italy,Borsa Italiana,EUR,true
+2026-11,UNIONBANK.NS,UNION BANK OF INDIA,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,UNITDSPR.NS,UNITED SPIRITS,Consumer Staples,India,National Stock Exchange Of India,INR,false
+2026-11,UNP,UNION PACIFIC,Industrials,United States,NYSE,USD,true
+2026-11,UNTR.JK,UNITED TRACTORS,Energy,Indonesia,Indonesia Stock Exchange,IDR,false
+2026-11,UPL.NS,UPL,Materials,India,National Stock Exchange Of India,INR,false
+2026-11,UPM.HE,UPM-KYMMENE,Materials,Finland,Nasdaq Omx Helsinki Ltd.,EUR,true
+2026-11,UPS,UNITED PARCEL SERVICE INC CLASS B,Industrials,United States,NYSE,USD,true
+2026-11,URI,UNITED RENTALS,Industrials,United States,NYSE,USD,true
+2026-11,URW.PA,UNIBAIL RODAMCO WE STAPLED UNITS,Real Estate,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,USB,US BANCORP,Financials,United States,NYSE,USD,true
+2026-11,UTHR,UNITED THERAPEUTICS,Health Care,United States,NASDAQ,USD,true
+2026-11,UU.L,UNITED UTILITIES GROUP PLC,Utilities,United Kingdom,London Stock Exchange,GBP,true
+2026-11,V,VISA CLASS A,Financials,United States,NYSE,USD,true
+2026-11,VACN.SW,VAT GROUP AG,Industrials,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,VAL.JO,VALTERRA PLATINUM LTD,Materials,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,VALE3.SA,CIA VALE DO RIO DOCE SH,Materials,Brazil,XBSP,BRL,false
+2026-11,VAML.NS,VEDANTA ALUMINIUM METAL LTD,Materials,India,National Stock Exchange Of India,INR,false
+2026-11,VAR.OL,VAR ENERGI,Energy,Norway,Oslo Bors Asa,NOK,true
+2026-11,VBBR3.SA,VIBRA ENERGIA SA,Consumer Discretionary,Brazil,XBSP,BRL,false
+2026-11,VBL.NS,VARUN BEVERAGES,Consumer Staples,India,National Stock Exchange Of India,INR,false
+2026-11,VCX.AX,VICINITY CENTRES,Real Estate,Australia,Asx - All Markets,AUD,false
+2026-11,VEDL.NS,VEDANTA LTD,Materials,India,National Stock Exchange Of India,INR,false
+2026-11,VEEV,VEEVA SYSTEMS CLASS A,Health Care,United States,NYSE,USD,true
+2026-11,VER.VI,VERBUND AG,Utilities,Austria,Wiener Boerse Ag,EUR,true
+2026-11,VICI,VICI PPTYS INC,Real Estate,United States,NYSE,USD,true
+2026-11,VIE.PA,VEOLIA ENVIRON. SA,Utilities,France,Nyse Euronext - Euronext Paris,EUR,true
+2026-11,VIPS,VIPSHOP HOLDINGS SPONSORED ADS REP,Consumer Discretionary,China,NYSE,USD,true
+2026-11,VIVT3.SA,TELEFONICA BRASIL SA,Communication,Brazil,XBSP,BRL,false
+2026-11,VLO,VALERO ENERGY CORP,Energy,United States,NYSE,USD,true
+2026-11,VLTO,VERALTO,Industrials,United States,NYSE,USD,true
+2026-11,VMC,VULCAN MATERIALS,Materials,United States,NYSE,USD,true
+2026-11,VMM.NS,VISHAL MEGA MART,Consumer Discretionary,India,National Stock Exchange Of India,INR,false
+2026-11,VMRK,VIVMARK RESIDENTIAL,Real Estate,United States,NYSE,USD,true
+2026-11,VNA.DE,VONOVIA SE,Real Estate,Germany,Xetra,EUR,true
+2026-11,VOD.JO,VODACOM GROUP LTD,Communication,South Africa,Johannesburg Stock Exchange,ZAR,false
+2026-11,VOD.L,VODAFONE GROUP PLC,Communication,United Kingdom,London Stock Exchange,GBP,true
+2026-11,VOLTAS.NS,VOLTAS LTD,Consumer Discretionary,India,National Stock Exchange Of India,INR,false
+2026-11,VOLV-B.ST,VOLVO CLASS B,Industrials,Sweden,Nasdaq Omx Nordic,SEK,true
+2026-11,VOW3.DE,VOLKSWAGEN NON-VOTING PREF AG,Consumer Discretionary,Germany,Xetra,EUR,true
+2026-11,VRSK,VERISK ANALYTICS,Industrials,United States,NASDAQ,USD,true
+2026-11,VRSN,VERISIGN,Information Technology,United States,NASDAQ,USD,true
+2026-11,VRT,VERTIV HOLDINGS CLASS A,Industrials,United States,NYSE,USD,true
+2026-11,VRTX,VERTEX PHARMACEUTICALS,Health Care,United States,NASDAQ,USD,true
+2026-11,VST,VISTRA,Utilities,United States,NYSE,USD,true
+2026-11,VSURE.ST,VERISURE PLC,Industrials,Sweden,Nasdaq Omx Nordic,EUR,true
+2026-11,VTR,VENTAS REIT,Real Estate,United States,NYSE,USD,true
+2026-11,VWS.CO,VESTAS WIND SYSTEMS,Industrials,Denmark,Omx Nordic Exchange Copenhagen A/S,DKK,true
+2026-11,VYLR,VYLOR,Consumer Staples,United States,NYSE,USD,true
+2026-11,VZ,VERIZON COMMUNICATIONS INC,Communication,United States,NYSE,USD,true
+2026-11,WAAREEENER.NS,WAAREE ENERGIES LTD,Information Technology,India,National Stock Exchange Of India,INR,false
+2026-11,WAB,WESTINGHOUSE AIR BRAKE TECHNOLOGIE,Industrials,United States,NYSE,USD,true
+2026-11,WALMEX.MX,WALMART DE MEXICO V,Consumer Staples,Mexico,Bolsa Mexicana De Valores,MXN,false
+2026-11,WARBABANK.KW,WARBABANK,Financials,Kuwait,Kuwait Stock Exchange,KWD,false
+2026-11,WAT,WATERS CORP,Health Care,United States,NYSE,USD,true
+2026-11,WBC.AX,WESTPAC BANKING CORPORATION,Financials,Australia,Asx - All Markets,AUD,false
+2026-11,WCN,WASTE CONNECTIONS,Industrials,United States,NYSE,USD,true
+2026-11,WCP.TO,WHITECAP RESOURCES INC,Energy,Canada,Toronto Stock Exchange,CAD,true
+2026-11,WDAY,WORKDAY CLASS A,Information Technology,United States,NASDAQ,USD,true
+2026-11,WDC,WESTERN DIGITAL CORP,Information Technology,United States,NASDAQ,USD,true
+2026-11,WDS.AX,WOODSIDE ENERGY GROUP LTD,Energy,Australia,Asx - All Markets,AUD,false
+2026-11,WEC,WEC ENERGY GROUP,Utilities,United States,NYSE,USD,true
+2026-11,WEGE3.SA,WEG,Industrials,Brazil,XBSP,BRL,false
+2026-11,WELL,WELLTOWER,Real Estate,United States,NYSE,USD,true
+2026-11,WES.AX,WESFARMERS,Consumer Discretionary,Australia,Asx - All Markets,AUD,false
+2026-11,WFC,WELLS FARGO,Financials,United States,NYSE,USD,true
+2026-11,WIPRO.NS,WIPRO,Information Technology,India,National Stock Exchange Of India,INR,false
+2026-11,WISE.L,WISE PLC CLASS A,Financials,United Kingdom,London Stock Exchange,GBP,true
+2026-11,WKL.AS,WOLTERS KLUWER,Industrials,Netherlands,Euronext Amsterdam,EUR,true
+2026-11,WM,WASTE MANAGEMENT INC,Industrials,United States,NYSE,USD,true
+2026-11,WMB,WILLIAMS,Energy,United States,NYSE,USD,true
+2026-11,WMT,WALMART,Consumer Staples,United States,NASDAQ,USD,true
+2026-11,WN.TO,GEORGE WESTON,Consumer Staples,Canada,Toronto Stock Exchange,CAD,true
+2026-11,WOW.AX,WOOLWORTHS GROUP,Consumer Staples,Australia,Asx - All Markets,AUD,false
+2026-11,WPC,W. P. CAREY REIT,Real Estate,United States,NYSE,USD,true
+2026-11,WPM.TO,WHEATON PRECIOUS METALS,Materials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,WRB,WR BERKLEY,Financials,United States,NYSE,USD,true
+2026-11,WRT1V.HE,WARTSILA,Industrials,Finland,Nasdaq Omx Helsinki Ltd.,EUR,true
+2026-11,WSM,WILLIAMS SONOMA INC,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,WSO,WATSCO,Industrials,United States,NYSE,USD,true
+2026-11,WSP.TO,WSP GLOBAL,Industrials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,WST,WEST PHARMACEUTICAL SERVICES,Health Care,United States,NYSE,USD,true
+2026-11,WTC.AX,WISETECH GLOBAL,Information Technology,Australia,Asx - All Markets,AUD,false
+2026-11,WTW,WILLIS TOWERS WATSON,Financials,United States,NASDAQ,USD,true
+2026-11,WY,WEYERHAEUSER REIT,Real Estate,United States,NYSE,USD,true
+2026-11,X.TO,TMX GROUP LTD,Financials,Canada,Toronto Stock Exchange,CAD,true
+2026-11,XEL,XCEL ENERGY INC,Utilities,United States,NASDAQ,USD,true
+2026-11,XOM,EXXONMOBIL HOLDINGS CORP,Energy,United States,NYSE,USD,true
+2026-11,XP,XP CLASS A INC,Financials,Brazil,NASDAQ,USD,true
+2026-11,XPO,XPO,Industrials,United States,NYSE,USD,true
+2026-11,XRO.AX,XERO,Information Technology,Australia,Asx - All Markets,AUD,false
+2026-11,XYL,XYLEM INC,Industrials,United States,NYSE,USD,true
+2026-11,XYZ,BLOCK CLASS A,Financials,United States,NYSE,USD,true
+2026-11,YAR.OL,YARA INTERNATIONAL,Materials,Norway,Oslo Bors Asa,NOK,true
+2026-11,YESBANK.NS,YES BANK,Financials,India,National Stock Exchange Of India,INR,false
+2026-11,YKBNK.IS,YAPI VE KREDI BANKASI A,Financials,Turkey,Istanbul Stock Exchange,TRY,false
+2026-11,YMM,FULL TRUCK ALLIANCE ADR CLASS A,Industrials,China,NYSE,USD,true
+2026-11,YTLPOWR.KL,YTL POWER INTERNATIONAL,Utilities,Malaysia,Bursa Malaysia,MYR,false
+2026-11,YUM,YUM BRANDS,Consumer Discretionary,United States,NYSE,USD,true
+2026-11,Z74.SI,SINGAPORE TELECOMMUNICATIONS LTD,Communication,Singapore,Singapore Exchange,SGD,false
+2026-11,ZAB.WA,ZABKA GROUP SOCIETE ANONYME SA,Consumer Staples,Poland,Warsaw Stock Exchange/Equities/Main Market,PLN,false
+2026-11,ZAIN.KW,MOBILE TEL,Communication,Kuwait,Kuwait Stock Exchange,KWD,false
+2026-11,ZAL.DE,ZALANDO,Consumer Discretionary,Germany,Xetra,EUR,true
+2026-11,ZBH,ZIMMER BIOMET HOLDINGS,Health Care,United States,NYSE,USD,true
+2026-11,ZM,ZOOM COMMUNICATIONS CLASS A,Information Technology,United States,NASDAQ,USD,true
+2026-11,ZS,ZSCALER,Information Technology,United States,NASDAQ,USD,true
+2026-11,ZTS,ZOETIS INC CLASS A,Health Care,United States,NYSE,USD,true
+2026-11,ZURN.SW,ZURICH INSURANCE GROUP AG,Financials,Switzerland,SIX Swiss Exchange,CHF,true
+2026-11,ZYDUSLIFE.NS,ZYDUS LIFESCIENCES LTD,Health Care,India,National Stock Exchange Of India,INR,false

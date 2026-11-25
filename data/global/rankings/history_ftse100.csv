@@ -1,0 +1,1074 @@
+month,rank,ticker,name,index,return_3y_pct,return_3m_pct,return_type,source,selected_for_buy
+2017-12,1,GAW.L,Games Workshop,FTSE 100,263.4719,19.3902,total_return,backtest,true
+2017-12,2,JD.L,JD Sports,FTSE 100,227.5764,1.7587,total_return,backtest,true
+2017-12,3,RTO.L,Rentokil Initial,FTSE 100,167.2153,4.4663,total_return,backtest,true
+2017-12,4,ITRK.L,Intertek,FTSE 100,124.0966,2.3483,total_return,backtest,false
+2017-12,5,DCC.L,DCC Energy,FTSE 100,101.0228,1.5614,total_return,backtest,false
+2017-12,6,SPX.L,Spirax Group,FTSE 100,94.8862,2.5801,total_return,backtest,false
+2017-12,7,HLMA.L,Halma plc,FTSE 100,91.1269,17.1089,total_return,backtest,false
+2017-12,8,SGE.L,Sage Group,FTSE 100,90.3813,11.8412,total_return,backtest,false
+2017-12,9,ICG.L,ICG,FTSE 100,77.2318,19.9324,total_return,backtest,false
+2017-12,10,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,75.5582,4.0406,total_return,backtest,false
+2018-01,1,FCIT.L,F & C Investment Trust,FTSE 100,540.3035,5.9215,total_return,backtest,true
+2018-01,2,GAW.L,Games Workshop,FTSE 100,407.6344,33.7227,total_return,backtest,true
+2018-01,3,RTO.L,Rentokil Initial,FTSE 100,162.2863,5.7884,total_return,backtest,true
+2018-01,4,ITRK.L,Intertek,FTSE 100,122.4780,4.1750,total_return,backtest,false
+2018-01,5,DCC.L,DCC Energy,FTSE 100,110.2047,3.0366,total_return,backtest,false
+2018-01,6,PCT.L,Polar Capital Technology Trust,FTSE 100,95.0257,8.3889,total_return,backtest,false
+2018-01,7,ICG.L,ICG,FTSE 100,90.4504,22.4359,total_return,backtest,false
+2018-01,8,SPX.L,Spirax Group,FTSE 100,88.5973,1.7195,total_return,backtest,false
+2018-01,9,FRES.L,Fresnillo plc,FTSE 100,86.6032,1.7082,total_return,backtest,false
+2018-01,10,HLMA.L,Halma plc,FTSE 100,83.3473,12.5000,total_return,backtest,false
+2018-02,1,GAW.L,Games Workshop,FTSE 100,377.8389,3.3040,total_return,backtest,true
+2018-02,2,MRO.L,Melrose Industries,FTSE 100,322.0051,2.9559,total_return,backtest,true
+2018-02,3,JD.L,JD Sports,FTSE 100,264.0856,2.4049,total_return,backtest,true
+2018-02,4,DCC.L,DCC Energy,FTSE 100,109.9927,3.7115,total_return,backtest,false
+2018-02,5,HLMA.L,Halma plc,FTSE 100,83.4199,8.0372,total_return,backtest,false
+2018-02,6,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,83.0635,2.4566,total_return,backtest,false
+2018-02,7,BGEO.L,Lion Finance Group,FTSE 100,80.5595,2.9213,total_return,backtest,false
+2018-02,8,ICG.L,ICG,FTSE 100,79.6019,19.0134,total_return,backtest,false
+2018-02,9,SPX.L,Spirax Group,FTSE 100,79.5783,0.4425,total_return,backtest,false
+2018-02,10,IHG.L,IHG Hotels & Resorts,FTSE 100,72.5678,12.9433,total_return,backtest,false
+2018-03,1,GAW.L,Games Workshop,FTSE 100,367.9195,22.0633,total_return,backtest,true
+2018-03,2,MRO.L,Melrose Industries,FTSE 100,304.9499,14.2071,total_return,backtest,true
+2018-03,3,JD.L,JD Sports,FTSE 100,290.7977,16.2220,total_return,backtest,true
+2018-03,4,CCH.L,Coca-Cola HBC,FTSE 100,105.3972,0.6754,total_return,backtest,false
+2018-03,5,BGEO.L,Lion Finance Group,FTSE 100,96.6914,3.2907,total_return,backtest,false
+2018-03,6,III.L,3i,FTSE 100,90.5666,4.2841,total_return,backtest,false
+2018-03,7,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,77.3009,1.7754,total_return,backtest,false
+2018-03,8,IHG.L,IHG Hotels & Resorts,FTSE 100,72.8707,8.0477,total_return,backtest,false
+2018-03,9,LSEG.L,London Stock Exchange Group,FTSE 100,62.4788,6.5890,total_return,backtest,false
+2018-03,10,CRDA.L,Croda International,FTSE 100,58.0380,8.1676,total_return,backtest,false
+2018-04,1,MRO.L,Melrose Industries,FTSE 100,342.8134,8.8596,total_return,backtest,true
+2018-04,2,CCH.L,Coca-Cola HBC,FTSE 100,116.9460,8.8430,total_return,backtest,true
+2018-04,3,LSEG.L,London Stock Exchange Group,FTSE 100,67.8533,8.7793,total_return,backtest,true
+2018-04,4,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,65.3990,1.4652,total_return,backtest,false
+2018-04,5,AAL.L,Anglo American plc,FTSE 100,64.2758,7.1959,total_return,backtest,false
+2018-04,6,SPX.L,Spirax Group,FTSE 100,62.8842,2.4021,total_return,backtest,false
+2018-04,7,CRDA.L,Croda International,FTSE 100,55.6246,3.2550,total_return,backtest,false
+2018-04,8,SGRO.L,Segro,FTSE 100,50.9900,2.4191,total_return,backtest,false
+2018-04,9,III.L,3i,FTSE 100,45.6830,0.1427,total_return,backtest,false
+2018-04,10,SMIN.L,Smiths Group,FTSE 100,35.4928,1.5772,total_return,backtest,false
+2018-05,1,GAW.L,Games Workshop,FTSE 100,377.6628,3.8380,total_return,backtest,true
+2018-05,2,MRO.L,Melrose Industries,FTSE 100,356.0589,0.7067,total_return,backtest,true
+2018-05,3,JD.L,JD Sports,FTSE 100,240.3604,6.7723,total_return,backtest,true
+2018-05,4,RTO.L,Rentokil Initial,FTSE 100,128.6958,3.3670,total_return,backtest,false
+2018-05,5,III.L,3i,FTSE 100,86.1084,1.0951,total_return,backtest,false
+2018-05,6,CCC.L,Computacenter,FTSE 100,82.3279,11.6197,total_return,backtest,false
+2018-05,7,HSX.L,Hiscox,FTSE 100,80.8060,5.3041,total_return,backtest,false
+2018-05,8,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,78.8080,4.3995,total_return,backtest,false
+2018-05,9,CCH.L,Coca-Cola HBC,FTSE 100,77.3574,3.2967,total_return,backtest,false
+2018-05,10,LSEG.L,London Stock Exchange Group,FTSE 100,68.7554,9.4983,total_return,backtest,false
+2018-06,1,GAW.L,Games Workshop,FTSE 100,472.2393,21.3389,total_return,backtest,true
+2018-06,2,MRO.L,Melrose Industries,FTSE 100,372.5952,3.3728,total_return,backtest,true
+2018-06,3,RTO.L,Rentokil Initial,FTSE 100,133.1663,18.3011,total_return,backtest,true
+2018-06,4,ITRK.L,Intertek,FTSE 100,118.6565,11.2559,total_return,backtest,false
+2018-06,5,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,90.0053,11.2080,total_return,backtest,false
+2018-06,6,LSEG.L,London Stock Exchange Group,FTSE 100,82.2867,11.1470,total_return,backtest,false
+2018-06,7,CCC.L,Computacenter,FTSE 100,81.3052,19.3841,total_return,backtest,false
+2018-06,8,CCH.L,Coca-Cola HBC,FTSE 100,79.4730,7.7568,total_return,backtest,false
+2018-06,9,HLMA.L,Halma plc,FTSE 100,76.8892,12.0332,total_return,backtest,false
+2018-06,10,HSX.L,Hiscox,FTSE 100,76.2067,7.9799,total_return,backtest,false
+2018-07,1,FCIT.L,F & C Investment Trust,FTSE 100,535.4646,6.9890,total_return,backtest,true
+2018-07,2,GAW.L,Games Workshop,FTSE 100,494.3708,30.1518,total_return,backtest,true
+2018-07,3,JD.L,JD Sports,FTSE 100,211.6406,31.4047,total_return,backtest,true
+2018-07,4,RTO.L,Rentokil Initial,FTSE 100,137.1339,29.1130,total_return,backtest,false
+2018-07,5,ITRK.L,Intertek,FTSE 100,133.4169,22.6609,total_return,backtest,false
+2018-07,6,PCT.L,Polar Capital Technology Trust,FTSE 100,117.6776,15.4412,total_return,backtest,false
+2018-07,7,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,97.8538,16.9390,total_return,backtest,false
+2018-07,8,SPX.L,Spirax Group,FTSE 100,92.2589,13.2928,total_return,backtest,false
+2018-07,9,LSEG.L,London Stock Exchange Group,FTSE 100,88.7251,8.3616,total_return,backtest,false
+2018-07,10,CCC.L,Computacenter,FTSE 100,86.4809,25.9582,total_return,backtest,false
+2018-08,1,GAW.L,Games Workshop,FTSE 100,429.5421,22.9979,total_return,backtest,true
+2018-08,2,JD.L,JD Sports,FTSE 100,190.6612,19.6675,total_return,backtest,true
+2018-08,3,ITRK.L,Intertek,FTSE 100,140.4084,19.9755,total_return,backtest,true
+2018-08,4,RTO.L,Rentokil Initial,FTSE 100,131.0776,10.5212,total_return,backtest,false
+2018-08,5,AAL.L,Anglo American plc,FTSE 100,113.7986,1.3689,total_return,backtest,false
+2018-08,6,PCT.L,Polar Capital Technology Trust,FTSE 100,112.9086,10.6272,total_return,backtest,false
+2018-08,7,SPX.L,Spirax Group,FTSE 100,109.5465,20.4683,total_return,backtest,false
+2018-08,8,CCC.L,Computacenter,FTSE 100,106.3440,23.5016,total_return,backtest,false
+2018-08,9,CCH.L,Coca-Cola HBC,FTSE 100,104.4720,11.8658,total_return,backtest,false
+2018-08,10,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,97.1382,12.6212,total_return,backtest,false
+2018-09,1,GAW.L,Games Workshop,FTSE 100,541.6779,22.7586,total_return,backtest,true
+2018-09,2,JD.L,JD Sports,FTSE 100,189.9943,33.4384,total_return,backtest,true
+2018-09,3,PCT.L,Polar Capital Technology Trust,FTSE 100,144.1098,9.7134,total_return,backtest,true
+2018-09,4,SPX.L,Spirax Group,FTSE 100,126.1781,15.3722,total_return,backtest,false
+2018-09,5,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,125.2094,9.7059,total_return,backtest,false
+2018-09,6,DPLM.L,Diploma,FTSE 100,100.6843,15.9236,total_return,backtest,false
+2018-09,7,CCH.L,Coca-Cola HBC,FTSE 100,97.4399,2.6459,total_return,backtest,false
+2018-09,8,HLMA.L,Halma plc,FTSE 100,89.7405,6.0741,total_return,backtest,false
+2018-09,9,HSX.L,Hiscox,FTSE 100,87.3465,12.1838,total_return,backtest,false
+2018-09,10,LSEG.L,London Stock Exchange Group,FTSE 100,83.5643,3.2834,total_return,backtest,false
+2018-10,1,GAW.L,Games Workshop,FTSE 100,595.4263,26.1667,total_return,backtest,true
+2018-10,2,FCIT.L,F & C Investment Trust,FTSE 100,584.6151,4.1033,total_return,backtest,true
+2018-10,3,AAL.L,Anglo American plc,FTSE 100,213.0319,1.6639,total_return,backtest,true
+2018-10,4,SPX.L,Spirax Group,FTSE 100,160.7549,11.9632,total_return,backtest,false
+2018-10,5,PCT.L,Polar Capital Technology Trust,FTSE 100,149.5310,5.8917,total_return,backtest,false
+2018-10,6,JD.L,JD Sports,FTSE 100,140.3996,4.1988,total_return,backtest,false
+2018-10,7,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,118.2615,1.8678,total_return,backtest,false
+2018-10,8,DPLM.L,Diploma,FTSE 100,113.0739,8.0092,total_return,backtest,false
+2018-10,9,IHG.L,IHG Hotels & Resorts,FTSE 100,103.5598,1.2713,total_return,backtest,false
+2018-10,10,HLMA.L,Halma plc,FTSE 100,100.3529,5.4745,total_return,backtest,false
+2018-11,1,GAW.L,Games Workshop,FTSE 100,449.6979,2.5042,total_return,backtest,true
+2018-11,2,HSX.L,Hiscox,FTSE 100,68.3804,1.8773,total_return,backtest,true
+2018-11,3,AZN.L,AstraZeneca,FTSE 100,44.5132,2.1313,total_return,backtest,true
+2018-11,4,ADM.L,Admiral Group,FTSE 100,25.0103,1.6153,total_return,backtest,false
+2018-11,5,BNZL.L,Bunzl,FTSE 100,24.3857,2.0309,total_return,backtest,false
+2018-11,6,WTB.L,Whitbread,FTSE 100,-11.3356,12.3882,total_return,backtest,false
+2018-11,7,NG.L,National Grid plc,FTSE 100,-17.6484,1.9550,total_return,backtest,false
+2018-11,8,UU.L,United Utilities,FTSE 100,-26.3974,1.0289,total_return,backtest,false
+2018-11,9,BT-A.L,BT Group,FTSE 100,-48.1957,3.0193,total_return,backtest,false
+2018-12,1,AAL.L,Anglo American plc,FTSE 100,283.5939,1.5957,total_return,backtest,true
+2018-12,2,RTO.L,Rentokil Initial,FTSE 100,106.8561,1.5385,total_return,backtest,true
+2018-12,3,HSX.L,Hiscox,FTSE 100,65.5662,0.0593,total_return,backtest,true
+2018-12,4,DGE.L,Diageo,FTSE 100,47.9434,4.7875,total_return,backtest,false
+2018-12,5,AZN.L,AstraZeneca,FTSE 100,36.0397,5.5565,total_return,backtest,false
+2018-12,6,ADM.L,Admiral Group,FTSE 100,28.7808,0.1923,total_return,backtest,false
+2018-12,7,SN.L,Smith & Nephew,FTSE 100,26.7396,4.9724,total_return,backtest,false
+2018-12,8,BNZL.L,Bunzl,FTSE 100,25.9062,0.7506,total_return,backtest,false
+2018-12,9,GSK.L,GSK plc,FTSE 100,19.8875,3.9221,total_return,backtest,false
+2018-12,10,PSON.L,Pearson plc,FTSE 100,16.7973,5.0142,total_return,backtest,false
+2019-01,1,AAL.L,Anglo American plc,FTSE 100,484.1759,1.4393,total_return,backtest,true
+2019-01,2,RTO.L,Rentokil Initial,FTSE 100,111.7674,5.9045,total_return,backtest,true
+2019-01,3,III.L,3i,FTSE 100,60.7708,1.6294,total_return,backtest,true
+2019-01,4,DGE.L,Diageo,FTSE 100,50.6705,2.7951,total_return,backtest,false
+2019-01,5,REL.L,RELX,FTSE 100,35.1460,0.0309,total_return,backtest,false
+2019-01,6,PSON.L,Pearson plc,FTSE 100,27.6781,5.4382,total_return,backtest,false
+2019-01,7,FRES.L,Fresnillo plc,FTSE 100,21.5264,4.6993,total_return,backtest,false
+2019-01,8,SN.L,Smith & Nephew,FTSE 100,21.2618,4.6088,total_return,backtest,false
+2019-01,9,AUTO.L,Autotrader Group,FTSE 100,2.4654,1.8361,total_return,backtest,false
+2019-01,10,SGE.L,Sage Group,FTSE 100,-0.2802,2.5580,total_return,backtest,false
+2019-02,1,AAL.L,Anglo American plc,FTSE 100,600.8412,15.9742,total_return,backtest,true
+2019-02,2,MRO.L,Melrose Industries,FTSE 100,201.1450,0.0000,total_return,backtest,true
+2019-02,3,RIO.L,Rio Tinto,FTSE 100,144.7066,10.0960,total_return,backtest,true
+2019-02,4,ANTO.L,Antofagasta plc,FTSE 100,128.9201,10.8308,total_return,backtest,false
+2019-02,5,RTO.L,Rentokil Initial,FTSE 100,115.1535,6.5781,total_return,backtest,false
+2019-02,6,JD.L,JD Sports,FTSE 100,102.2995,13.3480,total_return,backtest,false
+2019-02,7,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,92.1837,0.3423,total_return,backtest,false
+2019-02,8,LSEG.L,London Stock Exchange Group,FTSE 100,85.1576,6.1182,total_return,backtest,false
+2019-02,9,IHG.L,IHG Hotels & Resorts,FTSE 100,80.6257,0.3278,total_return,backtest,false
+2019-02,10,CCH.L,Coca-Cola HBC,FTSE 100,79.1265,10.7359,total_return,backtest,false
+2019-03,1,GAW.L,Games Workshop,FTSE 100,493.1299,3.1301,total_return,backtest,true
+2019-03,2,AAL.L,Anglo American plc,FTSE 100,317.5399,27.9211,total_return,backtest,true
+2019-03,3,GLEN.L,Glencore,FTSE 100,128.2553,4.7562,total_return,backtest,true
+2019-03,4,RIO.L,Rio Tinto,FTSE 100,128.0090,21.8320,total_return,backtest,false
+2019-03,5,PCT.L,Polar Capital Technology Trust,FTSE 100,118.4423,2.1776,total_return,backtest,false
+2019-03,6,III.L,3i,FTSE 100,116.1302,13.4597,total_return,backtest,false
+2019-03,7,SPX.L,Spirax Group,FTSE 100,112.0270,8.6390,total_return,backtest,false
+2019-03,8,RTO.L,Rentokil Initial,FTSE 100,111.6644,6.3636,total_return,backtest,false
+2019-03,9,JD.L,JD Sports,FTSE 100,103.2116,17.8987,total_return,backtest,false
+2019-03,10,ANTO.L,Antofagasta plc,FTSE 100,89.7564,17.0415,total_return,backtest,false
+2019-04,1,GAW.L,Games Workshop,FTSE 100,543.0789,3.4539,total_return,backtest,true
+2019-04,2,FCIT.L,F & C Investment Trust,FTSE 100,534.9221,335.1090,total_return,backtest,true
+2019-04,3,AAL.L,Anglo American plc,FTSE 100,272.3491,17.4906,total_return,backtest,true
+2019-04,4,MRO.L,Melrose Industries,FTSE 100,172.7293,11.7791,total_return,backtest,false
+2019-04,5,RIO.L,Rio Tinto,FTSE 100,128.5673,19.5979,total_return,backtest,false
+2019-04,6,JD.L,JD Sports,FTSE 100,123.2086,44.0940,total_return,backtest,false
+2019-04,7,PCT.L,Polar Capital Technology Trust,FTSE 100,117.6776,13.7681,total_return,backtest,false
+2019-04,8,ANTO.L,Antofagasta plc,FTSE 100,105.9258,23.3401,total_return,backtest,false
+2019-04,9,GLEN.L,Glencore,FTSE 100,102.2627,9.1299,total_return,backtest,false
+2019-04,10,RTO.L,Rentokil Initial,FTSE 100,99.9166,4.7746,total_return,backtest,false
+2019-05,1,GAW.L,Games Workshop,FTSE 100,785.1944,37.3884,total_return,backtest,true
+2019-05,2,MRO.L,Melrose Industries,FTSE 100,187.5805,19.8933,total_return,backtest,true
+2019-05,3,AAL.L,Anglo American plc,FTSE 100,159.8325,1.9868,total_return,backtest,true
+2019-05,4,JD.L,JD Sports,FTSE 100,151.9949,35.9983,total_return,backtest,false
+2019-05,5,SPX.L,Spirax Group,FTSE 100,141.6865,28.8056,total_return,backtest,false
+2019-05,6,III.L,3i,FTSE 100,126.2894,26.0005,total_return,backtest,false
+2019-05,7,RTO.L,Rentokil Initial,FTSE 100,121.5545,15.7270,total_return,backtest,false
+2019-05,8,DPLM.L,Diploma,FTSE 100,118.8655,25.9843,total_return,backtest,false
+2019-05,9,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,104.8931,8.7563,total_return,backtest,false
+2019-05,10,HLMA.L,Halma plc,FTSE 100,101.8117,28.5357,total_return,backtest,false
+2019-06,1,GAW.L,Games Workshop,FTSE 100,794.2980,42.5559,total_return,backtest,true
+2019-06,2,SPX.L,Spirax Group,FTSE 100,142.4244,25.4314,total_return,backtest,true
+2019-06,3,JD.L,JD Sports,FTSE 100,134.7342,32.4458,total_return,backtest,true
+2019-06,4,RIO.L,Rio Tinto,FTSE 100,133.9912,4.6241,total_return,backtest,false
+2019-06,5,PCT.L,Polar Capital Technology Trust,FTSE 100,116.6526,5.5738,total_return,backtest,false
+2019-06,6,CCH.L,Coca-Cola HBC,FTSE 100,112.5029,12.4606,total_return,backtest,false
+2019-06,7,RTO.L,Rentokil Initial,FTSE 100,108.3016,6.8376,total_return,backtest,false
+2019-06,8,DPLM.L,Diploma,FTSE 100,99.3157,9.9112,total_return,backtest,false
+2019-06,9,IHG.L,IHG Hotels & Resorts,FTSE 100,93.4122,13.2054,total_return,backtest,false
+2019-06,10,LSEG.L,London Stock Exchange Group,FTSE 100,93.2725,17.2398,total_return,backtest,false
+2019-07,1,GAW.L,Games Workshop,FTSE 100,1002.8392,57.9014,total_return,backtest,true
+2019-07,2,FCIT.L,F & C Investment Trust,FTSE 100,541.9088,5.9937,total_return,backtest,true
+2019-07,3,AAL.L,Anglo American plc,FTSE 100,209.1137,9.3012,total_return,backtest,true
+2019-07,4,JD.L,JD Sports,FTSE 100,154.3207,16.6733,total_return,backtest,false
+2019-07,5,ICG.L,ICG,FTSE 100,150.8847,29.6714,total_return,backtest,false
+2019-07,6,SPX.L,Spirax Group,FTSE 100,145.6952,27.7469,total_return,backtest,false
+2019-07,7,LSEG.L,London Stock Exchange Group,FTSE 100,116.8345,15.4704,total_return,backtest,false
+2019-07,8,PCT.L,Polar Capital Technology Trust,FTSE 100,114.0800,6.5287,total_return,backtest,false
+2019-07,9,RIO.L,Rio Tinto,FTSE 100,113.1623,9.4037,total_return,backtest,false
+2019-07,10,RTO.L,Rentokil Initial,FTSE 100,105.8283,12.5106,total_return,backtest,false
+2019-08,1,GAW.L,Games Workshop,FTSE 100,836.2812,9.1434,total_return,backtest,true
+2019-08,2,JD.L,JD Sports,FTSE 100,158.2957,3.2412,total_return,backtest,true
+2019-08,3,AAL.L,Anglo American plc,FTSE 100,145.7826,2.9070,total_return,backtest,true
+2019-08,4,LSEG.L,London Stock Exchange Group,FTSE 100,138.8653,32.1500,total_return,backtest,false
+2019-08,5,SPX.L,Spirax Group,FTSE 100,125.9331,9.0303,total_return,backtest,false
+2019-08,6,ICG.L,ICG,FTSE 100,116.0739,17.5973,total_return,backtest,false
+2019-08,7,RTO.L,Rentokil Initial,FTSE 100,102.4072,11.5385,total_return,backtest,false
+2019-08,8,RIO.L,Rio Tinto,FTSE 100,91.2286,5.2184,total_return,backtest,false
+2019-08,9,IHG.L,IHG Hotels & Resorts,FTSE 100,90.7913,15.1167,total_return,backtest,false
+2019-08,10,HLMA.L,Halma plc,FTSE 100,89.7687,10.5863,total_return,backtest,false
+2019-09,1,FCIT.L,F & C Investment Trust,FTSE 100,493.5998,335.3765,total_return,backtest,true
+2019-09,2,LSEG.L,London Stock Exchange Group,FTSE 100,152.5061,31.6048,total_return,backtest,true
+2019-09,3,JD.L,JD Sports,FTSE 100,138.8031,0.0324,total_return,backtest,true
+2019-09,4,ICG.L,ICG,FTSE 100,124.7520,1.6743,total_return,backtest,false
+2019-09,5,RTO.L,Rentokil Initial,FTSE 100,110.5547,20.0533,total_return,backtest,false
+2019-09,6,DPLM.L,Diploma,FTSE 100,90.8490,6.6622,total_return,backtest,false
+2019-09,7,PCT.L,Polar Capital Technology Trust,FTSE 100,90.8407,8.3851,total_return,backtest,false
+2019-09,8,HLMA.L,Halma plc,FTSE 100,85.2514,8.0947,total_return,backtest,false
+2019-09,9,CCC.L,Computacenter,FTSE 100,83.3982,5.9153,total_return,backtest,false
+2019-09,10,SGRO.L,Segro,FTSE 100,81.3385,12.5287,total_return,backtest,false
+2019-10,1,LSEG.L,London Stock Exchange Group,FTSE 100,161.0954,33.2118,total_return,backtest,true
+2019-10,2,JD.L,JD Sports,FTSE 100,154.3946,28.1378,total_return,backtest,true
+2019-10,3,ICG.L,ICG,FTSE 100,146.8453,5.3584,total_return,backtest,true
+2019-10,4,RTO.L,Rentokil Initial,FTSE 100,110.5188,17.6855,total_return,backtest,false
+2019-10,5,DPLM.L,Diploma,FTSE 100,89.3062,8.5509,total_return,backtest,false
+2019-10,6,SGRO.L,Segro,FTSE 100,87.0508,11.0381,total_return,backtest,false
+2019-10,7,III.L,3i,FTSE 100,79.5041,35.3248,total_return,backtest,false
+2019-10,8,PCT.L,Polar Capital Technology Trust,FTSE 100,73.2264,4.9327,total_return,backtest,false
+2019-10,9,EXPN.L,Experian,FTSE 100,68.4225,9.0185,total_return,backtest,false
+2019-10,10,BRBY.L,Burberry Group,FTSE 100,57.7591,16.7562,total_return,backtest,false
+2019-11,1,JD.L,JD Sports,FTSE 100,152.9572,18.2518,total_return,backtest,true
+2019-11,2,LSEG.L,London Stock Exchange Group,FTSE 100,147.5638,4.9502,total_return,backtest,true
+2019-11,3,ICG.L,ICG,FTSE 100,145.6510,6.9065,total_return,backtest,true
+2019-11,4,SGRO.L,Segro,FTSE 100,102.1508,10.4685,total_return,backtest,false
+2019-11,5,RTO.L,Rentokil Initial,FTSE 100,99.1582,4.4828,total_return,backtest,false
+2019-11,6,DPLM.L,Diploma,FTSE 100,70.6627,5.4054,total_return,backtest,false
+2019-11,7,III.L,3i,FTSE 100,68.2766,1.3933,total_return,backtest,false
+2019-11,8,AZN.L,AstraZeneca,FTSE 100,63.6879,6.2314,total_return,backtest,false
+2019-11,9,LMP.L,LondonMetric Property,FTSE 100,55.6737,14.1872,total_return,backtest,false
+2019-11,10,HWDN.L,Howdens Joinery,FTSE 100,54.1224,4.0360,total_return,backtest,false
+2019-12,1,GAW.L,Games Workshop,FTSE 100,882.1872,30.8219,total_return,backtest,true
+2019-12,2,FCIT.L,F & C Investment Trust,FTSE 100,476.2282,0.8674,total_return,backtest,true
+2019-12,3,JD.L,JD Sports,FTSE 100,128.4344,23.2739,total_return,backtest,true
+2019-12,4,ICG.L,ICG,FTSE 100,126.0265,14.5958,total_return,backtest,false
+2019-12,5,SGRO.L,Segro,FTSE 100,123.9090,13.8854,total_return,backtest,false
+2019-12,6,HLMA.L,Halma plc,FTSE 100,123.4054,7.2848,total_return,backtest,false
+2019-12,7,SPX.L,Spirax Group,FTSE 100,109.0569,11.2150,total_return,backtest,false
+2019-12,8,CCC.L,Computacenter,FTSE 100,106.1447,14.0377,total_return,backtest,false
+2019-12,9,DPLM.L,Diploma,FTSE 100,96.2010,16.2145,total_return,backtest,false
+2019-12,10,PCT.L,Polar Capital Technology Trust,FTSE 100,81.1366,7.3066,total_return,backtest,false
+2020-01,1,GAW.L,Games Workshop,FTSE 100,757.2664,29.3432,total_return,backtest,true
+2020-01,2,LSEG.L,London Stock Exchange Group,FTSE 100,166.0547,6.0482,total_return,backtest,true
+2020-01,3,JD.L,JD Sports,FTSE 100,163.4439,11.4453,total_return,backtest,true
+2020-01,4,HLMA.L,Halma plc,FTSE 100,135.8393,7.3567,total_return,backtest,false
+2020-01,5,ICG.L,ICG,FTSE 100,130.2161,10.6529,total_return,backtest,false
+2020-01,6,CCC.L,Computacenter,FTSE 100,121.7821,37.1230,total_return,backtest,false
+2020-01,7,SPX.L,Spirax Group,FTSE 100,112.5670,13.3206,total_return,backtest,false
+2020-01,8,SGRO.L,Segro,FTSE 100,105.0403,10.6561,total_return,backtest,false
+2020-01,9,DPLM.L,Diploma,FTSE 100,94.9125,21.7078,total_return,backtest,false
+2020-01,10,AAL.L,Anglo American plc,FTSE 100,87.5947,16.1287,total_return,backtest,false
+2020-02,1,GAW.L,Games Workshop,FTSE 100,704.5632,48.4340,total_return,backtest,true
+2020-02,2,ICG.L,ICG,FTSE 100,151.7887,17.2275,total_return,backtest,true
+2020-02,3,LSEG.L,London Stock Exchange Group,FTSE 100,147.2048,12.6833,total_return,backtest,true
+2020-02,4,JD.L,JD Sports,FTSE 100,136.6505,6.9495,total_return,backtest,false
+2020-02,5,HLMA.L,Halma plc,FTSE 100,127.8546,12.4633,total_return,backtest,false
+2020-02,6,CCC.L,Computacenter,FTSE 100,126.3899,31.0446,total_return,backtest,false
+2020-02,7,SPX.L,Spirax Group,FTSE 100,107.2896,12.5552,total_return,backtest,false
+2020-02,8,SGRO.L,Segro,FTSE 100,106.5695,7.8654,total_return,backtest,false
+2020-02,9,RTO.L,Rentokil Initial,FTSE 100,104.4565,2.7503,total_return,backtest,false
+2020-02,10,DPLM.L,Diploma,FTSE 100,92.0293,21.8261,total_return,backtest,false
+2020-03,1,GAW.L,Games Workshop,FTSE 100,609.8034,9.9476,total_return,backtest,true
+2020-03,2,LSEG.L,London Stock Exchange Group,FTSE 100,146.2239,10.2445,total_return,backtest,true
+2020-03,3,ICG.L,ICG,FTSE 100,124.4360,3.9843,total_return,backtest,true
+2020-03,4,CCC.L,Computacenter,FTSE 100,111.1259,9.3977,total_return,backtest,false
+2020-03,5,RTO.L,Rentokil Initial,FTSE 100,102.5051,8.7885,total_return,backtest,false
+2020-03,6,DPLM.L,Diploma,FTSE 100,75.6358,2.0630,total_return,backtest,false
+2020-03,7,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,72.1517,11.2143,total_return,backtest,false
+2020-03,8,EXPN.L,Experian,FTSE 100,62.3280,1.0925,total_return,backtest,false
+2020-03,9,HWDN.L,Howdens Joinery,FTSE 100,48.7371,0.8563,total_return,backtest,false
+2020-03,10,BTRW.L,Barratt Redrow,FTSE 100,48.3565,13.5573,total_return,backtest,false
+2020-04,1,PSH.L,Pershing Square Holdings,FTSE 100,50.6125,1.7882,total_return,backtest,true
+2020-04,2,NG.L,National Grid plc,FTSE 100,-14.2049,0.2436,total_return,backtest,true
+2020-04,3,RKT.L,Reckitt,FTSE 100,-15.5267,0.3426,total_return,backtest,true
+2020-04,4,FRES.L,Fresnillo plc,FTSE 100,-57.1199,4.1550,total_return,backtest,false
+2020-05,1,RTO.L,Rentokil Initial,FTSE 100,90.5385,1.5632,total_return,backtest,true
+2020-05,2,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,80.6071,14.2857,total_return,backtest,true
+2020-05,3,AZN.L,AstraZeneca,FTSE 100,79.6433,12.0959,total_return,backtest,true
+2020-05,4,PSH.L,Pershing Square Holdings,FTSE 100,67.0985,12.0055,total_return,backtest,false
+2020-05,5,IGG.L,IG Group,FTSE 100,39.0724,13.6638,total_return,backtest,false
+2020-05,6,ADM.L,Admiral Group,FTSE 100,16.0632,3.1430,total_return,backtest,false
+2020-05,7,RKT.L,Reckitt,FTSE 100,-6.6894,5.5564,total_return,backtest,false
+2020-05,8,CTEC.L,Convatec,FTSE 100,-30.7865,2.1154,total_return,backtest,false
+2020-05,9,FRES.L,Fresnillo plc,FTSE 100,-50.9467,7.4577,total_return,backtest,false
+2020-05,10,PCT.L,Polar Capital Technology Trust,FTSE 100,-81.2353,10.7366,total_return,backtest,false
+2020-06,1,GAW.L,Games Workshop,FTSE 100,753.4055,26.3492,total_return,backtest,true
+2020-06,2,FCIT.L,F & C Investment Trust,FTSE 100,392.7134,3.4955,total_return,backtest,true
+2020-06,3,LSEG.L,London Stock Exchange Group,FTSE 100,134.5319,5.9926,total_return,backtest,true
+2020-06,4,HLMA.L,Halma plc,FTSE 100,103.3791,20.7880,total_return,backtest,false
+2020-06,5,PCT.L,Polar Capital Technology Trust,FTSE 100,88.1657,29.0934,total_return,backtest,false
+2020-06,6,RTO.L,Rentokil Initial,FTSE 100,87.1038,2.6446,total_return,backtest,false
+2020-06,7,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,79.8712,18.6125,total_return,backtest,false
+2020-06,8,SPX.L,Spirax Group,FTSE 100,73.9929,17.5700,total_return,backtest,false
+2020-06,9,EXPN.L,Experian,FTSE 100,73.9490,8.5681,total_return,backtest,false
+2020-06,10,SGRO.L,Segro,FTSE 100,67.0601,2.2406,total_return,backtest,false
+2020-07,1,GAW.L,Games Workshop,FTSE 100,568.7160,85.1039,total_return,backtest,true
+2020-07,2,LSEG.L,London Stock Exchange Group,FTSE 100,129.3151,14.8077,total_return,backtest,true
+2020-07,3,PCT.L,Polar Capital Technology Trust,FTSE 100,110.0103,29.9489,total_return,backtest,true
+2020-07,4,HLMA.L,Halma plc,FTSE 100,109.4287,19.8855,total_return,backtest,false
+2020-07,5,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,105.1392,42.9817,total_return,backtest,false
+2020-07,6,CCC.L,Computacenter,FTSE 100,102.4494,14.7552,total_return,backtest,false
+2020-07,7,SPX.L,Spirax Group,FTSE 100,86.5447,22.1800,total_return,backtest,false
+2020-07,8,RTO.L,Rentokil Initial,FTSE 100,86.5171,31.4079,total_return,backtest,false
+2020-07,9,SGRO.L,Segro,FTSE 100,83.1070,17.1466,total_return,backtest,false
+2020-07,10,AAL.L,Anglo American plc,FTSE 100,82.8715,31.9825,total_return,backtest,false
+2020-08,1,GAW.L,Games Workshop,FTSE 100,448.7210,45.8472,total_return,backtest,true
+2020-08,2,LSEG.L,London Stock Exchange Group,FTSE 100,126.4373,13.7876,total_return,backtest,true
+2020-08,3,CCC.L,Computacenter,FTSE 100,124.1858,36.1951,total_return,backtest,true
+2020-08,4,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,114.5003,30.8735,total_return,backtest,false
+2020-08,5,HLMA.L,Halma plc,FTSE 100,98.2268,4.2105,total_return,backtest,false
+2020-08,6,PCT.L,Polar Capital Technology Trust,FTSE 100,89.3204,9.9211,total_return,backtest,false
+2020-08,7,AZN.L,AstraZeneca,FTSE 100,86.8940,2.4994,total_return,backtest,false
+2020-08,8,SPX.L,Spirax Group,FTSE 100,85.5086,18.1256,total_return,backtest,false
+2020-08,9,SGRO.L,Segro,FTSE 100,84.0650,16.8274,total_return,backtest,false
+2020-08,10,RTO.L,Rentokil Initial,FTSE 100,83.8812,12.6291,total_return,backtest,false
+2020-09,1,GAW.L,Games Workshop,FTSE 100,462.8860,15.8291,total_return,backtest,true
+2020-09,2,JD.L,JD Sports,FTSE 100,123.9598,10.2369,total_return,backtest,true
+2020-09,3,LSEG.L,London Stock Exchange Group,FTSE 100,122.8580,9.5890,total_return,backtest,true
+2020-09,4,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,122.0438,34.6394,total_return,backtest,false
+2020-09,5,PCT.L,Polar Capital Technology Trust,FTSE 100,105.7711,13.9937,total_return,backtest,false
+2020-09,6,CCC.L,Computacenter,FTSE 100,97.5625,25.9352,total_return,backtest,false
+2020-09,7,PSH.L,Pershing Square Holdings,FTSE 100,91.6282,7.2950,total_return,backtest,false
+2020-09,8,SPX.L,Spirax Group,FTSE 100,82.3711,3.7994,total_return,backtest,false
+2020-09,9,DPLM.L,Diploma,FTSE 100,78.2979,5.4645,total_return,backtest,false
+2020-09,10,SGRO.L,Segro,FTSE 100,77.2459,13.4826,total_return,backtest,false
+2020-10,1,GAW.L,Games Workshop,FTSE 100,418.0852,27.1366,total_return,backtest,true
+2020-10,2,CCC.L,Computacenter,FTSE 100,139.8374,44.1804,total_return,backtest,true
+2020-10,3,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,136.4957,20.8537,total_return,backtest,true
+2020-10,4,LSEG.L,London Stock Exchange Group,FTSE 100,131.8254,6.1977,total_return,backtest,false
+2020-10,5,PSH.L,Pershing Square Holdings,FTSE 100,117.8965,11.3757,total_return,backtest,false
+2020-10,6,JD.L,JD Sports,FTSE 100,116.1442,30.0868,total_return,backtest,false
+2020-10,7,HLMA.L,Halma plc,FTSE 100,109.4334,1.8237,total_return,backtest,false
+2020-10,8,DPLM.L,Diploma,FTSE 100,107.0585,22.6741,total_return,backtest,false
+2020-10,9,SPX.L,Spirax Group,FTSE 100,100.3547,10.9162,total_return,backtest,false
+2020-10,10,PCT.L,Polar Capital Technology Trust,FTSE 100,96.8541,1.4742,total_return,backtest,false
+2020-11,1,FCIT.L,F & C Investment Trust,FTSE 100,384.1757,351.9640,total_return,backtest,true
+2020-11,2,GAW.L,Games Workshop,FTSE 100,357.3257,18.1093,total_return,backtest,true
+2020-11,3,CCC.L,Computacenter,FTSE 100,128.6581,14.6747,total_return,backtest,true
+2020-11,4,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,127.0047,15.8849,total_return,backtest,false
+2020-11,5,JD.L,JD Sports,FTSE 100,107.2862,22.3910,total_return,backtest,false
+2020-11,6,DPLM.L,Diploma,FTSE 100,106.4054,22.7122,total_return,backtest,false
+2020-11,7,PSH.L,Pershing Square Holdings,FTSE 100,101.8473,10.4589,total_return,backtest,false
+2020-11,8,HLMA.L,Halma plc,FTSE 100,100.3943,8.7236,total_return,backtest,false
+2020-11,9,SPX.L,Spirax Group,FTSE 100,99.7262,9.4083,total_return,backtest,false
+2020-11,10,PCT.L,Polar Capital Technology Trust,FTSE 100,83.1294,7.4359,total_return,backtest,false
+2020-12,1,GAW.L,Games Workshop,FTSE 100,403.1009,6.7245,total_return,backtest,true
+2020-12,2,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,143.2707,13.9886,total_return,backtest,true
+2020-12,3,PSH.L,Pershing Square Holdings,FTSE 100,141.9941,21.8362,total_return,backtest,true
+2020-12,4,JD.L,JD Sports,FTSE 100,135.3704,6.9441,total_return,backtest,false
+2020-12,5,CCC.L,Computacenter,FTSE 100,97.6130,10.0990,total_return,backtest,false
+2020-12,6,SPX.L,Spirax Group,FTSE 100,93.2258,8.6872,total_return,backtest,false
+2020-12,7,DPLM.L,Diploma,FTSE 100,85.5711,9.8446,total_return,backtest,false
+2020-12,8,AAL.L,Anglo American plc,FTSE 100,63.1237,20.7847,total_return,backtest,false
+2020-12,9,ICG.L,ICG,FTSE 100,53.7676,19.6781,total_return,backtest,false
+2020-12,10,ADM.L,Admiral Group,FTSE 100,48.8301,8.3428,total_return,backtest,false
+2021-01,1,GAW.L,Games Workshop,FTSE 100,325.8076,9.9117,total_return,backtest,true
+2021-01,2,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,178.8438,22.5025,total_return,backtest,true
+2021-01,3,JD.L,JD Sports,FTSE 100,155.8172,6.2515,total_return,backtest,true
+2021-01,4,PSH.L,Pershing Square Holdings,FTSE 100,152.8370,21.8527,total_return,backtest,false
+2021-01,5,LSEG.L,London Stock Exchange Group,FTSE 100,137.5681,1.4872,total_return,backtest,false
+2021-01,6,CCC.L,Computacenter,FTSE 100,112.4229,3.4658,total_return,backtest,false
+2021-01,7,PCT.L,Polar Capital Technology Trust,FTSE 100,102.7265,11.6223,total_return,backtest,false
+2021-01,8,SPX.L,Spirax Group,FTSE 100,101.0593,2.0786,total_return,backtest,false
+2021-01,9,HLMA.L,Halma plc,FTSE 100,94.4160,4.4350,total_return,backtest,false
+2021-01,10,AUTO.L,Autotrader Group,FTSE 100,68.9877,5.8615,total_return,backtest,false
+2021-02,1,FCIT.L,F & C Investment Trust,FTSE 100,397.4336,9.3459,total_return,backtest,true
+2021-02,2,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,180.6549,26.6732,total_return,backtest,true
+2021-02,3,PSH.L,Pershing Square Holdings,FTSE 100,137.7683,16.1836,total_return,backtest,true
+2021-02,4,LSEG.L,London Stock Exchange Group,FTSE 100,121.2593,4.9287,total_return,backtest,false
+2021-02,5,CCC.L,Computacenter,FTSE 100,107.1468,3.4301,total_return,backtest,false
+2021-02,6,JD.L,JD Sports,FTSE 100,104.0003,0.7825,total_return,backtest,false
+2021-02,7,DPLM.L,Diploma,FTSE 100,98.5598,4.1330,total_return,backtest,false
+2021-02,8,PCT.L,Polar Capital Technology Trust,FTSE 100,95.6897,8.3532,total_return,backtest,false
+2021-02,9,HLMA.L,Halma plc,FTSE 100,93.3945,4.2652,total_return,backtest,false
+2021-02,10,SGRO.L,Segro,FTSE 100,64.2559,5.7871,total_return,backtest,false
+2021-03,1,FCIT.L,F & C Investment Trust,FTSE 100,406.2199,339.1840,total_return,backtest,true
+2021-03,2,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,166.4889,11.4891,total_return,backtest,true
+2021-03,3,PSH.L,Pershing Square Holdings,FTSE 100,158.8153,0.2037,total_return,backtest,true
+2021-03,4,LSEG.L,London Stock Exchange Group,FTSE 100,138.8570,18.6528,total_return,backtest,false
+2021-03,5,JD.L,JD Sports,FTSE 100,116.6593,6.9827,total_return,backtest,false
+2021-03,6,DPLM.L,Diploma,FTSE 100,111.6038,9.3396,total_return,backtest,false
+2021-03,7,ANTO.L,Antofagasta plc,FTSE 100,105.0711,42.2018,total_return,backtest,false
+2021-03,8,HLMA.L,Halma plc,FTSE 100,88.1822,2.3014,total_return,backtest,false
+2021-03,9,PCT.L,Polar Capital Technology Trust,FTSE 100,85.5802,1.6355,total_return,backtest,false
+2021-03,10,ADM.L,Admiral Group,FTSE 100,67.8463,8.0854,total_return,backtest,false
+2021-04,1,PSH.L,Pershing Square Holdings,FTSE 100,197.0359,0.0000,total_return,backtest,true
+2021-04,2,DPLM.L,Diploma,FTSE 100,123.4263,16.2409,total_return,backtest,true
+2021-04,3,SPX.L,Spirax Group,FTSE 100,98.1681,0.9296,total_return,backtest,true
+2021-04,4,ICG.L,ICG,FTSE 100,87.7662,6.7207,total_return,backtest,false
+2021-04,5,ANTO.L,Antofagasta plc,FTSE 100,83.6629,17.3204,total_return,backtest,false
+2021-04,6,AAL.L,Anglo American plc,FTSE 100,71.3834,17.2407,total_return,backtest,false
+2021-04,7,ADM.L,Admiral Group,FTSE 100,68.4616,6.7103,total_return,backtest,false
+2021-04,8,NXT.L,Next plc,FTSE 100,65.3820,11.0076,total_return,backtest,false
+2021-04,9,HWDN.L,Howdens Joinery,FTSE 100,59.1433,6.2935,total_return,backtest,false
+2021-04,10,RIO.L,Rio Tinto,FTSE 100,54.0836,1.4625,total_return,backtest,false
+2021-05,1,GAW.L,Games Workshop,FTSE 100,345.9926,5.0339,total_return,backtest,true
+2021-05,2,PSH.L,Pershing Square Holdings,FTSE 100,188.1476,12.6819,total_return,backtest,true
+2021-05,3,DPLM.L,Diploma,FTSE 100,137.9318,23.7274,total_return,backtest,true
+2021-05,4,JD.L,JD Sports,FTSE 100,134.9004,22.9451,total_return,backtest,false
+2021-05,5,HLMA.L,Halma plc,FTSE 100,111.6663,4.8198,total_return,backtest,false
+2021-05,6,CCC.L,Computacenter,FTSE 100,111.3054,13.8605,total_return,backtest,false
+2021-05,7,PCT.L,Polar Capital Technology Trust,FTSE 100,105.9233,4.1410,total_return,backtest,false
+2021-05,8,SPX.L,Spirax Group,FTSE 100,105.0176,6.6336,total_return,backtest,false
+2021-05,9,ICG.L,ICG,FTSE 100,101.4929,28.5882,total_return,backtest,false
+2021-05,10,ANTO.L,Antofagasta plc,FTSE 100,91.9958,30.4545,total_return,backtest,false
+2021-06,1,GAW.L,Games Workshop,FTSE 100,312.1182,24.9608,total_return,backtest,true
+2021-06,2,PSH.L,Pershing Square Holdings,FTSE 100,152.0555,7.1138,total_return,backtest,true
+2021-06,3,JD.L,JD Sports,FTSE 100,148.2959,13.8247,total_return,backtest,true
+2021-06,4,DPLM.L,Diploma,FTSE 100,129.8893,24.5039,total_return,backtest,false
+2021-06,5,SPX.L,Spirax Group,FTSE 100,105.5758,18.5808,total_return,backtest,false
+2021-06,6,CCC.L,Computacenter,FTSE 100,103.8681,28.7632,total_return,backtest,false
+2021-06,7,HLMA.L,Halma plc,FTSE 100,92.9395,14.8655,total_return,backtest,false
+2021-06,8,ICG.L,ICG,FTSE 100,83.6936,21.4905,total_return,backtest,false
+2021-06,9,PCT.L,Polar Capital Technology Trust,FTSE 100,75.9554,1.6092,total_return,backtest,false
+2021-06,10,AAL.L,Anglo American plc,FTSE 100,74.6944,13.0748,total_return,backtest,false
+2021-07,1,GAW.L,Games Workshop,FTSE 100,280.3257,14.4004,total_return,backtest,true
+2021-07,2,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,157.6540,17.0624,total_return,backtest,true
+2021-07,3,PSH.L,Pershing Square Holdings,FTSE 100,140.1549,3.1189,total_return,backtest,true
+2021-07,4,DPLM.L,Diploma,FTSE 100,121.6186,13.9717,total_return,backtest,false
+2021-07,5,SPX.L,Spirax Group,FTSE 100,108.8944,19.4298,total_return,backtest,false
+2021-07,6,JD.L,JD Sports,FTSE 100,108.5899,11.4480,total_return,backtest,false
+2021-07,7,HLMA.L,Halma plc,FTSE 100,96.5479,13.3951,total_return,backtest,false
+2021-07,8,ICG.L,ICG,FTSE 100,92.9342,15.3094,total_return,backtest,false
+2021-07,9,PCT.L,Polar Capital Technology Trust,FTSE 100,88.5350,7.8815,total_return,backtest,false
+2021-07,10,LSEG.L,London Stock Exchange Group,FTSE 100,78.3154,14.8415,total_return,backtest,false
+2021-08,1,FCIT.L,F & C Investment Trust,FTSE 100,425.3960,340.0845,total_return,backtest,true
+2021-08,2,GAW.L,Games Workshop,FTSE 100,279.9581,4.7926,total_return,backtest,true
+2021-08,3,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,152.9651,7.3789,total_return,backtest,true
+2021-08,4,DPLM.L,Diploma,FTSE 100,124.8819,3.1381,total_return,backtest,false
+2021-08,5,SPX.L,Spirax Group,FTSE 100,116.2048,27.0419,total_return,backtest,false
+2021-08,6,HLMA.L,Halma plc,FTSE 100,105.3787,11.6306,total_return,backtest,false
+2021-08,7,PCT.L,Polar Capital Technology Trust,FTSE 100,91.6535,2.9611,total_return,backtest,false
+2021-08,8,HWDN.L,Howdens Joinery,FTSE 100,88.1537,10.9298,total_return,backtest,false
+2021-08,9,AAL.L,Anglo American plc,FTSE 100,85.2484,4.4063,total_return,backtest,false
+2021-08,10,SGRO.L,Segro,FTSE 100,83.2298,21.0840,total_return,backtest,false
+2021-09,1,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,144.7185,14.5607,total_return,backtest,true
+2021-09,2,SPX.L,Spirax Group,FTSE 100,126.0283,26.8504,total_return,backtest,true
+2021-09,3,CCC.L,Computacenter,FTSE 100,116.7766,9.3820,total_return,backtest,true
+2021-09,4,DPLM.L,Diploma,FTSE 100,110.6799,6.2370,total_return,backtest,false
+2021-09,5,HLMA.L,Halma plc,FTSE 100,109.7560,15.3226,total_return,backtest,false
+2021-09,6,ICG.L,ICG,FTSE 100,109.7436,4.5174,total_return,backtest,false
+2021-09,7,JD.L,JD Sports,FTSE 100,98.7306,6.8028,total_return,backtest,false
+2021-09,8,SGRO.L,Segro,FTSE 100,95.2291,23.0474,total_return,backtest,false
+2021-09,9,HWDN.L,Howdens Joinery,FTSE 100,92.0251,18.6449,total_return,backtest,false
+2021-09,10,PCT.L,Polar Capital Technology Trust,FTSE 100,85.7765,15.8371,total_return,backtest,false
+2021-10,1,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,171.3628,7.2878,total_return,backtest,true
+2021-10,2,PSH.L,Pershing Square Holdings,FTSE 100,128.6243,0.3781,total_return,backtest,true
+2021-10,3,JD.L,JD Sports,FTSE 100,128.3932,14.0914,total_return,backtest,true
+2021-10,4,CCC.L,Computacenter,FTSE 100,114.7993,5.6765,total_return,backtest,false
+2021-10,5,SPX.L,Spirax Group,FTSE 100,105.1426,9.9523,total_return,backtest,false
+2021-10,6,HLMA.L,Halma plc,FTSE 100,96.7244,5.5721,total_return,backtest,false
+2021-10,7,HWDN.L,Howdens Joinery,FTSE 100,91.1454,9.6988,total_return,backtest,false
+2021-10,8,SGRO.L,Segro,FTSE 100,87.5084,9.1823,total_return,backtest,false
+2021-10,9,RTO.L,Rentokil Initial,FTSE 100,83.3400,17.8990,total_return,backtest,false
+2021-10,10,PCT.L,Polar Capital Technology Trust,FTSE 100,81.8045,2.1115,total_return,backtest,false
+2021-11,1,FCIT.L,F & C Investment Trust,FTSE 100,481.7253,4.2085,total_return,backtest,true
+2021-11,2,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,197.2883,5.9783,total_return,backtest,true
+2021-11,3,JD.L,JD Sports,FTSE 100,166.4841,21.2932,total_return,backtest,true
+2021-11,4,PSH.L,Pershing Square Holdings,FTSE 100,161.7249,16.2055,total_return,backtest,false
+2021-11,5,SPX.L,Spirax Group,FTSE 100,141.2725,3.9640,total_return,backtest,false
+2021-11,6,ICG.L,ICG,FTSE 100,130.3785,0.9677,total_return,backtest,false
+2021-11,7,DPLM.L,Diploma,FTSE 100,128.5527,1.5551,total_return,backtest,false
+2021-11,8,HLMA.L,Halma plc,FTSE 100,123.0945,2.5268,total_return,backtest,false
+2021-11,9,PCT.L,Polar Capital Technology Trust,FTSE 100,113.7755,3.2868,total_return,backtest,false
+2021-11,10,SGRO.L,Segro,FTSE 100,110.4628,6.1602,total_return,backtest,false
+2021-12,1,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,200.8355,8.8386,total_return,backtest,true
+2021-12,2,JD.L,JD Sports,FTSE 100,182.1642,10.4012,total_return,backtest,true
+2021-12,3,PSH.L,Pershing Square Holdings,FTSE 100,158.5432,11.8321,total_return,backtest,true
+2021-12,4,DPLM.L,Diploma,FTSE 100,152.9279,4.5662,total_return,backtest,false
+2021-12,5,SGRO.L,Segro,FTSE 100,133.7690,9.7352,total_return,backtest,false
+2021-12,6,PCT.L,Polar Capital Technology Trust,FTSE 100,123.4506,4.2188,total_return,backtest,false
+2021-12,7,CRDA.L,Croda International,FTSE 100,102.6472,10.5706,total_return,backtest,false
+2021-12,8,RTO.L,Rentokil Initial,FTSE 100,85.9886,5.7202,total_return,backtest,false
+2021-12,9,EXPN.L,Experian,FTSE 100,77.3634,5.4931,total_return,backtest,false
+2021-12,10,BBOX.L,Tritax Big Box REIT,FTSE 100,75.9917,0.4219,total_return,backtest,false
+2022-01,1,JD.L,JD Sports,FTSE 100,212.2270,3.8627,total_return,backtest,true
+2022-01,2,PSH.L,Pershing Square Holdings,FTSE 100,198.7062,13.5593,total_return,backtest,true
+2022-01,3,CCC.L,Computacenter,FTSE 100,189.4089,7.0640,total_return,backtest,true
+2022-01,4,DPLM.L,Diploma,FTSE 100,178.9409,18.7192,total_return,backtest,false
+2022-01,5,SPX.L,Spirax Group,FTSE 100,157.2993,7.2144,total_return,backtest,false
+2022-01,6,PCT.L,Polar Capital Technology Trust,FTSE 100,147.1014,12.8205,total_return,backtest,false
+2022-01,7,SGRO.L,Segro,FTSE 100,144.2433,20.2092,total_return,backtest,false
+2022-01,8,ICG.L,ICG,FTSE 100,134.8845,7.2861,total_return,backtest,false
+2022-01,9,HLMA.L,Halma plc,FTSE 100,134.6539,12.5968,total_return,backtest,false
+2022-01,10,CRDA.L,Croda International,FTSE 100,111.0131,18.4457,total_return,backtest,false
+2022-02,1,SGRO.L,Segro,FTSE 100,101.3928,0.7350,total_return,backtest,true
+2022-02,2,IMI.L,IMI,FTSE 100,72.4622,0.9180,total_return,backtest,true
+2022-02,3,BBOX.L,Tritax Big Box REIT,FTSE 100,70.1446,5.5111,total_return,backtest,true
+2022-02,4,AAL.L,Anglo American plc,FTSE 100,67.2277,16.0108,total_return,backtest,false
+2022-02,5,III.L,3i,FTSE 100,61.4158,0.4399,total_return,backtest,false
+2022-02,6,LSEG.L,London Stock Exchange Group,FTSE 100,57.7243,1.6901,total_return,backtest,false
+2022-02,7,ADM.L,Admiral Group,FTSE 100,52.0988,9.5470,total_return,backtest,false
+2022-02,8,AUTO.L,Autotrader Group,FTSE 100,46.1187,10.2378,total_return,backtest,false
+2022-02,9,SVT.L,Severn Trent,FTSE 100,43.9351,4.9306,total_return,backtest,false
+2022-02,10,LMP.L,LondonMetric Property,FTSE 100,42.3041,2.0658,total_return,backtest,false
+2022-03,1,AAL.L,Anglo American plc,FTSE 100,92.0516,37.9149,total_return,backtest,true
+2022-03,2,ANTO.L,Antofagasta plc,FTSE 100,62.4976,10.2174,total_return,backtest,true
+2022-03,3,BA.L,BAE Systems,FTSE 100,54.6262,31.2660,total_return,backtest,true
+2022-03,4,AZN.L,AstraZeneca,FTSE 100,47.6846,9.4611,total_return,backtest,false
+2022-03,5,LSEG.L,London Stock Exchange Group,FTSE 100,45.9063,1.1074,total_return,backtest,false
+2022-03,6,GLEN.L,Glencore,FTSE 100,45.6257,23.8169,total_return,backtest,false
+2022-03,7,SSE.L,SSE plc,FTSE 100,43.6776,9.8260,total_return,backtest,false
+2022-03,8,IGG.L,IG Group,FTSE 100,38.6775,1.2962,total_return,backtest,false
+2022-03,9,ADM.L,Admiral Group,FTSE 100,36.6934,0.6764,total_return,backtest,false
+2022-03,10,RIO.L,Rio Tinto,FTSE 100,33.9481,25.5637,total_return,backtest,false
+2022-04,1,CCC.L,Computacenter,FTSE 100,166.1366,1.0997,total_return,backtest,true
+2022-04,2,AAL.L,Anglo American plc,FTSE 100,94.7372,31.7142,total_return,backtest,true
+2022-04,3,ANTO.L,Antofagasta plc,FTSE 100,73.3339,24.9907,total_return,backtest,true
+2022-04,4,LSEG.L,London Stock Exchange Group,FTSE 100,67.7210,14.9495,total_return,backtest,false
+2022-04,5,AZN.L,AstraZeneca,FTSE 100,65.2850,16.7550,total_return,backtest,false
+2022-04,6,IGG.L,IG Group,FTSE 100,57.7689,0.7380,total_return,backtest,false
+2022-04,7,GLEN.L,Glencore,FTSE 100,57.4279,33.3511,total_return,backtest,false
+2022-04,8,SVT.L,Severn Trent,FTSE 100,55.9613,4.4452,total_return,backtest,false
+2022-04,9,CTEC.L,Convatec,FTSE 100,52.4479,11.6231,total_return,backtest,false
+2022-04,10,BA.L,BAE Systems,FTSE 100,48.9128,30.4838,total_return,backtest,false
+2022-05,1,FCIT.L,F & C Investment Trust,FTSE 100,423.0400,322.4647,total_return,backtest,true
+2022-05,2,CCC.L,Computacenter,FTSE 100,121.9833,0.7524,total_return,backtest,true
+2022-05,3,SGRO.L,Segro,FTSE 100,98.0330,3.1106,total_return,backtest,true
+2022-05,4,AZN.L,AstraZeneca,FTSE 100,86.8090,24.0339,total_return,backtest,false
+2022-05,5,AAL.L,Anglo American plc,FTSE 100,82.1872,11.0905,total_return,backtest,false
+2022-05,6,DPLM.L,Diploma,FTSE 100,72.4536,0.2180,total_return,backtest,false
+2022-05,7,ANTO.L,Antofagasta plc,FTSE 100,71.0070,16.3977,total_return,backtest,false
+2022-05,8,BBOX.L,Tritax Big Box REIT,FTSE 100,64.2605,2.6959,total_return,backtest,false
+2022-05,9,GLEN.L,Glencore,FTSE 100,63.5586,29.8433,total_return,backtest,false
+2022-05,10,SSE.L,SSE plc,FTSE 100,63.5567,18.0727,total_return,backtest,false
+2022-06,1,AAL.L,Anglo American plc,FTSE 100,106.4834,1.6741,total_return,backtest,true
+2022-06,2,GLEN.L,Glencore,FTSE 100,105.2287,18.0821,total_return,backtest,true
+2022-06,3,AZN.L,AstraZeneca,FTSE 100,79.3673,15.3991,total_return,backtest,true
+2022-06,4,BA.L,BAE Systems,FTSE 100,67.3212,5.0584,total_return,backtest,false
+2022-06,5,SSE.L,SSE plc,FTSE 100,64.6018,3.9601,total_return,backtest,false
+2022-06,6,CTEC.L,Convatec,FTSE 100,54.8863,19.8336,total_return,backtest,false
+2022-06,7,NG.L,National Grid plc,FTSE 100,47.8667,3.5550,total_return,backtest,false
+2022-06,8,SVT.L,Severn Trent,FTSE 100,46.6630,1.3561,total_return,backtest,false
+2022-06,9,INVP.L,Investec,FTSE 100,43.7193,26.0318,total_return,backtest,false
+2022-06,10,LSEG.L,London Stock Exchange Group,FTSE 100,40.1265,12.5951,total_return,backtest,false
+2022-07,1,AZN.L,AstraZeneca,FTSE 100,67.8902,6.5930,total_return,backtest,true
+2022-07,2,BA.L,BAE Systems,FTSE 100,67.7949,15.7234,total_return,backtest,true
+2022-07,3,CTEC.L,Convatec,FTSE 100,54.0119,4.0816,total_return,backtest,true
+2022-07,4,BATS.L,British American Tobacco,FTSE 100,28.2873,10.1737,total_return,backtest,false
+2022-07,5,GSK.L,GSK plc,FTSE 100,12.1977,7.1880,total_return,backtest,false
+2022-07,6,BARC.L,Barclays,FTSE 100,2.2773,3.2502,total_return,backtest,false
+2022-07,7,CCEP.L,Coca-Cola Europacific Partners,FTSE 100,0.3263,9.9707,total_return,backtest,false
+2022-07,8,IMB.L,Imperial Brands,FTSE 100,-0.3031,14.0019,total_return,backtest,false
+2022-07,9,NWG.L,NatWest Group,FTSE 100,-0.5498,1.1117,total_return,backtest,false
+2022-07,10,RKT.L,Reckitt,FTSE 100,-0.6262,5.7956,total_return,backtest,false
+2022-08,1,FCIT.L,F & C Investment Trust,FTSE 100,408.5694,1.2675,total_return,backtest,true
+2022-08,2,AAF.L,Airtel Africa,FTSE 100,130.8461,8.3220,total_return,backtest,true
+2022-08,3,GAW.L,Games Workshop,FTSE 100,70.8762,4.5209,total_return,backtest,true
+2022-08,4,AZN.L,AstraZeneca,FTSE 100,53.7007,1.4596,total_return,backtest,false
+2022-08,5,CTEC.L,Convatec,FTSE 100,46.2858,7.6415,total_return,backtest,false
+2022-08,6,PCT.L,Polar Capital Technology Trust,FTSE 100,43.4316,4.9020,total_return,backtest,false
+2022-08,7,BA.L,BAE Systems,FTSE 100,40.5358,4.0541,total_return,backtest,false
+2022-08,8,BBY.L,Balfour Beatty,FTSE 100,36.2804,15.5684,total_return,backtest,false
+2022-08,9,INVP.L,Investec,FTSE 100,29.6844,0.0885,total_return,backtest,false
+2022-08,10,REL.L,RELX,FTSE 100,24.2761,1.3790,total_return,backtest,false
+2022-09,1,PSH.L,Pershing Square Holdings,FTSE 100,82.4492,9.4118,total_return,backtest,true
+2022-09,2,IGG.L,IG Group,FTSE 100,51.8892,14.3955,total_return,backtest,true
+2022-09,3,BGEO.L,Lion Finance Group,FTSE 100,47.0503,24.6883,total_return,backtest,true
+2022-09,4,BBY.L,Balfour Beatty,FTSE 100,46.2685,21.0445,total_return,backtest,false
+2022-09,5,AZN.L,AstraZeneca,FTSE 100,45.5633,1.8175,total_return,backtest,false
+2022-09,6,PCT.L,Polar Capital Technology Trust,FTSE 100,44.6991,3.6961,total_return,backtest,false
+2022-09,7,BA.L,BAE Systems,FTSE 100,42.4464,2.6720,total_return,backtest,false
+2022-09,8,BNZL.L,Bunzl,FTSE 100,42.2178,3.3972,total_return,backtest,false
+2022-09,9,CTEC.L,Convatec,FTSE 100,24.8974,0.7407,total_return,backtest,false
+2022-09,10,NWG.L,NatWest Group,FTSE 100,23.5719,0.2833,total_return,backtest,false
+2022-10,1,GLEN.L,Glencore,FTSE 100,95.5764,7.4253,total_return,backtest,true
+2022-10,2,PSH.L,Pershing Square Holdings,FTSE 100,72.2848,10.2041,total_return,backtest,true
+2022-10,3,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,55.4106,9.3654,total_return,backtest,true
+2022-10,4,BGEO.L,Lion Finance Group,FTSE 100,48.9032,52.2205,total_return,backtest,false
+2022-10,5,DPLM.L,Diploma,FTSE 100,39.8115,4.3088,total_return,backtest,false
+2022-10,6,BBY.L,Balfour Beatty,FTSE 100,38.0858,20.5350,total_return,backtest,false
+2022-10,7,PCT.L,Polar Capital Technology Trust,FTSE 100,35.7550,3.2503,total_return,backtest,false
+2022-10,8,SPX.L,Spirax Group,FTSE 100,32.6127,5.2845,total_return,backtest,false
+2022-10,9,BNZL.L,Bunzl,FTSE 100,29.9661,1.5079,total_return,backtest,false
+2022-10,10,FCIT.L,F & C Investment Trust,FTSE 100,27.3585,11.5242,total_return,backtest,false
+2022-11,1,GLEN.L,Glencore,FTSE 100,114.9351,8.1520,total_return,backtest,true
+2022-11,2,PSH.L,Pershing Square Holdings,FTSE 100,99.1922,6.5789,total_return,backtest,true
+2022-11,3,BGEO.L,Lion Finance Group,FTSE 100,63.7460,41.1023,total_return,backtest,true
+2022-11,4,BA.L,BAE Systems,FTSE 100,41.5138,5.7662,total_return,backtest,false
+2022-11,5,PSON.L,Pearson plc,FTSE 100,40.9026,26.9363,total_return,backtest,false
+2022-11,6,ANTO.L,Antofagasta plc,FTSE 100,35.6996,1.4674,total_return,backtest,false
+2022-11,7,BBY.L,Balfour Beatty,FTSE 100,32.5439,6.4148,total_return,backtest,false
+2022-11,8,BATS.L,British American Tobacco,FTSE 100,27.3475,6.6139,total_return,backtest,false
+2022-11,9,IMB.L,Imperial Brands,FTSE 100,25.8531,18.0656,total_return,backtest,false
+2022-11,10,RTO.L,Rentokil Initial,FTSE 100,19.8123,0.5913,total_return,backtest,false
+2022-12,1,GLEN.L,Glencore,FTSE 100,131.2901,19.0577,total_return,backtest,true
+2022-12,2,PSH.L,Pershing Square Holdings,FTSE 100,106.2906,6.2724,total_return,backtest,true
+2022-12,3,BGEO.L,Lion Finance Group,FTSE 100,71.1117,26.5000,total_return,backtest,true
+2022-12,4,AAL.L,Anglo American plc,FTSE 100,69.2803,22.4398,total_return,backtest,false
+2022-12,5,ANTO.L,Antofagasta plc,FTSE 100,62.4474,27.9292,total_return,backtest,false
+2022-12,6,INVP.L,Investec,FTSE 100,62.1874,24.8073,total_return,backtest,false
+2022-12,7,FRES.L,Fresnillo plc,FTSE 100,55.5086,30.3514,total_return,backtest,false
+2022-12,8,PSON.L,Pearson plc,FTSE 100,54.0470,15.3454,total_return,backtest,false
+2022-12,9,DPLM.L,Diploma,FTSE 100,52.0619,11.4650,total_return,backtest,false
+2022-12,10,AZN.L,AstraZeneca,FTSE 100,49.8355,4.9042,total_return,backtest,false
+2023-01,1,FCIT.L,F & C Investment Trust,FTSE 100,365.3298,295.3467,total_return,backtest,true
+2023-01,2,GLEN.L,Glencore,FTSE 100,134.9710,15.5286,total_return,backtest,true
+2023-01,3,PSH.L,Pershing Square Holdings,FTSE 100,100.5802,7.9630,total_return,backtest,true
+2023-01,4,ANTO.L,Antofagasta plc,FTSE 100,68.7602,38.5477,total_return,backtest,false
+2023-01,5,BGEO.L,Lion Finance Group,FTSE 100,60.4631,31.0362,total_return,backtest,false
+2023-01,6,INVP.L,Investec,FTSE 100,58.5317,40.8427,total_return,backtest,false
+2023-01,7,BA.L,BAE Systems,FTSE 100,51.7447,8.3819,total_return,backtest,false
+2023-01,8,AAL.L,Anglo American plc,FTSE 100,49.9454,18.3147,total_return,backtest,false
+2023-01,9,AZN.L,AstraZeneca,FTSE 100,47.5848,12.8117,total_return,backtest,false
+2023-01,10,PSON.L,Pearson plc,FTSE 100,47.5697,8.3526,total_return,backtest,false
+2023-02,1,GLEN.L,Glencore,FTSE 100,143.5021,8.3483,total_return,backtest,true
+2023-02,2,ANTO.L,Antofagasta plc,FTSE 100,110.9460,47.3841,total_return,backtest,true
+2023-02,3,PSH.L,Pershing Square Holdings,FTSE 100,97.9145,2.2928,total_return,backtest,true
+2023-02,4,BGEO.L,Lion Finance Group,FTSE 100,76.6417,25.6471,total_return,backtest,false
+2023-02,5,AAL.L,Anglo American plc,FTSE 100,75.7586,32.8925,total_return,backtest,false
+2023-02,6,INVP.L,Investec,FTSE 100,69.6017,18.0388,total_return,backtest,false
+2023-02,7,AAF.L,Airtel Africa,FTSE 100,60.7647,3.6251,total_return,backtest,false
+2023-02,8,RIO.L,Rio Tinto,FTSE 100,55.1677,39.2771,total_return,backtest,false
+2023-02,9,BNZL.L,Bunzl,FTSE 100,51.2397,4.5407,total_return,backtest,false
+2023-02,10,AZN.L,AstraZeneca,FTSE 100,42.7570,3.2768,total_return,backtest,false
+2023-03,1,ANTO.L,Antofagasta plc,FTSE 100,109.0053,11.4661,total_return,backtest,true
+2023-03,2,INVP.L,Investec,FTSE 100,85.9479,2.4315,total_return,backtest,true
+2023-03,3,BGEO.L,Lion Finance Group,FTSE 100,65.0535,10.2767,total_return,backtest,true
+2023-03,4,III.L,3i,FTSE 100,61.5824,20.6526,total_return,backtest,false
+2023-03,5,RIO.L,Rio Tinto,FTSE 100,58.7670,2.2739,total_return,backtest,false
+2023-03,6,IMI.L,IMI,FTSE 100,54.8727,15.5045,total_return,backtest,false
+2023-03,7,SHEL.L,Shell plc,FTSE 100,52.2455,3.3756,total_return,backtest,false
+2023-03,8,NWG.L,NatWest Group,FTSE 100,52.1399,11.6075,total_return,backtest,false
+2023-03,9,KGF.L,Kingfisher plc,FTSE 100,51.8070,19.1207,total_return,backtest,false
+2023-03,10,BRBY.L,Burberry Group,FTSE 100,49.6288,13.2751,total_return,backtest,false
+2023-04,1,BGEO.L,Lion Finance Group,FTSE 100,200.8378,5.5662,total_return,backtest,true
+2023-04,2,CNA.L,Centrica,FTSE 100,178.5314,9.8736,total_return,backtest,true
+2023-04,3,WEIR.L,Weir,FTSE 100,157.8972,11.3841,total_return,backtest,true
+2023-04,4,GAW.L,Games Workshop,FTSE 100,122.8282,12.5511,total_return,backtest,false
+2023-04,5,III.L,3i,FTSE 100,112.9276,5.1482,total_return,backtest,false
+2023-04,6,IMI.L,IMI,FTSE 100,105.3792,19.0994,total_return,backtest,false
+2023-04,7,ANTO.L,Antofagasta plc,FTSE 100,104.7518,2.2970,total_return,backtest,false
+2023-04,8,BRBY.L,Burberry Group,FTSE 100,95.3527,27.3892,total_return,backtest,false
+2023-04,9,JD.L,JD Sports,FTSE 100,94.1882,40.9037,total_return,backtest,false
+2023-04,10,BA.L,BAE Systems,FTSE 100,88.5415,14.7897,total_return,backtest,false
+2023-05,1,FCIT.L,F & C Investment Trust,FTSE 100,457.7378,277.3095,total_return,backtest,true
+2023-05,2,AAF.L,Airtel Africa,FTSE 100,199.1597,2.4744,total_return,backtest,true
+2023-05,3,BGEO.L,Lion Finance Group,FTSE 100,197.4769,10.8614,total_return,backtest,true
+2023-05,4,CNA.L,Centrica,FTSE 100,187.0072,13.6476,total_return,backtest,false
+2023-05,5,III.L,3i,FTSE 100,125.6251,12.1905,total_return,backtest,false
+2023-05,6,BA.L,BAE Systems,FTSE 100,99.7273,18.3473,total_return,backtest,false
+2023-05,7,IMI.L,IMI,FTSE 100,92.8983,10.2281,total_return,backtest,false
+2023-05,8,WEIR.L,Weir,FTSE 100,92.8155,3.2548,total_return,backtest,false
+2023-05,9,BRBY.L,Burberry Group,FTSE 100,86.5071,5.2824,total_return,backtest,false
+2023-05,10,SHEL.L,Shell plc,FTSE 100,85.2695,3.2856,total_return,backtest,false
+2023-06,1,BGEO.L,Lion Finance Group,FTSE 100,226.2619,8.0645,total_return,backtest,true
+2023-06,2,CNA.L,Centrica,FTSE 100,222.1973,11.8878,total_return,backtest,true
+2023-06,3,III.L,3i,FTSE 100,137.2853,20.1905,total_return,backtest,true
+2023-06,4,CPG.L,Compass Group,FTSE 100,91.0645,18.0197,total_return,backtest,false
+2023-06,5,BA.L,BAE Systems,FTSE 100,87.3224,3.3630,total_return,backtest,false
+2023-06,6,MKS.L,Marks & Spencer,FTSE 100,82.6924,11.6250,total_return,backtest,false
+2023-06,7,IMI.L,IMI,FTSE 100,77.2481,2.3764,total_return,backtest,false
+2023-06,8,MRO.L,Melrose Industries,FTSE 100,75.9335,49.9722,total_return,backtest,false
+2023-06,9,CCEP.L,Coca-Cola Europacific Partners,FTSE 100,70.2736,10.4207,total_return,backtest,false
+2023-06,10,BNZL.L,Bunzl,FTSE 100,66.7862,6.0729,total_return,backtest,false
+2023-07,1,CNA.L,Centrica,FTSE 100,221.7130,16.8788,total_return,backtest,true
+2023-07,2,BGEO.L,Lion Finance Group,FTSE 100,173.7806,6.3636,total_return,backtest,true
+2023-07,3,III.L,3i,FTSE 100,134.2663,15.6380,total_return,backtest,true
+2023-07,4,CPG.L,Compass Group,FTSE 100,108.0880,10.3066,total_return,backtest,false
+2023-07,5,MKS.L,Marks & Spencer,FTSE 100,94.6465,15.3892,total_return,backtest,false
+2023-07,6,MRO.L,Melrose Industries,FTSE 100,90.7462,44.8777,total_return,backtest,false
+2023-07,7,SHEL.L,Shell plc,FTSE 100,82.2211,1.4728,total_return,backtest,false
+2023-07,8,IMI.L,IMI,FTSE 100,77.9152,6.9100,total_return,backtest,false
+2023-07,9,CCEP.L,Coca-Cola Europacific Partners,FTSE 100,74.4731,8.4559,total_return,backtest,false
+2023-07,10,AAF.L,Airtel Africa,FTSE 100,72.7603,1.2207,total_return,backtest,false
+2023-08,1,BGEO.L,Lion Finance Group,FTSE 100,319.5567,9.9662,total_return,backtest,true
+2023-08,2,INVP.L,Investec,FTSE 100,247.5339,10.4444,total_return,backtest,true
+2023-08,3,CNA.L,Centrica,FTSE 100,183.1511,20.5677,total_return,backtest,true
+2023-08,4,GLEN.L,Glencore,FTSE 100,171.5581,0.9701,total_return,backtest,false
+2023-08,5,MRO.L,Melrose Industries,FTSE 100,167.0357,29.5844,total_return,backtest,false
+2023-08,6,RR.L,Rolls-Royce Holdings,FTSE 100,132.5810,21.4919,total_return,backtest,false
+2023-08,7,III.L,3i,FTSE 100,122.4629,11.8846,total_return,backtest,false
+2023-08,8,MKS.L,Marks & Spencer,FTSE 100,117.2036,25.5248,total_return,backtest,false
+2023-08,9,INF.L,Informa,FTSE 100,105.0046,4.9267,total_return,backtest,false
+2023-08,10,STAN.L,Standard Chartered,FTSE 100,93.8536,18.9370,total_return,backtest,false
+2023-09,1,BGEO.L,Lion Finance Group,FTSE 100,279.3810,15.5887,total_return,backtest,true
+2023-09,2,INVP.L,Investec,FTSE 100,238.9235,14.2543,total_return,backtest,true
+2023-09,3,CNA.L,Centrica,FTSE 100,229.7067,28.9843,total_return,backtest,true
+2023-09,4,RR.L,Rolls-Royce Holdings,FTSE 100,168.6801,55.1291,total_return,backtest,false
+2023-09,5,GLEN.L,Glencore,FTSE 100,149.6179,2.4304,total_return,backtest,false
+2023-09,6,SHEL.L,Shell plc,FTSE 100,118.1324,8.6017,total_return,backtest,false
+2023-09,7,MRO.L,Melrose Industries,FTSE 100,116.3065,8.6938,total_return,backtest,false
+2023-09,8,III.L,3i,FTSE 100,112.7449,1.9432,total_return,backtest,false
+2023-09,9,MKS.L,Marks & Spencer,FTSE 100,104.1405,26.9877,total_return,backtest,false
+2023-09,10,BA.L,BAE Systems,FTSE 100,94.1184,8.5434,total_return,backtest,false
+2023-10,1,FCIT.L,F & C Investment Trust,FTSE 100,441.5236,324.9333,total_return,backtest,true
+2023-10,2,RR.L,Rolls-Royce Holdings,FTSE 100,395.1604,46.2430,total_return,backtest,true
+2023-10,3,BGEO.L,Lion Finance Group,FTSE 100,313.8430,26.1538,total_return,backtest,true
+2023-10,4,CNA.L,Centrica,FTSE 100,285.3776,24.6067,total_return,backtest,false
+2023-10,5,INVP.L,Investec,FTSE 100,260.4994,9.2786,total_return,backtest,false
+2023-10,6,GLEN.L,Glencore,FTSE 100,192.5272,5.7143,total_return,backtest,false
+2023-10,7,SHEL.L,Shell plc,FTSE 100,170.6727,11.2487,total_return,backtest,false
+2023-10,8,MKS.L,Marks & Spencer,FTSE 100,142.6169,22.7815,total_return,backtest,false
+2023-10,9,BP.L,BP,FTSE 100,136.3080,15.9376,total_return,backtest,false
+2023-10,10,AAF.L,Airtel Africa,FTSE 100,115.3137,16.5121,total_return,backtest,false
+2023-11,1,CNA.L,Centrica,FTSE 100,323.2466,13.9442,total_return,backtest,true
+2023-11,2,BGEO.L,Lion Finance Group,FTSE 100,271.9021,2.3041,total_return,backtest,true
+2023-11,3,RR.L,Rolls-Royce Holdings,FTSE 100,202.0191,16.5269,total_return,backtest,true
+2023-11,4,BA.L,BAE Systems,FTSE 100,178.3736,18.5312,total_return,backtest,false
+2023-11,5,SHEL.L,Shell plc,FTSE 100,174.4523,11.8555,total_return,backtest,false
+2023-11,6,BP.L,BP,FTSE 100,156.0142,4.0580,total_return,backtest,false
+2023-11,7,MKS.L,Marks & Spencer,FTSE 100,143.2127,5.0897,total_return,backtest,false
+2023-11,8,REL.L,RELX,FTSE 100,87.8821,9.4656,total_return,backtest,false
+2023-11,9,PSON.L,Pearson plc,FTSE 100,86.7320,10.0625,total_return,backtest,false
+2023-11,10,BAB.L,Babcock International,FTSE 100,79.9264,4.3803,total_return,backtest,false
+2023-12,1,INVP.L,Investec,FTSE 100,195.2748,9.7368,total_return,backtest,true
+2023-12,2,RR.L,Rolls-Royce Holdings,FTSE 100,154.3046,20.9177,total_return,backtest,true
+2023-12,3,GLEN.L,Glencore,FTSE 100,108.9662,4.8286,total_return,backtest,true
+2023-12,4,III.L,3i,FTSE 100,108.7396,11.9639,total_return,backtest,false
+2023-12,5,BA.L,BAE Systems,FTSE 100,108.5491,4.2184,total_return,backtest,false
+2023-12,6,SHEL.L,Shell plc,FTSE 100,101.6166,6.1580,total_return,backtest,false
+2023-12,7,MKS.L,Marks & Spencer,FTSE 100,100.0078,10.8907,total_return,backtest,false
+2023-12,8,SGE.L,Sage Group,FTSE 100,87.0009,16.4264,total_return,backtest,false
+2023-12,9,REL.L,RELX,FTSE 100,74.0779,17.9209,total_return,backtest,false
+2023-12,10,DPLM.L,Diploma,FTSE 100,58.0818,6.8922,total_return,backtest,false
+2024-01,1,FCIT.L,F & C Investment Trust,FTSE 100,399.0679,6.1933,total_return,backtest,true
+2024-01,2,BGEO.L,Lion Finance Group,FTSE 100,226.4030,7.7236,total_return,backtest,true
+2024-01,3,INVP.L,Investec,FTSE 100,203.4376,10.4007,total_return,backtest,true
+2024-01,4,RR.L,Rolls-Royce Holdings,FTSE 100,169.3934,35.6722,total_return,backtest,false
+2024-01,5,BA.L,BAE Systems,FTSE 100,127.4243,11.2948,total_return,backtest,false
+2024-01,6,GLEN.L,Glencore,FTSE 100,103.0285,0.4682,total_return,backtest,false
+2024-01,7,SGE.L,Sage Group,FTSE 100,101.6129,18.5541,total_return,backtest,false
+2024-01,8,MKS.L,Marks & Spencer,FTSE 100,99.8612,15.1310,total_return,backtest,false
+2024-01,9,REL.L,RELX,FTSE 100,73.6155,12.0721,total_return,backtest,false
+2024-01,10,AAF.L,Airtel Africa,FTSE 100,72.4232,3.6624,total_return,backtest,false
+2024-02,1,BGEO.L,Lion Finance Group,FTSE 100,231.1667,13.9640,total_return,backtest,true
+2024-02,2,RR.L,Rolls-Royce Holdings,FTSE 100,228.4622,39.8329,total_return,backtest,true
+2024-02,3,INVP.L,Investec,FTSE 100,192.3998,14.1855,total_return,backtest,true
+2024-02,4,BA.L,BAE Systems,FTSE 100,154.9705,6.6123,total_return,backtest,false
+2024-02,5,III.L,3i,FTSE 100,123.2521,28.1468,total_return,backtest,false
+2024-02,6,SGE.L,Sage Group,FTSE 100,99.8618,21.3682,total_return,backtest,false
+2024-02,7,BAB.L,Babcock International,FTSE 100,94.2571,15.8137,total_return,backtest,false
+2024-02,8,REL.L,RELX,FTSE 100,80.0916,13.7378,total_return,backtest,false
+2024-02,9,MKS.L,Marks & Spencer,FTSE 100,74.7154,14.0683,total_return,backtest,false
+2024-02,10,IHG.L,IHG Hotels & Resorts,FTSE 100,71.1981,29.0878,total_return,backtest,false
+2024-03,1,BGEO.L,Lion Finance Group,FTSE 100,372.7887,36.5217,total_return,backtest,true
+2024-03,2,RR.L,Rolls-Royce Holdings,FTSE 100,242.7112,37.3140,total_return,backtest,true
+2024-03,3,BA.L,BAE Systems,FTSE 100,156.9304,18.2857,total_return,backtest,true
+2024-03,4,III.L,3i,FTSE 100,123.1650,10.5735,total_return,backtest,false
+2024-03,5,SGE.L,Sage Group,FTSE 100,122.9376,10.0840,total_return,backtest,false
+2024-03,6,REL.L,RELX,FTSE 100,104.6257,13.8487,total_return,backtest,false
+2024-03,7,BAB.L,Babcock International,FTSE 100,88.6102,24.0628,total_return,backtest,false
+2024-03,8,IHG.L,IHG Hotels & Resorts,FTSE 100,72.8909,37.0176,total_return,backtest,false
+2024-03,9,MRO.L,Melrose Industries,FTSE 100,64.4293,22.4450,total_return,backtest,false
+2024-03,10,PSH.L,Pershing Square Holdings,FTSE 100,60.2281,26.3631,total_return,backtest,false
+2024-04,1,FCIT.L,F & C Investment Trust,FTSE 100,439.0112,9.9249,total_return,backtest,true
+2024-04,2,BGEO.L,Lion Finance Group,FTSE 100,359.9128,27.0440,total_return,backtest,true
+2024-04,3,RR.L,Rolls-Royce Holdings,FTSE 100,305.2231,42.3757,total_return,backtest,true
+2024-04,4,BA.L,BAE Systems,FTSE 100,167.5045,21.5218,total_return,backtest,false
+2024-04,5,BAB.L,Babcock International,FTSE 100,127.4812,31.6456,total_return,backtest,false
+2024-04,6,SGE.L,Sage Group,FTSE 100,106.6487,7.9318,total_return,backtest,false
+2024-04,7,REL.L,RELX,FTSE 100,88.3599,10.0965,total_return,backtest,false
+2024-04,8,SHEL.L,Shell plc,FTSE 100,85.8883,2.0805,total_return,backtest,false
+2024-04,9,MRO.L,Melrose Industries,FTSE 100,73.2340,18.6112,total_return,backtest,false
+2024-04,10,IHG.L,IHG Hotels & Resorts,FTSE 100,70.9667,16.2482,total_return,backtest,false
+2024-05,1,BGEO.L,Lion Finance Group,FTSE 100,427.3612,41.7655,total_return,backtest,true
+2024-05,2,RR.L,Rolls-Royce Holdings,FTSE 100,294.8577,37.1514,total_return,backtest,true
+2024-05,3,BA.L,BAE Systems,FTSE 100,163.5727,13.2540,total_return,backtest,true
+2024-05,4,III.L,3i,FTSE 100,124.5584,16.0145,total_return,backtest,false
+2024-05,5,SHEL.L,Shell plc,FTSE 100,109.9904,17.0004,total_return,backtest,false
+2024-05,6,BAB.L,Babcock International,FTSE 100,76.1615,12.1299,total_return,backtest,false
+2024-05,7,REL.L,RELX,FTSE 100,75.8241,1.2569,total_return,backtest,false
+2024-05,8,BP.L,BP,FTSE 100,71.9825,12.5311,total_return,backtest,false
+2024-05,9,MRO.L,Melrose Industries,FTSE 100,66.6115,6.9397,total_return,backtest,false
+2024-05,10,MKS.L,Marks & Spencer,FTSE 100,61.9051,3.4371,total_return,backtest,false
+2024-06,1,RR.L,Rolls-Royce Holdings,FTSE 100,323.6592,22.8393,total_return,backtest,true
+2024-06,2,BA.L,BAE Systems,FTSE 100,164.5762,12.0773,total_return,backtest,true
+2024-06,3,CNA.L,Centrica,FTSE 100,159.1172,12.4752,total_return,backtest,true
+2024-06,4,III.L,3i,FTSE 100,130.5573,16.0049,total_return,backtest,false
+2024-06,5,SHEL.L,Shell plc,FTSE 100,109.1876,14.4282,total_return,backtest,false
+2024-06,6,BAB.L,Babcock International,FTSE 100,89.0752,15.4553,total_return,backtest,false
+2024-06,7,MKS.L,Marks & Spencer,FTSE 100,82.6070,27.5338,total_return,backtest,false
+2024-06,8,INVP.L,Investec,FTSE 100,78.5772,5.1511,total_return,backtest,false
+2024-06,9,BP.L,BP,FTSE 100,59.6642,5.9583,total_return,backtest,false
+2024-06,10,INF.L,Informa,FTSE 100,55.8807,4.6408,total_return,backtest,false
+2024-07,1,FCIT.L,F & C Investment Trust,FTSE 100,420.4179,1.9706,total_return,backtest,true
+2024-07,2,RR.L,Rolls-Royce Holdings,FTSE 100,361.7872,7.0541,total_return,backtest,true
+2024-07,3,CNA.L,Centrica,FTSE 100,162.2999,5.6796,total_return,backtest,true
+2024-07,4,INVP.L,Investec,FTSE 100,112.5924,7.8819,total_return,backtest,false
+2024-07,5,SHEL.L,Shell plc,FTSE 100,96.1124,7.9619,total_return,backtest,false
+2024-07,6,MKS.L,Marks & Spencer,FTSE 100,95.6506,8.0724,total_return,backtest,false
+2024-07,7,REL.L,RELX,FTSE 100,89.7467,6.2792,total_return,backtest,false
+2024-07,8,IHG.L,IHG Hotels & Resorts,FTSE 100,80.0177,1.0192,total_return,backtest,false
+2024-07,9,BAB.L,Babcock International,FTSE 100,80.0076,0.3846,total_return,backtest,false
+2024-07,10,INF.L,Informa,FTSE 100,70.6769,2.9596,total_return,backtest,false
+2024-08,1,RR.L,Rolls-Royce Holdings,FTSE 100,350.9078,8.8356,total_return,backtest,true
+2024-08,2,CNA.L,Centrica,FTSE 100,191.6825,3.5952,total_return,backtest,true
+2024-08,3,III.L,3i,FTSE 100,144.6982,8.7622,total_return,backtest,true
+2024-08,4,MKS.L,Marks & Spencer,FTSE 100,142.3134,28.3425,total_return,backtest,false
+2024-08,5,INVP.L,Investec,FTSE 100,140.3520,20.3324,total_return,backtest,false
+2024-08,6,BAB.L,Babcock International,FTSE 100,107.5117,4.6305,total_return,backtest,false
+2024-08,7,STAN.L,Standard Chartered,FTSE 100,77.7454,11.2206,total_return,backtest,false
+2024-08,8,HSBA.L,HSBC,FTSE 100,77.4794,1.2076,total_return,backtest,false
+2024-08,9,INF.L,Informa,FTSE 100,75.6607,9.2234,total_return,backtest,false
+2024-08,10,REL.L,RELX,FTSE 100,73.8534,11.2019,total_return,backtest,false
+2024-09,1,FCIT.L,F & C Investment Trust,FTSE 100,387.4795,332.7406,total_return,backtest,true
+2024-09,2,RR.L,Rolls-Royce Holdings,FTSE 100,332.1783,9.4839,total_return,backtest,true
+2024-09,3,BGEO.L,Lion Finance Group,FTSE 100,173.0356,22.6415,total_return,backtest,true
+2024-09,4,III.L,3i,FTSE 100,137.9037,11.0374,total_return,backtest,false
+2024-09,5,INVP.L,Investec,FTSE 100,102.4652,11.7647,total_return,backtest,false
+2024-09,6,MKS.L,Marks & Spencer,FTSE 100,90.6607,13.3113,total_return,backtest,false
+2024-09,7,STAN.L,Standard Chartered,FTSE 100,71.5304,0.2573,total_return,backtest,false
+2024-09,8,REL.L,RELX,FTSE 100,62.2878,3.6007,total_return,backtest,false
+2024-09,9,CPG.L,Compass Group,FTSE 100,59.4063,13.1968,total_return,backtest,false
+2024-09,10,AZN.L,AstraZeneca,FTSE 100,56.0098,8.8925,total_return,backtest,false
+2024-10,1,RR.L,Rolls-Royce Holdings,FTSE 100,276.1952,15.4116,total_return,backtest,true
+2024-10,2,III.L,3i,FTSE 100,158.1412,15258.7345,total_return,backtest,true
+2024-10,3,MKS.L,Marks & Spencer,FTSE 100,103.0732,30.0524,total_return,backtest,true
+2024-10,4,STAN.L,Standard Chartered,FTSE 100,82.0487,10.7542,total_return,backtest,false
+2024-10,5,CPG.L,Compass Group,FTSE 100,63.1236,17.2956,total_return,backtest,false
+2024-10,6,BBY.L,Balfour Beatty,FTSE 100,59.1213,17.9628,total_return,backtest,false
+2024-10,7,DPLM.L,Diploma,FTSE 100,56.0981,6.8949,total_return,backtest,false
+2024-10,8,CCEP.L,Coca-Cola Europacific Partners,FTSE 100,47.4547,3.5191,total_return,backtest,false
+2024-10,9,AUTO.L,Autotrader Group,FTSE 100,47.4416,8.3125,total_return,backtest,false
+2024-10,10,BNZL.L,Bunzl,FTSE 100,44.0407,17.4086,total_return,backtest,false
+2024-11,1,RR.L,Rolls-Royce Holdings,FTSE 100,306.0983,19.0836,total_return,backtest,true
+2024-11,2,III.L,3i,FTSE 100,132.7680,1.4066,total_return,backtest,true
+2024-11,3,MKS.L,Marks & Spencer,FTSE 100,104.7057,14.4685,total_return,backtest,true
+2024-11,4,PSON.L,Pearson plc,FTSE 100,89.3012,7.9072,total_return,backtest,false
+2024-11,5,STAN.L,Standard Chartered,FTSE 100,82.1038,17.3618,total_return,backtest,false
+2024-11,6,BBY.L,Balfour Beatty,FTSE 100,75.3032,5.6030,total_return,backtest,false
+2024-11,7,IHG.L,IHG Hotels & Resorts,FTSE 100,74.6813,9.2092,total_return,backtest,false
+2024-11,8,HSBA.L,HSBC,FTSE 100,61.5177,1.0938,total_return,backtest,false
+2024-11,9,CPG.L,Compass Group,FTSE 100,58.7671,5.9642,total_return,backtest,false
+2024-11,10,IMB.L,Imperial Brands,FTSE 100,51.9011,9.0019,total_return,backtest,false
+2024-12,1,FCIT.L,F & C Investment Trust,FTSE 100,422.3466,7.5110,total_return,backtest,true
+2024-12,2,RR.L,Rolls-Royce Holdings,FTSE 100,356.0001,12.5302,total_return,backtest,true
+2024-12,3,BGEO.L,Lion Finance Group,FTSE 100,204.4831,2.9670,total_return,backtest,true
+2024-12,4,III.L,3i,FTSE 100,167.6830,16.6719,total_return,backtest,false
+2024-12,5,STAN.L,Standard Chartered,FTSE 100,133.8535,24.7626,total_return,backtest,false
+2024-12,6,IHG.L,IHG Hotels & Resorts,FTSE 100,130.0036,29.2195,total_return,backtest,false
+2024-12,7,PSON.L,Pearson plc,FTSE 100,108.0108,16.7614,total_return,backtest,false
+2024-12,8,IAG.L,International Airlines Group,FTSE 100,104.6462,42.5137,total_return,backtest,false
+2024-12,9,BBY.L,Balfour Beatty,FTSE 100,92.8237,7.4940,total_return,backtest,false
+2024-12,10,MRO.L,Melrose Industries,FTSE 100,88.8621,19.1949,total_return,backtest,false
+2025-01,1,RR.L,Rolls-Royce Holdings,FTSE 100,362.7277,7.8528,total_return,backtest,true
+2025-01,2,BGEO.L,Lion Finance Group,FTSE 100,182.9846,28.1633,total_return,backtest,true
+2025-01,3,III.L,3i,FTSE 100,146.1792,7.8366,total_return,backtest,true
+2025-01,4,STAN.L,Standard Chartered,FTSE 100,120.6764,24.6658,total_return,backtest,false
+2025-01,5,IHG.L,IHG Hotels & Resorts,FTSE 100,117.3952,22.3451,total_return,backtest,false
+2025-01,6,IAG.L,International Airlines Group,FTSE 100,111.9236,46.9815,total_return,backtest,false
+2025-01,7,PSON.L,Pearson plc,FTSE 100,109.2232,26.4924,total_return,backtest,false
+2025-01,8,CNA.L,Centrica,FTSE 100,86.9875,14.5306,total_return,backtest,false
+2025-01,9,HSBA.L,HSBC,FTSE 100,75.3996,17.3491,total_return,backtest,false
+2025-01,10,BBY.L,Balfour Beatty,FTSE 100,73.7504,5.5710,total_return,backtest,false
+2025-02,1,RR.L,Rolls-Royce Holdings,FTSE 100,429.2576,13.1864,total_return,backtest,true
+2025-02,2,BGEO.L,Lion Finance Group,FTSE 100,224.6105,14.3029,total_return,backtest,true
+2025-02,3,III.L,3i,FTSE 100,185.2143,23.0769,total_return,backtest,true
+2025-02,4,IHG.L,IHG Hotels & Resorts,FTSE 100,132.4198,26.3724,total_return,backtest,false
+2025-02,5,PSON.L,Pearson plc,FTSE 100,118.3846,17.8148,total_return,backtest,false
+2025-02,6,IAG.L,International Airlines Group,FTSE 100,116.6376,60.2181,total_return,backtest,false
+2025-02,7,STAN.L,Standard Chartered,FTSE 100,103.6157,21.2794,total_return,backtest,false
+2025-02,8,CNA.L,Centrica,FTSE 100,97.1827,21.4834,total_return,backtest,false
+2025-02,9,MRO.L,Melrose Industries,FTSE 100,96.2069,29.0947,total_return,backtest,false
+2025-02,10,SGE.L,Sage Group,FTSE 100,87.1273,39.0551,total_return,backtest,false
+2025-03,1,RR.L,Rolls-Royce Holdings,FTSE 100,618.8409,33.1901,total_return,backtest,true
+2025-03,2,BGEO.L,Lion Finance Group,FTSE 100,302.2336,12.9136,total_return,backtest,true
+2025-03,3,III.L,3i,FTSE 100,196.5543,6.6864,total_return,backtest,true
+2025-03,4,STAN.L,Standard Chartered,FTSE 100,138.3584,30.5019,total_return,backtest,false
+2025-03,5,IAG.L,International Airlines Group,FTSE 100,137.1815,35.0844,total_return,backtest,false
+2025-03,6,PSON.L,Pearson plc,FTSE 100,110.2649,10.4217,total_return,backtest,false
+2025-03,7,MRO.L,Melrose Industries,FTSE 100,106.1398,11.5947,total_return,backtest,false
+2025-03,8,BAB.L,Babcock International,FTSE 100,102.5968,30.5745,total_return,backtest,false
+2025-03,9,IHG.L,IHG Hotels & Resorts,FTSE 100,97.9855,1.3061,total_return,backtest,false
+2025-03,10,BA.L,BAE Systems,FTSE 100,95.6183,14.6292,total_return,backtest,false
+2025-04,1,RR.L,Rolls-Royce Holdings,FTSE 100,640.8509,31.7270,total_return,backtest,true
+2025-04,2,BGEO.L,Lion Finance Group,FTSE 100,360.5898,15.9236,total_return,backtest,true
+2025-04,3,III.L,3i,FTSE 100,160.6541,1.4590,total_return,backtest,true
+2025-04,4,STAN.L,Standard Chartered,FTSE 100,123.5679,15.2640,total_return,backtest,false
+2025-04,5,BAB.L,Babcock International,FTSE 100,123.1442,44.6553,total_return,backtest,false
+2025-04,6,CCH.L,Coca-Cola HBC,FTSE 100,119.2961,28.2577,total_return,backtest,false
+2025-04,7,BA.L,BAE Systems,FTSE 100,117.5630,35.7858,total_return,backtest,false
+2025-04,8,NWG.L,NatWest Group,FTSE 100,94.7739,12.3601,total_return,backtest,false
+2025-04,9,BARC.L,Barclays,FTSE 100,94.3041,7.3280,total_return,backtest,false
+2025-04,10,GAW.L,Games Workshop,FTSE 100,92.8198,5.1089,total_return,backtest,false
+2025-05,1,RR.L,Rolls-Royce Holdings,FTSE 100,805.5861,24.4554,total_return,backtest,true
+2025-05,2,BGEO.L,Lion Finance Group,FTSE 100,389.6558,26.1830,total_return,backtest,true
+2025-05,3,III.L,3i,FTSE 100,219.8284,8.4529,total_return,backtest,true
+2025-05,4,MKS.L,Marks & Spencer,FTSE 100,182.4327,15.8428,total_return,backtest,false
+2025-05,5,BAB.L,Babcock International,FTSE 100,162.4394,49.4424,total_return,backtest,false
+2025-05,6,CCH.L,Coca-Cola HBC,FTSE 100,138.4155,38.7900,total_return,backtest,false
+2025-05,7,BA.L,BAE Systems,FTSE 100,134.5679,41.7075,total_return,backtest,false
+2025-05,8,GAW.L,Games Workshop,FTSE 100,108.2351,5.8379,total_return,backtest,false
+2025-05,9,NXT.L,Next plc,FTSE 100,104.7832,23.8947,total_return,backtest,false
+2025-05,10,NWG.L,NatWest Group,FTSE 100,104.1692,10.4133,total_return,backtest,false
+2025-06,1,RR.L,Rolls-Royce Holdings,FTSE 100,899.2755,16.4247,total_return,backtest,true
+2025-06,2,FCIT.L,F & C Investment Trust,FTSE 100,442.7738,295.7661,total_return,backtest,true
+2025-06,3,BGEO.L,Lion Finance Group,FTSE 100,317.3594,26.2760,total_return,backtest,true
+2025-06,4,III.L,3i,FTSE 100,221.0385,2.9062,total_return,backtest,false
+2025-06,5,BAB.L,Babcock International,FTSE 100,177.2906,39.5973,total_return,backtest,false
+2025-06,6,BA.L,BAE Systems,FTSE 100,151.7101,35.1937,total_return,backtest,false
+2025-06,7,MKS.L,Marks & Spencer,FTSE 100,149.8996,5.5242,total_return,backtest,false
+2025-06,8,CCH.L,Coca-Cola HBC,FTSE 100,121.2890,14.9405,total_return,backtest,false
+2025-06,9,NWG.L,NatWest Group,FTSE 100,113.9685,9.5656,total_return,backtest,false
+2025-06,10,GAW.L,Games Workshop,FTSE 100,109.1296,7.2028,total_return,backtest,false
+2025-07,1,RR.L,Rolls-Royce Holdings,FTSE 100,1066.5823,29.1856,total_return,backtest,true
+2025-07,2,BGEO.L,Lion Finance Group,FTSE 100,443.0341,29.6703,total_return,backtest,true
+2025-07,3,III.L,3i,FTSE 100,271.9486,13.9381,total_return,backtest,true
+2025-07,4,BAB.L,Babcock International,FTSE 100,271.8145,58.5635,total_return,backtest,false
+2025-07,5,IAG.L,International Airlines Group,FTSE 100,217.1498,30.8282,total_return,backtest,false
+2025-07,6,GAW.L,Games Workshop,FTSE 100,143.1330,15.9400,total_return,backtest,false
+2025-07,7,BA.L,BAE Systems,FTSE 100,127.4050,20.9683,total_return,backtest,false
+2025-07,8,BARC.L,Barclays,FTSE 100,120.5550,17.1994,total_return,backtest,false
+2025-07,9,DPLM.L,Diploma,FTSE 100,119.4977,27.0931,total_return,backtest,false
+2025-07,10,NWG.L,NatWest Group,FTSE 100,118.0440,13.1917,total_return,backtest,false
+2025-08,1,RR.L,Rolls-Royce Holdings,FTSE 100,1100.9506,42.1374,total_return,backtest,true
+2025-08,2,BGEO.L,Lion Finance Group,FTSE 100,406.6134,26.9167,total_return,backtest,true
+2025-08,3,IAG.L,International Airlines Group,FTSE 100,220.5576,46.3462,total_return,backtest,true
+2025-08,4,BAB.L,Babcock International,FTSE 100,203.4894,29.2289,total_return,backtest,false
+2025-08,5,STAN.L,Standard Chartered,FTSE 100,141.3798,26.4405,total_return,backtest,false
+2025-08,6,BARC.L,Barclays,FTSE 100,136.5159,25.1011,total_return,backtest,false
+2025-08,7,BA.L,BAE Systems,FTSE 100,134.4616,4.0069,total_return,backtest,false
+2025-08,8,GAW.L,Games Workshop,FTSE 100,110.6164,5.7106,total_return,backtest,false
+2025-08,9,NWG.L,NatWest Group,FTSE 100,97.3090,10.2049,total_return,backtest,false
+2025-08,10,CCH.L,Coca-Cola HBC,FTSE 100,96.3026,1.1795,total_return,backtest,false
+2025-09,1,RR.L,Rolls-Royce Holdings,FTSE 100,1289.7832,23.5281,total_return,backtest,true
+2025-09,2,FCIT.L,F & C Investment Trust,FTSE 100,456.4853,6.9417,total_return,backtest,true
+2025-09,3,BGEO.L,Lion Finance Group,FTSE 100,267.2026,9.7305,total_return,backtest,true
+2025-09,4,IAG.L,International Airlines Group,FTSE 100,253.1979,17.1726,total_return,backtest,false
+2025-09,5,BAB.L,Babcock International,FTSE 100,208.8727,8.5470,total_return,backtest,false
+2025-09,6,FRES.L,Fresnillo plc,FTSE 100,159.8852,53.7403,total_return,backtest,false
+2025-09,7,STAN.L,Standard Chartered,FTSE 100,131.9329,19.6891,total_return,backtest,false
+2025-09,8,PSH.L,Pershing Square Holdings,FTSE 100,122.1372,58.2794,total_return,backtest,false
+2025-09,9,BARC.L,Barclays,FTSE 100,119.3458,10.0458,total_return,backtest,false
+2025-09,10,GAW.L,Games Workshop,FTSE 100,117.7314,0.7828,total_return,backtest,false
+2025-10,1,RR.L,Rolls-Royce Holdings,FTSE 100,1610.2293,22.9847,total_return,backtest,true
+2025-10,2,BAB.L,Babcock International,FTSE 100,377.4767,15.8537,total_return,backtest,true
+2025-10,3,IAG.L,International Airlines Group,FTSE 100,307.9774,13.1594,total_return,backtest,true
+2025-10,4,BGEO.L,Lion Finance Group,FTSE 100,285.6169,8.0508,total_return,backtest,false
+2025-10,5,MKS.L,Marks & Spencer,FTSE 100,269.4496,2.8499,total_return,backtest,false
+2025-10,6,FRES.L,Fresnillo plc,FTSE 100,207.0817,63.8889,total_return,backtest,false
+2025-10,7,MRO.L,Melrose Industries,FTSE 100,183.9734,14.6948,total_return,backtest,false
+2025-10,8,BARC.L,Barclays,FTSE 100,163.3726,12.5408,total_return,backtest,false
+2025-10,9,BA.L,BAE Systems,FTSE 100,160.8947,9.1439,total_return,backtest,false
+2025-10,10,STAN.L,Standard Chartered,FTSE 100,153.5240,18.9312,total_return,backtest,false
+2025-11,1,RR.L,Rolls-Royce Holdings,FTSE 100,1393.4672,8.8619,total_return,backtest,true
+2025-11,2,BAB.L,Babcock International,FTSE 100,340.2135,16.7469,total_return,backtest,true
+2025-11,3,III.L,3i,FTSE 100,279.4277,5.9986,total_return,backtest,true
+2025-11,4,BGEO.L,Lion Finance Group,FTSE 100,277.3866,5.1215,total_return,backtest,false
+2025-11,5,MKS.L,Marks & Spencer,FTSE 100,277.1368,14.3103,total_return,backtest,false
+2025-11,6,IAG.L,International Airlines Group,FTSE 100,243.8984,9.8292,total_return,backtest,false
+2025-11,7,FRES.L,Fresnillo plc,FTSE 100,205.0687,58.7143,total_return,backtest,false
+2025-11,8,STAN.L,Standard Chartered,FTSE 100,200.0963,14.6270,total_return,backtest,false
+2025-11,9,NXT.L,Next plc,FTSE 100,190.3388,16.1657,total_return,backtest,false
+2025-11,10,BARC.L,Barclays,FTSE 100,175.7707,9.6149,total_return,backtest,false
+2025-12,1,FCIT.L,F & C Investment Trust,FTSE 100,459.4110,6.5208,total_return,backtest,true
+2025-12,2,BAB.L,Babcock International,FTSE 100,299.2999,11.5157,total_return,backtest,true
+2025-12,3,BGEO.L,Lion Finance Group,FTSE 100,254.7902,22.2374,total_return,backtest,true
+2025-12,4,IAG.L,International Airlines Group,FTSE 100,194.9146,3.7163,total_return,backtest,false
+2025-12,5,FRES.L,Fresnillo plc,FTSE 100,193.7069,47.3154,total_return,backtest,false
+2025-12,6,MKS.L,Marks & Spencer,FTSE 100,188.4957,0.6659,total_return,backtest,false
+2025-12,7,PCT.L,Polar Capital Technology Trust,FTSE 100,175.5123,18.4904,total_return,backtest,false
+2025-12,8,STAN.L,Standard Chartered,FTSE 100,171.3343,20.7431,total_return,backtest,false
+2025-12,9,BARC.L,Barclays,FTSE 100,167.1521,19.3812,total_return,backtest,false
+2025-12,10,GAW.L,Games Workshop,FTSE 100,163.8654,25.6311,total_return,backtest,false
+2026-01,1,FRES.L,Fresnillo plc,FTSE 100,270.0296,41.2712,total_return,backtest,true
+2026-01,2,BGEO.L,Lion Finance Group,FTSE 100,257.6793,21.5686,total_return,backtest,true
+2026-01,3,IAG.L,International Airlines Group,FTSE 100,234.6992,7.3038,total_return,backtest,true
+2026-01,4,AAF.L,Airtel Africa,FTSE 100,218.0659,45.5738,total_return,backtest,false
+2026-01,5,BARC.L,Barclays,FTSE 100,200.5992,25.3820,total_return,backtest,false
+2026-01,6,STAN.L,Standard Chartered,FTSE 100,193.0383,26.9244,total_return,backtest,false
+2026-01,7,PCT.L,Polar Capital Technology Trust,FTSE 100,169.1415,6.0571,total_return,backtest,false
+2026-01,8,NWG.L,NatWest Group,FTSE 100,146.2135,24.9617,total_return,backtest,false
+2026-01,9,NXT.L,Next plc,FTSE 100,135.7840,10.5455,total_return,backtest,false
+2026-01,10,IHG.L,IHG Hotels & Resorts,FTSE 100,129.2257,16.5590,total_return,backtest,false
+2026-02,1,RR.L,Rolls-Royce Holdings,FTSE 100,1045.4040,3.7704,total_return,backtest,true
+2026-02,2,FCIT.L,F & C Investment Trust,FTSE 100,447.7268,321.7850,total_return,backtest,true
+2026-02,3,BAB.L,Babcock International,FTSE 100,369.9742,18.3017,total_return,backtest,true
+2026-02,4,FRES.L,Fresnillo plc,FTSE 100,351.0896,66.6067,total_return,backtest,false
+2026-02,5,BGEO.L,Lion Finance Group,FTSE 100,278.6156,26.0462,total_return,backtest,false
+2026-02,6,PCT.L,Polar Capital Technology Trust,FTSE 100,184.4127,12.8101,total_return,backtest,false
+2026-02,7,STAN.L,Standard Chartered,FTSE 100,174.4275,19.3972,total_return,backtest,false
+2026-02,8,AAF.L,Airtel Africa,FTSE 100,172.6600,15.4013,total_return,backtest,false
+2026-02,9,BARC.L,Barclays,FTSE 100,161.9307,19.4595,total_return,backtest,false
+2026-02,10,IAG.L,International Airlines Group,FTSE 100,147.8635,0.0718,total_return,backtest,false
+2026-03,1,RR.L,Rolls-Royce Holdings,FTSE 100,820.1501,24.8596,total_return,backtest,true
+2026-03,2,FCIT.L,F & C Investment Trust,FTSE 100,475.9573,4.6297,total_return,backtest,true
+2026-03,3,FRES.L,Fresnillo plc,FTSE 100,455.8976,60.9719,total_return,backtest,true
+2026-03,4,BGEO.L,Lion Finance Group,FTSE 100,317.6323,29.7991,total_return,backtest,false
+2026-03,5,BAB.L,Babcock International,FTSE 100,312.0306,19.3292,total_return,backtest,false
+2026-03,6,EDV.L,Endeavour Mining,FTSE 100,212.1510,51.5759,total_return,backtest,false
+2026-03,7,AAF.L,Airtel Africa,FTSE 100,189.7107,12.2909,total_return,backtest,false
+2026-03,8,PCT.L,Polar Capital Technology Trust,FTSE 100,188.7333,8.6014,total_return,backtest,false
+2026-03,9,ANTO.L,Antofagasta plc,FTSE 100,175.8359,56.9253,total_return,backtest,false
+2026-03,10,IAG.L,International Airlines Group,FTSE 100,173.8700,6.9140,total_return,backtest,false
+2026-04,1,PCT.L,Polar Capital Technology Trust,FTSE 100,140.0000,3.4483,total_return,backtest,true
+2026-04,2,BA.L,BAE Systems,FTSE 100,124.0513,28.3547,total_return,backtest,true
+2026-04,3,EDV.L,Endeavour Mining,FTSE 100,123.5674,15.1860,total_return,backtest,true
+2026-04,4,HSBA.L,HSBC,FTSE 100,122.7079,4.0722,total_return,backtest,false
+2026-04,5,DPLM.L,Diploma,FTSE 100,112.3701,12.6534,total_return,backtest,false
+2026-04,6,ANTO.L,Antofagasta plc,FTSE 100,110.5640,1.4639,total_return,backtest,false
+2026-04,7,IGG.L,IG Group,FTSE 100,105.3068,8.8973,total_return,backtest,false
+2026-04,8,BBY.L,Balfour Beatty,FTSE 100,103.1756,6.3291,total_return,backtest,false
+2026-04,9,MKS.L,Marks & Spencer,FTSE 100,103.1615,2.7879,total_return,backtest,false
+2026-04,10,CNA.L,Centrica,FTSE 100,100.5526,25.3318,total_return,backtest,false
+2026-05,1,BGEO.L,Lion Finance Group,FTSE 100,273.7059,9.4153,total_return,backtest,true
+2026-05,2,PCT.L,Polar Capital Technology Trust,FTSE 100,210.8247,12.1777,total_return,backtest,true
+2026-05,3,STAN.L,Standard Chartered,FTSE 100,196.7745,0.0430,total_return,backtest,true
+2026-05,4,AAF.L,Airtel Africa,FTSE 100,195.5846,11.0902,total_return,backtest,false
+2026-05,5,DPLM.L,Diploma,FTSE 100,158.4894,30.4511,total_return,backtest,false
+2026-05,6,HSBA.L,HSBC,FTSE 100,135.6046,4.9479,total_return,backtest,false
+2026-05,7,EDV.L,Endeavour Mining,FTSE 100,114.8107,4.5476,total_return,backtest,false
+2026-05,8,BBY.L,Balfour Beatty,FTSE 100,113.2312,14.2857,total_return,backtest,false
+2026-05,9,IGG.L,IG Group,FTSE 100,105.2417,11.1686,total_return,backtest,false
+2026-05,10,BA.L,BAE Systems,FTSE 100,101.5588,3.4701,total_return,backtest,false
+2026-06,1,RR.L,Rolls-Royce Holdings,FTSE 100,833.4440,0.2925,total_return,backtest,true
+2026-06,2,PCT.L,Polar Capital Technology Trust,FTSE 100,249.2127,37.6373,total_return,backtest,true
+2026-06,3,STAN.L,Standard Chartered,FTSE 100,214.9906,8.8155,total_return,backtest,true
+2026-06,4,BARC.L,Barclays,FTSE 100,202.9000,1.1262,total_return,backtest,false
+2026-06,5,AAF.L,Airtel Africa,FTSE 100,196.1368,1.0315,total_return,backtest,false
+2026-06,6,IAG.L,International Airlines Group,FTSE 100,178.6912,1.5105,total_return,backtest,false
+2026-06,7,IGG.L,IG Group,FTSE 100,167.5481,37.9708,total_return,backtest,false
+2026-06,8,HSBA.L,HSBC,FTSE 100,136.4925,0.0000,total_return,backtest,false
+2026-06,9,DPLM.L,Diploma,FTSE 100,130.6345,23.1718,total_return,backtest,false
+2026-06,10,IHG.L,IHG Hotels & Resorts,FTSE 100,125.0206,12.1091,total_return,backtest,false
+2026-07,1,RR.L,Rolls-Royce Holdings,FTSE 100,856.5331,27.6148,total_return,backtest,true
+2026-07,2,BGEO.L,Lion Finance Group,FTSE 100,287.9255,22.0905,total_return,backtest,true
+2026-07,3,BARC.L,Barclays,FTSE 100,230.6218,30.0809,total_return,backtest,true
+2026-07,4,PCT.L,Polar Capital Technology Trust,FTSE 100,223.3560,48.5417,total_return,backtest,false
+2026-07,5,STAN.L,Standard Chartered,FTSE 100,199.1706,31.2540,total_return,backtest,false
+2026-07,6,IAG.L,International Airlines Group,FTSE 100,195.1023,36.5066,total_return,backtest,false
+2026-07,7,NWG.L,NatWest Group,FTSE 100,177.4896,20.5712,total_return,backtest,false
+2026-07,8,IGG.L,IG Group,FTSE 100,168.9750,26.9553,total_return,backtest,false
+2026-07,9,ANTO.L,Antofagasta plc,FTSE 100,161.5816,14.8182,total_return,backtest,false
+2026-07,10,LLOY.L,Lloyds Banking Group,FTSE 100,155.2469,20.3162,total_return,backtest,false
+2026-08,1,RR.L,Rolls-Royce Holdings,FTSE 100,694.1826,24.1794,total_return,backtest,true
+2026-08,2,BGEO.L,Lion Finance Group,FTSE 100,257.2116,5.1630,total_return,backtest,true
+2026-08,3,BARC.L,Barclays,FTSE 100,228.6071,17.9047,total_return,backtest,true
+2026-08,4,BAB.L,Babcock International,FTSE 100,199.4753,1.5859,total_return,backtest,false
+2026-08,5,STAN.L,Standard Chartered,FTSE 100,193.0831,17.4576,total_return,backtest,false
+2026-08,6,NWG.L,NatWest Group,FTSE 100,189.4246,20.6083,total_return,backtest,false
+2026-08,7,PCT.L,Polar Capital Technology Trust,FTSE 100,170.6263,3.8972,total_return,backtest,false
+2026-08,8,LLOY.L,Lloyds Banking Group,FTSE 100,155.6299,15.0567,total_return,backtest,false
+2026-08,9,IAG.L,International Airlines Group,FTSE 100,152.5685,15.9774,total_return,backtest,false
+2026-08,10,BBY.L,Balfour Beatty,FTSE 100,147.0411,5.6985,total_return,backtest,false
+2026-09,1,RR.L,Rolls-Royce Holdings,FTSE 100,588.4912,14.4160,total_return,backtest,true
+2026-09,2,BGEO.L,Lion Finance Group,FTSE 100,285.6506,20.7921,total_return,backtest,true
+2026-09,3,BARC.L,Barclays,FTSE 100,237.3461,8.4507,total_return,backtest,true
+2026-09,4,STAN.L,Standard Chartered,FTSE 100,206.2841,9.2049,total_return,backtest,false
+2026-09,5,NWG.L,NatWest Group,FTSE 100,195.3882,13.3467,total_return,backtest,false
+2026-09,6,EDV.L,Endeavour Mining,FTSE 100,194.3684,3.2216,total_return,backtest,false
+2026-09,7,IAG.L,International Airlines Group,FTSE 100,170.6472,1.8833,total_return,backtest,false
+2026-09,8,BBY.L,Balfour Beatty,FTSE 100,170.5313,11.0483,total_return,backtest,false
+2026-09,9,HSBA.L,HSBC,FTSE 100,162.6391,9.6728,total_return,backtest,false
+2026-09,10,CCC.L,Computacenter,FTSE 100,160.2844,27.3585,total_return,backtest,false
+2026-10,1,RR.L,Rolls-Royce Holdings,FTSE 100,561.7935,1.1768,total_return,backtest,true
+2026-10,2,BGEO.L,Lion Finance Group,FTSE 100,290.0341,26.8314,total_return,backtest,true
+2026-10,3,STAN.L,Standard Chartered,FTSE 100,203.5168,12.5919,total_return,backtest,true
+2026-10,4,NWG.L,NatWest Group,FTSE 100,192.5710,3.2084,total_return,backtest,false
+2026-10,5,BBY.L,Balfour Beatty,FTSE 100,187.4477,6.2824,total_return,backtest,false
+2026-10,6,EDV.L,Endeavour Mining,FTSE 100,168.0568,14.6058,total_return,backtest,false
+2026-10,7,DPLM.L,Diploma,FTSE 100,157.2616,8.3450,total_return,backtest,false
+2026-10,8,BAB.L,Babcock International,FTSE 100,138.8119,3.6983,total_return,backtest,false
+2026-10,9,HSBA.L,HSBC,FTSE 100,132.6852,4.6687,total_return,backtest,false
+2026-10,10,CCC.L,Computacenter,FTSE 100,113.7860,26.4623,total_return,backtest,false
+2026-11,1,BGEO.L,Lion Finance Group,FTSE 100,261.7241,3.6176,total_return,backtest,true
+2026-11,2,PCT.L,Polar Capital Technology Trust,FTSE 100,202.8485,3.6887,total_return,backtest,true
+2026-11,3,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,147.8513,19.6159,total_return,backtest,true
+2026-11,4,NXT.L,Next plc,FTSE 100,123.2504,3.4355,total_return,backtest,false
+2026-11,5,IHG.L,IHG Hotels & Resorts,FTSE 100,120.9560,4.0759,total_return,backtest,false
+2026-11,6,EDV.L,Endeavour Mining,FTSE 100,120.0951,6.0761,total_return,backtest,false
+2026-11,7,SDLF.L,Standard Life,FTSE 100,104.4650,0.2709,total_return,backtest,false
+2026-11,8,BT-A.L,BT Group,FTSE 100,101.8917,12.9160,total_return,backtest,false
+2026-11,9,HSX.L,Hiscox,FTSE 100,100.4709,3.8695,total_return,backtest,false
+2026-11,10,TSCO.L,Tesco,FTSE 100,100.4332,10.3166,total_return,backtest,false

@@ -1,0 +1,26 @@
+month,rank,ticker,name,index,sector,location,exchange,currency,return_3y_pct,return_3m_pct,uk_accessible,uk_access_note,selected_for_buy
+2026-11,1,LITE,LUMENTUM HOLDINGS,NASDAQ,Information Technology,United States,NASDAQ,USD,2044.0959,17.7550,true,UK ISA (US),true
+2026-11,2,2059.TW,KING SLIDE WORKS,Taiwan Stock Exchange,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,1295.1280,22.1329,false,Non-UK ISA exchange (Taiwan Stock Exchange),true
+2026-11,3,MU,MICRON TECHNOLOGY,NASDAQ,Information Technology,United States,NASDAQ,USD,1235.8417,7.4979,true,UK ISA (US),true
+2026-11,4,CVNA,CARVANA CLASS A,NYSE,Consumer Discretionary,United States,NYSE,USD,1164.6296,9.5093,true,UK ISA (US),false
+2026-11,5,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,Information Technology,United States,NASDAQ,USD,1143.9865,49.6099,true,UK ISA (US),false
+2026-11,6,3653.TW,JENTECH PRECISION INDUSTRIAL LTD,Taiwan Stock Exchange,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,1012.2900,82.1207,false,Non-UK ISA exchange (Taiwan Stock Exchange),false
+2026-11,7,3017.TW,ASIA VITAL COMPONENTS,Taiwan Stock Exchange,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,1008.5237,32.5403,false,Non-UK ISA exchange (Taiwan Stock Exchange),false
+2026-11,8,NTRA,NATERA,NASDAQ,Health Care,United States,NASDAQ,USD,949.6580,54.7281,true,UK ISA (US),false
+2026-11,9,009150.KS,SAMSUNG ELECTRO MECHANICS,Korea Exchange (Stock Market),Information Technology,Korea (South),Korea Exchange (Stock Market),KRW,910.3015,12.3255,false,Non-UK ISA exchange (Korea Exchange (Stock Market)),false
+2026-11,10,603268.SS,GUANGDONG SONGFA CERAMICS A,Shanghai Stock Exchange,Industrials,China,Shanghai Stock Exchange,CNY,882.8526,2.0425,false,Non-UK ISA exchange (Shanghai Stock Exchange),false
+2026-11,11,RVMD,REVOLUTION MEDICINES,NASDAQ,Health Care,United States,NASDAQ,USD,866.2121,2.0157,true,UK ISA (US),false
+2026-11,12,HARL.TA,HAREL INSURANCE INVESTMENTS & FINA,Tel Aviv Stock Exchange,Financials,Israel,Tel Aviv Stock Exchange,ILS,785.2126,1.3272,false,Non-UK ISA exchange (Tel Aviv Stock Exchange),false
+2026-11,13,6857.T,ADVANTEST,Tokyo Stock Exchange,Information Technology,Japan,Tokyo Stock Exchange,JPY,776.0000,9.0368,false,Non-UK ISA exchange (Tokyo Stock Exchange),false
+2026-11,14,3037.TW,UNIMICRON TECHNOLOGY,Taiwan Stock Exchange,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,605.7986,24.8523,false,Non-UK ISA exchange (Taiwan Stock Exchange),false
+2026-11,15,ECHO,ECHOSTAR CLASS A,NASDAQ,Communication,United States,NASDAQ,USD,599.4228,15.2812,true,UK ISA (US),false
+2026-11,16,2408.TW,NANYA TECHNOLOGY CORP,Taiwan Stock Exchange,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,596.9739,25.2575,false,Non-UK ISA exchange (Taiwan Stock Exchange),false
+2026-11,17,5274.TWO,ASPEED TECHNOLOGY,Gretai Securities Market,Information Technology,Taiwan,Gretai Securities Market,TWD,589.8878,9.2355,false,Non-UK ISA exchange (Gretai Securities Market),false
+2026-11,18,DELL,DELL TECHNOLOGIES INC CLASS C,NYSE,Information Technology,United States,NYSE,USD,562.5712,4.6698,true,UK ISA (US),false
+2026-11,19,2344.TW,WINBOND ELECTRONICS,Taiwan Stock Exchange,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,555.4759,25.7181,false,Non-UK ISA exchange (Taiwan Stock Exchange),false
+2026-11,20,003230.KS,SAM YANG FOODS INC,Korea Exchange (Stock Market),Consumer Staples,Korea (South),Korea Exchange (Stock Market),KRW,541.6931,4.4991,false,Non-UK ISA exchange (Korea Exchange (Stock Market)),false
+2026-11,21,3711.TW,ASE TECHNOLOGY HOLDING,Taiwan Stock Exchange,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,528.9962,19.5800,false,Non-UK ISA exchange (Taiwan Stock Exchange),false
+2026-11,22,MCX.NS,MULTI COMMODITY EXCHANGE OF INDIA,Bse Ltd,Financials,India,Bse Ltd,INR,506.2119,19.6732,false,Non-UK ISA exchange (Bse Ltd),false
+2026-11,23,2368.TW,GOLD CIRCUIT ELECTRONICS,Taiwan Stock Exchange,Information Technology,Taiwan,Taiwan Stock Exchange,TWD,500.8284,27.7915,false,Non-UK ISA exchange (Taiwan Stock Exchange),false
+2026-11,24,LUG.TO,LUNDIN GOLD,Toronto Stock Exchange,Materials,Canada,Toronto Stock Exchange,CAD,492.3854,5.0115,true,UK ISA (Canada),false
+2026-11,25,LAURUSLABS.NS,LAURUS LABS LTD,National Stock Exchange Of India,Health Care,India,National Stock Exchange Of India,INR,488.4163,33.8193,false,Non-UK ISA exchange (National Stock Exchange Of India),false

@@ -1,0 +1,44 @@
+ticker,name,index,first_bought_date,last_top10_month,status,notes
+GAW.L,Games Workshop,FTSE 100,2017-12-01,2025-12,holding,Bought in 2017-12 rank #1
+JD.L,JD Sports,FTSE 100,2017-12-01,2023-04,holding,Bought in 2017-12 rank #2
+RTO.L,Rentokil Initial,FTSE 100,2017-12-01,2022-11,holding,Bought in 2017-12 rank #3
+FCIT.L,F & C Investment Trust,FTSE 100,2018-01-01,2026-03,holding,Bought in 2018-01 rank #1
+MRO.L,Melrose Industries,FTSE 100,2018-02-01,2025-10,holding,Bought in 2018-02 rank #2
+CCH.L,Coca-Cola HBC,FTSE 100,2018-04-01,2025-08,holding,Bought in 2018-04 rank #2
+LSEG.L,London Stock Exchange Group,FTSE 100,2018-04-01,2022-06,holding,Bought in 2018-04 rank #3
+ITRK.L,Intertek,FTSE 100,2018-08-01,2018-08,sold,Bought in 2018-08 rank #3; Rule 6 sell_third (2024-08); Rule 6 sell_half (2025-08); Rule 6 sell_remaining (2026-08)
+PCT.L,Polar Capital Technology Trust,FTSE 100,2018-09-01,2026-11,holding,Bought in 2018-09 rank #3
+AAL.L,Anglo American plc,FTSE 100,2018-10-01,2023-02,holding,Bought in 2018-10 rank #3
+HSX.L,Hiscox,FTSE 100,2018-11-01,2026-11,holding,Bought in 2018-11 rank #2; Rule 6 sell_third (2024-12); Rule 6 sell_half (2025-12); Returned to top 10 (2026-11)
+AZN.L,AstraZeneca,FTSE 100,2018-11-01,2024-09,holding,Bought in 2018-11 rank #3
+III.L,3i,FTSE 100,2019-01-01,2025-11,holding,Bought in 2019-01 rank #3
+RIO.L,Rio Tinto,FTSE 100,2019-02-01,2023-03,holding,Bought in 2019-02 rank #3
+GLEN.L,Glencore,FTSE 100,2019-03-01,2024-01,holding,Bought in 2019-03 rank #3
+SPX.L,Spirax Group,FTSE 100,2019-06-01,2022-10,holding,Bought in 2019-06 rank #2
+ICG.L,ICG,FTSE 100,2019-10-01,2022-01,holding,Bought in 2019-10 rank #3
+PSH.L,Pershing Square Holdings,FTSE 100,2020-04-01,2025-09,holding,Bought in 2020-04 rank #1
+NG.L,National Grid plc,FTSE 100,2020-04-01,2022-06,holding,Bought in 2020-04 rank #2
+RKT.L,Reckitt,FTSE 100,2020-04-01,2022-07,holding,Bought in 2020-04 rank #3
+SMT.L,Scottish Mortgage Investment Trust,FTSE 100,2020-05-01,2026-11,holding,Bought in 2020-05 rank #2
+CCC.L,Computacenter,FTSE 100,2020-08-01,2026-10,holding,Bought in 2020-08 rank #3
+DPLM.L,Diploma,FTSE 100,2021-04-01,2026-10,holding,Bought in 2021-04 rank #2
+SGRO.L,Segro,FTSE 100,2022-02-01,2022-05,holding,Bought in 2022-02 rank #1
+IMI.L,IMI,FTSE 100,2022-02-01,2023-07,holding,Bought in 2022-02 rank #2
+BBOX.L,Tritax Big Box REIT,FTSE 100,2022-02-01,2022-05,holding,Bought in 2022-02 rank #3
+ANTO.L,Antofagasta plc,FTSE 100,2022-03-01,2026-07,holding,Bought in 2022-03 rank #2
+BA.L,BAE Systems,FTSE 100,2022-03-01,2026-05,holding,Bought in 2022-03 rank #3
+CTEC.L,Convatec,FTSE 100,2022-07-01,2022-09,holding,Bought in 2022-07 rank #3
+AAF.L,Airtel Africa,FTSE 100,2022-08-01,2026-06,holding,Bought in 2022-08 rank #2
+IGG.L,IG Group,FTSE 100,2022-09-01,2026-07,holding,Bought in 2022-09 rank #2
+BGEO.L,Lion Finance Group,FTSE 100,2022-09-01,2026-11,holding,Bought in 2022-09 rank #3
+INVP.L,Investec,FTSE 100,2023-03-01,2024-09,holding,Bought in 2023-03 rank #2
+CNA.L,Centrica,FTSE 100,2023-04-01,2026-04,holding,Bought in 2023-04 rank #2
+WEIR.L,Weir,FTSE 100,2023-04-01,2023-05,holding,Bought in 2023-04 rank #3
+RR.L,Rolls-Royce Holdings,FTSE 100,2023-10-01,2026-10,holding,Bought in 2023-10 rank #2
+MKS.L,Marks & Spencer,FTSE 100,2024-10-01,2026-04,holding,Bought in 2024-10 rank #3
+IAG.L,International Airlines Group,FTSE 100,2025-08-01,2026-09,holding,Bought in 2025-08 rank #3
+BAB.L,Babcock International,FTSE 100,2025-10-01,2026-10,holding,Bought in 2025-10 rank #2
+FRES.L,Fresnillo plc,FTSE 100,2026-01-01,2026-03,holding,Bought in 2026-01 rank #1
+EDV.L,Endeavour Mining,FTSE 100,2026-04-01,2026-11,holding,Bought in 2026-04 rank #3
+STAN.L,Standard Chartered,FTSE 100,2026-05-01,2026-10,holding,Bought in 2026-05 rank #3
+BARC.L,Barclays,FTSE 100,2026-07-01,2026-09,holding,Bought in 2026-07 rank #3

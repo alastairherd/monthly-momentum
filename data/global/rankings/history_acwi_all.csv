@@ -1,0 +1,1091 @@
+month,rank,ticker,name,index,return_3y_pct,return_3m_pct,return_type,source,selected_for_buy
+2017-11,1,NVDA,NVIDIA,NASDAQ,994.3538,27.2602,total_return,backtest,true
+2017-11,2,AMZN,AMAZON.COM INC,NASDAQ,261.8412,11.8954,total_return,backtest,true
+2017-11,3,NFLX,NETFLIX,NASDAQ,250.0802,8.1306,total_return,backtest,true
+2017-11,4,AVGO,BROADCOM INC,NASDAQ,219.6193,6.9934,total_return,backtest,false
+2017-11,5,LRCX,LAM RESEARCH,NASDAQ,178.9812,30.7977,total_return,backtest,false
+2017-11,6,AMAT,APPLIED MATERIAL INC,NASDAQ,168.2607,27.3527,total_return,backtest,false
+2017-11,7,MTD,METTLER TOLEDO,NYSE,164.1042,19.1160,total_return,backtest,false
+2017-11,8,GPN,GLOBAL PAYMENTS INC,NYSE,158.7636,10.1515,total_return,backtest,false
+2017-11,9,ADBE,ADOBE INC,NASDAQ,149.8003,19.5713,total_return,backtest,false
+2017-11,10,STZ,CONSTELLATION BRANDS CLASS A,NYSE,145.4873,13.3126,total_return,backtest,false
+2017-12,1,PLS.AX,PLS GROUP LTD,Asx - All Markets,2048.5136,184.3927,total_return,backtest,true
+2017-12,2,NVDA,NVIDIA,NASDAQ,886.1753,18.4537,total_return,backtest,true
+2017-12,3,2382.HK,SUNNY OPTICAL TECHNOLOGY LTD,Hong Kong Exchanges And Clearing Ltd,867.7395,16.1064,total_return,backtest,true
+2017-12,4,2345.TW,ACCTON TECHNOLOGY,Taiwan Stock Exchange,802.5771,40.0071,total_return,backtest,false
+2017-12,5,300136.SZ,SHENZHEN SUNWAY COMMUNICATION LTD,Shenzhen Stock Exchange,735.7321,27.2221,total_return,backtest,false
+2017-12,6,0175.HK,GEELY AUTOMOBILE HOLDINGS LTD,Hong Kong Exchanges And Clearing Ltd,720.8900,41.6673,total_return,backtest,false
+2017-12,7,600487.SS,HENGTONG OPTIC ELECTRIC LTD A,Shanghai Stock Exchange,515.9438,44.7372,total_return,backtest,false
+2017-12,8,PME.AX,PRO MEDICUS,Asx - All Markets,515.2927,43.3520,total_return,backtest,false
+2017-12,9,APLAPOLLO.NS,APL APOLLO TUBES LTD,National Stock Exchange Of India,509.2462,25.0831,total_return,backtest,false
+2017-12,10,068270.KS,CELLTRION,Korea Exchange (Stock Market),474.3992,80.7133,total_return,backtest,false
+2018-01,1,PLS.AX,PLS GROUP LTD,Asx - All Markets,2436.1526,74.7543,total_return,backtest,true
+2018-01,2,0175.HK,GEELY AUTOMOBILE HOLDINGS LTD,Hong Kong Exchanges And Clearing Ltd,1015.5960,23.1503,total_return,backtest,true
+2018-01,3,NVDA,NVIDIA,NASDAQ,894.3125,8.2384,total_return,backtest,true
+2018-01,4,2345.TW,ACCTON TECHNOLOGY,Taiwan Stock Exchange,779.1422,11.3396,total_return,backtest,false
+2018-01,5,300136.SZ,SHENZHEN SUNWAY COMMUNICATION LTD,Shenzhen Stock Exchange,727.1778,23.6701,total_return,backtest,false
+2018-01,6,PME.AX,PRO MEDICUS,Asx - All Markets,684.2778,47.0811,total_return,backtest,false
+2018-01,7,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,580.0578,190.1605,total_return,backtest,false
+2018-01,8,068270.KS,CELLTRION,Korea Exchange (Stock Market),544.8305,106.3996,total_return,backtest,false
+2018-01,9,600487.SS,HENGTONG OPTIC ELECTRIC LTD A,Shanghai Stock Exchange,516.1572,20.3772,total_return,backtest,false
+2018-01,10,300308.SZ,ZHONGJI INNOLIGHT A,Shenzhen Stock Exchange,502.6784,23.3433,total_return,backtest,false
+2018-02,1,PLS.AX,PLS GROUP LTD,Asx - All Markets,2555.3153,22.7724,total_return,backtest,true
+2018-02,2,NVDA,NVIDIA,NASDAQ,1219.1253,18.8542,total_return,backtest,true
+2018-02,3,603799.SS,ZHEJIANG HUAYOU COBALT LTD A,Shanghai Stock Exchange,1214.3504,10.6485,total_return,backtest,true
+2018-02,4,2345.TW,ACCTON TECHNOLOGY,Taiwan Stock Exchange,847.7360,24.3374,total_return,backtest,false
+2018-02,5,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,828.2219,237.9934,total_return,backtest,false
+2018-02,6,068270.KS,CELLTRION,Korea Exchange (Stock Market),778.3763,94.8579,total_return,backtest,false
+2018-02,7,CDR.WA,CD PROJEKT RED,Warsaw Stock Exchange/Equities/Main Market,703.7179,4.7007,total_return,backtest,false
+2018-02,8,0175.HK,GEELY AUTOMOBILE HOLDINGS LTD,Hong Kong Exchanges And Clearing Ltd,697.1239,3.4442,total_return,backtest,false
+2018-02,9,HTHT,H WORLD GROUP ADR,NASDAQ,607.8927,11.6514,total_return,backtest,false
+2018-02,10,AKRBP.OL,AKER BP,Oslo Bors Asa,597.4124,25.3726,total_return,backtest,false
+2018-03,1,NVDA,NVIDIA,NASDAQ,1026.7119,20.5732,total_return,backtest,true
+2018-03,2,2382.HK,SUNNY OPTICAL TECHNOLOGY LTD,Hong Kong Exchanges And Clearing Ltd,937.5111,0.2931,total_return,backtest,true
+2018-03,3,068270.KS,CELLTRION,Korea Exchange (Stock Market),875.9237,80.1518,total_return,backtest,true
+2018-03,4,2345.TW,ACCTON TECHNOLOGY,Taiwan Stock Exchange,772.0098,4.2424,total_return,backtest,false
+2018-03,5,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,729.8803,163.7594,total_return,backtest,false
+2018-03,6,TAL,TAL EDUCATION GROUP ADR REPTG,NYSE,640.4938,35.4376,total_return,backtest,false
+2018-03,7,HTHT,H WORLD GROUP ADR,NASDAQ,636.2584,42.3484,total_return,backtest,false
+2018-03,8,6920.T,LASERTEC,Tokyo Stock Exchange,612.3511,69.3742,total_return,backtest,false
+2018-03,9,CDR.WA,CD PROJEKT RED,Warsaw Stock Exchange/Equities/Main Market,566.6582,9.5313,total_return,backtest,false
+2018-03,10,002460.SZ,GANFENG LITHIUM GROUP LTD A,Shenzhen Stock Exchange,562.0887,3.1626,total_return,backtest,false
+2018-04,1,BRPT.JK,BARITO PACIFIC,Indonesia Stock Exchange,1472.0404,0.2851,total_return,backtest,true
+2018-04,2,NVDA,NVIDIA,NASDAQ,1036.3419,19.6858,total_return,backtest,true
+2018-04,3,2382.HK,SUNNY OPTICAL TECHNOLOGY LTD,Hong Kong Exchanges And Clearing Ltd,942.5418,44.3577,total_return,backtest,true
+2018-04,4,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,717.5932,27.5725,total_return,backtest,false
+2018-04,5,TAL,TAL EDUCATION GROUP ADR REPTG,NYSE,572.6148,24.8401,total_return,backtest,false
+2018-04,6,6488.TWO,GLOBALWAFERS LTD,Gretai Securities Market,549.5924,21.0059,total_return,backtest,false
+2018-04,7,002460.SZ,GANFENG LITHIUM GROUP LTD A,Shenzhen Stock Exchange,534.9299,11.6229,total_return,backtest,false
+2018-04,8,6920.T,LASERTEC,Tokyo Stock Exchange,527.8406,45.6726,total_return,backtest,false
+2018-04,9,CDR.WA,CD PROJEKT RED,Warsaw Stock Exchange/Equities/Main Market,522.0906,14.7017,total_return,backtest,false
+2018-04,10,603799.SS,ZHEJIANG HUAYOU COBALT LTD A,Shanghai Stock Exchange,482.7959,52.9240,total_return,backtest,false
+2018-05,1,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,774.2164,13.5253,total_return,backtest,true
+2018-05,2,2382.HK,SUNNY OPTICAL TECHNOLOGY LTD,Hong Kong Exchanges And Clearing Ltd,659.9807,19.7099,total_return,backtest,true
+2018-05,3,2327.TW,YAGEO,Taiwan Stock Exchange,562.4358,60.2605,total_return,backtest,true
+2018-05,4,CDR.WA,CD PROJEKT RED,Warsaw Stock Exchange/Equities/Main Market,535.3931,3.8601,total_return,backtest,false
+2018-05,5,6488.TWO,GLOBALWAFERS LTD,Gretai Securities Market,515.5508,7.1228,total_return,backtest,false
+2018-05,6,TAL,TAL EDUCATION GROUP ADR REPTG,NYSE,497.0296,11.8207,total_return,backtest,false
+2018-05,7,LYC.AX,LYNAS RARE EARTHS,Asx - All Markets,443.1872,11.6918,total_return,backtest,false
+2018-05,8,002460.SZ,GANFENG LITHIUM GROUP LTD A,Shenzhen Stock Exchange,397.3203,7.1344,total_return,backtest,false
+2018-05,9,603799.SS,ZHEJIANG HUAYOU COBALT LTD A,Shanghai Stock Exchange,364.6454,8.7166,total_return,backtest,false
+2018-05,10,AKRBP.OL,AKER BP,Oslo Bors Asa,361.8574,14.7568,total_return,backtest,false
+2018-06,1,NVDA,NVIDIA,NASDAQ,1065.6560,4.2099,total_return,backtest,true
+2018-06,2,2327.TW,YAGEO,Taiwan Stock Exchange,981.7252,181.7593,total_return,backtest,true
+2018-06,3,2382.HK,SUNNY OPTICAL TECHNOLOGY LTD,Hong Kong Exchanges And Clearing Ltd,841.0531,21.8145,total_return,backtest,true
+2018-06,4,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,724.8531,23.3072,total_return,backtest,false
+2018-06,5,6488.TWO,GLOBALWAFERS LTD,Gretai Securities Market,697.5475,36.3057,total_return,backtest,false
+2018-06,6,HTHT,H WORLD GROUP ADR,NASDAQ,629.9963,15.8920,total_return,backtest,false
+2018-06,7,TAL,TAL EDUCATION GROUP ADR REPTG,NYSE,606.2189,12.4470,total_return,backtest,false
+2018-06,8,CDR.WA,CD PROJEKT RED,Warsaw Stock Exchange/Equities/Main Market,530.4122,27.1673,total_return,backtest,false
+2018-06,9,AMD,ADVANCED MICRO DEVICES,NASDAQ,502.1930,13.3774,total_return,backtest,false
+2018-06,10,AKRBP.OL,AKER BP,Oslo Bors Asa,472.4392,45.5084,total_return,backtest,false
+2018-07,1,2327.TW,YAGEO,Taiwan Stock Exchange,1308.3222,104.2652,total_return,backtest,true
+2018-07,2,NVDA,NVIDIA,NASDAQ,1105.0463,2.2920,total_return,backtest,true
+2018-07,3,2382.HK,SUNNY OPTICAL TECHNOLOGY LTD,Hong Kong Exchanges And Clearing Ltd,771.1207,0.7810,total_return,backtest,true
+2018-07,4,PLS.AX,PLS GROUP LTD,Asx - All Markets,688.9671,0.3242,total_return,backtest,false
+2018-07,5,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,637.1060,5.2562,total_return,backtest,false
+2018-07,6,HTHT,H WORLD GROUP ADR,NASDAQ,606.7532,27.5226,total_return,backtest,false
+2018-07,7,CDR.WA,CD PROJEKT RED,Warsaw Stock Exchange/Equities/Main Market,589.6506,35.3184,total_return,backtest,false
+2018-07,8,GMD.AX,GENESIS MINERALS,Asx - All Markets,586.7863,5.5038,total_return,backtest,false
+2018-07,9,6488.TWO,GLOBALWAFERS LTD,Gretai Securities Market,581.1426,2.2404,total_return,backtest,false
+2018-07,10,AMD,ADVANCED MICRO DEVICES,NASDAQ,524.5833,49.1542,total_return,backtest,false
+2018-08,1,2327.TW,YAGEO,Taiwan Stock Exchange,1196.7607,44.2013,total_return,backtest,true
+2018-08,2,NVDA,NVIDIA,NASDAQ,1155.6063,8.8751,total_return,backtest,true
+2018-08,3,AMD,ADVANCED MICRO DEVICES,NASDAQ,849.7409,68.4743,total_return,backtest,true
+2018-08,4,2345.TW,ACCTON TECHNOLOGY,Taiwan Stock Exchange,817.4006,44.0890,total_return,backtest,false
+2018-08,5,CDR.WA,CD PROJEKT RED,Warsaw Stock Exchange/Equities/Main Market,684.5057,50.6194,total_return,backtest,false
+2018-08,6,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,655.2102,2.6468,total_return,backtest,false
+2018-08,7,6488.TWO,GLOBALWAFERS LTD,Gretai Securities Market,654.5147,3.4261,total_return,backtest,false
+2018-08,8,HTHT,H WORLD GROUP ADR,NASDAQ,610.0633,14.5926,total_return,backtest,false
+2018-08,9,GMD.AX,GENESIS MINERALS,Asx - All Markets,521.7597,36.8873,total_return,backtest,false
+2018-08,10,AKRBP.OL,AKER BP,Oslo Bors Asa,499.3791,8.1558,total_return,backtest,false
+2018-09,1,AMD,ADVANCED MICRO DEVICES,NASDAQ,1290.6077,83.3212,total_return,backtest,true
+2018-09,2,NVDA,NVIDIA,NASDAQ,1172.5505,11.2979,total_return,backtest,true
+2018-09,3,2345.TW,ACCTON TECHNOLOGY,Taiwan Stock Exchange,865.6760,23.6285,total_return,backtest,true
+2018-09,4,CDR.WA,CD PROJEKT RED,Warsaw Stock Exchange/Equities/Main Market,777.0737,40.1545,total_return,backtest,false
+2018-09,5,6920.T,LASERTEC,Tokyo Stock Exchange,680.2833,9.0122,total_return,backtest,false
+2018-09,6,TPL,TEXAS PACIFIC LAND,NYSE,612.8241,18.0996,total_return,backtest,false
+2018-09,7,ADANIENSOL.NS,ADANI ENERGY SOLUTIONS LTD,National Stock Exchange Of India,580.6800,58.8809,total_return,backtest,false
+2018-09,8,3443.TW,GLOBAL UNICHIP,Taiwan Stock Exchange,517.2828,19.5968,total_return,backtest,false
+2018-09,9,086520.KQ,ECOPRO LTD,Korea Exchange (Kosdaq),490.7854,0.7280,total_return,backtest,false
+2018-09,10,PRIO3.SA,PETRO RIO,XBSP,486.5624,18.9506,total_return,backtest,false
+2018-10,1,AMD,ADVANCED MICRO DEVICES,NASDAQ,1695.9302,106.0707,total_return,backtest,true
+2018-10,2,PRIO3.SA,PETRO RIO,XBSP,1170.6950,51.1874,total_return,backtest,true
+2018-10,3,NVDA,NVIDIA,NASDAQ,1061.9478,18.6239,total_return,backtest,true
+2018-10,4,AKRBP.OL,AKER BP,Oslo Bors Asa,682.8087,15.4813,total_return,backtest,false
+2018-10,5,CDR.WA,CD PROJEKT RED,Warsaw Stock Exchange/Equities/Main Market,619.7786,17.4051,total_return,backtest,false
+2018-10,6,6920.T,LASERTEC,Tokyo Stock Exchange,603.9061,17.9025,total_return,backtest,false
+2018-10,7,003670.KS,POSCO FUTURE M LTD,Korea Exchange (Stock Market),589.8531,67.4211,total_return,backtest,false
+2018-10,8,3808.HK,SINOTRUK (HONG KONG) LTD,Hong Kong Exchanges And Clearing Ltd,560.8096,32.2306,total_return,backtest,false
+2018-10,9,TPL,TEXAS PACIFIC LAND,NYSE,523.8700,24.0469,total_return,backtest,false
+2018-10,10,SGH.AX,SGH,Asx - All Markets,499.7160,16.9585,total_return,backtest,false
+2018-11,1,PRIO3.SA,PETRO RIO,XBSP,1073.5821,49.7058,total_return,backtest,true
+2018-11,2,003670.KS,POSCO FUTURE M LTD,Korea Exchange (Stock Market),499.7650,29.4765,total_return,backtest,true
+2018-11,3,TPL,TEXAS PACIFIC LAND,NYSE,414.7961,2.7079,total_return,backtest,true
+2018-11,4,086520.KQ,ECOPRO LTD,Korea Exchange (Kosdaq),394.7579,1.3633,total_return,backtest,false
+2018-11,5,AXIA3.SA,AXIA ENERGIA SA,XBSP,387.1483,37.3084,total_return,backtest,false
+2018-11,6,EQX.TO,EQUINOX GOLD,Toronto Stock Exchange,311.0117,0.3377,total_return,backtest,false
+2018-11,7,TTWO,TAKE TWO INTERACTIVE SOFTWARE,NASDAQ,288.1627,14.0241,total_return,backtest,false
+2018-11,8,RENT3.SA,LOCALIZA RENT A CAR,XBSP,281.2997,22.1503,total_return,backtest,false
+2018-11,9,LITE,LUMENTUM HOLDINGS,NASDAQ,281.1018,4.5933,total_return,backtest,false
+2018-11,10,VALE3.SA,CIA VALE DO RIO DOCE SH,XBSP,278.1213,4.3476,total_return,backtest,false
+2018-12,1,BRPT.JK,BARITO PACIFIC,Indonesia Stock Exchange,3092.2642,26.4173,total_return,backtest,true
+2018-12,2,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,873.4403,4.6178,total_return,backtest,true
+2018-12,3,PRIO3.SA,PETRO RIO,XBSP,860.6784,10.3148,total_return,backtest,true
+2018-12,4,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,477.8706,4.2016,total_return,backtest,false
+2018-12,5,ADANIENSOL.NS,ADANI ENERGY SOLUTIONS LTD,National Stock Exchange Of India,457.9726,0.4285,total_return,backtest,false
+2018-12,6,003670.KS,POSCO FUTURE M LTD,Korea Exchange (Stock Market),454.0681,11.7435,total_return,backtest,false
+2018-12,7,3808.HK,SINOTRUK (HONG KONG) LTD,Hong Kong Exchanges And Clearing Ltd,354.0753,9.9415,total_return,backtest,false
+2018-12,8,VALE3.SA,CIA VALE DO RIO DOCE SH,XBSP,337.1411,6.0804,total_return,backtest,false
+2018-12,9,AXIA3.SA,AXIA ENERGIA SA,XBSP,320.8791,66.3583,total_return,backtest,false
+2018-12,10,IVN.TO,IVANHOE MINES CLASS A,Toronto Stock Exchange,304.2978,11.7375,total_return,backtest,false
+2019-01,1,BRPT.JK,BARITO PACIFIC,Indonesia Stock Exchange,3460.9085,32.8992,total_return,backtest,true
+2019-01,2,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,699.5301,28.8243,total_return,backtest,true
+2019-01,3,EQX.TO,EQUINOX GOLD,Toronto Stock Exchange,549.2174,0.7355,total_return,backtest,true
+2019-01,4,ADANIENSOL.NS,ADANI ENERGY SOLUTIONS LTD,National Stock Exchange Of India,411.0060,28.2680,total_return,backtest,false
+2019-01,5,AXIA3.SA,AXIA ENERGIA SA,XBSP,329.6203,63.2302,total_return,backtest,false
+2019-01,6,BAJFINANCE.NS,BAJAJ FINANCE,National Stock Exchange Of India,321.6179,26.5237,total_return,backtest,false
+2019-01,7,RENT3.SA,LOCALIZA RENT A CAR,XBSP,306.7319,36.6356,total_return,backtest,false
+2019-01,8,BVN,BUENAVENTURA ADR REPRESENTING,NYSE,284.8665,20.9545,total_return,backtest,false
+2019-01,9,2345.TW,ACCTON TECHNOLOGY,Taiwan Stock Exchange,266.9546,15.6507,total_return,backtest,false
+2019-01,10,BBAS3.SA,BANCO DO BRASIL SA,XBSP,266.1932,64.9426,total_return,backtest,false
+2019-02,1,BRPT.JK,BARITO PACIFIC,Indonesia Stock Exchange,3932.7881,51.5012,total_return,backtest,true
+2019-02,2,RAIL3.SA,RUMO SA,XBSP,1048.5544,18.4412,total_return,backtest,true
+2019-02,3,AMD,ADVANCED MICRO DEVICES,NASDAQ,1009.5455,34.0472,total_return,backtest,true
+2019-02,4,CDR.WA,CD PROJEKT RED,Warsaw Stock Exchange/Equities/Main Market,812.7733,22.8282,total_return,backtest,false
+2019-02,5,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,783.4660,33.5915,total_return,backtest,false
+2019-02,6,1548.HK,GENSCRIPT BIOTECH CORP,Hong Kong Exchanges And Clearing Ltd,768.8779,0.6920,total_return,backtest,false
+2019-02,7,EQX.TO,EQUINOX GOLD,Toronto Stock Exchange,735.8030,8.6871,total_return,backtest,false
+2019-02,8,6920.T,LASERTEC,Tokyo Stock Exchange,653.1692,13.9810,total_return,backtest,false
+2019-02,9,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,623.9009,21.3645,total_return,backtest,false
+2019-02,10,AXIA3.SA,AXIA ENERGIA SA,XBSP,609.9200,59.7194,total_return,backtest,false
+2019-03,1,PRIO3.SA,PETRO RIO,XBSP,1636.2313,61.1474,total_return,backtest,true
+2019-03,2,BRPT.JK,BARITO PACIFIC,Indonesia Stock Exchange,1384.9501,45.6395,total_return,backtest,true
+2019-03,3,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,1104.7356,35.8173,total_return,backtest,true
+2019-03,4,AMD,ADVANCED MICRO DEVICES,NASDAQ,999.5327,10.4695,total_return,backtest,false
+2019-03,5,1548.HK,GENSCRIPT BIOTECH CORP,Hong Kong Exchanges And Clearing Ltd,989.1955,7.5657,total_return,backtest,false
+2019-03,6,CDR.WA,CD PROJEKT RED,Warsaw Stock Exchange/Equities/Main Market,782.9373,32.6728,total_return,backtest,false
+2019-03,7,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,752.6501,24.4785,total_return,backtest,false
+2019-03,8,EQX.TO,EQUINOX GOLD,Toronto Stock Exchange,690.1496,27.6234,total_return,backtest,false
+2019-03,9,RAIL3.SA,RUMO SA,XBSP,687.0353,15.2857,total_return,backtest,false
+2019-03,10,XYZ,BLOCK CLASS A,NYSE,678.1609,16.3230,total_return,backtest,false
+2019-04,1,BRPT.JK,BARITO PACIFIC,Indonesia Stock Exchange,1334.5298,52.3029,total_return,backtest,true
+2019-04,2,1548.HK,GENSCRIPT BIOTECH CORP,Hong Kong Exchanges And Clearing Ltd,972.2245,39.9977,total_return,backtest,true
+2019-04,3,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,941.2972,26.7730,total_return,backtest,true
+2019-04,4,PRIO3.SA,PETRO RIO,XBSP,860.2274,88.2213,total_return,backtest,false
+2019-04,5,AMD,ADVANCED MICRO DEVICES,NASDAQ,795.4386,38.2449,total_return,backtest,false
+2019-04,6,CDR.WA,CD PROJEKT RED,Warsaw Stock Exchange/Equities/Main Market,675.4501,34.5126,total_return,backtest,false
+2019-04,7,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,630.4268,49.1307,total_return,backtest,false
+2019-04,8,6920.T,LASERTEC,Tokyo Stock Exchange,537.4039,64.2567,total_return,backtest,false
+2019-04,9,ADANIENSOL.NS,ADANI ENERGY SOLUTIONS LTD,National Stock Exchange Of India,504.9847,10.3539,total_return,backtest,false
+2019-04,10,TPL,TEXAS PACIFIC LAND,NYSE,442.7029,42.8374,total_return,backtest,false
+2019-05,1,BRPT.JK,BARITO PACIFIC,Indonesia Stock Exchange,1528.7261,52.6870,total_return,backtest,true
+2019-05,2,1548.HK,GENSCRIPT BIOTECH CORP,Hong Kong Exchanges And Clearing Ltd,1487.6387,66.0812,total_return,backtest,true
+2019-05,3,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,857.7796,20.2142,total_return,backtest,true
+2019-05,4,CDR.WA,CD PROJEKT RED,Warsaw Stock Exchange/Equities/Main Market,752.2595,9.9281,total_return,backtest,false
+2019-05,5,PRIO3.SA,PETRO RIO,XBSP,745.1088,49.7413,total_return,backtest,false
+2019-05,6,AMD,ADVANCED MICRO DEVICES,NASDAQ,678.3099,13.1913,total_return,backtest,false
+2019-05,7,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,660.9827,43.8412,total_return,backtest,false
+2019-05,8,6920.T,LASERTEC,Tokyo Stock Exchange,618.4029,37.8812,total_return,backtest,false
+2019-05,9,ADANIENSOL.NS,ADANI ENERGY SOLUTIONS LTD,National Stock Exchange Of India,559.4975,4.5711,total_return,backtest,false
+2019-05,10,TPL,TEXAS PACIFIC LAND,NYSE,440.5739,15.3765,total_return,backtest,false
+2019-06,1,1548.HK,GENSCRIPT BIOTECH CORP,Hong Kong Exchanges And Clearing Ltd,1290.6272,15.4083,total_return,backtest,true
+2019-06,2,BRPT.JK,BARITO PACIFIC,Indonesia Stock Exchange,1236.0036,7.0516,total_return,backtest,true
+2019-06,3,PRIO3.SA,PETRO RIO,XBSP,869.9959,7.7436,total_return,backtest,true
+2019-06,4,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,831.7676,44.9746,total_return,backtest,false
+2019-06,5,CDR.WA,CD PROJEKT RED,Warsaw Stock Exchange/Equities/Main Market,707.6470,7.5602,total_return,backtest,false
+2019-06,6,ADANIENSOL.NS,ADANI ENERGY SOLUTIONS LTD,National Stock Exchange Of India,609.4134,17.7233,total_return,backtest,false
+2019-06,7,AMD,ADVANCED MICRO DEVICES,NASDAQ,499.7812,16.4896,total_return,backtest,false
+2019-06,8,TEAM,ATLASSIAN CORP CLASS A,NASDAQ,457.7315,17.1195,total_return,backtest,false
+2019-06,9,WTC.AX,WISETECH GLOBAL,Asx - All Markets,438.1170,22.1910,total_return,backtest,false
+2019-06,10,VEEV,VEEVA SYSTEMS CLASS A,NYSE,368.2549,30.8540,total_return,backtest,false
+2019-07,1,1548.HK,GENSCRIPT BIOTECH CORP,Hong Kong Exchanges And Clearing Ltd,1542.5754,32.9765,total_return,backtest,true
+2019-07,2,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,1006.1836,13.5692,total_return,backtest,true
+2019-07,3,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,877.7935,45.4305,total_return,backtest,true
+2019-07,4,CDR.WA,CD PROJEKT RED,Warsaw Stock Exchange/Equities/Main Market,752.0137,10.6465,total_return,backtest,false
+2019-07,5,AMD,ADVANCED MICRO DEVICES,NASDAQ,490.8560,19.0047,total_return,backtest,false
+2019-07,6,WTC.AX,WISETECH GLOBAL,Asx - All Markets,489.8974,18.4427,total_return,backtest,false
+2019-07,7,ADANIENSOL.NS,ADANI ENERGY SOLUTIONS LTD,National Stock Exchange Of India,463.2496,3.2610,total_return,backtest,false
+2019-07,8,6488.TWO,GLOBALWAFERS LTD,Gretai Securities Market,411.9594,3.6274,total_return,backtest,false
+2019-07,9,PME.AX,PRO MEDICUS,Asx - All Markets,410.8155,68.8678,total_return,backtest,false
+2019-07,10,TEAM,ATLASSIAN CORP CLASS A,NASDAQ,405.1737,16.4161,total_return,backtest,false
+2019-08,1,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,895.9729,11.0228,total_return,backtest,true
+2019-08,2,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,831.0987,31.7584,total_return,backtest,true
+2019-08,3,XYZ,BLOCK CLASS A,NYSE,698.5104,10.4230,total_return,backtest,true
+2019-08,4,6920.T,LASERTEC,Tokyo Stock Exchange,615.0993,7.7776,total_return,backtest,false
+2019-08,5,CDR.WA,CD PROJEKT RED,Warsaw Stock Exchange/Equities/Main Market,582.5138,6.6430,total_return,backtest,false
+2019-08,6,WTC.AX,WISETECH GLOBAL,Asx - All Markets,449.2374,39.0764,total_return,backtest,false
+2019-08,7,PME.AX,PRO MEDICUS,Asx - All Markets,435.7905,46.6030,total_return,backtest,false
+2019-08,8,002714.SZ,MUYUAN FOODS GROUP LTD A,Shenzhen Stock Exchange,413.4454,16.8759,total_return,backtest,false
+2019-08,9,3998.HK,BOSIDENG INTERNATIONAL,Hong Kong Exchanges And Clearing Ltd,381.5250,26.2640,total_return,backtest,false
+2019-08,10,2331.HK,LI NING LTD,Hong Kong Exchanges And Clearing Ltd,378.2655,36.8320,total_return,backtest,false
+2019-09,1,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,828.9137,40.4479,total_return,backtest,true
+2019-09,2,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,738.3846,5.5392,total_return,backtest,true
+2019-09,3,1548.HK,GENSCRIPT BIOTECH CORP,Hong Kong Exchanges And Clearing Ltd,700.1460,3.8071,total_return,backtest,true
+2019-09,4,BRPT.JK,BARITO PACIFIC,Indonesia Stock Exchange,699.9010,38.7592,total_return,backtest,false
+2019-09,5,WTC.AX,WISETECH GLOBAL,Asx - All Markets,533.3824,47.8636,total_return,backtest,false
+2019-09,6,CDR.WA,CD PROJEKT RED,Warsaw Stock Exchange/Equities/Main Market,498.0835,18.2554,total_return,backtest,false
+2019-09,7,6920.T,LASERTEC,Tokyo Stock Exchange,486.7290,64.6583,total_return,backtest,false
+2019-09,8,3661.TW,ALCHIP TECHNOLOGIES,Taiwan Stock Exchange,477.6927,60.3020,total_return,backtest,false
+2019-09,9,EQX.TO,EQUINOX GOLD,Toronto Stock Exchange,445.0127,39.6127,total_return,backtest,false
+2019-09,10,PME.AX,PRO MEDICUS,Asx - All Markets,437.5080,58.0217,total_return,backtest,false
+2019-10,1,PRIO3.SA,PETRO RIO,XBSP,912.3153,1.3992,total_return,backtest,true
+2019-10,2,BRPT.JK,BARITO PACIFIC,Indonesia Stock Exchange,849.3091,54.4942,total_return,backtest,true
+2019-10,3,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,627.9188,3.6403,total_return,backtest,true
+2019-10,4,6920.T,LASERTEC,Tokyo Stock Exchange,584.1209,58.0249,total_return,backtest,false
+2019-10,5,3661.TW,ALCHIP TECHNOLOGIES,Taiwan Stock Exchange,521.2793,71.4470,total_return,backtest,false
+2019-10,6,CDR.WA,CD PROJEKT RED,Warsaw Stock Exchange/Equities/Main Market,496.1751,5.3597,total_return,backtest,false
+2019-10,7,ADANIENSOL.NS,ADANI ENERGY SOLUTIONS LTD,National Stock Exchange Of India,467.9146,0.2874,total_return,backtest,false
+2019-10,8,WTC.AX,WISETECH GLOBAL,Asx - All Markets,443.4489,20.9868,total_return,backtest,false
+2019-10,9,3998.HK,BOSIDENG INTERNATIONAL,Hong Kong Exchanges And Clearing Ltd,439.5724,53.4302,total_return,backtest,false
+2019-10,10,002714.SZ,MUYUAN FOODS GROUP LTD A,Shenzhen Stock Exchange,406.2396,15.6294,total_return,backtest,false
+2019-11,1,6920.T,LASERTEC,Tokyo Stock Exchange,670.7330,48.4562,total_return,backtest,true
+2019-11,2,3661.TW,ALCHIP TECHNOLOGIES,Taiwan Stock Exchange,619.1292,89.5914,total_return,backtest,true
+2019-11,3,002714.SZ,MUYUAN FOODS GROUP LTD A,Shenzhen Stock Exchange,618.4030,25.4767,total_return,backtest,true
+2019-11,4,CDR.WA,CD PROJEKT RED,Warsaw Stock Exchange/Equities/Main Market,566.0272,10.5878,total_return,backtest,false
+2019-11,5,3998.HK,BOSIDENG INTERNATIONAL,Hong Kong Exchanges And Clearing Ltd,555.9238,48.9562,total_return,backtest,false
+2019-11,6,BRPT.JK,BARITO PACIFIC,Indonesia Stock Exchange,532.7443,22.4784,total_return,backtest,false
+2019-11,7,ADANIENSOL.NS,ADANI ENERGY SOLUTIONS LTD,National Stock Exchange Of India,469.8346,28.6306,total_return,backtest,false
+2019-11,8,ENLT.TA,ENLIGHT RENEWABLE ENERGY,Tel Aviv Stock Exchange,461.5669,34.2812,total_return,backtest,false
+2019-11,9,6488.TWO,GLOBALWAFERS LTD,Gretai Securities Market,442.1171,11.3702,total_return,backtest,false
+2019-11,10,2327.TW,YAGEO,Taiwan Stock Exchange,442.1070,21.2018,total_return,backtest,false
+2019-12,1,PRIO3.SA,PETRO RIO,XBSP,1041.8702,35.4526,total_return,backtest,true
+2019-12,2,6920.T,LASERTEC,Tokyo Stock Exchange,868.0754,50.9091,total_return,backtest,true
+2019-12,3,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,854.3458,14.3013,total_return,backtest,true
+2019-12,4,BRPT.JK,BARITO PACIFIC,Indonesia Stock Exchange,745.5098,51.8699,total_return,backtest,false
+2019-12,5,3661.TW,ALCHIP TECHNOLOGIES,Taiwan Stock Exchange,660.3021,63.7392,total_return,backtest,false
+2019-12,6,002714.SZ,MUYUAN FOODS GROUP LTD A,Shenzhen Stock Exchange,536.7558,9.6799,total_return,backtest,false
+2019-12,7,2327.TW,YAGEO,Taiwan Stock Exchange,506.5917,48.9078,total_return,backtest,false
+2019-12,8,CDR.WA,CD PROJEKT RED,Warsaw Stock Exchange/Equities/Main Market,496.8323,5.1494,total_return,backtest,false
+2019-12,9,3998.HK,BOSIDENG INTERNATIONAL,Hong Kong Exchanges And Clearing Ltd,480.4606,39.3710,total_return,backtest,false
+2019-12,10,ADANIENT.NS,ADANI ENTERPRISES,National Stock Exchange Of India,460.6035,56.3704,total_return,backtest,false
+2020-01,1,PRIO3.SA,PETRO RIO,XBSP,1129.6914,96.4644,total_return,backtest,true
+2020-01,2,6920.T,LASERTEC,Tokyo Stock Exchange,993.0982,63.0934,total_return,backtest,true
+2020-01,3,BRPT.JK,BARITO PACIFIC,Indonesia Stock Exchange,919.0118,55.1442,total_return,backtest,true
+2020-01,4,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,859.3087,41.2202,total_return,backtest,false
+2020-01,5,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,820.8342,26.8926,total_return,backtest,false
+2020-01,6,2327.TW,YAGEO,Taiwan Stock Exchange,744.2741,82.9352,total_return,backtest,false
+2020-01,7,3661.TW,ALCHIP TECHNOLOGIES,Taiwan Stock Exchange,727.8855,51.7102,total_return,backtest,false
+2020-01,8,002714.SZ,MUYUAN FOODS GROUP LTD A,Shenzhen Stock Exchange,610.2448,28.3971,total_return,backtest,false
+2020-01,9,CDR.WA,CD PROJEKT RED,Warsaw Stock Exchange/Equities/Main Market,501.8471,21.1123,total_return,backtest,false
+2020-01,10,3653.TW,JENTECH PRECISION INDUSTRIAL LTD,Taiwan Stock Exchange,478.8162,89.7865,total_return,backtest,false
+2020-02,1,PRIO3.SA,PETRO RIO,XBSP,1247.7204,143.4466,total_return,backtest,true
+2020-02,2,6920.T,LASERTEC,Tokyo Stock Exchange,920.5697,40.4476,total_return,backtest,true
+2020-02,3,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,825.5676,48.7128,total_return,backtest,true
+2020-02,4,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,737.4282,18.2320,total_return,backtest,false
+2020-02,5,3661.TW,ALCHIP TECHNOLOGIES,Taiwan Stock Exchange,721.8171,23.6334,total_return,backtest,false
+2020-02,6,BRPT.JK,BARITO PACIFIC,Indonesia Stock Exchange,619.5217,41.5652,total_return,backtest,false
+2020-02,7,002475.SZ,LUXSHARE PRECISION INDUSTRY LTD A,Shenzhen Stock Exchange,462.2690,44.3653,total_return,backtest,false
+2020-02,8,2327.TW,YAGEO,Taiwan Stock Exchange,454.4700,23.1299,total_return,backtest,false
+2020-02,9,ENLT.TA,ENLIGHT RENEWABLE ENERGY,Tel Aviv Stock Exchange,435.4513,29.7868,total_return,backtest,false
+2020-02,10,TEAM,ATLASSIAN CORP CLASS A,NASDAQ,432.0304,21.6988,total_return,backtest,false
+2020-03,1,002714.SZ,MUYUAN FOODS GROUP LTD A,Shenzhen Stock Exchange,722.4034,34.9980,total_return,backtest,true
+2020-03,2,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,680.0126,38.9863,total_return,backtest,true
+2020-03,3,6920.T,LASERTEC,Tokyo Stock Exchange,663.6692,5.4946,total_return,backtest,true
+2020-03,4,PRIO3.SA,PETRO RIO,XBSP,622.2913,60.4739,total_return,backtest,false
+2020-03,5,3661.TW,ALCHIP TECHNOLOGIES,Taiwan Stock Exchange,505.8149,0.8817,total_return,backtest,false
+2020-03,6,2327.TW,YAGEO,Taiwan Stock Exchange,479.1862,25.9128,total_return,backtest,false
+2020-03,7,603986.SS,GIGADEVICE SEMICONDUCTOR INC A,Shanghai Stock Exchange,467.7962,120.7699,total_return,backtest,false
+2020-03,8,196170.KQ,ALTEOGEN INC,Korea Exchange (Kosdaq),467.5789,70.6701,total_return,backtest,false
+2020-03,9,002475.SZ,LUXSHARE PRECISION INDUSTRY LTD A,Shenzhen Stock Exchange,446.6514,41.2823,total_return,backtest,false
+2020-03,10,002463.SZ,WUS PRINTED CIRCUIT (KUNSHAN) A,Shenzhen Stock Exchange,438.1548,16.7271,total_return,backtest,false
+2020-04,1,002714.SZ,MUYUAN FOODS GROUP LTD A,Shenzhen Stock Exchange,716.0804,35.3170,total_return,backtest,true
+2020-04,2,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,511.2225,5.1964,total_return,backtest,true
+2020-04,3,601100.SS,JIANGSU HENGLI HYDRAULIC A,Shanghai Stock Exchange,435.5941,21.6417,total_return,backtest,true
+2020-04,4,196170.KQ,ALTEOGEN INC,Korea Exchange (Kosdaq),410.4777,15.9197,total_return,backtest,false
+2020-04,5,002463.SZ,WUS PRINTED CIRCUIT (KUNSHAN) A,Shenzhen Stock Exchange,374.0183,4.8255,total_return,backtest,false
+2020-04,6,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,367.0165,11.7045,total_return,backtest,false
+2020-04,7,TEAM,ATLASSIAN CORP CLASS A,NASDAQ,358.2972,14.0602,total_return,backtest,false
+2020-04,8,000876.SZ,NEW HOPE LIUHE LTD A,Shenzhen Stock Exchange,313.4474,55.0251,total_return,backtest,false
+2020-04,9,002371.SZ,NAURA TECHNOLOGY GROUP LTD A,Shenzhen Stock Exchange,295.7075,29.6660,total_return,backtest,false
+2020-04,10,002475.SZ,LUXSHARE PRECISION INDUSTRY LTD A,Shenzhen Stock Exchange,274.0948,2.9846,total_return,backtest,false
+2020-05,1,6920.T,LASERTEC,Tokyo Stock Exchange,984.3661,33.6355,total_return,backtest,true
+2020-05,2,002714.SZ,MUYUAN FOODS GROUP LTD A,Shenzhen Stock Exchange,737.6263,53.1869,total_return,backtest,true
+2020-05,3,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,737.1314,36.3871,total_return,backtest,true
+2020-05,4,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,725.4736,4.2280,total_return,backtest,false
+2020-05,5,CVNA,CARVANA CLASS A,NYSE,621.7117,1.0852,total_return,backtest,false
+2020-05,6,601100.SS,JIANGSU HENGLI HYDRAULIC A,Shanghai Stock Exchange,547.0189,34.7389,total_return,backtest,false
+2020-05,7,196170.KQ,ALTEOGEN INC,Korea Exchange (Kosdaq),540.2413,44.7625,total_return,backtest,false
+2020-05,8,0241.HK,ALIBABA HEALTH INFORMATION TECH,Hong Kong Exchanges And Clearing Ltd,521.2860,71.5544,total_return,backtest,false
+2020-05,9,002371.SZ,NAURA TECHNOLOGY GROUP LTD A,Shenzhen Stock Exchange,499.2030,26.6715,total_return,backtest,false
+2020-05,10,OKTA,OKTA CLASS A,NASDAQ,480.8061,18.1570,total_return,backtest,false
+2020-06,1,196170.KQ,ALTEOGEN INC,Korea Exchange (Kosdaq),1367.1259,172.5697,total_return,backtest,true
+2020-06,2,6920.T,LASERTEC,Tokyo Stock Exchange,1078.1725,80.3224,total_return,backtest,true
+2020-06,3,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,933.2948,55.5507,total_return,backtest,true
+2020-06,4,CVNA,CARVANA CLASS A,NYSE,825.1741,12.1457,total_return,backtest,false
+2020-06,5,002714.SZ,MUYUAN FOODS GROUP LTD A,Shenzhen Stock Exchange,793.9313,0.8636,total_return,backtest,false
+2020-06,6,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,720.7911,62.9047,total_return,backtest,false
+2020-06,7,TWLO,TWILIO CLASS A,NYSE,712.8342,75.4261,total_return,backtest,false
+2020-06,8,603501.SS,OMNIVISION INTEGRATED CIRCUITS GRO,Shanghai Stock Exchange,676.7158,3.2256,total_return,backtest,false
+2020-06,9,OKTA,OKTA CLASS A,NASDAQ,649.3487,52.7253,total_return,backtest,false
+2020-06,10,601100.SS,JIANGSU HENGLI HYDRAULIC A,Shanghai Stock Exchange,566.5934,24.2772,total_return,backtest,false
+2020-07,1,196170.KQ,ALTEOGEN INC,Korea Exchange (Kosdaq),1627.8596,231.5651,total_return,backtest,true
+2020-07,2,6920.T,LASERTEC,Tokyo Stock Exchange,1295.2288,101.6210,total_return,backtest,true
+2020-07,3,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,989.7528,127.1069,total_return,backtest,true
+2020-07,4,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,976.9734,64.3928,total_return,backtest,false
+2020-07,5,603501.SS,OMNIVISION INTEGRATED CIRCUITS GRO,Shanghai Stock Exchange,865.0097,29.8968,total_return,backtest,false
+2020-07,6,002714.SZ,MUYUAN FOODS GROUP LTD A,Shenzhen Stock Exchange,824.7333,14.5966,total_return,backtest,false
+2020-07,7,OKTA,OKTA CLASS A,NASDAQ,778.2018,63.7739,total_return,backtest,false
+2020-07,8,3661.TW,ALCHIP TECHNOLOGIES,Taiwan Stock Exchange,765.1937,159.1445,total_return,backtest,false
+2020-07,9,TWLO,TWILIO CLASS A,NYSE,653.7616,145.1894,total_return,backtest,false
+2020-07,10,002371.SZ,NAURA TECHNOLOGY GROUP LTD A,Shenzhen Stock Exchange,586.0181,47.7951,total_return,backtest,false
+2020-08,1,196170.KQ,ALTEOGEN INC,Korea Exchange (Kosdaq),2547.8899,311.0286,total_return,backtest,true
+2020-08,2,6920.T,LASERTEC,Tokyo Stock Exchange,1115.0266,29.9494,total_return,backtest,true
+2020-08,3,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,1022.0901,55.1171,total_return,backtest,true
+2020-08,4,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,1007.6322,60.4997,total_return,backtest,false
+2020-08,5,OKTA,OKTA CLASS A,NASDAQ,906.7426,46.0542,total_return,backtest,false
+2020-08,6,603501.SS,OMNIVISION INTEGRATED CIRCUITS GRO,Shanghai Stock Exchange,886.2570,6.7659,total_return,backtest,false
+2020-08,7,002714.SZ,MUYUAN FOODS GROUP LTD A,Shenzhen Stock Exchange,866.4447,22.9755,total_return,backtest,false
+2020-08,8,TWLO,TWILIO CLASS A,NYSE,851.0456,147.0347,total_return,backtest,false
+2020-08,9,002371.SZ,NAURA TECHNOLOGY GROUP LTD A,Shenzhen Stock Exchange,770.9827,37.5923,total_return,backtest,false
+2020-08,10,601888.SS,CHINA TOURISM GROUP DUTY FREE CORP,Shanghai Stock Exchange,723.5800,168.7421,total_return,backtest,false
+2020-09,1,196170.KQ,ALTEOGEN INC,Korea Exchange (Kosdaq),2558.1883,80.3719,total_return,backtest,true
+2020-09,2,CVNA,CARVANA CLASS A,NYSE,1109.8599,132.2650,total_return,backtest,true
+2020-09,3,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,1033.1907,8.5150,total_return,backtest,true
+2020-09,4,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,874.6219,40.1567,total_return,backtest,false
+2020-09,5,TWLO,TWILIO CLASS A,NYSE,821.3115,36.5182,total_return,backtest,false
+2020-09,6,OKTA,OKTA CLASS A,NASDAQ,697.9622,10.1186,total_return,backtest,false
+2020-09,7,002371.SZ,NAURA TECHNOLOGY GROUP LTD A,Shenzhen Stock Exchange,606.6280,26.0022,total_return,backtest,false
+2020-09,8,TSLA,TESLA INC,NASDAQ,600.0835,198.3951,total_return,backtest,false
+2020-09,9,AMD,ADVANCED MICRO DEVICES,NASDAQ,598.6154,68.8104,total_return,backtest,false
+2020-09,10,601100.SS,JIANGSU HENGLI HYDRAULIC A,Shanghai Stock Exchange,589.8455,36.9873,total_return,backtest,false
+2020-10,1,196170.KQ,ALTEOGEN INC,Korea Exchange (Kosdaq),2216.1967,38.8584,total_return,backtest,true
+2020-10,2,CVNA,CARVANA CLASS A,NYSE,1419.4823,85.5740,total_return,backtest,true
+2020-10,3,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,1116.3590,18.4608,total_return,backtest,true
+2020-10,4,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,769.6847,7.7297,total_return,backtest,false
+2020-10,5,DXCM,DEXCOM INC,NASDAQ,742.4893,1.6848,total_return,backtest,false
+2020-10,6,TWLO,TWILIO CLASS A,NYSE,727.7722,12.6105,total_return,backtest,false
+2020-10,7,601100.SS,JIANGSU HENGLI HYDRAULIC A,Shanghai Stock Exchange,718.2415,36.8683,total_return,backtest,false
+2020-10,8,OKTA,OKTA CLASS A,NASDAQ,658.0645,6.8022,total_return,backtest,false
+2020-10,9,601888.SS,CHINA TOURISM GROUP DUTY FREE CORP,Shanghai Stock Exchange,543.5965,50.3488,total_return,backtest,false
+2020-10,10,AMD,ADVANCED MICRO DEVICES,NASDAQ,543.0588,55.8449,total_return,backtest,false
+2020-11,1,CVNA,CARVANA CLASS A,NYSE,1207.1227,19.6192,total_return,backtest,true
+2020-11,2,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,984.0092,7.9171,total_return,backtest,true
+2020-11,3,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,945.7560,29.0507,total_return,backtest,true
+2020-11,4,TWLO,TWILIO CLASS A,NYSE,773.1455,0.5587,total_return,backtest,false
+2020-11,5,601100.SS,JIANGSU HENGLI HYDRAULIC A,Shanghai Stock Exchange,643.5069,29.6637,total_return,backtest,false
+2020-11,6,603501.SS,OMNIVISION INTEGRATED CIRCUITS GRO,Shanghai Stock Exchange,625.6428,0.5011,total_return,backtest,false
+2020-11,7,NTRA,NATERA,NASDAQ,512.0109,40.0666,total_return,backtest,false
+2020-11,8,2331.HK,LI NING LTD,Hong Kong Exchanges And Clearing Ltd,498.7664,60.2896,total_return,backtest,false
+2020-11,9,TSLA,TESLA INC,NASDAQ,485.2262,35.6063,total_return,backtest,false
+2020-11,10,3998.HK,BOSIDENG INTERNATIONAL,Hong Kong Exchanges And Clearing Ltd,472.6482,51.3100,total_return,backtest,false
+2020-12,1,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,1454.9138,18.0355,total_return,backtest,true
+2020-12,2,CVNA,CARVANA CLASS A,NYSE,1443.5534,15.8594,total_return,backtest,true
+2020-12,3,TWLO,TWILIO CLASS A,NYSE,1100.6377,18.6573,total_return,backtest,true
+2020-12,4,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,924.5213,1.0754,total_return,backtest,false
+2020-12,5,MDB,MONGODB CLASS A,NASDAQ,907.0452,22.8871,total_return,backtest,false
+2020-12,6,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,866.4218,24.0369,total_return,backtest,false
+2020-12,7,TSLA,TESLA INC,NASDAQ,818.8927,13.9027,total_return,backtest,false
+2020-12,8,NTRA,NATERA,NASDAQ,807.1942,38.5497,total_return,backtest,false
+2020-12,9,6920.T,LASERTEC,Tokyo Stock Exchange,793.9429,39.4195,total_return,backtest,false
+2020-12,10,3661.TW,ALCHIP TECHNOLOGIES,Taiwan Stock Exchange,757.3346,30.3710,total_return,backtest,false
+2021-01,1,196170.KQ,ALTEOGEN INC,Korea Exchange (Kosdaq),1489.0565,7.1385,total_return,backtest,true
+2021-01,2,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,1393.2483,29.2197,total_return,backtest,true
+2021-01,3,TWLO,TWILIO CLASS A,NYSE,1334.3220,36.9946,total_return,backtest,true
+2021-01,4,CVNA,CARVANA CLASS A,NYSE,1152.8243,7.3881,total_return,backtest,false
+2021-01,5,MDB,MONGODB CLASS A,NASDAQ,1109.7035,55.0862,total_return,backtest,false
+2021-01,6,TSLA,TESLA INC,NASDAQ,1033.2404,64.4880,total_return,backtest,false
+2021-01,7,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,1014.7174,10.7942,total_return,backtest,false
+2021-01,8,NTRA,NATERA,NASDAQ,1007.0078,37.7630,total_return,backtest,false
+2021-01,9,OKTA,OKTA CLASS A,NASDAQ,892.8153,18.8964,total_return,backtest,false
+2021-01,10,6920.T,LASERTEC,Tokyo Stock Exchange,856.2096,44.1189,total_return,backtest,false
+2021-02,1,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,1667.6183,37.4192,total_return,backtest,true
+2021-02,2,TWLO,TWILIO CLASS A,NYSE,1269.7790,28.8418,total_return,backtest,true
+2021-02,3,CVNA,CARVANA CLASS A,NYSE,1268.2032,40.9172,total_return,backtest,true
+2021-02,4,MDB,MONGODB CLASS A,NASDAQ,1263.3714,61.7762,total_return,backtest,false
+2021-02,5,300014.SZ,EVE ENERGY A,Shenzhen Stock Exchange,1041.0356,109.9297,total_return,backtest,false
+2021-02,6,TSLA,TESLA INC,NASDAQ,1019.8229,104.4969,total_return,backtest,false
+2021-02,7,NTRA,NATERA,NASDAQ,924.3996,58.5489,total_return,backtest,false
+2021-02,8,603501.SS,OMNIVISION INTEGRATED CIRCUITS GRO,Shanghai Stock Exchange,782.0032,52.7723,total_return,backtest,false
+2021-02,9,OKTA,OKTA CLASS A,NASDAQ,779.4907,23.4380,total_return,backtest,false
+2021-02,10,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,757.2792,18.3095,total_return,backtest,false
+2021-03,1,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,2050.4562,30.6703,total_return,backtest,true
+2021-03,2,CVNA,CARVANA CLASS A,NYSE,1314.6707,13.3048,total_return,backtest,true
+2021-03,3,NTRA,NATERA,NASDAQ,1189.8889,31.5169,total_return,backtest,true
+2021-03,4,MDB,MONGODB CLASS A,NASDAQ,1098.1683,34.3253,total_return,backtest,false
+2021-03,5,TWLO,TWILIO CLASS A,NYSE,1050.1171,22.7405,total_return,backtest,false
+2021-03,6,TSLA,TESLA INC,NASDAQ,884.5204,19.0099,total_return,backtest,false
+2021-03,7,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,831.5195,44.7687,total_return,backtest,false
+2021-03,8,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,831.1952,20.2136,total_return,backtest,false
+2021-03,9,300014.SZ,EVE ENERGY A,Shenzhen Stock Exchange,796.4335,34.5656,total_return,backtest,false
+2021-03,10,3661.TW,ALCHIP TECHNOLOGIES,Taiwan Stock Exchange,728.0255,35.6384,total_return,backtest,false
+2021-04,1,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,1880.7453,12.1477,total_return,backtest,true
+2021-04,2,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,1249.5182,44.7011,total_return,backtest,true
+2021-04,3,CVNA,CARVANA CLASS A,NYSE,1044.3524,9.5433,total_return,backtest,true
+2021-04,4,NTRA,NATERA,NASDAQ,995.3614,2.0297,total_return,backtest,false
+2021-04,5,ADANIENT.NS,ADANI ENTERPRISES,National Stock Exchange Of India,986.0758,114.1131,total_return,backtest,false
+2021-04,6,IMP.JO,IMPALA PLATINUM,Johannesburg Stock Exchange,822.8575,33.2123,total_return,backtest,false
+2021-04,7,PRIO3.SA,PETRO RIO,XBSP,795.2608,18.2416,total_return,backtest,false
+2021-04,8,TWLO,TWILIO CLASS A,NYSE,792.5092,0.6677,total_return,backtest,false
+2021-04,9,3661.TW,ALCHIP TECHNOLOGIES,Taiwan Stock Exchange,692.2209,43.0365,total_return,backtest,false
+2021-04,10,6920.T,LASERTEC,Tokyo Stock Exchange,635.7824,12.0919,total_return,backtest,false
+2021-05,1,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,2307.4357,16.5336,total_return,backtest,true
+2021-05,2,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,1473.3238,104.7574,total_return,backtest,true
+2021-05,3,ADANIENT.NS,ADANI ENTERPRISES,National Stock Exchange Of India,1073.8656,124.9975,total_return,backtest,true
+2021-05,4,6920.T,LASERTEC,Tokyo Stock Exchange,991.6432,32.3122,total_return,backtest,false
+2021-05,5,CVNA,CARVANA CLASS A,NYSE,988.3632,9.2155,total_return,backtest,false
+2021-05,6,IMP.JO,IMPALA PLATINUM,Johannesburg Stock Exchange,949.1950,39.1410,total_return,backtest,false
+2021-05,7,NTRA,NATERA,NASDAQ,888.4996,3.1695,total_return,backtest,false
+2021-05,8,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,782.2505,8.2985,total_return,backtest,false
+2021-05,9,TWLO,TWILIO CLASS A,NYSE,771.3575,2.3287,total_return,backtest,false
+2021-05,10,PRIO3.SA,PETRO RIO,XBSP,716.9668,32.9478,total_return,backtest,false
+2021-06,1,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,1612.2380,7.4462,total_return,backtest,true
+2021-06,2,ADANIENT.NS,ADANI ENTERPRISES,National Stock Exchange Of India,1500.0049,60.5185,total_return,backtest,true
+2021-06,3,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,1408.1404,52.9238,total_return,backtest,true
+2021-06,4,300014.SZ,EVE ENERGY A,Shenzhen Stock Exchange,1111.9797,32.1370,total_return,backtest,false
+2021-06,5,6920.T,LASERTEC,Tokyo Stock Exchange,1027.9884,53.9479,total_return,backtest,false
+2021-06,6,IMP.JO,IMPALA PLATINUM,Johannesburg Stock Exchange,1025.0006,11.5770,total_return,backtest,false
+2021-06,7,2615.TW,WAN HAI LINES,Taiwan Stock Exchange,939.6990,204.9715,total_return,backtest,false
+2021-06,8,ADANIENSOL.NS,ADANI ENERGY SOLUTIONS LTD,National Stock Exchange Of India,908.8687,99.7434,total_return,backtest,false
+2021-06,9,DELTA.BK,DELTA ELECTRONICS (THAILAND) NON-V,Stock Exchange Of Thailand,892.6034,40.4296,total_return,backtest,false
+2021-06,10,PRIO3.SA,PETRO RIO,XBSP,883.1845,26.0884,total_return,backtest,false
+2021-07,1,2615.TW,WAN HAI LINES,Taiwan Stock Exchange,2197.3709,494.3893,total_return,backtest,true
+2021-07,2,ADANIENT.NS,ADANI ENTERPRISES,National Stock Exchange Of India,1848.3498,44.5432,total_return,backtest,true
+2021-07,3,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,1730.6667,23.0121,total_return,backtest,true
+2021-07,4,2603.TW,EVERGREEN MARINE CORP (TAIWAN) LTD,Taiwan Stock Exchange,1690.5505,341.7457,total_return,backtest,false
+2021-07,5,6920.T,LASERTEC,Tokyo Stock Exchange,1315.1365,48.3821,total_return,backtest,false
+2021-07,6,300274.SZ,SUNGROW POWER SUPPLY LTD A,Shenzhen Stock Exchange,1231.0220,62.9715,total_return,backtest,false
+2021-07,7,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,1190.3821,7.6313,total_return,backtest,false
+2021-07,8,300014.SZ,EVE ENERGY A,Shenzhen Stock Exchange,1053.9635,40.6056,total_return,backtest,false
+2021-07,9,2331.HK,LI NING LTD,Hong Kong Exchanges And Clearing Ltd,1026.1411,88.0105,total_return,backtest,false
+2021-07,10,DELTA.BK,DELTA ELECTRONICS (THAILAND) NON-V,Stock Exchange Of Thailand,991.4996,94.0924,total_return,backtest,false
+2021-08,1,300274.SZ,SUNGROW POWER SUPPLY LTD A,Shenzhen Stock Exchange,2181.7758,86.9609,total_return,backtest,true
+2021-08,2,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,1858.5816,9.3530,total_return,backtest,true
+2021-08,3,2615.TW,WAN HAI LINES,Taiwan Stock Exchange,1478.5099,134.6620,total_return,backtest,true
+2021-08,4,300014.SZ,EVE ENERGY A,Shenzhen Stock Exchange,1414.6473,27.0738,total_return,backtest,false
+2021-08,5,6920.T,LASERTEC,Tokyo Stock Exchange,1184.4243,5.1035,total_return,backtest,false
+2021-08,6,2603.TW,EVERGREEN MARINE CORP (TAIWAN) LTD,Taiwan Stock Exchange,1024.2458,66.1354,total_return,backtest,false
+2021-08,7,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,982.8383,27.4417,total_return,backtest,false
+2021-08,8,ADANIENT.NS,ADANI ENTERPRISES,National Stock Exchange Of India,958.8423,22.3314,total_return,backtest,false
+2021-08,9,3037.TW,UNIMICRON TECHNOLOGY,Taiwan Stock Exchange,924.2207,26.2323,total_return,backtest,false
+2021-08,10,601012.SS,LONGI GREEN ENERGY TECHNOLOGY A,Shanghai Stock Exchange,917.0392,21.2144,total_return,backtest,false
+2021-09,1,300274.SZ,SUNGROW POWER SUPPLY LTD A,Shenzhen Stock Exchange,2370.1453,59.8589,total_return,backtest,true
+2021-09,2,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,2274.1754,33.5966,total_return,backtest,true
+2021-09,3,2615.TW,WAN HAI LINES,Taiwan Stock Exchange,1649.2474,70.3609,total_return,backtest,true
+2021-09,4,002709.SZ,GUANGZHOU TINCI MATERIALS TECHNOLO,Shenzhen Stock Exchange,1528.2222,43.5391,total_return,backtest,false
+2021-09,5,2331.HK,LI NING LTD,Hong Kong Exchanges And Clearing Ltd,1193.0238,42.9794,total_return,backtest,false
+2021-09,6,601012.SS,LONGI GREEN ENERGY TECHNOLOGY A,Shanghai Stock Exchange,1124.2887,20.8143,total_return,backtest,false
+2021-09,7,TSLA,TESLA INC,NASDAQ,1119.4503,17.6738,total_return,backtest,false
+2021-09,8,6920.T,LASERTEC,Tokyo Stock Exchange,1102.3782,16.8053,total_return,backtest,false
+2021-09,9,2603.TW,EVERGREEN MARINE CORP (TAIWAN) LTD,Taiwan Stock Exchange,1087.6350,37.3879,total_return,backtest,false
+2021-09,10,ADANIENT.NS,ADANI ENTERPRISES,National Stock Exchange Of India,979.9188,18.9388,total_return,backtest,false
+2021-10,1,300274.SZ,SUNGROW POWER SUPPLY LTD A,Shenzhen Stock Exchange,2206.7761,28.8292,total_return,backtest,true
+2021-10,2,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,2204.6276,16.0706,total_return,backtest,true
+2021-10,3,002709.SZ,GUANGZHOU TINCI MATERIALS TECHNOLO,Shenzhen Stock Exchange,1694.1932,42.5851,total_return,backtest,true
+2021-10,4,TSLA,TESLA INC,NASDAQ,1364.4434,14.0915,total_return,backtest,false
+2021-10,5,6920.T,LASERTEC,Tokyo Stock Exchange,1304.8283,17.0436,total_return,backtest,false
+2021-10,6,3661.TW,ALCHIP TECHNOLOGIES,Taiwan Stock Exchange,1078.4322,52.2289,total_return,backtest,false
+2021-10,7,ADANIENSOL.NS,ADANI ENERGY SOLUTIONS LTD,National Stock Exchange Of India,847.9446,47.0365,total_return,backtest,false
+2021-10,8,DIXON.NS,DIXON TECHNOLOGIES (INDIA) LTD,National Stock Exchange Of India,763.4326,4.2686,total_return,backtest,false
+2021-10,9,PRIO3.SA,PETRO RIO,XBSP,742.6374,17.4859,total_return,backtest,false
+2021-10,10,600438.SS,TONGWEI LTD A,Shanghai Stock Exchange,736.1150,17.6076,total_return,backtest,false
+2021-11,1,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,2532.7203,24.4098,total_return,backtest,true
+2021-11,2,002709.SZ,GUANGZHOU TINCI MATERIALS TECHNOLO,Shenzhen Stock Exchange,2367.3311,64.8176,total_return,backtest,true
+2021-11,3,300014.SZ,EVE ENERGY A,Shenzhen Stock Exchange,1841.8859,1.7321,total_return,backtest,true
+2021-11,4,3661.TW,ALCHIP TECHNOLOGIES,Taiwan Stock Exchange,1593.7567,63.3525,total_return,backtest,false
+2021-11,5,TSLA,TESLA INC,NASDAQ,1551.2509,62.1071,total_return,backtest,false
+2021-11,6,6920.T,LASERTEC,Tokyo Stock Exchange,1469.6801,17.8026,total_return,backtest,false
+2021-11,7,3037.TW,UNIMICRON TECHNOLOGY,Taiwan Stock Exchange,1372.8950,30.6451,total_return,backtest,false
+2021-11,8,600809.SS,SHANXI XINGHUACUN FEN WINE FACTORY,Shanghai Stock Exchange,1345.2098,6.3380,total_return,backtest,false
+2021-11,9,601012.SS,LONGI GREEN ENERGY TECHNOLOGY A,Shanghai Stock Exchange,1278.8906,14.6895,total_return,backtest,false
+2021-11,10,2331.HK,LI NING LTD,Hong Kong Exchanges And Clearing Ltd,1108.2756,5.5256,total_return,backtest,false
+2021-12,1,300274.SZ,SUNGROW POWER SUPPLY LTD A,Shenzhen Stock Exchange,2021.7812,3.9258,total_return,backtest,true
+2021-12,2,300014.SZ,EVE ENERGY A,Shenzhen Stock Exchange,1980.2927,45.1257,total_return,backtest,true
+2021-12,3,6920.T,LASERTEC,Tokyo Stock Exchange,1559.2708,19.3856,total_return,backtest,true
+2021-12,4,002709.SZ,GUANGZHOU TINCI MATERIALS TECHNOLO,Shenzhen Stock Exchange,1554.2546,0.3236,total_return,backtest,false
+2021-12,5,TSLA,TESLA INC,NASDAQ,1533.1342,55.5973,total_return,backtest,false
+2021-12,6,3661.TW,ALCHIP TECHNOLOGIES,Taiwan Stock Exchange,1275.9777,45.8365,total_return,backtest,false
+2021-12,7,600809.SS,SHANXI XINGHUACUN FEN WINE FACTORY,Shanghai Stock Exchange,1239.4833,13.0769,total_return,backtest,false
+2021-12,8,3037.TW,UNIMICRON TECHNOLOGY,Taiwan Stock Exchange,1152.1049,54.4849,total_return,backtest,false
+2021-12,9,DIXON.NS,DIXON TECHNOLOGIES (INDIA) LTD,National Stock Exchange Of India,1068.5445,19.9162,total_return,backtest,false
+2021-12,10,ASM.AS,ASM INTERNATIONAL NV,Euronext Amsterdam,1006.5591,15.6000,total_return,backtest,false
+2022-01,1,6920.T,LASERTEC,Tokyo Stock Exchange,2357.4713,34.1577,total_return,backtest,true
+2022-01,2,3661.TW,ALCHIP TECHNOLOGIES,Taiwan Stock Exchange,1577.4821,10.5246,total_return,backtest,true
+2022-01,3,TSLA,TESLA INC,NASDAQ,1487.7080,36.2743,total_return,backtest,true
+2022-01,4,300014.SZ,EVE ENERGY A,Shenzhen Stock Exchange,1446.2554,21.1636,total_return,backtest,false
+2022-01,5,600809.SS,SHANXI XINGHUACUN FEN WINE FACTORY,Shanghai Stock Exchange,1285.8182,1.6202,total_return,backtest,false
+2022-01,6,2603.TW,EVERGREEN MARINE CORP (TAIWAN) LTD,Taiwan Stock Exchange,1258.1216,13.7237,total_return,backtest,false
+2022-01,7,DIXON.NS,DIXON TECHNOLOGIES (INDIA) LTD,National Stock Exchange Of India,1157.4993,19.2885,total_return,backtest,false
+2022-01,8,3037.TW,UNIMICRON TECHNOLOGY,Taiwan Stock Exchange,1103.4359,75.9725,total_return,backtest,false
+2022-01,9,603501.SS,OMNIVISION INTEGRATED CIRCUITS GRO,Shanghai Stock Exchange,1046.6292,30.0545,total_return,backtest,false
+2022-01,10,ASM.AS,ASM INTERNATIONAL NV,Euronext Amsterdam,1024.1480,12.1856,total_return,backtest,false
+2022-02,1,ADANIENT.NS,ADANI ENTERPRISES,National Stock Exchange Of India,1097.8085,20.0775,total_return,backtest,true
+2022-02,2,2603.TW,EVERGREEN MARINE CORP (TAIWAN) LTD,Taiwan Stock Exchange,971.9060,13.5258,total_return,backtest,true
+2022-02,3,000792.SZ,QINGHAI SALT LAKE INDUSTRY LTD A,Shenzhen Stock Exchange,946.9958,4.5380,total_return,backtest,true
+2022-02,4,3037.TW,UNIMICRON TECHNOLOGY,Taiwan Stock Exchange,932.1392,5.2242,total_return,backtest,false
+2022-02,5,ADANIENSOL.NS,ADANI ENERGY SOLUTIONS LTD,National Stock Exchange Of India,775.3362,11.1548,total_return,backtest,false
+2022-02,6,002241.SZ,GOERTEK A,Shenzhen Stock Exchange,666.7679,9.0216,total_return,backtest,false
+2022-02,7,APLAPOLLO.NS,APL APOLLO TUBES LTD,National Stock Exchange Of India,645.8732,7.6759,total_return,backtest,false
+2022-02,8,PERSISTENT.NS,PERSISTENT SYSTEMS LTD,National Stock Exchange Of India,628.5398,11.7802,total_return,backtest,false
+2022-02,9,PRIO3.SA,PETRO RIO,XBSP,613.9576,7.0697,total_return,backtest,false
+2022-02,10,0316.HK,ORIENT OVERSEAS (INTERNATIONAL) LT,Hong Kong Exchanges And Clearing Ltd,605.2227,33.3220,total_return,backtest,false
+2022-03,1,2615.TW,WAN HAI LINES,Taiwan Stock Exchange,1428.0603,18.5607,total_return,backtest,true
+2022-03,2,3661.TW,ALCHIP TECHNOLOGIES,Taiwan Stock Exchange,1305.1485,4.5735,total_return,backtest,true
+2022-03,3,2603.TW,EVERGREEN MARINE CORP (TAIWAN) LTD,Taiwan Stock Exchange,1202.5035,14.3658,total_return,backtest,true
+2022-03,4,3037.TW,UNIMICRON TECHNOLOGY,Taiwan Stock Exchange,1119.9865,10.5382,total_return,backtest,false
+2022-03,5,ADANIENSOL.NS,ADANI ENERGY SOLUTIONS LTD,National Stock Exchange Of India,892.9542,18.5900,total_return,backtest,false
+2022-03,6,000792.SZ,QINGHAI SALT LAKE INDUSTRY LTD A,Shenzhen Stock Exchange,889.1664,22.8770,total_return,backtest,false
+2022-03,7,0316.HK,ORIENT OVERSEAS (INTERNATIONAL) LT,Hong Kong Exchanges And Clearing Ltd,698.8093,47.4008,total_return,backtest,false
+2022-03,8,LAURUSLABS.NS,LAURUS LABS LTD,National Stock Exchange Of India,683.8986,6.4495,total_return,backtest,false
+2022-03,9,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,677.6659,10.0533,total_return,backtest,false
+2022-03,10,011200.KS,HMM LTD,Korea Exchange (Stock Market),612.7836,25.9702,total_return,backtest,false
+2022-04,1,TSLA,TESLA INC,NASDAQ,1825.2518,1.9701,total_return,backtest,true
+2022-04,2,3661.TW,ALCHIP TECHNOLOGIES,Taiwan Stock Exchange,1541.9879,4.5658,total_return,backtest,true
+2022-04,3,ADANIENT.NS,ADANI ENTERPRISES,National Stock Exchange Of India,1170.5414,15.6888,total_return,backtest,true
+2022-04,4,ADANIENSOL.NS,ADANI ENERGY SOLUTIONS LTD,National Stock Exchange Of India,897.3977,33.5286,total_return,backtest,false
+2022-04,5,3037.TW,UNIMICRON TECHNOLOGY,Taiwan Stock Exchange,856.4607,4.5164,total_return,backtest,false
+2022-04,6,0316.HK,ORIENT OVERSEAS (INTERNATIONAL) LT,Hong Kong Exchanges And Clearing Ltd,698.1000,9.0490,total_return,backtest,false
+2022-04,7,011200.KS,HMM LTD,Korea Exchange (Stock Market),669.6174,6.5246,total_return,backtest,false
+2022-04,8,9101.T,NIPPON YUSEN,Tokyo Stock Exchange,641.9042,15.8269,total_return,backtest,false
+2022-04,9,2368.TW,GOLD CIRCUIT ELECTRONICS,Taiwan Stock Exchange,608.1039,8.4432,total_return,backtest,false
+2022-04,10,LAURUSLABS.NS,LAURUS LABS LTD,National Stock Exchange Of India,588.2730,7.4840,total_return,backtest,false
+2022-05,1,ADANIENT.NS,ADANI ENTERPRISES,National Stock Exchange Of India,1590.9988,33.2287,total_return,backtest,true
+2022-05,2,ADANIENSOL.NS,ADANI ENERGY SOLUTIONS LTD,National Stock Exchange Of India,1060.7683,38.6700,total_return,backtest,true
+2022-05,3,2603.TW,EVERGREEN MARINE CORP (TAIWAN) LTD,Taiwan Stock Exchange,1053.1236,21.3128,total_return,backtest,true
+2022-05,4,0316.HK,ORIENT OVERSEAS (INTERNATIONAL) LT,Hong Kong Exchanges And Clearing Ltd,688.2478,14.1198,total_return,backtest,false
+2022-05,5,2368.TW,GOLD CIRCUIT ELECTRONICS,Taiwan Stock Exchange,611.5291,4.2077,total_return,backtest,false
+2022-05,6,247540.KQ,ECOPRO BM LTD,Korea Exchange (Kosdaq),609.9643,38.7170,total_return,backtest,false
+2022-05,7,LAURUSLABS.NS,LAURUS LABS LTD,National Stock Exchange Of India,607.9056,13.6949,total_return,backtest,false
+2022-05,8,3037.TW,UNIMICRON TECHNOLOGY,Taiwan Stock Exchange,582.4651,0.6854,total_return,backtest,false
+2022-05,9,011200.KS,HMM LTD,Korea Exchange (Stock Market),563.5961,23.9661,total_return,backtest,false
+2022-05,10,APLAPOLLO.NS,APL APOLLO TUBES LTD,National Stock Exchange Of India,493.4789,16.0003,total_return,backtest,false
+2022-06,1,ADANIENT.NS,ADANI ENTERPRISES,National Stock Exchange Of India,1177.9699,27.6393,total_return,backtest,true
+2022-06,2,0316.HK,ORIENT OVERSEAS (INTERNATIONAL) LT,Hong Kong Exchanges And Clearing Ltd,923.0621,8.9774,total_return,backtest,true
+2022-06,3,011200.KS,HMM LTD,Korea Exchange (Stock Market),879.9751,5.1413,total_return,backtest,true
+2022-06,4,247540.KQ,ECOPRO BM LTD,Korea Exchange (Kosdaq),727.6484,37.5345,total_return,backtest,false
+2022-06,5,8069.TWO,E INK HOLDINGS,Gretai Securities Market,707.3861,33.4827,total_return,backtest,false
+2022-06,6,9107.T,KAWASAKI KISEN LTD,Tokyo Stock Exchange,675.4271,15.0612,total_return,backtest,false
+2022-06,7,LAURUSLABS.NS,LAURUS LABS LTD,National Stock Exchange Of India,624.7139,1.4671,total_return,backtest,false
+2022-06,8,PRIO3.SA,PETRO RIO,XBSP,574.7557,17.6882,total_return,backtest,false
+2022-06,9,002594.SZ,BYD A,Shenzhen Stock Exchange,538.5085,12.4252,total_return,backtest,false
+2022-06,10,1211.HK,BYD H,Hong Kong Exchanges And Clearing Ltd,514.2281,17.3328,total_return,backtest,false
+2022-07,1,002709.SZ,GUANGZHOU TINCI MATERIALS TECHNOLO,Shenzhen Stock Exchange,1359.2630,25.0737,total_return,backtest,true
+2022-07,2,ADANIENT.NS,ADANI ENTERPRISES,National Stock Exchange Of India,1192.8118,4.5110,total_return,backtest,true
+2022-07,3,1772.HK,GANFENG LITHIUM LTD H,Hong Kong Exchanges And Clearing Ltd,1045.0198,7.6775,total_return,backtest,true
+2022-07,4,ADANIENSOL.NS,ADANI ENERGY SOLUTIONS LTD,National Stock Exchange Of India,869.6650,0.3899,total_return,backtest,false
+2022-07,5,601689.SS,NINGBO TUOPU GROUP CLS LTD A,Shanghai Stock Exchange,591.9174,14.1170,total_return,backtest,false
+2022-07,6,600809.SS,SHANXI XINGHUACUN FEN WINE FACTORY,Shanghai Stock Exchange,591.0319,20.6975,total_return,backtest,false
+2022-07,7,247540.KQ,ECOPRO BM LTD,Korea Exchange (Kosdaq),588.1970,7.4275,total_return,backtest,false
+2022-07,8,002594.SZ,BYD A,Shenzhen Stock Exchange,577.1836,37.4626,total_return,backtest,false
+2022-07,9,1211.HK,BYD H,Hong Kong Exchanges And Clearing Ltd,564.9335,39.5917,total_return,backtest,false
+2022-07,10,002460.SZ,GANFENG LITHIUM GROUP LTD A,Shenzhen Stock Exchange,563.7496,12.0987,total_return,backtest,false
+2022-08,1,TSLA,TESLA INC,NASDAQ,1744.8157,2.3761,total_return,backtest,true
+2022-08,2,ADANIENT.NS,ADANI ENTERPRISES,National Stock Exchange Of India,1645.7728,6.0421,total_return,backtest,true
+2022-08,3,0316.HK,ORIENT OVERSEAS (INTERNATIONAL) LT,Hong Kong Exchanges And Clearing Ltd,1277.6556,23.7140,total_return,backtest,true
+2022-08,4,ADANIENSOL.NS,ADANI ENERGY SOLUTIONS LTD,National Stock Exchange Of India,1201.9058,7.2969,total_return,backtest,false
+2022-08,5,300274.SZ,SUNGROW POWER SUPPLY LTD A,Shenzhen Stock Exchange,1138.2758,92.0369,total_return,backtest,false
+2022-08,6,002709.SZ,GUANGZHOU TINCI MATERIALS TECHNOLO,Shenzhen Stock Exchange,1022.8382,37.0152,total_return,backtest,false
+2022-08,7,1585.HK,YADEA GROUP HOLDINGS,Hong Kong Exchanges And Clearing Ltd,993.9476,41.2593,total_return,backtest,false
+2022-08,8,CGPOWER.NS,CG POWER AND INDUSTRIAL SOLUTIONS,National Stock Exchange Of India,966.2419,9.0189,total_return,backtest,false
+2022-08,9,1772.HK,GANFENG LITHIUM LTD H,Hong Kong Exchanges And Clearing Ltd,901.2595,3.6517,total_return,backtest,false
+2022-08,10,601689.SS,NINGBO TUOPU GROUP CLS LTD A,Shanghai Stock Exchange,836.0025,71.3337,total_return,backtest,false
+2022-09,1,ADANIENT.NS,ADANI ENTERPRISES,National Stock Exchange Of India,2009.2012,43.3740,total_return,backtest,true
+2022-09,2,CGPOWER.NS,CG POWER AND INDUSTRIAL SOLUTIONS,National Stock Exchange Of India,1826.3673,20.2258,total_return,backtest,true
+2022-09,3,TSLA,TESLA INC,NASDAQ,1732.4280,9.0431,total_return,backtest,true
+2022-09,4,ADANIENSOL.NS,ADANI ENERGY SOLUTIONS LTD,National Stock Exchange Of India,1421.6513,87.5068,total_return,backtest,false
+2022-09,5,PLS.AX,PLS GROUP LTD,Asx - All Markets,1039.6388,17.9170,total_return,backtest,false
+2022-09,6,1585.HK,YADEA GROUP HOLDINGS,Hong Kong Exchanges And Clearing Ltd,933.2596,17.8859,total_return,backtest,false
+2022-09,7,002709.SZ,GUANGZHOU TINCI MATERIALS TECHNOLO,Shenzhen Stock Exchange,930.9040,20.4374,total_return,backtest,false
+2022-09,8,8069.TWO,E INK HOLDINGS,Gretai Securities Market,870.6196,11.7562,total_return,backtest,false
+2022-09,9,300274.SZ,SUNGROW POWER SUPPLY LTD A,Shenzhen Stock Exchange,865.2936,34.2696,total_return,backtest,false
+2022-09,10,DELTA.BK,DELTA ELECTRONICS (THAILAND) NON-V,Stock Exchange Of Thailand,843.5736,41.6740,total_return,backtest,false
+2022-10,1,ADANIENT.NS,ADANI ENTERPRISES,National Stock Exchange Of India,1966.7569,52.7331,total_return,backtest,true
+2022-10,2,TSLA,TESLA INC,NASDAQ,1551.8246,18.1655,total_return,backtest,true
+2022-10,3,PLS.AX,PLS GROUP LTD,Asx - All Markets,1373.7048,88.4920,total_return,backtest,true
+2022-10,4,CGPOWER.NS,CG POWER AND INDUSTRIAL SOLUTIONS,National Stock Exchange Of India,1341.2176,19.0870,total_return,backtest,false
+2022-10,5,ADANIENSOL.NS,ADANI ENERGY SOLUTIONS LTD,National Stock Exchange Of India,1145.1457,28.7789,total_return,backtest,false
+2022-10,6,DELTA.BK,DELTA ELECTRONICS (THAILAND) NON-V,Stock Exchange Of Thailand,1018.0955,81.9553,total_return,backtest,false
+2022-10,7,300274.SZ,SUNGROW POWER SUPPLY LTD A,Shenzhen Stock Exchange,885.2772,5.8876,total_return,backtest,false
+2022-10,8,8069.TWO,E INK HOLDINGS,Gretai Securities Market,713.1653,5.4782,total_return,backtest,false
+2022-10,9,APLAPOLLO.NS,APL APOLLO TUBES LTD,National Stock Exchange Of India,561.5118,18.2601,total_return,backtest,false
+2022-10,10,DIXON.NS,DIXON TECHNOLOGIES (INDIA) LTD,National Stock Exchange Of India,552.5320,18.4071,total_return,backtest,false
+2022-11,1,PLS.AX,PLS GROUP LTD,Asx - All Markets,1460.0377,68.0162,total_return,backtest,true
+2022-11,2,CGPOWER.NS,CG POWER AND INDUSTRIAL SOLUTIONS,National Stock Exchange Of India,1453.1913,12.2311,total_return,backtest,true
+2022-11,3,ADANIENT.NS,ADANI ENTERPRISES,National Stock Exchange Of India,1359.1161,26.0651,total_return,backtest,true
+2022-11,4,DELTA.BK,DELTA ELECTRONICS (THAILAND) NON-V,Stock Exchange Of Thailand,1000.1806,17.5709,total_return,backtest,false
+2022-11,5,ADANIENSOL.NS,ADANI ENERGY SOLUTIONS LTD,National Stock Exchange Of India,954.5945,4.1958,total_return,backtest,false
+2022-11,6,PRIO3.SA,PETRO RIO,XBSP,620.9430,42.8669,total_return,backtest,false
+2022-11,7,DIXON.NS,DIXON TECHNOLOGIES (INDIA) LTD,National Stock Exchange Of India,546.7983,18.1137,total_return,backtest,false
+2022-11,8,APLAPOLLO.NS,APL APOLLO TUBES LTD,National Stock Exchange Of India,543.2059,9.2284,total_return,backtest,false
+2022-11,9,TIINDIA.NS,TUBE INVESTMENTS OF INDIA LTD,National Stock Exchange Of India,501.5868,27.4862,total_return,backtest,false
+2022-11,10,300604.SZ,HANGZHOU CHANG CHUAN TECHNOLOGY LT,Shenzhen Stock Exchange,424.2283,10.8520,total_return,backtest,false
+2022-12,1,CGPOWER.NS,CG POWER AND INDUSTRIAL SOLUTIONS,National Stock Exchange Of India,1693.1347,21.3812,total_return,backtest,true
+2022-12,2,PLS.AX,PLS GROUP LTD,Asx - All Markets,1547.2058,24.4455,total_return,backtest,true
+2022-12,3,ADANIENT.NS,ADANI ENTERPRISES,National Stock Exchange Of India,1514.8845,19.7231,total_return,backtest,true
+2022-12,4,DELTA.BK,DELTA ELECTRONICS (THAILAND) NON-V,Stock Exchange Of Thailand,1189.7596,31.9449,total_return,backtest,false
+2022-12,5,247540.KQ,ECOPRO BM LTD,Korea Exchange (Kosdaq),729.9231,3.3254,total_return,backtest,false
+2022-12,6,TOU.TO,TOURMALINE OIL CORP,Toronto Stock Exchange,689.2741,1.5926,total_return,backtest,false
+2022-12,7,APLAPOLLO.NS,APL APOLLO TUBES LTD,National Stock Exchange Of India,530.8026,15.4366,total_return,backtest,false
+2022-12,8,PRIO3.SA,PETRO RIO,XBSP,522.9900,28.3372,total_return,backtest,false
+2022-12,9,2368.TW,GOLD CIRCUIT ELECTRONICS,Taiwan Stock Exchange,492.6241,3.2366,total_return,backtest,false
+2022-12,10,FUTU,FUTU HOLDINGS ADR,NASDAQ,488.4227,25.2597,total_return,backtest,false
+2023-01,1,CGPOWER.NS,CG POWER AND INDUSTRIAL SOLUTIONS,National Stock Exchange Of India,2057.0796,12.9348,total_return,backtest,true
+2023-01,2,ADANIENT.NS,ADANI ENTERPRISES,National Stock Exchange Of India,1509.0830,9.9514,total_return,backtest,true
+2023-01,3,DELTA.BK,DELTA ELECTRONICS (THAILAND) NON-V,Stock Exchange Of Thailand,1308.3640,38.9967,total_return,backtest,true
+2023-01,4,300274.SZ,SUNGROW POWER SUPPLY LTD A,Shenzhen Stock Exchange,982.6153,4.3870,total_return,backtest,false
+2023-01,5,0316.HK,ORIENT OVERSEAS (INTERNATIONAL) LT,Hong Kong Exchanges And Clearing Ltd,654.7830,3.0245,total_return,backtest,false
+2023-01,6,002709.SZ,GUANGZHOU TINCI MATERIALS TECHNOLO,Shenzhen Stock Exchange,641.7505,2.8165,total_return,backtest,false
+2023-01,7,1585.HK,YADEA GROUP HOLDINGS,Hong Kong Exchanges And Clearing Ltd,559.9027,4.1350,total_return,backtest,false
+2023-01,8,247540.KQ,ECOPRO BM LTD,Korea Exchange (Kosdaq),550.9254,18.5734,total_return,backtest,false
+2023-01,9,2603.TW,EVERGREEN MARINE CORP (TAIWAN) LTD,Taiwan Stock Exchange,530.6002,15.2240,total_return,backtest,false
+2023-01,10,2615.TW,WAN HAI LINES,Taiwan Stock Exchange,517.4837,23.7554,total_return,backtest,false
+2023-02,1,CGPOWER.NS,CG POWER AND INDUSTRIAL SOLUTIONS,National Stock Exchange Of India,2666.6521,17.2670,total_return,backtest,true
+2023-02,2,PLS.AX,PLS GROUP LTD,Asx - All Markets,1718.6750,2.8973,total_return,backtest,true
+2023-02,3,DELTA.BK,DELTA ELECTRONICS (THAILAND) NON-V,Stock Exchange Of Thailand,1520.3591,79.3672,total_return,backtest,true
+2023-02,4,300274.SZ,SUNGROW POWER SUPPLY LTD A,Shenzhen Stock Exchange,1082.1192,6.7079,total_return,backtest,false
+2023-02,5,1585.HK,YADEA GROUP HOLDINGS,Hong Kong Exchanges And Clearing Ltd,815.3901,49.3406,total_return,backtest,false
+2023-02,6,247540.KQ,ECOPRO BM LTD,Korea Exchange (Kosdaq),644.2979,0.2958,total_return,backtest,false
+2023-02,7,0316.HK,ORIENT OVERSEAS (INTERNATIONAL) LT,Hong Kong Exchanges And Clearing Ltd,608.3150,13.2739,total_return,backtest,false
+2023-02,8,002709.SZ,GUANGZHOU TINCI MATERIALS TECHNOLO,Shenzhen Stock Exchange,587.8380,24.1010,total_return,backtest,false
+2023-02,9,011200.KS,HMM LTD,Korea Exchange (Stock Market),556.7938,32.0615,total_return,backtest,false
+2023-02,10,2615.TW,WAN HAI LINES,Taiwan Stock Exchange,551.2516,19.6336,total_return,backtest,false
+2023-03,1,CGPOWER.NS,CG POWER AND INDUSTRIAL SOLUTIONS,National Stock Exchange Of India,3706.6315,7.8251,total_return,backtest,true
+2023-03,2,DELTA.BK,DELTA ELECTRONICS (THAILAND) NON-V,Stock Exchange Of Thailand,1577.4991,37.3705,total_return,backtest,true
+2023-03,3,300274.SZ,SUNGROW POWER SUPPLY LTD A,Shenzhen Stock Exchange,961.5116,7.2276,total_return,backtest,true
+2023-03,4,086520.KQ,ECOPRO LTD,Korea Exchange (Kosdaq),930.6650,111.1649,total_return,backtest,false
+2023-03,5,1585.HK,YADEA GROUP HOLDINGS,Hong Kong Exchanges And Clearing Ltd,723.3579,14.0796,total_return,backtest,false
+2023-03,6,247540.KQ,ECOPRO BM LTD,Korea Exchange (Kosdaq),660.5552,46.9117,total_return,backtest,false
+2023-03,7,9101.T,NIPPON YUSEN,Tokyo Stock Exchange,651.4008,18.3704,total_return,backtest,false
+2023-03,8,9107.T,KAWASAKI KISEN LTD,Tokyo Stock Exchange,626.3778,27.9120,total_return,backtest,false
+2023-03,9,011200.KS,HMM LTD,Korea Exchange (Stock Market),583.3678,1.6595,total_return,backtest,false
+2023-03,10,8069.TWO,E INK HOLDINGS,Gretai Securities Market,582.0054,8.6814,total_return,backtest,false
+2023-04,1,CGPOWER.NS,CG POWER AND INDUSTRIAL SOLUTIONS,National Stock Exchange Of India,5384.7596,11.8703,total_return,backtest,true
+2023-04,2,DELTA.BK,DELTA ELECTRONICS (THAILAND) NON-V,Stock Exchange Of Thailand,3167.3744,39.4254,total_return,backtest,true
+2023-04,3,PLS.AX,PLS GROUP LTD,Asx - All Markets,2682.1940,3.6764,total_return,backtest,true
+2023-04,4,086520.KQ,ECOPRO LTD,Korea Exchange (Kosdaq),2282.8605,370.6949,total_return,backtest,false
+2023-04,5,247540.KQ,ECOPRO BM LTD,Korea Exchange (Kosdaq),1310.7355,137.0655,total_return,backtest,false
+2023-04,6,9107.T,KAWASAKI KISEN LTD,Tokyo Stock Exchange,1031.2892,6.8358,total_return,backtest,false
+2023-04,7,JSL.NS,JINDAL STAINLESS LTD,National Stock Exchange Of India,1004.3483,22.1223,total_return,backtest,false
+2023-04,8,0316.HK,ORIENT OVERSEAS (INTERNATIONAL) LT,Hong Kong Exchanges And Clearing Ltd,889.1135,6.0295,total_return,backtest,false
+2023-04,9,1585.HK,YADEA GROUP HOLDINGS,Hong Kong Exchanges And Clearing Ltd,853.4931,54.3326,total_return,backtest,false
+2023-04,10,APLAPOLLO.NS,APL APOLLO TUBES LTD,National Stock Exchange Of India,790.9952,11.2391,total_return,backtest,false
+2023-05,1,CGPOWER.NS,CG POWER AND INDUSTRIAL SOLUTIONS,National Stock Exchange Of India,3495.0021,1.9093,total_return,backtest,true
+2023-05,2,086520.KQ,ECOPRO LTD,Korea Exchange (Kosdaq),2851.9639,448.3167,total_return,backtest,true
+2023-05,3,247540.KQ,ECOPRO BM LTD,Korea Exchange (Kosdaq),1252.5839,145.8727,total_return,backtest,true
+2023-05,4,2099.HK,CHINA GOLD INTERNATIONAL RESOURCES,Hong Kong Exchanges And Clearing Ltd,898.1130,42.0822,total_return,backtest,false
+2023-05,5,0316.HK,ORIENT OVERSEAS (INTERNATIONAL) LT,Hong Kong Exchanges And Clearing Ltd,879.2565,22.2071,total_return,backtest,false
+2023-05,6,PERSISTENT.NS,PERSISTENT SYSTEMS LTD,National Stock Exchange Of India,841.7374,0.8557,total_return,backtest,false
+2023-05,7,9107.T,KAWASAKI KISEN LTD,Tokyo Stock Exchange,776.7983,14.5811,total_return,backtest,false
+2023-05,8,JSL.NS,JINDAL STAINLESS LTD,National Stock Exchange Of India,734.8052,10.4768,total_return,backtest,false
+2023-05,9,APLAPOLLO.NS,APL APOLLO TUBES LTD,National Stock Exchange Of India,672.6863,4.2828,total_return,backtest,false
+2023-05,10,1919.HK,COSCO SHIPPING HOLDINGS LTD H,Hong Kong Exchanges And Clearing Ltd,631.2683,11.8888,total_return,backtest,false
+2023-06,1,CGPOWER.NS,CG POWER AND INDUSTRIAL SOLUTIONS,National Stock Exchange Of India,5910.4025,28.6481,total_return,backtest,true
+2023-06,2,086520.KQ,ECOPRO LTD,Korea Exchange (Kosdaq),1840.5293,96.9827,total_return,backtest,true
+2023-06,3,PLS.AX,PLS GROUP LTD,Asx - All Markets,1736.6737,2.2194,total_return,backtest,true
+2023-06,4,DELTA.BK,DELTA ELECTRONICS (THAILAND) NON-V,Stock Exchange Of Thailand,1580.0804,9.4598,total_return,backtest,false
+2023-06,5,ADANIENT.NS,ADANI ENTERPRISES,National Stock Exchange Of India,1436.5827,82.7465,total_return,backtest,false
+2023-06,6,JSL.NS,JINDAL STAINLESS LTD,National Stock Exchange Of India,896.8307,9.9388,total_return,backtest,false
+2023-06,7,2099.HK,CHINA GOLD INTERNATIONAL RESOURCES,Hong Kong Exchanges And Clearing Ltd,837.7564,21.4147,total_return,backtest,false
+2023-06,8,PERSISTENT.NS,PERSISTENT SYSTEMS LTD,National Stock Exchange Of India,814.8783,7.1627,total_return,backtest,false
+2023-06,9,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,762.6733,128.5904,total_return,backtest,false
+2023-06,10,247540.KQ,ECOPRO BM LTD,Korea Exchange (Kosdaq),690.7115,49.5660,total_return,backtest,false
+2023-07,1,CGPOWER.NS,CG POWER AND INDUSTRIAL SOLUTIONS,National Stock Exchange Of India,4004.0218,26.1842,total_return,backtest,true
+2023-07,2,086520.KQ,ECOPRO LTD,Korea Exchange (Kosdaq),1992.3954,48.2163,total_return,backtest,true
+2023-07,3,PLS.AX,PLS GROUP LTD,Asx - All Markets,1977.3563,22.3206,total_return,backtest,true
+2023-07,4,ADANIENT.NS,ADANI ENTERPRISES,National Stock Exchange Of India,1311.1222,36.4666,total_return,backtest,false
+2023-07,5,9107.T,KAWASAKI KISEN LTD,Tokyo Stock Exchange,865.5881,7.0269,total_return,backtest,false
+2023-07,6,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,777.9500,133.9277,total_return,backtest,false
+2023-07,7,300274.SZ,SUNGROW POWER SUPPLY LTD A,Shenzhen Stock Exchange,698.2779,5.3747,total_return,backtest,false
+2023-07,8,APLAPOLLO.NS,APL APOLLO TUBES LTD,National Stock Exchange Of India,677.9127,8.3253,total_return,backtest,false
+2023-07,9,042700.KS,HANMI SEMICONDUCTOR,Korea Exchange (Stock Market),674.4350,42.7272,total_return,backtest,false
+2023-07,10,247540.KQ,ECOPRO BM LTD,Korea Exchange (Kosdaq),664.5505,8.6858,total_return,backtest,false
+2023-08,1,CGPOWER.NS,CG POWER AND INDUSTRIAL SOLUTIONS,National Stock Exchange Of India,3861.6932,29.3734,total_return,backtest,true
+2023-08,2,086520.KQ,ECOPRO LTD,Korea Exchange (Kosdaq),2704.6124,73.7799,total_return,backtest,true
+2023-08,3,PLS.AX,PLS GROUP LTD,Asx - All Markets,1309.4333,14.9113,total_return,backtest,true
+2023-08,4,ADANIENT.NS,ADANI ENTERPRISES,National Stock Exchange Of India,1198.5126,28.6696,total_return,backtest,false
+2023-08,5,9107.T,KAWASAKI KISEN LTD,Tokyo Stock Exchange,1143.3075,28.5889,total_return,backtest,false
+2023-08,6,247540.KQ,ECOPRO BM LTD,Korea Exchange (Kosdaq),1041.2334,64.9369,total_return,backtest,false
+2023-08,7,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,989.6404,213.2600,total_return,backtest,false
+2023-08,8,JSL.NS,JINDAL STAINLESS LTD,National Stock Exchange Of India,934.8541,41.3539,total_return,backtest,false
+2023-08,9,DELTA.BK,DELTA ELECTRONICS (THAILAND) NON-V,Stock Exchange Of Thailand,825.6378,54.0563,total_return,backtest,false
+2023-08,10,9101.T,NIPPON YUSEN,Tokyo Stock Exchange,711.1398,4.2550,total_return,backtest,false
+2023-09,1,086520.KQ,ECOPRO LTD,Korea Exchange (Kosdaq),2046.7521,122.7214,total_return,backtest,true
+2023-09,2,CGPOWER.NS,CG POWER AND INDUSTRIAL SOLUTIONS,National Stock Exchange Of India,1603.6100,9.2693,total_return,backtest,true
+2023-09,3,PLS.AX,PLS GROUP LTD,Asx - All Markets,1211.2446,5.2645,total_return,backtest,true
+2023-09,4,042700.KS,HANMI SEMICONDUCTOR,Korea Exchange (Stock Market),1018.1698,124.6838,total_return,backtest,false
+2023-09,5,9107.T,KAWASAKI KISEN LTD,Tokyo Stock Exchange,1017.0314,49.1252,total_return,backtest,false
+2023-09,6,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,904.3081,22.8310,total_return,backtest,false
+2023-09,7,JSL.NS,JINDAL STAINLESS LTD,National Stock Exchange Of India,837.1020,54.7793,total_return,backtest,false
+2023-09,8,DELTA.BK,DELTA ELECTRONICS (THAILAND) NON-V,Stock Exchange Of Thailand,748.5384,8.6721,total_return,backtest,false
+2023-09,9,0316.HK,ORIENT OVERSEAS (INTERNATIONAL) LT,Hong Kong Exchanges And Clearing Ltd,724.8445,10.0490,total_return,backtest,false
+2023-09,10,ADANIPOWER.NS,ADANI POWER LTD,National Stock Exchange Of India,662.7150,28.6745,total_return,backtest,false
+2023-10,1,CGPOWER.NS,CG POWER AND INDUSTRIAL SOLUTIONS,National Stock Exchange Of India,1547.3180,15.2601,total_return,backtest,true
+2023-10,2,086520.KQ,ECOPRO LTD,Korea Exchange (Kosdaq),1465.6872,16.9451,total_return,backtest,true
+2023-10,3,9107.T,KAWASAKI KISEN LTD,Tokyo Stock Exchange,1079.5167,40.5842,total_return,backtest,true
+2023-10,4,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,938.7121,10.0181,total_return,backtest,false
+2023-10,5,JSL.NS,JINDAL STAINLESS LTD,National Stock Exchange Of India,858.5616,42.0876,total_return,backtest,false
+2023-10,6,042700.KS,HANMI SEMICONDUCTOR,Korea Exchange (Stock Market),822.7784,71.0613,total_return,backtest,false
+2023-10,7,ADANIPOWER.NS,ADANI POWER LTD,National Stock Exchange Of India,807.9614,49.0412,total_return,backtest,false
+2023-10,8,SUZLON.NS,SUZLON ENERGY,National Stock Exchange Of India,760.0337,66.3621,total_return,backtest,false
+2023-10,9,PRIO3.SA,PETRO RIO,XBSP,654.3891,22.4283,total_return,backtest,false
+2023-10,10,INDIANB.NS,INDIAN BANK,National Stock Exchange Of India,628.1799,42.8337,total_return,backtest,false
+2023-11,1,9107.T,KAWASAKI KISEN LTD,Tokyo Stock Exchange,986.8919,13.3792,total_return,backtest,true
+2023-11,2,BSE.NS,BSE LTD,National Stock Exchange Of India,966.3981,127.3286,total_return,backtest,true
+2023-11,3,ADANIPOWER.NS,ADANI POWER LTD,National Stock Exchange Of India,805.4031,31.1749,total_return,backtest,true
+2023-11,4,042700.KS,HANMI SEMICONDUCTOR,Korea Exchange (Stock Market),758.7715,2.1705,total_return,backtest,false
+2023-11,5,601127.SS,SERES GROUP A,Shanghai Stock Exchange,754.1623,75.1658,total_return,backtest,false
+2023-11,6,SUZLON.NS,SUZLON ENERGY,National Stock Exchange Of India,714.0176,59.4543,total_return,backtest,false
+2023-11,7,INDIANB.NS,INDIAN BANK,National Stock Exchange Of India,605.3128,19.5696,total_return,backtest,false
+2023-11,8,FANG,DIAMONDBACK ENERGY,NASDAQ,603.2393,8.8243,total_return,backtest,false
+2023-11,9,1171.HK,YANKUANG ENERGY GROUP COMPANY H,Hong Kong Exchanges And Clearing Ltd,551.3067,15.8792,total_return,backtest,false
+2023-11,10,JSL.NS,JINDAL STAINLESS LTD,National Stock Exchange Of India,535.8067,8.9924,total_return,backtest,false
+2023-12,1,BSE.NS,BSE LTD,National Stock Exchange Of India,1157.9693,131.3081,total_return,backtest,true
+2023-12,2,SUZLON.NS,SUZLON ENERGY,National Stock Exchange Of India,1041.4362,64.7331,total_return,backtest,true
+2023-12,3,ADANIPOWER.NS,ADANI POWER LTD,National Stock Exchange Of India,894.4933,33.2830,total_return,backtest,true
+2023-12,4,CGPOWER.NS,CG POWER AND INDUSTRIAL SOLUTIONS,National Stock Exchange Of India,872.8529,3.8786,total_return,backtest,false
+2023-12,5,042700.KS,HANMI SEMICONDUCTOR,Korea Exchange (Stock Market),846.5106,9.2165,total_return,backtest,false
+2023-12,6,9107.T,KAWASAKI KISEN LTD,Tokyo Stock Exchange,729.7935,5.5225,total_return,backtest,false
+2023-12,7,JSL.NS,JINDAL STAINLESS LTD,National Stock Exchange Of India,603.8576,9.4392,total_return,backtest,false
+2023-12,8,1171.HK,YANKUANG ENERGY GROUP COMPANY H,Hong Kong Exchanges And Clearing Ltd,513.8791,18.4884,total_return,backtest,false
+2023-12,9,JSWENERGY.NS,JSW ENERGY LTD,National Stock Exchange Of India,499.1813,15.4761,total_return,backtest,false
+2023-12,10,INDIANB.NS,INDIAN BANK,National Stock Exchange Of India,469.3626,4.0274,total_return,backtest,false
+2024-01,1,BSE.NS,BSE LTD,National Stock Exchange Of India,909.6623,72.9841,total_return,backtest,true
+2024-01,2,ADANIPOWER.NS,ADANI POWER LTD,National Stock Exchange Of India,837.0504,40.6372,total_return,backtest,true
+2024-01,3,CGPOWER.NS,CG POWER AND INDUSTRIAL SOLUTIONS,National Stock Exchange Of India,804.9271,3.8714,total_return,backtest,true
+2024-01,4,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,797.8522,3.6613,total_return,backtest,false
+2024-01,5,9107.T,KAWASAKI KISEN LTD,Tokyo Stock Exchange,699.2833,25.5531,total_return,backtest,false
+2024-01,6,JSL.NS,JINDAL STAINLESS LTD,National Stock Exchange Of India,577.4390,21.5285,total_return,backtest,false
+2024-01,7,1519.TW,FORTUNE ELECTRIC,Taiwan Stock Exchange,544.4990,26.7564,total_return,backtest,false
+2024-01,8,1171.HK,YANKUANG ENERGY GROUP COMPANY H,Hong Kong Exchanges And Clearing Ltd,543.2164,0.5414,total_return,backtest,false
+2024-01,9,HAL.NS,HINDUSTAN AERONAUTICS LTD,National Stock Exchange Of India,529.0873,46.9987,total_return,backtest,false
+2024-01,10,042700.KS,HANMI SEMICONDUCTOR,Korea Exchange (Stock Market),491.7473,22.3636,total_return,backtest,false
+2024-02,1,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,1608.4194,121.1592,total_return,backtest,true
+2024-02,2,BSE.NS,BSE LTD,National Stock Exchange Of India,997.7372,25.0039,total_return,backtest,true
+2024-02,3,9107.T,KAWASAKI KISEN LTD,Tokyo Stock Exchange,965.9447,41.6706,total_return,backtest,true
+2024-02,4,CGPOWER.NS,CG POWER AND INDUSTRIAL SOLUTIONS,National Stock Exchange Of India,939.3520,20.3802,total_return,backtest,false
+2024-02,5,1519.TW,FORTUNE ELECTRIC,Taiwan Stock Exchange,896.9846,105.1380,total_return,backtest,false
+2024-02,6,ADANIPOWER.NS,ADANI POWER LTD,National Stock Exchange Of India,862.2207,55.3408,total_return,backtest,false
+2024-02,7,1171.HK,YANKUANG ENERGY GROUP COMPANY H,Hong Kong Exchanges And Clearing Ltd,621.2548,17.9978,total_return,backtest,false
+2024-02,8,SUZLON.NS,SUZLON ENERGY,National Stock Exchange Of India,596.8187,50.5009,total_return,backtest,false
+2024-02,9,9101.T,NIPPON YUSEN,Tokyo Stock Exchange,550.0217,40.2845,total_return,backtest,false
+2024-02,10,3017.TW,ASIA VITAL COMPONENTS,Taiwan Stock Exchange,542.1549,55.3308,total_return,backtest,false
+2024-03,1,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,2554.3671,216.7148,total_return,backtest,true
+2024-03,2,1519.TW,FORTUNE ELECTRIC,Taiwan Stock Exchange,1056.2297,88.6283,total_return,backtest,true
+2024-03,3,9107.T,KAWASAKI KISEN LTD,Tokyo Stock Exchange,862.5693,34.5398,total_return,backtest,true
+2024-03,4,ADANIPOWER.NS,ADANI POWER LTD,National Stock Exchange Of India,784.3433,28.0939,total_return,backtest,false
+2024-03,5,JSL.NS,JINDAL STAINLESS LTD,National Stock Exchange Of India,705.5544,28.4226,total_return,backtest,false
+2024-03,6,3017.TW,ASIA VITAL COMPONENTS,Taiwan Stock Exchange,680.4475,69.5678,total_return,backtest,false
+2024-03,7,SUZLON.NS,SUZLON ENERGY,National Stock Exchange Of India,654.2005,11.6033,total_return,backtest,false
+2024-03,8,1171.HK,YANKUANG ENERGY GROUP COMPANY H,Hong Kong Exchanges And Clearing Ltd,577.7345,24.1413,total_return,backtest,false
+2024-03,9,042700.KS,HANMI SEMICONDUCTOR,Korea Exchange (Stock Market),566.6525,28.8315,total_return,backtest,false
+2024-03,10,JSWENERGY.NS,JSW ENERGY LTD,National Stock Exchange Of India,542.3370,25.1047,total_return,backtest,false
+2024-04,1,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,2485.8423,255.3191,total_return,backtest,true
+2024-04,2,1519.TW,FORTUNE ELECTRIC,Taiwan Stock Exchange,1309.6595,96.3228,total_return,backtest,true
+2024-04,3,BSE.NS,BSE LTD,National Stock Exchange Of India,1128.9262,11.7858,total_return,backtest,true
+2024-04,4,042700.KS,HANMI SEMICONDUCTOR,Korea Exchange (Stock Market),857.4842,108.3564,total_return,backtest,false
+2024-04,5,JSL.NS,JINDAL STAINLESS LTD,National Stock Exchange Of India,812.6710,19.7981,total_return,backtest,false
+2024-04,6,3017.TW,ASIA VITAL COMPONENTS,Taiwan Stock Exchange,680.6469,54.2235,total_return,backtest,false
+2024-04,7,SUZLON.NS,SUZLON ENERGY,National Stock Exchange Of India,674.9952,4.3756,total_return,backtest,false
+2024-04,8,267260.KS,HD HYUNDAI ELECTRIC,Korea Exchange (Stock Market),638.5126,109.8511,total_return,backtest,false
+2024-04,9,CGPOWER.NS,CG POWER AND INDUSTRIAL SOLUTIONS,National Stock Exchange Of India,617.8216,17.4788,total_return,backtest,false
+2024-04,10,NVDA,NVIDIA,NASDAQ,578.2375,82.4563,total_return,backtest,false
+2024-05,1,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,2219.8271,62.1571,total_return,backtest,true
+2024-05,2,1519.TW,FORTUNE ELECTRIC,Taiwan Stock Exchange,1419.3149,83.2672,total_return,backtest,true
+2024-05,3,BSE.NS,BSE LTD,National Stock Exchange Of India,1206.5807,19.5875,total_return,backtest,true
+2024-05,4,267260.KS,HD HYUNDAI ELECTRIC,Korea Exchange (Stock Market),823.9918,132.1048,total_return,backtest,false
+2024-05,5,GVT&D.NS,GE VERNOVA T&D INDIA LTD,National Stock Exchange Of India,783.1478,66.9634,total_return,backtest,false
+2024-05,6,3017.TW,ASIA VITAL COMPONENTS,Taiwan Stock Exchange,770.2669,47.6599,total_return,backtest,false
+2024-05,7,HAL.NS,HINDUSTAN AERONAUTICS LTD,National Stock Exchange Of India,675.7786,30.8006,total_return,backtest,false
+2024-05,8,CGPOWER.NS,CG POWER AND INDUSTRIAL SOLUTIONS,National Stock Exchange Of India,612.4798,17.7428,total_return,backtest,false
+2024-05,9,JSL.NS,JINDAL STAINLESS LTD,National Stock Exchange Of India,609.5554,22.0627,total_return,backtest,false
+2024-05,10,THYAO.IS,TURK HAVA YOLLARI AO A,Istanbul Stock Exchange,574.0046,12.0961,total_return,backtest,false
+2024-06,1,1519.TW,FORTUNE ELECTRIC,Taiwan Stock Exchange,1374.7592,29.8078,total_return,backtest,true
+2024-06,2,267260.KS,HD HYUNDAI ELECTRIC,Korea Exchange (Stock Market),1039.2703,134.5317,total_return,backtest,true
+2024-06,3,3017.TW,ASIA VITAL COMPONENTS,Taiwan Stock Exchange,889.7737,41.3837,total_return,backtest,true
+2024-06,4,HAL.NS,HINDUSTAN AERONAUTICS LTD,National Stock Exchange Of India,798.9228,60.4849,total_return,backtest,false
+2024-06,5,GVT&D.NS,GE VERNOVA T&D INDIA LTD,National Stock Exchange Of India,796.7695,48.5267,total_return,backtest,false
+2024-06,6,042700.KS,HANMI SEMICONDUCTOR,Korea Exchange (Stock Market),733.0430,84.8288,total_return,backtest,false
+2024-06,7,SUZLON.NS,SUZLON ENERGY,National Stock Exchange Of India,691.0272,4.7870,total_return,backtest,false
+2024-06,8,BSE.NS,BSE LTD,National Stock Exchange Of India,670.4850,13.2571,total_return,backtest,false
+2024-06,9,JSL.NS,JINDAL STAINLESS LTD,National Stock Exchange Of India,651.0465,23.2698,total_return,backtest,false
+2024-06,10,ADANIPOWER.NS,ADANI POWER LTD,National Stock Exchange Of India,609.9222,36.7561,total_return,backtest,false
+2024-07,1,1519.TW,FORTUNE ELECTRIC,Taiwan Stock Exchange,1890.3887,38.9596,total_return,backtest,true
+2024-07,2,267260.KS,HD HYUNDAI ELECTRIC,Korea Exchange (Stock Market),1162.8972,68.4178,total_return,backtest,true
+2024-07,3,HAL.NS,HINDUSTAN AERONAUTICS LTD,National Stock Exchange Of India,873.5860,58.1184,total_return,backtest,true
+2024-07,4,GVT&D.NS,GE VERNOVA T&D INDIA LTD,National Stock Exchange Of India,845.1277,75.7342,total_return,backtest,false
+2024-07,5,3017.TW,ASIA VITAL COMPONENTS,Taiwan Stock Exchange,799.8055,39.1556,total_return,backtest,false
+2024-07,6,042700.KS,HANMI SEMICONDUCTOR,Korea Exchange (Stock Market),765.5072,25.6037,total_return,backtest,false
+2024-07,7,BSE.NS,BSE LTD,National Stock Exchange Of India,713.1077,2.5779,total_return,backtest,false
+2024-07,8,CGPOWER.NS,CG POWER AND INDUSTRIAL SOLUTIONS,National Stock Exchange Of India,699.4737,30.1925,total_return,backtest,false
+2024-07,9,CLS.TO,CELESTICA,Toronto Stock Exchange,629.6792,27.2833,total_return,backtest,false
+2024-07,10,JSL.NS,JINDAL STAINLESS LTD,National Stock Exchange Of India,573.5934,18.3569,total_return,backtest,false
+2024-08,1,267260.KS,HD HYUNDAI ELECTRIC,Korea Exchange (Stock Market),1021.7438,24.7023,total_return,backtest,true
+2024-08,2,SUZLON.NS,SUZLON ENERGY,National Stock Exchange Of India,963.4911,66.2054,total_return,backtest,true
+2024-08,3,GVT&D.NS,GE VERNOVA T&D INDIA LTD,National Stock Exchange Of India,881.1353,38.1736,total_return,backtest,true
+2024-08,4,CGPOWER.NS,CG POWER AND INDUSTRIAL SOLUTIONS,National Stock Exchange Of India,739.1379,32.4072,total_return,backtest,false
+2024-08,5,HAL.NS,HINDUSTAN AERONAUTICS LTD,National Stock Exchange Of India,730.0704,24.5364,total_return,backtest,false
+2024-08,6,ADANIPOWER.NS,ADANI POWER LTD,National Stock Exchange Of India,579.4390,19.5077,total_return,backtest,false
+2024-08,7,RECLTD.NS,REC,National Stock Exchange Of India,560.9551,26.5967,total_return,backtest,false
+2024-08,8,6446.TW,PHARMAESSENTIA,Taiwan Stock Exchange,529.1496,121.2750,total_return,backtest,false
+2024-08,9,NVDA,NVIDIA,NASDAQ,501.2174,35.4367,total_return,backtest,false
+2024-08,10,PFC.NS,POWER FINANCE CORPORATION LTD,National Stock Exchange Of India,497.0444,25.6677,total_return,backtest,false
+2024-09,1,1519.TW,FORTUNE ELECTRIC,Taiwan Stock Exchange,1635.6665,3.9166,total_return,backtest,true
+2024-09,2,SUZLON.NS,SUZLON ENERGY,National Stock Exchange Of India,1094.6051,58.0712,total_return,backtest,true
+2024-09,3,267260.KS,HD HYUNDAI ELECTRIC,Korea Exchange (Stock Market),994.0352,4.4604,total_return,backtest,true
+2024-09,4,GVT&D.NS,GE VERNOVA T&D INDIA LTD,National Stock Exchange Of India,963.2069,25.1054,total_return,backtest,false
+2024-09,5,CGPOWER.NS,CG POWER AND INDUSTRIAL SOLUTIONS,National Stock Exchange Of India,614.8180,7.4420,total_return,backtest,false
+2024-09,6,6446.TW,PHARMAESSENTIA,Taiwan Stock Exchange,593.1609,69.5140,total_return,backtest,false
+2024-09,7,BSE.NS,BSE LTD,National Stock Exchange Of India,547.6242,4.4328,total_return,backtest,false
+2024-09,8,OIL.NS,OIL INDIA LTD,National Stock Exchange Of India,545.7444,73.6499,total_return,backtest,false
+2024-09,9,RHM.DE,RHEINMETALL AG,Xetra,542.2469,4.8374,total_return,backtest,false
+2024-09,10,FTAI,FTAI AVIATION,NASDAQ,532.2119,51.5773,total_return,backtest,false
+2024-10,1,SUZLON.NS,SUZLON ENERGY,National Stock Exchange Of India,1099.9499,50.9575,total_return,backtest,true
+2024-10,2,GVT&D.NS,GE VERNOVA T&D INDIA LTD,National Stock Exchange Of India,1061.8526,12.3328,total_return,backtest,true
+2024-10,3,267260.KS,HD HYUNDAI ELECTRIC,Korea Exchange (Stock Market),1005.0304,12.0526,total_return,backtest,true
+2024-10,4,BSE.NS,BSE LTD,National Stock Exchange Of India,731.8847,42.2224,total_return,backtest,false
+2024-10,5,VST,VISTRA,NYSE,646.7511,37.8693,total_return,backtest,false
+2024-10,6,FTAI,FTAI AVIATION,NASDAQ,598.8329,28.7416,total_return,backtest,false
+2024-10,7,TRENT.NS,TRENT LTD,National Stock Exchange Of India,557.1803,37.7889,total_return,backtest,false
+2024-10,8,6446.TW,PHARMAESSENTIA,Taiwan Stock Exchange,540.2910,16.9057,total_return,backtest,false
+2024-10,9,5803.T,FUJIKURA,Tokyo Stock Exchange,523.0606,70.9275,total_return,backtest,false
+2024-10,10,6223.TWO,MPI CORP,Gretai Securities Market,503.9673,45.0813,total_return,backtest,false
+2024-11,1,267260.KS,HD HYUNDAI ELECTRIC,Korea Exchange (Stock Market),1197.7575,6.0230,total_return,backtest,true
+2024-11,2,GVT&D.NS,GE VERNOVA T&D INDIA LTD,National Stock Exchange Of India,1143.0248,12.2024,total_return,backtest,true
+2024-11,3,BSE.NS,BSE LTD,National Stock Exchange Of India,839.2784,73.9525,total_return,backtest,true
+2024-11,4,5803.T,FUJIKURA,Tokyo Stock Exchange,661.1040,86.7284,total_return,backtest,false
+2024-11,5,3017.TW,ASIA VITAL COMPONENTS,Taiwan Stock Exchange,623.1936,3.1351,total_return,backtest,false
+2024-11,6,CLS.TO,CELESTICA,Toronto Stock Exchange,595.5179,31.0353,total_return,backtest,false
+2024-11,7,FTAI,FTAI AVIATION,NASDAQ,587.1684,20.6281,total_return,backtest,false
+2024-11,8,VST,VISTRA,NYSE,587.1371,57.7379,total_return,backtest,false
+2024-11,9,012450.KS,HANWHA AEROSPACE LTD,Korea Exchange (Stock Market),554.5056,15.4471,total_return,backtest,false
+2024-11,10,300394.SZ,SUZHOU TFC OPTICAL COMMUNICATIONIN,Shenzhen Stock Exchange,552.5095,30.7115,total_return,backtest,false
+2024-12,1,267260.KS,HD HYUNDAI ELECTRIC,Korea Exchange (Stock Market),1301.9021,9.2303,total_return,backtest,true
+2024-12,2,GVT&D.NS,GE VERNOVA T&D INDIA LTD,National Stock Exchange Of India,1248.8457,1.6779,total_return,backtest,true
+2024-12,3,FTAI,FTAI AVIATION,NASDAQ,893.3902,32.0867,total_return,backtest,true
+2024-12,4,VST,VISTRA,NYSE,766.1131,87.1006,total_return,backtest,false
+2024-12,5,CLS.TO,CELESTICA,Toronto Stock Exchange,735.8296,68.8814,total_return,backtest,false
+2024-12,6,BSE.NS,BSE LTD,National Stock Exchange Of India,732.1741,63.5895,total_return,backtest,false
+2024-12,7,RHM.DE,RHEINMETALL AG,Xetra,676.4554,9.8401,total_return,backtest,false
+2024-12,8,5803.T,FUJIKURA,Tokyo Stock Exchange,671.9798,23.4656,total_return,backtest,false
+2024-12,9,CRS,CARPENTER TECHNOLOGY,NYSE,639.3580,34.0333,total_return,backtest,false
+2024-12,10,7011.T,MITSUBISHI HEAVY INDUSTRIES,Tokyo Stock Exchange,595.7183,10.4108,total_return,backtest,false
+2025-01,1,267260.KS,HD HYUNDAI ELECTRIC,Korea Exchange (Stock Market),1500.1702,3.4431,total_return,backtest,true
+2025-01,2,GVT&D.NS,GE VERNOVA T&D INDIA LTD,National Stock Exchange Of India,1249.2432,20.5119,total_return,backtest,true
+2025-01,3,5803.T,FUJIKURA,Tokyo Stock Exchange,828.9529,23.6040,total_return,backtest,true
+2025-01,4,CLS.TO,CELESTICA,Toronto Stock Exchange,735.5544,80.6267,total_return,backtest,false
+2025-01,5,BSE.NS,BSE LTD,National Stock Exchange Of India,654.1056,41.0415,total_return,backtest,false
+2025-01,6,6223.TWO,MPI CORP,Gretai Securities Market,645.3426,19.4785,total_return,backtest,false
+2025-01,7,RHM.DE,RHEINMETALL AG,Xetra,611.7167,17.7184,total_return,backtest,false
+2025-01,8,003230.KS,SAM YANG FOODS INC,Korea Exchange (Stock Market),574.2830,25.7058,total_return,backtest,false
+2025-01,9,FTAI,FTAI AVIATION,NASDAQ,557.3683,8.3822,total_return,backtest,false
+2025-01,10,VST,VISTRA,NYSE,548.5866,16.3067,total_return,backtest,false
+2025-02,1,267260.KS,HD HYUNDAI ELECTRIC,Korea Exchange (Stock Market),1923.4055,19.7122,total_return,backtest,true
+2025-02,2,1519.TW,FORTUNE ELECTRIC,Taiwan Stock Exchange,1373.4786,0.2732,total_return,backtest,true
+2025-02,3,CLS.TO,CELESTICA,Toronto Stock Exchange,897.8666,80.7173,total_return,backtest,true
+2025-02,4,MSTR,STRATEGY INC CLASS A,NASDAQ,809.7307,36.9284,total_return,backtest,false
+2025-02,5,5803.T,FUJIKURA,Tokyo Stock Exchange,735.3061,9.0989,total_return,backtest,false
+2025-02,6,VST,VISTRA,NYSE,725.2621,34.4670,total_return,backtest,false
+2025-02,7,RHM.DE,RHEINMETALL AG,Xetra,700.4764,52.8481,total_return,backtest,false
+2025-02,8,6223.TWO,MPI CORP,Gretai Securities Market,676.1966,5.8759,total_return,backtest,false
+2025-02,9,BSE.NS,BSE LTD,National Stock Exchange Of India,636.6604,15.3107,total_return,backtest,false
+2025-02,10,298040.KS,HYOSUNG HEAVY INDUSTRIES CORP,Korea Exchange (Stock Market),636.2382,6.9508,total_return,backtest,false
+2025-03,1,1519.TW,FORTUNE ELECTRIC,Taiwan Stock Exchange,1577.6823,12.9346,total_return,backtest,true
+2025-03,2,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,955.2303,27.0221,total_return,backtest,true
+2025-03,3,012450.KS,HANWHA AEROSPACE LTD,Korea Exchange (Stock Market),838.8350,83.5249,total_return,backtest,true
+2025-03,4,CLS.TO,CELESTICA,Toronto Stock Exchange,805.2741,24.5251,total_return,backtest,false
+2025-03,5,003230.KS,SAM YANG FOODS INC,Korea Exchange (Stock Market),743.1064,59.9888,total_return,backtest,false
+2025-03,6,5803.T,FUJIKURA,Tokyo Stock Exchange,738.5753,15.1656,total_return,backtest,false
+2025-03,7,688256.SS,CAMBRICON TECHNOLOGIES CORPORATION,Shanghai Stock Exchange,701.5971,30.3315,total_return,backtest,false
+2025-03,8,RHM.DE,RHEINMETALL AG,Xetra,633.2178,58.8718,total_return,backtest,false
+2025-03,9,196170.KQ,ALTEOGEN INC,Korea Exchange (Kosdaq),632.0539,33.4478,total_return,backtest,false
+2025-03,10,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,616.6245,26.5951,total_return,backtest,false
+2025-04,1,012450.KS,HANWHA AEROSPACE LTD,Korea Exchange (Stock Market),825.8206,91.7728,total_return,backtest,true
+2025-04,2,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,799.3958,12.3360,total_return,backtest,true
+2025-04,3,003230.KS,SAM YANG FOODS INC,Korea Exchange (Stock Market),684.8812,12.2638,total_return,backtest,true
+2025-04,4,RR.L,ROLLS-ROYCE HOLDINGS PLC,London Stock Exchange,629.5382,35.8174,total_return,backtest,false
+2025-04,5,RHM.DE,RHEINMETALL AG,Xetra,596.9812,123.2290,total_return,backtest,false
+2025-04,6,8136.T,SANRIO,Tokyo Stock Exchange,587.3252,30.1223,total_return,backtest,false
+2025-04,7,196170.KQ,ALTEOGEN INC,Korea Exchange (Kosdaq),521.7490,14.8661,total_return,backtest,false
+2025-04,8,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,514.7123,11.5959,total_return,backtest,false
+2025-04,9,UCG.MI,UNICREDIT,Borsa Italiana,510.0513,39.1284,total_return,backtest,false
+2025-04,10,298040.KS,HYOSUNG HEAVY INDUSTRIES CORP,Korea Exchange (Stock Market),493.3556,8.8832,total_return,backtest,false
+2025-05,1,012450.KS,HANWHA AEROSPACE LTD,Korea Exchange (Stock Market),1135.1124,100.7118,total_return,backtest,true
+2025-05,2,688256.SS,CAMBRICON TECHNOLOGIES CORPORATION,Shanghai Stock Exchange,1133.2643,21.5162,total_return,backtest,true
+2025-05,3,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,1038.8462,43.5810,total_return,backtest,true
+2025-05,4,MSTR,STRATEGY INC CLASS A,NASDAQ,973.2417,13.5368,total_return,backtest,false
+2025-05,5,RR.L,ROLLS-ROYCE HOLDINGS PLC,London Stock Exchange,865.7359,34.3358,total_return,backtest,false
+2025-05,6,003230.KS,SAM YANG FOODS INC,Korea Exchange (Stock Market),799.4667,42.8533,total_return,backtest,false
+2025-05,7,298040.KS,HYOSUNG HEAVY INDUSTRIES CORP,Korea Exchange (Stock Market),696.6723,9.9423,total_return,backtest,false
+2025-05,8,RHM.DE,RHEINMETALL AG,Xetra,688.9359,117.3777,total_return,backtest,false
+2025-05,9,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,656.7696,11.7111,total_return,backtest,false
+2025-05,10,UCG.MI,UNICREDIT,Borsa Italiana,623.4793,25.6974,total_return,backtest,false
+2025-06,1,GVT&D.NS,GE VERNOVA T&D INDIA LTD,National Stock Exchange Of India,1861.6954,71.0287,total_return,backtest,true
+2025-06,2,267260.KS,HD HYUNDAI ELECTRIC,Korea Exchange (Stock Market),1463.3179,22.1554,total_return,backtest,true
+2025-06,3,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,1418.2028,55.1813,total_return,backtest,true
+2025-06,4,MSTR,STRATEGY INC CLASS A,NASDAQ,1294.3103,44.4858,total_return,backtest,false
+2025-06,5,012450.KS,HANWHA AEROSPACE LTD,Korea Exchange (Stock Market),1159.3258,43.2382,total_return,backtest,false
+2025-06,6,CVNA,CARVANA CLASS A,NYSE,1011.2772,40.3518,total_return,backtest,false
+2025-06,7,003230.KS,SAM YANG FOODS INC,Korea Exchange (Stock Market),1009.3532,35.5314,total_return,backtest,false
+2025-06,8,RHM.DE,RHEINMETALL AG,Xetra,989.5241,104.5016,total_return,backtest,false
+2025-06,9,RR.L,ROLLS-ROYCE HOLDINGS PLC,London Stock Exchange,963.7365,24.4027,total_return,backtest,false
+2025-06,10,CLS.TO,CELESTICA,Toronto Stock Exchange,947.0765,8.1460,total_return,backtest,false
+2025-07,1,MSTR,STRATEGY INC CLASS A,NASDAQ,2360.3165,40.2262,total_return,backtest,true
+2025-07,2,GVT&D.NS,GE VERNOVA T&D INDIA LTD,National Stock Exchange Of India,2135.0546,51.6220,total_return,backtest,true
+2025-07,3,267260.KS,HD HYUNDAI ELECTRIC,Korea Exchange (Stock Market),1893.2123,87.1045,total_return,backtest,true
+2025-07,4,1519.TW,FORTUNE ELECTRIC,Taiwan Stock Exchange,1754.1231,42.8606,total_return,backtest,false
+2025-07,5,CLS.TO,CELESTICA,Toronto Stock Exchange,1500.2389,96.0239,total_return,backtest,false
+2025-07,6,VRT,VERTIV HOLDINGS CLASS A,NYSE,1467.3119,77.8532,total_return,backtest,false
+2025-07,7,012450.KS,HANWHA AEROSPACE LTD,Korea Exchange (Stock Market),1455.3694,45.7429,total_return,backtest,false
+2025-07,8,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,1402.9768,61.5166,total_return,backtest,false
+2025-07,9,CVNA,CARVANA CLASS A,NYSE,1392.2941,61.1632,total_return,backtest,false
+2025-07,10,298040.KS,HYOSUNG HEAVY INDUSTRIES CORP,Korea Exchange (Stock Market),1288.9598,124.0712,total_return,backtest,false
+2025-08,1,1519.TW,FORTUNE ELECTRIC,Taiwan Stock Exchange,2164.2329,88.8454,total_return,backtest,true
+2025-08,2,GVT&D.NS,GE VERNOVA T&D INDIA LTD,National Stock Exchange Of India,2060.1408,69.0646,total_return,backtest,true
+2025-08,3,298040.KS,HYOSUNG HEAVY INDUSTRIES CORP,Korea Exchange (Stock Market),1866.7731,157.4095,total_return,backtest,true
+2025-08,4,CLS.TO,CELESTICA,Toronto Stock Exchange,1797.9346,135.5267,total_return,backtest,false
+2025-08,5,267260.KS,HD HYUNDAI ELECTRIC,Korea Exchange (Stock Market),1682.7130,67.4478,total_return,backtest,false
+2025-08,6,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,1429.9517,33.6964,total_return,backtest,false
+2025-08,7,MSTR,STRATEGY INC CLASS A,NASDAQ,1304.8102,5.7220,total_return,backtest,false
+2025-08,8,300502.SZ,EOPTOLINK TECHNOLOGY INC A,Shenzhen Stock Exchange,1297.2225,198.8219,total_return,backtest,false
+2025-08,9,9992.HK,POP MART INTERNATIONAL GROUP,Hong Kong Exchanges And Clearing Ltd,1292.0623,25.4715,total_return,backtest,false
+2025-08,10,012450.KS,HANWHA AEROSPACE LTD,Korea Exchange (Stock Market),1253.9500,28.4363,total_return,backtest,false
+2025-09,1,300502.SZ,EOPTOLINK TECHNOLOGY INC A,Shenzhen Stock Exchange,2669.5801,306.3949,total_return,backtest,true
+2025-09,2,688256.SS,CAMBRICON TECHNOLOGIES CORPORATION,Shanghai Stock Exchange,2340.2662,148.9926,total_return,backtest,true
+2025-09,3,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,1929.9223,18.9179,total_return,backtest,true
+2025-09,4,1519.TW,FORTUNE ELECTRIC,Taiwan Stock Exchange,1881.8396,51.5310,total_return,backtest,false
+2025-09,5,APP,APPLOVIN CLASS A,NASDAQ,1843.1181,21.7786,total_return,backtest,false
+2025-09,6,CLS.TO,CELESTICA,Toronto Stock Exchange,1780.3600,68.2869,total_return,backtest,false
+2025-09,7,GVT&D.NS,GE VERNOVA T&D INDIA LTD,National Stock Exchange Of India,1767.5662,20.2651,total_return,backtest,false
+2025-09,8,298040.KS,HYOSUNG HEAVY INDUSTRIES CORP,Korea Exchange (Stock Market),1580.4301,99.6024,total_return,backtest,false
+2025-09,9,300476.SZ,VICTORY GIANT TECHNOLOGY HUIZHOU L,Shenzhen Stock Exchange,1528.8167,211.2680,total_return,backtest,false
+2025-09,10,9992.HK,POP MART INTERNATIONAL GROUP,Hong Kong Exchanges And Clearing Ltd,1516.4886,47.0974,total_return,backtest,false
+2025-10,1,APP,APPLOVIN CLASS A,NASDAQ,3586.7111,105.2502,total_return,backtest,true
+2025-10,2,300502.SZ,EOPTOLINK TECHNOLOGY INC A,Shenzhen Stock Exchange,3319.2749,190.0940,total_return,backtest,true
+2025-10,3,CLS.TO,CELESTICA,Toronto Stock Exchange,2791.0174,58.2472,total_return,backtest,true
+2025-10,4,298040.KS,HYOSUNG HEAVY INDUSTRIES CORP,Korea Exchange (Stock Market),2267.9403,46.5517,total_return,backtest,false
+2025-10,5,6223.TWO,MPI CORP,Gretai Securities Market,2206.3847,73.3590,total_return,backtest,false
+2025-10,6,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,2143.7884,33.8175,total_return,backtest,false
+2025-10,7,GVT&D.NS,GE VERNOVA T&D INDIA LTD,National Stock Exchange Of India,2082.1074,20.7936,total_return,backtest,false
+2025-10,8,300476.SZ,VICTORY GIANT TECHNOLOGY HUIZHOU L,Shenzhen Stock Exchange,2078.9750,114.0299,total_return,backtest,false
+2025-10,9,688256.SS,CAMBRICON TECHNOLOGIES CORPORATION,Shanghai Stock Exchange,2015.2473,121.9132,total_return,backtest,false
+2025-10,10,RR.L,ROLLS-ROYCE HOLDINGS PLC,London Stock Exchange,1957.3347,20.4563,total_return,backtest,false
+2025-11,1,298040.KS,HYOSUNG HEAVY INDUSTRIES CORP,Korea Exchange (Stock Market),3720.1286,70.2914,total_return,backtest,true
+2025-11,2,APP,APPLOVIN CLASS A,NASDAQ,3657.8420,63.1252,total_return,backtest,true
+2025-11,3,CLS.TO,CELESTICA,Toronto Stock Exchange,3043.7290,72.3700,total_return,backtest,true
+2025-11,4,6223.TWO,MPI CORP,Gretai Securities Market,2674.7851,94.1251,total_return,backtest,false
+2025-11,5,300502.SZ,EOPTOLINK TECHNOLOGY INC A,Shenzhen Stock Exchange,2580.8345,83.6770,total_return,backtest,false
+2025-11,6,267260.KS,HD HYUNDAI ELECTRIC,Korea Exchange (Stock Market),2539.7054,69.8114,total_return,backtest,false
+2025-11,7,1519.TW,FORTUNE ELECTRIC,Taiwan Stock Exchange,2441.8602,4.0476,total_return,backtest,false
+2025-11,8,5803.T,FUJIKURA,Tokyo Stock Exchange,2394.5129,97.8512,total_return,backtest,false
+2025-11,9,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,2180.6598,26.5993,total_return,backtest,false
+2025-11,10,300476.SZ,VICTORY GIANT TECHNOLOGY HUIZHOU L,Shenzhen Stock Exchange,2178.5728,54.4950,total_return,backtest,false
+2025-12,1,CVNA,CARVANA CLASS A,NYSE,4757.3281,0.6937,total_return,backtest,true
+2025-12,2,APP,APPLOVIN CLASS A,NASDAQ,4060.1666,25.2596,total_return,backtest,true
+2025-12,3,IREN,IREN,NASDAQ,3108.7248,80.5514,total_return,backtest,true
+2025-12,4,CLS.TO,CELESTICA,Toronto Stock Exchange,3007.5522,76.3996,total_return,backtest,false
+2025-12,5,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,2146.0000,7.4915,total_return,backtest,false
+2025-12,6,298040.KS,HYOSUNG HEAVY INDUSTRIES CORP,Korea Exchange (Stock Market),1987.2706,45.0291,total_return,backtest,false
+2025-12,7,1519.TW,FORTUNE ELECTRIC,Taiwan Stock Exchange,1982.6455,5.3887,total_return,backtest,false
+2025-12,8,GVT&D.NS,GE VERNOVA T&D INDIA LTD,National Stock Exchange Of India,1914.9743,2.3118,total_return,backtest,false
+2025-12,9,6223.TWO,MPI CORP,Gretai Securities Market,1906.4292,59.0784,total_return,backtest,false
+2025-12,10,300476.SZ,VICTORY GIANT TECHNOLOGY HUIZHOU L,Shenzhen Stock Exchange,1886.6531,2.3807,total_return,backtest,false
+2026-01,1,CVNA,CARVANA CLASS A,NYSE,8803.3755,11.8704,total_return,backtest,true
+2026-01,2,300502.SZ,EOPTOLINK TECHNOLOGY INC A,Shenzhen Stock Exchange,3432.4016,19.8769,total_return,backtest,true
+2026-01,3,CLS.TO,CELESTICA,Toronto Stock Exchange,2535.5543,20.4666,total_return,backtest,true
+2026-01,4,GVT&D.NS,GE VERNOVA T&D INDIA LTD,National Stock Exchange Of India,2410.5591,4.5546,total_return,backtest,false
+2026-01,5,688256.SS,CAMBRICON TECHNOLOGIES CORPORATION,Shanghai Stock Exchange,2349.4284,4.1087,total_return,backtest,false
+2026-01,6,300308.SZ,ZHONGJI INNOLIGHT A,Shenzhen Stock Exchange,2145.0331,53.7730,total_return,backtest,false
+2026-01,7,300476.SZ,VICTORY GIANT TECHNOLOGY HUIZHOU L,Shenzhen Stock Exchange,2136.0231,2.5038,total_return,backtest,false
+2026-01,8,ABVX.PA,ABIVAX SA,Nyse Euronext - Euronext Paris,2033.1328,67.6712,total_return,backtest,false
+2026-01,9,6223.TWO,MPI CORP,Gretai Securities Market,2001.0577,27.8974,total_return,backtest,false
+2026-01,10,298040.KS,HYOSUNG HEAVY INDUSTRIES CORP,Korea Exchange (Stock Market),1968.6877,29.3444,total_return,backtest,false
+2026-02,1,CVNA,CARVANA CLASS A,NYSE,3844.0511,30.8508,total_return,backtest,true
+2026-02,2,300502.SZ,EOPTOLINK TECHNOLOGY INC A,Shenzhen Stock Exchange,3100.4697,24.6722,total_return,backtest,true
+2026-02,3,298040.KS,HYOSUNG HEAVY INDUSTRIES CORP,Korea Exchange (Stock Market),3081.8465,19.7607,total_return,backtest,true
+2026-02,4,GVT&D.NS,GE VERNOVA T&D INDIA LTD,National Stock Exchange Of India,2345.3399,2.8154,total_return,backtest,false
+2026-02,5,300308.SZ,ZHONGJI INNOLIGHT A,Shenzhen Stock Exchange,2085.5984,40.4016,total_return,backtest,false
+2026-02,6,6223.TWO,MPI CORP,Gretai Securities Market,1969.8006,16.5300,total_return,backtest,false
+2026-02,7,ASTS,AST SPACEMOBILE CLASS A,NASDAQ,1965.1811,38.5794,total_return,backtest,false
+2026-02,8,1519.TW,FORTUNE ELECTRIC,Taiwan Stock Exchange,1948.0271,32.0033,total_return,backtest,false
+2026-02,9,267260.KS,HD HYUNDAI ELECTRIC,Korea Exchange (Stock Market),1843.1070,0.3738,total_return,backtest,false
+2026-02,10,300394.SZ,SUZHOU TFC OPTICAL COMMUNICATIONIN,Shenzhen Stock Exchange,1610.9830,60.8855,total_return,backtest,false
+2026-03,1,298040.KS,HYOSUNG HEAVY INDUSTRIES CORP,Korea Exchange (Stock Market),3675.7671,52.0062,total_return,backtest,true
+2026-03,2,GVT&D.NS,GE VERNOVA T&D INDIA LTD,National Stock Exchange Of India,3382.9139,31.1798,total_return,backtest,true
+2026-03,3,5803.T,FUJIKURA,Tokyo Stock Exchange,2516.2819,49.3870,total_return,backtest,true
+2026-03,4,6223.TWO,MPI CORP,Gretai Securities Market,2400.7731,30.2759,total_return,backtest,false
+2026-03,5,267260.KS,HD HYUNDAI ELECTRIC,Korea Exchange (Stock Market),2282.9930,38.6820,total_return,backtest,false
+2026-03,6,300502.SZ,EOPTOLINK TECHNOLOGY INC A,Shenzhen Stock Exchange,2141.0780,7.0203,total_return,backtest,false
+2026-03,7,1519.TW,FORTUNE ELECTRIC,Taiwan Stock Exchange,1982.0880,53.4936,total_return,backtest,false
+2026-03,8,042700.KS,HANMI SEMICONDUCTOR,Korea Exchange (Stock Market),1788.9056,167.9096,total_return,backtest,false
+2026-03,9,300394.SZ,SUZHOU TFC OPTICAL COMMUNICATIONIN,Shenzhen Stock Exchange,1776.2983,141.3673,total_return,backtest,false
+2026-03,10,300476.SZ,VICTORY GIANT TECHNOLOGY HUIZHOU L,Shenzhen Stock Exchange,1713.3281,16.1805,total_return,backtest,false
+2026-04,1,298040.KS,HYOSUNG HEAVY INDUSTRIES CORP,Korea Exchange (Stock Market),3153.2078,30.7855,total_return,backtest,true
+2026-04,2,6223.TWO,MPI CORP,Gretai Securities Market,2601.7478,55.8111,total_return,backtest,true
+2026-04,3,GVT&D.NS,GE VERNOVA T&D INDIA LTD,National Stock Exchange Of India,2564.2807,10.5649,total_return,backtest,true
+2026-04,4,5803.T,FUJIKURA,Tokyo Stock Exchange,2221.6859,37.6933,total_return,backtest,false
+2026-04,5,267260.KS,HD HYUNDAI ELECTRIC,Korea Exchange (Stock Market),1846.3857,1.9477,total_return,backtest,false
+2026-04,6,300502.SZ,EOPTOLINK TECHNOLOGY INC A,Shenzhen Stock Exchange,1692.5164,4.0322,total_return,backtest,false
+2026-04,7,VRT,VERTIV HOLDINGS CLASS A,NYSE,1657.0741,54.6695,total_return,backtest,false
+2026-04,8,ASTS,AST SPACEMOBILE CLASS A,NASDAQ,1531.2992,14.0989,total_return,backtest,false
+2026-04,9,2383.TW,ELITE MATERIAL,Taiwan Stock Exchange,1329.2806,54.1308,total_return,backtest,false
+2026-04,10,3017.TW,ASIA VITAL COMPONENTS,Taiwan Stock Exchange,1282.4851,28.5163,total_return,backtest,false
+2026-05,1,298040.KS,HYOSUNG HEAVY INDUSTRIES CORP,Korea Exchange (Stock Market),4529.3049,46.4809,total_return,backtest,true
+2026-05,2,6223.TWO,MPI CORP,Gretai Securities Market,3890.3201,95.5557,total_return,backtest,true
+2026-05,3,CLS.TO,CELESTICA,Toronto Stock Exchange,3687.9139,45.2268,total_return,backtest,true
+2026-05,4,5803.T,FUJIKURA,Tokyo Stock Exchange,3429.0952,76.8443,total_return,backtest,false
+2026-05,5,2383.TW,ELITE MATERIAL,Taiwan Stock Exchange,2754.0174,160.1002,total_return,backtest,false
+2026-05,6,267260.KS,HD HYUNDAI ELECTRIC,Korea Exchange (Stock Market),2206.6192,37.2647,total_return,backtest,false
+2026-05,7,VRT,VERTIV HOLDINGS CLASS A,NYSE,2109.1952,76.4368,total_return,backtest,false
+2026-05,8,GVT&D.NS,GE VERNOVA T&D INDIA LTD,National Stock Exchange Of India,2089.6054,33.5484,total_return,backtest,false
+2026-05,9,CRDO,CREDO TECHNOLOGY GROUP HOLDING LTD,NASDAQ,2045.6227,38.8969,total_return,backtest,false
+2026-05,10,RKLB,ROCKET LAB CORP,NASDAQ,2004.8469,3.0473,total_return,backtest,false
+2026-06,1,298040.KS,HYOSUNG HEAVY INDUSTRIES CORP,Korea Exchange (Stock Market),4070.7306,24.1519,total_return,backtest,true
+2026-06,2,6223.TWO,MPI CORP,Gretai Securities Market,3709.8606,101.3139,total_return,backtest,true
+2026-06,3,RKLB,ROCKET LAB CORP,NASDAQ,3032.7511,107.6411,total_return,backtest,true
+2026-06,4,CLS.TO,CELESTICA,Toronto Stock Exchange,2935.0165,39.4734,total_return,backtest,false
+2026-06,5,CVNA,CARVANA CLASS A,NYSE,2725.0774,9.2291,total_return,backtest,false
+2026-06,6,GVT&D.NS,GE VERNOVA T&D INDIA LTD,National Stock Exchange Of India,2422.8963,28.0989,total_return,backtest,false
+2026-06,7,2383.TW,ELITE MATERIAL,Taiwan Stock Exchange,2393.2948,108.7338,total_return,backtest,false
+2026-06,8,APP,APPLOVIN CLASS A,NASDAQ,2351.3794,41.0148,total_return,backtest,false
+2026-06,9,5803.T,FUJIKURA,Tokyo Stock Exchange,2288.4200,4.6402,total_return,backtest,false
+2026-06,10,402340.KS,SK SQUARE,Korea Exchange (Stock Market),2244.4924,81.8151,total_return,backtest,false
+2026-07,1,6223.TWO,MPI CORP,Gretai Securities Market,3570.8347,70.3222,total_return,backtest,true
+2026-07,2,402340.KS,SK SQUARE,Korea Exchange (Stock Market),3195.4072,257.7324,total_return,backtest,true
+2026-07,3,5803.T,FUJIKURA,Tokyo Stock Exchange,2863.6302,50.5573,total_return,backtest,true
+2026-07,4,001309.SZ,SHENZHEN TECHWINSEMI TECHNOLOGY LT,Shenzhen Stock Exchange,2676.9678,152.3750,total_return,backtest,false
+2026-07,5,300857.SZ,SHARETRONIC DATA TECHNOLOGY LTD A,Shenzhen Stock Exchange,2621.8259,131.2848,total_return,backtest,false
+2026-07,6,301377.SZ,GUANGDONG DTECH TECHNOLOGY LTD A,Shenzhen Stock Exchange,2553.3006,190.4585,total_return,backtest,false
+2026-07,7,298040.KS,HYOSUNG HEAVY INDUSTRIES CORP,Korea Exchange (Stock Market),2552.9773,37.6593,total_return,backtest,false
+2026-07,8,CLS.TO,CELESTICA,Toronto Stock Exchange,2408.2174,29.2011,total_return,backtest,false
+2026-07,9,6869.HK,YANGTZE OPTICAL FIBRE AND CABLE JO,Hong Kong Exchanges And Clearing Ltd,2332.1332,39.4810,total_return,backtest,false
+2026-07,10,2383.TW,ELITE MATERIAL,Taiwan Stock Exchange,2182.8247,108.4338,total_return,backtest,false
+2026-08,1,6223.TWO,MPI CORP,Gretai Securities Market,2471.6519,4.6648,total_return,backtest,true
+2026-08,2,402340.KS,SK SQUARE,Korea Exchange (Stock Market),1996.6641,29.2265,total_return,backtest,true
+2026-08,3,301377.SZ,GUANGDONG DTECH TECHNOLOGY LTD A,Shenzhen Stock Exchange,1775.4348,51.0167,total_return,backtest,true
+2026-08,4,WDC,WESTERN DIGITAL CORP,NASDAQ,1601.4194,25.3889,total_return,backtest,false
+2026-08,5,300502.SZ,EOPTOLINK TECHNOLOGY INC A,Shenzhen Stock Exchange,1483.9192,6.7318,total_return,backtest,false
+2026-08,6,STX,SEAGATE TECHNOLOGY HOLDINGS PLC,NASDAQ,1345.3930,27.0901,total_return,backtest,false
+2026-08,7,000660.KS,SK HYNIX,Korea Exchange (Stock Market),1174.3277,39.8725,total_return,backtest,false
+2026-08,8,CRDO,CREDO TECHNOLOGY GROUP HOLDING LTD,NASDAQ,1119.7407,18.9529,total_return,backtest,false
+2026-08,9,2383.TW,ELITE MATERIAL,Taiwan Stock Exchange,1071.5236,1.9238,total_return,backtest,false
+2026-08,10,MU,MICRON TECHNOLOGY,NASDAQ,1065.7482,59.1442,total_return,backtest,false
+2026-09,1,5803.T,FUJIKURA,Tokyo Stock Exchange,2558.4644,14.7743,total_return,backtest,true
+2026-09,2,300857.SZ,SHARETRONIC DATA TECHNOLOGY LTD A,Shenzhen Stock Exchange,2169.1510,10.9107,total_return,backtest,true
+2026-09,3,301377.SZ,GUANGDONG DTECH TECHNOLOGY LTD A,Shenzhen Stock Exchange,2141.4963,20.6660,total_return,backtest,true
+2026-09,4,LITE,LUMENTUM HOLDINGS,NASDAQ,1589.9316,6.9945,total_return,backtest,false
+2026-09,5,2059.TW,KING SLIDE WORKS,Taiwan Stock Exchange,1499.0140,178.0644,total_return,backtest,false
+2026-09,6,688498.SS,YUANJIE SEMICONDUCTOR TECHNOLOGY L,Shanghai Stock Exchange,1319.3695,36.4060,total_return,backtest,false
+2026-09,7,2383.TW,ELITE MATERIAL,Taiwan Stock Exchange,1211.9306,6.4033,total_return,backtest,false
+2026-09,8,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,1144.1923,19.0622,total_return,backtest,false
+2026-09,9,600183.SS,SHENGYI TECHNOLOGY LTD A,Shanghai Stock Exchange,1087.0941,9.9560,total_return,backtest,false
+2026-09,10,3017.TW,ASIA VITAL COMPONENTS,Taiwan Stock Exchange,957.0001,27.6474,total_return,backtest,false
+2026-10,1,LITE,LUMENTUM HOLDINGS,NASDAQ,2049.7565,13.1926,total_return,backtest,true
+2026-10,2,2059.TW,KING SLIDE WORKS,Taiwan Stock Exchange,1411.9402,63.8725,total_return,backtest,true
+2026-10,3,603268.SS,GUANGDONG SONGFA CERAMICS A,Shanghai Stock Exchange,1143.3405,55.4767,total_return,backtest,true
+2026-10,4,000150.KS,DOOSAN CORP,Korea Exchange (Stock Market),1138.9056,5.0241,total_return,backtest,false
+2026-10,5,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,1069.0625,60.3240,total_return,backtest,false
+2026-10,6,HOOD,ROBINHOOD MARKETS CLASS A,NASDAQ,1046.7890,12.1859,total_return,backtest,false
+2026-10,7,3653.TW,JENTECH PRECISION INDUSTRIAL LTD,Taiwan Stock Exchange,1031.1164,98.3497,total_return,backtest,false
+2026-10,8,3017.TW,ASIA VITAL COMPONENTS,Taiwan Stock Exchange,946.6069,36.1075,total_return,backtest,false
+2026-10,9,3665.TW,BIZLINK HOLDING INC,Taiwan Stock Exchange,926.2511,35.5768,total_return,backtest,false
+2026-10,10,NTRA,NATERA,NASDAQ,834.0339,52.2601,total_return,backtest,false
+2026-11,1,LITE,LUMENTUM HOLDINGS,NASDAQ,2044.0959,17.7550,total_return,backtest,true
+2026-11,2,2059.TW,KING SLIDE WORKS,Taiwan Stock Exchange,1295.1280,22.1329,total_return,backtest,true
+2026-11,3,MU,MICRON TECHNOLOGY,NASDAQ,1235.8417,7.4979,total_return,backtest,true
+2026-11,4,CVNA,CARVANA CLASS A,NYSE,1164.6296,9.5093,total_return,backtest,false
+2026-11,5,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,1143.9865,49.6099,total_return,backtest,false
+2026-11,6,3653.TW,JENTECH PRECISION INDUSTRIAL LTD,Taiwan Stock Exchange,1012.2900,82.1207,total_return,backtest,false
+2026-11,7,3017.TW,ASIA VITAL COMPONENTS,Taiwan Stock Exchange,1008.5237,32.5403,total_return,backtest,false
+2026-11,8,NTRA,NATERA,NASDAQ,949.6580,54.7281,total_return,backtest,false
+2026-11,9,009150.KS,SAMSUNG ELECTRO MECHANICS,Korea Exchange (Stock Market),910.3015,12.3255,total_return,backtest,false
+2026-11,10,603268.SS,GUANGDONG SONGFA CERAMICS A,Shanghai Stock Exchange,882.8526,2.0425,total_return,backtest,false

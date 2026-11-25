@@ -1,0 +1,1091 @@
+month,rank,ticker,name,index,return_3y_pct,return_3m_pct,return_type,source,selected_for_buy
+2017-11,1,NVDA,NVIDIA,NASDAQ,994.3538,27.2602,total_return,backtest,true
+2017-11,2,AMZN,AMAZON.COM INC,NASDAQ,261.8412,11.8954,total_return,backtest,true
+2017-11,3,NFLX,NETFLIX,NASDAQ,250.0802,8.1306,total_return,backtest,true
+2017-11,4,AVGO,BROADCOM INC,NASDAQ,219.6193,6.9934,total_return,backtest,false
+2017-11,5,LRCX,LAM RESEARCH,NASDAQ,178.9812,30.7977,total_return,backtest,false
+2017-11,6,AMAT,APPLIED MATERIAL INC,NASDAQ,168.2607,27.3527,total_return,backtest,false
+2017-11,7,MTD,METTLER TOLEDO,NYSE,164.1042,19.1160,total_return,backtest,false
+2017-11,8,GPN,GLOBAL PAYMENTS INC,NYSE,158.7636,10.1515,total_return,backtest,false
+2017-11,9,ADBE,ADOBE INC,NASDAQ,149.8003,19.5713,total_return,backtest,false
+2017-11,10,STZ,CONSTELLATION BRANDS CLASS A,NYSE,145.4873,13.3126,total_return,backtest,false
+2017-12,1,NVDA,NVIDIA,NASDAQ,886.1753,18.4537,total_return,backtest,true
+2017-12,2,AKRBP.OL,AKER BP,Oslo Bors Asa,352.5628,30.3283,total_return,backtest,true
+2017-12,3,BESI.AS,BE SEMICONDUCTOR INDUSTRIES NV,Euronext Amsterdam,336.7240,26.2313,total_return,backtest,true
+2017-12,4,TTWO,TAKE TWO INTERACTIVE SOFTWARE,NASDAQ,303.2899,14.0710,total_return,backtest,false
+2017-12,5,NEM.DE,NEMETSCHEK,Xetra,295.3155,25.0338,total_return,backtest,false
+2017-12,6,NFLX,NETFLIX,NASDAQ,278.8500,7.3665,total_return,backtest,false
+2017-12,7,NBIX,NEUROCRINE BIOSCIENCES,NASDAQ,260.7125,27.0141,total_return,backtest,false
+2017-12,8,COHR,COHERENT,NYSE,257.1967,32.2176,total_return,backtest,false
+2017-12,9,AMZN,AMAZON.COM INC,NASDAQ,247.4929,20.0031,total_return,backtest,false
+2017-12,10,STMPA.PA,STMICROELECTRONICS,Nyse Euronext - Euronext Paris,243.7943,30.3645,total_return,backtest,false
+2018-01,1,NVDA,NVIDIA,NASDAQ,894.3125,8.2384,total_return,backtest,true
+2018-01,2,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,580.0578,190.1605,total_return,backtest,true
+2018-01,3,HTHT,H WORLD GROUP ADR,NASDAQ,464.7318,21.5536,total_return,backtest,true
+2018-01,4,AKRBP.OL,AKER BP,Oslo Bors Asa,360.4836,26.9066,total_return,backtest,false
+2018-01,5,BESI.AS,BE SEMICONDUCTOR INDUSTRIES NV,Euronext Amsterdam,329.6464,21.4166,total_return,backtest,false
+2018-01,6,NFLX,NETFLIX,NASDAQ,293.3526,5.8506,total_return,backtest,false
+2018-01,7,TTWO,TAKE TWO INTERACTIVE SOFTWARE,NASDAQ,291.6518,7.3853,total_return,backtest,false
+2018-01,8,ANET,ARISTA NETWORKS,NYSE,287.7235,24.2452,total_return,backtest,false
+2018-01,9,IVN.TO,IVANHOE MINES CLASS A,Toronto Stock Exchange,283.7740,5.3991,total_return,backtest,false
+2018-01,10,TPL,TEXAS PACIFIC LAND,NYSE,281.7732,10.5247,total_return,backtest,false
+2018-02,1,NVDA,NVIDIA,NASDAQ,1219.1253,18.8542,total_return,backtest,true
+2018-02,2,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,828.2219,237.9934,total_return,backtest,true
+2018-02,3,HTHT,H WORLD GROUP ADR,NASDAQ,607.8927,11.6514,total_return,backtest,true
+2018-02,4,AKRBP.OL,AKER BP,Oslo Bors Asa,597.4124,25.3726,total_return,backtest,false
+2018-02,5,TAL,TAL EDUCATION GROUP ADR REPTG,NYSE,532.7466,18.4364,total_return,backtest,false
+2018-02,6,BESI.AS,BE SEMICONDUCTOR INDUSTRIES NV,Euronext Amsterdam,443.3183,22.3717,total_return,backtest,false
+2018-02,7,AMD,ADVANCED MICRO DEVICES,NASDAQ,434.6304,25.0227,total_return,backtest,false
+2018-02,8,TPL,TEXAS PACIFIC LAND,NYSE,368.7974,31.8819,total_return,backtest,false
+2018-02,9,ANET,ARISTA NETWORKS,NYSE,336.9785,37.9866,total_return,backtest,false
+2018-02,10,NFLX,NETFLIX,NASDAQ,328.2726,37.6063,total_return,backtest,false
+2018-03,1,NVDA,NVIDIA,NASDAQ,1026.7119,20.5732,total_return,backtest,true
+2018-03,2,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,729.8803,163.7594,total_return,backtest,true
+2018-03,3,TAL,TAL EDUCATION GROUP ADR REPTG,NYSE,640.4938,35.4376,total_return,backtest,true
+2018-03,4,HTHT,H WORLD GROUP ADR,NASDAQ,636.2584,42.3484,total_return,backtest,false
+2018-03,5,AKRBP.OL,AKER BP,Oslo Bors Asa,402.4773,5.8501,total_return,backtest,false
+2018-03,6,BESI.AS,BE SEMICONDUCTOR INDUSTRIES NV,Euronext Amsterdam,334.7340,21.6403,total_return,backtest,false
+2018-03,7,NFLX,NETFLIX,NASDAQ,329.4853,55.3364,total_return,backtest,false
+2018-03,8,TTWO,TAKE TWO INTERACTIVE SOFTWARE,NASDAQ,322.3103,0.2869,total_return,backtest,false
+2018-03,9,AMZN,AMAZON.COM INC,NASDAQ,297.8456,28.5277,total_return,backtest,false
+2018-03,10,SRT3.DE,SARTORIUS PREF AG,Xetra,297.8367,42.2900,total_return,backtest,false
+2018-04,1,NVDA,NVIDIA,NASDAQ,1036.3419,19.6858,total_return,backtest,true
+2018-04,2,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,717.5932,27.5725,total_return,backtest,true
+2018-04,3,TAL,TAL EDUCATION GROUP ADR REPTG,NYSE,572.6148,24.8401,total_return,backtest,true
+2018-04,4,NFLX,NETFLIX,NASDAQ,396.1614,53.8602,total_return,backtest,false
+2018-04,5,AKRBP.OL,AKER BP,Oslo Bors Asa,395.8673,9.9971,total_return,backtest,false
+2018-04,6,SRT3.DE,SARTORIUS PREF AG,Xetra,345.1704,46.6373,total_return,backtest,false
+2018-04,7,MRO.L,MELROSE INDUSTRIES PLC,London Stock Exchange,319.1746,12.9021,total_return,backtest,false
+2018-04,8,AMZN,AMAZON.COM INC,NASDAQ,288.9653,23.7603,total_return,backtest,false
+2018-04,9,BESI.AS,BE SEMICONDUCTOR INDUSTRIES NV,Euronext Amsterdam,265.4505,22.0772,total_return,backtest,false
+2018-04,10,ANET,ARISTA NETWORKS,NYSE,261.9768,8.3708,total_return,backtest,false
+2018-05,1,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,774.2164,13.5253,total_return,backtest,true
+2018-05,2,TAL,TAL EDUCATION GROUP ADR REPTG,NYSE,497.0296,11.8207,total_return,backtest,true
+2018-05,3,AKRBP.OL,AKER BP,Oslo Bors Asa,361.8574,14.7568,total_return,backtest,true
+2018-05,4,NFLX,NETFLIX,NASDAQ,293.0314,15.5975,total_return,backtest,false
+2018-05,5,NEM.DE,NEMETSCHEK,Xetra,287.4998,23.0147,total_return,backtest,false
+2018-05,6,SRT3.DE,SARTORIUS PREF AG,Xetra,283.8652,29.7048,total_return,backtest,false
+2018-05,7,AMZN,AMAZON.COM INC,NASDAQ,271.3144,7.9427,total_return,backtest,false
+2018-05,8,TPL,TEXAS PACIFIC LAND,NYSE,266.6246,1.4580,total_return,backtest,false
+2018-05,9,SALM.OL,SALMAR,Oslo Bors Asa,244.7033,73.2968,total_return,backtest,false
+2018-05,10,NESTE.HE,NESTE,Nasdaq Omx Helsinki Ltd.,241.7928,22.6320,total_return,backtest,false
+2018-06,1,NVDA,NVIDIA,NASDAQ,1065.6560,4.2099,total_return,backtest,true
+2018-06,2,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,724.8531,23.3072,total_return,backtest,true
+2018-06,3,HTHT,H WORLD GROUP ADR,NASDAQ,629.9963,15.8920,total_return,backtest,true
+2018-06,4,TAL,TAL EDUCATION GROUP ADR REPTG,NYSE,606.2189,12.4470,total_return,backtest,false
+2018-06,5,AMD,ADVANCED MICRO DEVICES,NASDAQ,502.1930,13.3774,total_return,backtest,false
+2018-06,6,AKRBP.OL,AKER BP,Oslo Bors Asa,472.4392,45.5084,total_return,backtest,false
+2018-06,7,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,452.9495,7.3296,total_return,backtest,false
+2018-06,8,TPL,TEXAS PACIFIC LAND,NYSE,376.5799,31.0936,total_return,backtest,false
+2018-06,9,TTWO,TAKE TWO INTERACTIVE SOFTWARE,NASDAQ,309.4995,0.1877,total_return,backtest,false
+2018-06,10,NFLX,NETFLIX,NASDAQ,294.3871,20.6672,total_return,backtest,false
+2018-07,1,NVDA,NVIDIA,NASDAQ,1105.0463,2.2920,total_return,backtest,true
+2018-07,2,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,637.1060,5.2562,total_return,backtest,true
+2018-07,3,HTHT,H WORLD GROUP ADR,NASDAQ,606.7532,27.5226,total_return,backtest,true
+2018-07,4,AMD,ADVANCED MICRO DEVICES,NASDAQ,524.5833,49.1542,total_return,backtest,false
+2018-07,5,AKRBP.OL,AKER BP,Oslo Bors Asa,434.7039,35.6921,total_return,backtest,false
+2018-07,6,TPL,TEXAS PACIFIC LAND,NYSE,368.7376,37.5786,total_return,backtest,false
+2018-07,7,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,359.6863,12.4405,total_return,backtest,false
+2018-07,8,TTWO,TAKE TWO INTERACTIVE SOFTWARE,NASDAQ,329.3072,21.0472,total_return,backtest,false
+2018-07,9,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,323.5901,16.4582,total_return,backtest,false
+2018-07,10,NFLX,NETFLIX,NASDAQ,317.0849,32.5309,total_return,backtest,false
+2018-08,1,NVDA,NVIDIA,NASDAQ,1155.6063,8.8751,total_return,backtest,true
+2018-08,2,AMD,ADVANCED MICRO DEVICES,NASDAQ,849.7409,68.4743,total_return,backtest,true
+2018-08,3,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,655.2102,2.6468,total_return,backtest,true
+2018-08,4,HTHT,H WORLD GROUP ADR,NASDAQ,610.0633,14.5926,total_return,backtest,false
+2018-08,5,AKRBP.OL,AKER BP,Oslo Bors Asa,499.3791,8.1558,total_return,backtest,false
+2018-08,6,TPL,TEXAS PACIFIC LAND,NYSE,474.1287,35.8244,total_return,backtest,false
+2018-08,7,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,461.8892,27.2255,total_return,backtest,false
+2018-08,8,NEM.DE,NEMETSCHEK,Xetra,287.5224,14.9548,total_return,backtest,false
+2018-08,9,SALM.OL,SALMAR,Oslo Bors Asa,275.7527,8.7592,total_return,backtest,false
+2018-08,10,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,270.1186,3.8340,total_return,backtest,false
+2018-09,1,AMD,ADVANCED MICRO DEVICES,NASDAQ,1290.6077,83.3212,total_return,backtest,true
+2018-09,2,NVDA,NVIDIA,NASDAQ,1172.5505,11.2979,total_return,backtest,true
+2018-09,3,TPL,TEXAS PACIFIC LAND,NYSE,612.8241,18.0996,total_return,backtest,true
+2018-09,4,NEM.DE,NEMETSCHEK,Xetra,384.4865,36.1916,total_return,backtest,false
+2018-09,5,TTWO,TAKE TWO INTERACTIVE SOFTWARE,NASDAQ,358.4964,19.1649,total_return,backtest,false
+2018-09,6,EQX.TO,EQUINOX GOLD,Toronto Stock Exchange,303.9788,0.2205,total_return,backtest,false
+2018-09,7,VEEV,VEEVA SYSTEMS CLASS A,NYSE,302.9344,34.9018,total_return,backtest,false
+2018-09,8,LOGN.SW,LOGITECH INTERNATIONAL,SIX Swiss Exchange,300.5621,21.4018,total_return,backtest,false
+2018-09,9,ANET,ARISTA NETWORKS,NYSE,299.7583,18.8507,total_return,backtest,false
+2018-09,10,AMZN,AMAZON.COM INC,NASDAQ,292.4253,23.5079,total_return,backtest,false
+2018-10,1,AMD,ADVANCED MICRO DEVICES,NASDAQ,1695.9302,106.0707,total_return,backtest,true
+2018-10,2,NVDA,NVIDIA,NASDAQ,1061.9478,18.6239,total_return,backtest,true
+2018-10,3,AKRBP.OL,AKER BP,Oslo Bors Asa,682.8087,15.4813,total_return,backtest,true
+2018-10,4,TPL,TEXAS PACIFIC LAND,NYSE,523.8700,24.0469,total_return,backtest,false
+2018-10,5,TTWO,TAKE TWO INTERACTIVE SOFTWARE,NASDAQ,380.2993,16.5850,total_return,backtest,false
+2018-10,6,XPO,XPO,NYSE,379.1014,13.9649,total_return,backtest,false
+2018-10,7,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,372.7494,13.6555,total_return,backtest,false
+2018-10,8,VEEV,VEEVA SYSTEMS CLASS A,NYSE,365.0577,41.6472,total_return,backtest,false
+2018-10,9,IVN.TO,IVANHOE MINES CLASS A,Toronto Stock Exchange,339.5872,4.5332,total_return,backtest,false
+2018-10,10,ANET,ARISTA NETWORKS,NYSE,334.4786,3.2505,total_return,backtest,false
+2018-11,1,TPL,TEXAS PACIFIC LAND,NYSE,414.7961,2.7079,total_return,backtest,true
+2018-11,2,EQX.TO,EQUINOX GOLD,Toronto Stock Exchange,311.0117,0.3377,total_return,backtest,true
+2018-11,3,TTWO,TAKE TWO INTERACTIVE SOFTWARE,NASDAQ,288.1627,14.0241,total_return,backtest,true
+2018-11,4,LITE,LUMENTUM HOLDINGS,NASDAQ,281.1018,4.5933,total_return,backtest,false
+2018-11,5,SALM.OL,SALMAR,Oslo Bors Asa,275.6601,3.4246,total_return,backtest,false
+2018-11,6,VEEV,VEEVA SYSTEMS CLASS A,NYSE,260.0709,20.7854,total_return,backtest,false
+2018-11,7,BURL,BURLINGTON STORES,NYSE,256.6764,12.2243,total_return,backtest,false
+2018-11,8,HEI,HEICO,NYSE,226.7942,9.7682,total_return,backtest,false
+2018-11,9,ISRG,INTUITIVE SURGICAL,NASDAQ,214.8489,2.5561,total_return,backtest,false
+2018-11,10,VER.VI,VERBUND AG,Wiener Boerse Ag,204.2883,2.3289,total_return,backtest,false
+2018-12,1,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,873.4403,4.6178,total_return,backtest,true
+2018-12,2,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,477.8706,4.2016,total_return,backtest,true
+2018-12,3,IVN.TO,IVANHOE MINES CLASS A,Toronto Stock Exchange,304.2978,11.7375,total_return,backtest,true
+2018-12,4,SALM.OL,SALMAR,Oslo Bors Asa,293.2289,17.3134,total_return,backtest,false
+2018-12,5,NRG,NRG ENERGY INC,NYSE,220.9328,8.5900,total_return,backtest,false
+2018-12,6,VER.VI,VERBUND AG,Wiener Boerse Ag,216.7093,0.9167,total_return,backtest,false
+2018-12,7,BVN,BUENAVENTURA ADR REPRESENTING,NYSE,202.9476,12.3114,total_return,backtest,false
+2018-12,8,MELI,MERCADOLIBRE,NASDAQ,187.7368,2.7920,total_return,backtest,false
+2018-12,9,DECK,DECKERS OUTDOOR,NYSE,172.2510,9.3565,total_return,backtest,false
+2018-12,10,UNH,UNITEDHEALTH GROUP,NYSE,162.4169,4.8052,total_return,backtest,false
+2019-01,1,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,699.5301,28.8243,total_return,backtest,true
+2019-01,2,EQX.TO,EQUINOX GOLD,Toronto Stock Exchange,549.2174,0.7355,total_return,backtest,true
+2019-01,3,BVN,BUENAVENTURA ADR REPRESENTING,NYSE,284.8665,20.9545,total_return,backtest,true
+2019-01,4,NRG,NRG ENERGY INC,NYSE,247.2782,5.8824,total_return,backtest,false
+2019-01,5,TAL,TAL EDUCATION GROUP ADR REPTG,NYSE,245.8781,3.7729,total_return,backtest,false
+2019-01,6,DECK,DECKERS OUTDOOR,NYSE,171.0794,7.9020,total_return,backtest,false
+2019-01,7,BESI.AS,BE SEMICONDUCTOR INDUSTRIES NV,Euronext Amsterdam,139.7335,0.1012,total_return,backtest,false
+2019-01,8,CME,CME GROUP CLASS A,NASDAQ,134.2281,10.5223,total_return,backtest,false
+2019-01,9,FN,FABRINET,NYSE,115.4072,10.9166,total_return,backtest,false
+2019-01,10,WDAY,WORKDAY CLASS A,NASDAQ,100.4016,9.3848,total_return,backtest,false
+2019-02,1,AMD,ADVANCED MICRO DEVICES,NASDAQ,1009.5455,34.0472,total_return,backtest,true
+2019-02,2,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,783.4660,33.5915,total_return,backtest,true
+2019-02,3,EQX.TO,EQUINOX GOLD,Toronto Stock Exchange,735.8030,8.6871,total_return,backtest,true
+2019-02,4,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,623.9009,21.3645,total_return,backtest,false
+2019-02,5,TECK-B.TO,TECK RESOURCES SUBORDINATE VOTING,Toronto Stock Exchange,573.1766,17.3622,total_return,backtest,false
+2019-02,6,AAL.L,ANGLO AMERICAN PLC,London Stock Exchange,545.3221,19.6862,total_return,backtest,false
+2019-02,7,AKRBP.OL,AKER BP,Oslo Bors Asa,475.7472,0.8740,total_return,backtest,false
+2019-02,8,FM.TO,FIRST QUANTUM MINERALS,Toronto Stock Exchange,435.7106,15.5156,total_return,backtest,false
+2019-02,9,TEAM,ATLASSIAN CORP CLASS A,NASDAQ,373.7602,29.6272,total_return,backtest,false
+2019-02,10,HTHT,H WORLD GROUP ADR,NASDAQ,365.6558,21.3685,total_return,backtest,false
+2019-03,1,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,1104.7356,35.8173,total_return,backtest,true
+2019-03,2,AMD,ADVANCED MICRO DEVICES,NASDAQ,999.5327,10.4695,total_return,backtest,true
+2019-03,3,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,752.6501,24.4785,total_return,backtest,true
+2019-03,4,EQX.TO,EQUINOX GOLD,Toronto Stock Exchange,690.1496,27.6234,total_return,backtest,false
+2019-03,5,XYZ,BLOCK CLASS A,NYSE,678.1609,16.3230,total_return,backtest,false
+2019-03,6,TPL,TEXAS PACIFIC LAND,NYSE,454.6495,28.3897,total_return,backtest,false
+2019-03,7,IVN.TO,IVANHOE MINES CLASS A,Toronto Stock Exchange,421.3532,31.0951,total_return,backtest,false
+2019-03,8,AKRBP.OL,AKER BP,Oslo Bors Asa,413.8699,18.8692,total_return,backtest,false
+2019-03,9,HTHT,H WORLD GROUP ADR,NASDAQ,409.7496,11.1921,total_return,backtest,false
+2019-03,10,VEEV,VEEVA SYSTEMS CLASS A,NYSE,385.4261,22.6186,total_return,backtest,false
+2019-04,1,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,941.2972,26.7730,total_return,backtest,true
+2019-04,2,AMD,ADVANCED MICRO DEVICES,NASDAQ,795.4386,38.2449,total_return,backtest,true
+2019-04,3,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,630.4268,49.1307,total_return,backtest,true
+2019-04,4,TPL,TEXAS PACIFIC LAND,NYSE,442.7029,42.8374,total_return,backtest,false
+2019-04,5,NVDA,NVIDIA,NASDAQ,410.8940,34.5019,total_return,backtest,false
+2019-04,6,AKRBP.OL,AKER BP,Oslo Bors Asa,406.9218,42.2090,total_return,backtest,false
+2019-04,7,VEEV,VEEVA SYSTEMS CLASS A,NYSE,406.6294,42.0287,total_return,backtest,false
+2019-04,8,ANET,ARISTA NETWORKS,NYSE,398.3569,49.2456,total_return,backtest,false
+2019-04,9,XYZ,BLOCK CLASS A,NYSE,390.3141,33.5710,total_return,backtest,false
+2019-04,10,HTHT,H WORLD GROUP ADR,NASDAQ,348.8500,47.1883,total_return,backtest,false
+2019-05,1,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,857.7796,20.2142,total_return,backtest,true
+2019-05,2,AMD,ADVANCED MICRO DEVICES,NASDAQ,678.3099,13.1913,total_return,backtest,true
+2019-05,3,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,660.9827,43.8412,total_return,backtest,true
+2019-05,4,TPL,TEXAS PACIFIC LAND,NYSE,440.5739,15.3765,total_return,backtest,false
+2019-05,5,NVDA,NVIDIA,NASDAQ,416.4208,25.9113,total_return,backtest,false
+2019-05,6,VEEV,VEEVA SYSTEMS CLASS A,NYSE,408.4333,28.2505,total_return,backtest,false
+2019-05,7,XYZ,BLOCK CLASS A,NYSE,389.0531,2.0603,total_return,backtest,false
+2019-05,8,HTHT,H WORLD GROUP ADR,NASDAQ,378.5433,33.5433,total_return,backtest,false
+2019-05,9,TEAM,ATLASSIAN CORP CLASS A,NASDAQ,375.3992,11.9411,total_return,backtest,false
+2019-05,10,ANET,ARISTA NETWORKS,NYSE,368.7569,45.4003,total_return,backtest,false
+2019-06,1,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,831.7676,44.9746,total_return,backtest,true
+2019-06,2,AMD,ADVANCED MICRO DEVICES,NASDAQ,499.7812,16.4896,total_return,backtest,true
+2019-06,3,TEAM,ATLASSIAN CORP CLASS A,NASDAQ,457.7315,17.1195,total_return,backtest,true
+2019-06,4,VEEV,VEEVA SYSTEMS CLASS A,NYSE,368.2549,30.8540,total_return,backtest,false
+2019-06,5,MELI,MERCADOLIBRE,NASDAQ,320.1664,24.3532,total_return,backtest,false
+2019-06,6,VER.VI,VERBUND AG,Wiener Boerse Ag,281.1364,3.5388,total_return,backtest,false
+2019-06,7,NOW,SERVICENOW,NYSE,265.6708,9.3927,total_return,backtest,false
+2019-06,8,HEI,HEICO,NYSE,259.0466,29.7237,total_return,backtest,false
+2019-06,9,HEI.A,HEICO CLASS A,NYSE,250.4299,22.8404,total_return,backtest,false
+2019-06,10,RACE.MI,FERRARI,Borsa Italiana,242.8909,10.2978,total_return,backtest,false
+2019-07,1,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,1006.1836,13.5692,total_return,backtest,true
+2019-07,2,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,877.7935,45.4305,total_return,backtest,true
+2019-07,3,AMD,ADVANCED MICRO DEVICES,NASDAQ,490.8560,19.0047,total_return,backtest,true
+2019-07,4,TEAM,ATLASSIAN CORP CLASS A,NASDAQ,405.1737,16.4161,total_return,backtest,false
+2019-07,5,TPL,TEXAS PACIFIC LAND,NYSE,376.3121,1.7243,total_return,backtest,false
+2019-07,6,VEEV,VEEVA SYSTEMS CLASS A,NYSE,375.1172,27.7865,total_return,backtest,false
+2019-07,7,MELI,MERCADOLIBRE,NASDAQ,336.6729,20.4912,total_return,backtest,false
+2019-07,8,KER.PA,KERING SA,Nyse Euronext - Euronext Paris,316.1010,3.1665,total_return,backtest,false
+2019-07,9,NOW,SERVICENOW,NYSE,313.5090,11.3919,total_return,backtest,false
+2019-07,10,RACE.MI,FERRARI,Borsa Italiana,308.9623,21.1722,total_return,backtest,false
+2019-08,1,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,895.9729,11.0228,total_return,backtest,true
+2019-08,2,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,831.0987,31.7584,total_return,backtest,true
+2019-08,3,XYZ,BLOCK CLASS A,NYSE,698.5104,10.4230,total_return,backtest,true
+2019-08,4,TEAM,ATLASSIAN CORP CLASS A,NASDAQ,367.5342,27.2084,total_return,backtest,false
+2019-08,5,AMD,ADVANCED MICRO DEVICES,NASDAQ,343.8776,10.2063,total_return,backtest,false
+2019-08,6,VEEV,VEEVA SYSTEMS CLASS A,NYSE,336.6939,18.6101,total_return,backtest,false
+2019-08,7,EQX.TO,EQUINOX GOLD,Toronto Stock Exchange,316.6002,23.1810,total_return,backtest,false
+2019-08,8,MELI,MERCADOLIBRE,NASDAQ,307.6019,28.3554,total_return,backtest,false
+2019-08,9,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,289.3917,7.7024,total_return,backtest,false
+2019-08,10,HEI,HEICO,NYSE,286.3478,29.5840,total_return,backtest,false
+2019-09,1,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,828.9137,40.4479,total_return,backtest,true
+2019-09,2,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,738.3846,5.5392,total_return,backtest,true
+2019-09,3,EQX.TO,EQUINOX GOLD,Toronto Stock Exchange,445.0127,39.6127,total_return,backtest,true
+2019-09,4,TEAM,ATLASSIAN CORP CLASS A,NASDAQ,356.2754,6.8557,total_return,backtest,false
+2019-09,5,AMD,ADVANCED MICRO DEVICES,NASDAQ,325.0000,14.7391,total_return,backtest,false
+2019-09,6,HEI,HEICO,NYSE,318.0465,18.9818,total_return,backtest,false
+2019-09,7,VER.VI,VERBUND AG,Wiener Boerse Ag,303.5872,19.5794,total_return,backtest,false
+2019-09,8,VEEV,VEEVA SYSTEMS CLASS A,NYSE,291.9355,3.9471,total_return,backtest,false
+2019-09,9,HEI.A,HEICO CLASS A,NYSE,281.4193,12.3143,total_return,backtest,false
+2019-09,10,TAL,TAL EDUCATION GROUP ADR REPTG,NYSE,259.1842,3.5455,total_return,backtest,false
+2019-10,1,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,627.9188,3.6403,total_return,backtest,true
+2019-10,2,EQX.TO,EQUINOX GOLD,Toronto Stock Exchange,305.5976,17.0588,total_return,backtest,true
+2019-10,3,NRG,NRG ENERGY INC,NYSE,258.6326,12.7563,total_return,backtest,true
+2019-10,4,VER.VI,VERBUND AG,Wiener Boerse Ag,244.6886,4.8316,total_return,backtest,false
+2019-10,5,BA,BOEING,NYSE,210.2237,4.5219,total_return,backtest,false
+2019-10,6,KEYS,KEYSIGHT TECHNOLOGIES,NYSE,206.8791,8.2842,total_return,backtest,false
+2019-10,7,CPRT,COPART INC,NASDAQ,199.9627,7.4793,total_return,backtest,false
+2019-10,8,TDY,TELEDYNE TECHNOLOGIES,NYSE,198.3323,17.5704,total_return,backtest,false
+2019-10,9,NTRA,NATERA,NASDAQ,195.2295,18.9268,total_return,backtest,false
+2019-10,10,LPLA,LPL FINANCIAL HOLDINGS,NASDAQ,189.1537,0.4046,total_return,backtest,false
+2019-11,1,AMD,ADVANCED MICRO DEVICES,NASDAQ,369.2946,11.4286,total_return,backtest,true
+2019-11,2,NTRA,NATERA,NASDAQ,354.2453,39.6664,total_return,backtest,true
+2019-11,3,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,319.0931,8.3378,total_return,backtest,true
+2019-11,4,NRG,NRG ENERGY INC,NYSE,282.3495,17.5161,total_return,backtest,false
+2019-11,5,BEIJ-B.ST,BEIJER REF CLASS B,Nasdaq Omx Nordic,265.2170,20.3380,total_return,backtest,false
+2019-11,6,HTHT,H WORLD GROUP ADR,NASDAQ,258.2558,15.5678,total_return,backtest,false
+2019-11,7,TAL,TAL EDUCATION GROUP ADR REPTG,NYSE,216.6795,32.9503,total_return,backtest,false
+2019-11,8,CPRT,COPART INC,NASDAQ,214.9966,6.5910,total_return,backtest,false
+2019-11,9,KEYS,KEYSIGHT TECHNOLOGIES,NYSE,207.6524,12.7234,total_return,backtest,false
+2019-11,10,ENTG,ENTEGRIS INC,NASDAQ,207.5016,10.3195,total_return,backtest,false
+2019-12,1,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,854.3458,14.3013,total_return,backtest,true
+2019-12,2,XYZ,BLOCK CLASS A,NYSE,434.1577,11.7723,total_return,backtest,true
+2019-12,3,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,366.4142,40.3920,total_return,backtest,true
+2019-12,4,AMD,ADVANCED MICRO DEVICES,NASDAQ,339.3939,24.4833,total_return,backtest,false
+2019-12,5,NRG,NRG ENERGY INC,NYSE,254.9265,9.1484,total_return,backtest,false
+2019-12,6,CLNX.MC,CELLNEX TELECOM,Bolsa De Madrid,251.5112,14.5676,total_return,backtest,false
+2019-12,7,FTNT,FORTINET,NASDAQ,249.2027,32.7482,total_return,backtest,false
+2019-12,8,TAL,TAL EDUCATION GROUP ADR REPTG,NYSE,248.4107,24.2212,total_return,backtest,false
+2019-12,9,DXCM,DEXCOM INC,NASDAQ,248.1544,32.4573,total_return,backtest,false
+2019-12,10,BEIJ-B.ST,BEIJER REF CLASS B,Nasdaq Omx Nordic,242.7713,14.9445,total_return,backtest,false
+2020-01,1,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,859.3087,41.2202,total_return,backtest,true
+2020-01,2,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,820.8342,26.8926,total_return,backtest,true
+2020-01,3,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,436.5929,52.4870,total_return,backtest,true
+2020-01,4,XYZ,BLOCK CLASS A,NYSE,358.9875,0.9847,total_return,backtest,false
+2020-01,5,TAL,TAL EDUCATION GROUP ADR REPTG,NYSE,313.9329,40.7710,total_return,backtest,false
+2020-01,6,AMD,ADVANCED MICRO DEVICES,NASDAQ,304.4092,58.1925,total_return,backtest,false
+2020-01,7,BEIJ-B.ST,BEIJER REF CLASS B,Nasdaq Omx Nordic,293.4318,28.5422,total_return,backtest,false
+2020-01,8,ABVX.PA,ABIVAX SA,Nyse Euronext - Euronext Paris,281.1521,192.9635,total_return,backtest,false
+2020-01,9,NOW,SERVICENOW,NYSE,279.7686,11.2153,total_return,backtest,false
+2020-01,10,MELI,MERCADOLIBRE,NASDAQ,267.1528,3.7571,total_return,backtest,false
+2020-02,1,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,825.5676,48.7128,total_return,backtest,true
+2020-02,2,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,737.4282,18.2320,total_return,backtest,true
+2020-02,3,TEAM,ATLASSIAN CORP CLASS A,NASDAQ,432.0304,21.6988,total_return,backtest,true
+2020-02,4,XYZ,BLOCK CLASS A,NYSE,410.8755,21.5855,total_return,backtest,false
+2020-02,5,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,392.0828,29.3284,total_return,backtest,false
+2020-02,6,AMD,ADVANCED MICRO DEVICES,NASDAQ,353.2305,38.5205,total_return,backtest,false
+2020-02,7,TWLO,TWILIO CLASS A,NYSE,331.2869,28.7697,total_return,backtest,false
+2020-02,8,NEM.DE,NEMETSCHEK,Xetra,311.3012,33.4596,total_return,backtest,false
+2020-02,9,CLNX.MC,CELLNEX TELECOM,Bolsa De Madrid,303.4255,14.8855,total_return,backtest,false
+2020-02,10,BEIJ-B.ST,BEIJER REF CLASS B,Nasdaq Omx Nordic,297.5232,11.4053,total_return,backtest,false
+2020-03,1,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,680.0126,38.9863,total_return,backtest,true
+2020-03,2,TEAM,ATLASSIAN CORP CLASS A,NASDAQ,409.7046,14.0430,total_return,backtest,true
+2020-03,3,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,398.3411,38.3012,total_return,backtest,true
+2020-03,4,XYZ,BLOCK CLASS A,NYSE,381.1201,20.5584,total_return,backtest,false
+2020-03,5,NTRA,NATERA,NASDAQ,296.4958,3.8778,total_return,backtest,false
+2020-03,6,TAL,TAL EDUCATION GROUP ADR REPTG,NYSE,278.9346,22.8875,total_return,backtest,false
+2020-03,7,NOW,SERVICENOW,NYSE,275.1611,15.2099,total_return,backtest,false
+2020-03,8,NESTE.HE,NESTE,Nasdaq Omx Helsinki Ltd.,269.9964,16.3346,total_return,backtest,false
+2020-03,9,CLNX.MC,CELLNEX TELECOM,Bolsa De Madrid,269.0921,12.5866,total_return,backtest,false
+2020-03,10,TWLO,TWILIO CLASS A,NYSE,255.1072,9.0627,total_return,backtest,false
+2020-04,1,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,511.2225,5.1964,total_return,backtest,true
+2020-04,2,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,367.0165,11.7045,total_return,backtest,true
+2020-04,3,TEAM,ATLASSIAN CORP CLASS A,NASDAQ,358.2972,14.0602,total_return,backtest,true
+2020-04,4,NOW,SERVICENOW,NYSE,227.6323,1.5089,total_return,backtest,false
+2020-04,5,DXCM,DEXCOM INC,NASDAQ,217.7977,23.1005,total_return,backtest,false
+2020-04,6,CLNX.MC,CELLNEX TELECOM,Bolsa De Madrid,217.2515,6.3707,total_return,backtest,false
+2020-04,7,MSCI,MSCI,NYSE,208.0618,11.9219,total_return,backtest,false
+2020-04,8,VEEV,VEEVA SYSTEMS CLASS A,NYSE,204.9337,11.1688,total_return,backtest,false
+2020-04,9,DIM.PA,SARTORIUS STEDIM BIOTECH SA,Nyse Euronext - Euronext Paris,204.6517,22.0002,total_return,backtest,false
+2020-04,10,TAL,TAL EDUCATION GROUP ADR REPTG,NYSE,201.0775,10.4979,total_return,backtest,false
+2020-05,1,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,737.1314,36.3871,total_return,backtest,true
+2020-05,2,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,725.4736,4.2280,total_return,backtest,true
+2020-05,3,CVNA,CARVANA CLASS A,NYSE,621.7117,1.0852,total_return,backtest,true
+2020-05,4,OKTA,OKTA CLASS A,NASDAQ,480.8061,18.1570,total_return,backtest,false
+2020-05,5,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,412.7006,46.2611,total_return,backtest,false
+2020-05,6,TEAM,ATLASSIAN CORP CLASS A,NASDAQ,350.9571,5.7755,total_return,backtest,false
+2020-05,7,DXCM,DEXCOM INC,NASDAQ,329.9641,39.2316,total_return,backtest,false
+2020-05,8,NTRA,NATERA,NASDAQ,309.2818,5.7983,total_return,backtest,false
+2020-05,9,AMD,ADVANCED MICRO DEVICES,NASDAQ,293.9098,11.4681,total_return,backtest,false
+2020-05,10,NOW,SERVICENOW,NYSE,272.0787,3.9352,total_return,backtest,false
+2020-06,1,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,933.2948,55.5507,total_return,backtest,true
+2020-06,2,CVNA,CARVANA CLASS A,NYSE,825.1741,12.1457,total_return,backtest,true
+2020-06,3,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,720.7911,62.9047,total_return,backtest,true
+2020-06,4,TWLO,TWILIO CLASS A,NYSE,712.8342,75.4261,total_return,backtest,false
+2020-06,5,OKTA,OKTA CLASS A,NASDAQ,649.3487,52.7253,total_return,backtest,false
+2020-06,6,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,532.2210,61.3900,total_return,backtest,false
+2020-06,7,DXCM,DEXCOM INC,NASDAQ,465.9934,37.0688,total_return,backtest,false
+2020-06,8,TEAM,ATLASSIAN CORP CLASS A,NASDAQ,418.1767,27.8284,total_return,backtest,false
+2020-06,9,AMD,ADVANCED MICRO DEVICES,NASDAQ,380.7864,18.2938,total_return,backtest,false
+2020-06,10,NTRA,NATERA,NASDAQ,328.2227,15.6839,total_return,backtest,false
+2020-07,1,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,989.7528,127.1069,total_return,backtest,true
+2020-07,2,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,976.9734,64.3928,total_return,backtest,true
+2020-07,3,OKTA,OKTA CLASS A,NASDAQ,778.2018,63.7739,total_return,backtest,true
+2020-07,4,TWLO,TWILIO CLASS A,NYSE,653.7616,145.1894,total_return,backtest,false
+2020-07,5,CVNA,CARVANA CLASS A,NYSE,487.2008,118.1884,total_return,backtest,false
+2020-07,6,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,474.1304,76.7859,total_return,backtest,false
+2020-07,7,DXCM,DEXCOM INC,NASDAQ,454.2037,50.5552,total_return,backtest,false
+2020-07,8,TEAM,ATLASSIAN CORP CLASS A,NASDAQ,412.4218,31.3347,total_return,backtest,false
+2020-07,9,NTRA,NATERA,NASDAQ,359.1160,66.9792,total_return,backtest,false
+2020-07,10,XYZ,BLOCK CLASS A,NYSE,347.3146,100.3436,total_return,backtest,false
+2020-08,1,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,1022.0901,55.1171,total_return,backtest,true
+2020-08,2,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,1007.6322,60.4997,total_return,backtest,true
+2020-08,3,OKTA,OKTA CLASS A,NASDAQ,906.7426,46.0542,total_return,backtest,true
+2020-08,4,TWLO,TWILIO CLASS A,NYSE,851.0456,147.0347,total_return,backtest,false
+2020-08,5,CVNA,CARVANA CLASS A,NYSE,693.8012,93.4215,total_return,backtest,false
+2020-08,6,DXCM,DEXCOM INC,NASDAQ,553.8658,29.9344,total_return,backtest,false
+2020-08,7,NTRA,NATERA,NASDAQ,495.0434,29.6436,total_return,backtest,false
+2020-08,8,AMD,ADVANCED MICRO DEVICES,NASDAQ,468.9199,47.7954,total_return,backtest,false
+2020-08,9,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,462.0559,52.4701,total_return,backtest,false
+2020-08,10,TEAM,ATLASSIAN CORP CLASS A,NASDAQ,393.1602,13.6086,total_return,backtest,false
+2020-09,1,CVNA,CARVANA CLASS A,NYSE,1109.8599,132.2650,total_return,backtest,true
+2020-09,2,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,1033.1907,8.5150,total_return,backtest,true
+2020-09,3,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,874.6219,40.1567,total_return,backtest,true
+2020-09,4,TWLO,TWILIO CLASS A,NYSE,821.3115,36.5182,total_return,backtest,false
+2020-09,5,OKTA,OKTA CLASS A,NASDAQ,697.9622,10.1186,total_return,backtest,false
+2020-09,6,TSLA,TESLA INC,NASDAQ,600.0835,198.3951,total_return,backtest,false
+2020-09,7,AMD,ADVANCED MICRO DEVICES,NASDAQ,598.6154,68.8104,total_return,backtest,false
+2020-09,8,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,524.8474,27.2993,total_return,backtest,false
+2020-09,9,XYZ,BLOCK CLASS A,NYSE,511.1069,96.7933,total_return,backtest,false
+2020-09,10,DXCM,DEXCOM INC,NASDAQ,470.1783,12.4501,total_return,backtest,false
+2020-10,1,CVNA,CARVANA CLASS A,NYSE,1419.4823,85.5740,total_return,backtest,true
+2020-10,2,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,1116.3590,18.4608,total_return,backtest,true
+2020-10,3,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,769.6847,7.7297,total_return,backtest,true
+2020-10,4,DXCM,DEXCOM INC,NASDAQ,742.4893,1.6848,total_return,backtest,false
+2020-10,5,TWLO,TWILIO CLASS A,NYSE,727.7722,12.6105,total_return,backtest,false
+2020-10,6,OKTA,OKTA CLASS A,NASDAQ,658.0645,6.8022,total_return,backtest,false
+2020-10,7,AMD,ADVANCED MICRO DEVICES,NASDAQ,543.0588,55.8449,total_return,backtest,false
+2020-10,8,TSLA,TESLA INC,NASDAQ,528.8624,98.6507,total_return,backtest,false
+2020-10,9,XYZ,BLOCK CLASS A,NYSE,464.2138,54.8980,total_return,backtest,false
+2020-10,10,NTRA,NATERA,NASDAQ,460.4344,44.8857,total_return,backtest,false
+2020-11,1,CVNA,CARVANA CLASS A,NYSE,1207.1227,19.6192,total_return,backtest,true
+2020-11,2,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,984.0092,7.9171,total_return,backtest,true
+2020-11,3,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,945.7560,29.0507,total_return,backtest,true
+2020-11,4,TWLO,TWILIO CLASS A,NYSE,773.1455,0.5587,total_return,backtest,false
+2020-11,5,NTRA,NATERA,NASDAQ,512.0109,40.0666,total_return,backtest,false
+2020-11,6,TSLA,TESLA INC,NASDAQ,485.2262,35.6063,total_return,backtest,false
+2020-11,7,DIM.PA,SARTORIUS STEDIM BIOTECH SA,Nyse Euronext - Euronext Paris,464.8408,21.3027,total_return,backtest,false
+2020-11,8,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,417.2924,7.5727,total_return,backtest,false
+2020-11,9,MELI,MERCADOLIBRE,NASDAQ,405.4393,7.9520,total_return,backtest,false
+2020-11,10,SRT3.DE,SARTORIUS PREF AG,Xetra,359.5575,9.8392,total_return,backtest,false
+2020-12,1,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,1454.9138,18.0355,total_return,backtest,true
+2020-12,2,CVNA,CARVANA CLASS A,NYSE,1443.5534,15.8594,total_return,backtest,true
+2020-12,3,TWLO,TWILIO CLASS A,NYSE,1100.6377,18.6573,total_return,backtest,true
+2020-12,4,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,924.5213,1.0754,total_return,backtest,false
+2020-12,5,MDB,MONGODB CLASS A,NASDAQ,907.0452,22.8871,total_return,backtest,false
+2020-12,6,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,866.4218,24.0369,total_return,backtest,false
+2020-12,7,TSLA,TESLA INC,NASDAQ,818.8927,13.9027,total_return,backtest,false
+2020-12,8,NTRA,NATERA,NASDAQ,807.1942,38.5497,total_return,backtest,false
+2020-12,9,AMD,ADVANCED MICRO DEVICES,NASDAQ,750.8724,2.0260,total_return,backtest,false
+2020-12,10,OKTA,OKTA CLASS A,NASDAQ,738.8908,13.7763,total_return,backtest,false
+2021-01,1,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,1393.2483,29.2197,total_return,backtest,true
+2021-01,2,TWLO,TWILIO CLASS A,NYSE,1334.3220,36.9946,total_return,backtest,true
+2021-01,3,CVNA,CARVANA CLASS A,NYSE,1152.8243,7.3881,total_return,backtest,true
+2021-01,4,MDB,MONGODB CLASS A,NASDAQ,1109.7035,55.0862,total_return,backtest,false
+2021-01,5,TSLA,TESLA INC,NASDAQ,1033.2404,64.4880,total_return,backtest,false
+2021-01,6,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,1014.7174,10.7942,total_return,backtest,false
+2021-01,7,NTRA,NATERA,NASDAQ,1007.0078,37.7630,total_return,backtest,false
+2021-01,8,OKTA,OKTA CLASS A,NASDAQ,892.8153,18.8964,total_return,backtest,false
+2021-01,9,AMD,ADVANCED MICRO DEVICES,NASDAQ,792.1206,11.8551,total_return,backtest,false
+2021-01,10,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,620.6392,53.6634,total_return,backtest,false
+2021-02,1,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,1667.6183,37.4192,total_return,backtest,true
+2021-02,2,TWLO,TWILIO CLASS A,NYSE,1269.7790,28.8418,total_return,backtest,true
+2021-02,3,CVNA,CARVANA CLASS A,NYSE,1268.2032,40.9172,total_return,backtest,true
+2021-02,4,MDB,MONGODB CLASS A,NASDAQ,1263.3714,61.7762,total_return,backtest,false
+2021-02,5,TSLA,TESLA INC,NASDAQ,1019.8229,104.4969,total_return,backtest,false
+2021-02,6,NTRA,NATERA,NASDAQ,924.3996,58.5489,total_return,backtest,false
+2021-02,7,OKTA,OKTA CLASS A,NASDAQ,779.4907,23.4380,total_return,backtest,false
+2021-02,8,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,757.2792,18.3095,total_return,backtest,false
+2021-02,9,DXCM,DEXCOM INC,NASDAQ,544.0722,17.2946,total_return,backtest,false
+2021-02,10,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,531.5566,31.6236,total_return,backtest,false
+2021-03,1,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,2050.4562,30.6703,total_return,backtest,true
+2021-03,2,CVNA,CARVANA CLASS A,NYSE,1314.6707,13.3048,total_return,backtest,true
+2021-03,3,NTRA,NATERA,NASDAQ,1189.8889,31.5169,total_return,backtest,true
+2021-03,4,MDB,MONGODB CLASS A,NASDAQ,1098.1683,34.3253,total_return,backtest,false
+2021-03,5,TWLO,TWILIO CLASS A,NYSE,1050.1171,22.7405,total_return,backtest,false
+2021-03,6,TSLA,TESLA INC,NASDAQ,884.5204,19.0099,total_return,backtest,false
+2021-03,7,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,831.5195,44.7687,total_return,backtest,false
+2021-03,8,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,831.1952,20.2136,total_return,backtest,false
+2021-03,9,DXCM,DEXCOM INC,NASDAQ,608.5501,24.4307,total_return,backtest,false
+2021-03,10,OKTA,OKTA CLASS A,NASDAQ,577.5071,6.6969,total_return,backtest,false
+2021-04,1,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,1880.7453,12.1477,total_return,backtest,true
+2021-04,2,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,1249.5182,44.7011,total_return,backtest,true
+2021-04,3,CVNA,CARVANA CLASS A,NYSE,1044.3524,9.5433,total_return,backtest,true
+2021-04,4,NTRA,NATERA,NASDAQ,995.3614,2.0297,total_return,backtest,false
+2021-04,5,TWLO,TWILIO CLASS A,NYSE,792.5092,0.6677,total_return,backtest,false
+2021-04,6,MSTR,STRATEGY INC CLASS A,NASDAQ,426.2423,74.7008,total_return,backtest,false
+2021-04,7,ASM.AS,ASM INTERNATIONAL NV,Euronext Amsterdam,361.6730,31.3534,total_return,backtest,false
+2021-04,8,XYZ,BLOCK CLASS A,NYSE,361.4837,4.3237,total_return,backtest,false
+2021-04,9,DIM.PA,SARTORIUS STEDIM BIOTECH SA,Nyse Euronext - Euronext Paris,361.2846,14.9489,total_return,backtest,false
+2021-04,10,CMG,CHIPOTLE MEXICAN GRILL,NYSE,339.7326,2.4598,total_return,backtest,false
+2021-05,1,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,2307.4357,16.5336,total_return,backtest,true
+2021-05,2,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,1473.3238,104.7574,total_return,backtest,true
+2021-05,3,CVNA,CARVANA CLASS A,NYSE,988.3632,9.2155,total_return,backtest,true
+2021-05,4,NTRA,NATERA,NASDAQ,888.4996,3.1695,total_return,backtest,false
+2021-05,5,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,782.2505,8.2985,total_return,backtest,false
+2021-05,6,TWLO,TWILIO CLASS A,NYSE,771.3575,2.3287,total_return,backtest,false
+2021-05,7,OKTA,OKTA CLASS A,NASDAQ,529.9930,4.1273,total_return,backtest,false
+2021-05,8,ASM.AS,ASM INTERNATIONAL NV,Euronext Amsterdam,490.7140,19.6281,total_return,backtest,false
+2021-05,9,DXCM,DEXCOM INC,NASDAQ,427.6032,3.0012,total_return,backtest,false
+2021-05,10,XYZ,BLOCK CLASS A,NYSE,417.1525,13.3636,total_return,backtest,false
+2021-06,1,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,1612.2380,7.4462,total_return,backtest,true
+2021-06,2,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,1408.1404,52.9238,total_return,backtest,true
+2021-06,3,ASM.AS,ASM INTERNATIONAL NV,Euronext Amsterdam,521.1711,16.1486,total_return,backtest,true
+2021-06,4,NIBE-B.ST,NIBE INDUSTRIER CLASS B,Nasdaq Omx Nordic,335.8497,37.7919,total_return,backtest,false
+2021-06,5,WST,WEST PHARMACEUTICAL SERVICES,NYSE,278.1959,23.8233,total_return,backtest,false
+2021-06,6,VEEV,VEEVA SYSTEMS CLASS A,NYSE,276.6029,4.0091,total_return,backtest,false
+2021-06,7,FTNT,FORTINET,NASDAQ,257.2082,29.4285,total_return,backtest,false
+2021-06,8,TER,TERADYNE,NASDAQ,255.7282,2.9080,total_return,backtest,false
+2021-06,9,ASML.AS,ASML HOLDING,Euronext Amsterdam,251.0774,18.7357,total_return,backtest,false
+2021-06,10,LRCX,LAM RESEARCH,NASDAQ,247.8943,14.5736,total_return,backtest,false
+2021-07,1,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,1730.6667,23.0121,total_return,backtest,true
+2021-07,2,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,1190.3821,7.6313,total_return,backtest,true
+2021-07,3,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,911.1604,33.0356,total_return,backtest,true
+2021-07,4,TSLA,TESLA INC,NASDAQ,890.9624,1.7622,total_return,backtest,false
+2021-07,5,MDB,MONGODB CLASS A,NASDAQ,628.4304,35.1830,total_return,backtest,false
+2021-07,6,CVNA,CARVANA CLASS A,NYSE,625.5288,15.0229,total_return,backtest,false
+2021-07,7,TWLO,TWILIO CLASS A,NYSE,603.6059,15.6709,total_return,backtest,false
+2021-07,8,ASM.AS,ASM INTERNATIONAL NV,Euronext Amsterdam,584.9639,13.3951,total_return,backtest,false
+2021-07,9,AMD,ADVANCED MICRO DEVICES,NASDAQ,526.6177,19.6561,total_return,backtest,false
+2021-07,10,ZS,ZSCALER,NASDAQ,504.3636,25.8578,total_return,backtest,false
+2021-08,1,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,1858.5816,9.3530,total_return,backtest,true
+2021-08,2,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,982.8383,27.4417,total_return,backtest,true
+2021-08,3,CVNA,CARVANA CLASS A,NYSE,685.0233,18.3342,total_return,backtest,true
+2021-08,4,ASM.AS,ASM INTERNATIONAL NV,Euronext Amsterdam,605.9234,15.6642,total_return,backtest,false
+2021-08,5,ZS,ZSCALER,NASDAQ,568.1110,25.7248,total_return,backtest,false
+2021-08,6,MDB,MONGODB CLASS A,NASDAQ,563.3155,20.6616,total_return,backtest,false
+2021-08,7,TWLO,TWILIO CLASS A,NYSE,545.3446,1.5742,total_return,backtest,false
+2021-08,8,AMD,ADVANCED MICRO DEVICES,NASDAQ,479.3235,30.1029,total_return,backtest,false
+2021-08,9,DXCM,DEXCOM INC,NASDAQ,441.9006,33.5172,total_return,backtest,false
+2021-08,10,NTRA,NATERA,NASDAQ,398.7805,4.0902,total_return,backtest,false
+2021-09,1,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,2274.1754,33.5966,total_return,backtest,true
+2021-09,2,TSLA,TESLA INC,NASDAQ,1119.4503,17.6738,total_return,backtest,true
+2021-09,3,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,945.0825,24.6660,total_return,backtest,true
+2021-09,4,ASM.AS,ASM INTERNATIONAL NV,Euronext Amsterdam,657.1293,23.6309,total_return,backtest,false
+2021-09,5,ZS,ZSCALER,NASDAQ,550.4791,43.3265,total_return,backtest,false
+2021-09,6,MELI,MERCADOLIBRE,NASDAQ,445.3842,37.4469,total_return,backtest,false
+2021-09,7,MDB,MONGODB CLASS A,NASDAQ,444.5108,34.2159,total_return,backtest,false
+2021-09,8,CVNA,CARVANA CLASS A,NYSE,406.7346,23.7542,total_return,backtest,false
+2021-09,9,NIBE-B.ST,NIBE INDUSTRIER CLASS B,Nasdaq Omx Nordic,393.5668,28.4676,total_return,backtest,false
+2021-09,10,DIM.PA,SARTORIUS STEDIM BIOTECH SA,Nyse Euronext - Euronext Paris,379.7511,40.2367,total_return,backtest,false
+2021-10,1,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,2204.6276,16.0706,total_return,backtest,true
+2021-10,2,TSLA,TESLA INC,NASDAQ,1364.4434,14.0915,total_return,backtest,true
+2021-10,3,ASM.AS,ASM INTERNATIONAL NV,Euronext Amsterdam,700.7510,19.0199,total_return,backtest,true
+2021-10,4,ZS,ZSCALER,NASDAQ,543.0113,21.3644,total_return,backtest,false
+2021-10,5,MDB,MONGODB CLASS A,NASDAQ,478.1852,30.4243,total_return,backtest,false
+2021-10,6,MELI,MERCADOLIBRE,NASDAQ,393.2593,7.8066,total_return,backtest,false
+2021-10,7,ENTG,ENTEGRIS INC,NASDAQ,342.4809,2.3827,total_return,backtest,false
+2021-10,8,NIBE-B.ST,NIBE INDUSTRIER CLASS B,Nasdaq Omx Nordic,328.8244,19.0675,total_return,backtest,false
+2021-10,9,ASML.AS,ASML HOLDING,Euronext Amsterdam,311.9140,8.6707,total_return,backtest,false
+2021-10,10,DIM.PA,SARTORIUS STEDIM BIOTECH SA,Nyse Euronext - Euronext Paris,310.9833,18.2055,total_return,backtest,false
+2021-11,1,SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,2532.7203,24.4098,total_return,backtest,true
+2021-11,2,TSLA,TESLA INC,NASDAQ,1551.2509,62.1071,total_return,backtest,true
+2021-11,3,ASM.AS,ASM INTERNATIONAL NV,Euronext Amsterdam,1010.1373,27.5558,total_return,backtest,true
+2021-11,4,ZS,ZSCALER,NASDAQ,778.6443,35.1617,total_return,backtest,false
+2021-11,5,AMD,ADVANCED MICRO DEVICES,NASDAQ,560.2416,13.2216,total_return,backtest,false
+2021-11,6,MDB,MONGODB CLASS A,NASDAQ,539.6196,45.2385,total_return,backtest,false
+2021-11,7,TEAM,ATLASSIAN CORP CLASS A,NASDAQ,503.5173,40.9110,total_return,backtest,false
+2021-11,8,NIBE-B.ST,NIBE INDUSTRIER CLASS B,Nasdaq Omx Nordic,483.1015,24.1694,total_return,backtest,false
+2021-11,9,MSTR,STRATEGY INC CLASS A,NASDAQ,467.6431,14.2250,total_return,backtest,false
+2021-11,10,ENTG,ENTEGRIS INC,NASDAQ,438.5430,16.6943,total_return,backtest,false
+2021-12,1,TSLA,TESLA INC,NASDAQ,1533.1342,55.5973,total_return,backtest,true
+2021-12,2,ASM.AS,ASM INTERNATIONAL NV,Euronext Amsterdam,1006.5591,15.6000,total_return,backtest,true
+2021-12,3,ZS,ZSCALER,NASDAQ,783.7748,24.6569,total_return,backtest,true
+2021-12,4,NVDA,NVIDIA,NASDAQ,704.8067,45.9727,total_return,backtest,false
+2021-12,5,AMD,ADVANCED MICRO DEVICES,NASDAQ,643.5211,43.0365,total_return,backtest,false
+2021-12,6,MDB,MONGODB CLASS A,NASDAQ,500.8444,27.1215,total_return,backtest,false
+2021-12,7,NIBE-B.ST,NIBE INDUSTRIER CLASS B,Nasdaq Omx Nordic,458.7809,2.0640,total_return,backtest,false
+2021-12,8,MSTR,STRATEGY INC CLASS A,NASDAQ,456.4872,3.9075,total_return,backtest,false
+2021-12,9,SRT3.DE,SARTORIUS PREF AG,Xetra,440.4435,4.1377,total_return,backtest,false
+2021-12,10,ENTG,ENTEGRIS INC,NASDAQ,404.4555,21.5915,total_return,backtest,false
+2022-01,1,TSLA,TESLA INC,NASDAQ,1487.7080,36.2743,total_return,backtest,true
+2022-01,2,ASM.AS,ASM INTERNATIONAL NV,Euronext Amsterdam,1024.1480,12.1856,total_return,backtest,true
+2022-01,3,SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,886.1137,1.3865,total_return,backtest,true
+2022-01,4,NVDA,NVIDIA,NASDAQ,786.9049,41.9724,total_return,backtest,false
+2022-01,5,ZS,ZSCALER,NASDAQ,719.5103,22.5421,total_return,backtest,false
+2022-01,6,AMD,ADVANCED MICRO DEVICES,NASDAQ,679.5233,39.8445,total_return,backtest,false
+2022-01,7,MDB,MONGODB CLASS A,NASDAQ,532.1352,12.2670,total_return,backtest,false
+2022-01,8,VACN.SW,VAT GROUP AG,SIX Swiss Exchange,512.2289,25.4984,total_return,backtest,false
+2022-01,9,NIBE-B.ST,NIBE INDUSTRIER CLASS B,Nasdaq Omx Nordic,509.7918,20.1248,total_return,backtest,false
+2022-01,10,ADDT-B.ST,ADDTECH CLASS B,Nasdaq Omx Nordic,461.0808,34.5817,total_return,backtest,false
+2022-02,1,AAPL,APPLE,NASDAQ,332.6877,16.6756,total_return,backtest,true
+2022-02,2,IVN.TO,IVANHOE MINES CLASS A,Toronto Stock Exchange,294.9311,8.8737,total_return,backtest,true
+2022-02,3,MRVL,MARVELL TECHNOLOGY,NASDAQ,293.5716,4.2336,total_return,backtest,true
+2022-02,4,KLAC,KLA,NASDAQ,285.4253,4.4291,total_return,backtest,false
+2022-02,5,QCOM,QUALCOMM,NASDAQ,284.4256,32.1106,total_return,backtest,false
+2022-02,6,AMAT,APPLIED MATERIAL INC,NASDAQ,267.5130,1.1196,total_return,backtest,false
+2022-02,7,LRCX,LAM RESEARCH,NASDAQ,264.4800,4.6756,total_return,backtest,false
+2022-02,8,MAERSK-A.CO,A P MOLLER MAERSK,Omx Nordic Exchange Copenhagen A/S,230.3711,20.9284,total_return,backtest,false
+2022-02,9,MAERSK-B.CO,A P MOLLER MAERSK B,Omx Nordic Exchange Copenhagen A/S,228.6556,22.7281,total_return,backtest,false
+2022-02,10,ON,ON SEMICONDUCTOR CORP,NASDAQ,194.4112,22.7377,total_return,backtest,false
+2022-03,1,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,677.6659,10.0533,total_return,backtest,true
+2022-03,2,FTNT,FORTINET,NASDAQ,296.9582,3.7367,total_return,backtest,true
+2022-03,3,IVN.TO,IVANHOE MINES CLASS A,Toronto Stock Exchange,286.4661,27.0494,total_return,backtest,true
+2022-03,4,FCX,FREEPORT MCMORAN INC,NYSE,274.0256,26.6181,total_return,backtest,false
+2022-03,5,TFII.TO,TFI INTERNATIONAL,Toronto Stock Exchange,255.7932,4.0239,total_return,backtest,false
+2022-03,6,TOU.TO,TOURMALINE OIL CORP,Toronto Stock Exchange,194.9855,17.4626,total_return,backtest,false
+2022-03,7,ON,ON SEMICONDUCTOR CORP,NASDAQ,191.4804,1.9209,total_return,backtest,false
+2022-03,8,MAERSK-A.CO,A P MOLLER MAERSK,Omx Nordic Exchange Copenhagen A/S,190.2063,4.8956,total_return,backtest,false
+2022-03,9,MAERSK-B.CO,A P MOLLER MAERSK B,Omx Nordic Exchange Copenhagen A/S,189.2763,5.1683,total_return,backtest,false
+2022-03,10,KOG.OL,KONGSBERG GRUPPEN,Oslo Bors Asa,161.1573,17.5621,total_return,backtest,false
+2022-04,1,TSLA,TESLA INC,NASDAQ,1825.2518,1.9701,total_return,backtest,true
+2022-04,2,FCX,FREEPORT MCMORAN INC,NYSE,296.5585,19.1948,total_return,backtest,true
+2022-04,3,IVN.TO,IVANHOE MINES CLASS A,Toronto Stock Exchange,289.6261,15.3561,total_return,backtest,true
+2022-04,4,BESI.AS,BE SEMICONDUCTOR INDUSTRIES NV,Euronext Amsterdam,266.8574,2.2913,total_return,backtest,false
+2022-04,5,PWR,QUANTA SERVICES INC,NYSE,252.7715,14.7828,total_return,backtest,false
+2022-04,6,TOU.TO,TOURMALINE OIL CORP,Toronto Stock Exchange,240.8879,43.9986,total_return,backtest,false
+2022-04,7,KOG.OL,KONGSBERG GRUPPEN,Oslo Bors Asa,210.9850,26.1867,total_return,backtest,false
+2022-04,8,URI,UNITED RENTALS,NYSE,210.9059,6.8976,total_return,backtest,false
+2022-04,9,FM.TO,FIRST QUANTUM MINERALS,Toronto Stock Exchange,206.2011,45.9810,total_return,backtest,false
+2022-04,10,WCP.TO,WHITECAP RESOURCES INC,Toronto Stock Exchange,192.0137,40.9485,total_return,backtest,false
+2022-05,1,TOU.TO,TOURMALINE OIL CORP,Toronto Stock Exchange,298.3133,46.1330,total_return,backtest,true
+2022-05,2,KOG.OL,KONGSBERG GRUPPEN,Oslo Bors Asa,255.3230,48.9831,total_return,backtest,true
+2022-05,3,FCX,FREEPORT MCMORAN INC,NYSE,238.3175,8.9468,total_return,backtest,true
+2022-05,4,TGT,TARGET CORP,NYSE,213.7605,3.7291,total_return,backtest,false
+2022-05,5,ADDT-B.ST,ADDTECH CLASS B,Nasdaq Omx Nordic,208.8550,0.6544,total_return,backtest,false
+2022-05,6,NIBE-B.ST,NIBE INDUSTRIER CLASS B,Nasdaq Omx Nordic,206.9378,8.5015,total_return,backtest,false
+2022-05,7,NUE,NUCOR,NYSE,194.3666,52.6430,total_return,backtest,false
+2022-05,8,STLD,STEEL DYNAMICS INC,NASDAQ,194.0484,54.4488,total_return,backtest,false
+2022-05,9,PWR,QUANTA SERVICES INC,NYSE,188.8317,12.9089,total_return,backtest,false
+2022-05,10,FM.TO,FIRST QUANTUM MINERALS,Toronto Stock Exchange,175.3629,17.7501,total_return,backtest,false
+2022-06,1,TOU.TO,TOURMALINE OIL CORP,Toronto Stock Exchange,466.6090,57.3940,total_return,backtest,true
+2022-06,2,KLAC,KLA,NASDAQ,270.5850,4.6915,total_return,backtest,true
+2022-06,3,STLD,STEEL DYNAMICS INC,NASDAQ,268.7986,20.9691,total_return,backtest,true
+2022-06,4,PWR,QUANTA SERVICES INC,NYSE,246.1424,9.2344,total_return,backtest,false
+2022-06,5,DVN,DEVON ENERGY,NYSE,245.2200,25.7767,total_return,backtest,false
+2022-06,6,WCP.TO,WHITECAP RESOURCES INC,Toronto Stock Exchange,222.0879,17.2585,total_return,backtest,false
+2022-06,7,KOG.OL,KONGSBERG GRUPPEN,Oslo Bors Asa,221.8615,2.1991,total_return,backtest,false
+2022-06,8,NUE,NUCOR,NYSE,199.5195,0.6382,total_return,backtest,false
+2022-06,9,CVE.TO,CENOVUS ENERGY,Toronto Stock Exchange,193.6968,48.2774,total_return,backtest,false
+2022-06,10,CNQ.TO,CANADIAN NATURAL RESOURCES LTD,Toronto Stock Exchange,190.9366,19.1518,total_return,backtest,false
+2022-07,1,FUTU,FUTU HOLDINGS ADR,NASDAQ,393.9460,60.3501,total_return,backtest,true
+2022-07,2,TOU.TO,TOURMALINE OIL CORP,Toronto Stock Exchange,374.1114,12.5811,total_return,backtest,true
+2022-07,3,LLY,ELI LILLY,NYSE,208.8138,13.2207,total_return,backtest,true
+2022-07,4,UTHR,UNITED THERAPEUTICS,NASDAQ,201.8704,31.3416,total_return,backtest,false
+2022-07,5,PDD,PDD HOLDINGS ADS,NASDAQ,199.5637,54.0763,total_return,backtest,false
+2022-07,6,ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,166.1385,18.4444,total_return,backtest,false
+2022-07,7,MCK,MCKESSON CORP,NYSE,149.7393,6.5593,total_return,backtest,false
+2022-07,8,LPLA,LPL FINANCIAL HOLDINGS,NASDAQ,132.9957,0.9853,total_return,backtest,false
+2022-07,9,CVE.TO,CENOVUS ENERGY,Toronto Stock Exchange,123.5931,13.8566,total_return,backtest,false
+2022-07,10,UNH,UNITEDHEALTH GROUP,NYSE,120.2594,0.7177,total_return,backtest,false
+2022-08,1,TSLA,TESLA INC,NASDAQ,1744.8157,2.3761,total_return,backtest,true
+2022-08,2,TOU.TO,TOURMALINE OIL CORP,Toronto Stock Exchange,451.5483,20.9629,total_return,backtest,true
+2022-08,3,PWR,QUANTA SERVICES INC,NYSE,274.6710,19.6155,total_return,backtest,true
+2022-08,4,FTNT,FORTINET,NASDAQ,271.3734,3.1971,total_return,backtest,false
+2022-08,5,FUTU,FUTU HOLDINGS ADR,NASDAQ,267.1663,30.0406,total_return,backtest,false
+2022-08,6,TFII.TO,TFI INTERNATIONAL,Toronto Stock Exchange,231.9377,23.4563,total_return,backtest,false
+2022-08,7,MPWR,MONOLITHIC POWER SYSTEMS INC,NASDAQ,220.7812,18.4785,total_return,backtest,false
+2022-08,8,LLY,ELI LILLY,NYSE,219.3171,12.8573,total_return,backtest,false
+2022-08,9,AAPL,APPLE,NASDAQ,212.6236,3.0828,total_return,backtest,false
+2022-08,10,ON,ON SEMICONDUCTOR CORP,NASDAQ,210.4603,28.1520,total_return,backtest,false
+2022-09,1,TSLA,TESLA INC,NASDAQ,1732.4280,9.0431,total_return,backtest,true
+2022-09,2,BE,BLOOM ENERGY CLASS A,NYSE,467.1875,45.0342,total_return,backtest,true
+2022-09,3,EQT,EQT,NYSE,380.1073,0.1676,total_return,backtest,true
+2022-09,4,FUTU,FUTU HOLDINGS ADR,NASDAQ,354.5350,33.7238,total_return,backtest,false
+2022-09,5,PWR,QUANTA SERVICES INC,NYSE,321.2370,18.7395,total_return,backtest,false
+2022-09,6,ON,ON SEMICONDUCTOR CORP,NASDAQ,286.3483,13.3322,total_return,backtest,false
+2022-09,7,TFII.TO,TFI INTERNATIONAL,Toronto Stock Exchange,261.3006,21.9653,total_return,backtest,false
+2022-09,8,DKS,DICKS SPORTING,NYSE,251.8041,30.9492,total_return,backtest,false
+2022-09,9,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,244.3386,30.0040,total_return,backtest,false
+2022-09,10,CCO.TO,CAMECO,Toronto Stock Exchange,237.6040,19.4280,total_return,backtest,false
+2022-10,1,TSLA,TESLA INC,NASDAQ,1551.8246,18.1655,total_return,backtest,true
+2022-10,2,TOU.TO,TOURMALINE OIL CORP,Toronto Stock Exchange,529.2794,1.0566,total_return,backtest,true
+2022-10,3,BE,BLOOM ENERGY CLASS A,NYSE,515.0769,21.1515,total_return,backtest,true
+2022-10,4,EQT,EQT,NYSE,291.2160,18.4593,total_return,backtest,false
+2022-10,5,ZS,ZSCALER,NASDAQ,247.7994,9.9391,total_return,backtest,false
+2022-10,6,PWR,QUANTA SERVICES INC,NYSE,240.4123,1.6356,total_return,backtest,false
+2022-10,7,ON,ON SEMICONDUCTOR CORP,NASDAQ,224.4664,23.8919,total_return,backtest,false
+2022-10,8,TFII.TO,TFI INTERNATIONAL,Toronto Stock Exchange,213.1484,13.9829,total_return,backtest,false
+2022-10,9,DVN,DEVON ENERGY,NYSE,199.2528,9.1091,total_return,backtest,false
+2022-10,10,NET,CLOUDFLARE CLASS A,NYSE,197.8460,26.4229,total_return,backtest,false
+2022-11,1,DVN,DEVON ENERGY,NYSE,356.7025,23.0708,total_return,backtest,true
+2022-11,2,TPL,TEXAS PACIFIC LAND,NYSE,332.3474,25.6302,total_return,backtest,true
+2022-11,3,PWR,QUANTA SERVICES INC,NYSE,241.1982,2.3859,total_return,backtest,true
+2022-11,4,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,236.5087,28.8465,total_return,backtest,false
+2022-11,5,LLY,ELI LILLY,NYSE,234.5291,9.8274,total_return,backtest,false
+2022-11,6,NET,CLOUDFLARE CLASS A,NYSE,234.4418,11.9237,total_return,backtest,false
+2022-11,7,STLD,STEEL DYNAMICS INC,NASDAQ,234.3790,20.7627,total_return,backtest,false
+2022-11,8,FCX,FREEPORT MCMORAN INC,NYSE,231.7009,0.4437,total_return,backtest,false
+2022-11,9,WCP.TO,WHITECAP RESOURCES INC,Toronto Stock Exchange,231.4395,1.2861,total_return,backtest,false
+2022-11,10,DKS,DICKS SPORTING,NYSE,228.0983,21.5514,total_return,backtest,false
+2022-12,1,TOU.TO,TOURMALINE OIL CORP,Toronto Stock Exchange,689.2741,1.5926,total_return,backtest,true
+2022-12,2,FUTU,FUTU HOLDINGS ADR,NASDAQ,488.4227,25.2597,total_return,backtest,true
+2022-12,3,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,323.6150,38.6447,total_return,backtest,true
+2022-12,4,TPL,TEXAS PACIFIC LAND,NYSE,310.1517,40.8637,total_return,backtest,false
+2022-12,5,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,281.6142,25.1664,total_return,backtest,false
+2022-12,6,PWR,QUANTA SERVICES INC,NYSE,263.5752,6.0722,total_return,backtest,false
+2022-12,7,FCX,FREEPORT MCMORAN INC,NYSE,259.4826,34.4595,total_return,backtest,false
+2022-12,8,ON,ON SEMICONDUCTOR CORP,NASDAQ,250.2562,9.3500,total_return,backtest,false
+2022-12,9,TFII.TO,TFI INTERNATIONAL,Toronto Stock Exchange,242.2360,7.3646,total_return,backtest,false
+2022-12,10,IVN.TO,IVANHOE MINES CLASS A,Toronto Stock Exchange,235.1161,37.4557,total_return,backtest,false
+2023-01,1,FUTU,FUTU HOLDINGS ADR,NASDAQ,293.8961,9.0105,total_return,backtest,true
+2023-01,2,PWR,QUANTA SERVICES INC,NYSE,253.3359,11.8612,total_return,backtest,true
+2023-01,3,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,241.7985,49.0830,total_return,backtest,true
+2023-01,4,KOG.OL,KONGSBERG GRUPPEN,Oslo Bors Asa,225.6977,37.9356,total_return,backtest,false
+2023-01,5,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,223.6792,22.3498,total_return,backtest,false
+2023-01,6,TPL,TEXAS PACIFIC LAND,NYSE,220.8221,31.9036,total_return,backtest,false
+2023-01,7,UTHR,UNITED THERAPEUTICS,NASDAQ,215.7243,32.8159,total_return,backtest,false
+2023-01,8,TFII.TO,TFI INTERNATIONAL,Toronto Stock Exchange,212.3986,9.3429,total_return,backtest,false
+2023-01,9,STLD,STEEL DYNAMICS INC,NASDAQ,208.7016,37.7026,total_return,backtest,false
+2023-01,10,FCX,FREEPORT MCMORAN INC,NYSE,197.7056,39.0413,total_return,backtest,false
+2023-02,1,FUTU,FUTU HOLDINGS ADR,NASDAQ,356.8873,49.9114,total_return,backtest,true
+2023-02,2,STLD,STEEL DYNAMICS INC,NASDAQ,334.2547,28.2722,total_return,backtest,true
+2023-02,3,FCX,FREEPORT MCMORAN INC,NYSE,313.0266,40.8015,total_return,backtest,true
+2023-02,4,PWR,QUANTA SERVICES INC,NYSE,292.3990,7.1459,total_return,backtest,false
+2023-02,5,NUE,NUCOR,NYSE,282.8126,28.6497,total_return,backtest,false
+2023-02,6,EVO.ST,EVOLUTION,Nasdaq Omx Nordic,265.1840,19.5113,total_return,backtest,false
+2023-02,7,TFII.TO,TFI INTERNATIONAL,Toronto Stock Exchange,261.4736,21.4984,total_return,backtest,false
+2023-02,8,IVN.TO,IVANHOE MINES CLASS A,Toronto Stock Exchange,260.7727,34.4889,total_return,backtest,false
+2023-02,9,FSLR,FIRST SOLAR,NASDAQ,258.2090,22.0032,total_return,backtest,false
+2023-02,10,CCO.TO,CAMECO,Toronto Stock Exchange,248.7516,17.1560,total_return,backtest,false
+2023-03,1,STLD,STEEL DYNAMICS INC,NASDAQ,409.3457,21.3413,total_return,backtest,true
+2023-03,2,TSLA,TESLA INC,NASDAQ,361.9302,5.6549,total_return,backtest,true
+2023-03,3,NUE,NUCOR,NYSE,335.5461,11.6639,total_return,backtest,true
+2023-03,4,PWR,QUANTA SERVICES INC,NYSE,327.2775,7.6861,total_return,backtest,false
+2023-03,5,FCX,FREEPORT MCMORAN INC,NYSE,322.6469,2.9397,total_return,backtest,false
+2023-03,6,ON,ON SEMICONDUCTOR CORP,NASDAQ,314.8446,2.9388,total_return,backtest,false
+2023-03,7,TFII.TO,TFI INTERNATIONAL,Toronto Stock Exchange,314.5484,14.1320,total_return,backtest,false
+2023-03,8,TECK-B.TO,TECK RESOURCES SUBORDINATE VOTING,Toronto Stock Exchange,313.0109,9.3264,total_return,backtest,false
+2023-03,9,DKS,DICKS SPORTING,NYSE,296.0295,7.5682,total_return,backtest,false
+2023-03,10,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,286.0126,8.5781,total_return,backtest,false
+2023-04,1,DKS,DICKS SPORTING,NYSE,639.3159,17.9566,total_return,backtest,true
+2023-04,2,BBD-B.TO,BOMBARDIER CLASS B,Toronto Stock Exchange,580.1300,41.6110,total_return,backtest,true
+2023-04,3,ON,ON SEMICONDUCTOR CORP,NASDAQ,561.7363,31.9865,total_return,backtest,true
+2023-04,4,MPC,MARATHON PETROLEUM,NYSE,542.0492,15.8433,total_return,backtest,false
+2023-04,5,FCX,FREEPORT MCMORAN INC,NYSE,522.7202,7.6579,total_return,backtest,false
+2023-04,6,FSLR,FIRST SOLAR,NASDAQ,503.1614,45.2033,total_return,backtest,false
+2023-04,7,TSLA,TESLA INC,NASDAQ,493.8746,68.4202,total_return,backtest,false
+2023-04,8,TFII.TO,TFI INTERNATIONAL,Toronto Stock Exchange,467.0257,19.3089,total_return,backtest,false
+2023-04,9,FUTU,FUTU HOLDINGS ADR,NASDAQ,447.5192,27.5523,total_return,backtest,false
+2023-04,10,IVN.TO,IVANHOE MINES CLASS A,Toronto Stock Exchange,447.1476,14.4835,total_return,backtest,false
+2023-05,1,TRGP,TARGA RESOURCES,NYSE,515.6338,0.6798,total_return,backtest,true
+2023-05,2,TECK-B.TO,TECK RESOURCES SUBORDINATE VOTING,Toronto Stock Exchange,448.2614,7.5055,total_return,backtest,true
+2023-05,3,DKS,DICKS SPORTING,NYSE,446.5642,10.8978,total_return,backtest,true
+2023-05,4,ATI,ATI,NYSE,414.2477,6.1281,total_return,backtest,false
+2023-05,5,RHM.DE,RHEINMETALL AG,Xetra,374.5909,27.2409,total_return,backtest,false
+2023-05,6,PWR,QUANTA SERVICES INC,NYSE,370.4251,11.4659,total_return,backtest,false
+2023-05,7,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,360.3930,45.7625,total_return,backtest,false
+2023-05,8,FIX,COMFORT SYSTEMS USA,NYSE,358.2027,23.5046,total_return,backtest,false
+2023-05,9,KOG.OL,KONGSBERG GRUPPEN,Oslo Bors Asa,322.5024,14.5508,total_return,backtest,false
+2023-05,10,FSLR,FIRST SOLAR,NASDAQ,314.8603,2.8041,total_return,backtest,false
+2023-06,1,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,762.6733,128.5904,total_return,backtest,true
+2023-06,2,ON,ON SEMICONDUCTOR CORP,NASDAQ,406.9739,7.9964,total_return,backtest,true
+2023-06,3,PWR,QUANTA SERVICES INC,NYSE,384.8417,10.0248,total_return,backtest,true
+2023-06,4,FSLR,FIRST SOLAR,NASDAQ,335.3496,19.9953,total_return,backtest,false
+2023-06,5,NVDA,NVIDIA,NASDAQ,327.5658,62.9652,total_return,backtest,false
+2023-06,6,FIX,COMFORT SYSTEMS USA,NYSE,307.3116,1.7464,total_return,backtest,false
+2023-06,7,ASM.AS,ASM INTERNATIONAL NV,Euronext Amsterdam,283.8012,26.9523,total_return,backtest,false
+2023-06,8,AAF.L,AIRTEL AFRICA PLC,London Stock Exchange,252.9501,1.7097,total_return,backtest,false
+2023-06,9,FTAI,FTAI AVIATION,NASDAQ,248.2207,11.0012,total_return,backtest,false
+2023-06,10,HWM,HOWMET AEROSPACE,NYSE,228.8065,1.3514,total_return,backtest,false
+2023-07,1,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,777.9500,133.9277,total_return,backtest,true
+2023-07,2,TOU.TO,TOURMALINE OIL CORP,Toronto Stock Exchange,585.3994,13.1061,total_return,backtest,true
+2023-07,3,PWR,QUANTA SERVICES INC,NYSE,404.4782,17.8889,total_return,backtest,true
+2023-07,4,ON,ON SEMICONDUCTOR CORP,NASDAQ,377.1948,14.8931,total_return,backtest,false
+2023-07,5,NVDA,NVIDIA,NASDAQ,346.5828,52.2915,total_return,backtest,false
+2023-07,6,ATI,ATI,NYSE,334.0530,12.0882,total_return,backtest,false
+2023-07,7,TECK-B.TO,TECK RESOURCES SUBORDINATE VOTING,Toronto Stock Exchange,323.0766,15.2670,total_return,backtest,false
+2023-07,8,NUE,NUCOR,NYSE,319.3545,6.1565,total_return,backtest,false
+2023-07,9,FIX,COMFORT SYSTEMS USA,NYSE,310.3663,12.4966,total_return,backtest,false
+2023-07,10,TRGP,TARGA RESOURCES,NYSE,300.5419,4.3180,total_return,backtest,false
+2023-08,1,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,989.6404,213.2600,total_return,backtest,true
+2023-08,2,TOU.TO,TOURMALINE OIL CORP,Toronto Stock Exchange,542.2517,15.6527,total_return,backtest,true
+2023-08,3,DVN,DEVON ENERGY,NYSE,535.2880,1.0668,total_return,backtest,true
+2023-08,4,BBD-B.TO,BOMBARDIER CLASS B,Toronto Stock Exchange,474.6829,16.1779,total_return,backtest,false
+2023-08,5,WCP.TO,WHITECAP RESOURCES INC,Toronto Stock Exchange,448.8328,1.5643,total_return,backtest,false
+2023-08,6,ATI,ATI,NYSE,448.6766,23.4593,total_return,backtest,false
+2023-08,7,BIRG.IR,BANK OF IRELAND GROUP PLC,Irish Stock Exchange - All Market,425.4907,1.4523,total_return,backtest,false
+2023-08,8,ON,ON SEMICONDUCTOR CORP,NASDAQ,423.0583,49.7360,total_return,backtest,false
+2023-08,9,PWR,QUANTA SERVICES INC,NYSE,408.1696,18.8517,total_return,backtest,false
+2023-08,10,TRGP,TARGA RESOURCES,NYSE,374.2652,8.5529,total_return,backtest,false
+2023-09,1,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,904.3081,22.8310,total_return,backtest,true
+2023-09,2,DVN,DEVON ENERGY,NYSE,467.9837,10.8243,total_return,backtest,true
+2023-09,3,ATI,ATI,NYSE,444.1777,31.0873,total_return,backtest,true
+2023-09,4,TRGP,TARGA RESOURCES,NYSE,436.1585,26.7450,total_return,backtest,false
+2023-09,5,BBD-B.TO,BOMBARDIER CLASS B,Toronto Stock Exchange,419.6786,2.9073,total_return,backtest,false
+2023-09,6,TOU.TO,TOURMALINE OIL CORP,Toronto Stock Exchange,418.4089,22.6833,total_return,backtest,false
+2023-09,7,OXY,OCCIDENTAL PETROLEUM CORP,NYSE,401.3738,8.8970,total_return,backtest,false
+2023-09,8,WCP.TO,WHITECAP RESOURCES INC,Toronto Stock Exchange,372.2226,19.5163,total_return,backtest,false
+2023-09,9,BIRG.IR,BANK OF IRELAND GROUP PLC,Irish Stock Exchange - All Market,361.6516,6.5380,total_return,backtest,false
+2023-09,10,ON,ON SEMICONDUCTOR CORP,NASDAQ,360.7394,17.7751,total_return,backtest,false
+2023-10,1,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,938.7121,10.0181,total_return,backtest,true
+2023-10,2,OXY,OCCIDENTAL PETROLEUM CORP,NYSE,560.5236,10.3401,total_return,backtest,true
+2023-10,3,TRGP,TARGA RESOURCES,NYSE,546.0462,12.6413,total_return,backtest,true
+2023-10,4,FANG,DIAMONDBACK ENERGY,NASDAQ,485.5465,17.9050,total_return,backtest,false
+2023-10,5,MPC,MARATHON PETROLEUM,NYSE,468.6874,29.7942,total_return,backtest,false
+2023-10,6,IMO.TO,IMPERIAL OIL LTD,Toronto Stock Exchange,460.9701,20.3585,total_return,backtest,false
+2023-10,7,CVE.TO,CENOVUS ENERGY,Toronto Stock Exchange,459.0306,22.5624,total_return,backtest,false
+2023-10,8,BIRG.IR,BANK OF IRELAND GROUP PLC,Irish Stock Exchange - All Market,445.7435,3.5707,total_return,backtest,false
+2023-10,9,WCP.TO,WHITECAP RESOURCES INC,Toronto Stock Exchange,429.7716,20.6546,total_return,backtest,false
+2023-10,10,TOU.TO,TOURMALINE OIL CORP,Toronto Stock Exchange,428.7351,6.7764,total_return,backtest,false
+2023-11,1,FANG,DIAMONDBACK ENERGY,NASDAQ,603.2393,8.8243,total_return,backtest,true
+2023-11,2,CVE.TO,CENOVUS ENERGY,Toronto Stock Exchange,507.7065,0.9400,total_return,backtest,true
+2023-11,3,MPC,MARATHON PETROLEUM,NYSE,465.2668,13.7047,total_return,backtest,true
+2023-11,4,TRGP,TARGA RESOURCES,NYSE,450.6028,1.9759,total_return,backtest,false
+2023-11,5,TOU.TO,TOURMALINE OIL CORP,Toronto Stock Exchange,429.9699,2.8169,total_return,backtest,false
+2023-11,6,FTI,TECHNIPFMC PLC,NYSE,424.4561,17.3391,total_return,backtest,false
+2023-11,7,CNQ.TO,CANADIAN NATURAL RESOURCES LTD,Toronto Stock Exchange,377.1422,5.2244,total_return,backtest,false
+2023-11,8,IMO.TO,IMPERIAL OIL LTD,Toronto Stock Exchange,365.9711,6.5975,total_return,backtest,false
+2023-11,9,COP,CONOCOPHILLIPS,NYSE,364.9287,0.9174,total_return,backtest,false
+2023-11,10,LLY,ELI LILLY,NYSE,342.6826,21.8634,total_return,backtest,false
+2023-12,1,CCO.TO,CAMECO,Toronto Stock Exchange,362.1194,24.1157,total_return,backtest,true
+2023-12,2,FANG,DIAMONDBACK ENERGY,NASDAQ,344.3325,1.7328,total_return,backtest,true
+2023-12,3,LLY,ELI LILLY,NYSE,321.6938,6.6474,total_return,backtest,true
+2023-12,4,MPC,MARATHON PETROLEUM,NYSE,319.3233,4.4967,total_return,backtest,false
+2023-12,5,SAB.MC,BANCO DE SABADELL,Bolsa De Madrid,309.1292,25.9363,total_return,backtest,false
+2023-12,6,TRGP,TARGA RESOURCES,NYSE,306.8120,4.8696,total_return,backtest,false
+2023-12,7,FIX,COMFORT SYSTEMS USA,NYSE,290.5646,4.8816,total_return,backtest,false
+2023-12,8,RHM.DE,RHEINMETALL AG,Xetra,259.7105,10.2387,total_return,backtest,false
+2023-12,9,CLS.TO,CELESTICA,Toronto Stock Exchange,257.1272,15.5938,total_return,backtest,false
+2023-12,10,CNQ.TO,CANADIAN NATURAL RESOURCES LTD,Toronto Stock Exchange,248.5428,3.2296,total_return,backtest,false
+2024-01,1,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,797.8522,3.6613,total_return,backtest,true
+2024-01,2,BBD-B.TO,BOMBARDIER CLASS B,Toronto Stock Exchange,326.3635,15.1227,total_return,backtest,true
+2024-01,3,FIX,COMFORT SYSTEMS USA,NYSE,297.0696,20.6913,total_return,backtest,true
+2024-01,4,NVDA,NVIDIA,NASDAQ,280.1886,13.8463,total_return,backtest,false
+2024-01,5,FANG,DIAMONDBACK ENERGY,NASDAQ,268.4420,0.1291,total_return,backtest,false
+2024-01,6,CLS.TO,CELESTICA,Toronto Stock Exchange,263.3634,19.6360,total_return,backtest,false
+2024-01,7,LLY,ELI LILLY,NYSE,258.7768,8.5249,total_return,backtest,false
+2024-01,8,TRGP,TARGA RESOURCES,NYSE,248.0562,1.3416,total_return,backtest,false
+2024-01,9,NUE,NUCOR,NYSE,242.9815,11.3144,total_return,backtest,false
+2024-01,10,STLD,STEEL DYNAMICS INC,NASDAQ,236.9547,10.1474,total_return,backtest,false
+2024-02,1,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,1608.4194,121.1592,total_return,backtest,true
+2024-02,2,NVDA,NVIDIA,NASDAQ,374.7251,50.8754,total_return,backtest,true
+2024-02,3,CLS.TO,CELESTICA,Toronto Stock Exchange,324.7980,47.3040,total_return,backtest,true
+2024-02,4,MPC,MARATHON PETROLEUM,NYSE,319.2899,9.4876,total_return,backtest,false
+2024-02,5,NUE,NUCOR,NYSE,302.1003,26.4835,total_return,backtest,false
+2024-02,6,FIX,COMFORT SYSTEMS USA,NYSE,298.8697,19.5876,total_return,backtest,false
+2024-02,7,CCO.TO,CAMECO,Toronto Stock Exchange,287.8588,16.7551,total_return,backtest,false
+2024-02,8,STLD,STEEL DYNAMICS INC,NASDAQ,270.4689,13.3133,total_return,backtest,false
+2024-02,9,UCG.MI,UNICREDIT,Borsa Italiana,263.3288,17.4437,total_return,backtest,false
+2024-02,10,RHM.DE,RHEINMETALL AG,Xetra,252.1833,22.7104,total_return,backtest,false
+2024-03,1,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,2554.3671,216.7148,total_return,backtest,true
+2024-03,2,NVDA,NVIDIA,NASDAQ,478.1503,69.1512,total_return,backtest,true
+2024-03,3,CLS.TO,CELESTICA,Toronto Stock Exchange,412.9468,57.9075,total_return,backtest,true
+2024-03,4,FIX,COMFORT SYSTEMS USA,NYSE,401.8146,57.9347,total_return,backtest,false
+2024-03,5,RHM.DE,RHEINMETALL AG,Xetra,388.4547,51.7416,total_return,backtest,false
+2024-03,6,ANET,ARISTA NETWORKS,NYSE,296.7124,26.3211,total_return,backtest,false
+2024-03,7,LLY,ELI LILLY,NYSE,281.3359,27.5176,total_return,backtest,false
+2024-03,8,UCG.MI,UNICREDIT,Borsa Italiana,267.7374,22.1990,total_return,backtest,false
+2024-03,9,NOVO-B.CO,NOVO NORDISK CLASS B,Omx Nordic Exchange Copenhagen A/S,251.3283,16.4472,total_return,backtest,false
+2024-03,10,KOG.OL,KONGSBERG GRUPPEN,Oslo Bors Asa,250.7743,46.5205,total_return,backtest,false
+2024-04,1,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,2485.8423,255.3191,total_return,backtest,true
+2024-04,2,NVDA,NVIDIA,NASDAQ,578.2375,82.4563,total_return,backtest,true
+2024-04,3,RHM.DE,RHEINMETALL AG,Xetra,489.0133,77.3565,total_return,backtest,true
+2024-04,4,CLS.TO,CELESTICA,Toronto Stock Exchange,440.3185,53.5953,total_return,backtest,false
+2024-04,5,LLY,ELI LILLY,NYSE,331.6935,33.4591,total_return,backtest,false
+2024-04,6,FIX,COMFORT SYSTEMS USA,NYSE,331.6756,54.4756,total_return,backtest,false
+2024-04,7,VST,VISTRA,NYSE,329.3142,80.8152,total_return,backtest,false
+2024-04,8,VRT,VERTIV HOLDINGS CLASS A,NYSE,309.1833,70.0396,total_return,backtest,false
+2024-04,9,MPC,MARATHON PETROLEUM,NYSE,308.9119,35.8183,total_return,backtest,false
+2024-04,10,UCG.MI,UNICREDIT,Borsa Italiana,306.9298,39.8971,total_return,backtest,false
+2024-05,1,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,2219.8271,62.1571,total_return,backtest,true
+2024-05,2,NVDA,NVIDIA,NASDAQ,476.7747,40.4294,total_return,backtest,true
+2024-05,3,RHM.DE,RHEINMETALL AG,Xetra,458.8270,57.3595,total_return,backtest,true
+2024-05,4,CLS.TO,CELESTICA,Toronto Stock Exchange,422.8810,26.4968,total_return,backtest,false
+2024-05,5,VST,VISTRA,NYSE,389.9157,84.8404,total_return,backtest,false
+2024-05,6,LLY,ELI LILLY,NYSE,343.0404,20.9864,total_return,backtest,false
+2024-05,7,UCG.MI,UNICREDIT,Borsa Italiana,319.6259,25.8188,total_return,backtest,false
+2024-05,8,VRT,VERTIV HOLDINGS CLASS A,NYSE,310.5288,65.0985,total_return,backtest,false
+2024-05,9,FIX,COMFORT SYSTEMS USA,NYSE,281.6556,42.2771,total_return,backtest,false
+2024-05,10,NOVO-B.CO,NOVO NORDISK CLASS B,Omx Nordic Exchange Copenhagen A/S,265.4974,15.0767,total_return,backtest,false
+2024-06,1,NVDA,NVIDIA,NASDAQ,576.2128,38.5795,total_return,backtest,true
+2024-06,2,VST,VISTRA,NYSE,567.7483,81.6648,total_return,backtest,true
+2024-06,3,CLS.TO,CELESTICA,Toronto Stock Exchange,549.1602,31.0772,total_return,backtest,true
+2024-06,4,RHM.DE,RHEINMETALL AG,Xetra,478.4272,24.4407,total_return,backtest,false
+2024-06,5,LLY,ELI LILLY,NYSE,324.6148,8.8446,total_return,backtest,false
+2024-06,6,FIX,COMFORT SYSTEMS USA,NYSE,300.9156,7.0683,total_return,backtest,false
+2024-06,7,VRT,VERTIV HOLDINGS CLASS A,NYSE,295.9315,45.0311,total_return,backtest,false
+2024-06,8,FTAI,FTAI AVIATION,NASDAQ,288.3267,49.7957,total_return,backtest,false
+2024-06,9,RR.L,ROLLS-ROYCE HOLDINGS PLC,London Stock Exchange,280.3449,23.4962,total_return,backtest,false
+2024-06,10,UCG.MI,UNICREDIT,Borsa Italiana,262.1588,17.6745,total_return,backtest,false
+2024-07,1,CLS.TO,CELESTICA,Toronto Stock Exchange,629.6792,27.2833,total_return,backtest,true
+2024-07,2,NVDA,NVIDIA,NASDAQ,518.7386,36.7258,total_return,backtest,true
+2024-07,3,VST,VISTRA,NYSE,402.2977,23.4458,total_return,backtest,true
+2024-07,4,RR.L,ROLLS-ROYCE HOLDINGS PLC,London Stock Exchange,322.0074,7.2573,total_return,backtest,false
+2024-07,5,FTAI,FTAI AVIATION,NASDAQ,314.3403,53.3878,total_return,backtest,false
+2024-07,6,LLY,ELI LILLY,NYSE,307.8276,16.3787,total_return,backtest,false
+2024-07,7,ANET,ARISTA NETWORKS,NYSE,286.9389,20.8635,total_return,backtest,false
+2024-07,8,SAAB-B.ST,SAAB CLASS B,Nasdaq Omx Nordic,269.9958,7.5446,total_return,backtest,false
+2024-07,9,AVGO,BROADCOM INC,NASDAQ,263.0193,21.1346,total_return,backtest,false
+2024-07,10,KOG.OL,KONGSBERG GRUPPEN,Oslo Bors Asa,260.6130,23.7272,total_return,backtest,false
+2024-08,1,NVDA,NVIDIA,NASDAQ,501.2174,35.4367,total_return,backtest,true
+2024-08,2,CLS.TO,CELESTICA,Toronto Stock Exchange,489.4121,19.8679,total_return,backtest,true
+2024-08,3,FTAI,FTAI AVIATION,NASDAQ,424.9383,58.7381,total_return,backtest,true
+2024-08,4,FIX,COMFORT SYSTEMS USA,NYSE,351.5275,7.4367,total_return,backtest,false
+2024-08,5,VST,VISTRA,NYSE,348.3062,4.4568,total_return,backtest,false
+2024-08,6,RR.L,ROLLS-ROYCE HOLDINGS PLC,London Stock Exchange,316.2938,11.2387,total_return,backtest,false
+2024-08,7,FTI,TECHNIPFMC PLC,NYSE,312.3210,15.1444,total_return,backtest,false
+2024-08,8,CRS,CARPENTER TECHNOLOGY,NYSE,304.1718,70.2100,total_return,backtest,false
+2024-08,9,UCG.MI,UNICREDIT,Borsa Italiana,302.4069,10.7929,total_return,backtest,false
+2024-08,10,KOG.OL,KONGSBERG GRUPPEN,Oslo Bors Asa,279.6116,39.9727,total_return,backtest,false
+2024-09,1,RHM.DE,RHEINMETALL AG,Xetra,542.2469,4.8374,total_return,backtest,true
+2024-09,2,FTAI,FTAI AVIATION,NASDAQ,532.2119,51.5773,total_return,backtest,true
+2024-09,3,NVDA,NVIDIA,NASDAQ,434.1296,8.8814,total_return,backtest,true
+2024-09,4,FIX,COMFORT SYSTEMS USA,NYSE,372.1369,7.9978,total_return,backtest,false
+2024-09,5,CRS,CARPENTER TECHNOLOGY,NYSE,356.8096,30.5764,total_return,backtest,false
+2024-09,6,KOG.OL,KONGSBERG GRUPPEN,Oslo Bors Asa,334.9172,30.7024,total_return,backtest,false
+2024-09,7,RR.L,ROLLS-ROYCE HOLDINGS PLC,London Stock Exchange,312.3626,12.9196,total_return,backtest,false
+2024-09,8,FTI,TECHNIPFMC PLC,NYSE,309.2855,2.4819,total_return,backtest,false
+2024-09,9,UCG.MI,UNICREDIT,Borsa Italiana,290.0029,4.8825,total_return,backtest,false
+2024-09,10,LLY,ELI LILLY,NYSE,283.5705,17.0271,total_return,backtest,false
+2024-10,1,VST,VISTRA,NYSE,646.7511,37.8693,total_return,backtest,true
+2024-10,2,FTAI,FTAI AVIATION,NASDAQ,598.8329,28.7416,total_return,backtest,true
+2024-10,3,RHM.DE,RHEINMETALL AG,Xetra,478.1723,6.5206,total_return,backtest,true
+2024-10,4,FIX,COMFORT SYSTEMS USA,NYSE,455.3870,28.3539,total_return,backtest,false
+2024-10,5,CRS,CARPENTER TECHNOLOGY,NYSE,412.9236,45.6288,total_return,backtest,false
+2024-10,6,FICO,FAIR ISAAC,NYSE,388.4075,30.5550,total_return,backtest,false
+2024-10,7,ANET,ARISTA NETWORKS,NYSE,346.7699,9.5127,total_return,backtest,false
+2024-10,8,VRT,VERTIV HOLDINGS CLASS A,NYSE,314.0688,14.9243,total_return,backtest,false
+2024-10,9,ATI,ATI,NYSE,302.3452,20.6673,total_return,backtest,false
+2024-10,10,UCG.MI,UNICREDIT,Borsa Italiana,287.4799,18.5072,total_return,backtest,false
+2024-11,1,CLS.TO,CELESTICA,Toronto Stock Exchange,595.5179,31.0353,total_return,backtest,true
+2024-11,2,FTAI,FTAI AVIATION,NASDAQ,587.1684,20.6281,total_return,backtest,true
+2024-11,3,VST,VISTRA,NYSE,587.1371,57.7379,total_return,backtest,true
+2024-11,4,NVDA,NVIDIA,NASDAQ,420.1541,13.4507,total_return,backtest,false
+2024-11,5,CRS,CARPENTER TECHNOLOGY,NYSE,406.9257,2.4885,total_return,backtest,false
+2024-11,6,FICO,FAIR ISAAC,NYSE,400.5299,24.5694,total_return,backtest,false
+2024-11,7,FIX,COMFORT SYSTEMS USA,NYSE,333.8061,17.6343,total_return,backtest,false
+2024-11,8,VRT,VERTIV HOLDINGS CLASS A,NYSE,326.6926,38.8691,total_return,backtest,false
+2024-11,9,UCG.MI,UNICREDIT,Borsa Italiana,293.2904,7.5985,total_return,backtest,false
+2024-11,10,RR.L,ROLLS-ROYCE HOLDINGS PLC,London Stock Exchange,284.4756,20.2257,total_return,backtest,false
+2024-12,1,FTAI,FTAI AVIATION,NASDAQ,893.3902,32.0867,total_return,backtest,true
+2024-12,2,VST,VISTRA,NYSE,766.1131,87.1006,total_return,backtest,true
+2024-12,3,CLS.TO,CELESTICA,Toronto Stock Exchange,735.8296,68.8814,total_return,backtest,true
+2024-12,4,RHM.DE,RHEINMETALL AG,Xetra,676.4554,9.8401,total_return,backtest,false
+2024-12,5,CRS,CARPENTER TECHNOLOGY,NYSE,639.3580,34.0333,total_return,backtest,false
+2024-12,6,FICO,FAIR ISAAC,NYSE,572.5653,37.2635,total_return,backtest,false
+2024-12,7,FTI,TECHNIPFMC PLC,NYSE,460.3359,16.8778,total_return,backtest,false
+2024-12,8,MSTR,STRATEGY INC CLASS A,NASDAQ,437.0861,192.6069,total_return,backtest,false
+2024-12,9,FIX,COMFORT SYSTEMS USA,NYSE,427.3262,39.5310,total_return,backtest,false
+2024-12,10,VRT,VERTIV HOLDINGS CLASS A,NYSE,398.7631,53.6794,total_return,backtest,false
+2025-01,1,CLS.TO,CELESTICA,Toronto Stock Exchange,735.5544,80.6267,total_return,backtest,true
+2025-01,2,RHM.DE,RHEINMETALL AG,Xetra,611.7167,17.7184,total_return,backtest,true
+2025-01,3,FTAI,FTAI AVIATION,NASDAQ,557.3683,8.3822,total_return,backtest,true
+2025-01,4,VST,VISTRA,NYSE,548.5866,16.3067,total_return,backtest,false
+2025-01,5,CRS,CARPENTER TECHNOLOGY,NYSE,508.7703,6.3479,total_return,backtest,false
+2025-01,6,MSTR,STRATEGY INC CLASS A,NASDAQ,431.9106,71.7794,total_return,backtest,false
+2025-01,7,FTI,TECHNIPFMC PLC,NYSE,395.1068,10.3317,total_return,backtest,false
+2025-01,8,FICO,FAIR ISAAC,NYSE,359.0887,2.4394,total_return,backtest,false
+2025-01,9,NVDA,NVIDIA,NASDAQ,357.3572,10.5814,total_return,backtest,false
+2025-01,10,VRT,VERTIV HOLDINGS CLASS A,NYSE,356.1319,14.1924,total_return,backtest,false
+2025-02,1,CLS.TO,CELESTICA,Toronto Stock Exchange,897.8666,80.7173,total_return,backtest,true
+2025-02,2,MSTR,STRATEGY INC CLASS A,NASDAQ,809.7307,36.9284,total_return,backtest,true
+2025-02,3,VST,VISTRA,NYSE,725.2621,34.4670,total_return,backtest,true
+2025-02,4,RHM.DE,RHEINMETALL AG,Xetra,700.4764,52.8481,total_return,backtest,false
+2025-02,5,CRS,CARPENTER TECHNOLOGY,NYSE,599.6730,29.1371,total_return,backtest,false
+2025-02,6,CEG,CONSTELLATION ENERGY CORP,NASDAQ,542.7579,14.0782,total_return,backtest,false
+2025-02,7,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,501.6776,98.4841,total_return,backtest,false
+2025-02,8,CRDO,CREDO TECHNOLOGY GROUP HOLDING LTD,NASDAQ,477.7228,85.7294,total_return,backtest,false
+2025-02,9,APP,APPLOVIN CLASS A,NASDAQ,473.7193,118.1888,total_return,backtest,false
+2025-02,10,VRT,VERTIV HOLDINGS CLASS A,NYSE,462.3906,7.0729,total_return,backtest,false
+2025-03,1,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,955.2303,27.0221,total_return,backtest,true
+2025-03,2,CLS.TO,CELESTICA,Toronto Stock Exchange,805.2741,24.5251,total_return,backtest,true
+2025-03,3,RHM.DE,RHEINMETALL AG,Xetra,633.2178,58.8718,total_return,backtest,true
+2025-03,4,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,616.6245,26.5951,total_return,backtest,false
+2025-03,5,RR.L,ROLLS-ROYCE HOLDINGS PLC,London Stock Exchange,577.2641,31.7973,total_return,backtest,false
+2025-03,6,CRS,CARPENTER TECHNOLOGY,NYSE,461.4189,6.7151,total_return,backtest,false
+2025-03,7,UCG.MI,UNICREDIT,Borsa Italiana,397.1301,36.6522,total_return,backtest,false
+2025-03,8,LDO.MI,LEONARDO FINMECCANICA SPA,Borsa Italiana,366.2384,48.7342,total_return,backtest,false
+2025-03,9,TAL,TAL EDUCATION GROUP ADR REPTG,NYSE,354.9296,30.1108,total_return,backtest,false
+2025-03,10,BPE.MI,BPER BANCA,Borsa Italiana,337.2581,24.9379,total_return,backtest,false
+2025-04,1,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,799.3958,12.3360,total_return,backtest,true
+2025-04,2,RR.L,ROLLS-ROYCE HOLDINGS PLC,London Stock Exchange,629.5382,35.8174,total_return,backtest,true
+2025-04,3,RHM.DE,RHEINMETALL AG,Xetra,596.9812,123.2290,total_return,backtest,true
+2025-04,4,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,514.7123,11.5959,total_return,backtest,false
+2025-04,5,UCG.MI,UNICREDIT,Borsa Italiana,510.0513,39.1284,total_return,backtest,false
+2025-04,6,BPE.MI,BPER BANCA,Borsa Italiana,405.3383,22.2616,total_return,backtest,false
+2025-04,7,LDO.MI,LEONARDO FINMECCANICA SPA,Borsa Italiana,401.4161,79.8310,total_return,backtest,false
+2025-04,8,CRS,CARPENTER TECHNOLOGY,NYSE,349.2162,6.7586,total_return,backtest,false
+2025-04,9,BAMI.MI,BANCO BPM,Borsa Italiana,341.3800,24.4406,total_return,backtest,false
+2025-04,10,TAL,TAL EDUCATION GROUP ADR REPTG,NYSE,338.8704,31.8363,total_return,backtest,false
+2025-05,1,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,1038.8462,43.5810,total_return,backtest,true
+2025-05,2,MSTR,STRATEGY INC CLASS A,NASDAQ,973.2417,13.5368,total_return,backtest,true
+2025-05,3,RR.L,ROLLS-ROYCE HOLDINGS PLC,London Stock Exchange,865.7359,34.3358,total_return,backtest,true
+2025-05,4,RHM.DE,RHEINMETALL AG,Xetra,688.9359,117.3777,total_return,backtest,false
+2025-05,5,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,656.7696,11.7111,total_return,backtest,false
+2025-05,6,UCG.MI,UNICREDIT,Borsa Italiana,623.4793,25.6974,total_return,backtest,false
+2025-05,7,FTAI,FTAI AVIATION,NASDAQ,550.7354,6.5453,total_return,backtest,false
+2025-05,8,SPOT,SPOTIFY TECHNOLOGY,NYSE,504.0138,11.9278,total_return,backtest,false
+2025-05,9,NFLX,NETFLIX,NASDAQ,494.5157,15.8647,total_return,backtest,false
+2025-05,10,LUG.TO,LUNDIN GOLD,Toronto Stock Exchange,457.8661,63.7180,total_return,backtest,false
+2025-06,1,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,1418.2028,55.1813,total_return,backtest,true
+2025-06,2,MSTR,STRATEGY INC CLASS A,NASDAQ,1294.3103,44.4858,total_return,backtest,true
+2025-06,3,CVNA,CARVANA CLASS A,NYSE,1011.2772,40.3518,total_return,backtest,true
+2025-06,4,RHM.DE,RHEINMETALL AG,Xetra,989.5241,104.5016,total_return,backtest,false
+2025-06,5,RR.L,ROLLS-ROYCE HOLDINGS PLC,London Stock Exchange,963.7365,24.4027,total_return,backtest,false
+2025-06,6,CLS.TO,CELESTICA,Toronto Stock Exchange,947.0765,8.1460,total_return,backtest,false
+2025-06,7,APP,APPLOVIN CLASS A,NASDAQ,931.2254,20.6484,total_return,backtest,false
+2025-06,8,VRT,VERTIV HOLDINGS CLASS A,NYSE,884.9644,13.4076,total_return,backtest,false
+2025-06,9,AXON,AXON ENTERPRISE,NASDAQ,640.2920,41.9926,total_return,backtest,false
+2025-06,10,NVDA,NVIDIA,NASDAQ,624.8494,8.1732,total_return,backtest,false
+2025-07,1,MSTR,STRATEGY INC CLASS A,NASDAQ,2360.3165,40.2262,total_return,backtest,true
+2025-07,2,CLS.TO,CELESTICA,Toronto Stock Exchange,1500.2389,96.0239,total_return,backtest,true
+2025-07,3,VRT,VERTIV HOLDINGS CLASS A,NYSE,1467.3119,77.8532,total_return,backtest,true
+2025-07,4,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,1402.9768,61.5166,total_return,backtest,false
+2025-07,5,CVNA,CARVANA CLASS A,NYSE,1392.2941,61.1632,total_return,backtest,false
+2025-07,6,RR.L,ROLLS-ROYCE HOLDINGS PLC,London Stock Exchange,1219.3125,36.9839,total_return,backtest,false
+2025-07,7,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,1114.6221,43.1367,total_return,backtest,false
+2025-07,8,HOOD,ROBINHOOD MARKETS CLASS A,NASDAQ,1039.0511,124.9640,total_return,backtest,false
+2025-07,9,NVDA,NVIDIA,NASDAQ,943.7249,45.7741,total_return,backtest,false
+2025-07,10,CRS,CARPENTER TECHNOLOGY,NYSE,926.5289,52.5444,total_return,backtest,false
+2025-08,1,CLS.TO,CELESTICA,Toronto Stock Exchange,1797.9346,135.5267,total_return,backtest,true
+2025-08,2,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,1429.9517,33.6964,total_return,backtest,true
+2025-08,3,MSTR,STRATEGY INC CLASS A,NASDAQ,1304.8102,5.7220,total_return,backtest,true
+2025-08,4,CVNA,CARVANA CLASS A,NYSE,1238.4906,59.6767,total_return,backtest,false
+2025-08,5,RR.L,ROLLS-ROYCE HOLDINGS PLC,London Stock Exchange,1207.1726,40.5168,total_return,backtest,false
+2025-08,6,VRT,VERTIV HOLDINGS CLASS A,NYSE,1179.1552,70.5317,total_return,backtest,false
+2025-08,7,HOOD,ROBINHOOD MARKETS CLASS A,NASDAQ,1038.6740,109.8351,total_return,backtest,false
+2025-08,8,RHM.DE,RHEINMETALL AG,Xetra,1020.3082,16.1874,total_return,backtest,false
+2025-08,9,APP,APPLOVIN CLASS A,NASDAQ,999.3247,45.0744,total_return,backtest,false
+2025-08,10,SMCI,SUPER MICRO COMPUTER INC,NASDAQ,991.8348,85.0910,total_return,backtest,false
+2025-09,1,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,1929.9223,18.9179,total_return,backtest,true
+2025-09,2,APP,APPLOVIN CLASS A,NASDAQ,1843.1181,21.7786,total_return,backtest,true
+2025-09,3,CLS.TO,CELESTICA,Toronto Stock Exchange,1780.3600,68.2869,total_return,backtest,true
+2025-09,4,RR.L,ROLLS-ROYCE HOLDINGS PLC,London Stock Exchange,1483.5515,21.9033,total_return,backtest,false
+2025-09,5,NVDA,NVIDIA,NASDAQ,1055.6320,28.8981,total_return,backtest,false
+2025-09,6,CVNA,CARVANA CLASS A,NYSE,1027.3719,13.6814,total_return,backtest,false
+2025-09,7,VRT,VERTIV HOLDINGS CLASS A,NYSE,1009.8818,18.1784,total_return,backtest,false
+2025-09,8,HOOD,ROBINHOOD MARKETS CLASS A,NASDAQ,989.3194,57.2638,total_return,backtest,false
+2025-09,9,LUG.TO,LUNDIN GOLD,Toronto Stock Exchange,911.4898,27.3285,total_return,backtest,false
+2025-09,10,ABVX.PA,ABIVAX SA,Nyse Euronext - Euronext Paris,903.5643,1239.6063,total_return,backtest,false
+2025-10,1,APP,APPLOVIN CLASS A,NASDAQ,3586.7111,105.2502,total_return,backtest,true
+2025-10,2,CLS.TO,CELESTICA,Toronto Stock Exchange,2791.0174,58.2472,total_return,backtest,true
+2025-10,3,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,2143.7884,33.8175,total_return,backtest,true
+2025-10,4,RR.L,ROLLS-ROYCE HOLDINGS PLC,London Stock Exchange,1957.3347,20.4563,total_return,backtest,false
+2025-10,5,CVNA,CARVANA CLASS A,NYSE,1758.3251,11.9539,total_return,backtest,false
+2025-10,6,VRT,VERTIV HOLDINGS CLASS A,NYSE,1457.6035,17.4831,total_return,backtest,false
+2025-10,7,RHM.DE,RHEINMETALL AG,Xetra,1446.5372,10.4729,total_return,backtest,false
+2025-10,8,NVDA,NVIDIA,NASDAQ,1438.8707,18.0961,total_return,backtest,false
+2025-10,9,HOOD,ROBINHOOD MARKETS CLASS A,NASDAQ,1317.6238,52.9211,total_return,backtest,false
+2025-10,10,CRDO,CREDO TECHNOLOGY GROUP HOLDING LTD,NASDAQ,1223.7273,57.2632,total_return,backtest,false
+2025-11,1,APP,APPLOVIN CLASS A,NASDAQ,3657.8420,63.1252,total_return,backtest,true
+2025-11,2,CLS.TO,CELESTICA,Toronto Stock Exchange,3043.7290,72.3700,total_return,backtest,true
+2025-11,3,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,2180.6598,26.5993,total_return,backtest,true
+2025-11,4,IREN,IREN,NASDAQ,1694.6824,277.0950,total_return,backtest,false
+2025-11,5,RR.L,ROLLS-ROYCE HOLDINGS PLC,London Stock Exchange,1594.9938,8.0597,total_return,backtest,false
+2025-11,6,NVDA,NVIDIA,NASDAQ,1402.0597,13.8416,total_return,backtest,false
+2025-11,7,ABVX.PA,ABIVAX SA,Nyse Euronext - Euronext Paris,1367.6325,43.8064,total_return,backtest,false
+2025-11,8,CRDO,CREDO TECHNOLOGY GROUP HOLDING LTD,NASDAQ,1265.5022,68.1936,total_return,backtest,false
+2025-11,9,VRT,VERTIV HOLDINGS CLASS A,NYSE,1252.5389,32.4588,total_return,backtest,false
+2025-11,10,HOOD,ROBINHOOD MARKETS CLASS A,NASDAQ,1156.6781,42.4357,total_return,backtest,false
+2025-12,1,CVNA,CARVANA CLASS A,NYSE,4757.3281,0.6937,total_return,backtest,true
+2025-12,2,APP,APPLOVIN CLASS A,NASDAQ,4060.1666,25.2596,total_return,backtest,true
+2025-12,3,IREN,IREN,NASDAQ,3108.7248,80.5514,total_return,backtest,true
+2025-12,4,CLS.TO,CELESTICA,Toronto Stock Exchange,3007.5522,76.3996,total_return,backtest,false
+2025-12,5,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,2146.0000,7.4915,total_return,backtest,false
+2025-12,6,ABVX.PA,ABIVAX SA,Nyse Euronext - Euronext Paris,1584.9124,56.0020,total_return,backtest,false
+2025-12,7,HOOD,ROBINHOOD MARKETS CLASS A,NASDAQ,1239.8332,23.5124,total_return,backtest,false
+2025-12,8,VRT,VERTIV HOLDINGS CLASS A,NYSE,1201.8116,40.9094,total_return,backtest,false
+2025-12,9,CRDO,CREDO TECHNOLOGY GROUP HOLDING LTD,NASDAQ,1174.9462,44.3257,total_return,backtest,false
+2025-12,10,INSM,INSMED,NASDAQ,1023.6885,52.6598,total_return,backtest,false
+2026-01,1,CVNA,CARVANA CLASS A,NYSE,8803.3755,11.8704,total_return,backtest,true
+2026-01,2,CLS.TO,CELESTICA,Toronto Stock Exchange,2535.5543,20.4666,total_return,backtest,true
+2026-01,3,ABVX.PA,ABIVAX SA,Nyse Euronext - Euronext Paris,2033.1328,67.6712,total_return,backtest,true
+2026-01,4,RKLB,ROCKET LAB CORP,NASDAQ,1750.3979,45.6063,total_return,backtest,false
+2026-01,5,ASTS,AST SPACEMOBILE CLASS A,NASDAQ,1406.8465,47.9829,total_return,backtest,false
+2026-01,6,FTAI,FTAI AVIATION,NASDAQ,1123.3488,17.9732,total_return,backtest,false
+2026-01,7,VRT,VERTIV HOLDINGS CLASS A,NYSE,1089.7882,7.3910,total_return,backtest,false
+2026-01,8,LUG.TO,LUNDIN GOLD,Toronto Stock Exchange,862.3055,28.4906,total_return,backtest,false
+2026-01,9,CRS,CARPENTER TECHNOLOGY,NYSE,775.4978,28.2235,total_return,backtest,false
+2026-01,10,INSM,INSMED,NASDAQ,771.0711,20.8527,total_return,backtest,false
+2026-02,1,CVNA,CARVANA CLASS A,NYSE,3844.0511,30.8508,total_return,backtest,true
+2026-02,2,ASTS,AST SPACEMOBILE CLASS A,NASDAQ,1965.1811,38.5794,total_return,backtest,true
+2026-02,3,RKLB,ROCKET LAB CORP,NASDAQ,1511.0664,27.1356,total_return,backtest,true
+2026-02,4,ABVX.PA,ABIVAX SA,Nyse Euronext - Euronext Paris,1396.7857,6.8374,total_return,backtest,false
+2026-02,5,FTAI,FTAI AVIATION,NASDAQ,1195.7690,57.5014,total_return,backtest,false
+2026-02,6,RR.L,ROLLS-ROYCE HOLDINGS PLC,London Stock Exchange,1169.7732,7.9911,total_return,backtest,false
+2026-02,7,FIX,COMFORT SYSTEMS USA,NYSE,854.9092,18.2812,total_return,backtest,false
+2026-02,8,RHM.DE,RHEINMETALL AG,Xetra,839.5926,7.2588,total_return,backtest,false
+2026-02,9,ENR.DE,SIEMENS ENERGY N AG,Xetra,726.0148,38.0058,total_return,backtest,false
+2026-02,10,SAAB-B.ST,SAAB CLASS B,Nasdaq Omx Nordic,671.5035,39.9473,total_return,backtest,false
+2026-03,1,VRT,VERTIV HOLDINGS CLASS A,NYSE,1473.5428,41.8183,total_return,backtest,true
+2026-03,2,RKLB,ROCKET LAB CORP,NASDAQ,1435.5556,63.9772,total_return,backtest,true
+2026-03,3,LITE,LUMENTUM HOLDINGS,NASDAQ,1202.5646,115.5585,total_return,backtest,true
+2026-03,4,FTAI,FTAI AVIATION,NASDAQ,1187.5140,76.5181,total_return,backtest,false
+2026-03,5,ASTS,AST SPACEMOBILE CLASS A,NASDAQ,1129.6584,40.9075,total_return,backtest,false
+2026-03,6,K.TO,KINROSS GOLD,Toronto Stock Exchange,943.4065,30.8993,total_return,backtest,false
+2026-03,7,RR.L,ROLLS-ROYCE HOLDINGS PLC,London Stock Exchange,929.2724,27.1000,total_return,backtest,false
+2026-03,8,LUG.TO,LUNDIN GOLD,Toronto Stock Exchange,920.1712,11.6131,total_return,backtest,false
+2026-03,9,FIX,COMFORT SYSTEMS USA,NYSE,894.5980,46.3109,total_return,backtest,false
+2026-03,10,ENR.DE,SIEMENS ENERGY N AG,Xetra,880.2006,46.9356,total_return,backtest,false
+2026-04,1,VRT,VERTIV HOLDINGS CLASS A,NYSE,1657.0741,54.6695,total_return,backtest,true
+2026-04,2,ASTS,AST SPACEMOBILE CLASS A,NASDAQ,1531.2992,14.0989,total_return,backtest,true
+2026-04,3,LITE,LUMENTUM HOLDINGS,NASDAQ,1201.1665,90.6617,total_return,backtest,true
+2026-04,4,FIX,COMFORT SYSTEMS USA,NYSE,855.4958,47.7558,total_return,backtest,false
+2026-04,5,WDC,WESTERN DIGITAL CORP,NASDAQ,854.0829,57.0152,total_return,backtest,false
+2026-04,6,FTAI,FTAI AVIATION,NASDAQ,823.1292,24.4602,total_return,backtest,false
+2026-04,7,CRS,CARPENTER TECHNOLOGY,NYSE,801.3878,25.1906,total_return,backtest,false
+2026-04,8,ENR.DE,SIEMENS ENERGY N AG,Xetra,641.7251,15.2639,total_return,backtest,false
+2026-04,9,CIEN,CIENA,NYSE,639.2041,66.0025,total_return,backtest,false
+2026-04,10,BE,BLOOM ENERGY CLASS A,NYSE,579.8294,55.9328,total_return,backtest,false
+2026-05,1,CLS.TO,CELESTICA,Toronto Stock Exchange,3687.9139,45.2268,total_return,backtest,true
+2026-05,2,VRT,VERTIV HOLDINGS CLASS A,NYSE,2109.1952,76.4368,total_return,backtest,true
+2026-05,3,CRDO,CREDO TECHNOLOGY GROUP HOLDING LTD,NASDAQ,2045.6227,38.8969,total_return,backtest,true
+2026-05,4,RKLB,ROCKET LAB CORP,NASDAQ,2004.8469,3.0473,total_return,backtest,false
+2026-05,5,LITE,LUMENTUM HOLDINGS,NASDAQ,1770.0933,130.2777,total_return,backtest,false
+2026-05,6,BE,BLOOM ENERGY CLASS A,NYSE,1601.8619,87.1969,total_return,backtest,false
+2026-05,7,WDC,WESTERN DIGITAL CORP,NASDAQ,1576.3970,73.6482,total_return,backtest,false
+2026-05,8,FIX,COMFORT SYSTEMS USA,NYSE,1144.9902,61.1286,total_return,backtest,false
+2026-05,9,STX,SEAGATE TECHNOLOGY HOLDINGS PLC,NASDAQ,1141.4719,65.2334,total_return,backtest,false
+2026-05,10,CIEN,CIENA,NYSE,1045.9166,109.5151,total_return,backtest,false
+2026-06,1,RKLB,ROCKET LAB CORP,NASDAQ,3032.7511,107.6411,total_return,backtest,true
+2026-06,2,CLS.TO,CELESTICA,Toronto Stock Exchange,2935.0165,39.4734,total_return,backtest,true
+2026-06,3,CVNA,CARVANA CLASS A,NYSE,2725.0774,9.2291,total_return,backtest,true
+2026-06,4,APP,APPLOVIN CLASS A,NASDAQ,2351.3794,41.0148,total_return,backtest,false
+2026-06,5,ASTS,AST SPACEMOBILE CLASS A,NASDAQ,1992.4354,43.2125,total_return,backtest,false
+2026-06,6,BE,BLOOM ENERGY CLASS A,NYSE,1977.2595,83.0796,total_return,backtest,false
+2026-06,7,WDC,WESTERN DIGITAL CORP,NASDAQ,1722.4234,89.9213,total_return,backtest,false
+2026-06,8,IREN,IREN,NASDAQ,1679.8319,55.1648,total_return,backtest,false
+2026-06,9,CRDO,CREDO TECHNOLOGY GROUP HOLDING LTD,NASDAQ,1658.7928,110.2343,total_return,backtest,false
+2026-06,10,VRT,VERTIV HOLDINGS CLASS A,NYSE,1541.3964,23.8613,total_return,backtest,false
+2026-07,1,CLS.TO,CELESTICA,Toronto Stock Exchange,2408.2174,29.2011,total_return,backtest,true
+2026-07,2,WDC,WESTERN DIGITAL CORP,NASDAQ,2138.0555,136.1344,total_return,backtest,true
+2026-07,3,APP,APPLOVIN CLASS A,NASDAQ,1902.4485,29.4548,total_return,backtest,true
+2026-07,4,ASTS,AST SPACEMOBILE CLASS A,NASDAQ,1790.6383,7.2282,total_return,backtest,false
+2026-07,5,MU,MICRON TECHNOLOGY,NASDAQ,1752.6477,241.6677,total_return,backtest,false
+2026-07,6,BE,BLOOM ENERGY CLASS A,NYSE,1751.3761,123.4113,total_return,backtest,false
+2026-07,7,RKLB,ROCKET LAB CORP,NASDAQ,1594.1667,58.2840,total_return,backtest,false
+2026-07,8,STX,SEAGATE TECHNOLOGY HOLDINGS PLC,NASDAQ,1572.1184,146.3243,total_return,backtest,false
+2026-07,9,CRDO,CREDO TECHNOLOGY GROUP HOLDING LTD,NASDAQ,1468.3391,189.7092,total_return,backtest,false
+2026-07,10,LITE,LUMENTUM HOLDINGS,NASDAQ,1412.5331,22.0986,total_return,backtest,false
+2026-08,1,WDC,WESTERN DIGITAL CORP,NASDAQ,1601.4194,25.3889,total_return,backtest,true
+2026-08,2,STX,SEAGATE TECHNOLOGY HOLDINGS PLC,NASDAQ,1345.3930,27.0901,total_return,backtest,true
+2026-08,3,CRDO,CREDO TECHNOLOGY GROUP HOLDING LTD,NASDAQ,1119.7407,18.9529,total_return,backtest,true
+2026-08,4,MU,MICRON TECHNOLOGY,NASDAQ,1065.7482,59.1442,total_return,backtest,false
+2026-08,5,CRS,CARPENTER TECHNOLOGY,NYSE,785.6766,21.3592,total_return,backtest,false
+2026-08,6,RR.L,ROLLS-ROYCE HOLDINGS PLC,London Stock Exchange,731.7119,23.9286,total_return,backtest,false
+2026-08,7,DELL,DELL TECHNOLOGIES INC CLASS C,NYSE,703.7590,94.0034,total_return,backtest,false
+2026-08,8,TIGO,MILLICOM INTERNATIONAL CELLULAR,NASDAQ,629.9203,12.4882,total_return,backtest,false
+2026-08,9,RVMD,REVOLUTION MEDICINES,NASDAQ,614.4000,30.1207,total_return,backtest,false
+2026-08,10,HOOD,ROBINHOOD MARKETS CLASS A,NASDAQ,573.0949,18.7543,total_return,backtest,false
+2026-09,1,LITE,LUMENTUM HOLDINGS,NASDAQ,1589.9316,6.9945,total_return,backtest,true
+2026-09,2,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,1144.1923,19.0622,total_return,backtest,true
+2026-09,3,HOOD,ROBINHOOD MARKETS CLASS A,NASDAQ,862.4426,11.1453,total_return,backtest,true
+2026-09,4,CDE,COEUR MINING,NYSE,763.2077,7.5569,total_return,backtest,false
+2026-09,5,DELL,DELL TECHNOLOGIES INC CLASS C,NYSE,750.7912,8.3391,total_return,backtest,false
+2026-09,6,CRS,CARPENTER TECHNOLOGY,NYSE,673.7164,1.5864,total_return,backtest,false
+2026-09,7,RR.L,ROLLS-ROYCE HOLDINGS PLC,London Stock Exchange,633.4408,15.1597,total_return,backtest,false
+2026-09,8,CVNA,CARVANA CLASS A,NYSE,629.4935,0.6301,total_return,backtest,false
+2026-09,9,LUG.TO,LUNDIN GOLD,Toronto Stock Exchange,617.4757,12.3110,total_return,backtest,false
+2026-09,10,TIGO,MILLICOM INTERNATIONAL CELLULAR,NASDAQ,605.4816,9.8407,total_return,backtest,false
+2026-10,1,LITE,LUMENTUM HOLDINGS,NASDAQ,2049.7565,13.1926,total_return,backtest,true
+2026-10,2,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,1069.0625,60.3240,total_return,backtest,true
+2026-10,3,HOOD,ROBINHOOD MARKETS CLASS A,NASDAQ,1046.7890,12.1859,total_return,backtest,true
+2026-10,4,NTRA,NATERA,NASDAQ,834.0339,52.2601,total_return,backtest,false
+2026-10,5,DELL,DELL TECHNOLOGIES INC CLASS C,NYSE,719.2511,24.6813,total_return,backtest,false
+2026-10,6,CDE,COEUR MINING,NYSE,693.6866,7.8431,total_return,backtest,false
+2026-10,7,RVMD,REVOLUTION MEDICINES,NASDAQ,641.5462,9.6006,total_return,backtest,false
+2026-10,8,RR.L,ROLLS-ROYCE HOLDINGS PLC,London Stock Exchange,617.6797,1.0161,total_return,backtest,false
+2026-10,9,BMPS.MI,BANCA MONTE DEI PASCHI DI SIENA SP,Borsa Italiana,574.1442,7.4009,total_return,backtest,false
+2026-10,10,LUG.TO,LUNDIN GOLD,Toronto Stock Exchange,566.8930,14.1689,total_return,backtest,false
+2026-11,1,LITE,LUMENTUM HOLDINGS,NASDAQ,2044.0959,17.7550,total_return,backtest,true
+2026-11,2,MU,MICRON TECHNOLOGY,NASDAQ,1235.8417,7.4979,total_return,backtest,true
+2026-11,3,CVNA,CARVANA CLASS A,NYSE,1164.6296,9.5093,total_return,backtest,true
+2026-11,4,PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,1143.9865,49.6099,total_return,backtest,false
+2026-11,5,NTRA,NATERA,NASDAQ,949.6580,54.7281,total_return,backtest,false
+2026-11,6,RVMD,REVOLUTION MEDICINES,NASDAQ,866.2121,2.0157,total_return,backtest,false
+2026-11,7,ECHO,ECHOSTAR CLASS A,NASDAQ,599.4228,15.2812,total_return,backtest,false
+2026-11,8,DELL,DELL TECHNOLOGIES INC CLASS C,NYSE,562.5712,4.6698,total_return,backtest,false
+2026-11,9,LUG.TO,LUNDIN GOLD,Toronto Stock Exchange,492.3854,5.0115,total_return,backtest,false
+2026-11,10,CRWD,CROWDSTRIKE HOLDINGS CLASS A,NASDAQ,466.6799,31.2114,total_return,backtest,false

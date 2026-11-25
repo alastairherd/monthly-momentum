@@ -13,6 +13,7 @@ import typer
 from rich.console import Console
 from rich.table import Table
 
+from monthly_momentum.acwi import refresh_acwi_market
 from monthly_momentum.backtest.data import load_backtest_dataset
 from monthly_momentum.backtest.engine import BacktestConfig, compare_variants, run_backtest
 from monthly_momentum.holdings import (
@@ -171,6 +172,37 @@ def build_us20(
     )
 
 
+@app.command("acwi-refresh")
+def acwi_refresh(
+    root: Annotated[Path, typer.Option("--root", help="Repository root directory.")] = Path("."),
+    years: Annotated[int, typer.Option("--years", help="Years of monthly data to fetch.")] = 12,
+    as_of: Annotated[
+        str | None, typer.Option("--as-of", help="Override as-of date (YYYY-MM-DD).")
+    ] = None,
+    contribution: Annotated[
+        float, typer.Option("--contribution", help="Monthly DCA amount for reports.")
+    ] = 500.0,
+    workers: Annotated[int, typer.Option("--workers", help="Concurrent Yahoo fetch threads.")] = 6,
+) -> None:
+    """Fetch iShares MSCI ACWI All-World holdings, prices, FX rates, and rebuild charts."""
+    as_of_dt = date.fromisoformat(as_of) if as_of else None
+    res = refresh_acwi_market(
+        root_dir=root,
+        years=years,
+        as_of=as_of_dt,
+        max_workers=workers,
+    )
+    console.print(
+        f"[green]Refreshed iShares MSCI ACWI ({res.as_of_label or 'latest'}):[/green] "
+        f"{res.mapped_constituents}/{res.total_csv_equities} mapped equities "
+        f"({res.priced_tickers} priced, {res.uk_accessible_count} UK-ISA accessible), "
+        f"{res.price_rows_count} ACWI price rows, {res.fx_rows_count} FX rows."
+    )
+    if (root / "data" / "monthly_prices.csv").exists():
+        summary = rebuild_public_reports(root_dir=root, contribution=contribution)
+        console.print(f"Updated {summary.readme_path}, charts, and data/global/summary.json.")
+
+
 @app.command("global-refresh")
 def global_refresh(
     root: Annotated[Path, typer.Option("--root", help="Repository root directory.")] = Path("."),
@@ -183,7 +215,7 @@ def global_refresh(
     ] = 500.0,
     batch_size: Annotated[int, typer.Option("--batch-size")] = 80,
 ) -> None:
-    """Fetch FTSE 100, S&P/TSX 60, EURO STOXX 50, and FX rates, then rebuild reports."""
+    """Fetch FTSE 100, S&P/TSX 60, EURO STOXX 50, MSCI ACWI, and FX rates, then rebuild reports."""
     as_of_dt = date.fromisoformat(as_of) if as_of else None
     res = refresh_global_markets(
         root_dir=root,
@@ -197,7 +229,7 @@ def global_refresh(
     )
     if (root / "data" / "monthly_prices.csv").exists():
         summary = rebuild_public_reports(root_dir=root, contribution=contribution)
-        console.print(f"Updated {summary.readme_path} and data/global/summary.json.")
+        console.print(f"Updated {summary.readme_path}, charts, and data/global/summary.json.")
 
 
 @app.command()

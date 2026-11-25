@@ -1,0 +1,75 @@
+ticker,name,index,first_bought_date,last_top10_month,status,notes
+NVDA,NVIDIA,NASDAQ,2017-11-01,2025-11,holding,Bought in 2017-11 rank #1
+AMZN,AMAZON.COM INC,NASDAQ,2017-11-01,2018-09,sold,Bought in 2017-11 rank #2; Rule 6 sell_third (2024-09); Rule 6 sell_half (2025-09); Rule 6 sell_remaining (2026-09)
+NFLX,NETFLIX,NASDAQ,2017-11-01,2025-05,holding,Bought in 2017-11 rank #3; Rule 6 sell_third (2024-07); Returned to top 10 (2025-05)
+AKRBP.OL,AKER BP,Oslo Bors Asa,2017-12-01,2019-04,rule6_stage2_sold,Bought in 2017-12 rank #2; Rule 6 sell_third (2025-04); Rule 6 sell_half (2026-04)
+BESI.AS,BE SEMICONDUCTOR INDUSTRIES NV,Euronext Amsterdam,2017-12-01,2022-04,holding,Bought in 2017-12 rank #3
+ARGX.BR,ARGENX,Nyse Euronext - Euronext Brussels,2018-01-01,2022-07,holding,Bought in 2018-01 rank #2
+HTHT,H WORLD GROUP ADR,NASDAQ,2018-01-01,2019-11,rule6_stage2_sold,Bought in 2018-01 rank #3; Rule 6 sell_third (2025-11); Rule 6 sell_half (2026-11)
+TAL,TAL EDUCATION GROUP ADR REPTG,NYSE,2018-03-01,2025-04,holding,Bought in 2018-03 rank #3
+AMD,ADVANCED MICRO DEVICES,NASDAQ,2018-08-01,2022-01,holding,Bought in 2018-08 rank #2
+TPL,TEXAS PACIFIC LAND,NYSE,2018-09-01,2023-01,holding,Bought in 2018-09 rank #3
+EQX.TO,EQUINOX GOLD,Toronto Stock Exchange,2018-11-01,2019-10,rule6_stage2_sold,Bought in 2018-11 rank #2; Rule 6 sell_third (2025-10); Rule 6 sell_half (2026-10)
+TTWO,TAKE TWO INTERACTIVE SOFTWARE,NASDAQ,2018-11-01,2018-11,sold,Bought in 2018-11 rank #3; Rule 6 sell_third (2024-11); Rule 6 sell_half (2025-11); Rule 6 sell_remaining (2026-11)
+SHOP.TO,SHOPIFY SUBORDINATE VOTING CLASS A,Toronto Stock Exchange,2018-12-01,2022-01,holding,Bought in 2018-12 rank #2
+IVN.TO,IVANHOE MINES CLASS A,Toronto Stock Exchange,2018-12-01,2023-04,holding,Bought in 2018-12 rank #3
+BVN,BUENAVENTURA ADR REPRESENTING,NYSE,2019-01-01,2019-01,rule6_stage2_sold,Bought in 2019-01 rank #3; Rule 6 sell_third (2025-01); Rule 6 sell_half (2026-01)
+TEAM,ATLASSIAN CORP CLASS A,NASDAQ,2019-06-01,2021-11,holding,Bought in 2019-06 rank #3
+XYZ,BLOCK CLASS A,NYSE,2019-08-01,2021-05,holding,Bought in 2019-08 rank #3
+NRG,NRG ENERGY INC,NYSE,2019-10-01,2019-12,rule6_stage1_sold,Bought in 2019-10 rank #3; Rule 6 sell_third (2025-12)
+NTRA,NATERA,NASDAQ,2019-11-01,2026-11,holding,Bought in 2019-11 rank #2
+EVO.ST,EVOLUTION,Nasdaq Omx Nordic,2019-11-01,2023-02,holding,Bought in 2019-11 rank #3
+CVNA,CARVANA CLASS A,NYSE,2020-05-01,2026-11,holding,Bought in 2020-05 rank #3
+OKTA,OKTA CLASS A,NASDAQ,2020-07-01,2021-05,holding,Bought in 2020-07 rank #3
+SE,SEA ADS REPRESENTING LTD CLASS A,NYSE,2020-11-01,2021-11,holding,Bought in 2020-11 rank #3
+TWLO,TWILIO CLASS A,NYSE,2020-12-01,2021-08,holding,Bought in 2020-12 rank #3
+ASM.AS,ASM INTERNATIONAL NV,Euronext Amsterdam,2021-06-01,2023-06,holding,Bought in 2021-06 rank #3
+TSLA,TESLA INC,NASDAQ,2021-09-01,2023-04,holding,Bought in 2021-09 rank #2
+ZS,ZSCALER,NASDAQ,2021-12-01,2022-10,holding,Bought in 2021-12 rank #3
+AAPL,APPLE,NASDAQ,2022-02-01,2022-08,holding,Bought in 2022-02 rank #1
+MRVL,MARVELL TECHNOLOGY,NASDAQ,2022-02-01,2022-02,holding,Bought in 2022-02 rank #3
+FTNT,FORTINET,NASDAQ,2022-03-01,2022-08,holding,Bought in 2022-03 rank #2
+FCX,FREEPORT MCMORAN INC,NYSE,2022-04-01,2023-04,holding,Bought in 2022-04 rank #2
+TOU.TO,TOURMALINE OIL CORP,Toronto Stock Exchange,2022-05-01,2023-11,holding,Bought in 2022-05 rank #1
+KOG.OL,KONGSBERG GRUPPEN,Oslo Bors Asa,2022-05-01,2024-09,holding,Bought in 2022-05 rank #2
+KLAC,KLA,NASDAQ,2022-06-01,2022-06,holding,Bought in 2022-06 rank #2
+STLD,STEEL DYNAMICS INC,NASDAQ,2022-06-01,2024-02,holding,Bought in 2022-06 rank #3
+FUTU,FUTU HOLDINGS ADR,NASDAQ,2022-07-01,2023-04,holding,Bought in 2022-07 rank #1
+LLY,ELI LILLY,NYSE,2022-07-01,2024-09,holding,Bought in 2022-07 rank #3
+PWR,QUANTA SERVICES INC,NYSE,2022-08-01,2023-08,holding,Bought in 2022-08 rank #3
+BE,BLOOM ENERGY CLASS A,NYSE,2022-09-01,2026-07,holding,Bought in 2022-09 rank #2
+EQT,EQT,NYSE,2022-09-01,2022-10,holding,Bought in 2022-09 rank #3
+DVN,DEVON ENERGY,NYSE,2022-11-01,2023-09,holding,Bought in 2022-11 rank #1
+SMCI,SUPER MICRO COMPUTER INC,NASDAQ,2022-12-01,2025-08,holding,Bought in 2022-12 rank #3
+NUE,NUCOR,NYSE,2023-03-01,2024-02,holding,Bought in 2023-03 rank #3
+DKS,DICKS SPORTING,NYSE,2023-04-01,2023-05,holding,Bought in 2023-04 rank #1
+BBD-B.TO,BOMBARDIER CLASS B,Toronto Stock Exchange,2023-04-01,2024-01,holding,Bought in 2023-04 rank #2
+ON,ON SEMICONDUCTOR CORP,NASDAQ,2023-04-01,2023-09,holding,Bought in 2023-04 rank #3
+TRGP,TARGA RESOURCES,NYSE,2023-05-01,2024-01,holding,Bought in 2023-05 rank #1
+TECK-B.TO,TECK RESOURCES SUBORDINATE VOTING,Toronto Stock Exchange,2023-05-01,2023-07,holding,Bought in 2023-05 rank #2
+ATI,ATI,NYSE,2023-09-01,2024-10,holding,Bought in 2023-09 rank #3
+OXY,OCCIDENTAL PETROLEUM CORP,NYSE,2023-10-01,2023-10,holding,Bought in 2023-10 rank #2
+FANG,DIAMONDBACK ENERGY,NASDAQ,2023-11-01,2024-01,holding,Bought in 2023-11 rank #1
+CVE.TO,CENOVUS ENERGY,Toronto Stock Exchange,2023-11-01,2023-11,holding,Bought in 2023-11 rank #2
+MPC,MARATHON PETROLEUM,NYSE,2023-11-01,2024-04,holding,Bought in 2023-11 rank #3
+CCO.TO,CAMECO,Toronto Stock Exchange,2023-12-01,2024-02,holding,Bought in 2023-12 rank #1
+FIX,COMFORT SYSTEMS USA,NYSE,2024-01-01,2026-05,holding,Bought in 2024-01 rank #3
+CLS.TO,CELESTICA,Toronto Stock Exchange,2024-02-01,2026-07,holding,Bought in 2024-02 rank #3
+RHM.DE,RHEINMETALL AG,Xetra,2024-04-01,2026-02,holding,Bought in 2024-04 rank #3
+VST,VISTRA,NYSE,2024-06-01,2025-02,holding,Bought in 2024-06 rank #2
+FTAI,FTAI AVIATION,NASDAQ,2024-08-01,2026-04,holding,Bought in 2024-08 rank #3
+MSTR,STRATEGY INC CLASS A,NASDAQ,2025-02-01,2025-08,holding,Bought in 2025-02 rank #2
+RR.L,ROLLS-ROYCE HOLDINGS PLC,London Stock Exchange,2025-04-01,2026-10,holding,Bought in 2025-04 rank #2
+PLTR,PALANTIR TECHNOLOGIES CLASS A,NASDAQ,2025-05-01,2026-11,holding,Bought in 2025-05 rank #1
+VRT,VERTIV HOLDINGS CLASS A,NYSE,2025-07-01,2026-06,holding,Bought in 2025-07 rank #3
+APP,APPLOVIN CLASS A,NASDAQ,2025-09-01,2026-07,holding,Bought in 2025-09 rank #2
+IREN,IREN,NASDAQ,2025-12-01,2026-06,holding,Bought in 2025-12 rank #3
+ABVX.PA,ABIVAX SA,Nyse Euronext - Euronext Paris,2026-01-01,2026-02,holding,Bought in 2026-01 rank #3
+ASTS,AST SPACEMOBILE CLASS A,NASDAQ,2026-02-01,2026-07,holding,Bought in 2026-02 rank #2
+RKLB,ROCKET LAB CORP,NASDAQ,2026-02-01,2026-07,holding,Bought in 2026-02 rank #3
+LITE,LUMENTUM HOLDINGS,NASDAQ,2026-03-01,2026-11,holding,Bought in 2026-03 rank #3
+CRDO,CREDO TECHNOLOGY GROUP HOLDING LTD,NASDAQ,2026-05-01,2026-08,holding,Bought in 2026-05 rank #3
+WDC,WESTERN DIGITAL CORP,NASDAQ,2026-07-01,2026-08,holding,Bought in 2026-07 rank #2
+STX,SEAGATE TECHNOLOGY HOLDINGS PLC,NASDAQ,2026-08-01,2026-08,holding,Bought in 2026-08 rank #2
+HOOD,ROBINHOOD MARKETS CLASS A,NASDAQ,2026-09-01,2026-10,holding,Bought in 2026-09 rank #3
+MU,MICRON TECHNOLOGY,NASDAQ,2026-11-01,2026-11,holding,Bought in 2026-11 rank #2
