@@ -19,6 +19,7 @@ import matplotlib.ticker as mticker
 plt.rcParams["font.family"] = "sans-serif"
 plt.rcParams["font.sans-serif"] = ["Liberation Sans", "DejaVu Sans", "Arial", "sans-serif"]
 plt.rcParams["axes.unicode_minus"] = False
+plt.rcParams["text.parse_math"] = False
 
 # Original stone-ivory broadsheet palette (distinct from FT salmon/claret branding)
 PAPER_BG = "#F6F5F0"
@@ -337,7 +338,7 @@ def generate_performance_chart(
         raise ValueError("Cannot generate performance chart from empty performance rows.")
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    del benchmark_label
+    del benchmark_label, currency_symbol
 
     dates = [date.fromisoformat(str(r["date"])) for r in performance_rows]
     dates_num: Any = mdates.date2num(dates)
@@ -399,7 +400,7 @@ def generate_performance_chart(
         growth_labels.append(
             (
                 vals[-1],
-                f"{short_name}  {_format_compact_value(currency_symbol, vals[-1])}",
+                f"{short_name}  {_format_compact_value('', vals[-1])}",
                 color,
                 bold,
             )
@@ -424,7 +425,7 @@ def generate_performance_chart(
     )
     max_val = max(all_vals)
     min_val = max(1.0, min(all_vals))
-    formatter = _make_currency_formatter(currency_symbol)
+    formatter = mticker.FuncFormatter(lambda x, _p: f"{x:,.0f}")
     if max_val / min_val >= 8.0:
         ax_top.set_yscale("log")
         ax_top.set_ylim(min_val * 0.86, max_val * 1.18)
@@ -442,7 +443,7 @@ def generate_performance_chart(
     ax_top.text(
         0.0,
         1.03,
-        f"Growth of {currency_symbol}10,000 invested (TWR, {scale_desc})",
+        f"Rebased TWR index of monthly DCA portfolio (start = 10,000, {scale_desc})",
         transform=ax_top.transAxes,
         ha="left",
         va="bottom",
@@ -915,6 +916,171 @@ def generate_allocation_chart(
 
     _draw_top_rule_and_headers(fig, title, subtitle, footer_note, left=0.075)
     fig.subplots_adjust(left=0.075, right=0.77, top=0.825, bottom=0.085)
+    fig.savefig(output_path, dpi=180, facecolor=PAPER_BG)
+    plt.close(fig)
+    return output_path
+
+
+def generate_funding_comparison_chart(
+    funding_schedules: Mapping[str, dict[str, Any]],
+    output_path: Path,
+    *,
+    title: str,
+    subtitle: str,
+    currency_symbol: str = "$",
+    footer_note: str,
+) -> Path:
+    """Render a broadsheet 1x3 comparison of Pure DCA vs Hybrid Lump+DCA vs Pure Lump Sum."""
+    from matplotlib.patches import Patch
+
+    panel_specs: tuple[tuple[str, str], ...] = (
+        ("dca_100", f"Pure DCA ({currency_symbol}100/mo)"),
+        ("lump_10k_dca_100", f"Lump {currency_symbol}10k + {currency_symbol}100/mo"),
+        ("lump_10k_only", f"Pure Lump {currency_symbol}10k ({currency_symbol}0/mo)"),
+    )
+    panels: list[tuple[str, dict[str, Any]]] = []
+    for key, hdr in panel_specs:
+        if key not in funding_schedules:
+            raise ValueError(f"Missing funding schedule '{key}' for comparison chart.")
+        panels.append((hdr, funding_schedules[key]))
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    # Deterministic union of top tickers across all 3 schedules so stocks keep consistent colors.
+    score_map: dict[str, float] = {}
+    for _, sched in panels:
+        alloc = sched["allocation"]
+        pts = alloc.get("points") or []
+        if not pts:
+            continue
+        last_w = pts[-1]["weights"]
+        for tk in alloc.get("selected_tickers") or []:
+            max_w = max(float(pt["weights"].get(tk, 0.0)) for pt in pts)
+            final_w = float(last_w.get(tk, 0.0))
+            score_map[tk] = max(score_map.get(tk, 0.0), final_w * 2.0 + max_w * 0.25)
+
+    union_tickers = sorted(score_map, key=lambda t: (-score_map[t], t))[: len(ALLOCATION_PALETTE)]
+    ticker_colors = {
+        tk: ALLOCATION_PALETTE[idx % len(ALLOCATION_PALETTE)]
+        for idx, tk in enumerate(union_tickers)
+    }
+    stack_keys = [*union_tickers, "OTHER"]
+    colors = [ticker_colors[tk] for tk in union_tickers] + [OTHER_BAND_COLOR]
+
+    fig = plt.figure(figsize=(12.4, 5.9), dpi=180, facecolor=PAPER_BG)
+    gs = fig.add_gridspec(1, 3, wspace=0.14)
+
+    first_ax: Any = None
+    for idx, (hdr, sched) in enumerate(panels):
+        ax = fig.add_subplot(gs[0, idx], sharey=first_ax)
+        if first_ax is None:
+            first_ax = ax
+        _style_editorial_axis(ax, show_bottom=True)
+
+        alloc = sched["allocation"]
+        pts = alloc["points"]
+        dates = [date.fromisoformat(str(pt["d"])) for pt in pts]
+        dates_num: Any = mdates.date2num(dates)
+
+        stacks: list[list[float]] = []
+        for tk in union_tickers:
+            stacks.append([float(pt["weights"].get(tk, 0.0)) for pt in pts])
+        other_vals: list[float] = []
+        for pt in pts:
+            named = sum(float(pt["weights"].get(tk, 0.0)) for tk in union_tickers)
+            other_vals.append(max(0.0, 100.0 - named))
+        stacks.append(other_vals)
+
+        ax.stackplot(
+            dates_num,
+            *stacks,
+            colors=colors,
+            alpha=0.92,
+            edgecolor=PAPER_BG,
+            linewidth=0.55,
+            zorder=2,
+        )
+        ax.set_ylim(0.0, 100.0)
+        ax.yaxis.set_major_locator(mticker.MultipleLocator(25))
+        ax.yaxis.set_major_formatter(mticker.FormatStrFormatter("%.0f%%"))
+        if idx > 0:
+            plt.setp(ax.get_yticklabels(), visible=False)
+        ax.set_xlim(float(dates_num[0]), float(dates_num[-1]))
+        ax.xaxis_date()
+        ax.xaxis.set_major_locator(mdates.YearLocator(base=4))
+        ax.xaxis.set_major_formatter(mdates.DateFormatter("'%y"))
+
+        end_val = float(sched.get("ending_value") or 0.0)
+        xirr_val = sched.get("xirr_pct")
+        eff_n = float(alloc.get("final_effective_n") or 0.0)
+        n_hold = int(alloc.get("final_holdings_count") or 0)
+        xirr_txt = f"{float(xirr_val):.1f}%" if xirr_val is not None else "—"
+
+        ax.text(
+            0.0,
+            1.11,
+            hdr,
+            transform=ax.transAxes,
+            ha="left",
+            va="bottom",
+            fontsize=10.5,
+            fontweight="bold",
+            color=INK_DARK,
+        )
+        ax.text(
+            0.0,
+            1.035,
+            f"End {_format_compact_value(currency_symbol, end_val)} · XIRR {xirr_txt} · "
+            f"Eff N {eff_n:.1f} (N={n_hold})",
+            transform=ax.transAxes,
+            ha="left",
+            va="bottom",
+            fontsize=8.3,
+            color=INK_SUB,
+        )
+
+        # Clean in-band callouts at the right edge for major holdings (>= 12% vertical span)
+        x_text = float(dates_num[-1]) - (float(dates_num[-1]) - float(dates_num[0])) * 0.025
+        cum = 0.0
+        for s_idx, key in enumerate(stack_keys):
+            val = stacks[s_idx][-1]
+            mid_y = cum + val / 2.0
+            cum += val
+            if val < 12.0:
+                continue
+            band_col = colors[s_idx]
+            txt_col = INK_DARK if band_col in {OTHER_BAND_COLOR, "#C28B22"} else "#FFFFFF"
+            lbl = f"Other {val:.0f}%" if key == "OTHER" else f"{key} {val:.0f}%"
+            ax.text(
+                x_text,
+                mid_y,
+                lbl,
+                ha="right",
+                va="center",
+                fontsize=8.3,
+                fontweight="bold",
+                color=txt_col,
+                zorder=5,
+            )
+
+    legend_handles = [
+        Patch(facecolor=ticker_colors[tk], edgecolor=PAPER_BG, linewidth=0.5, label=tk)
+        for tk in union_tickers
+    ] + [Patch(facecolor=OTHER_BAND_COLOR, edgecolor=PAPER_BG, linewidth=0.5, label="Other")]
+    fig.legend(
+        handles=legend_handles,
+        loc="lower left",
+        bbox_to_anchor=(0.055, 0.052),
+        ncol=min(len(legend_handles), 9),
+        frameon=False,
+        fontsize=8.4,
+        handlelength=1.2,
+        handletextpad=0.5,
+        columnspacing=1.2,
+    )
+
+    _draw_top_rule_and_headers(fig, title, subtitle, footer_note, left=0.06)
+    fig.subplots_adjust(left=0.06, right=0.975, top=0.76, bottom=0.165, wspace=0.12)
     fig.savefig(output_path, dpi=180, facecolor=PAPER_BG)
     plt.close(fig)
     return output_path

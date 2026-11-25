@@ -21,6 +21,7 @@ class BacktestConfig:
     start_month: str | None = None
     end_month: str | None = None
     monthly_contribution: float = 500.0
+    initial_lump_sum: float = 0.0
     top_n: int = 3
     rule6_enabled: bool = False
     fee_pct: float = 0.15
@@ -283,6 +284,12 @@ def run_backtest(
     label: str | None = None,
 ) -> BacktestResult:
     """Run monthly DCA momentum simulation over ``dataset``."""
+    if config.monthly_contribution < 0.0:
+        raise ValueError("monthly_contribution must be >= 0.")
+    if config.initial_lump_sum < 0.0:
+        raise ValueError("initial_lump_sum must be >= 0.")
+    if config.monthly_contribution == 0.0 and config.initial_lump_sum == 0.0:
+        raise ValueError("Either initial_lump_sum or monthly_contribution must be > 0.")
     if not dataset.months:
         raise ValueError("Backtest dataset contains no price months.")
 
@@ -533,12 +540,14 @@ def run_backtest(
                 bench_nav_values.append(bench_nav_val)
             break
 
-        # 5. Deposit monthly contribution and buy equal splits across Top N.
-        deposit = config.monthly_contribution
-        total_contributed += deposit
-        months_invested += 1
-        cash_flows.append((signal_dt, -deposit))
-        benchmark_cash_flows.append((signal_dt, -deposit))
+        # 5. Deposit optional initial lump sum (Month 1) + monthly DCA contribution.
+        is_first_buy = idx == first_signal_idx
+        deposit = (config.initial_lump_sum if is_first_buy else 0.0) + config.monthly_contribution
+        if deposit > 0.0:
+            total_contributed += deposit
+            months_invested += 1
+            cash_flows.append((signal_dt, -deposit))
+            benchmark_cash_flows.append((signal_dt, -deposit))
 
         buy_pool = deposit + uninvested_cash + available_takeover + rule6_proceeds_net
         uninvested_cash = 0.0
@@ -597,10 +606,11 @@ def run_backtest(
 
         if bench_pt is not None:
             b_cash = benchmark_cash + deposit
-            b_fee = b_cash * (config.benchmark_fee_pct / 100.0)
-            b_net = b_cash - b_fee
-            benchmark_units += b_net / bench_pt.adj_close
-            benchmark_cash = 0.0
+            if b_cash > 0.0:
+                b_fee = b_cash * (config.benchmark_fee_pct / 100.0)
+                b_net = b_cash - b_fee
+                benchmark_units += b_net / bench_pt.adj_close
+                benchmark_cash = 0.0
             bench_val = benchmark_units * bench_pt.adj_close
 
         prev_post_buy_value = post_buy_value
@@ -732,6 +742,7 @@ def compare_variants(
             start_month=base_config.start_month,
             end_month=base_config.end_month,
             monthly_contribution=base_config.monthly_contribution,
+            initial_lump_sum=base_config.initial_lump_sum,
             top_n=top_n,
             rule6_enabled=rule6,
             fee_pct=base_config.fee_pct,
@@ -764,6 +775,7 @@ def run_subperiod_summary(
                 start_month=start_m,
                 end_month=end_m,
                 monthly_contribution=base_config.monthly_contribution,
+                initial_lump_sum=base_config.initial_lump_sum,
                 top_n=top_n,
                 rule6_enabled=False,
                 fee_pct=base_config.fee_pct,
@@ -924,3 +936,80 @@ def build_variants_allocation_payload(
         for label in ALLOCATION_VARIANT_LABELS
         if label in variants
     }
+
+
+FUNDING_SCHEDULE_KEYS: tuple[str, ...] = (
+    "dca_100",
+    "dca_100_r6",
+    "lump_10k_dca_100",
+    "lump_10k_dca_100_r6",
+    "lump_10k_only",
+    "lump_10k_only_r6",
+)
+
+
+def build_funding_schedule_comparison(
+    dataset: BacktestDataset,
+    base_config: BacktestConfig,
+    *,
+    lump_sum: float = 10_000.0,
+    monthly_dca: float = 100.0,
+    top_n: int = 3,
+    top_k: int = 8,
+) -> dict[str, Any]:
+    """Compare pure monthly DCA, Day-1 lump-sum + DCA, and pure lump-sum funding schedules."""
+    lump_str = "10k" if lump_sum == 10_000.0 else f"{lump_sum:,.0f}"
+    mo_str = f"{monthly_dca:,.0f}"
+    specs: tuple[tuple[str, float, float, bool, str], ...] = (
+        ("dca_100", 0.0, monthly_dca, False, f"Pure Monthly DCA ({mo_str}/mo)"),
+        ("dca_100_r6", 0.0, monthly_dca, True, f"Pure Monthly DCA ({mo_str}/mo + Rule 6)"),
+        ("lump_10k_dca_100", lump_sum, monthly_dca, False, f"Lump {lump_str} + {mo_str}/mo"),
+        (
+            "lump_10k_dca_100_r6",
+            lump_sum,
+            monthly_dca,
+            True,
+            f"Lump {lump_str} + {mo_str}/mo + Rule 6",
+        ),
+        ("lump_10k_only", lump_sum, 0.0, False, f"Pure Lump Sum ({lump_str}, 0/mo)"),
+        ("lump_10k_only_r6", lump_sum, 0.0, True, f"Pure Lump Sum ({lump_str} + Rule 6)"),
+    )
+    out: dict[str, Any] = {}
+    for key, lump, mo, r6, label in specs:
+        cfg = BacktestConfig(
+            start_month=base_config.start_month,
+            end_month=base_config.end_month,
+            monthly_contribution=mo,
+            initial_lump_sum=lump,
+            top_n=top_n,
+            rule6_enabled=r6,
+            fee_pct=base_config.fee_pct,
+            sell_fee_pct=base_config.sell_fee_pct,
+            benchmark_fee_pct=base_config.benchmark_fee_pct,
+            risk_free_rate=base_config.risk_free_rate,
+            signal_mode=base_config.signal_mode,
+            exclude_tickers=base_config.exclude_tickers,
+            market_fee_map=base_config.market_fee_map,
+        )
+        res = run_backtest(dataset, cfg, label=label)
+        m = res.metrics
+        out[key] = {
+            "key": key,
+            "label": label,
+            "initial_lump_sum": lump,
+            "monthly_contribution": mo,
+            "rule6_enabled": r6,
+            "total_contributed": round(m.total_contributed, 2),
+            "ending_value": round(m.ending_value, 2),
+            "benchmark_ending_value": (
+                round(m.benchmark_ending_value, 2) if m.benchmark_ending_value is not None else None
+            ),
+            "xirr_pct": round(m.xirr_pct, 2) if m.xirr_pct is not None else None,
+            "benchmark_xirr_pct": (
+                round(m.benchmark_xirr_pct, 2) if m.benchmark_xirr_pct is not None else None
+            ),
+            "twr_cagr_pct": round(m.twr_cagr_pct, 2) if m.twr_cagr_pct is not None else None,
+            "max_drawdown_pct": round(m.max_drawdown_pct, 2),
+            "allocation": summarize_portfolio_allocations(res, top_k=top_k),
+        }
+    return out

@@ -398,6 +398,7 @@ def test_end_to_end_acwi_uk_flagging_and_all_market_charts(tmp_path: Path) -> No
         "allocation_ftse100.png",
         "allocation_acwi.png",
         "allocation_acwi_uk_accessible.png",
+        "funding_comparison_sp500.png",
     ):
         p = tmp_path / "assets" / chart_name
         assert p.exists(), f"Missing {chart_name}"
@@ -405,6 +406,10 @@ def test_end_to_end_acwi_uk_flagging_and_all_market_charts(tmp_path: Path) -> No
 
     assert (data_dir / "allocation_summary.json").exists()
     assert (global_dir / "allocation_summary.json").exists()
+    funding_path = data_dir / "funding_comparison.json"
+    assert funding_path.exists()
+    funding_data = json.loads(funding_path.read_text(encoding="utf-8"))
+    assert {"sp500", "acwi_uk_accessible", "acwi_all", "ftse100"} <= set(funding_data.keys())
 
     gsummary = json.loads((global_dir / "summary.json").read_text(encoding="utf-8"))
     # Full ACWI picks 2330.TW #1 and flags it; UK-Accessible ACWI picks US1, ASML.AS, UK1.L.

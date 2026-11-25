@@ -496,6 +496,37 @@ Because each month buys the current Top 3 and holds previous winners, early comp
 
 ![UK FTSE 100 Portfolio Allocation](assets/allocation_ftse100.png)
 
+### Funding Schedule Impact: Monthly DCA ($100/mo) vs Lump-Sum Start ($10,000)
+
+- **Monthly DCA is scale-invariant in percentage terms:** Investing `$100/mo` vs `£500/mo` produces the exact same monthly `%` portfolio weights, XIRR, and TWR CAGR (ending value scales cleanly by `5x`).
+- **Day-1 lump sums reshape portfolio concentration:** Starting with `$10,000` (or `£10,000`) invests `100x` a monthly tranche into Month 1's Top 3 and holds those early winners unless Rule 6 trims stagnant names — sharply reducing Effective N and creating high sensitivity to Day-1 picks.
+- **Rebased TWR Index vs Lump Sum:** Performance charts above plot the **rebased TWR index** (`start = 10,000`) of the monthly DCA portfolio rather than a Day-1 lump-sum account.
+
+![Funding Schedule Portfolio Comparison](assets/funding_comparison_sp500.png)
+
+| Universe | Schedule | Invested | Ending Value | XIRR | Max DD | Active N | Eff N | #1 Holding |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| US S&P 500 | Pure DCA (100/mo) | $25,000 | $373,874 | 21.94% | -66.0% | 111 | 5.1 | **NVDA** (33.7%) |
+| US S&P 500 | Lump 10k + 100/mo | $35,000 | $947,677 | 21.61% | -65.3% | 111 | 2.1 | **AAPL** (66.9%) |
+| US S&P 500 | Lump 10k + 100/mo + Rule 6 | $35,000 | $1,109,634 | 22.62% | -65.3% | 65 | 4.1 | **NVDA** (40.3%) |
+| US S&P 500 | Pure Lump 10k (0/mo) | $10,000 | $573,803 | 21.46% | -65.1% | 7 | 1.1 | **AAPL** (93.0%) |
+| US S&P 500 | Pure Lump 10k + Rule 6 | $10,000 | $702,335 | 22.64% | -65.1% | 40 | 3.8 | **NVDA** (39.2%) |
+| All World (UK ISA) | Pure DCA (100/mo) | $10,800 | $44,025 | 29.82% | -47.4% | 73 | 6.8 | **NVDA** (30.7%) |
+| All World (UK ISA) | Lump 10k + 100/mo | $20,800 | $202,636 | 34.80% | -54.1% | 73 | 1.9 | **NVDA** (72.6%) |
+| All World (UK ISA) | Lump 10k + 100/mo + Rule 6 | $20,800 | $210,134 | 35.39% | -54.1% | 71 | 1.9 | **NVDA** (72.0%) |
+| All World (UK ISA) | Pure Lump 10k (0/mo) | $10,000 | $158,611 | 35.95% | -56.2% | 3 | 1.4 | **NVDA** (84.2%) |
+| All World (UK ISA) | Pure Lump 10k + Rule 6 | $10,000 | $166,129 | 36.65% | -56.2% | 10 | 1.4 | **NVDA** (82.9%) |
+| All World (Full ACWI) | Pure DCA (100/mo) | $10,800 | $38,941 | 27.23% | -40.7% | 77 | 7.0 | **NVDA** (33.2%) |
+| All World (Full ACWI) | Lump 10k + 100/mo | $20,800 | $197,552 | 34.38% | -51.7% | 77 | 1.8 | **NVDA** (74.2%) |
+| All World (Full ACWI) | Lump 10k + 100/mo + Rule 6 | $20,800 | $210,603 | 35.43% | -51.7% | 71 | 2.0 | **NVDA** (69.6%) |
+| All World (Full ACWI) | Pure Lump 10k (0/mo) | $10,000 | $158,611 | 35.95% | -56.2% | 3 | 1.4 | **NVDA** (84.2%) |
+| All World (Full ACWI) | Pure Lump 10k + Rule 6 | $10,000 | $171,700 | 37.15% | -56.2% | 9 | 1.6 | **NVDA** (77.8%) |
+| UK FTSE 100 | Pure DCA (100/mo) | £10,700 | £18,339 | 11.71% | -38.4% | 43 | 9.5 | **GAW.L** (21.6%) |
+| UK FTSE 100 | Lump 10k + 100/mo | £20,700 | £53,420 | 14.24% | -43.2% | 43 | 2.8 | **GAW.L** (57.6%) |
+| UK FTSE 100 | Lump 10k + 100/mo + Rule 6 | £20,700 | £53,411 | 14.24% | -43.2% | 42 | 2.8 | **GAW.L** (57.6%) |
+| UK FTSE 100 | Pure Lump 10k (0/mo) | £10,000 | £35,081 | 15.12% | -44.6% | 3 | 1.6 | **GAW.L** (76.4%) |
+| UK FTSE 100 | Pure Lump 10k + Rule 6 | £10,000 | £35,081 | 15.12% | -44.6% | 3 | 1.6 | **GAW.L** (76.4%) |
+
 ## US Model Portfolio & Rule 6 Faded-Winner Status
 
 - **Active model positions (Standard Top 3 + Rule 6):** `71` (tracked in [`data/model_holdings.csv`](data/model_holdings.csv)).

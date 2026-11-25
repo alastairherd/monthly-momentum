@@ -10,7 +10,9 @@ import pytest
 
 from monthly_momentum.backtest.data import load_backtest_dataset
 from monthly_momentum.backtest.engine import (
+    FUNDING_SCHEDULE_KEYS,
     BacktestConfig,
+    build_funding_schedule_comparison,
     compare_variants,
     run_backtest,
     summarize_portfolio_allocations,
@@ -287,3 +289,130 @@ def test_backtest_triggers_rule6_exits_when_universe_exceeds_10(tmp_path: Path) 
     assert alloc["final_effective_n"] >= 1.0
     assert alloc["final_top10"]
     assert sum(alloc["points"][-1]["weights"].values()) == pytest.approx(100.0, abs=0.2)
+
+
+def test_dca_scale_invariance_vs_initial_lump_sum_modes(tmp_path: Path) -> None:
+    prices_path = tmp_path / "p12.csv"
+    const_path = tmp_path / "c12.csv"
+    months = [add_months("2012-01", i) for i in range(150)]
+
+    with prices_path.open("w", encoding="utf-8", newline="") as pf:
+        pw = csv.DictWriter(pf, fieldnames=["date", "ticker", "close", "adj_close", "market"])
+        pw.writeheader()
+        for i, m in enumerate(months):
+            dt = f"{m}-01"
+            lag_p = 100.0 * (1.06**i) if i <= 36 else 100.0 * (1.06**36)
+            pw.writerow(
+                {
+                    "date": dt,
+                    "ticker": "LAGGARD",
+                    "close": f"{lag_p:.4f}",
+                    "adj_close": f"{lag_p:.4f}",
+                    "market": "us",
+                }
+            )
+            for k in range(1, 12):
+                p = 100.0 * (1.035**i) if i > 40 else 100.0 * (1.01**i)
+                pw.writerow(
+                    {
+                        "date": dt,
+                        "ticker": f"WIN{k:02d}",
+                        "close": f"{p:.4f}",
+                        "adj_close": f"{p:.4f}",
+                        "market": "us",
+                    }
+                )
+
+    with const_path.open("w", encoding="utf-8", newline="") as cf:
+        cw = csv.DictWriter(cf, fieldnames=["ticker", "start_date", "end_date", "index"])
+        cw.writeheader()
+        cw.writerow(
+            {"ticker": "LAGGARD", "start_date": "2010-01-01", "end_date": "", "index": "S&P 500"}
+        )
+        for k in range(1, 12):
+            cw.writerow(
+                {
+                    "ticker": f"WIN{k:02d}",
+                    "start_date": "2010-01-01",
+                    "end_date": "",
+                    "index": "S&P 500",
+                }
+            )
+
+    ds = load_backtest_dataset(prices_path, const_path)
+
+    # 1. Pure DCA scale invariance ($100/mo vs $500/mo)
+    dca_100 = run_backtest(
+        ds,
+        BacktestConfig(monthly_contribution=100.0, top_n=1, fee_pct=0.15, sell_fee_pct=0.15),
+    )
+    dca_500 = run_backtest(
+        ds,
+        BacktestConfig(monthly_contribution=500.0, top_n=1, fee_pct=0.15, sell_fee_pct=0.15),
+    )
+    assert dca_500.metrics.ending_value == pytest.approx(
+        dca_100.metrics.ending_value * 5.0, abs=0.2
+    )
+    assert dca_500.metrics.xirr_pct == pytest.approx(dca_100.metrics.xirr_pct or 0.0, abs=1e-4)
+    assert dca_500.metrics.twr_cagr_pct == pytest.approx(
+        dca_100.metrics.twr_cagr_pct or 0.0, abs=1e-4
+    )
+    assert dca_100.points[-1].holdings_weights == dca_500.points[-1].holdings_weights
+
+    # 2. Pure lump sum (no monthly inflows) holds Month 1 pick without Rule 6, redeploys with Rule 6
+    lump_hold = run_backtest(
+        ds,
+        BacktestConfig(
+            monthly_contribution=0.0,
+            initial_lump_sum=10_000.0,
+            top_n=1,
+            rule6_enabled=False,
+            fee_pct=0.0,
+            sell_fee_pct=0.0,
+        ),
+    )
+    assert lump_hold.metrics.total_contributed == pytest.approx(10_000.0)
+    assert lump_hold.metrics.months_invested == 1
+    assert lump_hold.points[-1].holdings_weights == {"LAGGARD": pytest.approx(100.0, abs=0.01)}
+
+    lump_r6 = run_backtest(
+        ds,
+        BacktestConfig(
+            monthly_contribution=0.0,
+            initial_lump_sum=10_000.0,
+            top_n=1,
+            rule6_enabled=True,
+            fee_pct=0.0,
+            sell_fee_pct=0.0,
+        ),
+    )
+    assert lump_r6.metrics.total_contributed == pytest.approx(10_000.0)
+    assert lump_r6.metrics.rule6_exits_count == 3
+    assert "LAGGARD" not in lump_r6.points[-1].holdings_weights
+
+    # 3. Hybrid ($10k start + $100/mo) yields distinct ending weights from pure $100/mo DCA
+    hybrid = run_backtest(
+        ds,
+        BacktestConfig(
+            monthly_contribution=100.0,
+            initial_lump_sum=10_000.0,
+            top_n=1,
+            fee_pct=0.15,
+            sell_fee_pct=0.15,
+        ),
+    )
+    assert (
+        hybrid.points[-1].holdings_weights["LAGGARD"]
+        > dca_100.points[-1].holdings_weights["LAGGARD"]
+    )
+
+    # 4. Funding schedule comparison helper produces all 6 schedules with normalized weights
+    comp = build_funding_schedule_comparison(
+        ds,
+        BacktestConfig(monthly_contribution=100.0, fee_pct=0.15, sell_fee_pct=0.15),
+        top_n=3,
+    )
+    assert tuple(comp.keys()) == FUNDING_SCHEDULE_KEYS
+    for key in FUNDING_SCHEDULE_KEYS:
+        alloc = comp[key]["allocation"]
+        assert sum(alloc["points"][-1]["weights"].values()) == pytest.approx(100.0, abs=0.2)

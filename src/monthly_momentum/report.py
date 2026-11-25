@@ -15,6 +15,7 @@ from monthly_momentum.backtest.engine import (
     BacktestConfig,
     BacktestResult,
     SubperiodRow,
+    build_funding_schedule_comparison,
     build_variants_allocation_payload,
     compare_variants,
     run_backtest,
@@ -22,6 +23,7 @@ from monthly_momentum.backtest.engine import (
 )
 from monthly_momentum.chart import (
     generate_allocation_chart,
+    generate_funding_comparison_chart,
     generate_markets_comparison_chart,
     generate_performance_chart,
 )
@@ -405,6 +407,7 @@ def _render_readme_block(
     acwi_uk_history: list[tuple[str, str, list[RankedSecurity]]] | None = None,
     us_alloc_std: dict[str, Any] | None = None,
     global_alloc: dict[str, Any] | None = None,
+    funding_comparison: dict[str, Any] | None = None,
 ) -> str:
     latest_window = summary["latest_window"]
     signal_month = summary["latest_signal_month"]
@@ -923,6 +926,73 @@ def _render_readme_block(
             lines.append("![UK FTSE 100 Portfolio Allocation](assets/allocation_ftse100.png)")
             lines.append("")
 
+        if funding_comparison:
+            lines.append(
+                "### Funding Schedule Impact: Monthly DCA ($100/mo) vs Lump-Sum Start ($10,000)"
+            )
+            lines.append("")
+            lines.append(
+                "- **Monthly DCA is scale-invariant in percentage terms:** Investing `$100/mo` vs "
+                "`£500/mo` produces the exact same monthly `%` portfolio weights, XIRR, and TWR "
+                "CAGR (ending value scales cleanly by `5x`)."
+            )
+            lines.append(
+                "- **Day-1 lump sums reshape portfolio concentration:** Starting with `$10,000` "
+                "(or `£10,000`) invests `100x` a monthly tranche into Month 1's Top 3 and holds "
+                "those early winners unless Rule 6 trims stagnant names — sharply reducing "
+                "Effective N and creating high sensitivity to Day-1 picks."
+            )
+            lines.append(
+                "- **Rebased TWR Index vs Lump Sum:** Performance charts above plot the **rebased "
+                "TWR index** (`start = 10,000`) of the monthly DCA portfolio rather than a Day-1 "
+                "lump-sum account."
+            )
+            lines.append("")
+            lines.append(
+                "![Funding Schedule Portfolio Comparison](assets/funding_comparison_sp500.png)"
+            )
+            lines.append("")
+            lines.append(
+                "| Universe | Schedule | Invested | Ending Value | XIRR | Max DD | "
+                "Active N | Eff N | #1 Holding |"
+            )
+            lines.append("| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |")
+
+            schedule_rows: tuple[tuple[str, str], ...] = (
+                ("dca_100", "Pure DCA (100/mo)"),
+                ("lump_10k_dca_100", "Lump 10k + 100/mo"),
+                ("lump_10k_dca_100_r6", "Lump 10k + 100/mo + Rule 6"),
+                ("lump_10k_only", "Pure Lump 10k (0/mo)"),
+                ("lump_10k_only_r6", "Pure Lump 10k + Rule 6"),
+            )
+            market_specs: tuple[tuple[str, str, str], ...] = (
+                ("sp500", "US S&P 500", "$"),
+                ("acwi_uk_accessible", "All World (UK ISA)", "$"),
+                ("acwi_all", "All World (Full ACWI)", "$"),
+                ("ftse100", "UK FTSE 100", "£"),
+            )
+            for m_key, m_label, sym in market_specs:
+                blk = funding_comparison.get(m_key)
+                if not isinstance(blk, dict):
+                    continue
+                for s_key, s_label in schedule_rows:
+                    sc = blk.get(s_key)
+                    if not isinstance(sc, dict):
+                        continue
+                    alloc = sc.get("allocation") or {}
+                    top1_t = alloc.get("final_top1_ticker") or "—"
+                    top1_w = float(alloc.get("final_top1_pct") or 0.0)
+                    eff_n = float(alloc.get("final_effective_n") or 0.0)
+                    n_act = int(alloc.get("final_holdings_count") or 0)
+                    xirr_s = _format_plain_pct(sc.get("xirr_pct"))
+                    lines.append(
+                        f"| {m_label} | {s_label} | {sym}{sc['total_contributed']:,.0f} | "
+                        f"{sym}{sc['ending_value']:,.0f} | {xirr_s} | "
+                        f"{float(sc['max_drawdown_pct']):.1f}% | {n_act} | {eff_n:.1f} | "
+                        f"**{top1_t}** ({top1_w:.1f}%) |"
+                    )
+            lines.append("")
+
     # Model Portfolio & Rule 6 Status
     active_holdings = [h for h in holdings if h.status in ACTIVE_STATUSES]
     actionable_r6 = [
@@ -1239,6 +1309,29 @@ def rebuild_public_reports(
         ),
     )
 
+    us_funding = build_funding_schedule_comparison(
+        dataset,
+        base_cfg,
+        lump_sum=10_000.0,
+        monthly_dca=100.0,
+        top_n=3,
+    )
+    generate_funding_comparison_chart(
+        us_funding,
+        root_dir / "assets" / "funding_comparison_sp500.png",
+        title="Starting with a $10k lump sum concentrates US holdings far more than $100/mo DCA",
+        subtitle=(
+            f"Portfolio weight % across S&P 500 Top 3 strategies ({std_res.points[0].window_month} "
+            f"to {latest_pt.window_month}, USD)"
+        ),
+        currency_symbol="$",
+        footer_note=(
+            "Source: fja05680 S&P 500 membership, weib08 & Yahoo Finance (reinvested dividends, "
+            "0.15% FX fee). Pure DCA ($100/mo) and £500/mo share identical % weights."
+        ),
+    )
+    funding_comparison_payload: dict[str, Any] = {"sp500": us_funding}
+
     global_summary_dict: dict[str, Any] | None = None
     global_alloc_dict: dict[str, Any] | None = None
     global_const = data_dir / "global" / "constituents.csv"
@@ -1300,6 +1393,17 @@ def rebuild_public_reports(
         global_alloc_path = global_dir / "allocation_summary.json"
         if global_alloc_path.exists():
             global_alloc_dict = json.loads(global_alloc_path.read_text(encoding="utf-8"))
+        global_funding_path = global_dir / "funding_comparison.json"
+        if global_funding_path.exists():
+            global_funding_data = json.loads(global_funding_path.read_text(encoding="utf-8"))
+            for key in ("acwi_uk_accessible", "acwi_all", "ftse100"):
+                if key in global_funding_data:
+                    funding_comparison_payload[key] = global_funding_data[key]
+
+    (data_dir / "funding_comparison.json").write_text(
+        json.dumps(funding_comparison_payload, separators=(",", ":")) + "\n",
+        encoding="utf-8",
+    )
 
     readme_path = root_dir / "README.md"
     readme_block = _render_readme_block(
@@ -1317,6 +1421,7 @@ def rebuild_public_reports(
         acwi_uk_history=acwi_uk_history,
         us_alloc_std=us_alloc_std,
         global_alloc=global_alloc_dict,
+        funding_comparison=funding_comparison_payload,
     )
     _update_readme_file(readme_path, readme_block)
 

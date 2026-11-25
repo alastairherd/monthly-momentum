@@ -26,10 +26,14 @@ from monthly_momentum.backtest.data import (
 from monthly_momentum.backtest.engine import (
     BacktestConfig,
     BacktestResult,
+    build_funding_schedule_comparison,
     build_variants_allocation_payload,
     compare_variants,
 )
-from monthly_momentum.chart import generate_allocation_chart, generate_performance_chart
+from monthly_momentum.chart import (
+    generate_allocation_chart,
+    generate_performance_chart,
+)
 from monthly_momentum.holdings import write_holdings_csv
 from monthly_momentum.live import (
     DEFAULT_USER_AGENT,
@@ -803,6 +807,20 @@ def _build_acwi_subsection(
 
     acwi_all_alloc = build_variants_allocation_payload(all_variants)
     acwi_uk_alloc = build_variants_allocation_payload(uk_variants)
+    acwi_all_funding = build_funding_schedule_comparison(
+        all_ds,
+        common_cfg,
+        lump_sum=10_000.0,
+        monthly_dca=100.0,
+        top_n=3,
+    )
+    acwi_uk_funding = build_funding_schedule_comparison(
+        uk_ds,
+        common_cfg,
+        lump_sum=10_000.0,
+        monthly_dca=100.0,
+        top_n=3,
+    )
 
     generate_allocation_chart(
         acwi_all_alloc["Standard (Top 3)"],
@@ -906,6 +924,8 @@ def _build_acwi_subsection(
         "_top10_uk": uk_top10,
         "_alloc_all": acwi_all_alloc,
         "_alloc_uk": acwi_uk_alloc,
+        "_funding_all": acwi_all_funding,
+        "_funding_uk": acwi_uk_funding,
     }
 
 
@@ -949,15 +969,20 @@ def build_global_reports(
         benchmark_ticker="ISF.L",
         survivorship_warning=True,
     )
-    ftse_variants_list = compare_variants(
+    ftse_cfg = BacktestConfig(
+        monthly_contribution=contribution,
+        fee_pct=0.50,
+        sell_fee_pct=0.0,
+        benchmark_fee_pct=0.0,
+        signal_mode="next_month",
+    )
+    ftse_variants_list = compare_variants(ftse_ds, ftse_cfg)
+    ftse_funding = build_funding_schedule_comparison(
         ftse_ds,
-        BacktestConfig(
-            monthly_contribution=contribution,
-            fee_pct=0.50,
-            sell_fee_pct=0.0,
-            benchmark_fee_pct=0.0,
-            signal_mode="next_month",
-        ),
+        ftse_cfg,
+        lump_sum=10_000.0,
+        monthly_dca=100.0,
+        top_n=3,
     )
     ftse_variants = {v.label: v.result for v in ftse_variants_list}
     ftse_std = ftse_variants["Standard (Top 3)"]
@@ -1199,11 +1224,18 @@ def build_global_reports(
         ),
     )
     alloc_payload: dict[str, Any] = {"ftse100": ftse_alloc}
+    funding_payload: dict[str, Any] = {"ftse100": ftse_funding}
     if acwi_bundle is not None:
         alloc_payload["acwi_uk_accessible"] = acwi_bundle["_alloc_uk"]
         alloc_payload["acwi_all"] = acwi_bundle["_alloc_all"]
+        funding_payload["acwi_uk_accessible"] = acwi_bundle["_funding_uk"]
+        funding_payload["acwi_all"] = acwi_bundle["_funding_all"]
     alloc_path = global_dir / "allocation_summary.json"
     alloc_path.write_text(json.dumps(alloc_payload, separators=(",", ":")) + "\n", encoding="utf-8")
+    funding_path = global_dir / "funding_comparison.json"
+    funding_path.write_text(
+        json.dumps(funding_payload, separators=(",", ":")) + "\n", encoding="utf-8"
+    )
 
     return GlobalReportSummary(
         ftse_latest_window=ftse_std.points[-1].window_month,

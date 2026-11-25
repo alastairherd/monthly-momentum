@@ -12,6 +12,7 @@ All public market data, performance trajectories, charts, and mechanistic strate
 - `data/model_holdings.csv` — Mechanistic Rule 6 tracking log for the US Top 3 model portfolio (matches `templates/holdings.example.csv`).
 - `data/performance.csv` & `data/summary.json` — US S&P 500 variant equity & TWR NAV series (`assets/performance.png`).
 - `data/allocation_summary.json` — Monthly portfolio percentage weights and concentration metrics across US variants (`assets/allocation_sp500.png`).
+- `data/funding_comparison.json` — Monthly DCA (`100/mo`) vs Day-1 lump-sum (`10,000`) & hybrid funding schedules across all four universes (`assets/funding_comparison_sp500.png`).
 - `data/global/` — International & All-World datasets and reports:
   - `acwi_constituents.csv`, `acwi_snapshots.csv`, `acwi_monthly_prices.csv` — Official iShares MSCI ACWI (`ACWI`) holdings with UK retail Stocks & Shares ISA accessibility flags (`uk_accessible`, `uk_access_note`) and subunit-normalized Yahoo v8 monthly prices.
   - `constituents.csv`, `monthly_prices.csv` — Wikipedia `FTSE 100`, `S&P/TSX 60`, `EURO STOXX 50` constituents and monthly bars.
@@ -19,7 +20,7 @@ All public market data, performance trajectories, charts, and mechanistic strate
   - `rankings/latest_acwi_all.csv`, `history_acwi_all.csv` — Unfiltered Full ACWI rankings with UK ISA accessibility columns.
   - `rankings/latest_acwi_uk_accessible.csv`, `history_acwi_uk_accessible.csv`, `model_holdings_acwi_uk_accessible.csv` — Filtered UK-ISA-accessible All-World winners & Rule 6 log.
   - `rankings/latest_ftse100.csv`, `history_ftse100.csv`, `model_holdings_ftse100.csv` — UK FTSE 100 picks & Rule 6 log (`0.50%` UK stamp duty).
-  - `performance_acwi.csv`, `performance_acwi_uk_accessible.csv`, `performance_ftse100.csv`, `summary.json`, `allocation_summary.json` — Variant TWR, DCA, and monthly portfolio allocation series powering `assets/performance_*.png` and `assets/allocation_*.png`.
+  - `performance_acwi.csv`, `performance_acwi_uk_accessible.csv`, `performance_ftse100.csv`, `summary.json`, `allocation_summary.json`, `funding_comparison.json` — Variant TWR, DCA, lump-sum funding schedules, and monthly portfolio allocation series powering `assets/performance_*.png` and `assets/allocation_*.png`.
 
 ## Private / Personal Folders (Gitignored)
 

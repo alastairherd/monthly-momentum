@@ -850,6 +850,9 @@ def backtest(
     start: Annotated[str | None, typer.Option("--start", help="Start YYYY-MM.")] = None,
     end: Annotated[str | None, typer.Option("--end", help="End YYYY-MM.")] = None,
     contribution: Annotated[float, typer.Option("--contribution")] = 500.0,
+    lump_sum: Annotated[
+        float, typer.Option("--lump-sum", help="Optional Day-1 lump-sum investment.")
+    ] = 0.0,
     variant: Annotated[StrategyVariant, typer.Option("--variant")] = StrategyVariant.STANDARD,
     top_n: Annotated[int | None, typer.Option("--top-n")] = None,
     rule6: Annotated[bool, typer.Option("--rule6/--no-rule6")] = False,
@@ -883,6 +886,7 @@ def backtest(
             start_month=start,
             end_month=end,
             monthly_contribution=contribution,
+            initial_lump_sum=lump_sum,
             top_n=eff_top_n,
             rule6_enabled=rule6,
             fee_pct=fee_pct,
