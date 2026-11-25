@@ -1,0 +1,1081 @@
+month,rank,ticker,name,index,return_3y_pct,return_3m_pct,return_type,source,selected_for_buy
+2017-12,1,NVDA,Nvidia,S&P 500,886.1753,18.4537,total_return,backtest,true
+2017-12,2,ALGN,Align Technology,S&P 500,358.4886,47.6067,total_return,backtest,true
+2017-12,3,NFLX,Netflix,S&P 500,278.8500,7.3665,total_return,backtest,true
+2017-12,4,AMZN,Amazon,S&P 500,247.4929,20.0031,total_return,backtest,false
+2017-12,5,AVGO,Broadcom,S&P 500,210.8424,10.2630,total_return,backtest,false
+2017-12,6,AVY,Avery Dennison,S&P 500,146.9345,21.0694,total_return,backtest,false
+2017-12,7,ADBE,Adobe Inc.,S&P 500,146.2948,16.9567,total_return,backtest,false
+2017-12,8,UNH,UnitedHealth Group,S&P 500,143.7359,14.7159,total_return,backtest,false
+2017-12,9,AOS,A. O. Smith,S&P 500,143.2042,13.8804,total_return,backtest,false
+2017-12,10,LRCX,Lam Research,S&P 500,142.3836,15.8754,total_return,backtest,false
+2018-01,1,NVDA,Nvidia,S&P 500,894.3125,8.2384,total_return,backtest,true
+2018-01,2,ALGN,Align Technology,S&P 500,297.4065,19.2838,total_return,backtest,true
+2018-01,3,NFLX,Netflix,S&P 500,293.3526,5.8506,total_return,backtest,true
+2018-01,4,AMZN,Amazon,S&P 500,276.8229,21.6487,total_return,backtest,false
+2018-01,5,AVGO,Broadcom,S&P 500,167.5763,5.9207,total_return,backtest,false
+2018-01,6,GPN,Global Payments,S&P 500,148.7831,5.4825,total_return,backtest,false
+2018-01,7,BA,Boeing,S&P 500,147.2191,16.0104,total_return,backtest,false
+2018-01,8,ADBE,Adobe Inc.,S&P 500,141.0454,17.4688,total_return,backtest,false
+2018-01,9,STZ,Constellation Brands,S&P 500,139.3896,14.6002,total_return,backtest,false
+2018-01,10,AVY,Avery Dennison,S&P 500,136.4548,16.7989,total_return,backtest,false
+2018-02,1,NVDA,Nvidia,S&P 500,1219.1253,18.8542,total_return,backtest,true
+2018-02,2,AMD,Advanced Micro Devices,S&P 500,434.6304,25.0227,total_return,backtest,true
+2018-02,3,ALGN,Align Technology,S&P 500,393.8737,9.6326,total_return,backtest,true
+2018-02,4,NFLX,Netflix,S&P 500,328.2726,37.6063,total_return,backtest,false
+2018-02,5,AMZN,Amazon,S&P 500,309.2432,31.2690,total_return,backtest,false
+2018-02,6,ADBE,Adobe Inc.,S&P 500,184.8424,14.0443,total_return,backtest,false
+2018-02,7,BA,Boeing,S&P 500,165.6141,37.3634,total_return,backtest,false
+2018-02,8,ISRG,Intuitive Surgical,S&P 500,161.8934,15.0016,total_return,backtest,false
+2018-02,9,DHR,Danaher Corporation,S&P 500,157.1205,9.7648,total_return,backtest,false
+2018-02,10,GPN,Global Payments,S&P 500,156.5165,7.5325,total_return,backtest,false
+2018-03,1,NVDA,Nvidia,S&P 500,1026.7119,20.5732,total_return,backtest,true
+2018-03,2,ALGN,Align Technology,S&P 500,357.7507,0.6286,total_return,backtest,true
+2018-03,3,NFLX,Netflix,S&P 500,329.4853,55.3364,total_return,backtest,true
+2018-03,4,AMZN,Amazon,S&P 500,297.8456,28.5277,total_return,backtest,false
+2018-03,5,AMD,Advanced Micro Devices,S&P 500,289.3891,11.2029,total_return,backtest,false
+2018-03,6,ADBE,Adobe Inc.,S&P 500,164.3869,15.2422,total_return,backtest,false
+2018-03,7,BA,Boeing,S&P 500,161.3031,30.8562,total_return,backtest,false
+2018-03,8,ISRG,Intuitive Surgical,S&P 500,155.8698,6.6712,total_return,backtest,false
+2018-03,9,GPN,Global Payments,S&P 500,147.2677,12.7586,total_return,backtest,false
+2018-03,10,AMAT,Applied Materials,S&P 500,140.2005,9.1340,total_return,backtest,false
+2018-04,1,NVDA,Nvidia,S&P 500,1036.3419,19.6858,total_return,backtest,true
+2018-04,2,NFLX,Netflix,S&P 500,396.1614,53.8602,total_return,backtest,true
+2018-04,3,ALGN,Align Technology,S&P 500,366.8712,13.0249,total_return,backtest,true
+2018-04,4,AMZN,Amazon,S&P 500,288.9653,23.7603,total_return,backtest,false
+2018-04,5,LRCX,Lam Research,S&P 500,201.5023,10.3711,total_return,backtest,false
+2018-04,6,ADBE,Adobe Inc.,S&P 500,192.2369,23.3052,total_return,backtest,false
+2018-04,7,AMAT,Applied Materials,S&P 500,157.5418,8.7833,total_return,backtest,false
+2018-04,8,IDXX,Idexx Laboratories,S&P 500,147.7861,22.3878,total_return,backtest,false
+2018-04,9,ISRG,Intuitive Surgical,S&P 500,145.2312,13.1227,total_return,backtest,false
+2018-04,10,GPN,Global Payments,S&P 500,143.6880,11.2530,total_return,backtest,false
+2018-05,1,NFLX,Netflix,S&P 500,293.0314,15.5975,total_return,backtest,true
+2018-05,2,AMZN,Amazon,S&P 500,271.3144,7.9427,total_return,backtest,true
+2018-05,3,IDXX,Idexx Laboratories,S&P 500,210.2656,3.9831,total_return,backtest,true
+2018-05,4,ADBE,Adobe Inc.,S&P 500,191.3489,10.9331,total_return,backtest,false
+2018-05,5,ISRG,Intuitive Surgical,S&P 500,166.6116,2.1104,total_return,backtest,false
+2018-05,6,MSCI,MSCI,S&P 500,154.2110,7.6133,total_return,backtest,false
+2018-05,7,BBY,Best Buy,S&P 500,143.2170,4.7495,total_return,backtest,false
+2018-05,8,PGR,Progressive Corporation,S&P 500,142.1041,11.4418,total_return,backtest,false
+2018-05,9,GPN,Global Payments,S&P 500,125.8460,1.1362,total_return,backtest,false
+2018-05,10,ADSK,Autodesk,S&P 500,121.5379,8.8912,total_return,backtest,false
+2018-06,1,NVDA,Nvidia,S&P 500,1065.6560,4.2099,total_return,backtest,true
+2018-06,2,AMD,Advanced Micro Devices,S&P 500,502.1930,13.3774,total_return,backtest,true
+2018-06,3,ALGN,Align Technology,S&P 500,447.1403,26.4475,total_return,backtest,true
+2018-06,4,TTWO,Take-Two Interactive,S&P 500,309.4995,0.1877,total_return,backtest,false
+2018-06,5,NFLX,Netflix,S&P 500,294.3871,20.6672,total_return,backtest,false
+2018-06,6,AMZN,Amazon,S&P 500,279.6613,7.7470,total_return,backtest,false
+2018-06,7,ADBE,Adobe Inc.,S&P 500,215.1852,19.1986,total_return,backtest,false
+2018-06,8,IDXX,Idexx Laboratories,S&P 500,207.0944,11.2055,total_return,backtest,false
+2018-06,9,ISRG,Intuitive Surgical,S&P 500,182.7290,7.7899,total_return,backtest,false
+2018-06,10,MSCI,MSCI,S&P 500,171.8583,14.8742,total_return,backtest,false
+2018-07,1,NVDA,Nvidia,S&P 500,1105.0463,2.2920,total_return,backtest,true
+2018-07,2,AMD,Advanced Micro Devices,S&P 500,524.5833,49.1542,total_return,backtest,true
+2018-07,3,ALGN,Align Technology,S&P 500,445.5908,36.2402,total_return,backtest,true
+2018-07,4,TTWO,Take-Two Interactive,S&P 500,329.3072,21.0472,total_return,backtest,false
+2018-07,5,NFLX,Netflix,S&P 500,317.0849,32.5309,total_return,backtest,false
+2018-07,6,AMZN,Amazon,S&P 500,291.5778,17.4430,total_return,backtest,false
+2018-07,7,IDXX,Idexx Laboratories,S&P 500,239.7880,13.8722,total_return,backtest,false
+2018-07,8,ADBE,Adobe Inc.,S&P 500,200.9628,12.8332,total_return,backtest,false
+2018-07,9,ISRG,Intuitive Surgical,S&P 500,196.2726,15.9024,total_return,backtest,false
+2018-07,10,MSCI,MSCI,S&P 500,178.8885,10.6777,total_return,backtest,false
+2018-08,1,NVDA,Nvidia,S&P 500,1155.6063,8.8751,total_return,backtest,true
+2018-08,2,AMD,Advanced Micro Devices,S&P 500,849.7409,68.4743,total_return,backtest,true
+2018-08,3,ALGN,Align Technology,S&P 500,468.8198,42.7456,total_return,backtest,true
+2018-08,4,TTWO,Take-Two Interactive,S&P 500,257.8847,13.3487,total_return,backtest,false
+2018-08,5,IDXX,Idexx Laboratories,S&P 500,236.7661,25.9345,total_return,backtest,false
+2018-08,6,AMZN,Amazon,S&P 500,231.5192,13.4925,total_return,backtest,false
+2018-08,7,CPRT,Copart,S&P 500,218.5714,12.3532,total_return,backtest,false
+2018-08,8,ADBE,Adobe Inc.,S&P 500,198.4266,10.4152,total_return,backtest,false
+2018-08,9,NFLX,Netflix,S&P 500,195.2060,7.9978,total_return,backtest,false
+2018-08,10,ISRG,Intuitive Surgical,S&P 500,185.9446,15.2933,total_return,backtest,false
+2018-09,1,AMD,Advanced Micro Devices,S&P 500,1290.6077,83.3212,total_return,backtest,true
+2018-09,2,NVDA,Nvidia,S&P 500,1172.5505,11.2979,total_return,backtest,true
+2018-09,3,ALGN,Align Technology,S&P 500,582.8445,16.4302,total_return,backtest,true
+2018-09,4,TTWO,Take-Two Interactive,S&P 500,358.4964,19.1649,total_return,backtest,false
+2018-09,5,ANET,Arista Networks,S&P 500,299.7583,18.8507,total_return,backtest,false
+2018-09,6,AMZN,Amazon,S&P 500,292.4253,23.5079,total_return,backtest,false
+2018-09,7,CPRT,Copart,S&P 500,267.2758,17.2898,total_return,backtest,false
+2018-09,8,IDXX,Idexx Laboratories,S&P 500,255.4498,22.0114,total_return,backtest,false
+2018-09,9,ADBE,Adobe Inc.,S&P 500,235.3825,5.7084,total_return,backtest,false
+2018-09,10,ADSK,Autodesk,S&P 500,230.1604,19.5585,total_return,backtest,false
+2018-10,1,AMD,Advanced Micro Devices,S&P 500,1695.9302,106.0707,total_return,backtest,true
+2018-10,2,NVDA,Nvidia,S&P 500,1061.9478,18.6239,total_return,backtest,true
+2018-10,3,ALGN,Align Technology,S&P 500,589.2530,14.3450,total_return,backtest,true
+2018-10,4,TTWO,Take-Two Interactive,S&P 500,380.2993,16.5850,total_return,backtest,false
+2018-10,5,ANET,Arista Networks,S&P 500,334.4786,3.2505,total_return,backtest,false
+2018-10,6,AMZN,Amazon,S&P 500,291.2950,17.8374,total_return,backtest,false
+2018-10,7,ISRG,Intuitive Surgical,S&P 500,274.6902,19.9632,total_return,backtest,false
+2018-10,8,ADSK,Autodesk,S&P 500,253.6701,19.0861,total_return,backtest,false
+2018-10,9,IDXX,Idexx Laboratories,S&P 500,236.2424,14.5545,total_return,backtest,false
+2018-10,10,ADBE,Adobe Inc.,S&P 500,228.3264,10.7215,total_return,backtest,false
+2018-11,1,TTWO,Take-Two Interactive,S&P 500,288.1627,14.0241,total_return,backtest,true
+2018-11,2,ISRG,Intuitive Surgical,S&P 500,214.8489,2.5561,total_return,backtest,true
+2018-11,3,NRG,NRG Energy,S&P 500,189.7969,14.2722,total_return,backtest,true
+2018-11,4,ADBE,Adobe Inc.,S&P 500,177.1938,0.4414,total_return,backtest,false
+2018-11,5,NTAP,NetApp,S&P 500,145.8630,1.2513,total_return,backtest,false
+2018-11,6,FTNT,Fortinet,S&P 500,139.1735,30.6311,total_return,backtest,false
+2018-11,7,ADSK,Autodesk,S&P 500,134.1910,0.6306,total_return,backtest,false
+2018-11,8,PYPL,PayPal,S&P 500,133.7966,2.4957,total_return,backtest,false
+2018-11,9,UNH,UnitedHealth Group,S&P 500,132.5186,3.2106,total_return,backtest,false
+2018-11,10,ROL,"Rollins, Inc.",S&P 500,131.1708,7.7538,total_return,backtest,false
+2018-12,1,NRG,NRG Energy,S&P 500,220.9328,8.5900,total_return,backtest,true
+2018-12,2,UNH,UnitedHealth Group,S&P 500,162.4172,4.8052,total_return,backtest,true
+2018-12,3,BA,Boeing,S&P 500,158.3059,1.1581,total_return,backtest,true
+2018-12,4,ROL,"Rollins, Inc.",S&P 500,144.2525,5.7924,total_return,backtest,false
+2018-12,5,DHR,Danaher Corporation,S&P 500,137.6650,5.7948,total_return,backtest,false
+2018-12,6,ELV,Elevance Health,S&P 500,133.3179,9.5720,total_return,backtest,false
+2018-12,7,CME,CME Group,S&P 500,124.6425,8.7850,total_return,backtest,false
+2018-12,8,HCA,HCA Healthcare,S&P 500,114.0914,7.3671,total_return,backtest,false
+2018-12,9,DE,Deere & Company,S&P 500,108.4175,7.7051,total_return,backtest,false
+2018-12,10,BSX,Boston Scientific,S&P 500,106.0722,5.9336,total_return,backtest,false
+2019-01,1,NRG,NRG Energy,S&P 500,247.2782,5.8824,total_return,backtest,true
+2019-01,2,CME,CME Group,S&P 500,134.2283,10.5223,total_return,backtest,true
+2019-01,3,NEM,Newmont,S&P 500,97.8676,14.7351,total_return,backtest,true
+2019-01,4,AVGO,Broadcom,S&P 500,89.8624,3.0600,total_return,backtest,false
+2019-01,5,YUM,Yum! Brands,S&P 500,85.4572,1.1110,total_return,backtest,false
+2019-01,6,NEE,NextEra Energy,S&P 500,81.9313,3.7112,total_return,backtest,false
+2019-01,7,EXC,Exelon,S&P 500,80.7354,3.2982,total_return,backtest,false
+2019-01,8,CNP,CenterPoint Energy,S&P 500,74.7238,2.0976,total_return,backtest,false
+2019-01,9,AMT,American Tower,S&P 500,73.5802,8.8713,total_return,backtest,false
+2019-01,10,MKC,McCormick & Company,S&P 500,71.8813,5.6850,total_return,backtest,false
+2019-02,1,AMD,Advanced Micro Devices,S&P 500,1009.5455,34.0472,total_return,backtest,true
+2019-02,2,NRG,NRG Energy,S&P 500,291.3432,13.0423,total_return,backtest,true
+2019-02,3,ALGN,Align Technology,S&P 500,276.3985,12.5452,total_return,backtest,true
+2019-02,4,NFLX,Netflix,S&P 500,269.6646,12.4992,total_return,backtest,false
+2019-02,5,BA,Boeing,S&P 500,247.7980,8.6682,total_return,backtest,false
+2019-02,6,MU,Micron Technology,S&P 500,246.5088,1.3256,total_return,backtest,false
+2019-02,7,KEYS,Keysight Technologies,S&P 500,216.3248,29.6776,total_return,backtest,false
+2019-02,8,ADSK,Autodesk,S&P 500,214.3956,13.8878,total_return,backtest,false
+2019-02,9,IDXX,Idexx Laboratories,S&P 500,203.3647,0.3111,total_return,backtest,false
+2019-02,10,CPRT,Copart,S&P 500,202.1821,3.5167,total_return,backtest,false
+2019-03,1,AMD,Advanced Micro Devices,S&P 500,999.5327,10.4695,total_return,backtest,true
+2019-03,2,ANET,Arista Networks,S&P 500,316.1749,19.6115,total_return,backtest,true
+2019-03,3,BA,Boeing,S&P 500,301.6651,26.8774,total_return,backtest,true
+2019-03,4,NRG,NRG Energy,S&P 500,293.5298,8.4569,total_return,backtest,false
+2019-03,5,ALGN,Align Technology,S&P 500,292.2005,12.6495,total_return,backtest,false
+2019-03,6,MU,Micron Technology,S&P 500,284.5708,6.0166,total_return,backtest,false
+2019-03,7,NFLX,Netflix,S&P 500,283.3637,25.1529,total_return,backtest,false
+2019-03,8,KEYS,Keysight Technologies,S&P 500,223.5339,36.5416,total_return,backtest,false
+2019-03,9,CSX,CSX Corporation,S&P 500,216.6640,0.0549,total_return,backtest,false
+2019-03,10,ADSK,Autodesk,S&P 500,215.0560,12.8097,total_return,backtest,false
+2019-04,1,AMD,Advanced Micro Devices,S&P 500,795.4386,38.2449,total_return,backtest,true
+2019-04,2,NVDA,Nvidia,S&P 500,410.8940,34.5019,total_return,backtest,true
+2019-04,3,ANET,Arista Networks,S&P 500,398.3569,49.2456,total_return,backtest,true
+2019-04,4,MU,Micron Technology,S&P 500,294.7463,30.2553,total_return,backtest,false
+2019-04,5,ALGN,Align Technology,S&P 500,291.1542,35.7637,total_return,backtest,false
+2019-04,6,NFLX,Netflix,S&P 500,248.7822,33.2138,total_return,backtest,false
+2019-04,7,NRG,NRG Energy,S&P 500,232.3371,7.2727,total_return,backtest,false
+2019-04,8,BA,Boeing,S&P 500,224.1903,18.2698,total_return,backtest,false
+2019-04,9,KEYS,Keysight Technologies,S&P 500,214.3475,40.4639,total_return,backtest,false
+2019-04,10,CSX,CSX Corporation,S&P 500,205.6484,20.4249,total_return,backtest,false
+2019-05,1,AMD,Advanced Micro Devices,S&P 500,678.3099,13.1913,total_return,backtest,true
+2019-05,2,NVDA,Nvidia,S&P 500,416.4208,25.9113,total_return,backtest,true
+2019-05,3,ANET,Arista Networks,S&P 500,368.7569,45.4003,total_return,backtest,true
+2019-05,4,ALGN,Align Technology,S&P 500,349.7576,30.4198,total_return,backtest,false
+2019-05,5,NFLX,Netflix,S&P 500,311.5739,9.1429,total_return,backtest,false
+2019-05,6,MU,Micron Technology,S&P 500,291.2547,10.0471,total_return,backtest,false
+2019-05,7,KEYS,Keysight Technologies,S&P 500,233.7040,17.5763,total_return,backtest,false
+2019-05,8,NTAP,NetApp,S&P 500,227.6414,14.2387,total_return,backtest,false
+2019-05,9,CPRT,Copart,S&P 500,214.2857,32.9646,total_return,backtest,false
+2019-05,10,MSCI,MSCI,S&P 500,208.1389,32.3662,total_return,backtest,false
+2019-06,1,AMD,Advanced Micro Devices,S&P 500,499.7812,16.4896,total_return,backtest,true
+2019-06,2,ALGN,Align Technology,S&P 500,260.7129,9.8004,total_return,backtest,true
+2019-06,3,CSX,CSX Corporation,S&P 500,195.2834,2.4770,total_return,backtest,true
+2019-06,4,PYPL,PayPal,S&P 500,190.4209,11.9099,total_return,backtest,false
+2019-06,5,CPRT,Copart,S&P 500,188.7521,21.8340,total_return,backtest,false
+2019-06,6,MSCI,MSCI,S&P 500,186.2206,19.1046,total_return,backtest,false
+2019-06,7,IDXX,Idexx Laboratories,S&P 500,185.2232,18.3576,total_return,backtest,false
+2019-06,8,DHR,Danaher Corporation,S&P 500,180.6216,3.9285,total_return,backtest,false
+2019-06,9,TTWO,Take-Two Interactive,S&P 500,177.9491,23.9399,total_return,backtest,false
+2019-06,10,ADBE,Adobe Inc.,S&P 500,172.3434,3.2000,total_return,backtest,false
+2019-07,1,AMD,Advanced Micro Devices,S&P 500,490.8560,19.0047,total_return,backtest,true
+2019-07,2,NFLX,Netflix,S&P 500,301.5304,3.0177,total_return,backtest,true
+2019-07,3,MSCI,MSCI,S&P 500,221.4074,20.0915,total_return,backtest,true
+2019-07,4,PYPL,PayPal,S&P 500,213.5034,10.2273,total_return,backtest,false
+2019-07,5,CSX,CSX Corporation,S&P 500,210.9009,3.4082,total_return,backtest,false
+2019-07,6,KEYS,Keysight Technologies,S&P 500,208.7315,2.9931,total_return,backtest,false
+2019-07,7,ADBE,Adobe Inc.,S&P 500,207.6000,10.5670,total_return,backtest,false
+2019-07,8,MA,Mastercard,S&P 500,206.4588,12.3508,total_return,backtest,false
+2019-07,9,CPRT,Copart,S&P 500,205.0015,23.3537,total_return,backtest,false
+2019-07,10,ADSK,Autodesk,S&P 500,200.8866,4.5437,total_return,backtest,false
+2019-08,1,AMD,Advanced Micro Devices,S&P 500,343.8776,10.2063,total_return,backtest,true
+2019-08,2,MU,Micron Technology,S&P 500,226.7096,6.7285,total_return,backtest,true
+2019-08,3,CPRT,Copart,S&P 500,207.4148,15.1664,total_return,backtest,true
+2019-08,4,CDNS,Cadence Design Systems,S&P 500,207.3181,6.5293,total_return,backtest,false
+2019-08,5,KEYS,Keysight Technologies,S&P 500,206.1560,2.8611,total_return,backtest,false
+2019-08,6,ADBE,Adobe Inc.,S&P 500,205.3955,3.3224,total_return,backtest,false
+2019-08,7,TTWO,Take-Two Interactive,S&P 500,204.9278,26.5310,total_return,backtest,false
+2019-08,8,IDXX,Idexx Laboratories,S&P 500,200.7250,21.5733,total_return,backtest,false
+2019-08,9,MA,Mastercard,S&P 500,191.3711,7.0917,total_return,backtest,false
+2019-08,10,MSCI,MSCI,S&P 500,174.1518,0.8253,total_return,backtest,false
+2019-09,1,AMD,Advanced Micro Devices,S&P 500,325.0000,14.7391,total_return,backtest,true
+2019-09,2,KEYS,Keysight Technologies,S&P 500,218.3043,28.9232,total_return,backtest,true
+2019-09,3,NRG,NRG Energy,S&P 500,205.1538,6.9330,total_return,backtest,true
+2019-09,4,TTWO,Take-Two Interactive,S&P 500,203.5887,22.0250,total_return,backtest,false
+2019-09,5,BA,Boeing,S&P 500,202.1194,6.5806,total_return,backtest,false
+2019-09,6,MA,Mastercard,S&P 500,196.7781,11.8812,total_return,backtest,false
+2019-09,7,CPRT,Copart,S&P 500,195.5312,5.4701,total_return,backtest,false
+2019-09,8,ADBE,Adobe Inc.,S&P 500,178.0862,5.0240,total_return,backtest,false
+2019-09,9,NVDA,Nvidia,S&P 500,176.2028,23.6586,total_return,backtest,false
+2019-09,10,MU,Micron Technology,S&P 500,174.5296,38.8224,total_return,backtest,false
+2019-10,1,NRG,NRG Energy,S&P 500,258.6326,12.7563,total_return,backtest,true
+2019-10,2,BA,Boeing,S&P 500,210.2237,4.5219,total_return,backtest,true
+2019-10,3,KEYS,Keysight Technologies,S&P 500,206.8791,8.2842,total_return,backtest,true
+2019-10,4,CPRT,Copart,S&P 500,199.9627,7.4793,total_return,backtest,false
+2019-10,5,CDW,CDW Corporation,S&P 500,178.8772,11.0270,total_return,backtest,false
+2019-10,6,TTWO,Take-Two Interactive,S&P 500,178.0390,10.4025,total_return,backtest,false
+2019-10,7,MA,Mastercard,S&P 500,171.9745,2.6613,total_return,backtest,false
+2019-10,8,LRCX,Lam Research,S&P 500,157.8137,23.0356,total_return,backtest,false
+2019-10,9,NVDA,Nvidia,S&P 500,156.9363,5.9891,total_return,backtest,false
+2019-10,10,MSFT,Microsoft,S&P 500,155.5958,3.7847,total_return,backtest,false
+2019-11,1,AMD,Advanced Micro Devices,S&P 500,369.2946,11.4286,total_return,backtest,true
+2019-11,2,NRG,NRG Energy,S&P 500,282.3495,17.5161,total_return,backtest,true
+2019-11,3,CPRT,Copart,S&P 500,214.9966,6.5910,total_return,backtest,true
+2019-11,4,KEYS,Keysight Technologies,S&P 500,207.6524,12.7234,total_return,backtest,false
+2019-11,5,MSCI,MSCI,S&P 500,203.5825,3.2213,total_return,backtest,false
+2019-11,6,LRCX,Lam Research,S&P 500,195.6453,29.9267,total_return,backtest,false
+2019-11,7,CDW,CDW Corporation,S&P 500,194.7298,8.2515,total_return,backtest,false
+2019-11,8,ALGN,Align Technology,S&P 500,193.6336,20.6667,total_return,backtest,false
+2019-11,9,NVDA,Nvidia,S&P 500,185.7028,19.1441,total_return,backtest,false
+2019-11,10,MU,Micron Technology,S&P 500,177.0984,5.9256,total_return,backtest,false
+2019-12,1,AMD,Advanced Micro Devices,S&P 500,339.3939,24.4833,total_return,backtest,true
+2019-12,2,NRG,NRG Energy,S&P 500,254.9265,9.1484,total_return,backtest,true
+2019-12,3,FTNT,Fortinet,S&P 500,249.2027,32.7482,total_return,backtest,true
+2019-12,4,MSCI,MSCI,S&P 500,241.1296,10.4675,total_return,backtest,false
+2019-12,5,NOW,ServiceNow,S&P 500,240.3969,8.0965,total_return,backtest,false
+2019-12,6,CPRT,Copart,S&P 500,225.2924,18.0528,total_return,backtest,false
+2019-12,7,ADBE,Adobe Inc.,S&P 500,201.0699,8.7941,total_return,backtest,false
+2019-12,8,ALGN,Align Technology,S&P 500,198.0548,51.4609,total_return,backtest,false
+2019-12,9,EW,Edwards Lifesciences,S&P 500,195.6425,10.4129,total_return,backtest,false
+2019-12,10,MA,Mastercard,S&P 500,191.2401,3.8597,total_return,backtest,false
+2020-01,1,AMD,Advanced Micro Devices,S&P 500,304.4092,58.1925,total_return,backtest,true
+2020-01,2,NOW,ServiceNow,S&P 500,279.7686,11.2153,total_return,backtest,true
+2020-01,3,FTNT,Fortinet,S&P 500,254.4489,39.0829,total_return,backtest,true
+2020-01,4,MSCI,MSCI,S&P 500,239.8868,18.5672,total_return,backtest,false
+2020-01,5,NRG,NRG Energy,S&P 500,228.4600,0.3788,total_return,backtest,false
+2020-01,6,CPRT,Copart,S&P 500,228.2464,13.2080,total_return,backtest,false
+2020-01,7,ADBE,Adobe Inc.,S&P 500,220.3594,19.3882,total_return,backtest,false
+2020-01,8,ZBRA,Zebra Technologies,S&P 500,197.8545,23.7777,total_return,backtest,false
+2020-01,9,VRTX,Vertex Pharmaceuticals,S&P 500,197.2037,29.2350,total_return,backtest,false
+2020-01,10,MA,Mastercard,S&P 500,194.5523,9.9496,total_return,backtest,false
+2020-02,1,AMD,Advanced Micro Devices,S&P 500,353.2305,38.5205,total_return,backtest,true
+2020-02,2,NOW,ServiceNow,S&P 500,273.2399,36.7912,total_return,backtest,true
+2020-02,3,TDG,TransDigm Group,S&P 500,261.6557,22.2315,total_return,backtest,true
+2020-02,4,MSCI,MSCI,S&P 500,258.1968,21.8452,total_return,backtest,false
+2020-02,5,CPRT,Copart,S&P 500,257.6313,22.7735,total_return,backtest,false
+2020-02,6,FTNT,Fortinet,S&P 500,246.8431,41.4419,total_return,backtest,false
+2020-02,7,ADBE,Adobe Inc.,S&P 500,209.7019,26.3412,total_return,backtest,false
+2020-02,8,MA,Mastercard,S&P 500,202.4168,14.1360,total_return,backtest,false
+2020-02,9,PYPL,PayPal,S&P 500,186.2994,9.4044,total_return,backtest,false
+2020-02,10,ZBRA,Zebra Technologies,S&P 500,185.6699,0.4835,total_return,backtest,false
+2020-03,1,NOW,ServiceNow,S&P 500,275.1611,15.2099,total_return,backtest,true
+2020-03,2,MSCI,MSCI,S&P 500,223.6279,13.9859,total_return,backtest,true
+2020-03,3,AMD,Advanced Micro Devices,S&P 500,214.5228,16.1686,total_return,backtest,true
+2020-03,4,ADBE,Adobe Inc.,S&P 500,191.6343,11.4981,total_return,backtest,false
+2020-03,5,NVDA,Nvidia,S&P 500,168.7763,24.6046,total_return,backtest,false
+2020-03,6,MSFT,Microsoft,S&P 500,166.3641,7.0221,total_return,backtest,false
+2020-03,7,LRCX,Lam Research,S&P 500,161.5212,9.9689,total_return,backtest,false
+2020-03,8,NFLX,Netflix,S&P 500,159.6426,17.2790,total_return,backtest,false
+2020-03,9,ZTS,Zoetis,S&P 500,154.6968,10.5460,total_return,backtest,false
+2020-03,10,VRTX,Vertex Pharmaceuticals,S&P 500,147.2192,1.0282,total_return,backtest,false
+2020-04,1,NOW,ServiceNow,S&P 500,227.6323,1.5089,total_return,backtest,true
+2020-04,2,MSCI,MSCI,S&P 500,208.0617,11.9219,total_return,backtest,true
+2020-04,3,NFLX,Netflix,S&P 500,154.0424,16.0491,total_return,backtest,true
+2020-04,4,MSFT,Microsoft,S&P 500,151.8930,0.0063,total_return,backtest,false
+2020-04,5,NVDA,Nvidia,S&P 500,144.4042,12.0272,total_return,backtest,false
+2020-04,6,ODFL,Old Dominion,S&P 500,132.8846,3.7464,total_return,backtest,false
+2020-04,7,SBAC,SBA Communications,S&P 500,125.3107,12.0254,total_return,backtest,false
+2020-04,8,AMZN,Amazon,S&P 500,119.9247,5.5135,total_return,backtest,false
+2020-04,9,VRTX,Vertex Pharmaceuticals,S&P 500,117.6040,8.6778,total_return,backtest,false
+2020-04,10,PGR,Progressive Corporation,S&P 500,107.1516,2.0030,total_return,backtest,false
+2020-05,1,AMD,Advanced Micro Devices,S&P 500,293.9098,11.4681,total_return,backtest,true
+2020-05,2,NOW,ServiceNow,S&P 500,272.0787,3.9352,total_return,backtest,true
+2020-05,3,MSCI,MSCI,S&P 500,237.7396,14.4157,total_return,backtest,true
+2020-05,4,NVDA,Nvidia,S&P 500,183.0267,23.6233,total_return,backtest,false
+2020-05,5,NFLX,Netflix,S&P 500,175.8541,21.6639,total_return,backtest,false
+2020-05,6,MSFT,Microsoft,S&P 500,175.3621,5.2752,total_return,backtest,false
+2020-05,7,AMZN,Amazon,S&P 500,167.4624,23.1630,total_return,backtest,false
+2020-05,8,ADBE,Adobe Inc.,S&P 500,164.4235,0.7120,total_return,backtest,false
+2020-05,9,KEYS,Keysight Technologies,S&P 500,158.5359,4.0650,total_return,backtest,false
+2020-05,10,PYPL,PayPal,S&P 500,157.7535,7.9989,total_return,backtest,false
+2020-06,1,DXCM,Dexcom,S&P 500,465.9934,37.0688,total_return,backtest,true
+2020-06,2,AMD,Advanced Micro Devices,S&P 500,380.7864,18.2938,total_return,backtest,true
+2020-06,3,NOW,ServiceNow,S&P 500,270.6928,18.9641,total_return,backtest,true
+2020-06,4,FTNT,Fortinet,S&P 500,253.8383,36.3904,total_return,backtest,false
+2020-06,5,MSCI,MSCI,S&P 500,234.6651,11.3086,total_return,backtest,false
+2020-06,6,PYPL,PayPal,S&P 500,196.8970,43.5411,total_return,backtest,false
+2020-06,7,ODFL,Old Dominion,S&P 500,190.8075,32.4226,total_return,backtest,false
+2020-06,8,CPRT,Copart,S&P 500,186.5983,5.8120,total_return,backtest,false
+2020-06,9,KEYS,Keysight Technologies,S&P 500,179.8395,14.1093,total_return,backtest,false
+2020-06,10,MSFT,Microsoft,S&P 500,175.1973,13.1103,total_return,backtest,false
+2020-07,1,DXCM,Dexcom,S&P 500,454.2037,50.5552,total_return,backtest,true
+2020-07,2,AMD,Advanced Micro Devices,S&P 500,321.5545,15.6772,total_return,backtest,true
+2020-07,3,NOW,ServiceNow,S&P 500,282.1321,41.3427,total_return,backtest,true
+2020-07,4,FTNT,Fortinet,S&P 500,266.6400,35.6825,total_return,backtest,false
+2020-07,5,MSCI,MSCI,S&P 500,235.5668,15.5246,total_return,backtest,false
+2020-07,6,PYPL,PayPal,S&P 500,224.6318,81.9825,total_return,backtest,false
+2020-07,7,MSFT,Microsoft,S&P 500,209.6574,29.0406,total_return,backtest,false
+2020-07,8,ADBE,Adobe Inc.,S&P 500,207.7701,36.7867,total_return,backtest,false
+2020-07,9,NFLX,Netflix,S&P 500,204.5579,21.1824,total_return,backtest,false
+2020-07,10,CDNS,Cadence Design Systems,S&P 500,186.5333,45.3059,total_return,backtest,false
+2020-08,1,DXCM,Dexcom,S&P 500,553.8658,29.9344,total_return,backtest,true
+2020-08,2,AMD,Advanced Micro Devices,S&P 500,468.9199,47.7954,total_return,backtest,true
+2020-08,3,NOW,ServiceNow,S&P 500,297.6460,24.9360,total_return,backtest,true
+2020-08,4,FTNT,Fortinet,S&P 500,274.6952,28.3646,total_return,backtest,false
+2020-08,5,MSCI,MSCI,S&P 500,257.2721,14.9786,total_return,backtest,false
+2020-08,6,CMG,Chipotle Mexican Grill,S&P 500,236.0270,31.4848,total_return,backtest,false
+2020-08,7,PYPL,PayPal,S&P 500,234.8760,59.4065,total_return,backtest,false
+2020-08,8,AMZN,Amazon,S&P 500,220.3831,27.9175,total_return,backtest,false
+2020-08,9,WST,West Pharmaceutical Services,S&P 500,207.6516,42.0638,total_return,backtest,false
+2020-08,10,ADBE,Adobe Inc.,S&P 500,203.3108,25.6419,total_return,backtest,false
+2020-09,1,AMD,Advanced Micro Devices,S&P 500,598.6154,68.8104,total_return,backtest,true
+2020-09,2,DXCM,Dexcom,S&P 500,470.1783,12.4501,total_return,backtest,true
+2020-09,3,NOW,ServiceNow,S&P 500,314.8550,24.2544,total_return,backtest,true
+2020-09,4,CMG,Chipotle Mexican Grill,S&P 500,313.7160,30.5177,total_return,backtest,false
+2020-09,5,AMZN,Amazon,S&P 500,251.9233,41.2955,total_return,backtest,false
+2020-09,6,MSCI,MSCI,S&P 500,236.7480,13.5077,total_return,backtest,false
+2020-09,7,WST,West Pharmaceutical Services,S&P 500,231.1147,31.4386,total_return,backtest,false
+2020-09,8,PYPL,PayPal,S&P 500,230.9665,31.6947,total_return,backtest,false
+2020-09,9,ADBE,Adobe Inc.,S&P 500,230.8778,32.7962,total_return,backtest,false
+2020-09,10,AAPL,Apple Inc.,S&P 500,227.6676,62.3451,total_return,backtest,false
+2020-10,1,DXCM,Dexcom,S&P 500,742.4893,1.6848,total_return,backtest,true
+2020-10,2,AMD,Advanced Micro Devices,S&P 500,543.0588,55.8449,total_return,backtest,true
+2020-10,3,NOW,ServiceNow,S&P 500,312.6606,19.7353,total_return,backtest,true
+2020-10,4,CMG,Chipotle Mexican Grill,S&P 500,304.0249,18.1829,total_return,backtest,false
+2020-10,5,ADBE,Adobe Inc.,S&P 500,228.7505,12.6622,total_return,backtest,false
+2020-10,6,AMZN,Amazon,S&P 500,227.5321,14.1332,total_return,backtest,false
+2020-10,7,MSCI,MSCI,S&P 500,215.5662,6.8780,total_return,backtest,false
+2020-10,8,AAPL,Apple Inc.,S&P 500,212.9248,26.9846,total_return,backtest,false
+2020-10,9,PYPL,PayPal,S&P 500,207.7153,13.0862,total_return,backtest,false
+2020-10,10,CPRT,Copart,S&P 500,205.9645,26.2880,total_return,backtest,false
+2020-11,1,CMG,Chipotle Mexican Grill,S&P 500,341.8830,4.0098,total_return,backtest,true
+2020-11,2,NOW,ServiceNow,S&P 500,293.7406,13.2901,total_return,backtest,true
+2020-11,3,CPRT,Copart,S&P 500,204.1058,18.3485,total_return,backtest,true
+2020-11,4,TGT,Target Corporation,S&P 500,182.2254,20.9247,total_return,backtest,false
+2020-11,5,WST,West Pharmaceutical Services,S&P 500,171.9239,1.1902,total_return,backtest,false
+2020-11,6,QCOM,Qualcomm,S&P 500,168.4666,16.8071,total_return,backtest,false
+2020-11,7,AAPL,Apple Inc.,S&P 500,168.1829,2.4468,total_return,backtest,false
+2020-11,8,DG,Dollar General,S&P 500,165.7612,9.6166,total_return,backtest,false
+2020-11,9,IDXX,Idexx Laboratories,S&P 500,155.6538,6.8058,total_return,backtest,false
+2020-11,10,ADBE,Adobe Inc.,S&P 500,155.2523,0.6257,total_return,backtest,false
+2020-12,1,AMD,Advanced Micro Devices,S&P 500,750.8724,2.0260,total_return,backtest,true
+2020-12,2,NOW,ServiceNow,S&P 500,334.5935,10.8979,total_return,backtest,true
+2020-12,3,ZBRA,Zebra Technologies,S&P 500,243.0203,32.0699,total_return,backtest,true
+2020-12,4,MSCI,MSCI,S&P 500,228.5629,9.6847,total_return,backtest,false
+2020-12,5,TGT,Target Corporation,S&P 500,226.0554,18.7289,total_return,backtest,false
+2020-12,6,IDXX,Idexx Laboratories,S&P 500,194.7254,17.8796,total_return,backtest,false
+2020-12,7,PYPL,PayPal,S&P 500,182.7413,4.8888,total_return,backtest,false
+2020-12,8,TER,Teradyne,S&P 500,178.6118,29.8576,total_return,backtest,false
+2020-12,9,KEYS,Keysight Technologies,S&P 500,175.9540,21.8433,total_return,backtest,false
+2020-12,10,NVDA,Nvidia,S&P 500,169.2361,0.2019,total_return,backtest,false
+2021-01,1,TSLA,"Tesla, Inc.",S&P 500,1033.2404,64.4880,total_return,backtest,true
+2021-01,2,AMD,Advanced Micro Devices,S&P 500,792.1206,11.8551,total_return,backtest,true
+2021-01,3,CMG,Chipotle Mexican Grill,S&P 500,379.7806,11.4979,total_return,backtest,true
+2021-01,4,NOW,ServiceNow,S&P 500,322.1413,13.4907,total_return,backtest,false
+2021-01,5,ZBRA,Zebra Technologies,S&P 500,270.2601,52.2340,total_return,backtest,false
+2021-01,6,MSCI,MSCI,S&P 500,264.4609,25.1556,total_return,backtest,false
+2021-01,7,FTNT,Fortinet,S&P 500,239.9634,26.0759,total_return,backtest,false
+2021-01,8,CDNS,Cadence Design Systems,S&P 500,226.2315,27.9471,total_return,backtest,false
+2021-01,9,AAPL,Apple Inc.,S&P 500,225.9144,14.5756,total_return,backtest,false
+2021-01,10,IDXX,Idexx Laboratories,S&P 500,219.6509,27.1578,total_return,backtest,false
+2021-02,1,TSLA,"Tesla, Inc.",S&P 500,1019.8229,104.4969,total_return,backtest,true
+2021-02,2,DXCM,Dexcom,S&P 500,544.0722,17.2946,total_return,backtest,true
+2021-02,3,AMD,Advanced Micro Devices,S&P 500,523.2897,13.7468,total_return,backtest,true
+2021-02,4,CMG,Chipotle Mexican Grill,S&P 500,355.7211,23.1814,total_return,backtest,false
+2021-02,5,NOW,ServiceNow,S&P 500,264.8552,9.1625,total_return,backtest,false
+2021-02,6,AAPL,Apple Inc.,S&P 500,227.6062,21.2199,total_return,backtest,false
+2021-02,7,ZBRA,Zebra Technologies,S&P 500,214.8993,36.7332,total_return,backtest,false
+2021-02,8,FTNT,Fortinet,S&P 500,214.4005,31.1498,total_return,backtest,false
+2021-02,9,KEYS,Keysight Technologies,S&P 500,203.0608,35.0148,total_return,backtest,false
+2021-02,10,WST,West Pharmaceutical Services,S&P 500,202.8263,10.0783,total_return,backtest,false
+2021-03,1,TSLA,"Tesla, Inc.",S&P 500,884.5204,19.0099,total_return,backtest,true
+2021-03,2,DXCM,Dexcom,S&P 500,608.5501,24.4307,total_return,backtest,true
+2021-03,3,CMG,Chipotle Mexican Grill,S&P 500,352.8752,11.8324,total_return,backtest,true
+2021-03,4,CDNS,Cadence Design Systems,S&P 500,263.9154,21.3156,total_return,backtest,false
+2021-03,5,ZBRA,Zebra Technologies,S&P 500,261.5390,31.9777,total_return,backtest,false
+2021-03,6,FTNT,Fortinet,S&P 500,234.5552,37.0202,total_return,backtest,false
+2021-03,7,MPWR,Monolithic Power Systems,S&P 500,229.4223,17.0521,total_return,backtest,false
+2021-03,8,PYPL,PayPal,S&P 500,227.2258,21.3572,total_return,backtest,false
+2021-03,9,WST,West Pharmaceutical Services,S&P 500,226.0078,1.9952,total_return,backtest,false
+2021-03,10,LRCX,Lam Research,S&P 500,213.6758,25.3016,total_return,backtest,false
+2021-04,1,GNRC,Generac,S&P 500,613.2433,43.9910,total_return,backtest,true
+2021-04,2,CMG,Chipotle Mexican Grill,S&P 500,339.7326,2.4598,total_return,backtest,true
+2021-04,3,CDNS,Cadence Design Systems,S&P 500,272.5592,0.4105,total_return,backtest,true
+2021-04,4,ZBRA,Zebra Technologies,S&P 500,248.5739,26.2405,total_return,backtest,false
+2021-04,5,FTNT,Fortinet,S&P 500,244.1956,24.1635,total_return,backtest,false
+2021-04,6,KLAC,KLA Corporation,S&P 500,223.8750,27.6119,total_return,backtest,false
+2021-04,7,PYPL,PayPal,S&P 500,220.0739,3.6892,total_return,backtest,false
+2021-04,8,LRCX,Lam Research,S&P 500,210.8481,26.0381,total_return,backtest,false
+2021-04,9,TGT,Target Corporation,S&P 500,208.9064,12.2019,total_return,backtest,false
+2021-04,10,TSCO,Tractor Supply,S&P 500,192.5612,25.9639,total_return,backtest,false
+2021-05,1,GNRC,Generac,S&P 500,619.7289,31.4625,total_return,backtest,true
+2021-05,2,DXCM,Dexcom,S&P 500,427.6032,3.0012,total_return,backtest,true
+2021-05,3,TER,Teradyne,S&P 500,292.1568,10.2221,total_return,backtest,true
+2021-05,4,WST,West Pharmaceutical Services,S&P 500,276.9436,9.6931,total_return,backtest,false
+2021-05,5,FTNT,Fortinet,S&P 500,268.9126,41.0915,total_return,backtest,false
+2021-05,6,ZBRA,Zebra Technologies,S&P 500,261.7444,25.7613,total_return,backtest,false
+2021-05,7,LRCX,Lam Research,S&P 500,255.7050,28.2054,total_return,backtest,false
+2021-05,8,CMG,Chipotle Mexican Grill,S&P 500,252.4508,0.8128,total_return,backtest,false
+2021-05,9,PYPL,PayPal,S&P 500,251.5482,11.9414,total_return,backtest,false
+2021-05,10,MSCI,MSCI,S&P 500,234.5780,22.8864,total_return,backtest,false
+2021-06,1,WST,West Pharmaceutical Services,S&P 500,278.1958,23.8233,total_return,backtest,true
+2021-06,2,FTNT,Fortinet,S&P 500,257.2082,29.4285,total_return,backtest,true
+2021-06,3,TER,Teradyne,S&P 500,255.7282,2.9080,total_return,backtest,true
+2021-06,4,LRCX,Lam Research,S&P 500,247.8943,14.5736,total_return,backtest,false
+2021-06,5,TGT,Target Corporation,S&P 500,235.3198,23.7026,total_return,backtest,false
+2021-06,6,PYPL,PayPal,S&P 500,216.8270,0.0654,total_return,backtest,false
+2021-06,7,CRL,Charles River Laboratories,S&P 500,214.3508,18.1205,total_return,backtest,false
+2021-06,8,KLAC,KLA Corporation,S&P 500,197.9402,1.8186,total_return,backtest,false
+2021-06,9,MSCI,MSCI,S&P 500,196.9508,12.9330,total_return,backtest,false
+2021-06,10,TT,Trane Technologies,S&P 500,190.1540,21.6393,total_return,backtest,false
+2021-07,1,TSLA,"Tesla, Inc.",S&P 500,890.9624,1.7622,total_return,backtest,true
+2021-07,2,GNRC,Generac,S&P 500,702.5324,26.7827,total_return,backtest,true
+2021-07,3,AMD,Advanced Micro Devices,S&P 500,526.6177,19.6561,total_return,backtest,true
+2021-07,4,DXCM,Dexcom,S&P 500,349.5683,18.8124,total_return,backtest,false
+2021-07,5,LRCX,Lam Research,S&P 500,298.0480,9.3173,total_return,backtest,false
+2021-07,6,FTNT,Fortinet,S&P 500,281.5313,29.1563,total_return,backtest,false
+2021-07,7,ZBRA,Zebra Technologies,S&P 500,269.6265,9.1327,total_return,backtest,false
+2021-07,8,WST,West Pharmaceutical Services,S&P 500,266.0513,27.4398,total_return,backtest,false
+2021-07,9,CMG,Chipotle Mexican Grill,S&P 500,259.3991,9.1159,total_return,backtest,false
+2021-07,10,TER,Teradyne,S&P 500,258.5426,10.0920,total_return,backtest,false
+2021-08,1,GNRC,Generac,S&P 500,680.2047,29.4521,total_return,backtest,true
+2021-08,2,AMD,Advanced Micro Devices,S&P 500,479.3235,30.1029,total_return,backtest,true
+2021-08,3,DXCM,Dexcom,S&P 500,441.9006,33.5172,total_return,backtest,true
+2021-08,4,FTNT,Fortinet,S&P 500,332.7452,33.3007,total_return,backtest,false
+2021-08,5,CMG,Chipotle Mexican Grill,S&P 500,329.7007,24.8929,total_return,backtest,false
+2021-08,6,ZBRA,Zebra Technologies,S&P 500,300.5510,13.2735,total_return,backtest,false
+2021-08,7,WST,West Pharmaceutical Services,S&P 500,279.6797,25.3287,total_return,backtest,false
+2021-08,8,MSCI,MSCI,S&P 500,269.8032,22.6836,total_return,backtest,false
+2021-08,9,LRCX,Lam Research,S&P 500,253.5310,2.7335,total_return,backtest,false
+2021-08,10,TGT,Target Corporation,S&P 500,248.5075,25.9529,total_return,backtest,false
+2021-09,1,TSLA,"Tesla, Inc.",S&P 500,1119.4503,17.6738,total_return,backtest,true
+2021-09,2,GNRC,Generac,S&P 500,687.4932,32.9338,total_return,backtest,true
+2021-09,3,AMD,Advanced Micro Devices,S&P 500,339.8888,38.2617,total_return,backtest,true
+2021-09,4,CMG,Chipotle Mexican Grill,S&P 500,300.5493,38.7287,total_return,backtest,false
+2021-09,5,WST,West Pharmaceutical Services,S&P 500,290.1347,29.9589,total_return,backtest,false
+2021-09,6,FTNT,Fortinet,S&P 500,276.2416,44.2024,total_return,backtest,false
+2021-09,7,DXCM,Dexcom,S&P 500,266.6851,43.3228,total_return,backtest,false
+2021-09,8,MSCI,MSCI,S&P 500,262.4227,35.5564,total_return,backtest,false
+2021-09,9,CRL,Charles River Laboratories,S&P 500,259.3717,31.3234,total_return,backtest,false
+2021-09,10,CDNS,Cadence Design Systems,S&P 500,247.5340,28.7345,total_return,backtest,false
+2021-10,1,TSLA,"Tesla, Inc.",S&P 500,1364.4434,14.0915,total_return,backtest,true
+2021-10,2,CMG,Chipotle Mexican Grill,S&P 500,299.8768,17.2336,total_return,backtest,true
+2021-10,3,MPWR,Monolithic Power Systems,S&P 500,296.5111,29.7844,total_return,backtest,true
+2021-10,4,DXCM,Dexcom,S&P 500,282.3126,28.0703,total_return,backtest,false
+2021-10,5,MSCI,MSCI,S&P 500,253.0180,14.1180,total_return,backtest,false
+2021-10,6,KLAC,KLA Corporation,S&P 500,248.9821,3.1770,total_return,backtest,false
+2021-10,7,WST,West Pharmaceutical Services,S&P 500,247.6726,18.2233,total_return,backtest,false
+2021-10,8,PWR,Quanta Services,S&P 500,245.1851,25.6708,total_return,backtest,false
+2021-10,9,CDNS,Cadence Design Systems,S&P 500,234.1571,10.6856,total_return,backtest,false
+2021-10,10,AMD,Advanced Micro Devices,S&P 500,233.1175,9.5497,total_return,backtest,false
+2021-11,1,TSLA,"Tesla, Inc.",S&P 500,1551.2509,62.1071,total_return,backtest,true
+2021-11,2,GNRC,Generac,S&P 500,882.7715,18.8859,total_return,backtest,true
+2021-11,3,AMD,Advanced Micro Devices,S&P 500,560.2416,13.2216,total_return,backtest,true
+2021-11,4,NVDA,Nvidia,S&P 500,388.6246,31.1195,total_return,backtest,false
+2021-11,5,DXCM,Dexcom,S&P 500,369.3907,20.8919,total_return,backtest,false
+2021-11,6,MPWR,Monolithic Power Systems,S&P 500,356.8400,16.9612,total_return,backtest,false
+2021-11,7,MSCI,MSCI,S&P 500,355.1781,11.5645,total_return,backtest,false
+2021-11,8,KLAC,KLA Corporation,S&P 500,332.0938,7.0657,total_return,backtest,false
+2021-11,9,WST,West Pharmaceutical Services,S&P 500,309.8366,4.4082,total_return,backtest,false
+2021-11,10,FTNT,Fortinet,S&P 500,309.2723,23.5454,total_return,backtest,false
+2021-12,1,TSLA,"Tesla, Inc.",S&P 500,1533.1342,55.5973,total_return,backtest,true
+2021-12,2,NVDA,Nvidia,S&P 500,704.8067,45.9727,total_return,backtest,true
+2021-12,3,AMD,Advanced Micro Devices,S&P 500,643.5211,43.0365,total_return,backtest,true
+2021-12,4,LRCX,Lam Research,S&P 500,355.9364,12.4053,total_return,backtest,false
+2021-12,5,FTNT,Fortinet,S&P 500,349.7698,5.3849,total_return,backtest,false
+2021-12,6,KLAC,KLA Corporation,S&P 500,336.9378,20.0524,total_return,backtest,false
+2021-12,7,TER,Teradyne,S&P 500,335.0607,25.8811,total_return,backtest,false
+2021-12,8,DXCM,Dexcom,S&P 500,334.1307,6.2653,total_return,backtest,false
+2021-12,9,MPWR,Monolithic Power Systems,S&P 500,330.3576,11.8259,total_return,backtest,false
+2021-12,10,AMAT,Applied Materials,S&P 500,310.3788,8.9247,total_return,backtest,false
+2022-01,1,TSLA,"Tesla, Inc.",S&P 500,1487.7080,36.2743,total_return,backtest,true
+2022-01,2,NVDA,Nvidia,S&P 500,786.9049,41.9724,total_return,backtest,true
+2022-01,3,AMD,Advanced Micro Devices,S&P 500,679.5233,39.8445,total_return,backtest,true
+2022-01,4,LRCX,Lam Research,S&P 500,453.3421,26.3551,total_return,backtest,false
+2022-01,5,TER,Teradyne,S&P 500,429.3185,49.7939,total_return,backtest,false
+2022-01,6,FTNT,Fortinet,S&P 500,410.2939,23.0653,total_return,backtest,false
+2022-01,7,KLAC,KLA Corporation,S&P 500,407.1374,28.5791,total_return,backtest,false
+2022-01,8,AMAT,Applied Materials,S&P 500,399.5726,22.2403,total_return,backtest,false
+2022-01,9,WST,West Pharmaceutical Services,S&P 500,383.3410,10.4749,total_return,backtest,false
+2022-01,10,AAPL,Apple Inc.,S&P 500,363.8392,25.4912,total_return,backtest,false
+2022-02,1,AAPL,Apple Inc.,S&P 500,332.6877,16.6756,total_return,backtest,true
+2022-02,2,KLAC,KLA Corporation,S&P 500,285.4253,4.4291,total_return,backtest,true
+2022-02,3,QCOM,Qualcomm,S&P 500,284.4256,32.1106,total_return,backtest,true
+2022-02,4,AMAT,Applied Materials,S&P 500,267.5130,1.1196,total_return,backtest,false
+2022-02,5,LRCX,Lam Research,S&P 500,264.4800,4.6756,total_return,backtest,false
+2022-02,6,STX,Seagate Technology,S&P 500,176.7582,20.2986,total_return,backtest,false
+2022-02,7,TSCO,Tractor Supply,S&P 500,165.2571,0.5249,total_return,backtest,false
+2022-02,8,LOW,Lowe's,S&P 500,159.3845,1.5097,total_return,backtest,false
+2022-02,9,AMP,Ameriprise Financial,S&P 500,158.0059,0.7215,total_return,backtest,false
+2022-02,10,BRO,Brown & Brown,S&P 500,150.2671,5.0230,total_return,backtest,false
+2022-03,1,FTNT,Fortinet,S&P 500,296.9582,3.7367,total_return,backtest,true
+2022-03,2,FCX,Freeport-McMoRan,S&P 500,274.0256,26.6181,total_return,backtest,true
+2022-03,3,HWM,Howmet Aerospace,S&P 500,154.5875,27.6929,total_return,backtest,true
+2022-03,4,STX,Seagate Technology,S&P 500,153.4041,0.4773,total_return,backtest,false
+2022-03,5,AMP,Ameriprise Financial,S&P 500,143.6284,3.5186,total_return,backtest,false
+2022-03,6,AVGO,Broadcom,S&P 500,138.5229,6.0974,total_return,backtest,false
+2022-03,7,GEN,Gen Digital,S&P 500,137.0609,16.6197,total_return,backtest,false
+2022-03,8,NUE,Nucor,S&P 500,136.7161,23.8660,total_return,backtest,false
+2022-03,9,BRO,Brown & Brown,S&P 500,133.7686,4.9682,total_return,backtest,false
+2022-03,10,DVN,Devon Energy,S&P 500,130.7767,41.5835,total_return,backtest,false
+2022-04,1,TSLA,"Tesla, Inc.",S&P 500,1825.2518,1.9701,total_return,backtest,true
+2022-04,2,FCX,Freeport-McMoRan,S&P 500,296.5585,19.1948,total_return,backtest,true
+2022-04,3,PWR,Quanta Services,S&P 500,252.7712,14.7828,total_return,backtest,true
+2022-04,4,URI,United Rentals,S&P 500,210.9059,6.8976,total_return,backtest,false
+2022-04,5,NUE,Nucor,S&P 500,176.5066,30.2234,total_return,backtest,false
+2022-04,6,CF,CF Industries,S&P 500,174.5966,45.6061,total_return,backtest,false
+2022-04,7,DE,Deere & Company,S&P 500,171.6500,21.1642,total_return,backtest,false
+2022-04,8,MCK,McKesson,S&P 500,169.5342,23.1565,total_return,backtest,false
+2022-04,9,MOS,Mosaic Company (The),S&P 500,150.8937,69.2543,total_return,backtest,false
+2022-04,10,BRO,Brown & Brown,S&P 500,150.8125,2.8315,total_return,backtest,false
+2022-05,1,FCX,Freeport-McMoRan,S&P 500,238.3175,8.9468,total_return,backtest,true
+2022-05,2,TGT,Target Corporation,S&P 500,213.7605,3.7291,total_return,backtest,true
+2022-05,3,NUE,Nucor,S&P 500,194.3666,52.6430,total_return,backtest,true
+2022-05,4,PWR,Quanta Services,S&P 500,188.8317,12.9089,total_return,backtest,false
+2022-05,5,MCK,McKesson,S&P 500,167.5921,20.6022,total_return,backtest,false
+2022-05,6,LLY,Lilly (Eli),S&P 500,163.9698,19.0472,total_return,backtest,false
+2022-05,7,NEM,Newmont,S&P 500,152.1855,19.0943,total_return,backtest,false
+2022-05,8,MOS,Mosaic Company (The),S&P 500,146.3243,56.2453,total_return,backtest,false
+2022-05,9,COR,Cencora,S&P 500,144.8396,11.0793,total_return,backtest,false
+2022-05,10,DE,Deere & Company,S&P 500,138.2326,0.3055,total_return,backtest,false
+2022-06,1,ALB,Albemarle Corporation,S&P 500,329.4761,32.9420,total_return,backtest,true
+2022-06,2,KLAC,KLA Corporation,S&P 500,270.5850,4.6915,total_return,backtest,true
+2022-06,3,PWR,Quanta Services,S&P 500,246.1427,9.2344,total_return,backtest,true
+2022-06,4,DVN,Devon Energy,S&P 500,245.2200,25.7767,total_return,backtest,false
+2022-06,5,MOS,Mosaic Company (The),S&P 500,200.6627,19.4927,total_return,backtest,false
+2022-06,6,NUE,Nucor,S&P 500,199.5195,0.6382,total_return,backtest,false
+2022-06,7,LLY,Lilly (Eli),S&P 500,185.2757,25.4011,total_return,backtest,false
+2022-06,8,MCK,McKesson,S&P 500,176.8760,19.5410,total_return,backtest,false
+2022-06,9,SNPS,Synopsys,S&P 500,174.1326,2.1800,total_return,backtest,false
+2022-06,10,CF,CF Industries,S&P 500,166.4679,21.6529,total_return,backtest,false
+2022-07,1,LLY,Lilly (Eli),S&P 500,208.8138,13.2207,total_return,backtest,true
+2022-07,2,MCK,McKesson,S&P 500,149.7393,6.5593,total_return,backtest,true
+2022-07,3,UNH,UnitedHealth Group,S&P 500,120.2596,0.7177,total_return,backtest,true
+2022-07,4,AZO,AutoZone,S&P 500,95.4687,5.1130,total_return,backtest,false
+2022-07,5,BMY,Bristol Myers Squibb,S&P 500,87.9759,5.4361,total_return,backtest,false
+2022-07,6,DG,Dollar General,S&P 500,86.0243,10.2457,total_return,backtest,false
+2022-07,7,TMUS,T-Mobile US,S&P 500,81.4675,4.8228,total_return,backtest,false
+2022-07,8,HUM,Humana,S&P 500,80.0728,7.5603,total_return,backtest,false
+2022-07,9,CI,Cigna,S&P 500,71.8587,9.9787,total_return,backtest,false
+2022-07,10,WRB,W. R. Berkley Corporation,S&P 500,64.7103,2.5080,total_return,backtest,false
+2022-08,1,TSLA,"Tesla, Inc.",S&P 500,1744.8157,2.3761,total_return,backtest,true
+2022-08,2,MRNA,Moderna,S&P 500,1152.5954,22.0817,total_return,backtest,true
+2022-08,3,PWR,Quanta Services,S&P 500,274.6710,19.6155,total_return,backtest,true
+2022-08,4,FTNT,Fortinet,S&P 500,271.3734,3.1971,total_return,backtest,false
+2022-08,5,GNRC,Generac,S&P 500,271.0927,22.2992,total_return,backtest,false
+2022-08,6,ALB,Albemarle Corporation,S&P 500,248.3230,26.6971,total_return,backtest,false
+2022-08,7,MPWR,Monolithic Power Systems,S&P 500,220.7814,18.4785,total_return,backtest,false
+2022-08,8,LLY,Lilly (Eli),S&P 500,219.3172,12.8573,total_return,backtest,false
+2022-08,9,AAPL,Apple Inc.,S&P 500,212.6236,3.0828,total_return,backtest,false
+2022-08,10,ON,ON Semiconductor,S&P 500,210.4603,28.1520,total_return,backtest,false
+2022-09,1,TSLA,"Tesla, Inc.",S&P 500,1732.4280,9.0431,total_return,backtest,true
+2022-09,2,ALB,Albemarle Corporation,S&P 500,351.5433,2.8953,total_return,backtest,true
+2022-09,3,PWR,Quanta Services,S&P 500,321.2370,18.7395,total_return,backtest,true
+2022-09,4,ON,ON Semiconductor,S&P 500,286.3483,13.3322,total_return,backtest,false
+2022-09,5,AAPL,Apple Inc.,S&P 500,207.9363,5.6302,total_return,backtest,false
+2022-09,6,MPWR,Monolithic Power Systems,S&P 500,207.8290,0.6195,total_return,backtest,false
+2022-09,7,NUE,Nucor,S&P 500,193.8127,0.3624,total_return,backtest,false
+2022-09,8,MCK,McKesson,S&P 500,172.6759,11.6554,total_return,backtest,false
+2022-09,9,CDNS,Cadence Design Systems,S&P 500,153.7529,13.0358,total_return,backtest,false
+2022-09,10,ODFL,Old Dominion,S&P 500,151.2207,5.0999,total_return,backtest,false
+2022-10,1,TSLA,"Tesla, Inc.",S&P 500,1551.8246,18.1655,total_return,backtest,true
+2022-10,2,ALB,Albemarle Corporation,S&P 500,294.0832,26.5384,total_return,backtest,true
+2022-10,3,PWR,Quanta Services,S&P 500,240.4123,1.6356,total_return,backtest,true
+2022-10,4,ON,ON Semiconductor,S&P 500,224.4664,23.8919,total_return,backtest,false
+2022-10,5,DVN,Devon Energy,S&P 500,199.2528,9.1091,total_return,backtest,false
+2022-10,6,MCK,McKesson,S&P 500,155.4937,4.1875,total_return,backtest,false
+2022-10,7,AAPL,Apple Inc.,S&P 500,152.2768,1.0825,total_return,backtest,false
+2022-10,8,REGN,Regeneron Pharmaceuticals,S&P 500,148.3310,16.5344,total_return,backtest,false
+2022-10,9,CDNS,Cadence Design Systems,S&P 500,147.3214,8.9315,total_return,backtest,false
+2022-10,10,MOS,Mosaic Company (The),S&P 500,142.9190,2.3290,total_return,backtest,false
+2022-11,1,ALB,Albemarle Corporation,S&P 500,377.3668,14.5553,total_return,backtest,true
+2022-11,2,DVN,Devon Energy,S&P 500,356.7025,23.0708,total_return,backtest,true
+2022-11,3,PWR,Quanta Services,S&P 500,241.1982,2.3859,total_return,backtest,true
+2022-11,4,LLY,Lilly (Eli),S&P 500,234.5291,9.8274,total_return,backtest,false
+2022-11,5,FCX,Freeport-McMoRan,S&P 500,231.7009,0.4437,total_return,backtest,false
+2022-11,6,DXCM,Dexcom,S&P 500,213.2261,47.1491,total_return,backtest,false
+2022-11,7,MCK,McKesson,S&P 500,200.7597,13.9909,total_return,backtest,false
+2022-11,8,MOS,Mosaic Company (The),S&P 500,178.5866,2.0699,total_return,backtest,false
+2022-11,9,COP,ConocoPhillips,S&P 500,155.3981,29.4160,total_return,backtest,false
+2022-11,10,CF,CF Industries,S&P 500,153.7997,11.2787,total_return,backtest,false
+2022-12,1,MRNA,Moderna,S&P 500,763.9980,32.9931,total_return,backtest,true
+2022-12,2,ALB,Albemarle Corporation,S&P 500,340.5095,3.7431,total_return,backtest,true
+2022-12,3,PWR,Quanta Services,S&P 500,263.5752,6.0722,total_return,backtest,true
+2022-12,4,FCX,Freeport-McMoRan,S&P 500,259.4826,34.4595,total_return,backtest,false
+2022-12,5,ON,ON Semiconductor,S&P 500,250.2562,9.3500,total_return,backtest,false
+2022-12,6,LLY,Lilly (Eli),S&P 500,231.9212,23.1883,total_return,backtest,false
+2022-12,7,NVDA,Nvidia,S&P 500,213.4007,12.1174,total_return,backtest,false
+2022-12,8,NUE,Nucor,S&P 500,187.1246,12.7952,total_return,backtest,false
+2022-12,9,ANET,Arista Networks,S&P 500,185.5538,16.1995,total_return,backtest,false
+2022-12,10,DE,Deere & Company,S&P 500,173.6514,20.7392,total_return,backtest,false
+2023-01,1,MRNA,Moderna,S&P 500,818.3027,51.8985,total_return,backtest,true
+2023-01,2,PWR,Quanta Services,S&P 500,253.3356,11.8612,total_return,backtest,true
+2023-01,3,STLD,Steel Dynamics,S&P 500,208.7016,37.7026,total_return,backtest,true
+2023-01,4,FCX,Freeport-McMoRan,S&P 500,197.7056,39.0413,total_return,backtest,false
+2023-01,5,LLY,Lilly (Eli),S&P 500,192.1780,13.1406,total_return,backtest,false
+2023-01,6,DVN,Devon Energy,S&P 500,188.6541,2.2950,total_return,backtest,false
+2023-01,7,MCK,McKesson,S&P 500,178.2211,10.3716,total_return,backtest,false
+2023-01,8,FSLR,First Solar,S&P 500,167.6733,13.2456,total_return,backtest,false
+2023-01,9,DE,Deere & Company,S&P 500,157.6591,28.4135,total_return,backtest,false
+2023-01,10,ON,ON Semiconductor,S&P 500,155.8244,0.0642,total_return,backtest,false
+2023-02,1,MRNA,Moderna,S&P 500,758.4105,17.1157,total_return,backtest,true
+2023-02,2,STLD,Steel Dynamics,S&P 500,334.2547,28.2722,total_return,backtest,true
+2023-02,3,FCX,Freeport-McMoRan,S&P 500,313.0266,40.8015,total_return,backtest,true
+2023-02,4,PWR,Quanta Services,S&P 500,292.3990,7.1459,total_return,backtest,false
+2023-02,5,NUE,Nucor,S&P 500,282.8123,28.6497,total_return,backtest,false
+2023-02,6,ALB,Albemarle Corporation,S&P 500,261.7568,0.5645,total_return,backtest,false
+2023-02,7,FSLR,First Solar,S&P 500,258.2090,22.0032,total_return,backtest,false
+2023-02,8,NVDA,Nvidia,S&P 500,231.6794,44.7507,total_return,backtest,false
+2023-02,9,URI,United Rentals,S&P 500,224.9687,39.6693,total_return,backtest,false
+2023-02,10,ON,ON Semiconductor,S&P 500,217.2786,19.5670,total_return,backtest,false
+2023-03,1,STLD,Steel Dynamics,S&P 500,409.3457,21.3413,total_return,backtest,true
+2023-03,2,TSLA,"Tesla, Inc.",S&P 500,361.9302,5.6549,total_return,backtest,true
+2023-03,3,NUE,Nucor,S&P 500,335.5461,11.6639,total_return,backtest,true
+2023-03,4,PWR,Quanta Services,S&P 500,327.2775,7.6861,total_return,backtest,false
+2023-03,5,FCX,Freeport-McMoRan,S&P 500,322.6480,2.9397,total_return,backtest,false
+2023-03,6,ON,ON Semiconductor,S&P 500,314.8446,2.9388,total_return,backtest,false
+2023-03,7,URI,United Rentals,S&P 500,254.8178,32.7168,total_return,backtest,false
+2023-03,8,NVDA,Nvidia,S&P 500,244.8376,37.1861,total_return,backtest,false
+2023-03,9,MOS,Mosaic Company (The),S&P 500,221.8990,3.6842,total_return,backtest,false
+2023-03,10,MPWR,Monolithic Power Systems,S&P 500,212.0317,26.7908,total_return,backtest,false
+2023-04,1,ON,ON Semiconductor,S&P 500,561.7363,31.9865,total_return,backtest,true
+2023-04,2,MPC,Marathon Petroleum,S&P 500,542.0492,15.8433,total_return,backtest,true
+2023-04,3,FCX,Freeport-McMoRan,S&P 500,522.7202,7.6579,total_return,backtest,true
+2023-04,4,FSLR,First Solar,S&P 500,503.1614,45.2033,total_return,backtest,false
+2023-04,5,TSLA,"Tesla, Inc.",S&P 500,493.8746,68.4202,total_return,backtest,false
+2023-04,6,STLD,Steel Dynamics,S&P 500,434.9067,15.7216,total_return,backtest,false
+2023-04,7,PWR,Quanta Services,S&P 500,430.1313,16.9404,total_return,backtest,false
+2023-04,8,NUE,Nucor,S&P 500,357.2481,17.1914,total_return,backtest,false
+2023-04,9,MOS,Mosaic Company (The),S&P 500,339.6885,4.5817,total_return,backtest,false
+2023-04,10,NVDA,Nvidia,S&P 500,322.7795,90.0712,total_return,backtest,false
+2023-05,1,TRGP,Targa Resources,S&P 500,515.6347,0.6798,total_return,backtest,true
+2023-05,2,PWR,Quanta Services,S&P 500,370.4251,11.4659,total_return,backtest,true
+2023-05,3,FSLR,First Solar,S&P 500,314.8603,2.8041,total_return,backtest,true
+2023-05,4,NVDA,Nvidia,S&P 500,280.9086,42.0331,total_return,backtest,false
+2023-05,5,HWM,Howmet Aerospace,S&P 500,240.6058,8.8474,total_return,backtest,false
+2023-05,6,ACGL,Arch Capital Group,S&P 500,212.4008,16.6589,total_return,backtest,false
+2023-05,7,XOM,ExxonMobil,S&P 500,201.4930,2.0084,total_return,backtest,false
+2023-05,8,FTNT,Fortinet,S&P 500,192.6026,20.4624,total_return,backtest,false
+2023-05,9,ANET,Arista Networks,S&P 500,192.1284,27.0909,total_return,backtest,false
+2023-05,10,AJG,Arthur J. Gallagher & Co.,S&P 500,176.1094,6.3049,total_return,backtest,false
+2023-06,1,ON,ON Semiconductor,S&P 500,406.9739,7.9964,total_return,backtest,true
+2023-06,2,PWR,Quanta Services,S&P 500,384.8430,10.0248,total_return,backtest,true
+2023-06,3,FSLR,First Solar,S&P 500,335.3496,19.9953,total_return,backtest,true
+2023-06,4,NVDA,Nvidia,S&P 500,327.5658,62.9652,total_return,backtest,false
+2023-06,5,HWM,Howmet Aerospace,S&P 500,228.8065,1.3514,total_return,backtest,false
+2023-06,6,AVGO,Broadcom,S&P 500,205.3112,35.9538,total_return,backtest,false
+2023-06,7,LLY,Lilly (Eli),S&P 500,193.5420,37.9924,total_return,backtest,false
+2023-06,8,ANET,Arista Networks,S&P 500,184.9986,19.9279,total_return,backtest,false
+2023-06,9,IT,Gartner,S&P 500,181.7256,4.5911,total_return,backtest,false
+2023-06,10,EQT,EQT Corporation,S&P 500,167.3887,4.7920,total_return,backtest,false
+2023-07,1,PWR,Quanta Services,S&P 500,404.4782,17.8889,total_return,backtest,true
+2023-07,2,ON,ON Semiconductor,S&P 500,377.1948,14.8931,total_return,backtest,true
+2023-07,3,NVDA,Nvidia,S&P 500,346.5828,52.2915,total_return,backtest,true
+2023-07,4,NUE,Nucor,S&P 500,319.3545,6.1565,total_return,backtest,false
+2023-07,5,TRGP,Targa Resources,S&P 500,300.5419,4.3180,total_return,backtest,false
+2023-07,6,TSLA,"Tesla, Inc.",S&P 500,263.6336,26.1785,total_return,backtest,false
+2023-07,7,EQT,EQT Corporation,S&P 500,254.5746,28.8938,total_return,backtest,false
+2023-07,8,PANW,Palo Alto Networks,S&P 500,233.7531,27.9213,total_return,backtest,false
+2023-07,9,HCA,HCA Healthcare,S&P 500,220.7889,15.0941,total_return,backtest,false
+2023-07,10,HWM,Howmet Aerospace,S&P 500,214.5682,16.9696,total_return,backtest,false
+2023-08,1,DVN,Devon Energy,S&P 500,535.2880,1.0668,total_return,backtest,true
+2023-08,2,ON,ON Semiconductor,S&P 500,423.0583,49.7360,total_return,backtest,true
+2023-08,3,PWR,Quanta Services,S&P 500,408.1696,18.8517,total_return,backtest,true
+2023-08,4,TRGP,Targa Resources,S&P 500,374.2652,8.5529,total_return,backtest,false
+2023-08,5,NVDA,Nvidia,S&P 500,341.4061,68.3989,total_return,backtest,false
+2023-08,6,NUE,Nucor,S&P 500,334.4298,16.1358,total_return,backtest,false
+2023-08,7,FANG,Diamondback Energy,S&P 500,322.0580,3.6006,total_return,backtest,false
+2023-08,8,STLD,Steel Dynamics,S&P 500,312.2180,2.5301,total_return,backtest,false
+2023-08,9,OXY,Occidental Petroleum,S&P 500,308.0124,2.6004,total_return,backtest,false
+2023-08,10,MPC,Marathon Petroleum,S&P 500,287.7946,9.0328,total_return,backtest,false
+2023-09,1,DVN,Devon Energy,S&P 500,467.9837,10.8243,total_return,backtest,true
+2023-09,2,TRGP,Targa Resources,S&P 500,436.1585,26.7450,total_return,backtest,true
+2023-09,3,OXY,Occidental Petroleum,S&P 500,401.3738,8.8970,total_return,backtest,true
+2023-09,4,ON,ON Semiconductor,S&P 500,360.7394,17.7751,total_return,backtest,false
+2023-09,5,MPC,Marathon Petroleum,S&P 500,343.8924,36.0881,total_return,backtest,false
+2023-09,6,FANG,Diamondback Energy,S&P 500,343.6244,19.3708,total_return,backtest,false
+2023-09,7,PWR,Quanta Services,S&P 500,312.5396,18.1834,total_return,backtest,false
+2023-09,8,NUE,Nucor,S&P 500,300.9102,30.3196,total_return,backtest,false
+2023-09,9,LLY,Lilly (Eli),S&P 500,289.3829,29.0458,total_return,backtest,false
+2023-09,10,STLD,Steel Dynamics,S&P 500,282.7894,15.9848,total_return,backtest,false
+2023-10,1,OXY,Occidental Petroleum,S&P 500,560.5236,10.3401,total_return,backtest,true
+2023-10,2,TRGP,Targa Resources,S&P 500,546.0409,12.6413,total_return,backtest,true
+2023-10,3,FANG,Diamondback Energy,S&P 500,485.5465,17.9050,total_return,backtest,true
+2023-10,4,MPC,Marathon Petroleum,S&P 500,468.6874,29.7942,total_return,backtest,false
+2023-10,5,APA,APA Corporation,S&P 500,353.5704,20.2809,total_return,backtest,false
+2023-10,6,EOG,EOG Resources,S&P 500,317.8780,10.7655,total_return,backtest,false
+2023-10,7,COP,ConocoPhillips,S&P 500,313.6189,15.6259,total_return,backtest,false
+2023-10,8,XOM,ExxonMobil,S&P 500,296.6905,9.6317,total_return,backtest,false
+2023-10,9,SLB,Schlumberger,S&P 500,294.8510,18.6889,total_return,backtest,false
+2023-10,10,LLY,Lilly (Eli),S&P 500,278.3328,14.5315,total_return,backtest,false
+2023-11,1,FANG,Diamondback Energy,S&P 500,603.2393,8.8243,total_return,backtest,true
+2023-11,2,MPC,Marathon Petroleum,S&P 500,465.2668,13.7047,total_return,backtest,true
+2023-11,3,TRGP,Targa Resources,S&P 500,450.6028,1.9759,total_return,backtest,true
+2023-11,4,COP,ConocoPhillips,S&P 500,364.9283,0.9174,total_return,backtest,false
+2023-11,5,LLY,Lilly (Eli),S&P 500,342.6828,21.8634,total_return,backtest,false
+2023-11,6,ANET,Arista Networks,S&P 500,283.6683,29.1960,total_return,backtest,false
+2023-11,7,HAL,Halliburton,S&P 500,238.8595,0.6653,total_return,backtest,false
+2023-11,8,MCK,McKesson,S&P 500,215.5561,13.1610,total_return,backtest,false
+2023-11,9,EQT,EQT Corporation,S&P 500,188.1893,0.4742,total_return,backtest,false
+2023-11,10,ACGL,Arch Capital Group,S&P 500,186.9254,11.5716,total_return,backtest,false
+2023-12,1,FANG,Diamondback Energy,S&P 500,344.3328,1.7328,total_return,backtest,true
+2023-12,2,LLY,Lilly (Eli),S&P 500,321.6938,6.6474,total_return,backtest,true
+2023-12,3,MPC,Marathon Petroleum,S&P 500,319.3233,4.4967,total_return,backtest,true
+2023-12,4,TRGP,Targa Resources,S&P 500,306.8120,4.8696,total_return,backtest,false
+2023-12,5,STLD,Steel Dynamics,S&P 500,247.2594,11.7647,total_return,backtest,false
+2023-12,6,ANET,Arista Networks,S&P 500,224.6536,12.5391,total_return,backtest,false
+2023-12,7,PANW,Palo Alto Networks,S&P 500,201.1940,21.2865,total_return,backtest,false
+2023-12,8,IT,Gartner,S&P 500,186.0789,24.3537,total_return,backtest,false
+2023-12,9,IRM,Iron Mountain,S&P 500,173.1157,0.9600,total_return,backtest,false
+2023-12,10,MCK,McKesson,S&P 500,167.0663,14.1250,total_return,backtest,false
+2024-01,1,NVDA,Nvidia,S&P 500,280.1886,13.8463,total_return,backtest,true
+2024-01,2,FANG,Diamondback Energy,S&P 500,268.4420,0.1291,total_return,backtest,true
+2024-01,3,LLY,Lilly (Eli),S&P 500,258.7770,8.5249,total_return,backtest,true
+2024-01,4,TRGP,Targa Resources,S&P 500,248.0562,1.3416,total_return,backtest,false
+2024-01,5,NUE,Nucor,S&P 500,242.9815,11.3144,total_return,backtest,false
+2024-01,6,STLD,Steel Dynamics,S&P 500,236.9547,10.1474,total_return,backtest,false
+2024-01,7,ANET,Arista Networks,S&P 500,224.2046,28.0433,total_return,backtest,false
+2024-01,8,JBL,Jabil,S&P 500,203.9418,0.4019,total_return,backtest,false
+2024-01,9,PWR,Quanta Services,S&P 500,201.5736,15.3579,total_return,backtest,false
+2024-01,10,IT,Gartner,S&P 500,181.6093,31.2855,total_return,backtest,false
+2024-02,1,NVDA,Nvidia,S&P 500,374.7251,50.8754,total_return,backtest,true
+2024-02,2,MPC,Marathon Petroleum,S&P 500,319.2899,9.4876,total_return,backtest,true
+2024-02,3,NUE,Nucor,S&P 500,302.1003,26.4835,total_return,backtest,true
+2024-02,4,STLD,Steel Dynamics,S&P 500,270.4693,13.3133,total_return,backtest,false
+2024-02,5,ANET,Arista Networks,S&P 500,236.4287,29.1012,total_return,backtest,false
+2024-02,6,TRGP,Targa Resources,S&P 500,228.8213,1.6146,total_return,backtest,false
+2024-02,7,LLY,Lilly (Eli),S&P 500,222.5970,16.5508,total_return,backtest,false
+2024-02,8,JBL,Jabil,S&P 500,207.2895,2.0277,total_return,backtest,false
+2024-02,9,IT,Gartner,S&P 500,201.1257,37.7665,total_return,backtest,false
+2024-02,10,MCK,McKesson,S&P 500,192.5589,9.7791,total_return,backtest,false
+2024-03,1,NVDA,Nvidia,S&P 500,478.1495,69.1512,total_return,backtest,true
+2024-03,2,ANET,Arista Networks,S&P 500,296.7124,26.3211,total_return,backtest,true
+2024-03,3,LLY,Lilly (Eli),S&P 500,281.3360,27.5176,total_return,backtest,true
+2024-03,4,STLD,Steel Dynamics,S&P 500,238.5565,12.3311,total_return,backtest,false
+2024-03,5,JBL,Jabil,S&P 500,238.2453,24.9480,total_return,backtest,false
+2024-03,6,NUE,Nucor,S&P 500,236.9647,13.1376,total_return,backtest,false
+2024-03,7,TRGP,Targa Resources,S&P 500,236.4562,8.6125,total_return,backtest,false
+2024-03,8,MPC,Marathon Petroleum,S&P 500,236.3199,13.4325,total_return,backtest,false
+2024-03,9,MCK,McKesson,S&P 500,214.4362,10.8063,total_return,backtest,false
+2024-03,10,FANG,Diamondback Energy,S&P 500,202.9436,18.2048,total_return,backtest,false
+2024-04,1,SMCI,Supermicro,S&P 500,2485.8423,255.3191,total_return,backtest,true
+2024-04,2,NVDA,Nvidia,S&P 500,578.2375,82.4563,total_return,backtest,true
+2024-04,3,LLY,Lilly (Eli),S&P 500,331.6934,33.4591,total_return,backtest,true
+2024-04,4,MPC,Marathon Petroleum,S&P 500,308.9119,35.8183,total_return,backtest,false
+2024-04,5,ANET,Arista Networks,S&P 500,284.2199,23.1285,total_return,backtest,false
+2024-04,6,TRGP,Targa Resources,S&P 500,273.6424,28.9168,total_return,backtest,false
+2024-04,7,FANG,Diamondback Energy,S&P 500,213.5449,27.7857,total_return,backtest,false
+2024-04,8,AVGO,Broadcom,S&P 500,209.6312,18.7377,total_return,backtest,false
+2024-04,9,STLD,Steel Dynamics,S&P 500,206.5593,25.5123,total_return,backtest,false
+2024-04,10,PWR,Quanta Services,S&P 500,197.2010,20.3892,total_return,backtest,false
+2024-05,1,SMCI,Supermicro,S&P 500,2219.8271,62.1571,total_return,backtest,true
+2024-05,2,NVDA,Nvidia,S&P 500,476.7747,40.4294,total_return,backtest,true
+2024-05,3,LLY,Lilly (Eli),S&P 500,343.0404,20.9864,total_return,backtest,true
+2024-05,4,MPC,Marathon Petroleum,S&P 500,254.4576,9.7343,total_return,backtest,false
+2024-05,5,TRGP,Targa Resources,S&P 500,249.5319,34.2514,total_return,backtest,false
+2024-05,6,AVGO,Broadcom,S&P 500,208.7249,10.1924,total_return,backtest,false
+2024-05,7,MCK,McKesson,S&P 500,192.0792,7.4656,total_return,backtest,false
+2024-05,8,FANG,Diamondback Energy,S&P 500,186.1445,30.8248,total_return,backtest,false
+2024-05,9,COP,ConocoPhillips,S&P 500,175.9552,12.2911,total_return,backtest,false
+2024-05,10,PWR,Quanta Services,S&P 500,169.1881,33.2440,total_return,backtest,false
+2024-06,1,NVDA,Nvidia,S&P 500,576.2128,38.5795,total_return,backtest,true
+2024-06,2,VST,Vistra Corp.,S&P 500,567.7483,81.6648,total_return,backtest,true
+2024-06,3,LLY,Lilly (Eli),S&P 500,324.6149,8.8446,total_return,backtest,true
+2024-06,4,FSLR,First Solar,S&P 500,257.0621,76.5937,total_return,backtest,false
+2024-06,5,ANET,Arista Networks,S&P 500,250.8154,7.2458,total_return,backtest,false
+2024-06,6,DECK,Deckers Brands,S&P 500,226.1148,22.1452,total_return,backtest,false
+2024-06,7,TRGP,Targa Resources,S&P 500,223.4314,20.3481,total_return,backtest,false
+2024-06,8,MPC,Marathon Petroleum,S&P 500,208.7435,4.3609,total_return,backtest,false
+2024-06,9,AVGO,Broadcom,S&P 500,204.6672,2.1576,total_return,backtest,false
+2024-06,10,MCK,McKesson,S&P 500,201.2568,9.2403,total_return,backtest,false
+2024-07,1,NVDA,Nvidia,S&P 500,518.7386,36.7258,total_return,backtest,true
+2024-07,2,VST,Vistra Corp.,S&P 500,402.2977,23.4458,total_return,backtest,true
+2024-07,3,LLY,Lilly (Eli),S&P 500,307.8276,16.3787,total_return,backtest,true
+2024-07,4,ANET,Arista Networks,S&P 500,286.9389,20.8635,total_return,backtest,false
+2024-07,5,AVGO,Broadcom,S&P 500,263.0193,21.1346,total_return,backtest,false
+2024-07,6,MCK,McKesson,S&P 500,211.0956,8.7902,total_return,backtest,false
+2024-07,7,TRGP,Targa Resources,S&P 500,207.9881,14.9924,total_return,backtest,false
+2024-07,8,FICO,Fair Isaac,S&P 500,196.1447,19.1300,total_return,backtest,false
+2024-07,9,PANW,Palo Alto Networks,S&P 500,174.0950,19.3151,total_return,backtest,false
+2024-07,10,KLAC,KLA Corporation,S&P 500,163.3752,18.0283,total_return,backtest,false
+2024-08,1,NVDA,Nvidia,S&P 500,501.2174,35.4367,total_return,backtest,true
+2024-08,2,VST,Vistra Corp.,S&P 500,348.3062,4.4568,total_return,backtest,true
+2024-08,3,ANET,Arista Networks,S&P 500,264.4151,35.0756,total_return,backtest,true
+2024-08,4,AVGO,Broadcom,S&P 500,256.8993,23.5743,total_return,backtest,false
+2024-08,5,TRGP,Targa Resources,S&P 500,242.6312,18.6042,total_return,backtest,false
+2024-08,6,LLY,Lilly (Eli),S&P 500,241.4831,2.9663,total_return,backtest,false
+2024-08,7,MCK,McKesson,S&P 500,208.3622,14.8564,total_return,backtest,false
+2024-08,8,FANG,Diamondback Energy,S&P 500,206.4675,0.5867,total_return,backtest,false
+2024-08,9,FICO,Fair Isaac,S&P 500,205.3960,41.1769,total_return,backtest,false
+2024-08,10,HWM,Howmet Aerospace,S&P 500,194.3277,43.3708,total_return,backtest,false
+2024-09,1,NVDA,Nvidia,S&P 500,434.1296,8.8814,total_return,backtest,true
+2024-09,2,LLY,Lilly (Eli),S&P 500,283.5707,17.0271,total_return,backtest,true
+2024-09,3,ANET,Arista Networks,S&P 500,282.5187,18.7233,total_return,backtest,true
+2024-09,4,FICO,Fair Isaac,S&P 500,276.3584,34.1367,total_return,backtest,false
+2024-09,5,TRGP,Targa Resources,S&P 500,256.7284,24.2493,total_return,backtest,false
+2024-09,6,AVGO,Broadcom,S&P 500,253.0626,22.5547,total_return,backtest,false
+2024-09,7,MPC,Marathon Petroleum,S&P 500,221.1888,0.2888,total_return,backtest,false
+2024-09,8,HWM,Howmet Aerospace,S&P 500,207.3664,14.1878,total_return,backtest,false
+2024-09,9,ACGL,Arch Capital Group,S&P 500,175.1583,10.1920,total_return,backtest,false
+2024-09,10,IRM,Iron Mountain,S&P 500,170.6518,40.3644,total_return,backtest,false
+2024-10,1,VST,Vistra Corp.,S&P 500,646.7504,37.8693,total_return,backtest,true
+2024-10,2,FICO,Fair Isaac,S&P 500,388.4075,30.5550,total_return,backtest,true
+2024-10,3,ANET,Arista Networks,S&P 500,346.7699,9.5127,total_return,backtest,true
+2024-10,4,AVGO,Broadcom,S&P 500,281.9873,7.4412,total_return,backtest,false
+2024-10,5,HWM,Howmet Aerospace,S&P 500,224.4013,29.1382,total_return,backtest,false
+2024-10,6,PHM,PulteGroup,S&P 500,222.2988,30.3633,total_return,backtest,false
+2024-10,7,TRGP,Targa Resources,S&P 500,220.7866,14.9324,total_return,backtest,false
+2024-10,8,ERIE,Erie Indemnity,S&P 500,220.7533,48.9570,total_return,backtest,false
+2024-10,9,IRM,Iron Mountain,S&P 500,209.8645,32.5932,total_return,backtest,false
+2024-10,10,GE,GE Aerospace,S&P 500,197.6706,18.6262,total_return,backtest,false
+2024-11,1,VST,Vistra Corp.,S&P 500,587.1376,57.7379,total_return,backtest,true
+2024-11,2,NVDA,Nvidia,S&P 500,420.1541,13.4507,total_return,backtest,true
+2024-11,3,FICO,Fair Isaac,S&P 500,400.5299,24.5694,total_return,backtest,true
+2024-11,4,ANET,Arista Networks,S&P 500,277.3003,11.5106,total_return,backtest,false
+2024-11,5,AVGO,Broadcom,S&P 500,242.8925,5.6572,total_return,backtest,false
+2024-11,6,HWM,Howmet Aerospace,S&P 500,239.0973,4.2006,total_return,backtest,false
+2024-11,7,LLY,Lilly (Eli),S&P 500,236.1115,3.1668,total_return,backtest,false
+2024-11,8,TRGP,Targa Resources,S&P 500,226.5934,23.4181,total_return,backtest,false
+2024-11,9,IRM,Iron Mountain,S&P 500,207.1598,20.6416,total_return,backtest,false
+2024-11,10,GE,GE Aerospace,S&P 500,166.3946,0.9283,total_return,backtest,false
+2024-12,1,VST,Vistra Corp.,S&P 500,766.1131,87.1006,total_return,backtest,true
+2024-12,2,FICO,Fair Isaac,S&P 500,572.5653,37.2635,total_return,backtest,true
+2024-12,3,HWM,Howmet Aerospace,S&P 500,324.9017,22.4705,total_return,backtest,true
+2024-12,4,NVDA,Nvidia,S&P 500,323.8197,15.8164,total_return,backtest,false
+2024-12,5,TRGP,Targa Resources,S&P 500,323.1657,39.0742,total_return,backtest,false
+2024-12,6,TPL,Texas Pacific Land Corporation,S&P 500,316.6978,84.1533,total_return,backtest,false
+2024-12,7,AXON,Axon Enterprise,S&P 500,283.2928,77.2639,total_return,backtest,false
+2024-12,8,RCL,Royal Caribbean Group,S&P 500,250.3731,48.2566,total_return,backtest,false
+2024-12,9,ANET,Arista Networks,S&P 500,227.1159,14.8395,total_return,backtest,false
+2024-12,10,PLTR,Palantir Technologies,S&P 500,224.8426,113.0877,total_return,backtest,false
+2025-01,1,VST,Vistra Corp.,S&P 500,548.5866,16.3067,total_return,backtest,true
+2025-01,2,FICO,Fair Isaac,S&P 500,359.0887,2.4394,total_return,backtest,true
+2025-01,3,NVDA,Nvidia,S&P 500,357.3572,10.5814,total_return,backtest,true
+2025-01,4,PLTR,Palantir Technologies,S&P 500,315.3213,103.3065,total_return,backtest,false
+2025-01,5,AXON,Axon Enterprise,S&P 500,278.5478,48.7287,total_return,backtest,false
+2025-01,6,AVGO,Broadcom,S&P 500,272.7611,34.4000,total_return,backtest,false
+2025-01,7,TRGP,Targa Resources,S&P 500,265.4094,20.6000,total_return,backtest,false
+2025-01,8,HWM,Howmet Aerospace,S&P 500,246.9290,9.0973,total_return,backtest,false
+2025-01,9,DECK,Deckers Brands,S&P 500,232.6525,27.3691,total_return,backtest,false
+2025-01,10,ANET,Arista Networks,S&P 500,207.5617,15.1894,total_return,backtest,false
+2025-02,1,VST,Vistra Corp.,S&P 500,725.2621,34.4670,total_return,backtest,true
+2025-02,2,CEG,Constellation Energy,S&P 500,542.7579,14.0782,total_return,backtest,true
+2025-02,3,PLTR,Palantir Technologies,S&P 500,501.6776,98.4841,total_return,backtest,true
+2025-02,4,AXON,Axon Enterprise,S&P 500,366.0759,53.9976,total_return,backtest,false
+2025-02,5,HWM,Howmet Aerospace,S&P 500,311.0778,26.9354,total_return,backtest,false
+2025-02,6,AVGO,Broadcom,S&P 500,304.0599,30.3352,total_return,backtest,false
+2025-02,7,TPL,Texas Pacific Land Corporation,S&P 500,279.3998,11.2496,total_return,backtest,false
+2025-02,8,ANET,Arista Networks,S&P 500,270.7827,19.2734,total_return,backtest,false
+2025-02,9,TRGP,Targa Resources,S&P 500,255.3682,17.8725,total_return,backtest,false
+2025-02,10,GE,GE Aerospace,S&P 500,250.6748,18.5062,total_return,backtest,false
+2025-03,1,SMCI,Supermicro,S&P 500,955.2303,27.0221,total_return,backtest,true
+2025-03,2,PLTR,Palantir Technologies,S&P 500,616.6245,26.5951,total_return,backtest,true
+2025-03,3,HWM,Howmet Aerospace,S&P 500,284.0296,15.3911,total_return,backtest,true
+2025-03,4,LLY,Lilly (Eli),S&P 500,278.5768,15.7516,total_return,backtest,false
+2025-03,5,AVGO,Broadcom,S&P 500,263.2110,23.0442,total_return,backtest,false
+2025-03,6,GE,GE Aerospace,S&P 500,252.7040,13.6254,total_return,backtest,false
+2025-03,7,META,Meta Platforms,S&P 500,217.8470,16.3463,total_return,backtest,false
+2025-03,8,NRG,NRG Energy,S&P 500,207.3971,4.0350,total_return,backtest,false
+2025-03,9,RCL,Royal Caribbean Group,S&P 500,206.3020,0.8359,total_return,backtest,false
+2025-03,10,PGR,Progressive Corporation,S&P 500,174.5694,4.8795,total_return,backtest,false
+2025-04,1,SMCI,Supermicro,S&P 500,799.3958,12.3360,total_return,backtest,true
+2025-04,2,PLTR,Palantir Technologies,S&P 500,514.7123,11.5959,total_return,backtest,true
+2025-04,3,HWM,Howmet Aerospace,S&P 500,264.5129,18.6157,total_return,backtest,true
+2025-04,4,GE,GE Aerospace,S&P 500,256.3550,20.0012,total_return,backtest,false
+2025-04,5,TPL,Texas Pacific Land Corporation,S&P 500,207.7458,19.8045,total_return,backtest,false
+2025-04,6,LLY,Lilly (Eli),S&P 500,196.4335,6.9832,total_return,backtest,false
+2025-04,7,TRGP,Targa Resources,S&P 500,183.3800,12.3081,total_return,backtest,false
+2025-04,8,NRG,NRG Energy,S&P 500,173.8279,5.8080,total_return,backtest,false
+2025-04,9,CAH,Cardinal Health,S&P 500,159.1107,16.4877,total_return,backtest,false
+2025-04,10,TKO,TKO Group Holdings,S&P 500,156.8175,7.5294,total_return,backtest,false
+2025-05,1,PLTR,Palantir Technologies,S&P 500,1038.8462,43.5810,total_return,backtest,true
+2025-05,2,SMCI,Supermicro,S&P 500,656.7696,11.7111,total_return,backtest,true
+2025-05,3,NFLX,Netflix,S&P 500,494.5157,15.8647,total_return,backtest,true
+2025-05,4,FICO,Fair Isaac,S&P 500,432.6979,6.1978,total_return,backtest,false
+2025-05,5,HWM,Howmet Aerospace,S&P 500,310.1488,9.4802,total_return,backtest,false
+2025-05,6,NRG,NRG Energy,S&P 500,232.7064,6.9699,total_return,backtest,false
+2025-05,7,LLY,Lilly (Eli),S&P 500,216.2872,10.8337,total_return,backtest,false
+2025-05,8,TKO,TKO Group Holdings,S&P 500,192.7822,4.9610,total_return,backtest,false
+2025-05,9,TT,Trane Technologies,S&P 500,185.6367,5.6678,total_return,backtest,false
+2025-05,10,PGR,Progressive Corporation,S&P 500,170.5218,14.3240,total_return,backtest,false
+2025-06,1,PLTR,Palantir Technologies,S&P 500,1418.2028,55.1813,total_return,backtest,true
+2025-06,2,AXON,Axon Enterprise,S&P 500,640.2920,41.9926,total_return,backtest,true
+2025-06,3,NVDA,Nvidia,S&P 500,624.8494,8.1732,total_return,backtest,true
+2025-06,4,VST,Vistra Corp.,S&P 500,548.4238,20.1332,total_return,backtest,false
+2025-06,5,NFLX,Netflix,S&P 500,511.4415,23.1164,total_return,backtest,false
+2025-06,6,GE,GE Aerospace,S&P 500,411.7035,18.8086,total_return,backtest,false
+2025-06,7,CEG,Constellation Energy,S&P 500,405.9315,22.1936,total_return,backtest,false
+2025-06,8,HWM,Howmet Aerospace,S&P 500,379.6637,24.3704,total_return,backtest,false
+2025-06,9,RCL,Royal Caribbean Group,S&P 500,346.1326,4.4169,total_return,backtest,false
+2025-06,10,AVGO,Broadcom,S&P 500,344.7672,21.3809,total_return,backtest,false
+2025-07,1,PLTR,Palantir Technologies,S&P 500,1402.9768,61.5166,total_return,backtest,true
+2025-07,2,SMCI,Supermicro,S&P 500,1114.6221,43.1367,total_return,backtest,true
+2025-07,3,NVDA,Nvidia,S&P 500,943.7249,45.7741,total_return,backtest,true
+2025-07,4,RCL,Royal Caribbean Group,S&P 500,806.8687,52.4241,total_return,backtest,false
+2025-07,5,VST,Vistra Corp.,S&P 500,797.2247,65.0290,total_return,backtest,false
+2025-07,6,AXON,Axon Enterprise,S&P 500,788.6337,57.4180,total_return,backtest,false
+2025-07,7,NFLX,Netflix,S&P 500,665.7860,43.6018,total_return,backtest,false
+2025-07,8,COIN,Coinbase,S&P 500,645.4062,103.5011,total_return,backtest,false
+2025-07,9,GE,GE Aerospace,S&P 500,557.7901,28.5986,total_return,backtest,false
+2025-07,10,AVGO,Broadcom,S&P 500,501.2348,64.6360,total_return,backtest,false
+2025-08,1,PLTR,Palantir Technologies,S&P 500,1429.9517,33.6964,total_return,backtest,true
+2025-08,2,SMCI,Supermicro,S&P 500,991.8348,85.0910,total_return,backtest,true
+2025-08,3,NVDA,Nvidia,S&P 500,880.7097,63.3033,total_return,backtest,true
+2025-08,4,VST,Vistra Corp.,S&P 500,753.3758,60.8733,total_return,backtest,false
+2025-08,5,RCL,Royal Caribbean Group,S&P 500,730.1988,47.9084,total_return,backtest,false
+2025-08,6,AXON,Axon Enterprise,S&P 500,585.6248,23.1844,total_return,backtest,false
+2025-08,7,COIN,Coinbase,S&P 500,500.0000,86.1896,total_return,backtest,false
+2025-08,8,GE,GE Aerospace,S&P 500,497.6653,34.5043,total_return,backtest,false
+2025-08,9,AVGO,Broadcom,S&P 500,481.1830,52.5952,total_return,backtest,false
+2025-08,10,CEG,Constellation Energy,S&P 500,439.8673,55.6749,total_return,backtest,false
+2025-09,1,PLTR,Palantir Technologies,S&P 500,1929.9223,18.9179,total_return,backtest,true
+2025-09,2,NVDA,Nvidia,S&P 500,1055.6320,28.8981,total_return,backtest,true
+2025-09,3,RCL,Royal Caribbean Group,S&P 500,798.9461,41.3472,total_return,backtest,true
+2025-09,4,VST,Vistra Corp.,S&P 500,708.2610,17.7742,total_return,backtest,false
+2025-09,5,SMCI,Supermicro,S&P 500,538.2913,3.7981,total_return,backtest,false
+2025-09,6,AVGO,Broadcom,S&P 500,531.3676,22.8529,total_return,backtest,false
+2025-09,7,GE,GE Aerospace,S&P 500,510.6316,11.9109,total_return,backtest,false
+2025-09,8,NFLX,Netflix,S&P 500,440.4589,0.0845,total_return,backtest,false
+2025-09,9,HWM,Howmet Aerospace,S&P 500,396.3285,2.4781,total_return,backtest,false
+2025-09,10,COIN,Coinbase,S&P 500,355.8982,23.4855,total_return,backtest,false
+2025-10,1,APP,AppLovin,S&P 500,3586.7111,105.2502,total_return,backtest,true
+2025-10,2,PLTR,Palantir Technologies,S&P 500,2143.7884,33.8175,total_return,backtest,true
+2025-10,3,NVDA,Nvidia,S&P 500,1438.8707,18.0961,total_return,backtest,true
+2025-10,4,HOOD,Robinhood Markets,S&P 500,1317.6238,52.9211,total_return,backtest,false
+2025-10,5,VST,Vistra Corp.,S&P 500,880.8625,1.0887,total_return,backtest,false
+2025-10,6,RCL,Royal Caribbean Group,S&P 500,765.8222,3.3340,total_return,backtest,false
+2025-10,7,GE,GE Aerospace,S&P 500,691.7745,16.8732,total_return,backtest,false
+2025-10,8,AVGO,Broadcom,S&P 500,682.1179,19.6844,total_return,backtest,false
+2025-10,9,HWM,Howmet Aerospace,S&P 500,540.8070,5.4263,total_return,backtest,false
+2025-10,10,EME,Emcor,S&P 500,467.8560,21.4343,total_return,backtest,false
+2025-11,1,APP,AppLovin,S&P 500,3657.8420,63.1252,total_return,backtest,true
+2025-11,2,PLTR,Palantir Technologies,S&P 500,2180.6598,26.5993,total_return,backtest,true
+2025-11,3,NVDA,Nvidia,S&P 500,1402.0597,13.8416,total_return,backtest,true
+2025-11,4,HOOD,Robinhood Markets,S&P 500,1156.6781,42.4357,total_return,backtest,false
+2025-11,5,AVGO,Broadcom,S&P 500,727.6141,25.8529,total_return,backtest,false
+2025-11,6,GE,GE Aerospace,S&P 500,547.0057,13.9700,total_return,backtest,false
+2025-11,7,HWM,Howmet Aerospace,S&P 500,485.1451,14.5631,total_return,backtest,false
+2025-11,8,DASH,DoorDash,S&P 500,484.3556,1.6464,total_return,backtest,false
+2025-11,9,WDC,Western Digital,S&P 500,479.9540,90.8883,total_return,backtest,false
+2025-11,10,STX,Seagate Technology,S&P 500,469.8082,62.9705,total_return,backtest,false
+2025-12,1,APP,AppLovin,S&P 500,4060.1666,25.2596,total_return,backtest,true
+2025-12,2,PLTR,Palantir Technologies,S&P 500,2146.0000,7.4915,total_return,backtest,true
+2025-12,3,HOOD,Robinhood Markets,S&P 500,1239.8332,23.5124,total_return,backtest,true
+2025-12,4,NVDA,Nvidia,S&P 500,946.9033,1.6190,total_return,backtest,false
+2025-12,5,AVGO,Broadcom,S&P 500,669.7619,35.4988,total_return,backtest,false
+2025-12,6,WDC,Western Digital,S&P 500,489.7693,103.2985,total_return,backtest,false
+2025-12,7,STX,Seagate Technology,S&P 500,477.6473,65.2867,total_return,backtest,false
+2025-12,8,GE,GE Aerospace,S&P 500,465.6928,8.4484,total_return,backtest,false
+2025-12,9,HWM,Howmet Aerospace,S&P 500,448.2672,17.5129,total_return,backtest,false
+2025-12,10,CRWD,CrowdStrike,S&P 500,332.7752,20.1699,total_return,backtest,false
+2026-01,1,CVNA,Carvana,S&P 500,8803.3755,11.8704,total_return,backtest,true
+2026-01,2,FIX,Comfort Systems USA,S&P 500,720.7365,13.1014,total_return,backtest,true
+2026-01,3,WDC,Western Digital,S&P 500,625.1591,43.4866,total_return,backtest,true
+2026-01,4,AVGO,Broadcom,S&P 500,547.4107,4.9074,total_return,backtest,false
+2026-01,5,GE,GE Aerospace,S&P 500,499.1468,2.3968,total_return,backtest,false
+2026-01,6,MU,Micron Technology,S&P 500,479.3538,70.5773,total_return,backtest,false
+2026-01,7,STX,Seagate Technology,S&P 500,472.4181,16.6610,total_return,backtest,false
+2026-01,8,HWM,Howmet Aerospace,S&P 500,425.1626,4.4794,total_return,backtest,false
+2026-01,9,LRCX,Lam Research,S&P 500,320.2528,27.8417,total_return,backtest,false
+2026-01,10,CEG,Constellation Energy,S&P 500,319.9894,7.3541,total_return,backtest,false
+2026-02,1,CVNA,Carvana,S&P 500,3844.0511,30.8508,total_return,backtest,true
+2026-02,2,FIX,Comfort Systems USA,S&P 500,854.9092,18.2812,total_return,backtest,true
+2026-02,3,WDC,Western Digital,S&P 500,656.1424,66.5868,total_return,backtest,true
+2026-02,4,MU,Micron Technology,S&P 500,598.0324,85.4047,total_return,backtest,false
+2026-02,5,STX,Seagate Technology,S&P 500,557.7518,59.3286,total_return,backtest,false
+2026-02,6,HWM,Howmet Aerospace,S&P 500,416.2339,1.0342,total_return,backtest,false
+2026-02,7,RCL,Royal Caribbean Group,S&P 500,408.7074,13.1855,total_return,backtest,false
+2026-02,8,EME,Emcor,S&P 500,390.2005,6.6516,total_return,backtest,false
+2026-02,9,META,Meta Platforms,S&P 500,384.3292,10.5113,total_return,backtest,false
+2026-02,10,LRCX,Lam Research,S&P 500,381.6954,48.2662,total_return,backtest,false
+2026-03,1,FIX,Comfort Systems USA,S&P 500,894.5986,46.3109,total_return,backtest,true
+2026-03,2,WDC,Western Digital,S&P 500,865.3385,71.2484,total_return,backtest,true
+2026-03,3,NVDA,Nvidia,S&P 500,663.9887,0.1073,total_return,backtest,true
+2026-03,4,MU,Micron Technology,S&P 500,623.5684,74.3784,total_return,backtest,false
+2026-03,5,CIEN,Ciena,S&P 500,623.1439,70.7556,total_return,backtest,false
+2026-03,6,STX,Seagate Technology,S&P 500,590.8121,47.3996,total_return,backtest,false
+2026-03,7,HWM,Howmet Aerospace,S&P 500,528.0562,28.3201,total_return,backtest,false
+2026-03,8,NRG,NRG Energy,S&P 500,485.3138,5.5874,total_return,backtest,false
+2026-03,9,GE,GE Aerospace,S&P 500,414.0495,14.6792,total_return,backtest,false
+2026-03,10,LRCX,Lam Research,S&P 500,396.5725,49.9295,total_return,backtest,false
+2026-04,1,VRT,Vertiv,S&P 500,1657.0741,54.6695,total_return,backtest,true
+2026-04,2,LITE,Lumentum,S&P 500,1201.1665,90.6617,total_return,backtest,true
+2026-04,3,FIX,Comfort Systems USA,S&P 500,855.4958,47.7558,total_return,backtest,true
+2026-04,4,WDC,Western Digital,S&P 500,854.0829,57.0152,total_return,backtest,false
+2026-04,5,CIEN,Ciena,S&P 500,639.2041,66.0025,total_return,backtest,false
+2026-04,6,STX,Seagate Technology,S&P 500,541.7292,42.2564,total_return,backtest,false
+2026-04,7,ECHO,EchoStar,S&P 500,540.0765,7.7001,total_return,backtest,false
+2026-04,8,COHR,Coherent Corp.,S&P 500,525.5515,29.0621,total_return,backtest,false
+2026-04,9,MU,Micron Technology,S&P 500,468.2750,18.3701,total_return,backtest,false
+2026-04,10,HWM,Howmet Aerospace,S&P 500,448.8633,12.4085,total_return,backtest,false
+2026-05,1,VRT,Vertiv,S&P 500,2109.1959,76.4368,total_return,backtest,true
+2026-05,2,LITE,Lumentum,S&P 500,1770.0933,130.2777,total_return,backtest,true
+2026-05,3,WDC,Western Digital,S&P 500,1576.3970,73.6482,total_return,backtest,true
+2026-05,4,FIX,Comfort Systems USA,S&P 500,1144.9902,61.1286,total_return,backtest,false
+2026-05,5,STX,Seagate Technology,S&P 500,1141.4719,65.2334,total_return,backtest,false
+2026-05,6,CIEN,Ciena,S&P 500,1045.9166,109.5151,total_return,backtest,false
+2026-05,7,COHR,Coherent Corp.,S&P 500,836.4675,50.6787,total_return,backtest,false
+2026-05,8,MU,Micron Technology,S&P 500,713.9257,24.6529,total_return,backtest,false
+2026-05,9,ECHO,EchoStar,S&P 500,621.3825,8.7617,total_return,backtest,false
+2026-05,10,NVDA,Nvidia,S&P 500,619.8346,4.4158,total_return,backtest,false
+2026-06,1,CVNA,Carvana,S&P 500,2725.0774,9.2291,total_return,backtest,true
+2026-06,2,APP,AppLovin,S&P 500,2351.3794,41.0148,total_return,backtest,true
+2026-06,3,WDC,Western Digital,S&P 500,1722.4234,89.9213,total_return,backtest,true
+2026-06,4,VRT,Vertiv,S&P 500,1541.3964,23.8613,total_return,backtest,false
+2026-06,5,LITE,Lumentum,S&P 500,1516.1815,21.9786,total_return,backtest,false
+2026-06,6,STX,Seagate Technology,S&P 500,1485.5265,115.7219,total_return,backtest,false
+2026-06,7,MU,Micron Technology,S&P 500,1342.1517,135.4681,total_return,backtest,false
+2026-06,8,FIX,Comfort Systems USA,S&P 500,1148.2963,27.9032,total_return,backtest,false
+2026-06,9,CIEN,Ciena,S&P 500,1141.3992,66.3980,total_return,backtest,false
+2026-06,10,PLTR,Palantir Technologies,S&P 500,964.1740,14.1045,total_return,backtest,false
+2026-07,1,WDC,Western Digital,S&P 500,2138.0555,136.1344,total_return,backtest,true
+2026-07,2,APP,AppLovin,S&P 500,1902.4485,29.4548,total_return,backtest,true
+2026-07,3,MU,Micron Technology,S&P 500,1752.6477,241.6677,total_return,backtest,true
+2026-07,4,STX,Seagate Technology,S&P 500,1572.1184,146.3243,total_return,backtest,false
+2026-07,5,LITE,Lumentum,S&P 500,1412.5331,22.0986,total_return,backtest,false
+2026-07,6,VRT,Vertiv,S&P 500,1256.6181,33.6180,total_return,backtest,false
+2026-07,7,CVNA,Carvana,S&P 500,1169.6759,4.6822,total_return,backtest,false
+2026-07,8,FIX,Comfort Systems USA,S&P 500,1119.5907,43.7248,total_return,backtest,false
+2026-07,9,CIEN,Ciena,S&P 500,1054.5305,26.3581,total_return,backtest,false
+2026-07,10,HOOD,Robinhood Markets,S&P 500,904.8096,44.7042,total_return,backtest,false
+2026-08,1,WDC,Western Digital,S&P 500,1601.4194,25.3889,total_return,backtest,true
+2026-08,2,STX,Seagate Technology,S&P 500,1345.3930,27.0901,total_return,backtest,true
+2026-08,3,MU,Micron Technology,S&P 500,1065.7482,59.1442,total_return,backtest,true
+2026-08,4,DELL,Dell Technologies,S&P 500,703.7590,94.0034,total_return,backtest,false
+2026-08,5,HOOD,Robinhood Markets,S&P 500,573.0949,18.7543,total_return,backtest,false
+2026-08,6,HWM,Howmet Aerospace,S&P 500,456.6960,16.1373,total_return,backtest,false
+2026-08,7,FLEX,Flex Ltd.,S&P 500,451.7051,24.2490,total_return,backtest,false
+2026-08,8,CRWD,CrowdStrike,S&P 500,372.2504,71.2709,total_return,backtest,false
+2026-08,9,ANET,Arista Networks,S&P 500,365.1493,4.4236,total_return,backtest,false
+2026-08,10,NVDA,Nvidia,S&P 500,330.4418,0.5913,total_return,backtest,false
+2026-09,1,LITE,Lumentum,S&P 500,1589.9316,6.9945,total_return,backtest,true
+2026-09,2,PLTR,Palantir Technologies,S&P 500,1144.1923,19.0622,total_return,backtest,true
+2026-09,3,HOOD,Robinhood Markets,S&P 500,862.4426,11.1453,total_return,backtest,true
+2026-09,4,DELL,Dell Technologies,S&P 500,750.7912,8.3391,total_return,backtest,false
+2026-09,5,CVNA,Carvana,S&P 500,629.4935,0.6301,total_return,backtest,false
+2026-09,6,CRWD,CrowdStrike,S&P 500,466.7669,26.4022,total_return,backtest,false
+2026-09,7,NVDA,Nvidia,S&P 500,348.2018,4.5657,total_return,backtest,false
+2026-09,8,IBKR,Interactive Brokers,S&P 500,333.6490,11.8662,total_return,backtest,false
+2026-09,9,ANET,Arista Networks,S&P 500,300.9425,22.7127,total_return,backtest,false
+2026-09,10,BNY,BNY Mellon,S&P 500,286.9888,15.6709,total_return,backtest,false
+2026-10,1,LITE,Lumentum,S&P 500,2049.7565,13.1926,total_return,backtest,true
+2026-10,2,PLTR,Palantir Technologies,S&P 500,1069.0625,60.3240,total_return,backtest,true
+2026-10,3,HOOD,Robinhood Markets,S&P 500,1046.7890,12.1859,total_return,backtest,true
+2026-10,4,DELL,Dell Technologies,S&P 500,719.2511,24.6813,total_return,backtest,false
+2026-10,5,CRWD,CrowdStrike,S&P 500,532.6921,38.7688,total_return,backtest,false
+2026-10,6,AMD,Advanced Micro Devices,S&P 500,494.9815,5.3106,total_return,backtest,false
+2026-10,7,NVDA,Nvidia,S&P 500,426.5913,14.1386,total_return,backtest,false
+2026-10,8,ANET,Arista Networks,S&P 500,342.7554,19.8434,total_return,backtest,false
+2026-10,9,HPE,Hewlett Packard Enterprise,S&P 500,295.6674,41.6316,total_return,backtest,false
+2026-10,10,P,Everpure,S&P 500,267.1533,65.9855,total_return,backtest,false
+2026-11,1,LITE,Lumentum,S&P 500,2044.0959,17.7550,total_return,backtest,true
+2026-11,2,MU,Micron Technology,S&P 500,1235.8417,7.4979,total_return,backtest,true
+2026-11,3,CVNA,Carvana,S&P 500,1164.6296,9.5093,total_return,backtest,true
+2026-11,4,PLTR,Palantir Technologies,S&P 500,1143.9865,49.6099,total_return,backtest,false
+2026-11,5,ECHO,EchoStar,S&P 500,599.4228,15.2812,total_return,backtest,false
+2026-11,6,DELL,Dell Technologies,S&P 500,562.5712,4.6698,total_return,backtest,false
+2026-11,7,CRWD,CrowdStrike,S&P 500,466.6799,31.2114,total_return,backtest,false
+2026-11,8,AMD,Advanced Micro Devices,S&P 500,412.4873,6.0170,total_return,backtest,false
+2026-11,9,NVDA,Nvidia,S&P 500,403.3130,1.9377,total_return,backtest,false
+2026-11,10,MRVL,Marvell Technology,S&P 500,319.4197,4.7132,total_return,backtest,false

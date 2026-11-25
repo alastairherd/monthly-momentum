@@ -1,0 +1,53 @@
+name: Monthly Momentum Refresh
+
+on:
+  schedule:
+    # Run at 08:00 UTC on the 1st of every month after the previous month closes.
+    - cron: "0 8 1 * *"
+  workflow_dispatch:
+    inputs:
+      years:
+        description: "Years of monthly price history to fetch"
+        required: false
+        default: "12"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: monthly-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up uv and Python
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync --frozen
+
+      - name: Refresh public S&P 500 dataset, chart, and README
+        run: uv run monthly-momentum refresh --years "${{ github.event.inputs.years || '12' }}"
+
+      - name: Verify deterministic offline report regeneration
+        run: uv run monthly-momentum report
+
+      - name: Commit and push updated dataset & README
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          WINDOW=$(python3 -c 'import json; print(json.load(open("data/summary.json"))["latest_window"])')
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ assets/ README.md
+          git commit -m "chore(data): monthly momentum refresh (${WINDOW})"
+          git push

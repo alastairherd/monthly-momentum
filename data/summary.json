@@ -1,0 +1,170 @@
+{
+  "latest_window": "2026-11",
+  "latest_signal_month": "2026-10",
+  "backtest_start_window": "2017-12",
+  "windows_count": 108,
+  "months_invested": 107,
+  "monthly_contribution_gbp": 500.0,
+  "total_contributed_gbp": 53500.0,
+  "fee_pct": 0.15,
+  "constituents_count": 503,
+  "latest_eligible_count": 261,
+  "top3_picks": [
+    {
+      "rank": 1,
+      "ticker": "LITE",
+      "name": "Lumentum",
+      "sector": "Information Technology",
+      "return_3y_pct": 2044.0959,
+      "return_3m_pct": 17.755
+    },
+    {
+      "rank": 2,
+      "ticker": "MU",
+      "name": "Micron Technology",
+      "sector": "Information Technology",
+      "return_3y_pct": 1235.8417,
+      "return_3m_pct": 7.4979
+    },
+    {
+      "rank": 3,
+      "ticker": "CVNA",
+      "name": "Carvana",
+      "sector": "Consumer Discretionary",
+      "return_3y_pct": 1164.6296,
+      "return_3m_pct": 9.5093
+    }
+  ],
+  "top10": [
+    {
+      "rank": 1,
+      "ticker": "LITE",
+      "name": "Lumentum",
+      "sector": "Information Technology",
+      "return_3y_pct": 2044.0959,
+      "return_3m_pct": 17.755
+    },
+    {
+      "rank": 2,
+      "ticker": "MU",
+      "name": "Micron Technology",
+      "sector": "Information Technology",
+      "return_3y_pct": 1235.8417,
+      "return_3m_pct": 7.4979
+    },
+    {
+      "rank": 3,
+      "ticker": "CVNA",
+      "name": "Carvana",
+      "sector": "Consumer Discretionary",
+      "return_3y_pct": 1164.6296,
+      "return_3m_pct": 9.5093
+    },
+    {
+      "rank": 4,
+      "ticker": "PLTR",
+      "name": "Palantir Technologies",
+      "sector": "Information Technology",
+      "return_3y_pct": 1143.9865,
+      "return_3m_pct": 49.6099
+    },
+    {
+      "rank": 5,
+      "ticker": "ECHO",
+      "name": "EchoStar",
+      "sector": "Communication Services",
+      "return_3y_pct": 599.4228,
+      "return_3m_pct": 15.2812
+    },
+    {
+      "rank": 6,
+      "ticker": "DELL",
+      "name": "Dell Technologies",
+      "sector": "Information Technology",
+      "return_3y_pct": 562.5712,
+      "return_3m_pct": 4.6698
+    },
+    {
+      "rank": 7,
+      "ticker": "CRWD",
+      "name": "CrowdStrike",
+      "sector": "Information Technology",
+      "return_3y_pct": 466.6799,
+      "return_3m_pct": 31.2114
+    },
+    {
+      "rank": 8,
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
+      "sector": "Information Technology",
+      "return_3y_pct": 412.4873,
+      "return_3m_pct": 6.017
+    },
+    {
+      "rank": 9,
+      "ticker": "NVDA",
+      "name": "Nvidia",
+      "sector": "Information Technology",
+      "return_3y_pct": 403.313,
+      "return_3m_pct": 1.9377
+    },
+    {
+      "rank": 10,
+      "ticker": "MRVL",
+      "name": "Marvell Technology",
+      "sector": "Information Technology",
+      "return_3y_pct": 319.4197,
+      "return_3m_pct": 4.7132
+    }
+  ],
+  "variants": {
+    "Aggressive (Top 1)": {
+      "ending_value_gbp": 328881.51,
+      "xirr_pct": 38.95,
+      "twr_cagr_pct": 34.16,
+      "max_drawdown_pct": -55.86,
+      "rolling_5y_win_rate_pct": 100.0,
+      "rule6_exits_count": 0
+    },
+    "Standard (Top 3)": {
+      "ending_value_gbp": 236239.2,
+      "xirr_pct": 31.84,
+      "twr_cagr_pct": 30.45,
+      "max_drawdown_pct": -51.03,
+      "rolling_5y_win_rate_pct": 100.0,
+      "rule6_exits_count": 0
+    },
+    "Standard (Top 3 + Rule 6)": {
+      "ending_value_gbp": 235167.3,
+      "xirr_pct": 31.74,
+      "twr_cagr_pct": 30.38,
+      "max_drawdown_pct": -51.03,
+      "rolling_5y_win_rate_pct": 100.0,
+      "rule6_exits_count": 16
+    },
+    "Cautious (Top 10)": {
+      "ending_value_gbp": 166739.5,
+      "xirr_pct": 24.42,
+      "twr_cagr_pct": 23.18,
+      "max_drawdown_pct": -42.13,
+      "rolling_5y_win_rate_pct": 100.0,
+      "rule6_exits_count": 0
+    },
+    "Cautious (Top 10 + Rule 6)": {
+      "ending_value_gbp": 165541.13,
+      "xirr_pct": 24.27,
+      "twr_cagr_pct": 23.08,
+      "max_drawdown_pct": -42.13,
+      "rolling_5y_win_rate_pct": 100.0,
+      "rule6_exits_count": 64
+    },
+    "S&P 500 TR (^SP500TR)": {
+      "ending_value_gbp": 110379.72,
+      "xirr_pct": 15.67,
+      "twr_cagr_pct": 14.33,
+      "max_drawdown_pct": -23.87
+    }
+  },
+  "survivorship_warning": true,
+  "rule6_signals": []
+}

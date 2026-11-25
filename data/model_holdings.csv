@@ -1,0 +1,67 @@
+ticker,name,index,first_bought_date,last_top10_month,status,notes
+NVDA,Nvidia,S&P 500,2017-12-01,2026-11,holding,Bought in 2017-12 rank #1
+ALGN,Align Technology,S&P 500,2017-12-01,2019-12,rule6_stage1_sold,Bought in 2017-12 rank #2; Rule 6 sell_third (2025-12)
+NFLX,Netflix,S&P 500,2017-12-01,2025-09,holding,Bought in 2017-12 rank #3
+AMD,Advanced Micro Devices,S&P 500,2018-02-01,2026-11,holding,Bought in 2018-02 rank #2
+AMZN,Amazon,S&P 500,2018-05-01,2020-10,rule6_stage1_sold,Bought in 2018-05 rank #2; Rule 6 sell_third (2026-10)
+IDXX,Idexx Laboratories,S&P 500,2018-05-01,2021-01,holding,Bought in 2018-05 rank #3
+TTWO,Take-Two Interactive,S&P 500,2018-11-01,2019-10,rule6_stage2_sold,Bought in 2018-11 rank #1; Rule 6 sell_third (2025-10); Rule 6 sell_half (2026-10)
+ISRG,Intuitive Surgical,S&P 500,2018-11-01,2018-11,sold,Bought in 2018-11 rank #2; Rule 6 sell_third (2024-11); Rule 6 sell_half (2025-11); Rule 6 sell_remaining (2026-11)
+NRG,NRG Energy,S&P 500,2018-11-01,2026-03,holding,Bought in 2018-11 rank #3
+UNH,UnitedHealth Group,S&P 500,2018-12-01,2022-07,holding,Bought in 2018-12 rank #2
+BA,Boeing,S&P 500,2018-12-01,2019-10,rule6_stage2_sold,Bought in 2018-12 rank #3; Rule 6 sell_third (2025-10); Rule 6 sell_half (2026-10)
+CME,CME Group,S&P 500,2019-01-01,2019-01,rule6_stage2_sold,Bought in 2019-01 rank #2; Rule 6 sell_third (2025-01); Rule 6 sell_half (2026-01)
+NEM,Newmont,S&P 500,2019-01-01,2022-05,holding,Bought in 2019-01 rank #3
+ANET,Arista Networks,S&P 500,2019-03-01,2026-10,holding,Bought in 2019-03 rank #2
+CSX,CSX Corporation,S&P 500,2019-06-01,2019-07,rule6_stage2_sold,Bought in 2019-06 rank #3; Rule 6 sell_third (2025-07); Rule 6 sell_half (2026-07)
+MSCI,MSCI,S&P 500,2019-07-01,2021-11,holding,Bought in 2019-07 rank #3
+MU,Micron Technology,S&P 500,2019-08-01,2026-11,holding,Bought in 2019-08 rank #2; Rule 6 sell_third (2025-11); Returned to top 10 (2026-01)
+CPRT,Copart,S&P 500,2019-08-01,2020-11,rule6_stage1_sold,Bought in 2019-08 rank #3; Rule 6 sell_third (2026-11)
+KEYS,Keysight Technologies,S&P 500,2019-09-01,2021-02,holding,Bought in 2019-09 rank #2
+FTNT,Fortinet,S&P 500,2019-12-01,2023-05,holding,Bought in 2019-12 rank #3
+NOW,ServiceNow,S&P 500,2020-01-01,2021-02,holding,Bought in 2020-01 rank #2
+TDG,TransDigm Group,S&P 500,2020-02-01,2020-02,rule6_stage1_sold,Bought in 2020-02 rank #3; Rule 6 sell_third (2026-02)
+DXCM,Dexcom,S&P 500,2020-06-01,2022-11,holding,Bought in 2020-06 rank #1
+CMG,Chipotle Mexican Grill,S&P 500,2020-11-01,2021-10,holding,Bought in 2020-11 rank #1
+ZBRA,Zebra Technologies,S&P 500,2020-12-01,2021-08,holding,Bought in 2020-12 rank #3
+TSLA,"Tesla, Inc.",S&P 500,2021-01-01,2023-07,holding,Bought in 2021-01 rank #1
+GNRC,Generac,S&P 500,2021-04-01,2022-08,holding,Bought in 2021-04 rank #1
+CDNS,Cadence Design Systems,S&P 500,2021-04-01,2022-10,holding,Bought in 2021-04 rank #3
+TER,Teradyne,S&P 500,2021-05-01,2022-01,holding,Bought in 2021-05 rank #3
+WST,West Pharmaceutical Services,S&P 500,2021-06-01,2022-01,holding,Bought in 2021-06 rank #1
+MPWR,Monolithic Power Systems,S&P 500,2021-10-01,2023-03,holding,Bought in 2021-10 rank #3
+AAPL,Apple Inc.,S&P 500,2022-02-01,2022-10,holding,Bought in 2022-02 rank #1
+KLAC,KLA Corporation,S&P 500,2022-02-01,2024-07,holding,Bought in 2022-02 rank #2
+QCOM,Qualcomm,S&P 500,2022-02-01,2022-02,holding,Bought in 2022-02 rank #3
+FCX,Freeport-McMoRan,S&P 500,2022-03-01,2023-04,holding,Bought in 2022-03 rank #2
+HWM,Howmet Aerospace,S&P 500,2022-03-01,2026-08,holding,Bought in 2022-03 rank #3
+PWR,Quanta Services,S&P 500,2022-04-01,2024-05,holding,Bought in 2022-04 rank #3
+TGT,Target Corporation,S&P 500,2022-05-01,2022-05,holding,Bought in 2022-05 rank #2
+NUE,Nucor,S&P 500,2022-05-01,2024-03,holding,Bought in 2022-05 rank #3
+ALB,Albemarle Corporation,S&P 500,2022-06-01,2023-02,holding,Bought in 2022-06 rank #1
+LLY,Lilly (Eli),S&P 500,2022-07-01,2025-05,holding,Bought in 2022-07 rank #1
+MCK,McKesson,S&P 500,2022-07-01,2024-08,holding,Bought in 2022-07 rank #2
+MRNA,Moderna,S&P 500,2022-08-01,2023-02,holding,Bought in 2022-08 rank #2
+DVN,Devon Energy,S&P 500,2022-11-01,2023-09,holding,Bought in 2022-11 rank #2
+STLD,Steel Dynamics,S&P 500,2023-01-01,2024-04,holding,Bought in 2023-01 rank #3
+ON,ON Semiconductor,S&P 500,2023-04-01,2023-09,holding,Bought in 2023-04 rank #1
+MPC,Marathon Petroleum,S&P 500,2023-04-01,2024-09,holding,Bought in 2023-04 rank #2
+TRGP,Targa Resources,S&P 500,2023-05-01,2025-04,holding,Bought in 2023-05 rank #1
+FSLR,First Solar,S&P 500,2023-05-01,2024-06,holding,Bought in 2023-05 rank #3
+OXY,Occidental Petroleum,S&P 500,2023-09-01,2023-10,holding,Bought in 2023-09 rank #3
+FANG,Diamondback Energy,S&P 500,2023-10-01,2024-08,holding,Bought in 2023-10 rank #3
+SMCI,Supermicro,S&P 500,2024-04-01,2025-09,holding,Bought in 2024-04 rank #1
+VST,Vistra Corp.,S&P 500,2024-06-01,2025-10,holding,Bought in 2024-06 rank #2
+FICO,Fair Isaac,S&P 500,2024-10-01,2025-05,holding,Bought in 2024-10 rank #2
+CEG,Constellation Energy,S&P 500,2025-02-01,2026-01,holding,Bought in 2025-02 rank #2
+PLTR,Palantir Technologies,S&P 500,2025-02-01,2026-11,holding,Bought in 2025-02 rank #3
+AXON,Axon Enterprise,S&P 500,2025-06-01,2025-08,holding,Bought in 2025-06 rank #2
+RCL,Royal Caribbean Group,S&P 500,2025-09-01,2026-02,holding,Bought in 2025-09 rank #3
+APP,AppLovin,S&P 500,2025-10-01,2026-07,holding,Bought in 2025-10 rank #1
+HOOD,Robinhood Markets,S&P 500,2025-12-01,2026-10,holding,Bought in 2025-12 rank #3
+CVNA,Carvana,S&P 500,2026-01-01,2026-11,holding,Bought in 2026-01 rank #1
+FIX,Comfort Systems USA,S&P 500,2026-01-01,2026-07,holding,Bought in 2026-01 rank #2
+WDC,Western Digital,S&P 500,2026-01-01,2026-08,holding,Bought in 2026-01 rank #3
+VRT,Vertiv,S&P 500,2026-04-01,2026-07,holding,Bought in 2026-04 rank #1
+LITE,Lumentum,S&P 500,2026-04-01,2026-11,holding,Bought in 2026-04 rank #2
+STX,Seagate Technology,S&P 500,2026-08-01,2026-08,holding,Bought in 2026-08 rank #2
