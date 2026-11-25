@@ -9,10 +9,11 @@ from monthly_momentum.normalize import ticker_match_key
 
 
 class StrategyVariant(StrEnum):
-    """Supported position-count strategy variants from docs/rules.md."""
+    """Supported position-count strategy variants from docs/rules.md and docs/research.md."""
 
     AGGRESSIVE = "aggressive"
     STANDARD = "standard"
+    BALANCED = "balanced"
     CAUTIOUS = "cautious"
 
     @property
@@ -21,6 +22,8 @@ class StrategyVariant(StrEnum):
             return 1
         if self is StrategyVariant.STANDARD:
             return 3
+        if self is StrategyVariant.BALANCED:
+            return 5
         return 10
 
     @property
@@ -29,6 +32,8 @@ class StrategyVariant(StrEnum):
             return "Aggressive (Top 1)"
         if self is StrategyVariant.STANDARD:
             return "Standard (Top 3)"
+        if self is StrategyVariant.BALANCED:
+            return "Balanced (Top 5)"
         return "Cautious (Top 10)"
 
 

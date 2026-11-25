@@ -96,9 +96,11 @@ def test_rebuild_public_reports_and_idempotency(tmp_path: Path) -> None:
     summary_data = json.loads(summary.summary_json_path.read_text(encoding="utf-8"))
     assert summary_data["latest_window"] == "2026-01"
     assert [p["ticker"] for p in summary_data["top3_picks"]] == ["AAA", "BBB", "CCC"]
+    assert "Balanced (Top 5)" in summary_data["variants"]
 
     readme_text = (tmp_path / "README.md").read_text(encoding="utf-8")
     assert "Latest Mechanistic Picks — 2026-01 Window" in readme_text
+    assert "Balanced (Top 5)" in readme_text
     assert "assets/performance.png" in readme_text
     assert "## Footer\nKeep me." in readme_text
     assert "PLACEHOLDER_OLD_CONTENT" not in readme_text

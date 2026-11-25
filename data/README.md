@@ -4,9 +4,11 @@
 
 All public market data and mechanistic strategy outputs live directly in `data/` and are refreshed automatically by the monthly GitHub Action (`.github/workflows/monthly-refresh.yml`) or manually via `uv run monthly-momentum refresh`:
 
-- `data/constituents.csv` — Current index constituents fetched from Wikipedia (`Symbol`, `Security`, `GICS Sector`, `GICS Sub-Industry`, `Date added`).
+- `data/constituents_history.csv` — Historical S&P 500 membership intervals (`fja05680/sp500` back to 1996 + live Wikipedia updates).
+- `data/constituents.csv` — Current S&P 500 index constituents fetched from Wikipedia (`Symbol`, `Security`, `GICS Sector`, `GICS Sub-Industry`, `Date added`).
 - `data/constituent_snapshots.csv` — Monthly point-in-time constituent roster snapshots accumulated across refreshes.
-- `data/monthly_prices.csv` — Completed monthly `close` and dividend/split-adjusted `adj_close` bars for index members and benchmark `^SP500TR`.
+- `data/monthly_prices.csv` — Completed monthly `close` and dividend/split-adjusted `adj_close` bars (20-year HF + Yahoo ratio-spliced series + `^SP500TR`).
+- `data/global/` — International index constituents (`FTSE 100`, `S&P/TSX 60`, `EURO STOXX 50`), monthly prices, FX rates (`GBPUSD=X`, `CADUSD=X`, `EURUSD=X`), and global rankings.
 - `data/rankings/latest.csv` — Latest investment window's Top 10 ranking snapshot (matches `templates/monthly-ranking.example.csv`).
 - `data/rankings/history.csv` — Mechanistic Top 10 ranking history across every monthly window.
 - `data/model_holdings.csv` — Mechanistic Rule 6 tracking log for the model Top 3 portfolio (matches `templates/holdings.example.csv`).

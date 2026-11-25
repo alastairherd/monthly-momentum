@@ -55,6 +55,12 @@ class BacktestMetrics:
     benchmark_twr_cagr_pct: float | None
     benchmark_max_drawdown_pct: float | None
     rolling_5y: RollingComparison | None
+    top_holding_ticker: str | None = None
+    top_holding_weight_pct: float = 0.0
+    max_single_holding_weight_pct: float = 0.0
+    top5_holdings_weight_pct: float = 0.0
+    active_holdings_count: int = 0
+    delistings_liquidated_count: int = 0
 
 
 def _xnpv(rate: float, cash_flows: list[tuple[date, float]]) -> float:
@@ -223,6 +229,12 @@ def compute_backtest_metrics(
     benchmark_cash_flows: list[tuple[date, float]] | None = None,
     benchmark_ending_value: float | None = None,
     risk_free_rate: float = 0.0,
+    top_holding_ticker: str | None = None,
+    top_holding_weight_pct: float = 0.0,
+    max_single_holding_weight_pct: float = 0.0,
+    top5_holdings_weight_pct: float = 0.0,
+    active_holdings_count: int = 0,
+    delistings_liquidated_count: int = 0,
 ) -> BacktestMetrics:
     """Compute full strategy and benchmark comparison metrics."""
     profit = ending_value - total_contributed
@@ -288,4 +300,10 @@ def compute_backtest_metrics(
         benchmark_twr_cagr_pct=bench_cagr,
         benchmark_max_drawdown_pct=bench_dd,
         rolling_5y=rolling_5y,
+        top_holding_ticker=top_holding_ticker,
+        top_holding_weight_pct=top_holding_weight_pct,
+        max_single_holding_weight_pct=max_single_holding_weight_pct,
+        top5_holdings_weight_pct=top5_holdings_weight_pct,
+        active_holdings_count=active_holdings_count,
+        delistings_liquidated_count=delistings_liquidated_count,
     )

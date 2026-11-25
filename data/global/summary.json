@@ -1,0 +1,266 @@
+{
+  "ftse100": {
+    "latest_window": "2026-11",
+    "start_window": "2017-12",
+    "windows_count": 108,
+    "top5": [
+      {
+        "rank": 1,
+        "ticker": "BGEO.L",
+        "name": "Lion Finance Group",
+        "sector": "Banks",
+        "return_3y_pct": 261.72,
+        "return_3m_pct": 3.62
+      },
+      {
+        "rank": 2,
+        "ticker": "PCT.L",
+        "name": "Polar Capital Technology Trust",
+        "sector": "Closed End Investments",
+        "return_3y_pct": 202.85,
+        "return_3m_pct": 3.69
+      },
+      {
+        "rank": 3,
+        "ticker": "SMT.L",
+        "name": "Scottish Mortgage Investment Trust",
+        "sector": "Closed End Investments",
+        "return_3y_pct": 147.85,
+        "return_3m_pct": 19.62
+      },
+      {
+        "rank": 4,
+        "ticker": "NXT.L",
+        "name": "Next plc",
+        "sector": "Retailers",
+        "return_3y_pct": 123.25,
+        "return_3m_pct": 3.44
+      },
+      {
+        "rank": 5,
+        "ticker": "IHG.L",
+        "name": "IHG Hotels & Resorts",
+        "sector": "Travel and Leisure",
+        "return_3y_pct": 120.96,
+        "return_3m_pct": 4.08
+      }
+    ],
+    "variants": {
+      "Aggressive (Top 1)": {
+        "ending_value_gbp": 102801.0,
+        "xirr_pct": 14.16,
+        "twr_cagr_pct": 15.47,
+        "max_drawdown_pct": -48.79
+      },
+      "Standard (Top 3)": {
+        "ending_value_gbp": 91694.5,
+        "xirr_pct": 11.71,
+        "twr_cagr_pct": 11.41,
+        "max_drawdown_pct": -38.4
+      },
+      "Standard (Top 3 + Rule 6)": {
+        "ending_value_gbp": 91649.97,
+        "xirr_pct": 11.7,
+        "twr_cagr_pct": 11.41,
+        "max_drawdown_pct": -38.4
+      },
+      "Balanced (Top 5)": {
+        "ending_value_gbp": 88487.33,
+        "xirr_pct": 10.95,
+        "twr_cagr_pct": 9.91,
+        "max_drawdown_pct": -33.55
+      },
+      "Balanced (Top 5 + Rule 6)": {
+        "ending_value_gbp": 88594.68,
+        "xirr_pct": 10.98,
+        "twr_cagr_pct": 9.93,
+        "max_drawdown_pct": -33.55
+      },
+      "Cautious (Top 10)": {
+        "ending_value_gbp": 87535.63,
+        "xirr_pct": 10.72,
+        "twr_cagr_pct": 9.61,
+        "max_drawdown_pct": -30.99
+      },
+      "Cautious (Top 10 + Rule 6)": {
+        "ending_value_gbp": 87547.34,
+        "xirr_pct": 10.72,
+        "twr_cagr_pct": 9.62,
+        "max_drawdown_pct": -30.99
+      }
+    },
+    "benchmark_ftse_tr_etf_xirr_pct": 7.39
+  },
+  "global_pool": {
+    "latest_window": "2026-11",
+    "start_window": "2017-12",
+    "windows_count": 108,
+    "universe_size": 841,
+    "top3": [
+      {
+        "rank": 1,
+        "ticker": "LITE",
+        "name": "Lumentum",
+        "index": "S&P 500",
+        "currency": "USD",
+        "return_3y_usd_pct": 2044.1,
+        "return_3m_usd_pct": 17.75
+      },
+      {
+        "rank": 2,
+        "ticker": "MU",
+        "name": "Micron Technology",
+        "index": "S&P 500",
+        "currency": "USD",
+        "return_3y_usd_pct": 1235.84,
+        "return_3m_usd_pct": 7.5
+      },
+      {
+        "rank": 3,
+        "ticker": "CVNA",
+        "name": "Carvana",
+        "index": "S&P 500",
+        "currency": "USD",
+        "return_3y_usd_pct": 1164.63,
+        "return_3m_usd_pct": 9.51
+      }
+    ],
+    "top10": [
+      {
+        "rank": 1,
+        "ticker": "LITE",
+        "name": "Lumentum",
+        "index": "S&P 500",
+        "currency": "USD",
+        "return_3y_usd_pct": 2044.1,
+        "return_3m_usd_pct": 17.75
+      },
+      {
+        "rank": 2,
+        "ticker": "MU",
+        "name": "Micron Technology",
+        "index": "S&P 500",
+        "currency": "USD",
+        "return_3y_usd_pct": 1235.84,
+        "return_3m_usd_pct": 7.5
+      },
+      {
+        "rank": 3,
+        "ticker": "CVNA",
+        "name": "Carvana",
+        "index": "S&P 500",
+        "currency": "USD",
+        "return_3y_usd_pct": 1164.63,
+        "return_3m_usd_pct": 9.51
+      },
+      {
+        "rank": 4,
+        "ticker": "PLTR",
+        "name": "Palantir Technologies",
+        "index": "S&P 500",
+        "currency": "USD",
+        "return_3y_usd_pct": 1143.99,
+        "return_3m_usd_pct": 49.61
+      },
+      {
+        "rank": 5,
+        "ticker": "ECHO",
+        "name": "EchoStar",
+        "index": "S&P 500",
+        "currency": "USD",
+        "return_3y_usd_pct": 599.42,
+        "return_3m_usd_pct": 15.28
+      },
+      {
+        "rank": 6,
+        "ticker": "DELL",
+        "name": "Dell Technologies",
+        "index": "S&P 500",
+        "currency": "USD",
+        "return_3y_usd_pct": 562.57,
+        "return_3m_usd_pct": 4.67
+      },
+      {
+        "rank": 7,
+        "ticker": "CRWD",
+        "name": "CrowdStrike",
+        "index": "S&P 500",
+        "currency": "USD",
+        "return_3y_usd_pct": 466.68,
+        "return_3m_usd_pct": 31.21
+      },
+      {
+        "rank": 8,
+        "ticker": "AMD",
+        "name": "Advanced Micro Devices",
+        "index": "S&P 500",
+        "currency": "USD",
+        "return_3y_usd_pct": 412.49,
+        "return_3m_usd_pct": 6.02
+      },
+      {
+        "rank": 9,
+        "ticker": "NVDA",
+        "name": "Nvidia",
+        "index": "S&P 500",
+        "currency": "USD",
+        "return_3y_usd_pct": 403.31,
+        "return_3m_usd_pct": 1.94
+      },
+      {
+        "rank": 10,
+        "ticker": "MRVL",
+        "name": "Marvell Technology",
+        "index": "S&P 500",
+        "currency": "USD",
+        "return_3y_usd_pct": 319.42,
+        "return_3m_usd_pct": 4.71
+      }
+    ],
+    "variants": {
+      "Aggressive (Top 1)": {
+        "ending_value": 272192.98,
+        "xirr_pct": 34.87,
+        "twr_cagr_pct": 30.28,
+        "max_drawdown_pct": -48.28
+      },
+      "Standard (Top 3)": {
+        "ending_value": 220436.55,
+        "xirr_pct": 30.36,
+        "twr_cagr_pct": 29.3,
+        "max_drawdown_pct": -45.04
+      },
+      "Standard (Top 3 + Rule 6)": {
+        "ending_value": 221158.41,
+        "xirr_pct": 30.43,
+        "twr_cagr_pct": 29.35,
+        "max_drawdown_pct": -45.04
+      },
+      "Balanced (Top 5)": {
+        "ending_value": 191643.53,
+        "xirr_pct": 27.38,
+        "twr_cagr_pct": 26.34,
+        "max_drawdown_pct": -46.51
+      },
+      "Balanced (Top 5 + Rule 6)": {
+        "ending_value": 191842.77,
+        "xirr_pct": 27.4,
+        "twr_cagr_pct": 26.36,
+        "max_drawdown_pct": -46.51
+      },
+      "Cautious (Top 10)": {
+        "ending_value": 170642.19,
+        "xirr_pct": 24.91,
+        "twr_cagr_pct": 25.75,
+        "max_drawdown_pct": -43.83
+      },
+      "Cautious (Top 10 + Rule 6)": {
+        "ending_value": 170425.0,
+        "xirr_pct": 24.89,
+        "twr_cagr_pct": 25.74,
+        "max_drawdown_pct": -43.83
+      }
+    },
+    "benchmark_sp500tr_xirr_pct": 15.67
+  }
+}

@@ -11,9 +11,11 @@ from monthly_momentum.backtest.engine import (
     BacktestConfig,
     BacktestResult,
     MonthlyBacktestPoint,
+    SubperiodRow,
     VariantSummary,
     compare_variants,
     run_backtest,
+    run_subperiod_summary,
 )
 from monthly_momentum.backtest.metrics import (
     BacktestMetrics,
@@ -36,6 +38,7 @@ __all__ = [
     "MonthlyBacktestPoint",
     "PricePoint",
     "RollingComparison",
+    "SubperiodRow",
     "VariantSummary",
     "compare_variants",
     "compute_backtest_metrics",
@@ -44,4 +47,5 @@ __all__ = [
     "compute_xirr",
     "load_backtest_dataset",
     "run_backtest",
+    "run_subperiod_summary",
 ]

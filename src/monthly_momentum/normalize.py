@@ -80,6 +80,33 @@ def to_yahoo_ticker(ticker: str) -> str:
     return normalized
 
 
+def ftse_to_yahoo(raw: str) -> str:
+    """Convert a FTSE 100 symbol (e.g. ``RR.``, ``BT.A``, ``AZN``) to Yahoo ``.L`` format."""
+    cleaned = raw.strip().upper()
+    if not cleaned:
+        return ""
+    if cleaned.endswith(".L"):
+        base = cleaned[:-2].replace(".", "-")
+        return f"{base}.L"
+    if cleaned.endswith("."):
+        base = cleaned[:-1].replace(".", "-")
+        return f"{base}.L"
+    base = cleaned.replace(".", "-")
+    return f"{base}.L"
+
+
+def tsx_to_yahoo(raw: str) -> str:
+    """Convert an S&P/TSX 60 symbol (e.g. ``CTC.A``, ``BIP.UN``, ``RY``) to Yahoo ``.TO``."""
+    cleaned = raw.strip().upper()
+    if not cleaned:
+        return ""
+    if cleaned.endswith(".TO"):
+        base = cleaned[:-3].replace(".", "-")
+        return f"{base}.TO"
+    base = cleaned.replace(".", "-")
+    return f"{base}.TO"
+
+
 def parse_percent(raw: str | float | int | None) -> float | None:
     """Parse a percentage string or numeric value into a float percentage."""
     if raw is None or isinstance(raw, bool):

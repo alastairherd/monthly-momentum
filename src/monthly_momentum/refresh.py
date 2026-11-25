@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import csv
-from collections.abc import Sequence
+from collections.abc import Mapping, Sequence
 from dataclasses import dataclass
 from datetime import UTC, date, datetime
 from pathlib import Path
@@ -31,12 +31,42 @@ class RefreshResult:
     report: PublicReportSummary
 
 
+def _splice_ticker_bars(
+    existing_bars: Mapping[str, tuple[float, float, str]],
+    fresh_bars: Mapping[str, tuple[float, float, str]],
+) -> dict[str, tuple[float, float, str]]:
+    """Ratio-splice existing historical bars onto fresh Yahoo bars at earliest overlap."""
+    if not fresh_bars:
+        return dict(existing_bars)
+    if not existing_bars:
+        return dict(fresh_bars)
+
+    overlap = sorted(set(existing_bars) & set(fresh_bars))
+    out: dict[str, tuple[float, float, str]] = {}
+    if overlap:
+        ov = overlap[0]
+        old_c, old_a, _ = existing_bars[ov]
+        new_c, new_a, _ = fresh_bars[ov]
+        c_scale = (new_c / old_c) if old_c > 0.0 and new_c > 0.0 else 1.0
+        a_scale = (new_a / old_a) if old_a > 0.0 and new_a > 0.0 else 1.0
+        for dt_s, (c_v, a_v, mkt) in existing_bars.items():
+            if dt_s < ov:
+                out[dt_s] = (c_v * c_scale, a_v * a_scale, mkt)
+        for dt_s, vals in fresh_bars.items():
+            out[dt_s] = vals
+    else:
+        out.update(existing_bars)
+        out.update(fresh_bars)
+
+    return out
+
+
 def merge_monthly_price_rows(
     existing_path: Path,
     fresh_rows: Sequence[dict[str, str]],
 ) -> list[dict[str, str]]:
-    """Merge fresh monthly bars with existing CSV rows so removed tickers keep history."""
-    merged: dict[tuple[str, str], dict[str, str]] = {}
+    """Ratio-splice fresh monthly bars with existing CSV rows preserving removed tickers."""
+    existing_by_ticker: dict[str, dict[str, tuple[float, float, str]]] = {}
     if existing_path.exists():
         with existing_path.open("r", encoding="utf-8-sig", newline="") as fh:
             for row in csv.DictReader(fh):
@@ -44,28 +74,45 @@ def merge_monthly_price_rows(
                 ticker = normalize_ticker(row.get("ticker") or "")
                 if not dt_str or not ticker:
                     continue
-                merged[(dt_str, ticker)] = {
-                    "date": dt_str,
-                    "ticker": ticker,
-                    "close": (row.get("close") or "").strip(),
-                    "adj_close": (row.get("adj_close") or "").strip(),
-                    "market": (row.get("market") or "us").strip(),
-                }
+                try:
+                    c_val = float(row["close"])
+                    a_val = float(row["adj_close"])
+                except (KeyError, TypeError, ValueError):
+                    continue
+                mkt = (row.get("market") or "us").strip()
+                existing_by_ticker.setdefault(ticker, {})[dt_str] = (c_val, a_val, mkt)
 
+    fresh_by_ticker: dict[str, dict[str, tuple[float, float, str]]] = {}
     for row in fresh_rows:
         dt_str = row["date"].strip()
         ticker = normalize_ticker(row["ticker"])
         if not dt_str or not ticker:
             continue
-        merged[(dt_str, ticker)] = {
-            "date": dt_str,
-            "ticker": ticker,
-            "close": row["close"],
-            "adj_close": row["adj_close"],
-            "market": row["market"],
-        }
+        fresh_by_ticker.setdefault(ticker, {})[dt_str] = (
+            float(row["close"]),
+            float(row["adj_close"]),
+            row["market"],
+        )
 
-    return [merged[key] for key in sorted(merged)]
+    merged_rows: list[dict[str, str]] = []
+    for ticker in sorted(set(existing_by_ticker) | set(fresh_by_ticker)):
+        combined = _splice_ticker_bars(
+            existing_by_ticker.get(ticker, {}),
+            fresh_by_ticker.get(ticker, {}),
+        )
+        for dt_str, (c_v, a_v, mkt) in combined.items():
+            merged_rows.append(
+                {
+                    "date": dt_str,
+                    "ticker": ticker,
+                    "close": f"{c_v:.4f}",
+                    "adj_close": f"{a_v:.4f}",
+                    "market": mkt,
+                }
+            )
+
+    merged_rows.sort(key=lambda r: (r["date"], r["ticker"]))
+    return merged_rows
 
 
 def write_monthly_prices_csv(rows: Sequence[dict[str, str]], path: Path) -> None:
@@ -122,25 +169,34 @@ def update_constituent_snapshots(
 
 def run_public_refresh(
     root_dir: Path = Path("."),
-    years: int = 12,
+    years: int | None = None,
     as_of: date | None = None,
     include_mtd: bool = False,
     contribution: float = 500.0,
     fee_pct: float = 0.15,
     batch_size: int = 100,
+    with_global: bool | None = None,
 ) -> RefreshResult:
-    """Fetch public S&P 500 data and regenerate committed rankings, chart, and README."""
+    """Fetch public S&P 500 (and optional global) data and regenerate reports."""
+    from monthly_momentum.markets import refresh_global_markets
+    from monthly_momentum.us20 import update_history_from_wiki
+
     eff_as_of = as_of or datetime.now(UTC).date()
     data_dir = root_dir / "data"
+    prices_path = data_dir / "monthly_prices.csv"
+    history_path = data_dir / "constituents_history.csv"
+
+    eff_years = years if years is not None else (4 if history_path.exists() else 12)
 
     constituents = fetch_sp500_constituents()
     constituents_path = data_dir / "constituents.csv"
     write_constituents_csv(constituents, constituents_path)
+    update_history_from_wiki(history_path, constituents, as_of=eff_as_of)
 
     fresh_prices = fetch_monthly_price_history(
         constituents=constituents,
         benchmark_ticker="^SP500TR",
-        years=years,
+        years=eff_years,
         as_of=eff_as_of,
         include_mtd=include_mtd,
         batch_size=batch_size,
@@ -148,7 +204,6 @@ def run_public_refresh(
     if not fresh_prices:
         raise RuntimeError("Yahoo Finance returned zero monthly price rows.")
 
-    prices_path = data_dir / "monthly_prices.csv"
     merged_prices = merge_monthly_price_rows(prices_path, fresh_prices)
     write_monthly_prices_csv(merged_prices, prices_path)
 
@@ -156,6 +211,22 @@ def run_public_refresh(
     snapshot_window = add_months(latest_bar_month, 1)
     snapshots_path = data_dir / "constituent_snapshots.csv"
     update_constituent_snapshots(snapshots_path, snapshot_window, constituents)
+
+    run_global = (
+        with_global
+        if with_global is not None
+        else (data_dir / "global" / "constituents.csv").exists()
+    )
+    if run_global:
+        global_years = (
+            max(eff_years, 4) if (data_dir / "global" / "monthly_prices.csv").exists() else 12
+        )
+        refresh_global_markets(
+            root_dir=root_dir,
+            years=global_years,
+            as_of=eff_as_of,
+            batch_size=min(batch_size, 80),
+        )
 
     report = rebuild_public_reports(
         root_dir=root_dir,

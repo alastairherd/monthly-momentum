@@ -174,9 +174,34 @@ def test_backtest_rule6_rule7_and_variant_comparison(tmp_path: Path) -> None:
     assert res_r6.metrics.ending_value > res_r6.metrics.total_contributed
 
     variants = compare_variants(ds, BacktestConfig(monthly_contribution=500.0))
-    assert len(variants) == 5
+    assert len(variants) == 7
     assert variants[0].label == "Aggressive (Top 1)"
     assert variants[1].label == "Standard (Top 3)"
+    assert variants[3].label == "Balanced (Top 5)"
+    assert res_r6.metrics.takeover_events_count == 1
+    assert res_r6.metrics.top_holding_weight_pct > 0.0
+    assert res_r6.metrics.max_single_holding_weight_pct >= res_r6.metrics.top_holding_weight_pct
+
+    # Without an explicit events file, a held stock whose prices end auto-liquidates as a delist.
+    no_ev_dir = tmp_path / "no_ev"
+    no_ev_dir.mkdir()
+    p2, c2, _ = _write_synthetic_dataset(
+        no_ev_dir, total_months=100, include_exits_and_events=False
+    )
+    ds2 = load_backtest_dataset(p2, c2)
+    res_auto = run_backtest(ds2, BacktestConfig(monthly_contribution=500.0, top_n=3))
+    assert res_auto.metrics.delistings_liquidated_count == 1
+
+    # Excluding STEADY removes STEADY from buys and leaves FADE.
+    res_excl = run_backtest(
+        ds,
+        BacktestConfig(
+            monthly_contribution=500.0,
+            top_n=1,
+            exclude_tickers=("STEADY",),
+        ),
+    )
+    assert all("STEADY" not in pt.top_picks for pt in res_excl.points)
 
 
 def test_backtest_triggers_rule6_exits_when_universe_exceeds_10(tmp_path: Path) -> None:

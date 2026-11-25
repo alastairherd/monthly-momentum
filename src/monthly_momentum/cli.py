@@ -30,6 +30,7 @@ from monthly_momentum.live import (
     load_constituents_csv,
     write_raw_metrics_csv,
 )
+from monthly_momentum.markets import refresh_global_markets
 from monthly_momentum.models import (
     ACTIVE_STATUSES,
     Holding,
@@ -44,6 +45,7 @@ from monthly_momentum.planner import build_monthly_plan
 from monthly_momentum.ranking import rank_securities, read_ranking_csv, write_ranking_csv
 from monthly_momentum.refresh import run_public_refresh
 from monthly_momentum.report import rebuild_public_reports
+from monthly_momentum.us20 import build_us20_dataset
 
 app = typer.Typer(
     name="monthly-momentum",
@@ -130,16 +132,94 @@ def init(
     console.print(f"[green]Initialized holdings sheet:[/green] {holdings_path}")
 
 
+@app.command("build-us20")
+def build_us20(
+    root: Annotated[Path, typer.Option("--root", help="Repository root directory.")] = Path("."),
+    cache_dir: Annotated[
+        Path | None, typer.Option("--cache-dir", help="Local gitignored HF parquet cache.")
+    ] = None,
+    as_of: Annotated[
+        str | None, typer.Option("--as-of", help="Override as-of date (YYYY-MM-DD).")
+    ] = None,
+    contribution: Annotated[
+        float, typer.Option("--contribution", help="Monthly DCA amount for performance stats.")
+    ] = 500.0,
+    fee_pct: Annotated[
+        float, typer.Option("--fee-pct", help="Transaction fee % (Rule 8 default 0.15%).")
+    ] = 0.15,
+    batch_size: Annotated[int, typer.Option("--batch-size")] = 100,
+) -> None:
+    """Build 20-year survivorship-aware US S&P 500 dataset (fja05680 + weib08 + Yahoo)."""
+    as_of_dt = date.fromisoformat(as_of) if as_of else None
+    result = build_us20_dataset(
+        root_dir=root,
+        cache_dir=cache_dir,
+        as_of=as_of_dt,
+        contribution=contribution,
+        fee_pct=fee_pct,
+        batch_size=batch_size,
+    )
+    console.print(
+        f"[green]Built 20y US dataset:[/green] {result.history_rows_count} membership intervals, "
+        f"{result.hf_tickers_matched} HF tickers, {result.yahoo_tickers_matched} Yahoo tickers, "
+        f"{result.price_rows_count} monthly price rows."
+    )
+    console.print(
+        f"Windows [bold]{result.report.windows_count}[/bold] up to "
+        f"[bold]{result.report.latest_window}[/bold]: "
+        f"Top 3 = [bold cyan]{', '.join(result.report.top3_tickers)}[/bold cyan]"
+    )
+
+
+@app.command("global-refresh")
+def global_refresh(
+    root: Annotated[Path, typer.Option("--root", help="Repository root directory.")] = Path("."),
+    years: Annotated[int, typer.Option("--years", help="Years of monthly data to fetch.")] = 12,
+    as_of: Annotated[
+        str | None, typer.Option("--as-of", help="Override as-of date (YYYY-MM-DD).")
+    ] = None,
+    contribution: Annotated[
+        float, typer.Option("--contribution", help="Monthly DCA amount for reports.")
+    ] = 500.0,
+    batch_size: Annotated[int, typer.Option("--batch-size")] = 80,
+) -> None:
+    """Fetch FTSE 100, S&P/TSX 60, EURO STOXX 50, and FX rates, then rebuild reports."""
+    as_of_dt = date.fromisoformat(as_of) if as_of else None
+    res = refresh_global_markets(
+        root_dir=root,
+        years=years,
+        as_of=as_of_dt,
+        batch_size=batch_size,
+    )
+    console.print(
+        f"[green]Refreshed international pools:[/green] {res.constituents_count} constituents, "
+        f"{res.price_rows_count} price rows, {res.fx_rows_count} FX rows."
+    )
+    if (root / "data" / "monthly_prices.csv").exists():
+        summary = rebuild_public_reports(root_dir=root, contribution=contribution)
+        console.print(f"Updated {summary.readme_path} and data/global/summary.json.")
+
+
 @app.command()
 def refresh(
     root: Annotated[Path, typer.Option("--root", help="Repository root directory.")] = Path("."),
-    years: Annotated[int, typer.Option("--years", help="Years of monthly prices to fetch.")] = 12,
+    years: Annotated[
+        int | None,
+        typer.Option("--years", help="Years of monthly prices to fetch (auto: 4 if 20y exists)."),
+    ] = None,
     as_of: Annotated[
         str | None, typer.Option("--as-of", help="Override as-of date (YYYY-MM-DD).")
     ] = None,
     include_mtd: Annotated[
         bool, typer.Option("--include-mtd", help="Include current in-progress calendar month.")
     ] = False,
+    with_global: Annotated[
+        bool | None,
+        typer.Option(
+            "--with-global/--no-with-global",
+            help="Also refresh FTSE 100, TSX 60, EURO STOXX 50, and FX rates.",
+        ),
+    ] = None,
     contribution: Annotated[
         float, typer.Option("--contribution", help="Monthly DCA amount for performance stats.")
     ] = 500.0,
@@ -150,7 +230,7 @@ def refresh(
         int, typer.Option("--batch-size", help="Yahoo Finance ticker download batch size.")
     ] = 100,
 ) -> None:
-    """Fetch public S&P 500 data and regenerate committed rankings, chart, and README."""
+    """Fetch public S&P 500 (and optional global) data and regenerate committed reports."""
     as_of_dt = date.fromisoformat(as_of) if as_of else None
     result = run_public_refresh(
         root_dir=root,
@@ -160,6 +240,7 @@ def refresh(
         contribution=contribution,
         fee_pct=fee_pct,
         batch_size=batch_size,
+        with_global=with_global,
     )
     console.print(
         f"[green]Refreshed public dataset:[/green] {result.constituents_count} constituents, "
@@ -704,14 +785,28 @@ def holdings_record_takeover(
     )
 
 
+def _default_constituents_path(explicit: Path | None) -> Path:
+    if explicit is not None:
+        return explicit
+    hist = Path("data/constituents_history.csv")
+    return hist if hist.exists() else Path("data/constituents.csv")
+
+
+def _parse_exclude_tickers(exclude: str | None) -> tuple[str, ...]:
+    if not exclude:
+        return ()
+    return tuple(normalize_ticker(part) for part in exclude.split(",") if normalize_ticker(part))
+
+
 @app.command()
 def backtest(
     prices: Annotated[Path, typer.Option("--prices", help="Historical prices CSV.")] = Path(
         "data/monthly_prices.csv"
     ),
     constituents: Annotated[
-        Path, typer.Option("--constituents", help="Constituent intervals CSV.")
-    ] = Path("data/constituents.csv"),
+        Path | None,
+        typer.Option("--constituents", help="Constituent intervals CSV."),
+    ] = None,
     events: Annotated[
         Path | None, typer.Option("--events", help="Optional takeovers/delistings CSV.")
     ] = None,
@@ -731,14 +826,20 @@ def backtest(
     signal_mode: Annotated[
         str, typer.Option("--signal-mode", help="same_month or next_month.")
     ] = "same_month",
+    exclude: Annotated[
+        str | None,
+        typer.Option("--exclude", help="Comma-separated tickers to exclude (e.g. NVDA,AMD)."),
+    ] = None,
     equity_out: Annotated[Path | None, typer.Option("--equity-out")] = None,
     json_out: Annotated[bool, typer.Option("--json")] = False,
 ) -> None:
     """Run a survivorship-bias-free monthly DCA backtest."""
     eff_top_n = _resolve_top_n(variant, top_n)
+    eff_constituents = _default_constituents_path(constituents)
+    excluded_tuple = _parse_exclude_tickers(exclude)
     dataset = load_backtest_dataset(
         prices_path=prices,
-        constituents_path=constituents,
+        constituents_path=eff_constituents,
         events_path=events,
         benchmark_path=benchmark_csv,
         benchmark_ticker=benchmark_ticker,
@@ -755,6 +856,7 @@ def backtest(
             fee_pct=fee_pct,
             sell_fee_pct=sell_fee_pct,
             signal_mode=signal_mode,
+            exclude_tickers=excluded_tuple,
         ),
     )
 
@@ -811,9 +913,14 @@ def backtest(
                         round(m.twr_cagr_pct, 2) if m.twr_cagr_pct is not None else None
                     ),
                     "max_drawdown_pct": round(m.max_drawdown_pct, 2),
+                    "top_holding_ticker": m.top_holding_ticker,
+                    "top_holding_weight_pct": round(m.top_holding_weight_pct, 2),
+                    "max_single_holding_weight_pct": round(m.max_single_holding_weight_pct, 2),
+                    "top5_holdings_weight_pct": round(m.top5_holdings_weight_pct, 2),
                     "total_fees_paid": round(m.total_fees_paid, 2),
                     "rule6_exits_count": m.rule6_exits_count,
                     "takeover_events_count": m.takeover_events_count,
+                    "delistings_liquidated_count": m.delistings_liquidated_count,
                     "warnings": res.warnings,
                 },
                 indent=2,
@@ -846,10 +953,20 @@ def backtest(
         f"{m.max_drawdown_pct:.2f}%",
         f"{m.benchmark_max_drawdown_pct:.2f}%" if m.benchmark_max_drawdown_pct is not None else "—",
     )
+    table.add_row(
+        "Top Holding Weight",
+        (
+            f"{m.top_holding_ticker} ({m.top_holding_weight_pct:.1f}%)"
+            if m.top_holding_ticker
+            else "—"
+        ),
+        "—",
+    )
+    table.add_row("Peak Single Weight", f"{m.max_single_holding_weight_pct:.1f}%", "—")
     table.add_row("Fees Paid", f"{m.total_fees_paid:,.2f}", "0.00")
     table.add_row(
-        "Rule 6 Exits / Takeovers",
-        f"{m.rule6_exits_count} / {m.takeover_events_count}",
+        "Rule 6 / Takeovers / Delists",
+        f"{m.rule6_exits_count} / {m.takeover_events_count} / {m.delistings_liquidated_count}",
         "—",
     )
     console.print(table)
@@ -860,7 +977,7 @@ def backtest(
 @app.command()
 def compare(
     prices: Annotated[Path, typer.Option("--prices")] = Path("data/monthly_prices.csv"),
-    constituents: Annotated[Path, typer.Option("--constituents")] = Path("data/constituents.csv"),
+    constituents: Annotated[Path | None, typer.Option("--constituents")] = None,
     events: Annotated[Path | None, typer.Option("--events")] = None,
     snapshots: Annotated[Path | None, typer.Option("--snapshots")] = None,
     benchmark_csv: Annotated[Path | None, typer.Option("--benchmark-csv")] = None,
@@ -870,12 +987,18 @@ def compare(
     contribution: Annotated[float, typer.Option("--contribution")] = 500.0,
     fee_pct: Annotated[float, typer.Option("--fee-pct")] = 0.15,
     signal_mode: Annotated[str, typer.Option("--signal-mode")] = "same_month",
+    exclude: Annotated[
+        str | None,
+        typer.Option("--exclude", help="Comma-separated tickers to exclude (e.g. NVDA,AMD)."),
+    ] = None,
     json_out: Annotated[bool, typer.Option("--json")] = False,
 ) -> None:
-    """Compare Top 1, Top 3, Top 3 + Rule 6, Top 10, Top 10 + Rule 6, and Benchmark."""
+    """Compare Top 1, Top 3, Top 5, Top 10 (+/- Rule 6) and Benchmark."""
+    eff_constituents = _default_constituents_path(constituents)
+    excluded_tuple = _parse_exclude_tickers(exclude)
     dataset = load_backtest_dataset(
         prices_path=prices,
-        constituents_path=constituents,
+        constituents_path=eff_constituents,
         events_path=events,
         benchmark_path=benchmark_csv,
         benchmark_ticker=benchmark_ticker,
@@ -890,6 +1013,7 @@ def compare(
             fee_pct=fee_pct,
             sell_fee_pct=fee_pct,
             signal_mode=signal_mode,
+            exclude_tickers=excluded_tuple,
         ),
     )
 
@@ -911,6 +1035,10 @@ def compare(
                             else None
                         ),
                         "max_drawdown_pct": round(row.result.metrics.max_drawdown_pct, 2),
+                        "top_holding_ticker": row.result.metrics.top_holding_ticker,
+                        "top_holding_weight_pct": round(
+                            row.result.metrics.top_holding_weight_pct, 2
+                        ),
                     }
                     for row in rows
                 ],
@@ -925,16 +1053,23 @@ def compare(
     table.add_column("XIRR", justify="right")
     table.add_column("TWR CAGR", justify="right")
     table.add_column("Max Drawdown", justify="right")
+    table.add_column("Top Holding", justify="right")
     table.add_column("5Y Win Rate", justify="right")
     for row in rows:
         m = row.result.metrics
         win_s = f"{m.rolling_5y.win_rate_pct:.1f}%" if m.rolling_5y else "—"
+        top_h = (
+            f"{m.top_holding_ticker} ({m.top_holding_weight_pct:.1f}%)"
+            if m.top_holding_ticker
+            else "—"
+        )
         table.add_row(
             row.label,
             f"{m.ending_value:,.2f}",
             f"{m.xirr_pct:.2f}%" if m.xirr_pct is not None else "—",
             f"{m.twr_cagr_pct:.2f}%" if m.twr_cagr_pct is not None else "—",
             f"{m.max_drawdown_pct:.2f}%",
+            top_h,
             win_s,
         )
     console.print(table)

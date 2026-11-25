@@ -1,12 +1,93 @@
 ticker,name,index,first_bought_date,last_top10_month,status,notes
-NVDA,Nvidia,S&P 500,2017-12-01,2026-11,holding,Bought in 2017-12 rank #1
-ALGN,Align Technology,S&P 500,2017-12-01,2019-12,rule6_stage1_sold,Bought in 2017-12 rank #2; Rule 6 sell_third (2025-12)
-NFLX,Netflix,S&P 500,2017-12-01,2025-09,holding,Bought in 2017-12 rank #3
-AMD,Advanced Micro Devices,S&P 500,2018-02-01,2026-11,holding,Bought in 2018-02 rank #2
-AMZN,Amazon,S&P 500,2018-05-01,2020-10,rule6_stage1_sold,Bought in 2018-05 rank #2; Rule 6 sell_third (2026-10)
-IDXX,Idexx Laboratories,S&P 500,2018-05-01,2021-01,holding,Bought in 2018-05 rank #3
+AAPL,Apple Inc.,S&P 500,2006-01-01,2022-10,holding,Bought in 2006-01 rank #1; Rule 6 sell_third (2018-10); Rule 6 sell_half (2019-10); Returned to top 10 (2020-10)
+ATI,ATI,S&P 500,2006-01-01,2007-10,sold,Bought in 2006-01 rank #2; Rule 6 sell_third (2013-10); Rule 6 sell_half (2014-10); Rule 6 sell_remaining (2015-10)
+GLW,Corning Inc.,S&P 500,2006-01-01,2008-04,sold,Bought in 2006-01 rank #3; Rule 6 sell_third (2014-04); Rule 6 sell_half (2015-04); Rule 6 sell_remaining (2016-04)
+EP,EP,S&P 500,2006-02-01,2010-10,sold,Bought in 2006-02 rank #1; Rule 6 sell_third (2016-10); Rule 6 sell_half (2017-10); Rule 6 sell_remaining (2018-10)
+VLO,Valero Energy,S&P 500,2006-04-01,2014-05,sold,Bought in 2006-04 rank #2; Rule 6 sell_third (2020-05); Rule 6 sell_half (2021-05); Rule 6 sell_remaining (2022-05)
+NUE,Nucor,S&P 500,2006-04-01,2009-01,sold,Bought in 2006-04 rank #3; Rule 6 sell_third (2015-01); Rule 6 sell_half (2016-01); Rule 6 sell_remaining (2017-01)
+WMB,Williams Companies,S&P 500,2006-08-01,2014-07,sold,Bought in 2006-08 rank #2; Rule 6 sell_third (2013-04); Rule 6 sell_half (2014-04); Returned to top 10 (2014-07); Rule 6 sell_third (2020-07); Rule 6 sell_half (2021-07); Rule 6 sell_remaining (2022-07)
+EOG,EOG Resources,S&P 500,2006-08-01,2010-07,sold,Bought in 2006-08 rank #3; Rule 6 sell_third (2016-07); Rule 6 sell_half (2017-07); Rule 6 sell_remaining (2018-07)
+HUM,Humana,S&P 500,2006-09-01,2022-07,holding,Bought in 2006-09 rank #2; Rule 6 sell_third (2022-04); Returned to top 10 (2022-07)
+AES,AES Corporation,S&P 500,2006-09-01,2006-10,sold,Bought in 2006-09 rank #3; Rule 6 sell_third (2012-10); Rule 6 sell_half (2013-10); Rule 6 sell_remaining (2014-10)
+ADSK,Autodesk,S&P 500,2006-10-01,2007-02,sold,Bought in 2006-10 rank #2; Rule 6 sell_third (2013-02); Rule 6 sell_half (2014-02); Rule 6 sell_remaining (2015-02)
+NVDA,Nvidia,S&P 500,2006-10-01,2007-11,sold,Bought in 2006-10 rank #3; Rule 6 sell_third (2013-11); Rule 6 sell_half (2014-11); Rule 6 sell_remaining (2015-11)
+CME,CME Group,S&P 500,2006-11-01,2008-01,sold,Bought in 2006-11 rank #2; Rule 6 sell_third (2014-01); Rule 6 sell_half (2015-01); Rule 6 sell_remaining (2016-01)
+TEX,TEX,S&P 500,2007-05-01,2008-06,sold,Bought in 2007-05 rank #3; Rule 6 sell_third (2014-06); Rule 6 sell_half (2015-06); Rule 6 sell_remaining (2016-06)
+CBRE,CBRE Group,S&P 500,2007-07-01,2012-03,sold,Bought in 2007-07 rank #2; Rule 6 sell_third (2018-03); Rule 6 sell_half (2019-03); Rule 6 sell_remaining (2020-03)
+GOOGL,Alphabet Inc. (Class A),S&P 500,2007-09-01,2008-01,sold,Bought in 2007-09 rank #3; Rule 6 sell_third (2014-01); Rule 6 sell_half (2015-01); Rule 6 sell_remaining (2016-01)
+NOV,NOV,S&P 500,2007-11-01,2008-08,sold,Bought in 2007-11 rank #3; Rule 6 sell_third (2014-08); Rule 6 sell_half (2015-08); Rule 6 sell_remaining (2016-08)
+MTW,MTW,S&P 500,2007-12-01,2008-01,sold,Bought in 2007-12 rank #2; Rule 6 sell_third (2014-01); Rule 6 sell_half (2015-01); Rule 6 sell_remaining (2016-01)
+GME,GME,S&P 500,2008-01-01,2013-11,sold,Bought in 2008-01 rank #2; Rule 6 sell_third (2019-11); Rule 6 sell_half (2020-11); Rule 6 sell_remaining (2021-11)
+RRC,RRC,S&P 500,2008-02-01,2009-11,sold,Bought in 2008-02 rank #1; Rule 6 sell_third (2015-11); Rule 6 sell_half (2016-11); Rule 6 sell_remaining (2017-11)
+CNX,CNX,S&P 500,2008-02-01,2008-07,sold,Bought in 2008-02 rank #2; Rule 6 sell_third (2014-07); Rule 6 sell_half (2015-07); Rule 6 sell_remaining (2016-07)
+HES,HES,S&P 500,2008-02-01,2009-03,sold,Bought in 2008-02 rank #3; Rule 6 sell_third (2015-03); Rule 6 sell_half (2016-03); Rule 6 sell_remaining (2017-03)
+GILD,Gilead Sciences,S&P 500,2008-04-01,2015-08,sold,Bought in 2008-04 rank #2; Rule 6 sell_third (2021-08); Rule 6 sell_half (2022-08); Rule 6 sell_remaining (2023-08)
+CSX,CSX Corporation,S&P 500,2008-04-01,2008-08,sold,Bought in 2008-04 rank #3; Rule 6 sell_third (2014-08); Rule 6 sell_half (2015-08); Rule 6 sell_remaining (2016-08)
+CMI,Cummins,S&P 500,2008-06-01,2013-01,sold,Bought in 2008-06 rank #3; Rule 6 sell_third (2019-01); Rule 6 sell_half (2020-01); Rule 6 sell_remaining (2021-01)
+ISRG,Intuitive Surgical,S&P 500,2008-08-01,2018-11,sold,Bought in 2008-08 rank #1; Rule 6 sell_third (2024-11); Rule 6 sell_half (2025-11); Rule 6 sell_remaining (2026-11)
+CF,CF Industries,S&P 500,2008-09-01,2012-12,sold,Bought in 2008-09 rank #1; Rule 6 sell_third (2018-12); Rule 6 sell_half (2019-12); Rule 6 sell_remaining (2020-12)
+UNP,Union Pacific Corporation,S&P 500,2008-09-01,2008-09,sold,Bought in 2008-09 rank #3; Rule 6 sell_third (2014-09); Rule 6 sell_half (2015-09); Rule 6 sell_remaining (2016-09)
+MCD,McDonald's,S&P 500,2008-10-01,2010-09,sold,Bought in 2008-10 rank #1; Rule 6 sell_third (2016-09); Rule 6 sell_half (2017-09); Rule 6 sell_remaining (2018-09)
+SCHW,Charles Schwab Corporation,S&P 500,2008-10-01,2008-10,sold,Bought in 2008-10 rank #2; Rule 6 sell_third (2014-10); Rule 6 sell_half (2015-10); Rule 6 sell_remaining (2016-10)
+LMT,Lockheed Martin,S&P 500,2008-10-01,2014-05,sold,Bought in 2008-10 rank #3; Rule 6 sell_third (2020-05); Rule 6 sell_half (2021-05); Rule 6 sell_remaining (2022-05)
+CHRW,C.H. Robinson,S&P 500,2008-11-01,2010-08,sold,Bought in 2008-11 rank #1; Rule 6 sell_third (2016-08); Rule 6 sell_half (2017-08); Rule 6 sell_remaining (2018-08)
+GIS,General Mills,S&P 500,2008-11-01,2010-07,sold,Bought in 2008-11 rank #2; Rule 6 sell_third (2016-07); Rule 6 sell_half (2017-07); Rule 6 sell_remaining (2018-07)
+SHW,Sherwin-Williams,S&P 500,2008-11-01,2014-06,sold,Bought in 2008-11 rank #3; Rule 6 sell_third (2020-06); Rule 6 sell_half (2021-06); Rule 6 sell_remaining (2022-06)
+KR,Kroger,S&P 500,2008-12-01,2016-03,sold,Bought in 2008-12 rank #1; Rule 6 sell_third (2014-12); Returned to top 10 (2015-03); Rule 6 sell_third (2022-03); Rule 6 sell_half (2023-03); Rule 6 sell_remaining (2024-03)
+XOM,ExxonMobil,S&P 500,2008-12-01,2009-02,sold,Bought in 2008-12 rank #2; Rule 6 sell_third (2015-02); Rule 6 sell_half (2016-02); Rule 6 sell_remaining (2017-02)
+ICE,Intercontinental Exchange,S&P 500,2009-01-01,2009-07,sold,Bought in 2009-01 rank #1; Rule 6 sell_third (2015-07); Rule 6 sell_half (2016-07); Rule 6 sell_remaining (2017-07)
+ABT,Abbott Laboratories,S&P 500,2009-02-01,2009-02,sold,Bought in 2009-02 rank #3; Rule 6 sell_third (2015-02); Rule 6 sell_half (2016-02); Rule 6 sell_remaining (2017-02)
+AMZN,Amazon,S&P 500,2009-03-01,2020-10,rule6_stage1_sold,Bought in 2009-03 rank #2; Rule 6 sell_third (2026-10)
+AZO,AutoZone,S&P 500,2009-03-01,2012-12,sold,Bought in 2009-03 rank #3; Rule 6 sell_third (2018-12); Rule 6 sell_half (2019-12); Rule 6 sell_remaining (2020-12)
+MA,Mastercard,S&P 500,2009-06-01,2020-02,rule6_stage1_sold,Bought in 2009-06 rank #2; Rule 6 sell_third (2026-02)
+ATGE,ATGE,S&P 500,2009-07-01,2010-05,sold,Bought in 2009-07 rank #3; Rule 6 sell_third (2016-05); Rule 6 sell_half (2017-05); Rule 6 sell_remaining (2018-05)
+BKNG,Booking Holdings,S&P 500,2009-12-01,2013-12,sold,Bought in 2009-12 rank #1; Rule 6 sell_third (2019-12); Rule 6 sell_half (2020-12); Rule 6 sell_remaining (2021-12)
+CRM,Salesforce,S&P 500,2010-06-01,2013-02,sold,Bought in 2010-06 rank #2; Rule 6 sell_third (2019-02); Rule 6 sell_half (2020-02); Rule 6 sell_remaining (2021-02)
+NEM,Newmont,S&P 500,2010-07-01,2010-07,sold,Bought in 2010-07 rank #3; Rule 6 sell_third (2016-07); Rule 6 sell_half (2017-07); Rule 6 sell_remaining (2018-07)
+VTR,Ventas,S&P 500,2010-08-01,2010-09,sold,Bought in 2010-08 rank #2; Rule 6 sell_third (2016-09); Rule 6 sell_half (2017-09); Rule 6 sell_remaining (2018-09)
+ROST,Ross Stores,S&P 500,2010-10-01,2012-10,sold,Bought in 2010-10 rank #2; Rule 6 sell_third (2018-10); Rule 6 sell_half (2019-10); Rule 6 sell_remaining (2020-10)
+NFLX,Netflix,S&P 500,2011-01-01,2025-09,holding,Bought in 2011-01 rank #1
+FFIV,"F5, Inc.",S&P 500,2011-01-01,2012-05,sold,Bought in 2011-01 rank #2; Rule 6 sell_third (2018-05); Rule 6 sell_half (2019-05); Rule 6 sell_remaining (2020-05)
+CTSH,Cognizant,S&P 500,2011-02-01,2011-11,sold,Bought in 2011-02 rank #3; Rule 6 sell_third (2017-11); Rule 6 sell_half (2018-11); Rule 6 sell_remaining (2019-11)
+EW,Edwards Lifesciences,S&P 500,2011-04-01,2019-12,rule6_stage1_sold,Bought in 2011-04 rank #3; Rule 6 sell_third (2025-12)
+CMG,Chipotle Mexican Grill,S&P 500,2011-06-01,2021-10,holding,Bought in 2011-06 rank #3; Rule 6 sell_third (2019-05); Rule 6 sell_half (2020-05); Returned to top 10 (2020-08)
+AN,AN,S&P 500,2011-08-01,2013-02,sold,Bought in 2011-08 rank #3; Rule 6 sell_third (2019-02); Rule 6 sell_half (2020-02); Rule 6 sell_remaining (2021-02)
+SBUX,Starbucks,S&P 500,2011-12-01,2013-11,sold,Bought in 2011-12 rank #2; Rule 6 sell_third (2019-11); Rule 6 sell_half (2020-11); Rule 6 sell_remaining (2021-11)
+M,M,S&P 500,2011-12-01,2014-05,sold,Bought in 2011-12 rank #3; Rule 6 sell_third (2020-05); Rule 6 sell_half (2021-05); Rule 6 sell_remaining (2022-05)
+F,Ford Motor Company,S&P 500,2012-02-01,2012-03,sold,Bought in 2012-02 rank #3; Rule 6 sell_third (2018-03); Rule 6 sell_half (2019-03); Rule 6 sell_remaining (2020-03)
+GNW,GNW,S&P 500,2012-03-01,2012-03,sold,Bought in 2012-03 rank #1; Rule 6 sell_third (2018-03); Rule 6 sell_half (2019-03); Rule 6 sell_remaining (2020-03)
+WYNN,Wynn Resorts,S&P 500,2012-04-01,2012-11,sold,Bought in 2012-04 rank #2; Rule 6 sell_third (2018-11); Rule 6 sell_half (2019-11); Rule 6 sell_remaining (2020-11)
+TGNA,TGNA,S&P 500,2012-04-01,2012-04,sold,Bought in 2012-04 rank #3; Rule 6 sell_third (2018-04); Rule 6 sell_half (2019-04); Rule 6 sell_remaining (2020-04)
+FOSL,FOSL,S&P 500,2012-05-01,2013-04,sold,Bought in 2012-05 rank #2; Rule 6 sell_third (2019-04); Rule 6 sell_half (2020-04); Rule 6 sell_remaining (2021-04)
+MNST,Monster Beverage,S&P 500,2012-07-01,2016-09,sold,Bought in 2012-07 rank #1; Rule 6 sell_third (2022-09); Rule 6 sell_half (2023-09); Rule 6 sell_remaining (2024-09)
+PRGO,PRGO,S&P 500,2012-07-01,2012-11,sold,Bought in 2012-07 rank #2; Rule 6 sell_third (2018-11); Rule 6 sell_half (2019-11); Rule 6 sell_remaining (2020-11)
+DLTR,Dollar Tree,S&P 500,2012-07-01,2012-07,sold,Bought in 2012-07 rank #3; Rule 6 sell_third (2018-07); Rule 6 sell_half (2019-07); Rule 6 sell_remaining (2020-07)
+EL,Estée Lauder Companies (The),S&P 500,2012-09-01,2012-11,sold,Bought in 2012-09 rank #3; Rule 6 sell_third (2018-11); Rule 6 sell_half (2019-11); Rule 6 sell_remaining (2020-11)
+LEN,Lennar,S&P 500,2012-11-01,2013-04,sold,Bought in 2012-11 rank #3; Rule 6 sell_third (2019-04); Rule 6 sell_half (2020-04); Rule 6 sell_remaining (2021-04)
+BIIB,Biogen,S&P 500,2012-12-01,2015-03,sold,Bought in 2012-12 rank #1; Rule 6 sell_third (2021-03); Rule 6 sell_half (2022-03); Rule 6 sell_remaining (2023-03)
+DFS,DFS,S&P 500,2013-04-01,2014-06,sold,Bought in 2013-04 rank #2; Rule 6 sell_third (2020-06); Rule 6 sell_half (2021-06); Rule 6 sell_remaining (2022-06)
+STZ,Constellation Brands,S&P 500,2013-04-01,2018-01,sold,Bought in 2013-04 rank #3; Rule 6 sell_third (2024-01); Rule 6 sell_half (2025-01); Rule 6 sell_remaining (2026-01)
+REGN,Regeneron Pharmaceuticals,S&P 500,2013-05-01,2022-10,holding,Bought in 2013-05 rank #1; Rule 6 sell_third (2021-11); Returned to top 10 (2022-10)
+LYB,LyondellBasell,S&P 500,2013-06-01,2014-10,sold,Bought in 2013-06 rank #3; Rule 6 sell_third (2020-10); Rule 6 sell_half (2021-10); Rule 6 sell_remaining (2022-10)
+STX,Seagate Technology,S&P 500,2013-11-01,2026-08,holding,Bought in 2013-11 rank #3; Rule 6 sell_third (2021-01); Rule 6 sell_half (2022-01); Returned to top 10 (2022-02)
+DAL,Delta Air Lines,S&P 500,2014-05-01,2016-03,sold,Bought in 2014-05 rank #2; Rule 6 sell_third (2022-03); Rule 6 sell_half (2023-03); Rule 6 sell_remaining (2024-03)
+MU,Micron Technology,S&P 500,2014-07-01,2026-11,holding,Bought in 2014-07 rank #1; Rule 6 sell_third (2025-11); Returned to top 10 (2026-01)
+URI,United Rentals,S&P 500,2014-10-01,2023-03,holding,Bought in 2014-10 rank #2; Rule 6 sell_third (2020-11); Rule 6 sell_half (2021-11); Returned to top 10 (2022-04)
+LUV,Southwest Airlines,S&P 500,2015-02-01,2017-03,sold,Bought in 2015-02 rank #2; Rule 6 sell_third (2023-03); Rule 6 sell_half (2024-03); Rule 6 sell_remaining (2025-03)
+HBI,HBI,S&P 500,2015-04-01,2016-01,sold,Bought in 2015-04 rank #3; Rule 6 sell_third (2022-01); Rule 6 sell_half (2023-01); Rule 6 sell_remaining (2024-01)
+AVGO,Broadcom,S&P 500,2015-06-01,2026-05,holding,Bought in 2015-06 rank #3
+EA,EA,S&P 500,2015-07-01,2017-11,sold,Bought in 2015-07 rank #2; Rule 6 sell_third (2023-11); Rule 6 sell_half (2024-11); Rule 6 sell_remaining (2025-11)
+ILMN,"Illumina, Inc.",S&P 500,2016-02-01,2016-02,sold,Bought in 2016-02 rank #3; Rule 6 sell_third (2022-02); Rule 6 sell_half (2023-02); Rule 6 sell_remaining (2024-02)
+SWKS,Skyworks Solutions,S&P 500,2016-04-01,2017-04,sold,Bought in 2016-04 rank #2; Rule 6 sell_third (2023-04); Rule 6 sell_half (2024-04); Rule 6 sell_remaining (2025-04)
+AYI,AYI,S&P 500,2016-06-01,2016-10,sold,Bought in 2016-06 rank #2; Rule 6 sell_third (2022-10); Rule 6 sell_half (2023-10); Rule 6 sell_remaining (2024-10)
+NVDA,Nvidia,S&P 500,2016-06-01,2026-11,holding,Bought in 2016-06 rank #3
+GPN,Global Payments,S&P 500,2016-08-01,2018-03,sold,Bought in 2016-08 rank #3; Rule 6 sell_third (2024-03); Rule 6 sell_half (2025-03); Rule 6 sell_remaining (2026-03)
+ULTA,Ulta Beauty,S&P 500,2017-02-01,2017-07,sold,Bought in 2017-02 rank #3; Rule 6 sell_third (2023-07); Rule 6 sell_half (2024-07); Rule 6 sell_remaining (2025-07)
+AMD,Advanced Micro Devices,S&P 500,2017-04-01,2026-11,holding,Bought in 2017-04 rank #2
+DXC,DXC,S&P 500,2017-09-01,2018-10,sold,Bought in 2017-09 rank #2; Rule 6 sell_third (2024-10); Rule 6 sell_half (2025-10); Rule 6 sell_remaining (2026-10)
+ALGN,Align Technology,S&P 500,2017-09-01,2019-12,rule6_stage1_sold,Bought in 2017-09 rank #3; Rule 6 sell_third (2025-12)
+NKTR,NKTR,S&P 500,2018-04-01,2019-03,rule6_stage2_sold,Bought in 2018-04 rank #2; Rule 6 sell_third (2025-03); Rule 6 sell_half (2026-03)
 TTWO,Take-Two Interactive,S&P 500,2018-11-01,2019-10,rule6_stage2_sold,Bought in 2018-11 rank #1; Rule 6 sell_third (2025-10); Rule 6 sell_half (2026-10)
-ISRG,Intuitive Surgical,S&P 500,2018-11-01,2018-11,sold,Bought in 2018-11 rank #2; Rule 6 sell_third (2024-11); Rule 6 sell_half (2025-11); Rule 6 sell_remaining (2026-11)
 NRG,NRG Energy,S&P 500,2018-11-01,2026-03,holding,Bought in 2018-11 rank #3
 UNH,UnitedHealth Group,S&P 500,2018-12-01,2022-07,holding,Bought in 2018-12 rank #2
 BA,Boeing,S&P 500,2018-12-01,2019-10,rule6_stage2_sold,Bought in 2018-12 rank #3; Rule 6 sell_third (2025-10); Rule 6 sell_half (2026-10)
@@ -15,41 +96,38 @@ NEM,Newmont,S&P 500,2019-01-01,2022-05,holding,Bought in 2019-01 rank #3
 ANET,Arista Networks,S&P 500,2019-03-01,2026-10,holding,Bought in 2019-03 rank #2
 CSX,CSX Corporation,S&P 500,2019-06-01,2019-07,rule6_stage2_sold,Bought in 2019-06 rank #3; Rule 6 sell_third (2025-07); Rule 6 sell_half (2026-07)
 MSCI,MSCI,S&P 500,2019-07-01,2021-11,holding,Bought in 2019-07 rank #3
-MU,Micron Technology,S&P 500,2019-08-01,2026-11,holding,Bought in 2019-08 rank #2; Rule 6 sell_third (2025-11); Returned to top 10 (2026-01)
 CPRT,Copart,S&P 500,2019-08-01,2020-11,rule6_stage1_sold,Bought in 2019-08 rank #3; Rule 6 sell_third (2026-11)
-KEYS,Keysight Technologies,S&P 500,2019-09-01,2021-02,holding,Bought in 2019-09 rank #2
+KEYS,Keysight Technologies,S&P 500,2019-09-01,2020-06,rule6_stage1_sold,Bought in 2019-09 rank #2; Rule 6 sell_third (2026-06)
 FTNT,Fortinet,S&P 500,2019-12-01,2023-05,holding,Bought in 2019-12 rank #3
 NOW,ServiceNow,S&P 500,2020-01-01,2021-02,holding,Bought in 2020-01 rank #2
-TDG,TransDigm Group,S&P 500,2020-02-01,2020-02,rule6_stage1_sold,Bought in 2020-02 rank #3; Rule 6 sell_third (2026-02)
+PAYC,PAYC,S&P 500,2020-02-01,2021-11,holding,Bought in 2020-02 rank #1
 DXCM,Dexcom,S&P 500,2020-06-01,2022-11,holding,Bought in 2020-06 rank #1
-CMG,Chipotle Mexican Grill,S&P 500,2020-11-01,2021-10,holding,Bought in 2020-11 rank #1
-ZBRA,Zebra Technologies,S&P 500,2020-12-01,2021-08,holding,Bought in 2020-12 rank #3
+ETSY,ETSY,S&P 500,2020-10-01,2023-01,holding,Bought in 2020-10 rank #2
 TSLA,"Tesla, Inc.",S&P 500,2021-01-01,2023-07,holding,Bought in 2021-01 rank #1
-GNRC,Generac,S&P 500,2021-04-01,2022-08,holding,Bought in 2021-04 rank #1
-CDNS,Cadence Design Systems,S&P 500,2021-04-01,2022-10,holding,Bought in 2021-04 rank #3
+ENPH,ENPH,S&P 500,2021-02-01,2022-12,holding,Bought in 2021-02 rank #1
+GNRC,Generac,S&P 500,2021-04-01,2022-08,holding,Bought in 2021-04 rank #2
 TER,Teradyne,S&P 500,2021-05-01,2022-01,holding,Bought in 2021-05 rank #3
-WST,West Pharmaceutical Services,S&P 500,2021-06-01,2022-01,holding,Bought in 2021-06 rank #1
-MPWR,Monolithic Power Systems,S&P 500,2021-10-01,2023-03,holding,Bought in 2021-10 rank #3
-AAPL,Apple Inc.,S&P 500,2022-02-01,2022-10,holding,Bought in 2022-02 rank #1
+WST,West Pharmaceutical Services,S&P 500,2021-06-01,2021-10,holding,Bought in 2021-06 rank #1
 KLAC,KLA Corporation,S&P 500,2022-02-01,2024-07,holding,Bought in 2022-02 rank #2
 QCOM,Qualcomm,S&P 500,2022-02-01,2022-02,holding,Bought in 2022-02 rank #3
 FCX,Freeport-McMoRan,S&P 500,2022-03-01,2023-04,holding,Bought in 2022-03 rank #2
 HWM,Howmet Aerospace,S&P 500,2022-03-01,2026-08,holding,Bought in 2022-03 rank #3
-PWR,Quanta Services,S&P 500,2022-04-01,2024-05,holding,Bought in 2022-04 rank #3
-TGT,Target Corporation,S&P 500,2022-05-01,2022-05,holding,Bought in 2022-05 rank #2
-NUE,Nucor,S&P 500,2022-05-01,2024-03,holding,Bought in 2022-05 rank #3
-ALB,Albemarle Corporation,S&P 500,2022-06-01,2023-02,holding,Bought in 2022-06 rank #1
+SEDG,SEDG,S&P 500,2022-04-01,2023-02,holding,Bought in 2022-04 rank #3
+ALB,Albemarle Corporation,S&P 500,2022-06-01,2023-02,holding,Bought in 2022-06 rank #2
 LLY,Lilly (Eli),S&P 500,2022-07-01,2025-05,holding,Bought in 2022-07 rank #1
 MCK,McKesson,S&P 500,2022-07-01,2024-08,holding,Bought in 2022-07 rank #2
 MRNA,Moderna,S&P 500,2022-08-01,2023-02,holding,Bought in 2022-08 rank #2
-DVN,Devon Energy,S&P 500,2022-11-01,2023-09,holding,Bought in 2022-11 rank #2
+DVN,Devon Energy,S&P 500,2022-11-01,2023-09,holding,Bought in 2022-11 rank #3
+PWR,Quanta Services,S&P 500,2023-01-01,2024-01,holding,Bought in 2023-01 rank #2
 STLD,Steel Dynamics,S&P 500,2023-01-01,2024-04,holding,Bought in 2023-01 rank #3
+NUE,Nucor,S&P 500,2023-03-01,2024-03,holding,Bought in 2023-03 rank #3
 ON,ON Semiconductor,S&P 500,2023-04-01,2023-09,holding,Bought in 2023-04 rank #1
 MPC,Marathon Petroleum,S&P 500,2023-04-01,2024-09,holding,Bought in 2023-04 rank #2
 TRGP,Targa Resources,S&P 500,2023-05-01,2025-04,holding,Bought in 2023-05 rank #1
 FSLR,First Solar,S&P 500,2023-05-01,2024-06,holding,Bought in 2023-05 rank #3
 OXY,Occidental Petroleum,S&P 500,2023-09-01,2023-10,holding,Bought in 2023-09 rank #3
 FANG,Diamondback Energy,S&P 500,2023-10-01,2024-08,holding,Bought in 2023-10 rank #3
+BLDR,BLDR,S&P 500,2024-01-01,2024-11,holding,Bought in 2024-01 rank #1
 SMCI,Supermicro,S&P 500,2024-04-01,2025-09,holding,Bought in 2024-04 rank #1
 VST,Vistra Corp.,S&P 500,2024-06-01,2025-10,holding,Bought in 2024-06 rank #2
 FICO,Fair Isaac,S&P 500,2024-10-01,2025-05,holding,Bought in 2024-10 rank #2
@@ -64,4 +142,3 @@ FIX,Comfort Systems USA,S&P 500,2026-01-01,2026-07,holding,Bought in 2026-01 ran
 WDC,Western Digital,S&P 500,2026-01-01,2026-08,holding,Bought in 2026-01 rank #3
 VRT,Vertiv,S&P 500,2026-04-01,2026-07,holding,Bought in 2026-04 rank #1
 LITE,Lumentum,S&P 500,2026-04-01,2026-11,holding,Bought in 2026-04 rank #2
-STX,Seagate Technology,S&P 500,2026-08-01,2026-08,holding,Bought in 2026-08 rank #2

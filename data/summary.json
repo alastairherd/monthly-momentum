@@ -1,13 +1,14 @@
 {
   "latest_window": "2026-11",
   "latest_signal_month": "2026-10",
-  "backtest_start_window": "2017-12",
-  "windows_count": 108,
-  "months_invested": 107,
+  "backtest_start_window": "2006-01",
+  "windows_count": 251,
+  "months_invested": 250,
   "monthly_contribution_gbp": 500.0,
-  "total_contributed_gbp": 53500.0,
+  "total_contributed_gbp": 125000.0,
   "fee_pct": 0.15,
   "constituents_count": 503,
+  "historical_constituent_intervals": 1269,
   "latest_eligible_count": 261,
   "top3_picks": [
     {
@@ -119,52 +120,164 @@
   ],
   "variants": {
     "Aggressive (Top 1)": {
-      "ending_value_gbp": 328881.51,
-      "xirr_pct": 38.95,
-      "twr_cagr_pct": 34.16,
-      "max_drawdown_pct": -55.86,
-      "rolling_5y_win_rate_pct": 100.0,
-      "rule6_exits_count": 0
+      "ending_value_gbp": 2230103.95,
+      "xirr_pct": 23.27,
+      "twr_cagr_pct": 20.47,
+      "max_drawdown_pct": -66.91,
+      "top_holding_ticker": "NVDA",
+      "top_holding_weight_pct": 40.11,
+      "max_single_holding_weight_pct": 100.0,
+      "rolling_5y_win_rate_pct": 98.95,
+      "rule6_exits_count": 0,
+      "delistings_liquidated_count": 11
     },
     "Standard (Top 3)": {
-      "ending_value_gbp": 236239.2,
-      "xirr_pct": 31.84,
-      "twr_cagr_pct": 30.45,
-      "max_drawdown_pct": -51.03,
+      "ending_value_gbp": 1869371.71,
+      "xirr_pct": 21.94,
+      "twr_cagr_pct": 19.77,
+      "max_drawdown_pct": -65.99,
+      "top_holding_ticker": "NVDA",
+      "top_holding_weight_pct": 33.73,
+      "max_single_holding_weight_pct": 41.17,
       "rolling_5y_win_rate_pct": 100.0,
-      "rule6_exits_count": 0
+      "rule6_exits_count": 0,
+      "delistings_liquidated_count": 27
     },
     "Standard (Top 3 + Rule 6)": {
-      "ending_value_gbp": 235167.3,
-      "xirr_pct": 31.74,
-      "twr_cagr_pct": 30.38,
-      "max_drawdown_pct": -51.03,
+      "ending_value_gbp": 2036495.2,
+      "xirr_pct": 22.58,
+      "twr_cagr_pct": 20.22,
+      "max_drawdown_pct": -65.99,
+      "top_holding_ticker": "NVDA",
+      "top_holding_weight_pct": 42.21,
+      "max_single_holding_weight_pct": 47.68,
       "rolling_5y_win_rate_pct": 100.0,
-      "rule6_exits_count": 16
+      "rule6_exits_count": 205,
+      "delistings_liquidated_count": 21
+    },
+    "Balanced (Top 5)": {
+      "ending_value_gbp": 1553119.88,
+      "xirr_pct": 20.54,
+      "twr_cagr_pct": 17.13,
+      "max_drawdown_pct": -64.83,
+      "top_holding_ticker": "NVDA",
+      "top_holding_weight_pct": 34.38,
+      "max_single_holding_weight_pct": 38.0,
+      "rolling_5y_win_rate_pct": 94.24,
+      "rule6_exits_count": 0,
+      "delistings_liquidated_count": 41
+    },
+    "Balanced (Top 5 + Rule 6)": {
+      "ending_value_gbp": 1498362.32,
+      "xirr_pct": 20.27,
+      "twr_cagr_pct": 16.87,
+      "max_drawdown_pct": -64.83,
+      "top_holding_ticker": "NVDA",
+      "top_holding_weight_pct": 37.87,
+      "max_single_holding_weight_pct": 41.68,
+      "rolling_5y_win_rate_pct": 94.24,
+      "rule6_exits_count": 317,
+      "delistings_liquidated_count": 27
     },
     "Cautious (Top 10)": {
-      "ending_value_gbp": 166739.5,
-      "xirr_pct": 24.42,
-      "twr_cagr_pct": 23.18,
-      "max_drawdown_pct": -42.13,
-      "rolling_5y_win_rate_pct": 100.0,
-      "rule6_exits_count": 0
+      "ending_value_gbp": 1236130.54,
+      "xirr_pct": 18.81,
+      "twr_cagr_pct": 15.76,
+      "max_drawdown_pct": -63.93,
+      "top_holding_ticker": "NVDA",
+      "top_holding_weight_pct": 36.27,
+      "max_single_holding_weight_pct": 39.75,
+      "rolling_5y_win_rate_pct": 86.39,
+      "rule6_exits_count": 0,
+      "delistings_liquidated_count": 67
     },
     "Cautious (Top 10 + Rule 6)": {
-      "ending_value_gbp": 165541.13,
-      "xirr_pct": 24.27,
-      "twr_cagr_pct": 23.08,
-      "max_drawdown_pct": -42.13,
-      "rolling_5y_win_rate_pct": 100.0,
-      "rule6_exits_count": 64
+      "ending_value_gbp": 1194711.41,
+      "xirr_pct": 18.55,
+      "twr_cagr_pct": 15.53,
+      "max_drawdown_pct": -63.93,
+      "top_holding_ticker": "NVDA",
+      "top_holding_weight_pct": 35.05,
+      "max_single_holding_weight_pct": 38.14,
+      "rolling_5y_win_rate_pct": 84.29,
+      "rule6_exits_count": 565,
+      "delistings_liquidated_count": 42
+    },
+    "Standard (Top 3) \u2014 excl. NVDA": {
+      "ending_value_gbp": 1263287.84,
+      "xirr_pct": 18.97,
+      "twr_cagr_pct": 17.51,
+      "max_drawdown_pct": -65.34,
+      "top_holding_ticker": "AAPL",
+      "top_holding_weight_pct": 39.94,
+      "max_single_holding_weight_pct": 43.44,
+      "rolling_5y_win_rate_pct": 97.91,
+      "rule6_exits_count": 0,
+      "delistings_liquidated_count": 27
+    },
+    "Cautious (Top 10) \u2014 excl. NVDA": {
+      "ending_value_gbp": 806438.63,
+      "xirr_pct": 15.55,
+      "twr_cagr_pct": 13.31,
+      "max_drawdown_pct": -62.59,
+      "top_holding_ticker": "AAPL",
+      "top_holding_weight_pct": 24.13,
+      "max_single_holding_weight_pct": 25.33,
+      "rolling_5y_win_rate_pct": 79.06,
+      "rule6_exits_count": 0,
+      "delistings_liquidated_count": 67
+    },
+    "Standard (Top 3) \u2014 excl. NVDA/AMD/AVGO": {
+      "ending_value_gbp": 1083921.66,
+      "xirr_pct": 17.81,
+      "twr_cagr_pct": 16.63,
+      "max_drawdown_pct": -65.34,
+      "top_holding_ticker": "AAPL",
+      "top_holding_weight_pct": 46.55,
+      "max_single_holding_weight_pct": 46.55,
+      "rolling_5y_win_rate_pct": 94.24,
+      "rule6_exits_count": 0,
+      "delistings_liquidated_count": 29
     },
     "S&P 500 TR (^SP500TR)": {
-      "ending_value_gbp": 110379.72,
-      "xirr_pct": 15.67,
-      "twr_cagr_pct": 14.33,
-      "max_drawdown_pct": -23.87
+      "ending_value_gbp": 609851.62,
+      "xirr_pct": 13.39,
+      "twr_cagr_pct": 11.13,
+      "max_drawdown_pct": -50.95
     }
   },
-  "survivorship_warning": true,
+  "subperiods": [
+    {
+      "label": "First Decade (2006\u20132015)",
+      "start_month": "2006-01",
+      "end_month": "2015-12",
+      "top1_xirr_pct": 18.59,
+      "top3_xirr_pct": 16.96,
+      "top5_xirr_pct": 14.64,
+      "top10_xirr_pct": 12.27,
+      "benchmark_xirr_pct": 10.67
+    },
+    {
+      "label": "Financial Crisis Era (2007\u20132012)",
+      "start_month": "2007-01",
+      "end_month": "2012-12",
+      "top1_xirr_pct": 19.41,
+      "top3_xirr_pct": 16.33,
+      "top5_xirr_pct": 12.85,
+      "top10_xirr_pct": 9.02,
+      "benchmark_xirr_pct": 7.71
+    },
+    {
+      "label": "Recent Decade (2016\u2013Latest)",
+      "start_month": "2016-01",
+      "end_month": "2026-11",
+      "top1_xirr_pct": 44.82,
+      "top3_xirr_pct": 37.76,
+      "top5_xirr_pct": 33.33,
+      "top10_xirr_pct": 28.24,
+      "benchmark_xirr_pct": 15.37
+    }
+  ],
+  "survivorship_warning": false,
   "rule6_signals": []
 }

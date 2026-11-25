@@ -57,4 +57,6 @@ Neither simplification should matter much.
 
 ## Independent Backtesting Note
 
-Testing the rules yourself requires historical data that includes delisted companies (to avoid survivorship bias), from providers such as **Norgate** or **EODHD**. You do not need that data to run the rules live.
+Testing the rules yourself requires historical data that includes delisted companies (to avoid survivorship bias), from providers such as **Norgate**, **EODHD**, or the 20-year public US dataset (`fja05680/sp500` + `weib08/Stocks-Daily-Price`) supported by `monthly-momentum build-us20`. You do not need that data to run the rules live.
+
+See [research.md](research.md) for the complete 20-year US, UK FTSE 100, international, and exit-rule evidence behind these rules.

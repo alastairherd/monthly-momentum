@@ -55,6 +55,7 @@ class BacktestDataset:
     prices: dict[str, dict[str, PricePoint]]
     benchmark_prices: dict[str, PricePoint]
     constituents: list[ConstituentInterval]
+    constituents_by_ticker: dict[str, list[ConstituentInterval]] = field(default_factory=dict)
     constituent_meta: dict[str, ConstituentInterval] = field(default_factory=dict)
     snapshots_by_month: dict[str, set[str]] = field(default_factory=dict)
     events: list[CorporateEvent] = field(default_factory=list)
@@ -66,7 +67,11 @@ class BacktestDataset:
         """Return whether ``ticker_key`` was an index constituent in ``month``/``dt``."""
         if month in self.snapshots_by_month:
             return ticker_key in self.snapshots_by_month[month]
-        intervals = [c for c in self.constituents if c.ticker == ticker_key]
+        intervals = (
+            self.constituents_by_ticker.get(ticker_key)
+            if self.constituents_by_ticker
+            else [c for c in self.constituents if c.ticker == ticker_key]
+        )
         if not intervals:
             return False
         for iv in intervals:
@@ -311,12 +316,17 @@ def load_backtest_dataset(
             "and no delisting/takeover events file was supplied."
         )
 
+    constituents_by_ticker: dict[str, list[ConstituentInterval]] = {}
+    for iv in constituents:
+        constituents_by_ticker.setdefault(iv.ticker, []).append(iv)
+
     return BacktestDataset(
         months=all_months,
         month_dates=month_dates,
         prices=prices,
         benchmark_prices=benchmark_prices,
         constituents=constituents,
+        constituents_by_ticker=constituents_by_ticker,
         constituent_meta=constituent_meta,
         snapshots_by_month=snapshots_by_month,
         events=events,

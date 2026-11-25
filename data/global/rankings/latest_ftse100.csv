@@ -1,0 +1,11 @@
+month,rank,ticker,name,index,return_3y_pct,return_3m_pct,return_type,source,selected_for_buy
+2026-11,1,BGEO.L,Lion Finance Group,FTSE 100,261.7241,3.6176,total_return,backtest,true
+2026-11,2,PCT.L,Polar Capital Technology Trust,FTSE 100,202.8485,3.6887,total_return,backtest,true
+2026-11,3,SMT.L,Scottish Mortgage Investment Trust,FTSE 100,147.8513,19.6159,total_return,backtest,true
+2026-11,4,NXT.L,Next plc,FTSE 100,123.2504,3.4355,total_return,backtest,false
+2026-11,5,IHG.L,IHG Hotels & Resorts,FTSE 100,120.9560,4.0759,total_return,backtest,false
+2026-11,6,EDV.L,Endeavour Mining,FTSE 100,120.0951,6.0761,total_return,backtest,false
+2026-11,7,SDLF.L,Standard Life,FTSE 100,104.4650,0.2709,total_return,backtest,false
+2026-11,8,BT-A.L,BT Group,FTSE 100,101.8917,12.9160,total_return,backtest,false
+2026-11,9,HSX.L,Hiscox,FTSE 100,100.4709,3.8695,total_return,backtest,false
+2026-11,10,TSCO.L,Tesco,FTSE 100,100.4332,10.3166,total_return,backtest,false

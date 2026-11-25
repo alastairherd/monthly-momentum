@@ -2,14 +2,14 @@
 
 from __future__ import annotations
 
-from collections.abc import Mapping
+from collections.abc import Mapping, Sequence
 from dataclasses import dataclass, field
 from datetime import date
 
 from monthly_momentum.backtest.data import BacktestDataset, CorporateEvent, PricePoint
 from monthly_momentum.backtest.metrics import BacktestMetrics, compute_backtest_metrics
 from monthly_momentum.models import RankedSecurity, RankingResult, SecurityMetric
-from monthly_momentum.normalize import add_months, months_between
+from monthly_momentum.normalize import add_months, months_between, ticker_match_key
 from monthly_momentum.ranking import rank_securities
 
 
@@ -27,6 +27,8 @@ class BacktestConfig:
     benchmark_fee_pct: float = 0.0
     risk_free_rate: float = 0.0
     signal_mode: str = "same_month"  # "same_month" or "next_month"
+    exclude_tickers: tuple[str, ...] = ()
+    market_fee_map: dict[str, float] | None = None
 
 
 @dataclass(slots=True)
@@ -34,6 +36,7 @@ class _Position:
     ticker: str
     name: str
     index: str
+    market: str
     units: float
     first_bought_date: str
     last_top10_month: str
@@ -85,13 +88,26 @@ class VariantSummary:
     result: BacktestResult
 
 
+@dataclass(slots=True)
+class SubperiodRow:
+    """Comparison metrics for a single historical sub-period or crisis window."""
+
+    period_label: str
+    start_month: str
+    end_month: str
+    top1_xirr_pct: float | None
+    top3_xirr_pct: float | None
+    top5_xirr_pct: float | None
+    top10_xirr_pct: float | None
+    benchmark_xirr_pct: float | None
+
+
 def _find_lookback_month(
     ticker_prices: Mapping[str, PricePoint],
-    all_months: list[str],
-    signal_idx: int,
+    signal_month: str,
     offset_months: int,
 ) -> str | None:
-    target_month = add_months(all_months[signal_idx], -offset_months)
+    target_month = add_months(signal_month, -offset_months)
     if target_month in ticker_prices:
         return target_month
     # Fall back at most 1 calendar month if a bar was missed near target date.
@@ -107,6 +123,7 @@ def _rank_for_month(
     top_n: int,
     window_month: str,
     signal_mode: str = "same_month",
+    excluded_keys: frozenset[str] = frozenset(),
 ) -> RankingResult:
     signal_month = dataset.months[signal_idx]
     signal_dt = dataset.month_dates[signal_month]
@@ -119,14 +136,16 @@ def _rank_for_month(
 
     metrics: list[SecurityMetric] = []
     for tkey, tprices in dataset.prices.items():
+        if tkey in excluded_keys:
+            continue
         if signal_month not in tprices:
             continue
         if not dataset.is_member(tkey, membership_month, membership_dt):
             continue
 
         cur_pt = tprices[signal_month]
-        m_3y = _find_lookback_month(tprices, dataset.months, signal_idx, 36)
-        m_3m = _find_lookback_month(tprices, dataset.months, signal_idx, 3)
+        m_3y = _find_lookback_month(tprices, signal_month, 36)
+        m_3m = _find_lookback_month(tprices, signal_month, 3)
 
         ret_3y: float | None = None
         if m_3y is not None and tprices[m_3y].adj_close > 0.0:
@@ -154,7 +173,7 @@ def _rank_for_month(
         metrics,
         month=window_month,
         top_n=top_n,
-        index="S&P 500",
+        index=metrics[0].index if metrics else "S&P 500",
         source_override="backtest",
     )
 
@@ -167,13 +186,7 @@ def _process_corporate_events(
     dataset: BacktestDataset,
     signal_month: str,
 ) -> tuple[float, float, list[str], int]:
-    """Apply takeover/delist events in ``(prev_dt, cur_dt]`` to held positions.
-
-    Returns ``(takeover_cash_now, takeover_cash_next_month, event_notes, count)``.
-    Rule 7: cash from takeovers goes into the *next* month's buys. An event
-    strictly before ``cur_dt`` (since the previous rebalance) is ready for this
-    rebalance; an event occurring on ``cur_dt`` itself settles for next month.
-    """
+    """Apply takeover/delist events in ``(prev_dt, cur_dt]`` to held positions."""
     takeover_now = 0.0
     takeover_next = 0.0
     notes: list[str] = []
@@ -207,7 +220,6 @@ def _process_corporate_events(
                 takeover_next += proceeds
             notes.append(f"Takeover {ev.ticker} ({proceeds:,.2f})")
         else:
-            # Delisting / bankruptcy proceeds (often 0.0) stay as cash if any recovery exists.
             takeover_now += proceeds
             notes.append(f"Delist {ev.ticker} ({proceeds:,.2f})")
         count += 1
@@ -221,6 +233,22 @@ def _mark_price(dataset: BacktestDataset, pos: _Position, month: str) -> float:
         pos.last_price = pt.adj_close
         return pt.adj_close
     return pos.last_price
+
+
+def _resolve_buy_fee(config: BacktestConfig, market: str) -> float:
+    if config.market_fee_map and market in config.market_fee_map:
+        return config.market_fee_map[market]
+    return config.fee_pct
+
+
+def _resolve_sell_fee(config: BacktestConfig, market: str) -> float:
+    if config.market_fee_map:
+        # UK stamp duty applies to buys only (0% on sells); FX markets charge FX fee on both.
+        if market == "uk":
+            return 0.0
+        if market in config.market_fee_map:
+            return config.market_fee_map[market]
+    return config.sell_fee_pct
 
 
 def run_backtest(
@@ -264,6 +292,11 @@ def run_backtest(
             raise ValueError(f"No months <= {config.end_month} in backtest range.")
         last_signal_idx = candidates[-1]
 
+    excluded_keys = frozenset(ticker_match_key(t) for t in config.exclude_tickers if t.strip())
+    last_price_month: dict[str, str] = {
+        tkey: max(tprices.keys()) for tkey, tprices in dataset.prices.items() if tprices
+    }
+
     positions: dict[str, _Position] = {}
     closed_records: list[dict[str, str]] = []
     uninvested_cash = 0.0
@@ -272,6 +305,8 @@ def run_backtest(
     total_fees_paid = 0.0
     rule6_exits_count = 0
     takeover_events_count = 0
+    delistings_liquidated_count = 0
+    max_single_weight_pct = 0.0
 
     benchmark_units = 0.0
     benchmark_cash = 0.0
@@ -300,12 +335,39 @@ def run_backtest(
             config.signal_mode == "next_month" and idx == last_signal_idx and idx > first_signal_idx
         )
 
-        # 1. Process corporate events (Rule 7) since previous bar.
+        # 1. Process explicit corporate events (Rule 7) since previous bar.
         tk_now, tk_next, tk_notes, tk_cnt = _process_corporate_events(
             dataset.events, prev_dt, signal_dt, positions, dataset, signal_month
         )
         takeover_events_count += tk_cnt
-        available_takeover = pending_takeover_cash + tk_now
+
+        # Auto-liquidate positions whose price series permanently ended before signal_month.
+        delist_cash_now = 0.0
+        for tkey in list(positions.keys()):
+            t_last = last_price_month.get(tkey)
+            if t_last is not None and signal_month > t_last:
+                pos = positions.pop(tkey)
+                proceeds = pos.units * pos.last_price
+                delist_cash_now += proceeds
+                delistings_liquidated_count += 1
+                is_distressed = pos.last_price <= 1.0
+                closed_records.append(
+                    {
+                        "ticker": pos.ticker,
+                        "name": pos.name,
+                        "index": pos.index,
+                        "first_bought_date": pos.first_bought_date,
+                        "last_top10_month": pos.last_top10_month,
+                        "status": "sold" if is_distressed else "taken_over",
+                        "notes": (
+                            f"Delisted/final bar {t_last} at {pos.last_price:.4f} "
+                            f"(proceeds={proceeds:,.2f})"
+                        ),
+                    }
+                )
+                tk_notes.append(f"Delisted {tkey} ({proceeds:,.2f})")
+
+        available_takeover = pending_takeover_cash + tk_now + delist_cash_now
         pending_takeover_cash = tk_next
 
         # 2. Rank eligible point-in-time constituents.
@@ -315,6 +377,7 @@ def run_backtest(
             top_n=config.top_n,
             window_month=window_month,
             signal_mode=config.signal_mode,
+            excluded_keys=excluded_keys,
         )
         rankings_by_window.append(ranking)
         top10_keys = ranking.top10_tickers
@@ -324,7 +387,6 @@ def run_backtest(
         rule6_sells: list[str] = []
         fees_this_month = 0.0
 
-        # Refresh position prices on current bar.
         holdings_gross_before_sells = sum(
             pos.units * _mark_price(dataset, pos, signal_month) for pos in positions.values()
         )
@@ -341,7 +403,6 @@ def run_backtest(
             pos = positions[tkey]
             is_member_now = dataset.is_member(tkey, membership_month, membership_dt)
             if is_member_now and tkey in top10_keys:
-                # Simplification 2: only index members count as winners.
                 pos.last_top10_month = window_month
                 pos.rule6_stage = 0
                 continue
@@ -370,7 +431,8 @@ def run_backtest(
                 price = _mark_price(dataset, pos, signal_month)
                 units_to_sell = pos.units * sell_fraction
                 gross_sale = units_to_sell * price
-                sell_fee = gross_sale * (config.sell_fee_pct / 100.0)
+                sell_fee_rate = _resolve_sell_fee(config, pos.market)
+                sell_fee = gross_sale * (sell_fee_rate / 100.0)
                 net_sale = gross_sale - sell_fee
                 fees_this_month += sell_fee
                 total_fees_paid += sell_fee
@@ -408,9 +470,14 @@ def run_backtest(
             bench_nav_val = bench_pt.adj_close / bench_base_price
             bench_val = benchmark_units * bench_pt.adj_close + benchmark_cash
 
-        # 4. In next_month mode, the final completed bar values the previous window
-        # and generates the upcoming window's picks without booking an un-elapsed month.
         if is_final_signal_only:
+            if pre_deposit_value > 0.0 and positions:
+                top_pos_w = max(
+                    (pos.units * _mark_price(dataset, pos, signal_month) / pre_deposit_value)
+                    * 100.0
+                    for pos in positions.values()
+                )
+                max_single_weight_pct = max(max_single_weight_pct, top_pos_w)
             points.append(
                 MonthlyBacktestPoint(
                     signal_month=signal_month,
@@ -452,7 +519,8 @@ def run_backtest(
             gross_each = buy_pool / len(picks)
             for pick in picks:
                 pt = dataset.prices[pick.ticker][signal_month]
-                fee = gross_each * (config.fee_pct / 100.0)
+                fee_rate = _resolve_buy_fee(config, pt.market)
+                fee = gross_each * (fee_rate / 100.0)
                 net = gross_each - fee
                 buy_fees += fee
                 fees_this_month += fee
@@ -468,6 +536,7 @@ def run_backtest(
                         ticker=pick.ticker,
                         name=pick.name,
                         index=pick.index,
+                        market=pt.market,
                         units=units,
                         first_bought_date=(
                             f"{window_month}-01"
@@ -485,8 +554,13 @@ def run_backtest(
             sum(pos.units * _mark_price(dataset, pos, signal_month) for pos in positions.values())
             + uninvested_cash
         )
+        if post_buy_value > 0.0 and positions:
+            top_pos_w = max(
+                (pos.units * _mark_price(dataset, pos, signal_month) / post_buy_value) * 100.0
+                for pos in positions.values()
+            )
+            max_single_weight_pct = max(max_single_weight_pct, top_pos_w)
 
-        # Incorporate buy-fee drag into TWR cleanly without counting deposit inflow as return.
         denom = pre_deposit_value + deposit
         if denom > 0.0 and buy_fees > 0.0:
             twr_nav *= post_buy_value / denom
@@ -536,6 +610,18 @@ def run_backtest(
     if bench_ending is not None and benchmark_cash_flows:
         bench_cf_closed = list(benchmark_cash_flows) + [(final_dt, bench_ending)]
 
+    # End-of-backtest holding concentration stats.
+    final_weights: list[tuple[str, float]] = []
+    if ending_value > 0.0:
+        for pos in positions.values():
+            w = (pos.units * pos.last_price / ending_value) * 100.0
+            final_weights.append((pos.ticker, w))
+        final_weights.sort(key=lambda item: item[1], reverse=True)
+
+    top_holding_ticker = final_weights[0][0] if final_weights else None
+    top_holding_weight_pct = final_weights[0][1] if final_weights else 0.0
+    top5_holdings_weight_pct = sum(w for _, w in final_weights[:5])
+
     metrics = compute_backtest_metrics(
         start_month=points[0].window_month,
         end_month=points[-1].window_month,
@@ -552,6 +638,12 @@ def run_backtest(
         benchmark_cash_flows=bench_cf_closed,
         benchmark_ending_value=bench_ending,
         risk_free_rate=config.risk_free_rate,
+        top_holding_ticker=top_holding_ticker,
+        top_holding_weight_pct=top_holding_weight_pct,
+        max_single_holding_weight_pct=max_single_weight_pct,
+        top5_holdings_weight_pct=top5_holdings_weight_pct,
+        active_holdings_count=len(positions),
+        delistings_liquidated_count=delistings_liquidated_count,
     )
 
     final_holdings: list[dict[str, str]] = []
@@ -592,11 +684,13 @@ def compare_variants(
     dataset: BacktestDataset,
     base_config: BacktestConfig,
 ) -> list[VariantSummary]:
-    """Run all strategy variants from docs/rules.md over the exact same window."""
+    """Run all strategy variants (Top 1, Top 3, Top 5, Top 10 +/- Rule 6)."""
     specs: list[tuple[str, int, bool]] = [
         ("Aggressive (Top 1)", 1, False),
         ("Standard (Top 3)", 3, False),
         ("Standard (Top 3 + Rule 6)", 3, True),
+        ("Balanced (Top 5)", 5, False),
+        ("Balanced (Top 5 + Rule 6)", 5, True),
         ("Cautious (Top 10)", 10, False),
         ("Cautious (Top 10 + Rule 6)", 10, True),
     ]
@@ -613,7 +707,57 @@ def compare_variants(
             benchmark_fee_pct=base_config.benchmark_fee_pct,
             risk_free_rate=base_config.risk_free_rate,
             signal_mode=base_config.signal_mode,
+            exclude_tickers=base_config.exclude_tickers,
+            market_fee_map=base_config.market_fee_map,
         )
         res = run_backtest(dataset, cfg, label=label)
         results.append(VariantSummary(label=label, top_n=top_n, rule6_enabled=rule6, result=res))
     return results
+
+
+def run_subperiod_summary(
+    dataset: BacktestDataset,
+    base_config: BacktestConfig,
+    periods: Sequence[tuple[str, str | None, str | None]],
+) -> list[SubperiodRow]:
+    """Evaluate Top 1 / Top 3 / Top 5 / Top 10 vs benchmark across specified sub-periods."""
+    rows: list[SubperiodRow] = []
+    for label, start_m, end_m in periods:
+        xirrs: dict[int, float | None] = {}
+        bench_xirr: float | None = None
+        eff_start = start_m or ""
+        eff_end = end_m or ""
+        for top_n in (1, 3, 5, 10):
+            cfg = BacktestConfig(
+                start_month=start_m,
+                end_month=end_m,
+                monthly_contribution=base_config.monthly_contribution,
+                top_n=top_n,
+                rule6_enabled=False,
+                fee_pct=base_config.fee_pct,
+                sell_fee_pct=base_config.sell_fee_pct,
+                benchmark_fee_pct=base_config.benchmark_fee_pct,
+                risk_free_rate=base_config.risk_free_rate,
+                signal_mode=base_config.signal_mode,
+                exclude_tickers=base_config.exclude_tickers,
+                market_fee_map=base_config.market_fee_map,
+            )
+            res = run_backtest(dataset, cfg)
+            xirrs[top_n] = res.metrics.xirr_pct
+            eff_start = res.metrics.start_month
+            eff_end = res.metrics.end_month
+            if top_n == 3:
+                bench_xirr = res.metrics.benchmark_xirr_pct
+        rows.append(
+            SubperiodRow(
+                period_label=label,
+                start_month=eff_start,
+                end_month=eff_end,
+                top1_xirr_pct=xirrs[1],
+                top3_xirr_pct=xirrs[3],
+                top5_xirr_pct=xirrs[5],
+                top10_xirr_pct=xirrs[10],
+                benchmark_xirr_pct=bench_xirr,
+            )
+        )
+    return rows

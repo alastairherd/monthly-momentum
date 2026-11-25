@@ -1,0 +1,211 @@
+ticker,name,sector,sub_industry,date_added,index
+AAF.L,Airtel Africa,Telecommunications Service Providers,,,FTSE 100
+AAL.L,Anglo American plc,Industrial Metals and Mining,,,FTSE 100
+ABDN.L,Aberdeen Group,Investment Banking and Brokerage Services,,,FTSE 100
+ABF.L,Associated British Foods,Food Producers,,,FTSE 100
+ABI.BR,Anheuser-Busch InBev,Consumer Staples,,,EURO STOXX 50
+ABX.TO,Barrick Mining Corporation,Basic Materials,,,S&P/TSX 60
+AD.AS,Ahold Delhaize,Consumer Staples,,,EURO STOXX 50
+ADM.L,Admiral Group,Non-life Insurance,,,FTSE 100
+ADS.DE,Adidas,Consumer Discretionary,,,EURO STOXX 50
+ADYEN.AS,Adyen,Financials,,,EURO STOXX 50
+AEM.TO,Agnico Eagle Mines Limited,Basic Materials,,,S&P/TSX 60
+AI.PA,Air Liquide,Materials,,,EURO STOXX 50
+AIR.PA,Airbus,Industrials,,,EURO STOXX 50
+ALV.DE,Allianz,Financials,,,EURO STOXX 50
+ALW.L,Alliance Witan,Closed End Investments,,,FTSE 100
+ANTO.L,Antofagasta plc,Industrial Metals and Mining,,,FTSE 100
+ARGX.BR,Argenx,Health Care,,,EURO STOXX 50
+ASML.AS,ASML Holding,Information Technology,,,EURO STOXX 50
+ATD.TO,Alimentation Couche-Tard Inc.,Consumer Cyclical,,,S&P/TSX 60
+AUTO.L,Autotrader Group,Software and Computer Services,,,FTSE 100
+AV.L,Aviva,Life Insurance,,,FTSE 100
+AZN.L,AstraZeneca,"Pharmaceuticals, Biotechnology and Marijuana Producers",,,FTSE 100
+BA.L,BAE Systems,Aerospace and Defense,,,FTSE 100
+BAB.L,Babcock International,Aerospace and Defense,,,FTSE 100
+BAM.TO,Brookfield Asset Management Ltd.,Financial Services,,,S&P/TSX 60
+BARC.L,Barclays,Banks,,,FTSE 100
+BAS.DE,BASF,Materials,,,EURO STOXX 50
+BATS.L,British American Tobacco,Tobacco,,,FTSE 100
+BAYN.DE,Bayer,Health Care,,,EURO STOXX 50
+BBOX.L,Tritax Big Box REIT,Real Estate Investment Trusts,,,FTSE 100
+BBVA.MC,BBVA,Financials,,,EURO STOXX 50
+BBY.L,Balfour Beatty,Construction and Materials,,,FTSE 100
+BCE.TO,BCE Inc.,Communication Services,,,S&P/TSX 60
+BGEO.L,Lion Finance Group,Banks,,,FTSE 100
+BIP-UN.TO,Brookfield Infrastructure Partners L.P.,Utilities,,,S&P/TSX 60
+BLND.L,British Land,Real Estate Investment Trusts,,,FTSE 100
+BMO.TO,Bank of Montreal,Financial Services,,,S&P/TSX 60
+BMW.DE,BMW,Consumer Discretionary,,,EURO STOXX 50
+BN.PA,Danone,Consumer Staples,,,EURO STOXX 50
+BN.TO,Brookfield Corporation,Financial Services,,,S&P/TSX 60
+BNP.PA,BNP Paribas,Financials,,,EURO STOXX 50
+BNS.TO,Bank of Nova Scotia,Financial Services,,,S&P/TSX 60
+BNZL.L,Bunzl,General Industrials,,,FTSE 100
+BP.L,BP,Non-Renewable Energy,,,FTSE 100
+BRBY.L,Burberry Group,Personal Goods,,,FTSE 100
+BT-A.L,BT Group,Telecommunications Service Providers,,,FTSE 100
+BTRW.L,Barratt Redrow,Household Goods and Home Construction,,,FTSE 100
+CAE.TO,CAE Inc.,Industrials,,,S&P/TSX 60
+CCC.L,Computacenter,Software and Computer Services,,,FTSE 100
+CCEP.L,Coca-Cola Europacific Partners,Beverages,,,FTSE 100
+CCH.L,Coca-Cola HBC,Beverages,,,FTSE 100
+CCL-B.TO,CCL Industries Inc.,Consumer Cyclical,,,S&P/TSX 60
+CCO.TO,Cameco Corporation,Energy,,,S&P/TSX 60
+CLS.TO,Celestica Inc.,Information Technology,,,S&P/TSX 60
+CM.TO,Canadian Imperial Bank of Commerce,Financial Services,,,S&P/TSX 60
+CNA.L,Centrica,"Gas, Water and Multi-utilities",,,FTSE 100
+CNQ.TO,Canadian Natural Resources Limited,Energy,,,S&P/TSX 60
+CNR.TO,Canadian National Railway Company,Industrials,,,S&P/TSX 60
+CP.TO,Canadian Pacific Kansas City Limited,Industrials,,,S&P/TSX 60
+CPG.L,Compass Group,Consumer Services,,,FTSE 100
+CRDA.L,Croda International,Chemicals,,,FTSE 100
+CS.PA,Axa,Financials,,,EURO STOXX 50
+CSU.TO,Constellation Software Inc.,Information Technology,,,S&P/TSX 60
+CTC-A.TO,Canadian Tire Corporation Limited,Consumer Cyclical,,,S&P/TSX 60
+CTEC.L,Convatec,Medical Equipment and Services,,,FTSE 100
+CVE.TO,Cenovus Energy Inc.,Energy,,,S&P/TSX 60
+DB1.DE,Deutsche Börse,Financials,,,EURO STOXX 50
+DBK.DE,Deutsche Bank,Financials,,,EURO STOXX 50
+DCC.L,DCC Energy,Industrial Support Services,,,FTSE 100
+DG.PA,Vinci SA,Industrials,,,EURO STOXX 50
+DGE.L,Diageo,Beverages,,,FTSE 100
+DHL.DE,Deutsche Post,Industrials,,,EURO STOXX 50
+DOL.TO,Dollarama Inc.,Consumer Staples,,,S&P/TSX 60
+DPLM.L,Diploma,Industrial Support Services,,,FTSE 100
+DTE.DE,Deutsche Telekom,Communication,,,EURO STOXX 50
+EDV.L,Endeavour Mining,Precious Metals and Mining,,,FTSE 100
+EL.PA,EssilorLuxottica,Health Care,,,EURO STOXX 50
+EMA.TO,Emera Incorporated,Utilities,,,S&P/TSX 60
+ENB.TO,Enbridge Inc.,Energy,,,S&P/TSX 60
+ENEL.MI,Enel,Utilities,,,EURO STOXX 50
+ENGI.PA,Engie,Utilities,,,EURO STOXX 50
+ENI.MI,Eni,Energy,,,EURO STOXX 50
+ENR.DE,Siemens Energy,Industrials,,,EURO STOXX 50
+EXPN.L,Experian,Industrial Support Services,,,FTSE 100
+EZJ.L,EasyJet,Travel and Leisure,,,FTSE 100
+FCIT.L,F & C Investment Trust,Closed End Investments,,,FTSE 100
+FFH.TO,Fairfax Financial Holdings Limited,Financial Services,,,S&P/TSX 60
+FM.TO,First Quantum Minerals Ltd.,Basic Materials,,,S&P/TSX 60
+FNV.TO,Franco-Nevada Corporation,Basic Materials,,,S&P/TSX 60
+FRES.L,Fresnillo plc,Precious Metals and Mining,,,FTSE 100
+FSV.TO,FirstService Corporation,Real Estate,,,S&P/TSX 60
+FTS.TO,Fortis Inc.,Utilities,,,S&P/TSX 60
+GAW.L,Games Workshop,Leisure Goods,,,FTSE 100
+GIB-A.TO,CGI Inc.,Information Technology,,,S&P/TSX 60
+GIL.TO,Gildan Activewear Inc.,Consumer Cyclical,,,S&P/TSX 60
+GLEN.L,Glencore,Industrial Metals and Mining,,,FTSE 100
+GSK.L,GSK plc,"Pharmaceuticals, Biotechnology and Marijuana Producers",,,FTSE 100
+H.TO,Hydro One Limited,Utilities,,,S&P/TSX 60
+HLMA.L,Halma plc,Electronic and Electrical Equipment,,,FTSE 100
+HLN.L,Haleon,"Pharmaceuticals, Biotechnology and Marijuana Producers",,,FTSE 100
+HSBA.L,HSBC,Banks,,,FTSE 100
+HSX.L,Hiscox,Non-life Insurance,,,FTSE 100
+HWDN.L,Howdens Joinery,Retailers,,,FTSE 100
+IAG.L,International Airlines Group,Travel and Leisure,,,FTSE 100
+IBE.MC,Iberdrola,Utilities,,,EURO STOXX 50
+ICG.L,ICG,Investment Banking and Brokerage Services,,,FTSE 100
+IFC.TO,Intact Financial Corporation,Financial Services,,,S&P/TSX 60
+IFX.DE,Infineon Technologies,Information Technology,,,EURO STOXX 50
+IGG.L,IG Group,Investment Banking and Brokerage Services,,,FTSE 100
+IHG.L,IHG Hotels & Resorts,Travel and Leisure,,,FTSE 100
+III.L,3i,Investment Banking and Brokerage Services,,,FTSE 100
+IMB.L,Imperial Brands,Tobacco,,,FTSE 100
+IMI.L,IMI,Electronic and Electrical Equipment,,,FTSE 100
+IMO.TO,Imperial Oil Limited,Energy,,,S&P/TSX 60
+INF.L,Informa,Media,,,FTSE 100
+INGA.AS,ING Group,Financials,,,EURO STOXX 50
+INVP.L,Investec,Banks,,,FTSE 100
+ISP.MI,Intesa Sanpaolo,Financials,,,EURO STOXX 50
+ITH.L,Ithaca Energy,Non-Renewable Energy,,,FTSE 100
+ITRK.L,Intertek,Industrial Support Services,,,FTSE 100
+ITX.MC,Inditex,Consumer Discretionary,,,EURO STOXX 50
+JD.L,JD Sports,Retailers,,,FTSE 100
+K.TO,Kinross Gold Corporation,Basic Materials,,,S&P/TSX 60
+KGF.L,Kingfisher plc,Retailers,,,FTSE 100
+L.TO,Loblaw Companies Limited,Consumer Staples,,,S&P/TSX 60
+LAND.L,Land Securities,Real Estate Investment Trusts,,,FTSE 100
+LGEN.L,Legal & General,Life Insurance,,,FTSE 100
+LLOY.L,Lloyds Banking Group,Banks,,,FTSE 100
+LMP.L,LondonMetric Property,Real Estate Investment Trusts,,,FTSE 100
+LSEG.L,London Stock Exchange Group,Finance and Credit Services,,,FTSE 100
+MBG.DE,Mercedes-Benz Group,Consumer Discretionary,,,EURO STOXX 50
+MC.PA,LVMH Moët Hennessy Louis Vuitton,Consumer Discretionary,,,EURO STOXX 50
+MFC.TO,Manulife Financial Corporation,Financial Services,,,S&P/TSX 60
+MG.TO,Magna International Inc.,Consumer Cyclical,,,S&P/TSX 60
+MKS.L,Marks & Spencer,"Personal Care, Drug and Grocery Stores",,,FTSE 100
+MNG.L,M&G,Investment Banking and Brokerage Services,,,FTSE 100
+MRO.L,Melrose Industries,Aerospace and Defense,,,FTSE 100
+MRU.TO,Metro Inc.,Consumer Staples,,,S&P/TSX 60
+MTLN.L,Metlen Energy & Metals,"Gas, Water and Multi-utilities",,,FTSE 100
+MUV2.DE,Munich Re,Financials,,,EURO STOXX 50
+NA.TO,National Bank of Canada,Financial Services,,,S&P/TSX 60
+NDA-FI.HE,Nordea,Financials,,,EURO STOXX 50
+NG.L,National Grid plc,"Gas, Water and Multi-utilities",,,FTSE 100
+NOKIA.HE,Nokia,Information Technology,,,EURO STOXX 50
+NTR.TO,Nutrien Ltd.,Basic Materials,,,S&P/TSX 60
+NWG.L,NatWest Group,Banks,,,FTSE 100
+NXT.L,Next plc,Retailers,,,FTSE 100
+OR.PA,L'Oréal,Consumer Staples,,,EURO STOXX 50
+OTEX.TO,Open Text Corporation,Information Technology,,,S&P/TSX 60
+PCT.L,Polar Capital Technology Trust,Closed End Investments,,,FTSE 100
+POW.TO,Power Corporation of Canada,Financial Services,,,S&P/TSX 60
+PPL.TO,Pembina Pipeline Corporation,Energy,,,S&P/TSX 60
+PRU.L,Prudential plc,Life Insurance,,,FTSE 100
+PRX.AS,Prosus,Consumer Discretionary,,,EURO STOXX 50
+PSH.L,Pershing Square Holdings,Closed End Investments,,,FTSE 100
+PSON.L,Pearson plc,Media,,,FTSE 100
+QSR.TO,Restaurant Brands International Inc.,Consumer Cyclical,,,S&P/TSX 60
+RACE.MI,Ferrari,Consumer Discretionary,,,EURO STOXX 50
+RCI-B.TO,Rogers Communications Inc.,Communication Services,,,S&P/TSX 60
+REL.L,RELX,Software and Computer Services,,,FTSE 100
+RHM.DE,Rheinmetall,Industrials,,,EURO STOXX 50
+RIO.L,Rio Tinto,Industrial Metals and Mining,,,FTSE 100
+RKT.L,Reckitt,"Personal Care, Drug and Grocery Stores",,,FTSE 100
+RMS.PA,Hermès,Consumer Discretionary,,,EURO STOXX 50
+RR.L,Rolls-Royce Holdings,Aerospace and Defense,,,FTSE 100
+RTO.L,Rentokil Initial,Industrial Support Services,,,FTSE 100
+RY.TO,Royal Bank of Canada,Financial Services,,,S&P/TSX 60
+SAF.PA,Safran,Industrials,,,EURO STOXX 50
+SAN.MC,Banco Santander,Financials,,,EURO STOXX 50
+SAN.PA,Sanofi,Health Care,,,EURO STOXX 50
+SAP.DE,SAP,Information Technology,,,EURO STOXX 50
+SAP.TO,Saputo Inc.,Consumer Staples,,,S&P/TSX 60
+SBRY.L,Sainsbury's,"Personal Care, Drug and Grocery Stores",,,FTSE 100
+SDLF.L,Standard Life,Life Insurance,,,FTSE 100
+SGE.L,Sage Group,Software and Computer Services,,,FTSE 100
+SGO.PA,Saint-Gobain,Industrials,,,EURO STOXX 50
+SGRO.L,Segro,Real Estate Investment Trusts,,,FTSE 100
+SHEL.L,Shell plc,Non-Renewable Energy,,,FTSE 100
+SHOP.TO,Shopify Inc.,Information Technology,,,S&P/TSX 60
+SIE.DE,Siemens,Industrials,,,EURO STOXX 50
+SLF.TO,Sun Life Financial Inc.,Financial Services,,,S&P/TSX 60
+SMIN.L,Smiths Group,General Industrials,,,FTSE 100
+SMT.L,Scottish Mortgage Investment Trust,Closed End Investments,,,FTSE 100
+SN.L,Smith & Nephew,Medical Equipment and Services,,,FTSE 100
+SPX.L,Spirax Group,Industrial Engineering,,,FTSE 100
+SSE.L,SSE plc,Electricity,,,FTSE 100
+STAN.L,Standard Chartered,Banks,,,FTSE 100
+STJ.L,St. James's Place,Investment Banking and Brokerage Services,,,FTSE 100
+SU.PA,Schneider Electric,Industrials,,,EURO STOXX 50
+SU.TO,Suncor Energy Inc.,Energy,,,S&P/TSX 60
+SVT.L,Severn Trent,"Gas, Water and Multi-utilities",,,FTSE 100
+T.TO,Telus Corporation,Communication Services,,,S&P/TSX 60
+TD.TO,Toronto-Dominion Bank,Financial Services,,,S&P/TSX 60
+TECK-B.TO,Teck Resources Limited,Basic Materials,,,S&P/TSX 60
+TOU.TO,Tourmaline Oil Corp.,Energy,,,S&P/TSX 60
+TRI.TO,Thomson Reuters Corporation,Industrials,,,S&P/TSX 60
+TRP.TO,TC Energy Corporation,Energy,,,S&P/TSX 60
+TSCO.L,Tesco,"Personal Care, Drug and Grocery Stores",,,FTSE 100
+TTE.PA,TotalEnergies,Energy,,,EURO STOXX 50
+UCG.MI,UniCredit,Financials,,,EURO STOXX 50
+ULVR.L,Unilever,"Personal Care, Drug and Grocery Stores",,,FTSE 100
+UU.L,United Utilities,"Gas, Water and Multi-utilities",,,FTSE 100
+VOD.L,Vodafone Group,Telecommunications Service Providers,,,FTSE 100
+WCN.TO,Waste Connections Inc.,Industrials,,,S&P/TSX 60
+WEIR.L,Weir,Industrial Engineering,,,FTSE 100
+WN.TO,George Weston Limited,Consumer Staples,,,S&P/TSX 60
+WPM.TO,Wheaton Precious Metals Corp.,Basic Materials,,,S&P/TSX 60
+WPP.L,WPP,Media,,,FTSE 100
+WSP.TO,WSP Global Inc.,Industrials,,,S&P/TSX 60
+WTB.L,Whitbread,Travel and Leisure,,,FTSE 100

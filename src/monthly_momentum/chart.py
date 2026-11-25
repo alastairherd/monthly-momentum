@@ -50,6 +50,8 @@ def generate_performance_chart(
     top1_growth = [float(r["top1_nav"]) * 10_000.0 for r in performance_rows]
     top3_growth = [float(r["top3_nav"]) * 10_000.0 for r in performance_rows]
     top3_r6_growth = [float(r["top3_rule6_nav"]) * 10_000.0 for r in performance_rows]
+    has_top5 = all(r.get("top5_nav") not in (None, "") for r in performance_rows)
+    top5_growth = [float(r["top5_nav"]) * 10_000.0 for r in performance_rows] if has_top5 else []
     top10_growth = [float(r["top10_nav"]) * 10_000.0 for r in performance_rows]
 
     has_bench = all(r.get("benchmark_nav") not in (None, "") for r in performance_rows)
@@ -65,8 +67,8 @@ def generate_performance_chart(
         else []
     )
 
-    fig = plt.figure(figsize=(11.5, 7.2), dpi=180, facecolor="#ffffff")
-    gs = fig.add_gridspec(2, 1, height_ratios=[2.1, 1.05], hspace=0.16)
+    fig = plt.figure(figsize=(11.8, 7.4), dpi=180, facecolor="#ffffff")
+    gs = fig.add_gridspec(2, 1, height_ratios=[2.15, 1.05], hspace=0.16)
     ax_top = fig.add_subplot(gs[0])
     ax_bot = fig.add_subplot(gs[1], sharex=ax_top)
 
@@ -84,7 +86,7 @@ def generate_performance_chart(
         dates_num,
         top3_growth,
         color="#2563eb",
-        linewidth=2.5,
+        linewidth=2.4,
         label=f"Standard (Top 3) — £{top3_growth[-1]:,.0f}",
         zorder=5,
     )
@@ -92,16 +94,25 @@ def generate_performance_chart(
         dates_num,
         top3_r6_growth,
         color="#7c3aed",
-        linewidth=1.8,
+        linewidth=1.5,
         linestyle="-.",
         label=f"Top 3 + Rule 6 — £{top3_r6_growth[-1]:,.0f}",
-        zorder=4,
+        zorder=6,
     )
+    if top5_growth:
+        ax_top.plot(
+            dates_num,
+            top5_growth,
+            color="#0891b2",
+            linewidth=1.8,
+            label=f"Balanced (Top 5) — £{top5_growth[-1]:,.0f}",
+            zorder=4,
+        )
     ax_top.plot(
         dates_num,
         top10_growth,
         color="#059669",
-        linewidth=1.9,
+        linewidth=1.8,
         label=f"Cautious (Top 10) — £{top10_growth[-1]:,.0f}",
         zorder=3,
     )
@@ -109,7 +120,7 @@ def generate_performance_chart(
         dates_num,
         top1_growth,
         color="#d97706",
-        linewidth=1.5,
+        linewidth=1.4,
         linestyle=":",
         alpha=0.95,
         label=f"Aggressive (Top 1) — £{top1_growth[-1]:,.0f}",
@@ -126,7 +137,9 @@ def generate_performance_chart(
             zorder=3,
         )
 
-    all_vals = top1_growth + top3_growth + top3_r6_growth + top10_growth + bench_growth
+    all_vals = (
+        top1_growth + top3_growth + top3_r6_growth + top5_growth + top10_growth + bench_growth
+    )
     max_val = max(all_vals)
     min_val = max(1.0, min(all_vals))
     if max_val / min_val >= 8.0:
@@ -142,13 +155,13 @@ def generate_performance_chart(
         frameon=True,
         facecolor="#ffffff",
         edgecolor="#e2e8f0",
-        fontsize=8.8,
+        fontsize=8.6,
     )
     plt.setp(ax_top.get_xticklabels(), visible=False)
 
     # Bottom panel: Drawdowns from peak (%).
     ax_bot.fill_between(dates_num, top3_dd, 0.0, color="#2563eb", alpha=0.14)
-    ax_bot.plot(dates_num, top3_dd, color="#2563eb", linewidth=1.8, label="Standard (Top 3)")
+    ax_bot.plot(dates_num, top3_dd, color="#2563eb", linewidth=1.7, label="Standard (Top 3)")
     ax_bot.plot(
         dates_num,
         top1_dd,
@@ -204,6 +217,8 @@ def generate_performance_chart(
     end_win = summary.get("latest_window", "")
     signal_m = summary.get("latest_signal_month", "")
     fee_pct = summary.get("fee_pct", 0.15)
+    survivorship_aware = not bool(summary.get("survivorship_warning", True))
+
     fig.suptitle(
         "Monthly Index Momentum vs S&P 500 Total Return",
         fontsize=14,
@@ -211,23 +226,22 @@ def generate_performance_chart(
         color="#0f172a",
         y=0.97,
     )
+    scope_tag = "S&P 500 (Historical Membership)" if survivorship_aware else "S&P 500"
     ax_top.set_title(
-        f"Windows {start_win} to {end_win} (latest signal: {signal_m}) · "
-        f"3Y Total Return ranked, 3M >= 0% filter · {fee_pct:.2f}% US FX fee",
-        fontsize=9.8,
+        f"{scope_tag} · Windows {start_win} to {end_win} (signal: {signal_m}) · "
+        f"3Y TR ranked, 3M >= 0% · {fee_pct:.2f}% US FX fee",
+        fontsize=9.6,
         color="#475569",
         pad=10,
     )
-    fig.text(
-        0.5,
-        0.012,
-        "Mechanistic run on public S&P 500 data "
-        "(Wikipedia constituents & date_added + Yahoo Finance). "
-        "Historical pre-snapshot months carry survivorship bias. Not financial advice.",
-        ha="center",
-        fontsize=8.2,
-        color="#64748b",
+    footer_note = (
+        "Mechanistic run on public S&P 500 data (fja05680 membership + weib08 + Yahoo Finance). "
+        "Not financial advice."
+        if survivorship_aware
+        else "Mechanistic run on public S&P 500 data "
+        "(Wikipedia constituents & date_added + Yahoo Finance). Not financial advice."
     )
+    fig.text(0.5, 0.012, footer_note, ha="center", fontsize=8.1, color="#64748b")
 
     fig.subplots_adjust(left=0.09, right=0.97, top=0.89, bottom=0.085)
     fig.savefig(output_path, dpi=180)

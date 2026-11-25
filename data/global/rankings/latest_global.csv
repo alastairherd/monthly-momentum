@@ -1,0 +1,11 @@
+month,rank,ticker,name,index,return_3y_pct,return_3m_pct,return_type,source,selected_for_buy
+2026-11,1,LITE,Lumentum,S&P 500,2044.0959,17.7550,total_return,backtest,true
+2026-11,2,MU,Micron Technology,S&P 500,1235.8417,7.4979,total_return,backtest,true
+2026-11,3,CVNA,Carvana,S&P 500,1164.6296,9.5093,total_return,backtest,true
+2026-11,4,PLTR,Palantir Technologies,S&P 500,1143.9865,49.6099,total_return,backtest,false
+2026-11,5,ECHO,EchoStar,S&P 500,599.4228,15.2812,total_return,backtest,false
+2026-11,6,DELL,Dell Technologies,S&P 500,562.5712,4.6698,total_return,backtest,false
+2026-11,7,CRWD,CrowdStrike,S&P 500,466.6799,31.2114,total_return,backtest,false
+2026-11,8,AMD,Advanced Micro Devices,S&P 500,412.4873,6.0170,total_return,backtest,false
+2026-11,9,NVDA,Nvidia,S&P 500,403.3130,1.9377,total_return,backtest,false
+2026-11,10,MRVL,Marvell Technology,S&P 500,319.4197,4.7132,total_return,backtest,false
