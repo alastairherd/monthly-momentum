@@ -392,6 +392,7 @@ def test_end_to_end_acwi_uk_flagging_and_all_market_charts(tmp_path: Path) -> No
         "hero_vs_sp500.png",
         "performance.png",
         "performance_markets_comparison.png",
+        "performance_vs_benchmark.png",
         "performance_ftse100.png",
         "performance_acwi.png",
         "performance_acwi_uk_accessible.png",
@@ -427,6 +428,9 @@ def test_end_to_end_acwi_uk_flagging_and_all_market_charts(tmp_path: Path) -> No
     readme_text = (tmp_path / "README.md").read_text(encoding="utf-8")
     assert "assets/hero_vs_sp500.png" in readme_text
     assert "assets/performance_markets_comparison.png" in readme_text
+    assert "![Top 3 strategies vs. their own benchmarks](assets/performance_vs_benchmark.png)" in (
+        readme_text
+    )
     assert "assets/performance_acwi_uk_accessible.png" in readme_text
     assert "assets/performance_acwi.png" in readme_text
     assert "assets/performance_ftse100.png" in readme_text

@@ -22,7 +22,9 @@ from monthly_momentum.backtest.engine import (
     run_subperiod_summary,
 )
 from monthly_momentum.chart import (
+    benchmark_relative_series,
     generate_allocation_chart,
+    generate_benchmark_relative_chart,
     generate_funding_comparison_chart,
     generate_hero_vs_sp500_chart,
     generate_markets_comparison_chart,
@@ -44,6 +46,7 @@ from monthly_momentum.ranking import read_ranking_csv, write_ranking_csv, write_
 
 README_START_MARKER = "<!-- AUTO-GENERATED:START -->"
 README_END_MARKER = "<!-- AUTO-GENERATED:END -->"
+BENCHMARK_RELATIVE_CHART = "assets/performance_vs_benchmark.png"
 
 _ORDERED_VARIANT_LABELS: tuple[str, ...] = (
     "Aggressive (Top 1)",
@@ -829,6 +832,7 @@ def _render_deep_dive_sections(
     rule6_recs: list[dict[str, Any]],
     global_summary: dict[str, Any] | None,
     has_comparison_chart: bool,
+    has_benchmark_relative_chart: bool,
     ftse_history: list[tuple[str, str, list[RankedSecurity]]] | None,
     acwi_uk_history: list[tuple[str, str, list[RankedSecurity]]] | None,
     us_alloc_std: dict[str, Any] | None,
@@ -847,6 +851,11 @@ def _render_deep_dive_sections(
         "| [`assets/hero_vs_sp500.png`](assets/hero_vs_sp500.png) | "
         "**The big picture:** how much `$100/mo` grows to vs. S&P 500 & ACWI trackers |"
     )
+    if has_benchmark_relative_chart:
+        lines.append(
+            f"| [`{BENCHMARK_RELATIVE_CHART}`]({BENCHMARK_RELATIVE_CHART}) | "
+            "How far each Top 3 strategy finished ahead of or behind its own benchmark |"
+        )
     if has_comparison_chart:
         lines.append(
             "| [`assets/performance_markets_comparison.png`]"
@@ -868,6 +877,17 @@ def _render_deep_dive_sections(
             "**DCA vs. Lump Sum:** why dropping `$10k` on Day 1 concentrates holdings far more |"
         )
     lines.append("")
+
+    if has_benchmark_relative_chart:
+        lines.append(f"![Top 3 strategies vs. their own benchmarks]({BENCHMARK_RELATIVE_CHART})")
+        lines.append("")
+        lines.append(
+            "All lines use the same months. The chart divides each portfolio's cumulative "
+            "growth factor by its benchmark's, using time-weighted returns. "
+            "For example, a strategy up 20% against a benchmark up 10% sits at +9.1% "
+            "(1.20 ÷ 1.10 − 1)."
+        )
+        lines.append("")
 
     if has_comparison_chart and global_summary:
         acwi_uk = global_summary.get("acwi_uk_accessible", {})
@@ -1381,6 +1401,7 @@ def _render_readme_block(
     rule6_recs: list[dict[str, Any]],
     global_summary: dict[str, Any] | None = None,
     has_comparison_chart: bool = False,
+    has_benchmark_relative_chart: bool = False,
     ftse_history: list[tuple[str, str, list[RankedSecurity]]] | None = None,
     acwi_uk_history: list[tuple[str, str, list[RankedSecurity]]] | None = None,
     us_alloc_std: dict[str, Any] | None = None,
@@ -1425,6 +1446,7 @@ def _render_readme_block(
         rule6_recs=rule6_recs,
         global_summary=global_summary,
         has_comparison_chart=has_comparison_chart,
+        has_benchmark_relative_chart=has_benchmark_relative_chart,
         ftse_history=ftse_history,
         acwi_uk_history=acwi_uk_history,
         us_alloc_std=us_alloc_std,
@@ -1708,6 +1730,7 @@ def rebuild_public_reports(
     global_const = data_dir / "global" / "constituents.csv"
     global_prices = data_dir / "global" / "monthly_prices.csv"
     has_comparison_chart = False
+    has_benchmark_relative_chart = False
     ftse_history: list[tuple[str, str, list[RankedSecurity]]] | None = None
     acwi_uk_history: list[tuple[str, str, list[RankedSecurity]]] | None = None
 
@@ -1718,36 +1741,33 @@ def rebuild_public_reports(
         global_summary_dict = json.loads(g_res.summary_json_path.read_text(encoding="utf-8"))
 
         global_dir = data_dir / "global"
+        market_sources = (
+            ("US S&P 500 (Top 3)", performance_csv_path, "S&P 500 TR (^SP500TR)"),
+            (
+                "All World — UK-Accessible ACWI (Top 3)",
+                global_dir / "performance_acwi_uk_accessible.csv",
+                "MSCI ACWI ETF (ACWI)",
+            ),
+            (
+                "All World — Full ACWI (Top 3)",
+                global_dir / "performance_acwi.csv",
+                "MSCI ACWI ETF (ACWI)",
+            ),
+            (
+                "UK FTSE 100 (Top 3)",
+                global_dir / "performance_ftse100.csv",
+                "FTSE 100 TR (ISF.L)",
+            ),
+        )
         strategy_series: dict[str, list[tuple[date, float]]] = {}
-        us_series = _load_nav_series_from_perf_csv(performance_csv_path, "top3_nav")
-        if us_series:
-            strategy_series["US S&P 500 (Top 3)"] = us_series
-
-        acwi_uk_perf = global_dir / "performance_acwi_uk_accessible.csv"
-        acwi_uk_series = _load_nav_series_from_perf_csv(acwi_uk_perf, "top3_nav")
-        if acwi_uk_series:
-            strategy_series["All World — UK-Accessible ACWI (Top 3)"] = acwi_uk_series
-
-        acwi_all_perf = global_dir / "performance_acwi.csv"
-        acwi_all_series = _load_nav_series_from_perf_csv(acwi_all_perf, "top3_nav")
-        if acwi_all_series:
-            strategy_series["All World — Full ACWI (Top 3)"] = acwi_all_series
-
-        ftse_perf = global_dir / "performance_ftse100.csv"
-        ftse_series = _load_nav_series_from_perf_csv(ftse_perf, "top3_nav")
-        if ftse_series:
-            strategy_series["UK FTSE 100 (Top 3)"] = ftse_series
-
+        benchmarks_by_market: dict[str, list[tuple[date, float]]] = {}
         bench_series: dict[str, list[tuple[date, float]]] = {}
-        us_b = _load_nav_series_from_perf_csv(performance_csv_path, "benchmark_nav")
-        if us_b:
-            bench_series["S&P 500 TR (^SP500TR)"] = us_b
-        acwi_b = _load_nav_series_from_perf_csv(acwi_all_perf, "benchmark_nav")
-        if acwi_b:
-            bench_series["MSCI ACWI ETF (ACWI)"] = acwi_b
-        ftse_b = _load_nav_series_from_perf_csv(ftse_perf, "benchmark_nav")
-        if ftse_b:
-            bench_series["FTSE 100 TR (ISF.L)"] = ftse_b
+        for market, path, benchmark in market_sources:
+            if points := _load_nav_series_from_perf_csv(path):
+                strategy_series[market] = points
+            if points := _load_nav_series_from_perf_csv(path, "benchmark_nav"):
+                benchmarks_by_market[market] = points
+                bench_series[benchmark] = points
 
         if len(strategy_series) >= 2:
             generate_markets_comparison_chart(
@@ -1756,6 +1776,11 @@ def rebuild_public_reports(
                 root_dir / "assets" / "performance_markets_comparison.png",
             )
             has_comparison_chart = True
+
+        relative_series = benchmark_relative_series(strategy_series, benchmarks_by_market)
+        if len(relative_series) >= 2:
+            generate_benchmark_relative_chart(relative_series, root_dir / BENCHMARK_RELATIVE_CHART)
+            has_benchmark_relative_chart = True
 
         ftse_history = _group_history_by_window(global_dir / "rankings" / "history_ftse100.csv")
         acwi_uk_history = _group_history_by_window(
@@ -1909,6 +1934,7 @@ def rebuild_public_reports(
         rule6_recs=rule6_recs,
         global_summary=global_summary_dict,
         has_comparison_chart=has_comparison_chart,
+        has_benchmark_relative_chart=has_benchmark_relative_chart,
         ftse_history=ftse_history,
         acwi_uk_history=acwi_uk_history,
         us_alloc_std=us_alloc_std,

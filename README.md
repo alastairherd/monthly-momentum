@@ -122,10 +122,15 @@ Computed deterministically from completed data through **2026-10**. Split this m
 | Chart File | What It Answers |
 | :--- | :--- |
 | [`assets/hero_vs_sp500.png`](assets/hero_vs_sp500.png) | **The big picture:** how much `$100/mo` grows to vs. S&P 500 & ACWI trackers |
+| [`assets/performance_vs_benchmark.png`](assets/performance_vs_benchmark.png) | How far each Top 3 strategy finished ahead of or behind its own benchmark |
 | [`assets/performance_markets_comparison.png`](assets/performance_markets_comparison.png) | **Head-to-head markets:** US, All World UK ISA, Full ACWI & UK FTSE 100 since 2017 |
 | [`assets/performance*.png`](assets/performance.png) | **Variant comparison:** Top 1 / Top 3 / Rule 6 / Top 5 / Top 10 TWR curves + drawdowns |
 | [`assets/allocation_*.png`](assets/allocation_sp500.png) | **What you end up owning:** how portfolio `%` weights concentrate over time |
 | [`assets/funding_comparison_sp500.png`](assets/funding_comparison_sp500.png) | **DCA vs. Lump Sum:** why dropping `$10k` on Day 1 concentrates holdings far more |
+
+![Top 3 strategies vs. their own benchmarks](assets/performance_vs_benchmark.png)
+
+All lines use the same months. The chart divides each portfolio's cumulative growth factor by its benchmark's, using time-weighted returns. For example, a strategy up 20% against a benchmark up 10% sits at +9.1% (1.20 ÷ 1.10 − 1).
 
 ![Cross-Market Performance Comparison](assets/performance_markets_comparison.png)
 

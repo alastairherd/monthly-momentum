@@ -582,6 +582,85 @@ def _shorten_small_multiple_title(label: str) -> str:
     )
 
 
+def benchmark_relative_series(
+    strategy_series: Mapping[str, Sequence[tuple[date, float]]],
+    benchmarks_by_market: Mapping[str, Sequence[tuple[date, float]]],
+) -> dict[str, list[tuple[date, float]]]:
+    """Compare strategy and benchmark growth over the same dates for every market."""
+    ratios_by_market: dict[str, dict[date, float]] = {}
+    for market, points in strategy_series.items():
+        benchmark = {
+            day: nav
+            for day, nav in benchmarks_by_market.get(market, ())
+            if math.isfinite(nav) and nav > 0.0
+        }
+        ratios = {
+            day: nav / benchmark[day]
+            for day, nav in points
+            if day in benchmark and math.isfinite(nav) and nav >= 0.0
+        }
+        if len(ratios) >= 2 and any(ratios.values()):
+            ratios_by_market[market] = ratios
+
+    if not ratios_by_market:
+        return {}
+
+    dates = sorted(set.intersection(*(set(ratios) for ratios in ratios_by_market.values())))
+    start = next((d for d in dates if all(r[d] > 0.0 for r in ratios_by_market.values())), None)
+    if start is None or start == dates[-1]:
+        return {}
+
+    return {
+        market: [(d, (ratios[d] / ratios[start] - 1.0) * 100.0) for d in dates if d >= start]
+        for market, ratios in ratios_by_market.items()
+    }
+
+
+def generate_benchmark_relative_chart(
+    market_series: Mapping[str, Sequence[tuple[date, float]]],
+    output_path: Path,
+) -> Path:
+    """Render the cumulative percentage lead or lag against each market's benchmark."""
+    first_series = next(iter(market_series.values()))
+    start, end = first_series[0][0], first_series[-1][0]
+    fig, ax = plt.subplots(figsize=(11.8, 5.2), dpi=180, facecolor=PAPER_BG)
+    _style_editorial_axis(ax)
+    ax.axhline(0.0, color=INK_DARK, linewidth=1.15, linestyle="--", zorder=2)
+    ax.yaxis.set_major_formatter(mticker.PercentFormatter(xmax=100, decimals=0))
+    ax.xaxis_date()
+    locator = mdates.AutoDateLocator(minticks=4, maxticks=8)
+    ax.xaxis.set_major_locator(locator)
+    ax.xaxis.set_major_formatter(mdates.ConciseDateFormatter(locator))
+    ax.tick_params(labelsize=11)
+    ax.margins(x=0.015, y=0.12)
+
+    labels: list[tuple[float, str, str, int]] = []
+    for idx, (market, points) in enumerate(market_series.items()):
+        color, linestyle, width = COMPARISON_STYLES[idx % len(COMPARISON_STYLES)]
+        dates, values = zip(*points, strict=True)
+        date_numbers: Any = mdates.date2num(dates)
+        ax.plot(date_numbers, values, color=color, linestyle=linestyle, linewidth=width, zorder=3)
+        ax.plot(date_numbers[-1], values[-1], marker="o", markersize=4, color=color, zorder=4)
+        label = f"{_shorten_small_multiple_title(market)}  {values[-1]:+.1f}%"
+        labels.append((values[-1], label, color, 1))
+
+    ax.set_ylabel("Growth relative to benchmark", color=INK_SUB, fontsize=11, labelpad=9)
+    _place_direct_labels(ax, labels, min_gap=0.09, font_size=11.5)
+    _draw_top_rule_and_headers(
+        fig,
+        "How each momentum strategy performed against its own benchmark",
+        f"Top 3 portfolios · {start:%b %Y} to {end:%b %Y} · 0% means matching the benchmark",
+        "Compared with S&P 500 Total Return (^SP500TR), MSCI ACWI ETF (ACWI) "
+        "and FTSE 100 ETF (ISF.L). Dividends reinvested.",
+        left=0.085,
+    )
+    fig.subplots_adjust(left=0.085, right=0.77, top=0.805, bottom=0.11)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(output_path, dpi=180, facecolor=PAPER_BG)
+    plt.close(fig)
+    return output_path
+
+
 def generate_markets_comparison_chart(
     strategy_series: Mapping[str, Sequence[tuple[date, float]]],
     benchmark_series: Mapping[str, Sequence[tuple[date, float]]],

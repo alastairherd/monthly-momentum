@@ -7,10 +7,34 @@ import json
 from datetime import date
 from pathlib import Path
 
+import pytest
+
+from monthly_momentum.chart import benchmark_relative_series
 from monthly_momentum.live import ConstituentRecord
 from monthly_momentum.normalize import add_months
 from monthly_momentum.refresh import merge_monthly_price_rows, update_constituent_snapshots
 from monthly_momentum.report import README_END_MARKER, README_START_MARKER, rebuild_public_reports
+
+
+def test_benchmark_relative_series_matches_benchmarks_and_dates() -> None:
+    early, start, middle, end, late = (date(2026, month, 1) for month in range(1, 6))
+    strategies = {
+        "FTSE": [(early, 1.5), (start, 2.0), (middle, 2.1), (end, 2.4), (late, 2.6)],
+        "ACWI": [(start, 4.0), (middle, 4.1), (end, 4.0)],
+        "Missing benchmark": [(start, 1.0), (end, 1.2)],
+    }
+    benchmarks = {
+        "FTSE": [(early, 1.0), (start, 1.0), (middle, 1.05), (end, 1.1), (late, 1.2)],
+        "ACWI": [(start, 2.0), (end, 2.5)],
+    }
+
+    relative = benchmark_relative_series(strategies, benchmarks)
+
+    assert set(relative) == {"FTSE", "ACWI"}
+    assert [day for day, _ in relative["FTSE"]] == [start, end]
+    assert [day for day, _ in relative["ACWI"]] == [start, end]
+    assert [value for _, value in relative["FTSE"]] == pytest.approx([0.0, 9.090909])
+    assert [value for _, value in relative["ACWI"]] == pytest.approx([0.0, -20.0])
 
 
 def _seed_public_repo(root: Path) -> None:
