@@ -89,6 +89,9 @@ def test_rebuild_public_reports_and_idempotency(tmp_path: Path) -> None:
     assert summary.performance_csv_path.exists()
     assert summary.summary_json_path.exists()
     assert summary.chart_path.exists()
+    hero_path = tmp_path / "assets" / "hero_vs_sp500.png"
+    assert hero_path.exists()
+    assert hero_path.read_bytes()[:8] == b"\x89PNG\r\n\x1a\n"
 
     # Check PNG magic header.
     assert summary.chart_path.read_bytes()[:8] == b"\x89PNG\r\n\x1a\n"
@@ -101,6 +104,7 @@ def test_rebuild_public_reports_and_idempotency(tmp_path: Path) -> None:
     readme_text = (tmp_path / "README.md").read_text(encoding="utf-8")
     assert "Latest Mechanistic Picks — 2026-01 Window" in readme_text
     assert "Balanced (Top 5)" in readme_text
+    assert "assets/hero_vs_sp500.png" in readme_text
     assert "assets/performance.png" in readme_text
     assert "## Footer\nKeep me." in readme_text
     assert "PLACEHOLDER_OLD_CONTENT" not in readme_text

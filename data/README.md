@@ -10,7 +10,7 @@ All public market data, performance trajectories, charts, and mechanistic strate
 - `data/monthly_prices.csv` — Completed monthly `close` and dividend/split-adjusted `adj_close` bars (20-year HF + Yahoo ratio-spliced series + `^SP500TR`).
 - `data/rankings/latest.csv` & `data/rankings/history.csv` — Latest Top 10 and full US S&P 500 window history.
 - `data/model_holdings.csv` — Mechanistic Rule 6 tracking log for the US Top 3 model portfolio (matches `templates/holdings.example.csv`).
-- `data/performance.csv` & `data/summary.json` — US S&P 500 variant equity & TWR NAV series (`assets/performance.png`).
+- `data/performance.csv` & `data/summary.json` — US S&P 500 variant equity & TWR NAV series (`assets/performance.png`, `assets/hero_vs_sp500.png`).
 - `data/allocation_summary.json` — Monthly portfolio percentage weights and concentration metrics across US variants (`assets/allocation_sp500.png`).
 - `data/funding_comparison.json` — Monthly DCA (`100/mo`) vs Day-1 lump-sum (`10,000`) & hybrid funding schedules across all four universes (`assets/funding_comparison_sp500.png`).
 - `data/global/` — International & All-World datasets and reports:

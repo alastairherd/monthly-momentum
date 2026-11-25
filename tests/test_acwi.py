@@ -389,6 +389,7 @@ def test_end_to_end_acwi_uk_flagging_and_all_market_charts(tmp_path: Path) -> No
     rebuild_public_reports(root_dir=tmp_path)
 
     for chart_name in (
+        "hero_vs_sp500.png",
         "performance.png",
         "performance_markets_comparison.png",
         "performance_ftse100.png",
@@ -424,6 +425,7 @@ def test_end_to_end_acwi_uk_flagging_and_all_market_charts(tmp_path: Path) -> No
     assert "2330.TW" not in [r["ticker"] for r in gsummary["acwi_uk_accessible"]["top10"]]
 
     readme_text = (tmp_path / "README.md").read_text(encoding="utf-8")
+    assert "assets/hero_vs_sp500.png" in readme_text
     assert "assets/performance_markets_comparison.png" in readme_text
     assert "assets/performance_acwi_uk_accessible.png" in readme_text
     assert "assets/performance_acwi.png" in readme_text

@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import math
-from collections.abc import Mapping, Sequence
+from collections.abc import Collection, Mapping, Sequence
 from datetime import date
 from pathlib import Path
 from typing import Any
@@ -193,6 +193,7 @@ def _draw_event_markers(
     dates: Sequence[date],
     *,
     label_y_frac: float = 0.96,
+    left_aligned_years: Collection[int] = (),
 ) -> None:
     if len(dates) < 6:
         return
@@ -218,12 +219,13 @@ def _draw_event_markers(
             alpha=0.85,
             zorder=1,
         )
+        is_left = ev_dt.year in left_aligned_years
         ax.annotate(
             ev_label,
             xy=(x_ev, y_text),
-            xytext=(4, 0),
+            xytext=(-4 if is_left else 4, 0),
             textcoords="offset points",
-            ha="left",
+            ha="right" if is_left else "left",
             va="top",
             fontsize=7.7,
             color=INK_MUTED,
@@ -317,6 +319,7 @@ def _place_direct_labels(
             fontsize=font_size,
             fontweight="bold" if bold else "normal",
             color=col,
+            linespacing=1.12,
             clip_on=False,
         )
 
@@ -1081,6 +1084,305 @@ def generate_funding_comparison_chart(
 
     _draw_top_rule_and_headers(fig, title, subtitle, footer_note, left=0.06)
     fig.subplots_adjust(left=0.06, right=0.975, top=0.76, bottom=0.165, wspace=0.12)
+    fig.savefig(output_path, dpi=180, facecolor=PAPER_BG)
+    plt.close(fig)
+    return output_path
+
+
+def _plot_dca_hero_panel(
+    ax: Any,
+    series_list: Sequence[
+        tuple[Sequence[date], Sequence[float], str, float | None, str, float, str, int]
+    ],
+    cash_dates: Sequence[date],
+    cash_vals: Sequence[float],
+    *,
+    panel_title: str,
+    panel_subtitle: str,
+    currency_symbol: str,
+    show_events: bool = False,
+) -> None:
+    """Render one linear dollar-value DCA panel with shaded principal floor and direct labels."""
+    _style_editorial_axis(ax, show_bottom=True)
+
+    def _fmt_compact_tick(val: float, _pos: Any) -> str:
+        if val >= 1_000_000:
+            return f"{currency_symbol}{val / 1_000_000:.1f}M"
+        if val >= 1_000:
+            return f"{currency_symbol}{val / 1_000:.0f}k"
+        return f"{currency_symbol}{val:.0f}"
+
+    formatter = mticker.FuncFormatter(_fmt_compact_tick)
+
+    c_nums: Any = mdates.date2num(cash_dates)
+    ax.fill_between(c_nums, cash_vals, 0.0, color="#E4E1D6", alpha=0.68, zorder=1)
+    ax.plot(c_nums, cash_vals, color="#9E9B92", linewidth=1.0, zorder=1)
+
+    all_y: list[float] = list(cash_vals)
+    cash_txt = _format_compact_value(currency_symbol, float(cash_vals[-1]))
+    labels: list[tuple[float, str, str, int]] = [
+        (
+            float(cash_vals[-1]),
+            f"Cash put in\n{cash_txt}",
+            INK_MUTED,
+            0,
+        )
+    ]
+
+    for ds, vals, label_name, xirr_pct, color, lw, ls, bold in series_list:
+        if not ds or not vals:
+            continue
+        d_nums: Any = mdates.date2num(ds)
+        all_y.extend(float(v) for v in vals)
+        ax.plot(d_nums, vals, color=color, linewidth=lw, linestyle=ls, zorder=4 if bold else 3)
+        ax.plot(
+            [float(d_nums[-1])],
+            [float(vals[-1])],
+            marker="o",
+            markersize=4.4 if bold else 3.6,
+            color=color,
+            zorder=5 if bold else 4,
+        )
+        val_txt = _format_compact_value(currency_symbol, float(vals[-1]))
+        line2 = f"{val_txt} ({xirr_pct:.1f}%/yr)" if xirr_pct is not None else val_txt
+        labels.append((float(vals[-1]), f"{label_name}\n{line2}", color, bold))
+
+    max_y = max(all_y) if all_y else 1.0
+    ax.set_ylim(0.0, max_y * 1.13)
+    ax.yaxis.set_major_formatter(formatter)
+    ax.yaxis.set_major_locator(mticker.MaxNLocator(nbins=5, prune="upper"))
+
+    span_days = max(30.0, float(c_nums[-1]) - float(c_nums[0]))
+    ax.set_xlim(float(c_nums[0]) - span_days * 0.015, float(c_nums[-1]) + span_days * 0.015)
+    ax.xaxis_date()
+    ax.xaxis.set_major_locator(mdates.AutoDateLocator(minticks=4, maxticks=6))
+    ax.xaxis.set_major_formatter(mdates.DateFormatter("'%y"))
+
+    if show_events:
+        _draw_event_markers(ax, cash_dates, label_y_frac=0.95, left_aligned_years={2020})
+
+    ax.text(
+        0.0,
+        1.105,
+        panel_title,
+        transform=ax.transAxes,
+        ha="left",
+        va="bottom",
+        fontsize=10.5,
+        fontweight="bold",
+        color=INK_DARK,
+    )
+    ax.text(
+        0.0,
+        1.032,
+        panel_subtitle,
+        transform=ax.transAxes,
+        ha="left",
+        va="bottom",
+        fontsize=8.5,
+        color=INK_SUB,
+    )
+    _place_direct_labels(ax, labels, min_gap=0.165, x_text_axes=1.022, font_size=8.0)
+
+
+def generate_hero_vs_sp500_chart(
+    us_full_points: Sequence[dict[str, Any]],
+    output_path: Path,
+    *,
+    us_full_xirr_pct: float | None,
+    sp500_full_xirr_pct: float | None,
+    common_9y: Mapping[str, Any] | None = None,
+    monthly_amount: float = 100.0,
+    currency_symbol: str = "$",
+) -> Path:
+    """Render a simple FT-broadsheet hero comparison for $100/mo DCA vs index trackers."""
+    if not us_full_points:
+        raise ValueError("Cannot render hero chart from empty points.")
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    us_dates = [pt["d"] for pt in us_full_points]
+    us_cash = [float(pt["cash"]) for pt in us_full_points]
+    us_vals = [float(pt["strategy"]) for pt in us_full_points]
+    sp_pts = [(pt["d"], float(pt["sp500"])) for pt in us_full_points if pt.get("sp500") is not None]
+
+    us_20y_end = us_vals[-1]
+    sp_20y_end = sp_pts[-1][1] if sp_pts else None
+    yrs_20y = max(1, len(us_full_points) // 12)
+    right_series: list[
+        tuple[Sequence[date], Sequence[float], str, float | None, str, float, str, int]
+    ] = []
+    if sp_pts:
+        right_series.append(
+            (
+                [d for d, _ in sp_pts],
+                [v for _, v in sp_pts],
+                "S&P 500",
+                sp500_full_xirr_pct,
+                SERIES_COLORS["bench"],
+                1.7,
+                "--",
+                0,
+            )
+        )
+    right_series.append(
+        (us_dates, us_vals, "US Top 3", us_full_xirr_pct, SERIES_COLORS["top5"], 2.5, "-", 1)
+    )
+
+    w0 = str(us_full_points[0].get("window_month") or "")
+    w1 = str(us_full_points[-1].get("window_month") or "")
+    start_20y = w0[:4] if len(w0) >= 4 else str(us_dates[0].year)
+    end_20y = w1[:4] if len(w1) >= 4 else str(us_dates[-1].year)
+    mo_lbl = f"{currency_symbol}{monthly_amount:,.0f}"
+    subtitle = (
+        f"Actual portfolio value from {mo_lbl} invested on the 1st of every month "
+        "(after 0.15% FX fees, reinvested dividends) vs index trackers"
+    )
+    footer_note = (
+        "Source: fja05680 S&P 500 membership, weib08, iShares ACWI & Yahoo Finance. "
+        "Non-US ACWI pool reflects current constituents. Not financial advice."
+    )
+
+    if common_9y and common_9y.get("acwi_uk"):
+        acwi_uk = common_9y["acwi_uk"]
+        uk_dates = list(acwi_uk["dates"])
+        uk_vals = [float(v) for v in acwi_uk["values"]]
+        uk_cash = [float(v) for v in acwi_uk["cash"]]
+        uk_xirr = acwi_uk.get("xirr_pct")
+
+        left_series: list[
+            tuple[Sequence[date], Sequence[float], str, float | None, str, float, str, int]
+        ] = []
+        acwi_b = common_9y.get("acwi_bench")
+        if acwi_b and acwi_b.get("values"):
+            left_series.append(
+                (
+                    acwi_b["dates"],
+                    acwi_b["values"],
+                    "ACWI ETF",
+                    acwi_b.get("xirr_pct"),
+                    "#8D939E",
+                    1.4,
+                    ":",
+                    0,
+                )
+            )
+        sp9 = common_9y.get("sp500")
+        sp_9y_end: float | None = None
+        if sp9 and sp9.get("values"):
+            sp9_vals = [float(v) for v in sp9["values"]]
+            sp_9y_end = sp9_vals[-1]
+            left_series.append(
+                (
+                    sp9["dates"],
+                    sp9_vals,
+                    "S&P 500",
+                    sp9.get("xirr_pct"),
+                    SERIES_COLORS["bench"],
+                    1.7,
+                    "--",
+                    0,
+                )
+            )
+        us9 = common_9y.get("us_top3")
+        if us9 and us9.get("values"):
+            left_series.append(
+                (
+                    us9["dates"],
+                    us9["values"],
+                    "US Top 3",
+                    us9.get("xirr_pct"),
+                    SERIES_COLORS["top5"],
+                    1.85,
+                    "-",
+                    0,
+                )
+            )
+        left_series.append(
+            (uk_dates, uk_vals, "All World UK ISA", uk_xirr, SERIES_COLORS["top3"], 2.5, "-", 1)
+        )
+
+        yrs_9y = max(1, len(uk_dates) // 12)
+        denom_9y = (
+            sp_9y_end
+            if sp_9y_end and sp_9y_end > 0.0
+            else (
+                float(acwi_b["values"][-1])
+                if acwi_b and acwi_b.get("values") and float(acwi_b["values"][-1]) > 0.0
+                else None
+            )
+        )
+        ratio_9y = (uk_vals[-1] / denom_9y) if denom_9y else None
+        ratio_20y = (us_20y_end / sp_20y_end) if sp_20y_end and sp_20y_end > 0.0 else None
+
+        if ratio_9y is not None and ratio_20y is not None:
+            title = (
+                f"Investing {mo_lbl}/month in Top 3 winners beat the S&P 500 by "
+                f"{ratio_9y:.1f}x over {yrs_9y}y and {ratio_20y:.1f}x over {yrs_20y}y"
+            )
+        elif ratio_9y is not None:
+            title = (
+                f"All World (UK ISA) Top 3 returned {ratio_9y:.1f}x an index tracker "
+                f"at {mo_lbl}/month"
+            )
+        else:
+            title = f"Investing {mo_lbl}/month in Top 3 winners vs index trackers"
+
+        fig = plt.figure(figsize=(14.0, 6.0), dpi=180, facecolor=PAPER_BG)
+        gs = fig.add_gridspec(1, 2, wspace=0.58)
+        ax1 = fig.add_subplot(gs[0, 0])
+        ax2 = fig.add_subplot(gs[0, 1])
+
+        c9_win = f"{common_9y['start_window']}..{common_9y['end_window']}"
+        c9_cash_txt = _format_compact_value(currency_symbol, uk_cash[-1])
+        c20_cash_txt = _format_compact_value(currency_symbol, us_cash[-1])
+        _plot_dca_hero_panel(
+            ax1,
+            left_series,
+            uk_dates,
+            uk_cash,
+            panel_title=f"Same {yrs_9y}-year window ({c9_win})",
+            panel_subtitle=f"Apples-to-apples · {c9_cash_txt} cash put in ({mo_lbl}/mo)",
+            currency_symbol=currency_symbol,
+            show_events=False,
+        )
+        _plot_dca_hero_panel(
+            ax2,
+            right_series,
+            us_dates,
+            us_cash,
+            panel_title=f"Full {yrs_20y}-year US test ({start_20y}–{end_20y})",
+            panel_subtitle=f"Includes 2008 crash & delistings · {c20_cash_txt} put in",
+            currency_symbol=currency_symbol,
+            show_events=True,
+        )
+        _draw_top_rule_and_headers(fig, title, subtitle, footer_note, left=0.052)
+        fig.subplots_adjust(left=0.052, right=0.865, top=0.765, bottom=0.115, wspace=0.58)
+    else:
+        ratio_20y = (us_20y_end / sp_20y_end) if sp_20y_end and sp_20y_end > 0.0 else None
+        if ratio_20y is not None:
+            title = (
+                f"Investing {mo_lbl}/month in US Top 3 winners beat the S&P 500 by {ratio_20y:.1f}x"
+            )
+        else:
+            title = f"Investing {mo_lbl}/month in US Top 3 winners vs index tracker"
+
+        fig = plt.figure(figsize=(11.4, 5.4), dpi=180, facecolor=PAPER_BG)
+        ax = fig.add_subplot(1, 1, 1)
+        _plot_dca_hero_panel(
+            ax,
+            right_series,
+            us_dates,
+            us_cash,
+            panel_title=f"US S&P 500 Top 3 ({start_20y}–{end_20y})",
+            panel_subtitle=(
+                f"{_format_compact_value(currency_symbol, us_cash[-1])} cash put in ({mo_lbl}/mo)"
+            ),
+            currency_symbol=currency_symbol,
+            show_events=True,
+        )
+        _draw_top_rule_and_headers(fig, title, subtitle, footer_note, left=0.075)
+        fig.subplots_adjust(left=0.075, right=0.835, top=0.77, bottom=0.12)
+
     fig.savefig(output_path, dpi=180, facecolor=PAPER_BG)
     plt.close(fig)
     return output_path
