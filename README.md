@@ -25,6 +25,10 @@ For monthly alerts, choose **Watch → Custom → Releases** on GitHub.
 
 ## At a Glance: Why This Works (and the Catch)
 
+![What the $100/month All World portfolio holds — and its race against the ACWI ETF](assets/hero_acwi_uk.png)
+
+*How to read it:* each stacked band is the value of one holding in a `$100/month` All World — UK-accessible portfolio (equal thirds into that month's Top 3), labelled where it mattered most; the dashed line invests the same deposits in an MSCI ACWI ETF and the dotted line tracks cash put in. The first months are drawn from daily prices (see the zoomed inset) and later months from month-end data; the lower panel shows the portfolio's cumulative lead or lag over the ETF.
+
 ![Monthly Momentum $100/month vs S&P 500 Tracker](assets/hero_vs_sp500.png)
 
 - **The edge (`$100/month`):** Over the shared 9-year global window, `$100/mo` grew to **$44,025** (29.8%/yr) in **All World (UK ISA)** vs **$22,416** (15.6%/yr) in an S&P 500 tracker (**2.0x**) and **$19,959** (13.2%/yr) in an MSCI ACWI ETF. Over the full survivorship-aware **20-year US stress test** ($25,000 put in), Top 3 reached **$373,874** (21.9%/yr) vs **$121,970** (13.4%/yr) in the S&P 500 (**3.1x**).

@@ -198,6 +198,15 @@ def acwi_refresh(
         f"({res.priced_tickers} priced, {res.uk_accessible_count} UK-ISA accessible), "
         f"{res.price_rows_count} ACWI price rows, {res.fx_rows_count} FX rows."
     )
+    if res.hero_daily_path:
+        console.print(
+            f"Hero daily bars: [green]{res.hero_daily_path}[/green]"
+            + (
+                f" [yellow](missing: {', '.join(res.hero_daily_missing)})[/yellow]"
+                if res.hero_daily_missing
+                else ""
+            )
+        )
     if (root / "data" / "monthly_prices.csv").exists():
         summary = rebuild_public_reports(
             root_dir=root, contribution=contribution, picks_updated_on=datetime.now(UTC).date()

@@ -13,6 +13,7 @@ import matplotlib
 matplotlib.use("Agg")
 
 import matplotlib.dates as mdates
+import matplotlib.patheffects as patheffects
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
 
@@ -69,6 +70,20 @@ MACRO_EVENTS: tuple[tuple[date, str], ...] = (
     (date(2008, 9, 1), "2008\nGFC"),
     (date(2020, 3, 1), "Covid\n2020"),
     (date(2022, 1, 1), "2022 rate\nshock"),
+)
+
+# Band colors for the cumulative hero chart (chronological holding order).
+HERO_BAND_COLORS: tuple[str, ...] = (
+    "#0F5C6E",  # Deep petrol teal
+    "#C45D18",  # Burnt amber
+    "#2B4590",  # Editorial cobalt
+    "#7A3E65",  # Muted plum
+    "#2E6F40",  # Forest sage
+    "#C28B22",  # Ochre gold
+    "#3C8C9E",  # Slate cyan
+    "#8F3A32",  # Terracotta rust
+    "#5B4A8A",  # Muted violet
+    "#6B7F3A",  # Olive green
 )
 
 
@@ -1262,6 +1277,335 @@ def _plot_dca_hero_panel(
         color=INK_SUB,
     )
     _place_direct_labels(ax, labels, min_gap=0.165, x_text_axes=1.022, font_size=8.0)
+
+
+def _text_color_for(background: str) -> str:
+    """Pick ink or white text for legibility on a colored band."""
+    r, g, b = (int(background[i : i + 2], 16) for i in (1, 3, 5))
+    luminance = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255.0
+    return INK_DARK if luminance > 0.55 else "#FFFFFF"
+
+
+def _draw_hero_first_year_inset(
+    ax_top: Any,
+    pts: Sequence[dict[str, Any]],
+    *,
+    benchmark_label: str,
+    start: date,
+) -> None:
+    """Zoom the daily-granularity opening year inside the hero chart's top panel."""
+    cutoff_d = date(start.year + 1, start.month, start.day)
+    window_pts = [pt for pt in pts if pt["date"] <= cutoff_d]
+    if len(window_pts) < 20:
+        return
+
+    inset = ax_top.inset_axes([0.04, 0.56, 0.19, 0.36])
+    inset.set_facecolor(PAPER_BG)
+    _style_editorial_axis(inset, show_bottom=True)
+
+    i_dates = [pt["date"] for pt in window_pts]
+    i_nums: Any = mdates.date2num(i_dates)
+    i_totals = [float(pt["total"]) for pt in window_pts]
+    i_cash = [float(pt["cash"]) for pt in window_pts]
+    i_bench = [pt["benchmark"] for pt in window_pts]
+    has_i_bench = all(b is not None for b in i_bench)
+    i_bench_f = [float(b) for b in i_bench] if has_i_bench else []
+
+    if has_i_bench:
+        inset.plot(
+            i_nums, i_bench_f, color=SERIES_COLORS["bench"], linewidth=1.2, linestyle="--", zorder=3
+        )
+    inset.plot(i_nums, i_cash, color="#9E9B92", linewidth=1.0, linestyle=":", zorder=2)
+    inset.plot(i_nums, i_totals, color=SERIES_COLORS["top3"], linewidth=1.6, zorder=4)
+    inset.plot(
+        [i_nums[-1]],
+        [i_totals[-1]],
+        marker="o",
+        markersize=3.0,
+        color=SERIES_COLORS["top3"],
+        zorder=5,
+    )
+
+    series_vals = i_totals + i_cash + i_bench_f
+    inset.set_ylim(min(series_vals) * 0.94, max(series_vals) * 1.06)
+    inset.yaxis.set_major_locator(mticker.MaxNLocator(nbins=4))
+    inset.yaxis.set_major_formatter(
+        mticker.FuncFormatter(lambda v, _p: _format_compact_value("", v))
+    )
+    inset.set_xlim(i_nums[0] - 6, i_nums[-1] + 6)
+    inset.xaxis.set_major_locator(mdates.MonthLocator(bymonth=(1, 7)))
+    inset.xaxis.set_major_formatter(mdates.DateFormatter("%b\n%Y"))
+    inset.tick_params(axis="both", labelsize=6.2, pad=2)
+    inset.tick_params(axis="x", length=2)
+
+    inset.text(
+        0.0,
+        1.12,
+        "First year in detail",
+        transform=inset.transAxes,
+        ha="left",
+        va="bottom",
+        fontsize=7.2,
+        fontweight="bold",
+        color=INK_SUB,
+    )
+    inset.text(
+        0.0,
+        1.03,
+        f"vs {benchmark_label} and cash deposited",
+        transform=inset.transAxes,
+        ha="left",
+        va="bottom",
+        fontsize=6.2,
+        color=INK_MUTED,
+    )
+
+
+def generate_hero_cumulative_chart(
+    series: Any,
+    output_path: Path,
+    *,
+    title: str,
+    subtitle: str,
+    footer_note: str,
+    benchmark_label: str = "ACWI ETF",
+    currency_symbol: str = "$",
+) -> Path:
+    """Render the cumulative hero chart: stacked holdings + benchmark line + race panel.
+
+    ``series`` is a ``monthly_momentum.hero.HeroCumulativeSeries``: mixed-granularity
+    points (daily early, monthly after) with per-holding values, a benchmark DCA series,
+    and cash contributed. Works with monthly-only series too (no daily segment).
+    """
+    pts = series.points
+    if not pts:
+        raise ValueError("Cannot render the hero cumulative chart from an empty series.")
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    dates = [pt["date"] for pt in pts]
+    dates_num: Any = mdates.date2num(dates)
+    totals = [float(pt["total"]) for pt in pts]
+    bench_vals = [pt["benchmark"] for pt in pts]
+    cash_vals = [float(pt["cash"]) for pt in pts]
+    has_bench = all(b is not None for b in bench_vals)
+
+    band_keys = list(series.band_tickers)
+    band_vals = [[max(0.02, float(pt["stocks"].get(tk, 0.0))) for pt in pts] for tk in band_keys]
+    colors = [HERO_BAND_COLORS[i % len(HERO_BAND_COLORS)] for i in range(len(band_keys))] + [
+        OTHER_BAND_COLOR
+    ]
+
+    fig = plt.figure(figsize=(11.8, 7.4), dpi=180, facecolor=PAPER_BG)
+    gs = fig.add_gridspec(2, 1, height_ratios=[2.0, 1.0], hspace=0.30)
+    ax_top = fig.add_subplot(gs[0])
+    ax_bot = fig.add_subplot(gs[1], sharex=ax_top)
+
+    _style_editorial_axis(ax_top, show_bottom=False)
+    _style_editorial_axis(ax_bot, show_bottom=True)
+
+    stack_handles = [
+        *band_vals,
+        [max(0.02, totals[j] - sum(v[j] for v in band_vals)) for j in range(len(pts))],
+    ]
+    other_vals = stack_handles[-1]
+    ax_top.stackplot(
+        dates_num,
+        *stack_handles,
+        colors=colors,
+        alpha=0.92,
+        edgecolor=PAPER_BG,
+        linewidth=0.5,
+        zorder=2,
+    )
+
+    def _plot_over_line(vals: list[float], color: str, ls: str, lw: float) -> None:
+        # Paper-colored casing keeps the line legible over the filled bands.
+        ax_top.plot(dates_num, vals, color=PAPER_BG, linewidth=lw + 1.6, linestyle=ls, zorder=5)
+        ax_top.plot(dates_num, vals, color=color, linewidth=lw, linestyle=ls, zorder=6)
+
+    _plot_over_line(cash_vals, "#9E9B92", ":", 1.1)
+    if has_bench:
+        _plot_over_line([float(b) for b in bench_vals], SERIES_COLORS["bench"], "--", 1.7)
+
+    last_x = float(dates_num[-1])
+    ax_top.plot([last_x], [totals[-1]], marker="o", markersize=4.6, color=INK_DARK, zorder=8)
+    if has_bench:
+        ax_top.plot(
+            [last_x],
+            [float(bench_vals[-1])],
+            marker="o",
+            markersize=3.8,
+            color=SERIES_COLORS["bench"],
+            zorder=8,
+        )
+    ax_top.plot([last_x], [cash_vals[-1]], marker="o", markersize=3.4, color="#9E9B92", zorder=8)
+
+    all_vals = totals + cash_vals + ([float(b) for b in bench_vals] if has_bench else [])
+    max_val = max(all_vals)
+    # Keep the axis floor low enough that the first months' equal-thirds bands
+    # (roughly a third of the opening value each) stay visible on the log scale.
+    min_val = max(1.0, min(totals) * 0.3)
+    ax_top.set_yscale("log")
+    ax_top.set_ylim(min_val * 0.9, max_val * 1.2)
+    compact_fmt = mticker.FuncFormatter(lambda x, _p: _format_compact_value("", x))
+    ax_top.yaxis.set_major_formatter(compact_fmt)
+    ax_top.yaxis.set_minor_formatter(mticker.NullFormatter())
+
+    x_span = max(30.0, last_x - float(dates_num[0]))
+    ax_top.set_xlim(float(dates_num[0]) - x_span * 0.012, last_x + x_span * 0.012)
+
+    ax_top.text(
+        0.0,
+        1.03,
+        "Portfolio value by holding (stacked bands, log scale)",
+        transform=ax_top.transAxes,
+        ha="left",
+        va="bottom",
+        fontsize=9.3,
+        fontweight="bold",
+        color=INK_SUB,
+    )
+    _draw_event_markers(ax_top, dates, label_y_frac=0.96)
+    ax_top.tick_params(labelbottom=False)
+
+    # In-band labels at each band's peak share (named holdings, then the Other band).
+    # Greedy collision avoidance keeps the largest labels readable when several bands
+    # peak in the same early months.
+    n_pts = len(pts)
+    x_min, x_max = float(dates_num[0]), last_x
+    y_lo, y_hi = ax_top.get_ylim()
+    log_lo, log_hi = math.log(y_lo), math.log(y_hi)
+
+    def _y_frac(value: float) -> float:
+        return (math.log(max(value, 1e-9)) - log_lo) / (log_hi - log_lo)
+
+    labeled_bands: list[tuple[str, list[float], str, int]] = [
+        (tk, band_vals[idx], colors[idx], idx) for idx, tk in enumerate(band_keys)
+    ] + [("Other", other_vals, OTHER_BAND_COLOR, len(band_keys))]
+    candidates: list[tuple[float, str, list[float], str, int]] = []
+    for tk, vals, band_color, stack_idx in labeled_bands:
+        shares = [vals[j] / totals[j] for j in range(n_pts)]
+        peak_share = max(shares)
+        if peak_share >= 0.10:
+            candidates.append((peak_share, tk, vals, band_color, stack_idx))
+    candidates.sort(reverse=True)
+
+    placed: list[tuple[float, float]] = []
+    for peak_share, tk, vals, band_color, stack_idx in candidates:
+        shares = [vals[j] / totals[j] for j in range(n_pts)]
+        peak_j = shares.index(peak_share)
+        label_x = min(max(float(dates_num[peak_j]), x_min + x_span * 0.05), x_max - x_span * 0.05)
+        near_j = min(range(n_pts), key=lambda j: abs(float(dates_num[j]) - label_x))
+        lower = sum(band_vals[i][near_j] for i in range(stack_idx))
+        upper = lower + vals[near_j]
+        # Visual midpoint of the band on the log axis (clamp below-axis fill to the floor).
+        lower_eff = max(lower, y_lo)
+        mid_y = math.sqrt(lower_eff * upper) if lower_eff > 0.0 else (lower + upper) / 2.0
+        mid_y = min(max(mid_y, y_lo * 1.03), y_hi * 0.97)
+        x_frac = (float(dates_num[near_j]) - x_min) / x_span
+        y_frac = _y_frac(mid_y)
+        if any(abs(x_frac - px) < 0.10 and abs(y_frac - py) < 0.06 for px, py in placed):
+            continue
+        placed.append((x_frac, y_frac))
+        ax_top.text(
+            float(dates_num[near_j]),
+            mid_y,
+            f"{tk} · {peak_share * 100.0:.0f}%",
+            ha="center",
+            va="center",
+            fontsize=8.2,
+            fontweight="bold",
+            color=_text_color_for(band_color),
+            path_effects=[patheffects.withStroke(linewidth=1.8, foreground=band_color)],
+            zorder=9,
+        )
+
+    line_labels: list[tuple[float, str, str, int]] = [
+        (
+            totals[-1],
+            f"Portfolio  {_format_compact_value(currency_symbol, totals[-1])}",
+            INK_DARK,
+            1,
+        )
+    ]
+    if has_bench:
+        line_labels.append(
+            (
+                float(bench_vals[-1]),
+                (
+                    f"{benchmark_label}  "
+                    f"{_format_compact_value(currency_symbol, float(bench_vals[-1]))}"
+                ),
+                SERIES_COLORS["bench"],
+                0,
+            )
+        )
+    line_labels.append(
+        (
+            cash_vals[-1],
+            f"Cash put in  {_format_compact_value(currency_symbol, cash_vals[-1])}",
+            INK_MUTED,
+            0,
+        )
+    )
+    _place_direct_labels(ax_top, line_labels, min_gap=0.092, x_text_axes=1.018, font_size=8.6)
+
+    # Inset: the daily-granularity first year at a readable linear scale.
+    if series.daily_through is not None:
+        _draw_hero_first_year_inset(
+            ax_top,
+            pts,
+            benchmark_label=benchmark_label,
+            start=pts[0]["date"],
+        )
+
+    # Bottom panel: cumulative growth vs the benchmark, in percent.
+    ax_bot.axhline(0.0, color=INK_DARK, linewidth=1.15, zorder=2)
+    if has_bench:
+        rel = [(t / float(b) - 1.0) * 100.0 for t, b in zip(totals, bench_vals, strict=True)]
+        ax_bot.fill_between(dates_num, rel, 0.0, color=SERIES_COLORS["top3"], alpha=0.12, zorder=1)
+        ax_bot.plot(dates_num, rel, color=SERIES_COLORS["top3"], linewidth=1.9, zorder=3)
+        ax_bot.plot(
+            [last_x], [rel[-1]], marker="o", markersize=4.2, color=SERIES_COLORS["top3"], zorder=4
+        )
+        pad = max(6.0, (max(rel) - min(min(rel), 0.0)) * 0.08)
+        ax_bot.set_ylim(min(min(rel), 0.0) - pad, max(rel) + pad)
+        rel_labels = [(rel[-1], f"{rel[-1]:+.0f}% vs {benchmark_label}", SERIES_COLORS["top3"], 1)]
+        _place_direct_labels(ax_bot, rel_labels, min_gap=0.2, x_text_axes=1.018, font_size=9.0)
+    else:
+        ax_bot.text(
+            0.5,
+            0.5,
+            "Benchmark series unavailable",
+            transform=ax_bot.transAxes,
+            ha="center",
+            va="center",
+            fontsize=9.0,
+            color=INK_MUTED,
+        )
+    ax_bot.yaxis.set_major_formatter(mticker.FormatStrFormatter("%.0f%%"))
+    ax_bot.text(
+        0.0,
+        1.06,
+        f"Growth of the same deposits in the portfolio vs {benchmark_label} (%)",
+        transform=ax_bot.transAxes,
+        ha="left",
+        va="bottom",
+        fontsize=9.3,
+        fontweight="bold",
+        color=INK_SUB,
+    )
+
+    ax_bot.xaxis_date()
+    ax_bot.xaxis.set_major_locator(mdates.YearLocator())
+    ax_bot.xaxis.set_major_formatter(mdates.DateFormatter("%Y"))
+
+    _draw_top_rule_and_headers(fig, title, subtitle, footer_note, left=0.075)
+    fig.subplots_adjust(left=0.075, right=0.775, top=0.83, bottom=0.085)
+    fig.savefig(output_path, dpi=180, facecolor=PAPER_BG)
+    plt.close(fig)
+    return output_path
 
 
 def generate_hero_vs_sp500_chart(

@@ -34,6 +34,7 @@ from monthly_momentum.chart import (
     generate_allocation_chart,
     generate_performance_chart,
 )
+from monthly_momentum.hero import HeroCumulativeSeries
 from monthly_momentum.holdings import write_holdings_csv
 from monthly_momentum.live import (
     DEFAULT_USER_AGENT,
@@ -588,6 +589,86 @@ def _history_rows_from_result(std_res: BacktestResult) -> list[RankedSecurity]:
     return rows
 
 
+def _generate_hero_cumulative_chart(
+    *,
+    root_dir: Path,
+    uk_ds: BacktestDataset,
+    uk_std: BacktestResult,
+    contribution: float,
+    names: Mapping[str, str],
+    output_path: Path,
+) -> HeroCumulativeSeries | None:
+    """Build the mixed-granularity hero series and render ``assets/hero_acwi_uk.png``.
+
+    Returns the built ``HeroCumulativeSeries`` (or ``None`` when the Standard Top 3
+    result has no points) so callers can surface series metadata.
+    """
+    from monthly_momentum.chart import generate_hero_cumulative_chart
+    from monthly_momentum.hero import (
+        HERO_DAILY_CSV,
+        HERO_MONTHLY_AMOUNT,
+        build_hero_cumulative_series,
+        load_hero_daily_prices,
+    )
+
+    if not uk_std.points:
+        return None
+
+    global_dir = root_dir / "data" / "global"
+    daily_prices = load_hero_daily_prices(global_dir / HERO_DAILY_CSV)
+    scale_to_100 = (HERO_MONTHLY_AMOUNT / contribution) if contribution > 0.0 else 1.0
+    series = build_hero_cumulative_series(
+        points=uk_std.points,
+        dataset=uk_ds,
+        daily_prices=daily_prices,
+        scale_to_100=scale_to_100,
+        names=names,
+    )
+
+    end_total = float(series.points[-1]["total"])
+    end_bench = series.points[-1]["benchmark"]
+    lead_pct = (
+        (end_total / float(end_bench) - 1.0) * 100.0
+        if end_bench is not None and float(end_bench) > 0.0
+        else 0.0
+    )
+    if lead_pct >= 10.0:
+        lead_phrase = f"and its {lead_pct:.0f}% lead over the ACWI ETF"
+    else:
+        lead_phrase = f"against the ACWI ETF ({lead_pct:+.0f}%)"
+    title = f"What ${HERO_MONTHLY_AMOUNT:.0f}/month in the All World Top 3 owns — {lead_phrase}"
+    granularity_bit = (
+        f"daily prices to {series.daily_through:%b %Y}, month-end after"
+        if series.daily_through
+        else "month-end prices"
+    )
+    subtitle = (
+        f"Top 3 equal thirds, ${HERO_MONTHLY_AMOUNT:.0f}/mo · {series.start_window} to "
+        f"{series.latest_window} · bands = each holding's value · dashed = ACWI ETF · "
+        f"dotted = cash in · {granularity_bit}"
+    )
+    footer_note = (
+        "Source: iShares ACWI & Yahoo Finance (dividends reinvested; "
+        + (
+            f"daily bars to {series.daily_through:%b %Y}, monthly after; "
+            if series.daily_through
+            else ""
+        )
+        + "FX at monthly rates; survivorship bias applies). Not financial advice."
+    )
+
+    generate_hero_cumulative_chart(
+        series,
+        output_path,
+        title=title,
+        subtitle=subtitle,
+        footer_note=footer_note,
+        benchmark_label="ACWI ETF",
+        currency_symbol="$",
+    )
+    return series
+
+
 def _build_acwi_subsection(
     root_dir: Path,
     us_ds: BacktestDataset,
@@ -849,6 +930,16 @@ def _build_acwi_subsection(
         ),
     )
 
+    hero_chart_path = root_dir / "assets" / "hero_acwi_uk.png"
+    hero_series = _generate_hero_cumulative_chart(
+        root_dir=root_dir,
+        uk_ds=uk_ds,
+        uk_std=uk_std,
+        contribution=contribution,
+        names={c.ticker: c.name for c in acwi_constituents},
+        output_path=hero_chart_path,
+    )
+
     return {
         "acwi_all": {
             "latest_window": all_std.points[-1].window_month,
@@ -919,6 +1010,12 @@ def _build_acwi_subsection(
             ),
             "rule6_signals": [r for r in uk_r6_recs if r["action"] != "hold"],
             "chart_path": "assets/performance_acwi_uk_accessible.png",
+            "hero_chart_path": "assets/hero_acwi_uk.png" if hero_series else None,
+            "hero_daily_through": (
+                hero_series.daily_through.isoformat()
+                if hero_series and hero_series.daily_through
+                else None
+            ),
         },
         "_variants_uk": uk_variants,
         "_top10_uk": uk_top10,

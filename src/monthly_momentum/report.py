@@ -424,6 +424,22 @@ def _render_hero_and_takeaways(
 
     lines.append("## At a Glance: Why This Works (and the Catch)")
     lines.append("")
+    hero_cum = (global_summary or {}).get("acwi_uk_accessible", {})
+    if hero_cum.get("hero_chart_path"):
+        lines.append(
+            "![What the $100/month All World portfolio holds — and its race against the "
+            "ACWI ETF](assets/hero_acwi_uk.png)"
+        )
+        lines.append("")
+        lines.append(
+            "*How to read it:* each stacked band is the value of one holding in a `$100/month` "
+            "All World — UK-accessible portfolio (equal thirds into that month's Top 3), "
+            "labelled where it mattered most; the dashed line invests the same deposits in an "
+            "MSCI ACWI ETF and the dotted line tracks cash put in. The first months are drawn "
+            "from daily prices (see the zoomed inset) and later months from month-end data; "
+            "the lower panel shows the portfolio's cumulative lead or lag over the ETF."
+        )
+        lines.append("")
     lines.append("![Monthly Momentum $100/month vs S&P 500 Tracker](assets/hero_vs_sp500.png)")
     lines.append("")
 

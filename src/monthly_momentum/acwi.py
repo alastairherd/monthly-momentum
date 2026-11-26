@@ -17,6 +17,7 @@ from pathlib import Path
 from typing import Any
 from zoneinfo import ZoneInfo
 
+from monthly_momentum.hero import DEFAULT_DAILY_WINDOWS
 from monthly_momentum.live import DEFAULT_USER_AGENT
 from monthly_momentum.normalize import (
     add_months,
@@ -201,6 +202,8 @@ class AcwiRefreshResult:
     uk_accessible_count: int
     price_rows_count: int
     fx_rows_count: int
+    hero_daily_path: str | None = None
+    hero_daily_missing: tuple[str, ...] = ()
 
 
 def classify_uk_accessibility(exchange: str, location: str) -> tuple[bool, str]:
@@ -667,6 +670,188 @@ def fetch_yahoo_v8_monthly_bars(
     return rows, currencies
 
 
+def _fetch_single_v8_daily(
+    canonical_ticker: str,
+    period1: int,
+    period2: int,
+    timeout: float = 12.0,
+) -> list[tuple[str, float]]:
+    """Fetch split/dividend-adjusted daily closes for one ticker via the Yahoo v8 API."""
+    yahoo_sym = to_yahoo_ticker(canonical_ticker)
+    encoded = urllib.parse.quote(yahoo_sym, safe="")
+    session = _get_yahoo_session()
+    backoffs = (1.5, 3.5, 7.0)
+    payload: dict[str, Any] | None = None
+    start_host_idx = sum(ord(ch) for ch in yahoo_sym) & 1
+
+    for attempt in range(4):
+        host = _YAHOO_CHART_HOSTS[(start_host_idx + attempt) & 1]
+        url = (
+            f"https://{host}/v8/finance/chart/{encoded}"
+            f"?period1={period1}&period2={period2}&interval=1d&events=div%2Csplit"
+        )
+        try:
+            resp = session.get(url, timeout=timeout)
+            status = int(resp.status_code)
+            if status in {400, 404, 422}:
+                return []
+            if status == 429 or status >= 500:
+                if attempt < 3:
+                    time.sleep(backoffs[attempt])
+                    continue
+                return []
+            if status != 200:
+                return []
+            payload = resp.json()
+            break
+        except Exception:
+            if attempt < 3:
+                time.sleep(backoffs[attempt])
+
+    if not payload:
+        return []
+
+    results = payload.get("chart", {}).get("result") or []
+    if not results:
+        return []
+
+    res = results[0]
+    meta = res.get("meta") or {}
+    timestamps = res.get("timestamp") or []
+    indicators = res.get("indicators") or {}
+    quote_list = indicators.get("quote") or []
+    adj_list = indicators.get("adjclose") or []
+    if not timestamps or not quote_list:
+        return []
+
+    closes = quote_list[0].get("close") or []
+    adjs = adj_list[0].get("adjclose") if adj_list else closes
+    if not closes or not adjs:
+        return []
+
+    raw_curr = str(meta.get("currency") or "").strip()
+    scale = SUBUNIT_CURRENCIES[raw_curr][1] if raw_curr in SUBUNIT_CURRENCIES else 1.0
+    tz = _tz_for_meta(meta)
+
+    out: list[tuple[str, float]] = []
+    for ts, c_raw, a_raw in zip(timestamps, closes, adjs, strict=False):
+        if ts is None or c_raw is None:
+            continue
+        a_eff = c_raw if a_raw is None else a_raw
+        try:
+            a_val = float(a_eff) / scale
+        except (TypeError, ValueError):
+            continue
+        if not math.isfinite(a_val) or a_val <= 0.0:
+            continue
+        local_dt = datetime.fromtimestamp(int(ts), tz=tz).date()
+        out.append((local_dt.isoformat(), a_val))
+    return out
+
+
+def fetch_yahoo_v8_daily_bars(
+    canonical_tickers: Sequence[str],
+    start: date,
+    end: date,
+    max_workers: int = 6,
+) -> list[dict[str, str]]:
+    """Fetch daily adjusted closes for ``canonical_tickers`` within ``[start, end]``."""
+    period1 = int(datetime(start.year, start.month, start.day, tzinfo=UTC).timestamp())
+    period2 = int(datetime(end.year, end.month, end.day, tzinfo=UTC).timestamp())
+    unique_tickers = list(dict.fromkeys(t for t in canonical_tickers if t.strip()))
+    rows: list[dict[str, str]] = []
+
+    def _run_one(t: str) -> list[tuple[str, float]]:
+        return _fetch_single_v8_daily(t, period1=period1, period2=period2)
+
+    bars_by_ticker: dict[str, list[tuple[str, float]]] = {}
+    with ThreadPoolExecutor(max_workers=max(1, max_workers)) as pool:
+        mapped = pool.map(_run_one, unique_tickers)
+        for ticker, bars in zip(unique_tickers, mapped, strict=True):
+            bars_by_ticker[ticker] = bars
+    for ticker in unique_tickers:
+        for dt_s, a_val in bars_by_ticker.get(ticker, []):
+            rows.append({"date": dt_s, "ticker": ticker, "adj_close": f"{a_val:.4f}"})
+
+    rows.sort(key=lambda r: (r["date"], r["ticker"]))
+    return rows
+
+
+def refresh_hero_daily_prices_csv(
+    root_dir: Path = Path("."),
+    *,
+    daily_windows: int = DEFAULT_DAILY_WINDOWS,
+    as_of: date | None = None,
+    max_workers: int = 6,
+) -> tuple[Path | None, list[str]]:
+    """Refresh the committed daily-bars CSV behind the cumulative hero chart.
+
+    Reads the UK-accessible rankings history to find the first windows' picks, fetches
+    daily Yahoo bars for those holdings plus the ACWI benchmark, and rewrites
+    ``data/global/daily_prices_first_months.csv``. Returns the CSV path (or ``None``
+    when no rankings history exists yet) and the tickers that returned no data.
+    """
+    from monthly_momentum.hero import HERO_DAILY_CSV
+
+    history_path = root_dir / "data" / "global" / "rankings" / "history_acwi_uk_accessible.csv"
+    if not history_path.exists():
+        return None, []
+
+    picks_by_window: dict[str, list[str]] = {}
+    with history_path.open("r", encoding="utf-8-sig", newline="") as fh:
+        for row in csv.DictReader(fh):
+            window = (row.get("month") or "").strip()
+            try:
+                rank = int(float(row.get("rank") or 0))
+            except ValueError:
+                rank = 0
+            if (
+                window
+                and rank <= 3
+                and (row.get("selected_for_buy") or "").strip().lower() == "true"
+            ):
+                picks_by_window.setdefault(window, []).append((row.get("ticker") or "").strip())
+
+    windows = sorted(picks_by_window)
+    if not windows:
+        return None, []
+
+    hero_tickers: set[str] = {"ACWI"}
+    for window in windows[: max(1, daily_windows) + 1]:
+        hero_tickers.update(t for t in picks_by_window[window] if t)
+
+    first_window = windows[0]
+    first_signal = add_months(first_window, -1)
+    # The last daily session needed is the month-end close of the K-th daily interval's
+    # window month; keep a small buffer of sessions after it.
+    last_signal = add_months(windows[min(daily_windows, len(windows) - 1)], -1)
+    after_last = add_months(last_signal, 1)
+    last_month_end = date(int(after_last[:4]), int(after_last[5:7]), 1) - timedelta(days=1)
+    start = date(int(first_signal[:4]), int(first_signal[5:7]), 1) - timedelta(days=10)
+    end = last_month_end + timedelta(days=10)
+
+    rows = fetch_yahoo_v8_daily_bars(
+        sorted(hero_tickers), start=start, end=end, max_workers=max_workers
+    )
+    fetched: dict[str, set[str]] = {}
+    for row in rows:
+        fetched.setdefault(row["ticker"], set()).add(row["date"])
+    failed = sorted(t for t in sorted(hero_tickers) if not fetched.get(t))
+
+    out_path = root_dir / "data" / "global" / HERO_DAILY_CSV
+    # Keep any previously committed CSV when the fetch is incomplete so a Yahoo hiccup
+    # never degrades the chart until the next complete refresh.
+    if failed or not rows:
+        return (out_path if out_path.exists() else None), failed
+
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    with out_path.open("w", encoding="utf-8", newline="") as fh:
+        writer = csv.DictWriter(fh, fieldnames=["date", "ticker", "adj_close"])
+        writer.writeheader()
+        writer.writerows(rows)
+    return out_path, failed
+
+
 def fetch_all_fx_rates_v8(
     currencies: Sequence[str],
     years: int = 12,
@@ -781,6 +966,16 @@ def refresh_acwi_market(
     priced_set = {r["ticker"] for r in merged_prices} | set(us_coverage.keys())
     priced_constituents = sum(1 for c in constituents if c.ticker in priced_set)
 
+    hero_daily_path: Path | None = None
+    hero_daily_missing: tuple[str, ...] = ()
+    try:
+        hero_daily_path, hero_missing = refresh_hero_daily_prices_csv(
+            root_dir=root_dir, as_of=eff_as_of, max_workers=max_workers
+        )
+        hero_daily_missing = tuple(hero_missing)
+    except Exception:  # noqa: BLE001 - the hero chart degrades gracefully without daily bars
+        hero_daily_missing = ()
+
     return AcwiRefreshResult(
         as_of_label=as_of_label,
         total_csv_equities=total_csv_equities,
@@ -789,4 +984,6 @@ def refresh_acwi_market(
         uk_accessible_count=sum(1 for c in constituents if c.uk_accessible),
         price_rows_count=len(merged_prices),
         fx_rows_count=len(merged_fx),
+        hero_daily_path=str(hero_daily_path) if hero_daily_path is not None else None,
+        hero_daily_missing=hero_daily_missing,
     )
