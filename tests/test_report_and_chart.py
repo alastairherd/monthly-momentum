@@ -130,19 +130,24 @@ def test_rebuild_public_reports_and_idempotency(tmp_path: Path) -> None:
     assert "Balanced (Top 5)" in summary_data["variants"]
 
     readme_text = (tmp_path / "README.md").read_text(encoding="utf-8")
-    assert readme_text.index("## This month's picks") < readme_text.index("## At a Glance")
+    assert readme_text.index("## This month's picks") < readme_text.index("## Backtests")
     assert "**Last updated:** 2026-01-02 (UTC)." in readme_text
     assert "| US S&P 500 | 2026-01 | **AAA**, **BBB**, **CCC** |" in readme_text
-    assert "## Latest pick details" in readme_text
-    assert "## How the strategy works" in readme_text
-    assert "## Why the other approaches fell short" in readme_text
-    assert "Standard (Top 3 + staged exits)" in readme_text
+    assert "## Rules" in readme_text
+    assert "docs/report.md" in readme_text
     assert "Rule 6" not in readme_text
-    assert "Balanced (Top 5)" in readme_text
     assert "assets/hero_vs_sp500.png" in readme_text
-    assert "assets/performance.png" in readme_text
     assert "## Footer\nKeep me." in readme_text
     assert "PLACEHOLDER_OLD_CONTENT" not in readme_text
+    # Detail lives in the generated docs/report.md, with paths relative to docs/.
+    report_text = (tmp_path / "docs" / "report.md").read_text(encoding="utf-8")
+    assert "## Latest pick details" in report_text
+    assert "## Why the other approaches fell short" in report_text
+    assert "Standard (Top 3 + staged exits)" in report_text
+    assert "Balanced (Top 5)" in report_text
+    assert "](../assets/performance.png)" in report_text
+    assert "](assets/" not in report_text
+    assert "Rule 6" not in report_text
 
     # Re-running offline report produces identical JSON and README text.
     rebuild_public_reports(root_dir=tmp_path)

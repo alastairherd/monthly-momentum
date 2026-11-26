@@ -64,7 +64,7 @@ jobs:
         env:
           WINDOW: ${{ steps.picks.outputs.window }}
         run: |
-          git add data/ assets/ README.md
+          git add data/ assets/ README.md docs/report.md
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0

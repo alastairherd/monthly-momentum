@@ -401,7 +401,25 @@ def _render_window_history_tables(
         lines.append("")
 
 
-def _render_hero_and_takeaways(
+def _render_live_section(lines: list[str], *, has_live_chart: bool) -> None:
+    if not has_live_chart:
+        return
+    lines.append("## Live portfolio")
+    lines.append("")
+    lines.append(
+        "![Live: $100/month in the All World Top 3 since 25 Nov 2026, against the ACWI ETF]"
+        "(assets/live_tracker.png)"
+    )
+    lines.append("")
+    lines.append(
+        "The real portfolio, tracked forward from 25 Nov 2026: `$100` a month split equally "
+        "across the All World — UK-accessible Top 3, against the same cash in the ACWI ETF. "
+        "Updated after every US market close."
+    )
+    lines.append("")
+
+
+def _render_backtest_summary(
     lines: list[str],
     *,
     summary: dict[str, Any],
@@ -410,259 +428,118 @@ def _render_hero_and_takeaways(
     us_alloc_std: dict[str, Any] | None,
     global_alloc: dict[str, Any] | None,
     hero_stats: dict[str, Any] | None,
-    has_live_chart: bool = False,
 ) -> None:
     std_m = variants["Standard (Top 3)"].metrics
     contribution = float(summary.get("monthly_contribution_gbp") or 500.0)
     scale = (100.0 / contribution) if contribution > 0.0 else 1.0
-    us20_end = std_m.ending_value * scale
-    sp20_end = (
-        std_m.benchmark_ending_value * scale if std_m.benchmark_ending_value is not None else None
-    )
-    us20_in = std_m.total_contributed * scale
-    us20_xirr = std_m.xirr_pct or 0.0
-    sp20_xirr = std_m.benchmark_xirr_pct or 0.0
 
-    lines.append("## At a Glance: Why This Works (and the Catch)")
+    def _cell(value: float | None, xirr: float | None, symbol: str = "$") -> str:
+        if not value:
+            return "—"
+        rate = f" ({xirr:.1f}%/yr)" if xirr is not None else ""
+        return f"{symbol}{value:,.0f}{rate}"
+
+    lines.append("## Backtests")
     lines.append("")
-    if has_live_chart:
-        lines.append(
-            "![Live: $100/month in the All World Top 3 since the repo started — holdings and "
-            "race against the ACWI ETF](assets/live_tracker.png)"
-        )
-        lines.append("")
-        lines.append(
-            "*How to read it:* this is the real, forward-tracked portfolio — not a backtest. "
-            "It started on 25 Nov 2026 with `$100` split equally across that month's All World "
-            "— UK-accessible Top 3, and adds `$100` into each new month's picks. The treemap "
-            "shows what it holds today (area = current value); the right panel compares it "
-            "with the same cash put into the ACWI ETF, updated after every market close."
-        )
-        lines.append("")
-    lines.append("![Monthly Momentum $100/month vs S&P 500 Tracker](assets/hero_vs_sp500.png)")
+    lines.append("`$100` a month into the Top 3, held without stop-losses:")
     lines.append("")
 
-    c9 = (hero_stats or {}).get("common_9y")
-    if c9 and c9.get("acwi_uk"):
-        uk9 = c9["acwi_uk"]
-        sp9 = c9.get("sp500")
-        ab9 = c9.get("acwi_bench")
-        parts_9y = [
-            f"**${uk9['ending_value']:,.0f}** ({uk9['xirr_pct']:.1f}%/yr) in **All World (UK ISA)**"
-        ]
-        if sp9:
-            ratio9 = uk9["ending_value"] / sp9["ending_value"] if sp9["ending_value"] > 0 else 0.0
-            parts_9y.append(
-                f"vs **${sp9['ending_value']:,.0f}** ({sp9['xirr_pct']:.1f}%/yr) in an S&P 500 "
-                f"tracker (**{ratio9:.1f}x**)"
-            )
-        if ab9:
-            parts_9y.append(
-                f"and **${ab9['ending_value']:,.0f}** ({ab9['xirr_pct']:.1f}%/yr) "
-                "in an MSCI ACWI ETF"
-            )
-        edge_9y = " ".join(parts_9y)
-    else:
-        edge_9y = ""
-
-    sp20_txt = ""
-    if sp20_end and sp20_end > 0:
-        ratio20 = us20_end / sp20_end
-        sp20_txt = (
-            f"vs **${sp20_end:,.0f}** ({sp20_xirr:.1f}%/yr) in the S&P 500 (**{ratio20:.1f}x**)"
-        )
-    us20_sentence = (
-        f"Over the full survivorship-aware **20-year US stress test** (${us20_in:,.0f} put in), "
-        f"Top 3 reached **${us20_end:,.0f}** ({us20_xirr:.1f}%/yr) {sp20_txt}."
+    c9 = (hero_stats or {}).get("common_9y") or {}
+    gs = global_summary or {}
+    au = gs.get("acwi_uk_accessible") or {}
+    aa = gs.get("acwi_all") or {}
+    ft = gs.get("ftse100") or {}
+    au_s = au.get("variants", {}).get("Standard (Top 3)", {})
+    aa_s = aa.get("variants", {}).get("Standard (Top 3)", {})
+    ft_s = ft.get("variants", {}).get("Standard (Top 3)", {})
+    span9 = (
+        f"{c9['start_window'][:4]}–{c9['end_window'][:4]}"
+        if c9.get("start_window") and c9.get("end_window")
+        else "9 years"
     )
-    if edge_9y:
-        lines.append(
-            "- **The edge (`$100/month`):** Over the shared 9-year global window, `$100/mo` "
-            f"grew to {edge_9y}. {us20_sentence}"
-        )
-    else:
-        lines.append(f"- **The edge (`$100/month`):** {us20_sentence}")
+    first20 = str(summary.get("backtest_start_window") or "2006")[:4]
+    last20 = str(summary.get("latest_window") or "")[:4]
 
+    lines.append(f"| Universe | {span9} | {first20}–{last20} | Worst drop |")
+    lines.append("| :--- | ---: | ---: | ---: |")
+    if au:
+        lines.append(
+            f"| **All World — UK-accessible** ({au.get('universe_size', 0)} stocks) | "
+            f"{_cell((au_s.get('ending_value') or 0.0) * scale, au_s.get('xirr_pct'))} | — | "
+            f"{au_s.get('max_drawdown_pct', 0.0):.0f}% |"
+        )
+    us9 = c9.get("us_top3") or {}
     lines.append(
-        "- **Why it works:** Buying current winners and holding without stop-losses lets rare "
-        "multi-baggers (`AAPL`, `NVDA`, `AMD`, `ARGX.BR`, `GAW.L`) compound uncapped, while small "
-        "equal monthly buys keep individual losers immaterial."
+        f"| **US S&P 500** ({summary['priced_tickers_count']} stocks, incl. delisted) | "
+        f"{_cell(us9.get('ending_value'), us9.get('xirr_pct'))} | "
+        f"{_cell(std_m.ending_value * scale, std_m.xirr_pct)} | "
+        f"{std_m.max_drawdown_pct:.0f}% |"
     )
+    if aa:
+        lines.append(
+            f"| All World — full ACWI ({aa.get('universe_size', 0)} stocks) | "
+            f"{_cell((aa_s.get('ending_value') or 0.0) * scale, aa_s.get('xirr_pct'))} | — | "
+            f"{aa_s.get('max_drawdown_pct', 0.0):.0f}% |"
+        )
+    if ft:
+        lines.append(
+            f"| UK FTSE 100 ({ft.get('universe_size', 0)} stocks, GBP) | "
+            f"{_cell((ft_s.get('ending_value_gbp') or 0.0) * scale, ft_s.get('xirr_pct'), '£')}"
+            f" | — | {ft_s.get('max_drawdown_pct', 0.0):.0f}% |"
+        )
+    sp9 = c9.get("sp500") or {}
+    ab9 = c9.get("acwi_bench") or {}
+    sp20 = std_m.benchmark_ending_value
+    lines.append(
+        f"| *S&P 500 tracker* | {_cell(sp9.get('ending_value'), sp9.get('xirr_pct'))} | "
+        f"{_cell(sp20 * scale if sp20 else None, std_m.benchmark_xirr_pct)} | — |"
+    )
+    if ab9:
+        lines.append(
+            f"| *ACWI ETF* | {_cell(ab9.get('ending_value'), ab9.get('xirr_pct'))} | — | — |"
+        )
+    lines.append("")
+    lines.append("![$100/month: Top 3 vs S&P 500 and ACWI trackers](assets/hero_vs_sp500.png)")
+    lines.append("")
 
-    us_top5_pct = f"{us_alloc_std['final_top5_pct']:.0f}%" if us_alloc_std else "~75%"
-    uk_std = (
-        (global_summary or {})
-        .get("acwi_uk_accessible", {})
-        .get("variants", {})
-        .get("Standard (Top 3)", {})
-    )
-    uk_dd = uk_std.get("max_drawdown_pct")
-    dd_range = (
-        f"**{uk_dd:.0f}%** to **{std_m.max_drawdown_pct:.0f}%**"
-        if uk_dd is not None
-        else f"**{std_m.max_drawdown_pct:.0f}%**"
-    )
-    uk_top5_w = (
+    us_top5 = us_alloc_std.get("final_top5_pct") if us_alloc_std else None
+    uk_top5 = (
         (global_alloc or {})
         .get("acwi_uk_accessible", {})
         .get("Standard (Top 3)", {})
         .get("final_top5_pct")
     )
-    conc_txt = f"{uk_top5_w:.0f}%–{us_top5_pct}" if uk_top5_w is not None else us_top5_pct
-    lines.append(
-        f"- **The catch:** Expect stomach-churning drops ({dd_range} peak-to-trough), heavy "
-        f"top-5 concentration (**{conc_txt}** of portfolio value), and multi-year lagging spells "
-        "(e.g. 2022–2023 drawdowns, or 2009–2018 outside the US). Best run as a **minority "
-        "satellite slice (e.g., 10–25%)** inside a tax-free Stocks & Shares ISA alongside a core "
-        "tracker."
-    )
-    lines.append(
-        "- **Monthly DCA vs. Lump Sum:** `$100/mo` and `£500/mo` produce identical `%` portfolio "
-        "weights and annualized returns (only totals scale). Dropping a `$10,000` lump sum on "
-        "Day 1 locks `100x` a monthly buy into Month 1's Top 3 — shrinking Effective N to "
-        "`1.1–2.8` unless phased in or rotated through staged exits."
-    )
-    lines.append("")
-
-
-def _render_option_guide(
-    lines: list[str],
-    *,
-    summary: dict[str, Any],
-    variants: dict[str, BacktestResult],
-    global_summary: dict[str, Any] | None,
-    hero_stats: dict[str, Any] | None,
-) -> None:
-    std_m = variants["Standard (Top 3)"].metrics
-    contribution = float(summary.get("monthly_contribution_gbp") or 500.0)
-    scale = (100.0 / contribution) if contribution > 0.0 else 1.0
-    us20_end = std_m.ending_value * scale
-    us20_xirr = std_m.xirr_pct
-
-    lines.append("## Which Option Is Best?")
-    lines.append("")
-
-    c9 = (hero_stats or {}).get("common_9y")
-    if global_summary and global_summary.get("acwi_uk_accessible"):
-        au = global_summary["acwi_uk_accessible"]
-        aa = global_summary.get("acwi_all", {})
-        ft = global_summary.get("ftse100", {})
-        au_s = au.get("variants", {}).get("Standard (Top 3)", {})
-        aa_s = aa.get("variants", {}).get("Standard (Top 3)", {})
-        ft_s = ft.get("variants", {}).get("Standard (Top 3)", {})
-
-        us9_str = (
-            f"${c9['us_top3']['ending_value']:,.0f} ({c9['us_top3']['xirr_pct']:.1f}%)"
-            if c9 and c9.get("us_top3")
-            else "—"
-        )
-        uk9_end = (au_s.get("ending_value") or 0.0) * scale
-        aa9_end = (aa_s.get("ending_value") or 0.0) * scale
-        ft9_end = (ft_s.get("ending_value_gbp") or 0.0) * scale
-        uk9_x = _format_plain_pct(au_s.get("xirr_pct"))
-        aa9_x = _format_plain_pct(aa_s.get("xirr_pct"))
-        ft9_x = _format_plain_pct(ft_s.get("xirr_pct"))
-
+    if us_top5 is not None and uk_top5 is not None:
+        lo, hi = sorted((uk_top5, us_top5))
         lines.append(
-            "| Strategy Option (Standard Top 3) | Best For | Shared 9Y (`$100/mo`) | "
-            "Full 20Y (`$100/mo`) | Worst Drop | Verdict |"
+            f"Returns come from a few multi-baggers held through deep falls, so the five "
+            f"largest holdings end up at {lo:.0f}–{hi:.0f}% of the portfolio."
         )
-        lines.append("| :--- | :--- | :---: | :---: | :---: | :--- |")
-        lines.append(
-            f"| **All World — UK ISA** (`{au.get('universe_size', 0)}` stocks) | "
-            f"UK retail Stocks & Shares ISA | **${uk9_end:,.0f}** ({uk9_x}) | — | "
-            f"{au_s.get('max_drawdown_pct', 0.0):.1f}% | "
-            "**Best everyday pick** — global breadth, skips inaccessible EM shares |"
-        )
-        lines.append(
-            f"| **US S&P 500** (`{summary['priced_tickers_count']}` stocks) | "
-            f"Maximum historical confidence | {us9_str} | "
-            f"**${us20_end:,.0f}** ({_format_plain_pct(us20_xirr)}) | "
-            f"{std_m.max_drawdown_pct:.1f}% | "
-            "**Most battle-tested** — survivorship-free across 2008 & delistings |"
-        )
-        if aa:
-            lines.append(
-                f"| All World — Full ACWI (`{aa.get('universe_size', 0)}` stocks) | "
-                f"Global institutional benchmark | ${aa9_end:,.0f} ({aa9_x}) | — | "
-                f"{aa_s.get('max_drawdown_pct', 0.0):.1f}% | "
-                "Reference only — includes local TW/KR/CN shares |"
-            )
-        if ft:
-            lines.append(
-                f"| UK FTSE 100 (`{ft.get('universe_size', 0)}` stocks) | "
-                f"GBP-only / lower drawdown | £{ft9_end:,.0f} ({ft9_x}) | — | "
-                f"{ft_s.get('max_drawdown_pct', 0.0):.1f}% | "
-                "Beats FTSE 100 TR, lower growth after 0.50% stamp duty |"
-            )
-        lines.append("")
-        if c9 and c9.get("us_top3") and c9.get("acwi_uk"):
-            uk_v = c9["acwi_uk"]["ending_value"]
-            us_v = c9["us_top3"]["ending_value"]
-            win_span = f"{c9['start_window']}–{c9['end_window']}"
-            lines.append(
-                "> **Why did `All World (UK ISA)` look so much higher than `US S&P 500` "
-                "in raw headline tables?** Different start years. Over the exact same 9-year "
-                f"window (`{win_span}`), All World UK ISA (`${uk_v:,.0f}`) and US S&P 500 "
-                f"(`${us_v:,.0f}`) delivered nearly identical returns — while the 20-year US "
-                "figure (`21.9%`) includes the 2008 financial crash and 2010s grind. All World "
-                "(UK ISA) edges ahead practically by spreading across Europe & Canada with "
-                "shallower drawdowns."
-            )
-            lines.append("")
-    else:
-        lines.append("| Variant | `$100/mo` Ending Value | XIRR | Worst Drop | Verdict |")
-        lines.append("| :--- | :---: | :---: | :---: | :--- |")
-        for lbl in (
-            "Standard (Top 3)",
-            "Standard (Top 3 + Rule 6)",
-            "Balanced (Top 5)",
-            "Cautious (Top 10)",
-        ):
-            m = variants[lbl].metrics
-            verdict = "Recommended core rule" if lbl == "Standard (Top 3)" else "Optional variant"
-            lines.append(
-                f"| **{_display_variant_label(lbl)}** | ${m.ending_value * scale:,.0f} | "
-                f"{_format_plain_pct(m.xirr_pct)} | {m.max_drawdown_pct:.1f}% | {verdict} |"
-            )
         lines.append("")
 
 
 def _render_how_it_works(lines: list[str]) -> None:
-    lines.append("## How the strategy works")
+    lines.append("## Rules")
     lines.append("")
-    lines.append(
-        "The strategy ranks one universe of shares each month. The most thoroughly tested "
-        "universe is the US S&P 500, where a month's list contains the companies that were "
-        "index members at that time, including those later removed or delisted. The FTSE 100 "
-        "and All World runs apply the same steps to their own pools. Recent listings enter "
-        "the ranking once they have enough price history to measure the three-year return."
+    lines.extend(
+        [
+            "1. Rank the universe by 3-year total return (dividends included), using prices "
+            "to the end of the previous month.",
+            "2. Drop anything trading below its price of three months ago.",
+            "3. On the first trading day, split the month's deposit equally across the top 3. "
+            "Names already held are bought again.",
+            "4. Never sell on a falling price. Takeover cash goes into the next month's buys.",
+            "5. Optional staged exit: after 6 years outside the top 10 sell a third, at 7 years "
+            "half the rest, at 8 years the remainder.",
+            "",
+            "Details: [rules](docs/rules.md) · [research](docs/research.md) · "
+            "[full report with rankings, variants and history](docs/report.md)",
+            "",
+        ]
     )
-    lines.append("")
-    lines.append(
-        "Rankings use data through the end of the previous completed month. Shares are "
-        "sorted by 3-year total return with dividends included, and any share trading below "
-        "its price of three months ago drops out. On the first trading day of the new month, "
-        "that month's deposit is split into three equal fractional buys across the top-ranked "
-        "names, and names already held are simply bought again."
-    )
-    lines.append("")
-    lines.append(
-        "Winners are held through their declines, and a falling price alone never triggers a "
-        "sale. When a holding is bought out in a takeover, the cash is recycled into the next "
-        "month's buys."
-    )
-    lines.append("")
-    lines.append(
-        "An optional staged exit exists for faded winners. Once a holding has spent six "
-        "years outside the top ten, one third of the position is sold. At seven years "
-        "outside, half of what remains goes, and at eight years the rest follows. A return "
-        "to the top ten stops the exit and resets the clock, and every sale from it is "
-        "recycled into that month's buys."
-    )
-    lines.append("")
-    lines.append("See the [full rules and setup notes](docs/rules.md).")
-    lines.append("")
+
+
+def _render_rejected_alternatives(lines: list[str]) -> None:
     lines.append("## Why the other approaches fell short")
     lines.append("")
     lines.append(
@@ -741,8 +618,8 @@ def _render_picks_overview(
     lines.extend(
         [
             "",
-            "[See the rankings and returns](#latest-pick-details).",
-            "For monthly alerts, choose **Watch → Custom → Releases** on GitHub.",
+            "[Rankings and returns](docs/report.md#latest-pick-details) · New picks are "
+            "published as [GitHub releases](../../releases) on the 1st.",
             "",
         ]
     )
@@ -1467,6 +1344,31 @@ def _render_deep_dive_sections(
 def _render_readme_block(
     summary: dict[str, Any],
     variants: dict[str, BacktestResult],
+    global_summary: dict[str, Any] | None = None,
+    us_alloc_std: dict[str, Any] | None = None,
+    global_alloc: dict[str, Any] | None = None,
+    hero_stats: dict[str, Any] | None = None,
+    has_live_chart: bool = False,
+) -> str:
+    lines: list[str] = []
+    _render_picks_overview(lines, summary, global_summary)
+    _render_live_section(lines, has_live_chart=has_live_chart)
+    _render_backtest_summary(
+        lines,
+        summary=summary,
+        variants=variants,
+        global_summary=global_summary,
+        us_alloc_std=us_alloc_std,
+        global_alloc=global_alloc,
+        hero_stats=hero_stats,
+    )
+    _render_how_it_works(lines)
+    return "\n".join(lines)
+
+
+def _render_full_report(
+    summary: dict[str, Any],
+    variants: dict[str, BacktestResult],
     sensitivity: dict[str, BacktestResult],
     subperiods: list[SubperiodRow],
     latest_ranking: list[RankedSecurity],
@@ -1481,35 +1383,22 @@ def _render_readme_block(
     us_alloc_std: dict[str, Any] | None = None,
     global_alloc: dict[str, Any] | None = None,
     funding_comparison: dict[str, Any] | None = None,
-    hero_stats: dict[str, Any] | None = None,
-    has_live_chart: bool = False,
 ) -> str:
-    lines: list[str] = []
-    _render_picks_overview(lines, summary, global_summary)
-    _render_hero_and_takeaways(
-        lines,
-        summary=summary,
-        variants=variants,
-        global_summary=global_summary,
-        us_alloc_std=us_alloc_std,
-        global_alloc=global_alloc,
-        hero_stats=hero_stats,
-        has_live_chart=has_live_chart,
-    )
-    _render_option_guide(
-        lines,
-        summary=summary,
-        variants=variants,
-        global_summary=global_summary,
-        hero_stats=hero_stats,
-    )
-    _render_how_it_works(lines)
+    """Render ``docs/report.md``: the detailed rankings, variants, and history tables."""
+    lines: list[str] = [
+        "# Monthly Momentum — full report",
+        "",
+        "Generated by `monthly-momentum report`; edits are overwritten. "
+        "Back to the [README](../README.md).",
+        "",
+    ]
     _render_latest_picks_section(
         lines,
         summary=summary,
         latest_ranking=latest_ranking,
         global_summary=global_summary,
     )
+    _render_rejected_alternatives(lines)
     _render_deep_dive_sections(
         lines,
         summary=summary,
@@ -1529,7 +1418,11 @@ def _render_readme_block(
         global_alloc=global_alloc,
         funding_comparison=funding_comparison,
     )
-    return "\n".join(lines)
+    text = "\n".join(lines).rstrip() + "\n"
+    # Paths in the shared renderers are relative to the repo root; this file lives in docs/.
+    text = re.sub(r"\]\(docs/", "](", text)
+    text = re.sub(r"\]\((assets|data|templates|src|tests)/", r"](../\1/", text)
+    return text
 
 
 def _update_readme_file(readme_path: Path, generated_block: str) -> None:
@@ -2002,24 +1895,36 @@ def rebuild_public_reports(
     readme_block = _render_readme_block(
         summary=summary_payload,
         variants=variants,
-        sensitivity=sensitivity,
-        subperiods=subperiods,
-        latest_ranking=latest_ranking_result.top10,
-        history_by_window=history_by_window,
-        holdings=model_holdings,
-        rule6_recs=rule6_recs,
         global_summary=global_summary_dict,
-        has_comparison_chart=has_comparison_chart,
-        has_benchmark_relative_chart=has_benchmark_relative_chart,
-        ftse_history=ftse_history,
-        acwi_uk_history=acwi_uk_history,
         us_alloc_std=us_alloc_std,
         global_alloc=global_alloc_dict,
-        funding_comparison=funding_comparison_payload,
         hero_stats=hero_stats_payload,
         has_live_chart=(root_dir / "assets" / "live_tracker.png").exists(),
     )
     _update_readme_file(readme_path, readme_block)
+    report_md_path = root_dir / "docs" / "report.md"
+    report_md_path.parent.mkdir(parents=True, exist_ok=True)
+    report_md_path.write_text(
+        _render_full_report(
+            summary=summary_payload,
+            variants=variants,
+            sensitivity=sensitivity,
+            subperiods=subperiods,
+            latest_ranking=latest_ranking_result.top10,
+            history_by_window=history_by_window,
+            holdings=model_holdings,
+            rule6_recs=rule6_recs,
+            global_summary=global_summary_dict,
+            has_comparison_chart=has_comparison_chart,
+            has_benchmark_relative_chart=has_benchmark_relative_chart,
+            ftse_history=ftse_history,
+            acwi_uk_history=acwi_uk_history,
+            us_alloc_std=us_alloc_std,
+            global_alloc=global_alloc_dict,
+            funding_comparison=funding_comparison_payload,
+        ),
+        encoding="utf-8",
+    )
     summary_json_path.write_text(json.dumps(summary_payload, indent=2) + "\n", encoding="utf-8")
 
     return PublicReportSummary(
