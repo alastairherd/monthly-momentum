@@ -1,8 +1,22 @@
 # Monthly Momentum
 
-Each month, buy equal amounts of the three shares with the best 3-year total return, skipping any that fell over the last 3 months. Hold them; never sell on a falling price.
+I invest a slice of my Stocks & Shares ISA by one mechanical rule: each month, buy equal amounts of the three shares with the best 3-year total return, skip any that fell over the last 3 months, and never sell because a price has fallen. This repo picks the shares, backtests the rule, and tracks my real portfolio against a global index fund. Picks refresh automatically on the 1st of each month.
 
-Picks, data and charts refresh automatically on the 1st of each month. Not financial advice.
+## Why
+
+It started as a test of **Way II, "Backing winners"**, from Koch and Gough's *The FT Guide to Selecting Shares that Perform*: buy the best recent performers, add to the stars, and cut anything that falls 8–10%. It looked fine on UK data, but that data only held companies still listed today. On US shares it fell apart. From March 2022 to March 2026 it returned about 0.2% a year, against 11.8% for an S&P 500 tracker. The stop-losses fired constantly (537 trades, mostly small losses), and the crash rule sold everything three times, including at the bottom of the April 2025 sell-off.
+
+So I kept the part that worked, buying winners, and dropped nearly all the selling. Buying monthly changed the question from "when do I sell?" to "where does new money go?". Testing Top 1, 3, 5 and 10 over rolling 10-year windows, then 16 markets and a global pool, led to this rule: buy the top 3 every month and hold. The full story is in [docs/origin.md](docs/origin.md).
+
+## How far to trust it
+
+- About a dozen rule sets were tried on the same 20 years and the best was kept, so the backtest flatters it.
+- Returns rest on a few very large winners (Nvidia, Netflix) and an exceptional run for US mega-cap tech.
+- Per unit of risk, Top 3 only slightly beats the market.
+- The backtests below fell 47–66% at their worst.
+- Data outside the US still leaves out companies that failed.
+
+That's why it is a slice of my ISA next to a tracker rather than the whole thing, and why the [live portfolio](#live-portfolio) starts from the day I began. Not financial advice.
 
 <!-- AUTO-GENERATED:START -->
 
