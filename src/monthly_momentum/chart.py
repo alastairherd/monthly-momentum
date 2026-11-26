@@ -1777,11 +1777,11 @@ def generate_stock_contribution_chart(
     output_path.parent.mkdir(parents=True, exist_ok=True)
     sym = currency_symbol
 
-    fig = plt.figure(figsize=(13.0, 6.6), facecolor=PAPER_BG)
+    fig = plt.figure(figsize=(14.5, 6.6), facecolor=PAPER_BG)
     _draw_top_rule_and_headers(fig, title, subtitle, footer_left=footer_note, left=0.055)
     slot = 0.95 / len(panels)
     for idx, panel in enumerate(panels):
-        ax = fig.add_axes((0.055 + idx * slot, 0.12, slot - 0.20, 0.66))
+        ax = fig.add_axes((0.055 + idx * slot, 0.12, slot - 0.235, 0.66))
         _style_editorial_axis(ax)
         dates = list(panel["dates"])
         bands: list[tuple[str, list[float]]] = list(panel["bands"])
@@ -1821,14 +1821,22 @@ def generate_stock_contribution_chart(
         # Label each band at its final-value midpoint, nudged apart to avoid overlaps.
         mids: list[tuple[float, str, str]] = []
         base = 0.0
+        invested: Mapping[str, float] = panel.get("invested", {})
         for key, vals, color in zip(stack_keys, stack_vals, colors, strict=True):
             v = vals[-1]
             share = v / total_final * 100.0 if total_final > 0 else 0.0
+            paid = invested.get(key)
+            growth = (
+                f"  {_format_compact_value(sym, paid)} → {_format_compact_value(sym, v)}"
+                + (f" ({v / paid:.0f}×)" if v / paid >= 10 else f" ({v / paid:.1f}×)")
+                if paid
+                else f"  {_format_compact_value(sym, v)}"
+            )
             if key == "Other":
-                txt = f"Everything else  {_format_compact_value(sym, v)} · {share:.0f}%"
+                txt = f"Everything else{growth} · {share:.0f}%"
                 ink = INK_SUB
             else:
-                txt = f"{key}  {_format_compact_value(sym, v)} · {share:.0f}%"
+                txt = f"{key}{growth} · {share:.0f}%"
                 ink = color
             mids.append(((base + v / 2.0) / y_top, txt, ink))
             base += v

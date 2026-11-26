@@ -1470,8 +1470,20 @@ def _stock_value_panel(
         for item in r_res.ranked:
             if item.name:
                 names.setdefault(item.ticker, item.name)
+    # Cash paid in per stock: each month's new deposit split equally across that month's
+    # picks (recycled takeover proceeds are not new money, so they are not counted).
+    invested: dict[str, float] = {}
+    prev_cum = 0.0
+    for pt in pts:
+        deposit = pt.contributed_cum - prev_cum
+        prev_cum = pt.contributed_cum
+        if deposit > 0.0 and pt.top_picks:
+            for tk in pt.top_picks:
+                invested[tk] = invested.get(tk, 0.0) + deposit * scale / len(pt.top_picks)
+    invested_other = sum(v for tk, v in invested.items() if tk not in top)
     return {
         "label": label,
+        "invested": {**{tk: invested.get(tk, 0.0) for tk in top}, "Other": invested_other},
         "dates": [pt.dt for pt in pts],
         "cash": [pt.contributed_cum * scale for pt in pts],
         "bands": [(tk, [v.get(tk, 0.0) for v in values]) for tk in top],
@@ -1957,7 +1969,8 @@ def rebuild_public_reports(
         title="A handful of shares made most of the money",
         subtitle=(
             "Value of each holding in the $100/month Top 3 backtests, largest six named · "
-            "grey = every other holding · dotted = cash put in"
+            "labels show cash paid in → final value · grey = every other holding · "
+            "dotted = total cash put in"
         ),
         footer_note=(
             "Source: survivorship-aware S&P 500 membership, iShares ACWI & Yahoo Finance; "
