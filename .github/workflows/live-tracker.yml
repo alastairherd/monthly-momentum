@@ -1,0 +1,45 @@
+name: Live tracker
+
+on:
+  schedule:
+    # 22:30 UTC on weekdays, after the US close (and well after European closes).
+    - cron: "30 22 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  # Share the monthly refresh's group so the two never push over each other.
+  group: monthly-refresh
+  cancel-in-progress: false
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up uv and Python
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync --frozen
+
+      - name: Mark the live portfolio to the latest close
+        run: uv run monthly-momentum track
+
+      - name: Commit and push
+        run: |
+          git add data/live assets/live_tracker.png
+          if git diff --cached --quiet; then
+            echo "No new close to record."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(live): mark live tracker to $(jq -r .as_of data/live/summary.json) close"
+          git push
