@@ -21,5 +21,12 @@
       "benchmark_amount": 100.0
     }
   ],
-  "pending": null
+  "pending": null,
+  "notes": [
+    {
+      "date": "2026-11-25",
+      "label": "Started",
+      "text": "Started mid-month. November's picks came from end-October prices; by this close LITE had fallen 43% and MU 32% since, and on 25 Nov prices all three would have failed the 3-month rule."
+    }
+  ]
 }

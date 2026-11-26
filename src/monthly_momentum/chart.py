@@ -1576,7 +1576,9 @@ def generate_live_tracker_chart(tracker: Any, series: Any, output_path: Path) ->
     )
 
     # ---- Left: treemap of current holdings (area = value today) ----
-    ax_t = fig.add_axes((0.05, 0.10, 0.44, 0.70))
+    notes = [n for n in getattr(tracker, "notes", []) if n.get("text")]
+    lift = 0.035 * len(notes)
+    ax_t = fig.add_axes((0.05, 0.10 + lift, 0.44, 0.70 - lift))
     ax_t.set_xlim(0, 1)
     ax_t.set_ylim(0, 1)
     ax_t.axis("off")
@@ -1646,7 +1648,7 @@ def generate_live_tracker_chart(tracker: Any, series: Any, output_path: Path) ->
         )
 
     # ---- Right: portfolio vs benchmark, same cash ----
-    ax = fig.add_axes((0.565, 0.13, 0.30, 0.67))
+    ax = fig.add_axes((0.565, 0.13 + lift, 0.30, 0.67 - lift))
     _style_editorial_axis(ax)
     dates = [p.date for p in pts]
     totals = [p.total for p in pts]
@@ -1690,16 +1692,18 @@ def generate_live_tracker_chart(tracker: Any, series: Any, output_path: Path) ->
         ax.set_xlim(dates[0] - timedelta(days=3), dates[0] + timedelta(days=3))
         ax.xaxis.set_major_locator(mdates.DayLocator())
         ax.xaxis.set_major_formatter(mdates.DateFormatter("%-d %b"))
-        ax.text(
-            0.5,
-            0.18,
-            "Day one: both start from the same cash.\nA new point lands after every market close.",
-            transform=ax.transAxes,
-            ha="center",
-            va="center",
-            fontsize=8.8,
-            color=INK_SUB,
-        )
+        if not notes:
+            ax.text(
+                0.5,
+                0.18,
+                "Day one: both start from the same cash.\n"
+                "A new point lands after every market close.",
+                transform=ax.transAxes,
+                ha="center",
+                va="center",
+                fontsize=8.8,
+                color=INK_SUB,
+            )
     elif span <= 92:
         ax.set_xlim(dates[0] - timedelta(days=1), dates[-1] + timedelta(days=1))
         ax.xaxis.set_major_locator(mdates.AutoDateLocator(minticks=3, maxticks=7))
@@ -1750,6 +1754,36 @@ def generate_live_tracker_chart(tracker: Any, series: Any, output_path: Path) ->
             color=c,
             fontweight="bold" if c != INK_MUTED else "normal",
             linespacing=1.25,
+        )
+
+    for k, note in enumerate(notes):
+        try:
+            note_day = date.fromisoformat(note["date"])
+        except (KeyError, ValueError):
+            continue
+        marker = str(k + 1)
+        if dates[0] <= note_day <= dates[-1]:
+            note_x = float(mdates.date2num(note_day))
+            ax.axvline(note_x, color=EVENT_COLOR, linestyle="--", linewidth=0.9, zorder=1)
+            ax.text(
+                note_x,
+                0.97,
+                f" {marker} {note.get('label', '')}".rstrip(),
+                transform=ax.get_xaxis_transform(),
+                ha="left",
+                va="top",
+                fontsize=8.4,
+                fontweight="bold",
+                color=EVENT_COLOR,
+            )
+        fig.text(
+            0.05,
+            0.05 + 0.035 * (len(notes) - 1 - k),
+            f"{marker}  {note_day:%-d %b %Y}: {note['text']}",
+            ha="left",
+            va="bottom",
+            fontsize=8.6,
+            color=INK_SUB,
         )
 
     fig.savefig(output_path, dpi=180, facecolor=PAPER_BG)

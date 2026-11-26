@@ -57,6 +57,8 @@ class LiveTracker:
     names: dict[str, str] = field(default_factory=dict)
     buys: list[LiveBuy] = field(default_factory=list)
     pending: dict[str, Any] | None = None
+    # Dated context shown on the chart, e.g. why the start date matters.
+    notes: list[dict[str, str]] = field(default_factory=list)
 
     @property
     def tickers(self) -> list[str]:
@@ -124,6 +126,7 @@ def load_tracker(path: Path) -> LiveTracker:
             for b in raw.get("buys", [])
         ],
         pending=raw.get("pending"),
+        notes=list(raw.get("notes", [])),
     )
 
 
@@ -145,6 +148,7 @@ def save_tracker(tracker: LiveTracker, path: Path) -> None:
             for b in tracker.buys
         ],
         "pending": tracker.pending,
+        "notes": tracker.notes,
     }
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

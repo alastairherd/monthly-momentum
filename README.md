@@ -16,7 +16,7 @@ So I kept the part that worked, buying winners, and dropped nearly all the selli
 - The backtests below fell 47–66% at their worst.
 - Data outside the US still leaves out companies that failed.
 
-That's why it is a slice of my ISA next to a tracker rather than the whole thing, and why the [live portfolio](#live-portfolio) starts from the day I began. Not financial advice.
+That's why it is a slice of my ISA next to a tracker rather than the whole thing, and why the [live portfolio](#live-portfolio) starts from the day I began. That day turned out to be mid-month, right after the November picks had fallen hard; the live chart marks it. Not financial advice.
 
 <!-- AUTO-GENERATED:START -->
 
@@ -32,7 +32,9 @@ That's why it is a slice of my ISA next to a tracker rather than the whole thing
 | UK FTSE 100 | 2026-11 | **BGEO.L**, **PCT.L**, **SMT.L** |
 | All World — Full ACWI | 2026-11 | **LITE**, **2059.TW**, **MU** |
 
-[Rankings and returns](docs/report.md#latest-pick-details) · New picks are published as [GitHub releases](../../releases) on the 1st.
+[Rankings and returns](docs/report.md#latest-pick-details)
+
+**Get each month's picks by email:** at the top of the repo page, click **Watch → Custom**, tick **Releases**, then **Apply**. GitHub sends one notification when new picks are published on the 1st; the daily live-tracker updates don't notify. For a feed reader, use [releases.atom](https://github.com/alastairherd/monthly-momentum/releases.atom).
 
 ## Live portfolio
 

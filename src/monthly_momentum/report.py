@@ -623,8 +623,13 @@ def _render_picks_overview(
     lines.extend(
         [
             "",
-            "[Rankings and returns](docs/report.md#latest-pick-details) · New picks are "
-            "published as [GitHub releases](../../releases) on the 1st.",
+            "[Rankings and returns](docs/report.md#latest-pick-details)",
+            "",
+            "**Get each month's picks by email:** at the top of the repo page, click "
+            "**Watch → Custom**, tick **Releases**, then **Apply**. GitHub sends one notification "
+            "when new picks are published on the 1st; the daily live-tracker updates don't "
+            "notify. For a feed reader, use "
+            "[releases.atom](https://github.com/alastairherd/monthly-momentum/releases.atom).",
             "",
         ]
     )
