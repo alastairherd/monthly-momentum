@@ -410,6 +410,7 @@ def _render_hero_and_takeaways(
     us_alloc_std: dict[str, Any] | None,
     global_alloc: dict[str, Any] | None,
     hero_stats: dict[str, Any] | None,
+    has_live_chart: bool = False,
 ) -> None:
     std_m = variants["Standard (Top 3)"].metrics
     contribution = float(summary.get("monthly_contribution_gbp") or 500.0)
@@ -424,20 +425,18 @@ def _render_hero_and_takeaways(
 
     lines.append("## At a Glance: Why This Works (and the Catch)")
     lines.append("")
-    hero_cum = (global_summary or {}).get("acwi_uk_accessible", {})
-    if hero_cum.get("hero_chart_path"):
+    if has_live_chart:
         lines.append(
-            "![What the $100/month All World portfolio holds — and its race against the "
-            "ACWI ETF](assets/hero_acwi_uk.png)"
+            "![Live: $100/month in the All World Top 3 since the repo started — holdings and "
+            "race against the ACWI ETF](assets/live_tracker.png)"
         )
         lines.append("")
         lines.append(
-            "*How to read it:* each stacked band is the value of one holding in a `$100/month` "
-            "All World — UK-accessible portfolio (equal thirds into that month's Top 3), "
-            "labelled where it mattered most; the dashed line invests the same deposits in an "
-            "MSCI ACWI ETF and the dotted line tracks cash put in. The first months are drawn "
-            "from daily prices (see the zoomed inset) and later months from month-end data; "
-            "the lower panel shows the portfolio's cumulative lead or lag over the ETF."
+            "*How to read it:* this is the real, forward-tracked portfolio — not a backtest. "
+            "It started on 25 Nov 2026 with `$100` split equally across that month's All World "
+            "— UK-accessible Top 3, and adds `$100` into each new month's picks. The treemap "
+            "shows what it holds today (area = current value); the right panel compares it "
+            "with the same cash put into the ACWI ETF, updated after every market close."
         )
         lines.append("")
     lines.append("![Monthly Momentum $100/month vs S&P 500 Tracker](assets/hero_vs_sp500.png)")
@@ -1483,6 +1482,7 @@ def _render_readme_block(
     global_alloc: dict[str, Any] | None = None,
     funding_comparison: dict[str, Any] | None = None,
     hero_stats: dict[str, Any] | None = None,
+    has_live_chart: bool = False,
 ) -> str:
     lines: list[str] = []
     _render_picks_overview(lines, summary, global_summary)
@@ -1494,6 +1494,7 @@ def _render_readme_block(
         us_alloc_std=us_alloc_std,
         global_alloc=global_alloc,
         hero_stats=hero_stats,
+        has_live_chart=has_live_chart,
     )
     _render_option_guide(
         lines,
@@ -2016,6 +2017,7 @@ def rebuild_public_reports(
         global_alloc=global_alloc_dict,
         funding_comparison=funding_comparison_payload,
         hero_stats=hero_stats_payload,
+        has_live_chart=(root_dir / "assets" / "live_tracker.png").exists(),
     )
     _update_readme_file(readme_path, readme_block)
     summary_json_path.write_text(json.dumps(summary_payload, indent=2) + "\n", encoding="utf-8")

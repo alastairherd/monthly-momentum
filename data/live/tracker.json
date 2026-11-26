@@ -1,0 +1,25 @@
+{
+  "inception": "2026-11-25",
+  "universe": "All World — UK-accessible",
+  "monthly_amount": 100.0,
+  "benchmark": "ACWI",
+  "benchmark_label": "ACWI ETF",
+  "names": {
+    "LITE": "LUMENTUM HOLDINGS",
+    "MU": "MICRON TECHNOLOGY",
+    "CVNA": "CARVANA CLASS A"
+  },
+  "buys": [
+    {
+      "window": "2026-11",
+      "date": "2026-11-25",
+      "amounts": {
+        "LITE": 33.333333,
+        "MU": 33.333333,
+        "CVNA": 33.333333
+      },
+      "benchmark_amount": 100.0
+    }
+  ],
+  "pending": null
+}

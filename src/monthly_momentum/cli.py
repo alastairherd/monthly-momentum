@@ -46,6 +46,7 @@ from monthly_momentum.planner import build_monthly_plan
 from monthly_momentum.ranking import rank_securities, read_ranking_csv, write_ranking_csv
 from monthly_momentum.refresh import run_public_refresh
 from monthly_momentum.report import rebuild_public_reports
+from monthly_momentum.tracker import run_live_tracker
 from monthly_momentum.us20 import build_us20_dataset
 
 app = typer.Typer(
@@ -198,15 +199,6 @@ def acwi_refresh(
         f"({res.priced_tickers} priced, {res.uk_accessible_count} UK-ISA accessible), "
         f"{res.price_rows_count} ACWI price rows, {res.fx_rows_count} FX rows."
     )
-    if res.hero_daily_path:
-        console.print(
-            f"Hero daily bars: [green]{res.hero_daily_path}[/green]"
-            + (
-                f" [yellow](missing: {', '.join(res.hero_daily_missing)})[/yellow]"
-                if res.hero_daily_missing
-                else ""
-            )
-        )
     if (root / "data" / "monthly_prices.csv").exists():
         summary = rebuild_public_reports(
             root_dir=root, contribution=contribution, picks_updated_on=datetime.now(UTC).date()
@@ -321,6 +313,32 @@ def report(
     )
     console.print(f"Top 3: [bold cyan]{', '.join(summary.top3_tickers)}[/bold cyan]")
     console.print(f"Updated {summary.chart_path} and {summary.readme_path}")
+
+
+@app.command()
+def track(
+    root: Annotated[Path, typer.Option("--root", help="Repository root directory.")] = Path("."),
+    as_of: Annotated[
+        str | None, typer.Option("--as-of", help="Override today's date (YYYY-MM-DD).")
+    ] = None,
+) -> None:
+    """Update the live forward-tracked portfolio (daily closes) and redraw its chart."""
+    today = date.fromisoformat(as_of) if as_of else datetime.now(UTC).date()
+    res = run_live_tracker(root, today=today)
+    if res.bought_window:
+        console.print(f"[green]Bought window {res.bought_window}[/green] into the live tracker.")
+    if res.missing:
+        console.print(f"[yellow]No daily data for: {', '.join(res.missing)}[/yellow]")
+    if res.series is None:
+        console.print("[yellow]No settled buys yet; nothing to chart.[/yellow]")
+        return
+    latest = res.series.latest
+    n = len(res.series.points)
+    console.print(
+        f"Live tracker at the {latest.date} close: portfolio ${latest.total:,.2f} vs "
+        f"{res.tracker.benchmark_label} ${latest.benchmark:,.2f} on ${latest.cash:,.0f} in "
+        f"({n} session{'s' if n != 1 else ''}). Chart: {res.chart_path}"
+    )
 
 
 @app.command()

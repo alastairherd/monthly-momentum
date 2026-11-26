@@ -25,9 +25,9 @@ For monthly alerts, choose **Watch → Custom → Releases** on GitHub.
 
 ## At a Glance: Why This Works (and the Catch)
 
-![What the $100/month All World portfolio holds — and its race against the ACWI ETF](assets/hero_acwi_uk.png)
+![Live: $100/month in the All World Top 3 since the repo started — holdings and race against the ACWI ETF](assets/live_tracker.png)
 
-*How to read it:* each stacked band is the value of one holding in a `$100/month` All World — UK-accessible portfolio (equal thirds into that month's Top 3), labelled where it mattered most; the dashed line invests the same deposits in an MSCI ACWI ETF and the dotted line tracks cash put in. The first months are drawn from daily prices (see the zoomed inset) and later months from month-end data; the lower panel shows the portfolio's cumulative lead or lag over the ETF.
+*How to read it:* this is the real, forward-tracked portfolio — not a backtest. It started on 25 Nov 2026 with `$100` split equally across that month's All World — UK-accessible Top 3, and adds `$100` into each new month's picks. The treemap shows what it holds today (area = current value); the right panel compares it with the same cash put into the ACWI ETF, updated after every market close.
 
 ![Monthly Momentum $100/month vs S&P 500 Tracker](assets/hero_vs_sp500.png)
 

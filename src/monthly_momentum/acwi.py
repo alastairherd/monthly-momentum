@@ -17,7 +17,6 @@ from pathlib import Path
 from typing import Any
 from zoneinfo import ZoneInfo
 
-from monthly_momentum.hero import DEFAULT_DAILY_WINDOWS
 from monthly_momentum.live import DEFAULT_USER_AGENT
 from monthly_momentum.normalize import (
     add_months,
@@ -202,8 +201,6 @@ class AcwiRefreshResult:
     uk_accessible_count: int
     price_rows_count: int
     fx_rows_count: int
-    hero_daily_path: str | None = None
-    hero_daily_missing: tuple[str, ...] = ()
 
 
 def classify_uk_accessibility(exchange: str, location: str) -> tuple[bool, str]:
@@ -777,81 +774,6 @@ def fetch_yahoo_v8_daily_bars(
     return rows
 
 
-def refresh_hero_daily_prices_csv(
-    root_dir: Path = Path("."),
-    *,
-    daily_windows: int = DEFAULT_DAILY_WINDOWS,
-    as_of: date | None = None,
-    max_workers: int = 6,
-) -> tuple[Path | None, list[str]]:
-    """Refresh the committed daily-bars CSV behind the cumulative hero chart.
-
-    Reads the UK-accessible rankings history to find the first windows' picks, fetches
-    daily Yahoo bars for those holdings plus the ACWI benchmark, and rewrites
-    ``data/global/daily_prices_first_months.csv``. Returns the CSV path (or ``None``
-    when no rankings history exists yet) and the tickers that returned no data.
-    """
-    from monthly_momentum.hero import HERO_DAILY_CSV
-
-    history_path = root_dir / "data" / "global" / "rankings" / "history_acwi_uk_accessible.csv"
-    if not history_path.exists():
-        return None, []
-
-    picks_by_window: dict[str, list[str]] = {}
-    with history_path.open("r", encoding="utf-8-sig", newline="") as fh:
-        for row in csv.DictReader(fh):
-            window = (row.get("month") or "").strip()
-            try:
-                rank = int(float(row.get("rank") or 0))
-            except ValueError:
-                rank = 0
-            if (
-                window
-                and rank <= 3
-                and (row.get("selected_for_buy") or "").strip().lower() == "true"
-            ):
-                picks_by_window.setdefault(window, []).append((row.get("ticker") or "").strip())
-
-    windows = sorted(picks_by_window)
-    if not windows:
-        return None, []
-
-    hero_tickers: set[str] = {"ACWI"}
-    for window in windows[: max(1, daily_windows) + 1]:
-        hero_tickers.update(t for t in picks_by_window[window] if t)
-
-    first_window = windows[0]
-    first_signal = add_months(first_window, -1)
-    # The last daily session needed is the month-end close of the K-th daily interval's
-    # window month; keep a small buffer of sessions after it.
-    last_signal = add_months(windows[min(daily_windows, len(windows) - 1)], -1)
-    after_last = add_months(last_signal, 1)
-    last_month_end = date(int(after_last[:4]), int(after_last[5:7]), 1) - timedelta(days=1)
-    start = date(int(first_signal[:4]), int(first_signal[5:7]), 1) - timedelta(days=10)
-    end = last_month_end + timedelta(days=10)
-
-    rows = fetch_yahoo_v8_daily_bars(
-        sorted(hero_tickers), start=start, end=end, max_workers=max_workers
-    )
-    fetched: dict[str, set[str]] = {}
-    for row in rows:
-        fetched.setdefault(row["ticker"], set()).add(row["date"])
-    failed = sorted(t for t in sorted(hero_tickers) if not fetched.get(t))
-
-    out_path = root_dir / "data" / "global" / HERO_DAILY_CSV
-    # Keep any previously committed CSV when the fetch is incomplete so a Yahoo hiccup
-    # never degrades the chart until the next complete refresh.
-    if failed or not rows:
-        return (out_path if out_path.exists() else None), failed
-
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    with out_path.open("w", encoding="utf-8", newline="") as fh:
-        writer = csv.DictWriter(fh, fieldnames=["date", "ticker", "adj_close"])
-        writer.writeheader()
-        writer.writerows(rows)
-    return out_path, failed
-
-
 def fetch_all_fx_rates_v8(
     currencies: Sequence[str],
     years: int = 12,
@@ -966,16 +888,6 @@ def refresh_acwi_market(
     priced_set = {r["ticker"] for r in merged_prices} | set(us_coverage.keys())
     priced_constituents = sum(1 for c in constituents if c.ticker in priced_set)
 
-    hero_daily_path: Path | None = None
-    hero_daily_missing: tuple[str, ...] = ()
-    try:
-        hero_daily_path, hero_missing = refresh_hero_daily_prices_csv(
-            root_dir=root_dir, as_of=eff_as_of, max_workers=max_workers
-        )
-        hero_daily_missing = tuple(hero_missing)
-    except Exception:  # noqa: BLE001 - the hero chart degrades gracefully without daily bars
-        hero_daily_missing = ()
-
     return AcwiRefreshResult(
         as_of_label=as_of_label,
         total_csv_equities=total_csv_equities,
@@ -984,6 +896,4 @@ def refresh_acwi_market(
         uk_accessible_count=sum(1 for c in constituents if c.uk_accessible),
         price_rows_count=len(merged_prices),
         fx_rows_count=len(merged_fx),
-        hero_daily_path=str(hero_daily_path) if hero_daily_path is not None else None,
-        hero_daily_missing=hero_daily_missing,
     )

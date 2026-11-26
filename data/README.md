@@ -21,7 +21,7 @@ All public market data, performance trajectories, charts, and mechanistic strate
   - `rankings/latest_acwi_uk_accessible.csv`, `history_acwi_uk_accessible.csv`, `model_holdings_acwi_uk_accessible.csv` — Filtered UK-ISA-accessible All-World winners and staged-exit log.
   - `rankings/latest_ftse100.csv`, `history_ftse100.csv`, `model_holdings_ftse100.csv` — UK FTSE 100 picks and staged-exit log (`0.50%` UK stamp duty).
   - `performance_acwi.csv`, `performance_acwi_uk_accessible.csv`, `performance_ftse100.csv`, `summary.json`, `allocation_summary.json`, `funding_comparison.json` — Variant TWR, DCA, lump-sum funding schedules, and monthly portfolio allocation series powering `assets/performance_*.png` and `assets/allocation_*.png`.
-  - `daily_prices_first_months.csv` — Daily dividend/split-adjusted Yahoo v8 closes for the first six windows' Top 3 holdings plus the ACWI ETF, feeding the daily-granularity early stretch of `assets/hero_acwi_uk.png` (refreshed with each ACWI refresh).
+- `data/live/` — The real forward-tracked portfolio, started 2026-11-25 (`monthly-momentum track`): `tracker.json` (inception and the ledger of monthly `$100` buys into the All World — UK-accessible Top 3), `daily_closes.csv` (dividend-adjusted daily closes since inception for every holding plus the `ACWI` ETF), and `summary.json` (latest marks). Powers `assets/live_tracker.png`.
 
 ## Private / Personal Folders (Gitignored)
 

@@ -1181,9 +1181,7 @@
     "benchmark_acwi_ending_value": 99797.43,
     "benchmark_acwi_max_drawdown_pct": -25.74,
     "rule6_signals": [],
-    "chart_path": "assets/performance_acwi_uk_accessible.png",
-    "hero_chart_path": "assets/hero_acwi_uk.png",
-    "hero_daily_through": "2018-04-30"
+    "chart_path": "assets/performance_acwi_uk_accessible.png"
   },
   "global_pool": {
     "source": "ishares_msci_acwi_uk_accessible",
