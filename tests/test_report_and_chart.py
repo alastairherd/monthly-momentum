@@ -195,3 +195,21 @@ def test_merge_prices_preserves_removed_tickers_and_snapshots(tmp_path: Path) ->
     content = snap_path.read_text(encoding="utf-8")
     assert "2026-11,AAPL" in content
     assert "2026-12,MSFT" in content
+
+
+def test_stock_contribution_chart_renders(tmp_path: Path) -> None:
+    from monthly_momentum.chart import generate_stock_contribution_chart
+
+    dates = [date(2020, m, 1) for m in range(1, 13)]
+    panel = {
+        "label": "Test",
+        "dates": dates,
+        "cash": [100.0 * (i + 1) for i in range(12)],
+        "bands": [("AAA", [50.0 * (i + 1) for i in range(12)]), ("BBB", [10.0] * 12)],
+        "other": [40.0 * (i + 1) for i in range(12)],
+        "names": {"AAA": "Alpha", "BBB": "Beta"},
+    }
+    out = generate_stock_contribution_chart(
+        [panel], tmp_path / "c.png", title="t", subtitle="s", footer_note="f"
+    )
+    assert out.read_bytes()[:8] == b"\x89PNG\r\n\x1a\n"

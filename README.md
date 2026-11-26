@@ -55,6 +55,8 @@ The real portfolio, tracked forward from 25 Nov 2026: `$100` a month split equal
 
 ![$100/month: Top 3 vs S&P 500 and ACWI trackers](assets/hero_vs_sp500.png)
 
+![Which shares the $100/month backtests ended up owning](assets/stock_contribution.png)
+
 Returns come from a few multi-baggers held through deep falls, so the five largest holdings end up at 71–77% of the portfolio.
 
 ## Rules

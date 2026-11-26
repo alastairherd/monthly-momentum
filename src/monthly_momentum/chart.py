@@ -1755,3 +1755,131 @@ def generate_live_tracker_chart(tracker: Any, series: Any, output_path: Path) ->
     fig.savefig(output_path, dpi=180, facecolor=PAPER_BG)
     plt.close(fig)
     return output_path
+
+
+def generate_stock_contribution_chart(
+    panels: Sequence[Mapping[str, Any]],
+    output_path: Path,
+    *,
+    title: str,
+    subtitle: str,
+    footer_note: str,
+    currency_symbol: str = "$",
+) -> Path:
+    """Stacked value-by-stock areas, one panel per backtest, showing which shares drove gains.
+
+    Each panel mapping holds ``label``, ``dates``, ``cash`` (cumulative contributions),
+    ``bands`` (ordered ``(ticker, values)`` pairs, largest final value first), ``other``
+    (value of every remaining holding), and ``names`` (ticker → company name).
+    """
+    if not panels:
+        raise ValueError("Cannot render the stock contribution chart without panels.")
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    sym = currency_symbol
+
+    fig = plt.figure(figsize=(13.0, 6.6), facecolor=PAPER_BG)
+    _draw_top_rule_and_headers(fig, title, subtitle, footer_left=footer_note, left=0.055)
+    slot = 0.95 / len(panels)
+    for idx, panel in enumerate(panels):
+        ax = fig.add_axes((0.055 + idx * slot, 0.12, slot - 0.20, 0.66))
+        _style_editorial_axis(ax)
+        dates = list(panel["dates"])
+        bands: list[tuple[str, list[float]]] = list(panel["bands"])
+        other = [max(0.0, v) for v in panel["other"]]
+        cash = list(panel["cash"])
+        names: Mapping[str, str] = panel.get("names", {})
+
+        # Bottom → top: other holdings, then named bands smallest-first so the biggest
+        # winner sits on top where the curve ends.
+        stack_keys = ["Other", *[tk for tk, _ in reversed(bands)]]
+        stack_vals = [other, *[[max(0.0, v) for v in vals] for _, vals in reversed(bands)]]
+        colors = [OTHER_BAND_COLOR] + [
+            HERO_BAND_COLORS[(len(bands) - 1 - i) % len(HERO_BAND_COLORS)]
+            for i in range(len(bands))
+        ]
+        ax.stackplot(dates, stack_vals, colors=colors, linewidth=0.0, alpha=0.95, zorder=2)
+        ax.plot(dates, cash, color=INK_DARK, linestyle=":", linewidth=1.3, zorder=4)
+        ax.yaxis.set_major_formatter(_make_currency_formatter(sym))
+        ax.set_xlim(dates[0], dates[-1])
+        ax.set_ylim(0, None)
+        ax.xaxis.set_major_locator(mdates.YearLocator(base=4 if len(dates) > 150 else 2))
+        ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y"))
+        ax.text(
+            0.0,
+            1.035,
+            str(panel["label"]),
+            transform=ax.transAxes,
+            ha="left",
+            va="bottom",
+            fontsize=10.5,
+            fontweight="bold",
+            color=INK_DARK,
+        )
+
+        total_final = sum(vals[-1] for vals in stack_vals)
+        y_top = ax.get_ylim()[1]
+        # Label each band at its final-value midpoint, nudged apart to avoid overlaps.
+        mids: list[tuple[float, str, str]] = []
+        base = 0.0
+        for key, vals, color in zip(stack_keys, stack_vals, colors, strict=True):
+            v = vals[-1]
+            share = v / total_final * 100.0 if total_final > 0 else 0.0
+            if key == "Other":
+                txt = f"Everything else  {_format_compact_value(sym, v)} · {share:.0f}%"
+                ink = INK_SUB
+            else:
+                txt = f"{key}  {_format_compact_value(sym, v)} · {share:.0f}%"
+                ink = color
+            mids.append(((base + v / 2.0) / y_top, txt, ink))
+            base += v
+        mids.sort(key=lambda m: m[0])
+        placed: list[float] = []
+        for f, _t, _c in mids:
+            placed.append(max(f, placed[-1] + 0.058) if placed else max(f, 0.03))
+        if placed and placed[-1] > 0.98:
+            shift = placed[-1] - 0.98
+            placed = [max(0.0, p - shift) for p in placed]
+            for i in range(1, len(placed)):
+                placed[i] = max(placed[i], placed[i - 1] + 0.058)
+        for (f, txt, ink), fy in zip(mids, placed, strict=True):
+            ax.annotate(
+                txt,
+                xy=(1.0, f),
+                xycoords="axes fraction",
+                xytext=(1.03, fy),
+                textcoords="axes fraction",
+                ha="left",
+                va="center",
+                fontsize=8.4,
+                color=ink,
+                fontweight="bold",
+                arrowprops={"arrowstyle": "-", "color": LEADER_COLOR, "linewidth": 0.6},
+            )
+        cash_final = cash[-1]
+        ax.text(
+            0.02,
+            0.96,
+            f"{_format_compact_value(sym, cash_final)} put in (dotted) became "
+            f"{_format_compact_value(sym, total_final)}",
+            transform=ax.transAxes,
+            ha="left",
+            va="top",
+            fontsize=9.0,
+            color=INK_SUB,
+        )
+        top_names = ", ".join(names.get(tk, tk).title() for tk, _ in bands[:2])
+        if top_names:
+            ax.text(
+                0.02,
+                0.90,
+                f"Biggest: {top_names}",
+                transform=ax.transAxes,
+                ha="left",
+                va="top",
+                fontsize=8.4,
+                color=INK_MUTED,
+            )
+
+    fig.savefig(output_path, dpi=180, facecolor=PAPER_BG)
+    plt.close(fig)
+    return output_path

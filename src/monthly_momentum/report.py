@@ -29,6 +29,7 @@ from monthly_momentum.chart import (
     generate_hero_vs_sp500_chart,
     generate_markets_comparison_chart,
     generate_performance_chart,
+    generate_stock_contribution_chart,
 )
 from monthly_momentum.holdings import (
     apply_monthly_run_to_holdings,
@@ -500,6 +501,10 @@ def _render_backtest_summary(
         )
     lines.append("")
     lines.append("![$100/month: Top 3 vs S&P 500 and ACWI trackers](assets/hero_vs_sp500.png)")
+    lines.append("")
+    lines.append(
+        "![Which shares the $100/month backtests ended up owning](assets/stock_contribution.png)"
+    )
     lines.append("")
 
     us_top5 = us_alloc_std.get("final_top5_pct") if us_alloc_std else None
@@ -1442,6 +1447,39 @@ def _update_readme_file(readme_path: Path, generated_block: str) -> None:
     readme_path.write_text(updated, encoding="utf-8")
 
 
+def _stock_value_panel(
+    result: BacktestResult, *, label: str, scale: float, top_k: int = 6
+) -> dict[str, Any]:
+    """Split each month's portfolio value into its biggest final holdings plus the rest."""
+    pts = result.points
+    values = [
+        {
+            tk: w / 100.0 * pt.portfolio_value * scale
+            for tk, w in pt.holdings_weights.items()
+            if tk != "CASH" and w > 0.0
+        }
+        for pt in pts
+    ]
+    final = values[-1]
+    top = sorted(final, key=lambda t: final[t], reverse=True)[:top_k]
+    names: dict[str, str] = {}
+    for rec in result.final_holdings:
+        if rec.get("ticker") and rec.get("name"):
+            names[rec["ticker"]] = rec["name"]
+    for r_res in result.rankings_by_window:
+        for item in r_res.ranked:
+            if item.name:
+                names.setdefault(item.ticker, item.name)
+    return {
+        "label": label,
+        "dates": [pt.dt for pt in pts],
+        "cash": [pt.contributed_cum * scale for pt in pts],
+        "bands": [(tk, [v.get(tk, 0.0) for v in values]) for tk in top],
+        "other": [sum(x for tk, x in v.items() if tk not in top) for v in values],
+        "names": names,
+    }
+
+
 def rebuild_public_reports(
     root_dir: Path = Path("."),
     contribution: float = 500.0,
@@ -1889,6 +1927,42 @@ def rebuild_public_reports(
     )
     hero_stats_payload: dict[str, Any] | None = (
         {"common_9y": common_9y_stats} if common_9y_stats is not None else None
+    )
+
+    contribution_panels = [
+        _stock_value_panel(
+            std_res,
+            label=(
+                f"US S&P 500, {std_res.points[0].window_month[:4]}–"
+                f"{std_res.points[-1].window_month[:4]}"
+            ),
+            scale=scale_to_100,
+        )
+    ]
+    uk_res = g_res.global_variants.get("Standard (Top 3)") if g_res is not None else None
+    if uk_res is not None and uk_res.points:
+        contribution_panels.append(
+            _stock_value_panel(
+                uk_res,
+                label=(
+                    f"All World — UK-accessible, {uk_res.points[0].window_month[:4]}–"
+                    f"{uk_res.points[-1].window_month[:4]}"
+                ),
+                scale=scale_to_100,
+            )
+        )
+    generate_stock_contribution_chart(
+        contribution_panels,
+        root_dir / "assets" / "stock_contribution.png",
+        title="A handful of shares made most of the money",
+        subtitle=(
+            "Value of each holding in the $100/month Top 3 backtests, largest six named · "
+            "grey = every other holding · dotted = cash put in"
+        ),
+        footer_note=(
+            "Source: survivorship-aware S&P 500 membership, iShares ACWI & Yahoo Finance; "
+            "dividends reinvested. Backtest, not a live record. Not financial advice."
+        ),
     )
 
     readme_path = root_dir / "README.md"
