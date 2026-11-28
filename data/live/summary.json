@@ -1,33 +1,33 @@
 {
   "inception": "2026-11-25",
-  "as_of": "2026-11-25",
-  "sessions": 1,
+  "as_of": "2026-11-27",
+  "sessions": 2,
   "cash_in": 100.0,
-  "portfolio_value": 100.0,
-  "benchmark_value": 100.0,
-  "portfolio_return_pct": 0.0,
-  "benchmark_return_pct": 0.0,
+  "portfolio_value": 106.3,
+  "benchmark_value": 101.74,
+  "portfolio_return_pct": 6.3,
+  "benchmark_return_pct": 1.74,
   "holdings": [
     {
       "ticker": "LITE",
       "name": "LUMENTUM HOLDINGS",
       "invested": 33.33,
-      "value": 33.33,
-      "return_pct": 0.0
+      "value": 35.99,
+      "return_pct": 7.98
     },
     {
       "ticker": "MU",
       "name": "MICRON TECHNOLOGY",
       "invested": 33.33,
-      "value": 33.33,
-      "return_pct": 0.0
+      "value": 35.87,
+      "return_pct": 7.6
     },
     {
       "ticker": "CVNA",
       "name": "CARVANA CLASS A",
       "invested": 33.33,
-      "value": 33.33,
-      "return_pct": 0.0
+      "value": 34.43,
+      "return_pct": 3.3
     }
   ]
 }
